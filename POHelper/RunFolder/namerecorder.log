@@ -1,0 +1,44 @@
+340  DEBUG com.testhelper.NameRecorder  - **** Class Name Recorder Name Recorder Created ***
+695  DEBUG com.testhelper.NameRecorder  - **** Making new symbol name beginning with text: Tag Tests ****
+696  DEBUG com.testhelper.NameRecorder  - Replaced all whitespace resulting in symbol name: Tag_Tests
+696  DEBUG com.testhelper.NameRecorder  - Replaced all non-alphanumeric or underscore chars resulting in symbol name: Tag_Tests
+696  DEBUG com.testhelper.NameRecorder  - Limiting symbol name to 32 chars resulting in : Tag_Tests
+696  DEBUG com.testhelper.NameRecorder  - Checking for duplicates using symbol name: Tag_Tests
+696  DEBUG com.testhelper.NameRecorder  - Class Name Recorder: Adding new symbol name to recorder.
+697  DEBUG com.testhelper.NameRecorder  - Returning symbol name: Tag_Tests
+704  DEBUG com.testhelper.NameRecorder  - **** Member Name Recorder Name Recorder Created ***
+725  DEBUG com.testhelper.NameRecorder  - **** Making new symbol name beginning with text: H1 no attributes ****
+725  DEBUG com.testhelper.NameRecorder  - Replaced all whitespace resulting in symbol name: H1_no_attributes
+726  DEBUG com.testhelper.NameRecorder  - Replaced all non-alphanumeric or underscore chars resulting in symbol name: H1_no_attributes
+726  DEBUG com.testhelper.NameRecorder  - Limiting symbol name to 32 chars resulting in : H1_no_attributes
+726  DEBUG com.testhelper.NameRecorder  - Checking for duplicates using symbol name: H1_no_attributes
+726  DEBUG com.testhelper.NameRecorder  - Member Name Recorder: Adding new symbol name to recorder.
+726  DEBUG com.testhelper.NameRecorder  - Returning symbol name: H1_no_attributes
+729  DEBUG com.testhelper.NameRecorder  - **** Making new symbol name beginning with text: Second h1 tag at same sibling level ****
+729  DEBUG com.testhelper.NameRecorder  - Replaced all whitespace resulting in symbol name: Second_h1_tag_at_same_sibling_level
+729  DEBUG com.testhelper.NameRecorder  - Replaced all non-alphanumeric or underscore chars resulting in symbol name: Second_h1_tag_at_same_sibling_level
+729  DEBUG com.testhelper.NameRecorder  - Limiting symbol name to 32 chars resulting in : Second_h1_tag_at_same_sibling_le
+730  DEBUG com.testhelper.NameRecorder  - Checking for duplicates using symbol name: Second_h1_tag_at_same_sibling_le
+730  DEBUG com.testhelper.NameRecorder  - Member Name Recorder: Adding new symbol name to recorder.
+730  DEBUG com.testhelper.NameRecorder  - Returning symbol name: Second_h1_tag_at_same_sibling_le
+733  DEBUG com.testhelper.NameRecorder  - **** Making new symbol name beginning with text: H2 no attributes ****
+733  DEBUG com.testhelper.NameRecorder  - Replaced all whitespace resulting in symbol name: H2_no_attributes
+734  DEBUG com.testhelper.NameRecorder  - Replaced all non-alphanumeric or underscore chars resulting in symbol name: H2_no_attributes
+734  DEBUG com.testhelper.NameRecorder  - Limiting symbol name to 32 chars resulting in : H2_no_attributes
+734  DEBUG com.testhelper.NameRecorder  - Checking for duplicates using symbol name: H2_no_attributes
+734  DEBUG com.testhelper.NameRecorder  - Member Name Recorder: Adding new symbol name to recorder.
+734  DEBUG com.testhelper.NameRecorder  - Returning symbol name: H2_no_attributes
+737  DEBUG com.testhelper.NameRecorder  - **** Making new symbol name beginning with text: Second h2 tag at same sibling level ****
+737  DEBUG com.testhelper.NameRecorder  - Replaced all whitespace resulting in symbol name: Second_h2_tag_at_same_sibling_level
+737  DEBUG com.testhelper.NameRecorder  - Replaced all non-alphanumeric or underscore chars resulting in symbol name: Second_h2_tag_at_same_sibling_level
+737  DEBUG com.testhelper.NameRecorder  - Limiting symbol name to 32 chars resulting in : Second_h2_tag_at_same_sibling_le
+738  DEBUG com.testhelper.NameRecorder  - Checking for duplicates using symbol name: Second_h2_tag_at_same_sibling_le
+738  DEBUG com.testhelper.NameRecorder  - Member Name Recorder: Adding new symbol name to recorder.
+738  DEBUG com.testhelper.NameRecorder  - Returning symbol name: Second_h2_tag_at_same_sibling_le
+742  DEBUG com.testhelper.NameRecorder  - **** Making new symbol name beginning with text: paragraph no attributes ****
+742  DEBUG com.testhelper.NameRecorder  - Replaced all whitespace resulting in symbol name: paragraph_no_attributes
+743  DEBUG com.testhelper.NameRecorder  - Replaced all non-alphanumeric or underscore chars resulting in symbol name: paragraph_no_attributes
+743  DEBUG com.testhelper.NameRecorder  - Limiting symbol name to 32 chars resulting in : paragraph_no_attributes
+743  DEBUG com.testhelper.NameRecorder  - Checking for duplicates using symbol name: paragraph_no_attributes
+743  DEBUG com.testhelper.NameRecorder  - Member Name Recorder: Adding new symbol name to recorder.
+743  DEBUG com.testhelper.NameRecorder  - Returning symbol name: paragraph_no_attributes

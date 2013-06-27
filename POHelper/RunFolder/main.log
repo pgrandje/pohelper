@@ -1,0 +1,4 @@
+0    [main] INFO  com.testhelper.Configurator  - Configurator using URL via -url command-line arg, URL set to 'http://localhost:8080/testpages/tagtests.html'.
+2    [main] INFO  com.testhelper.Configurator  - Set destination folder to /Users/pgrandje/IdeaProjects/SelGenTest/src/main/java/com/selgentests/pageobjects
+704  [main] INFO  com.testhelper.SeleniumGenerator  - Root Node is: html-- value: null
+748  [main] INFO  com.testhelper.SeleniumGenerator  - SUCCESSFUL COMPLETION

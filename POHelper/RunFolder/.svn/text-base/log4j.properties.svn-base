@@ -1,0 +1,97 @@
+# Root defaults to DEBUG
+log4j.rootLogger=TRACE
+
+# Console Appender can be used by any of the subsystems as needed.  Generally I use this only for main().
+log4j.appender.ConsoleAppender=org.apache.log4j.ConsoleAppender
+log4j.appender.ConsoleAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.ConsoleAppender.layout.ConversionPattern=%-4r [%t] %-5p %c %x - %m%n
+
+
+# MainFileAppender - used to log messages from SeleniumGenerator.main() to the main.log file.
+log4j.appender.MainFileAppender=org.apache.log4j.FileAppender
+log4j.appender.MainFileAppender.File=main.log
+log4j.appender.MainFileAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.MainFileAppender.layout.ConversionPattern= %-4r [%t] %-5p %c %x - %m%n
+log4j.appender.MainFileAppender.Append=false
+
+# NodeScannerFileAppender
+log4j.appender.NodeScannerFileAppender=org.apache.log4j.FileAppender
+log4j.appender.NodeScannerFileAppender.File=nodescanner.log
+log4j.appender.NodeScannerFileAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.NodeScannerFileAppender.layout.ConversionPattern= %-4r %-5p %c %x - %m%n
+log4j.appender.NodeScannerFileAppender.Append=false
+
+# CodeShellLoaderFileAppender
+log4j.appender.CodeShellLoaderFileAppender=org.apache.log4j.FileAppender
+log4j.appender.CodeShellLoaderFileAppender.File=codeShellloader.log
+log4j.appender.CodeShellLoaderFileAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.CodeShellLoaderFileAppender.layout.ConversionPattern= %-4r %-5p %c %x - %m%n
+log4j.appender.CodeShellFileAppender.Append=false
+
+# CodeLoaderFileAppender
+log4j.appender.CodeLoaderFileAppender=org.apache.log4j.FileAppender
+log4j.appender.CodeLoaderFileAppender.File=codeloader.log
+log4j.appender.CodeLoaderFileAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.CodeLoaderFileAppender.layout.ConversionPattern= %-4r %-5p %c %x - %m%n
+log4j.appender.CodeLoaderFileAppender.Append=false
+
+# TagSwitcherFileAppender
+log4j.appender.TagSwitcherFileAppender=org.apache.log4j.FileAppender
+log4j.appender.TagSwitcherFileAppender.File=tagswitcher.log
+log4j.appender.TagSwitcherFileAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.TagSwitcherFileAppender.layout.ConversionPattern= %-4r %-5p %c %x - %m%n
+log4j.appender.TagSwitcherFileAppender.Append=false
+
+# TagBucketFileAppender
+log4j.appender.TagBucketFileAppender=org.apache.log4j.FileAppender
+log4j.appender.TagBucketFileAppender.File=tagdescripter.log
+log4j.appender.TagBucketFileAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.TagBucketFileAppender.layout.ConversionPattern= %-4r %-5p %c %x - %m%n
+log4j.appender.TagBucketFileAppender.Append=false
+
+# MemberNameRecorderAppender
+log4j.appender.NameRecorderFileAppender=org.apache.log4j.FileAppender
+log4j.appender.NameRecorderFileAppender.File=namerecorder.log
+log4j.appender.NameRecorderFileAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.NameRecorderFileAppender.layout.ConversionPattern= %-4r %-5p %c %x - %m%n
+log4j.appender.NameRecorderFileAppender.Append=false
+
+log4j.appender.PreprocessorFileAppender=org.apache.log4j.FileAppender
+log4j.appender.PreprocessorFileAppender.File=pageObjectDescriptor.log
+log4j.appender.PreprocessorFileAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.PreprocessorFileAppender.layout.ConversionPattern= %-4r %-5p %c %x - %m%n
+log4j.appender.PreprocessorFileAppender.Append=false
+
+log4j.appender.CodeBucketFileAppender=org.apache.log4j.FileAppender
+log4j.appender.CodeBucketFileAppender.File=codebucket.log
+log4j.appender.CodeBucketFileAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.CodeBucketFileAppender.layout.ConversionPattern= %-4r %-5p %c %x - %m%n
+log4j.appender.CodeBucketFileAppender.Append=false
+
+# ParamBucketFileAppender
+# Note:  Not using this appender right now, Don't really need it.  The cmd-line params are printed to console
+#        and the main.log
+log4j.appender.ParamBucketFileAppender=org.apache.log4j.FileAppender
+log4j.appender.ParamBucketFileAppender.File=configurator.log
+log4j.appender.ParamBucketFileAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.ParamBucketFileAppender.layout.ConversionPattern= %-4r %-5p %c %x - %m%n
+log4j.appender.ParamBucketFileAppender.Append=false
+
+# File Appender assignments to classes.
+log4j.logger.com.paulgrandjean.SeleniumGenerator=INFO,MainFileAppender, ConsoleAppender
+log4j.logger.com.paulgrandjean.Configurator=TRACE,MainFileAppender, ConsoleAppender
+log4j.logger.com.paulgrandjean.NodeScanner=TRACE,NodeScannerFileAppender, ConsoleAppender
+log4j.logger.com.paulgrandjean.CodeLoader=TRACE,CodeLoaderFileAppender, ConsoleAppender
+log4j.logger.com.paulgrandjean.CodeShellLoader=TRACE,CodeShellLoaderFileAppender, ConsoleAppender
+log4j.logger.com.paulgrandjean.TagSwitcher=TRACE,TagSwitcherFileAppender, ConsoleAppender
+log4j.logger.com.paulgrandjean.TagDescriptor=TRACE,TagBucketFileAppender, ConsoleAppender
+log4j.logger.com.paulgrandjean.NameRecorder=TRACE,NameRecorderFileAppender, ConsoleAppender
+log4j.logger.com.paulgrandjean.PageDescriptor=TRACE,PreprocessorFileAppender, ConsoleAppender
+log4j.logger.com.paulgrandjean.CodeBucket=TRACE,CodeBucketFileAppender, ConsoleAppender
+
+#log4j.appender.fileappender.Append=false
+
+# Example:
+#   Setting the logger level of the Appenders
+# Don't need this though because we set the level when we assign the Appenders to the classs being logged.
+# log4j.appender.Main.Threshold = INFO

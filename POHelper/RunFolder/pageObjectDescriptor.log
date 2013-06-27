@@ -1,0 +1,3 @@
+695  INFO  com.testhelper.PageDescriptor  - Found exactly one <title> tag, using it's text for the page object's classname.
+695  INFO  com.testhelper.PageDescriptor  - Using title tag 'title' with text "Tag Tests"
+697  INFO  com.testhelper.PageDescriptor  - Using symbol name 'Tag_Tests' for the page object class name.

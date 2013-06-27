@@ -1,0 +1,205 @@
+722  DEBUG com.testhelper.TagDescriptor  - ****************************
+723  DEBUG com.testhelper.TagDescriptor  - Creating new TagDescriptor for tag <h1>.
+723  DEBUG com.testhelper.TagDescriptor  - In method addTextValue() -- Found textContent, saving 'H1 no attributes' to tag bucket.
+723  DEBUG com.testhelper.TagDescriptor  - Not recording comments
+723  DEBUG com.testhelper.TagDescriptor  - Using member code template:
+   // Header1
+   @FindBy(<locator>)
+   private WebElement <symbol>;
+
+723  DEBUG com.testhelper.TagDescriptor  - And method code template:
+   public String get<symbol>Text() {
+      return <symbol>.getText();
+   }
+
+723  DEBUG com.testhelper.TagDescriptor  - Are there attributes we can use for writing the locator?
+723  DEBUG com.testhelper.TagDescriptor  - No, there's no attributes for this tag.
+723  DEBUG com.testhelper.TagDescriptor  - *** Making a CSS Locator ***.
+723  DEBUG com.testhelper.TagDescriptor  - Backtracking up the node chain looking for a unique css path.  Building a list of the current node's anscestors.
+724  DEBUG com.testhelper.TagDescriptor  - Current node <h1> added to list of ancestors.
+724  DEBUG com.testhelper.TagDescriptor  - Ancestor: body
+724  DEBUG com.testhelper.TagDescriptor  - Ancestor: h1
+724  INFO  com.testhelper.TagDescriptor  - Starting the path at the <body> tag.
+724  DEBUG com.testhelper.TagDescriptor  - Sibling position is 1
+724  TRACE com.testhelper.TagDescriptor  - CSS Locator intermediate result: body > h1 > 
+724  DEBUG com.testhelper.TagDescriptor  - CSS Locator final string: body > h1
+725  DEBUG com.testhelper.TagDescriptor  - Locator written using css locator--setting write status to true.
+725  DEBUG com.testhelper.TagDescriptor  - Checking whether there's textContent we can use for symbol writing.
+725  DEBUG com.testhelper.TagDescriptor  - Using text content 'H1 no attributes' for symbol replacement.
+726  DEBUG com.testhelper.TagDescriptor  - Writing member and methods using symbol name 'H1_no_attributes'.
+726  DEBUG com.testhelper.TagDescriptor  - Symbols written using tag's textContent value.
+727  DEBUG com.testhelper.TagDescriptor  - ****************************
+727  DEBUG com.testhelper.TagDescriptor  - Creating new TagDescriptor for tag <h1>.
+727  DEBUG com.testhelper.TagDescriptor  - In method addTextValue() -- Found textContent, saving 'Second h1 tag at same sibling level' to tag bucket.
+727  DEBUG com.testhelper.TagDescriptor  - Not recording comments
+727  DEBUG com.testhelper.TagDescriptor  - Using member code template:
+   // Header1
+   @FindBy(<locator>)
+   private WebElement <symbol>;
+
+727  DEBUG com.testhelper.TagDescriptor  - And method code template:
+   public String get<symbol>Text() {
+      return <symbol>.getText();
+   }
+
+727  DEBUG com.testhelper.TagDescriptor  - Are there attributes we can use for writing the locator?
+727  DEBUG com.testhelper.TagDescriptor  - No, there's no attributes for this tag.
+727  DEBUG com.testhelper.TagDescriptor  - *** Making a CSS Locator ***.
+727  DEBUG com.testhelper.TagDescriptor  - Backtracking up the node chain looking for a unique css path.  Building a list of the current node's anscestors.
+728  DEBUG com.testhelper.TagDescriptor  - Current node <h1> added to list of ancestors.
+728  DEBUG com.testhelper.TagDescriptor  - Ancestor: body
+728  DEBUG com.testhelper.TagDescriptor  - Ancestor: h1
+728  INFO  com.testhelper.TagDescriptor  - Starting the path at the <body> tag.
+728  TRACE com.testhelper.TagDescriptor  - Prev sibling '[h1: null]'
+728  DEBUG com.testhelper.TagDescriptor  - Sibling position is 2
+728  TRACE com.testhelper.TagDescriptor  - CSS Locator intermediate result: body > h1:nth-child(2) > 
+728  DEBUG com.testhelper.TagDescriptor  - CSS Locator final string: body > h1:nth-child(2)
+729  DEBUG com.testhelper.TagDescriptor  - Locator written using css locator--setting write status to true.
+729  DEBUG com.testhelper.TagDescriptor  - Checking whether there's textContent we can use for symbol writing.
+729  DEBUG com.testhelper.TagDescriptor  - Using text content 'Second h1 tag at same sibling level' for symbol replacement.
+730  DEBUG com.testhelper.TagDescriptor  - Writing member and methods using symbol name 'Second_h1_tag_at_same_sibling_le'.
+730  DEBUG com.testhelper.TagDescriptor  - Symbols written using tag's textContent value.
+731  DEBUG com.testhelper.TagDescriptor  - ****************************
+731  DEBUG com.testhelper.TagDescriptor  - Creating new TagDescriptor for tag <h2>.
+731  DEBUG com.testhelper.TagDescriptor  - In method addTextValue() -- Found textContent, saving 'H2 no attributes' to tag bucket.
+731  DEBUG com.testhelper.TagDescriptor  - Not recording comments
+731  DEBUG com.testhelper.TagDescriptor  - Using member code template:
+   // Header2
+   @FindBy(<locator>)
+   private WebElement <symbol>;
+
+731  DEBUG com.testhelper.TagDescriptor  - And method code template:
+   public String get<symbol>Text() {
+      return <symbol>.getText();
+   }
+
+731  DEBUG com.testhelper.TagDescriptor  - Are there attributes we can use for writing the locator?
+731  DEBUG com.testhelper.TagDescriptor  - No, there's no attributes for this tag.
+731  DEBUG com.testhelper.TagDescriptor  - *** Making a CSS Locator ***.
+732  DEBUG com.testhelper.TagDescriptor  - Backtracking up the node chain looking for a unique css path.  Building a list of the current node's anscestors.
+732  DEBUG com.testhelper.TagDescriptor  - Current node <h2> added to list of ancestors.
+732  DEBUG com.testhelper.TagDescriptor  - Ancestor: body
+732  DEBUG com.testhelper.TagDescriptor  - Ancestor: h2
+732  INFO  com.testhelper.TagDescriptor  - Starting the path at the <body> tag.
+733  TRACE com.testhelper.TagDescriptor  - Prev sibling '[h1: null]'
+733  TRACE com.testhelper.TagDescriptor  - Prev sibling '[h1: null]'
+733  DEBUG com.testhelper.TagDescriptor  - Sibling position is 3
+733  TRACE com.testhelper.TagDescriptor  - CSS Locator intermediate result: body > h2 > 
+733  DEBUG com.testhelper.TagDescriptor  - CSS Locator final string: body > h2
+733  DEBUG com.testhelper.TagDescriptor  - Locator written using css locator--setting write status to true.
+733  DEBUG com.testhelper.TagDescriptor  - Checking whether there's textContent we can use for symbol writing.
+733  DEBUG com.testhelper.TagDescriptor  - Using text content 'H2 no attributes' for symbol replacement.
+734  DEBUG com.testhelper.TagDescriptor  - Writing member and methods using symbol name 'H2_no_attributes'.
+734  DEBUG com.testhelper.TagDescriptor  - Symbols written using tag's textContent value.
+735  DEBUG com.testhelper.TagDescriptor  - ****************************
+735  DEBUG com.testhelper.TagDescriptor  - Creating new TagDescriptor for tag <h1>.
+735  DEBUG com.testhelper.TagDescriptor  - In method addTextValue() -- Found textContent, saving 'Second h2 tag at same sibling level' to tag bucket.
+735  DEBUG com.testhelper.TagDescriptor  - Not recording comments
+735  DEBUG com.testhelper.TagDescriptor  - Using member code template:
+   // Header1
+   @FindBy(<locator>)
+   private WebElement <symbol>;
+
+735  DEBUG com.testhelper.TagDescriptor  - And method code template:
+   public String get<symbol>Text() {
+      return <symbol>.getText();
+   }
+
+736  DEBUG com.testhelper.TagDescriptor  - Are there attributes we can use for writing the locator?
+736  DEBUG com.testhelper.TagDescriptor  - No, there's no attributes for this tag.
+736  DEBUG com.testhelper.TagDescriptor  - *** Making a CSS Locator ***.
+736  DEBUG com.testhelper.TagDescriptor  - Backtracking up the node chain looking for a unique css path.  Building a list of the current node's anscestors.
+736  DEBUG com.testhelper.TagDescriptor  - Current node <h1> added to list of ancestors.
+736  DEBUG com.testhelper.TagDescriptor  - Ancestor: body
+736  DEBUG com.testhelper.TagDescriptor  - Ancestor: h1
+736  INFO  com.testhelper.TagDescriptor  - Starting the path at the <body> tag.
+736  TRACE com.testhelper.TagDescriptor  - Prev sibling '[h2: null]'
+736  TRACE com.testhelper.TagDescriptor  - Prev sibling '[h1: null]'
+736  TRACE com.testhelper.TagDescriptor  - Prev sibling '[h1: null]'
+736  DEBUG com.testhelper.TagDescriptor  - Sibling position is 4
+737  TRACE com.testhelper.TagDescriptor  - CSS Locator intermediate result: body > h1:nth-child(4) > 
+737  DEBUG com.testhelper.TagDescriptor  - CSS Locator final string: body > h1:nth-child(4)
+737  DEBUG com.testhelper.TagDescriptor  - Locator written using css locator--setting write status to true.
+737  DEBUG com.testhelper.TagDescriptor  - Checking whether there's textContent we can use for symbol writing.
+737  DEBUG com.testhelper.TagDescriptor  - Using text content 'Second h2 tag at same sibling level' for symbol replacement.
+738  DEBUG com.testhelper.TagDescriptor  - Writing member and methods using symbol name 'Second_h2_tag_at_same_sibling_le'.
+738  DEBUG com.testhelper.TagDescriptor  - Symbols written using tag's textContent value.
+739  DEBUG com.testhelper.TagDescriptor  - ****************************
+739  DEBUG com.testhelper.TagDescriptor  - Creating new TagDescriptor for tag <p>.
+739  DEBUG com.testhelper.TagDescriptor  - In method addTextValue() -- Found textContent, saving 'paragraph no attributes' to tag bucket.
+739  DEBUG com.testhelper.TagDescriptor  - Not recording comments
+739  DEBUG com.testhelper.TagDescriptor  - Using member code template:
+   // Paragraph <p> element
+   @FindBy(<locator>)
+   private WebElement <symbol>;
+
+739  DEBUG com.testhelper.TagDescriptor  - And method code template:
+   public String get<symbol>ParagraphText() {
+      return <symbol>.getText();
+   }
+
+739  DEBUG com.testhelper.TagDescriptor  - Are there attributes we can use for writing the locator?
+739  DEBUG com.testhelper.TagDescriptor  - No, there's no attributes for this tag.
+739  DEBUG com.testhelper.TagDescriptor  - *** Making a CSS Locator ***.
+739  DEBUG com.testhelper.TagDescriptor  - Backtracking up the node chain looking for a unique css path.  Building a list of the current node's anscestors.
+740  DEBUG com.testhelper.TagDescriptor  - Current node <p> added to list of ancestors.
+740  DEBUG com.testhelper.TagDescriptor  - Ancestor: body
+740  DEBUG com.testhelper.TagDescriptor  - Ancestor: p
+741  INFO  com.testhelper.TagDescriptor  - Starting the path at the <body> tag.
+741  TRACE com.testhelper.TagDescriptor  - Prev sibling '[h1: null]'
+742  TRACE com.testhelper.TagDescriptor  - Prev sibling '[h2: null]'
+742  TRACE com.testhelper.TagDescriptor  - Prev sibling '[h1: null]'
+742  TRACE com.testhelper.TagDescriptor  - Prev sibling '[h1: null]'
+742  DEBUG com.testhelper.TagDescriptor  - Sibling position is 5
+742  TRACE com.testhelper.TagDescriptor  - CSS Locator intermediate result: body > p > 
+742  DEBUG com.testhelper.TagDescriptor  - CSS Locator final string: body > p
+742  DEBUG com.testhelper.TagDescriptor  - Locator written using css locator--setting write status to true.
+742  DEBUG com.testhelper.TagDescriptor  - Checking whether there's textContent we can use for symbol writing.
+742  DEBUG com.testhelper.TagDescriptor  - Using text content 'paragraph no attributes' for symbol replacement.
+743  DEBUG com.testhelper.TagDescriptor  - Writing member and methods using symbol name 'paragraph_no_attributes'.
+743  DEBUG com.testhelper.TagDescriptor  - Symbols written using tag's textContent value.
+745  TRACE com.testhelper.TagDescriptor  - Getting comment 
+745  TRACE com.testhelper.TagDescriptor  - Getting member code    // Header1
+   @FindBy(css = "body > h1")
+   private WebElement H1_no_attributes;
+
+745  TRACE com.testhelper.TagDescriptor  - Getting comment 
+745  TRACE com.testhelper.TagDescriptor  - Getting member code    // Header1
+   @FindBy(css = "body > h1:nth-child(2)")
+   private WebElement Second_h1_tag_at_same_sibling_le;
+
+745  TRACE com.testhelper.TagDescriptor  - Getting comment 
+746  TRACE com.testhelper.TagDescriptor  - Getting member code    // Header2
+   @FindBy(css = "body > h2")
+   private WebElement H2_no_attributes;
+
+746  TRACE com.testhelper.TagDescriptor  - Getting comment 
+746  TRACE com.testhelper.TagDescriptor  - Getting member code    // Header1
+   @FindBy(css = "body > h1:nth-child(4)")
+   private WebElement Second_h2_tag_at_same_sibling_le;
+
+746  TRACE com.testhelper.TagDescriptor  - Getting comment 
+746  TRACE com.testhelper.TagDescriptor  - Getting member code    // Paragraph <p> element
+   @FindBy(css = "body > p")
+   private WebElement paragraph_no_attributes;
+
+747  TRACE com.testhelper.TagDescriptor  - Getting method code    public String getH1_no_attributesText() {
+      return H1_no_attributes.getText();
+   }
+
+747  TRACE com.testhelper.TagDescriptor  - Getting method code    public String getSecond_h1_tag_at_same_sibling_leText() {
+      return Second_h1_tag_at_same_sibling_le.getText();
+   }
+
+747  TRACE com.testhelper.TagDescriptor  - Getting method code    public String getH2_no_attributesText() {
+      return H2_no_attributes.getText();
+   }
+
+747  TRACE com.testhelper.TagDescriptor  - Getting method code    public String getSecond_h2_tag_at_same_sibling_leText() {
+      return Second_h2_tag_at_same_sibling_le.getText();
+   }
+
+747  TRACE com.testhelper.TagDescriptor  - Getting method code    public String getparagraph_no_attributesParagraphText() {
+      return paragraph_no_attributes.getText();
+   }
+

@@ -1,0 +1,462 @@
+294  DEBUG com.testhelper.CodeShellLoader  - Looking for code shell configuration file: ./resources/java-shell-configger.txt
+294  DEBUG com.testhelper.CodeShellLoader  - Found it, using file: ./resources/java-shell-configger.txt
+294  DEBUG com.testhelper.CodeShellLoader  - Read the first line: package com.selgentests.pageobjects;
+295  DEBUG com.testhelper.CodeShellLoader  - Read next line: // TODO:  Need to programatically generate the package name.
+295  DEBUG com.testhelper.CodeShellLoader  - Read next line:
+295  DEBUG com.testhelper.CodeShellLoader  - Read next line: /* Generated Page Object source file */
+295  DEBUG com.testhelper.CodeShellLoader  - Read next line:
+295  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebDriver;
+295  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebElement;
+295  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.FindBy;
+295  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.By;
+295  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.PageFactory;
+295  DEBUG com.testhelper.CodeShellLoader  - Read next line:
+295  DEBUG com.testhelper.CodeShellLoader  - Read next line:
+295  DEBUG com.testhelper.CodeShellLoader  - Read next line: public class <title>   {
+296  DEBUG com.testhelper.CodeShellLoader  - Read next line:
+296  DEBUG com.testhelper.CodeShellLoader  - Read next line: <CodeBlockGoesHere>
+296  DEBUG com.testhelper.CodeShellLoader  - Found code-block indicator, storing the header code:
+package com.selgentests.pageobjects;
+// TODO:  Need to programatically generate the package name.
+
+/* Generated Page Object source file */
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class <title>   {
+
+
+296  DEBUG com.testhelper.CodeShellLoader  - Erasing temp StringBuffer with a new StringBuffer for processing the trailer code.
+296  DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line:
+296  DEBUG com.testhelper.CodeShellLoader  - Found the line: }
+296  DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line: }
+296  DEBUG com.testhelper.CodeShellLoader  - Found the line: null
+296  DEBUG com.testhelper.CodeShellLoader  - Adding to CodeBucket the trailer code:
+
+}
+
+2477 DEBUG com.testhelper.CodeShellLoader  - Looking for code shell configuration file: ./resources/java-shell-configger.txt
+2488 DEBUG com.testhelper.CodeShellLoader  - Found it, using file: ./resources/java-shell-configger.txt
+2489 DEBUG com.testhelper.CodeShellLoader  - Read the first line: package com.selgentests.pageobjects;
+2489 DEBUG com.testhelper.CodeShellLoader  - Read next line: // TODO:  Need to programatically generate the package name.
+2489 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+2489 DEBUG com.testhelper.CodeShellLoader  - Read next line: /* Generated Page Object source file */
+2489 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+2489 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebDriver;
+2489 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebElement;
+2489 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.FindBy;
+2489 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.By;
+2489 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.PageFactory;
+2489 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+2489 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+2489 DEBUG com.testhelper.CodeShellLoader  - Read next line: public class <title>   {
+2490 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+2490 DEBUG com.testhelper.CodeShellLoader  - Read next line: <CodeBlockGoesHere>
+2490 DEBUG com.testhelper.CodeShellLoader  - Found code-block indicator, storing the header code:
+package com.selgentests.pageobjects;
+// TODO:  Need to programatically generate the package name.
+
+/* Generated Page Object source file */
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class <title>   {
+
+
+2490 DEBUG com.testhelper.CodeShellLoader  - Erasing temp StringBuffer with a new StringBuffer for processing the trailer code.
+2490 DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line:
+2490 DEBUG com.testhelper.CodeShellLoader  - Found the line: }
+2490 DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line: }
+2490 DEBUG com.testhelper.CodeShellLoader  - Found the line: null
+2490 DEBUG com.testhelper.CodeShellLoader  - Adding to CodeBucket the trailer code:
+
+}
+
+1969 DEBUG com.testhelper.CodeShellLoader  - Looking for code shell configuration file: ./resources/java-shell-configger.txt
+1971 DEBUG com.testhelper.CodeShellLoader  - Found it, using file: ./resources/java-shell-configger.txt
+1972 DEBUG com.testhelper.CodeShellLoader  - Read the first line: package com.selgentests.pageobjects;
+1972 DEBUG com.testhelper.CodeShellLoader  - Read next line: // TODO:  Need to programatically generate the package name.
+1972 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+1972 DEBUG com.testhelper.CodeShellLoader  - Read next line: /* Generated Page Object source file */
+1972 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+1972 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebDriver;
+1972 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebElement;
+1972 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.FindBy;
+1972 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.By;
+1972 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.PageFactory;
+1972 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+1972 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+1973 DEBUG com.testhelper.CodeShellLoader  - Read next line: public class <title>   {
+1973 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+1973 DEBUG com.testhelper.CodeShellLoader  - Read next line: <CodeBlockGoesHere>
+1973 DEBUG com.testhelper.CodeShellLoader  - Found code-block indicator, storing the header code:
+package com.selgentests.pageobjects;
+// TODO:  Need to programatically generate the package name.
+
+/* Generated Page Object source file */
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class <title>   {
+
+
+1973 DEBUG com.testhelper.CodeShellLoader  - Erasing temp StringBuffer with a new StringBuffer for processing the trailer code.
+1973 DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line:
+1973 DEBUG com.testhelper.CodeShellLoader  - Found the line: }
+1973 DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line: }
+1973 DEBUG com.testhelper.CodeShellLoader  - Found the line: null
+1973 DEBUG com.testhelper.CodeShellLoader  - Adding to CodeBucket the trailer code:
+
+}
+
+3060 DEBUG com.testhelper.CodeShellLoader  - Looking for code shell configuration file: ./resources/java-shell-configger.txt
+3078 DEBUG com.testhelper.CodeShellLoader  - Found it, using file: ./resources/java-shell-configger.txt
+3078 DEBUG com.testhelper.CodeShellLoader  - Read the first line: package com.selgentests.pageobjects;
+3078 DEBUG com.testhelper.CodeShellLoader  - Read next line: // TODO:  Need to programatically generate the package name.
+3078 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+3078 DEBUG com.testhelper.CodeShellLoader  - Read next line: /* Generated Page Object source file */
+3078 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+3079 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebDriver;
+3079 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebElement;
+3079 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.FindBy;
+3079 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.By;
+3079 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.PageFactory;
+3079 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+3079 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+3079 DEBUG com.testhelper.CodeShellLoader  - Read next line: public class <title>   {
+3079 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+3085 DEBUG com.testhelper.CodeShellLoader  - Read next line: <CodeBlockGoesHere>
+3086 DEBUG com.testhelper.CodeShellLoader  - Found code-block indicator, storing the header code:
+package com.selgentests.pageobjects;
+// TODO:  Need to programatically generate the package name.
+
+/* Generated Page Object source file */
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class <title>   {
+
+
+3086 DEBUG com.testhelper.CodeShellLoader  - Erasing temp StringBuffer with a new StringBuffer for processing the trailer code.
+3086 DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line:
+3086 DEBUG com.testhelper.CodeShellLoader  - Found the line: }
+3086 DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line: }
+3086 DEBUG com.testhelper.CodeShellLoader  - Found the line: null
+3086 DEBUG com.testhelper.CodeShellLoader  - Adding to CodeBucket the trailer code:
+
+}
+
+3053 DEBUG com.testhelper.CodeShellLoader  - Looking for code shell configuration file: ./resources/java-shell-configger.txt
+3054 DEBUG com.testhelper.CodeShellLoader  - Found it, using file: ./resources/java-shell-configger.txt
+3054 DEBUG com.testhelper.CodeShellLoader  - Read the first line: package com.selgentests.pageobjects;
+3054 DEBUG com.testhelper.CodeShellLoader  - Read next line: // TODO:  Need to programatically generate the package name.
+3054 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+3054 DEBUG com.testhelper.CodeShellLoader  - Read next line: /* Generated Page Object source file */
+3054 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+3054 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebDriver;
+3054 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebElement;
+3055 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.FindBy;
+3055 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.By;
+3055 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.PageFactory;
+3055 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+3055 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+3055 DEBUG com.testhelper.CodeShellLoader  - Read next line: public class <title>   {
+3055 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+3055 DEBUG com.testhelper.CodeShellLoader  - Read next line: <CodeBlockGoesHere>
+3058 DEBUG com.testhelper.CodeShellLoader  - Found code-block indicator, storing the header code:
+package com.selgentests.pageobjects;
+// TODO:  Need to programatically generate the package name.
+
+/* Generated Page Object source file */
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class <title>   {
+
+
+3058 DEBUG com.testhelper.CodeShellLoader  - Erasing temp StringBuffer with a new StringBuffer for processing the trailer code.
+3058 DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line:
+3058 DEBUG com.testhelper.CodeShellLoader  - Found the line: }
+3058 DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line: }
+3058 DEBUG com.testhelper.CodeShellLoader  - Found the line: null
+3059 DEBUG com.testhelper.CodeShellLoader  - Adding to CodeBucket the trailer code:
+
+}
+
+2700 DEBUG com.testhelper.CodeShellLoader  - Looking for code shell configuration file: ./resources/java-shell-configger.txt
+2701 DEBUG com.testhelper.CodeShellLoader  - Found it, using file: ./resources/java-shell-configger.txt
+2701 DEBUG com.testhelper.CodeShellLoader  - Read the first line: package com.selgentests.pageobjects;
+2701 DEBUG com.testhelper.CodeShellLoader  - Read next line: // TODO:  Need to programatically generate the package name.
+2701 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+2701 DEBUG com.testhelper.CodeShellLoader  - Read next line: /* Generated Page Object source file */
+2701 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+2701 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebDriver;
+2701 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebElement;
+2701 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.FindBy;
+2701 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.By;
+2701 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.PageFactory;
+2702 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+2702 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+2702 DEBUG com.testhelper.CodeShellLoader  - Read next line: public class <title>   {
+2702 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+2702 DEBUG com.testhelper.CodeShellLoader  - Read next line: <CodeBlockGoesHere>
+2702 DEBUG com.testhelper.CodeShellLoader  - Found code-block indicator, storing the header code:
+package com.selgentests.pageobjects;
+// TODO:  Need to programatically generate the package name.
+
+/* Generated Page Object source file */
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class <title>   {
+
+
+2702 DEBUG com.testhelper.CodeShellLoader  - Erasing temp StringBuffer with a new StringBuffer for processing the trailer code.
+2702 DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line:
+2702 DEBUG com.testhelper.CodeShellLoader  - Found the line: }
+2702 DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line: }
+2702 DEBUG com.testhelper.CodeShellLoader  - Found the line: null
+2703 DEBUG com.testhelper.CodeShellLoader  - Adding to CodeBucket the trailer code:
+
+}
+
+3045 DEBUG com.testhelper.CodeShellLoader  - Looking for code shell configuration file: ./resources/java-shell-configger.txt
+3046 DEBUG com.testhelper.CodeShellLoader  - Found it, using file: ./resources/java-shell-configger.txt
+3046 DEBUG com.testhelper.CodeShellLoader  - Read the first line: package com.selgentests.pageobjects;
+3046 DEBUG com.testhelper.CodeShellLoader  - Read next line: // TODO:  Need to programatically generate the package name.
+3051 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+3051 DEBUG com.testhelper.CodeShellLoader  - Read next line: /* Generated Page Object source file */
+3051 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+3051 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebDriver;
+3052 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebElement;
+3052 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.FindBy;
+3052 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.By;
+3052 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.PageFactory;
+3052 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+3052 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+3052 DEBUG com.testhelper.CodeShellLoader  - Read next line: public class <title>   {
+3052 DEBUG com.testhelper.CodeShellLoader  - Read next line:
+3052 DEBUG com.testhelper.CodeShellLoader  - Read next line: <CodeBlockGoesHere>
+3052 DEBUG com.testhelper.CodeShellLoader  - Found code-block indicator, storing the header code:
+package com.selgentests.pageobjects;
+// TODO:  Need to programatically generate the package name.
+
+/* Generated Page Object source file */
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class <title>   {
+
+
+3052 DEBUG com.testhelper.CodeShellLoader  - Erasing temp StringBuffer with a new StringBuffer for processing the trailer code.
+3053 DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line:
+3053 DEBUG com.testhelper.CodeShellLoader  - Found the line: }
+3053 DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line: }
+3053 DEBUG com.testhelper.CodeShellLoader  - Found the line: null
+3053 DEBUG com.testhelper.CodeShellLoader  - Adding to CodeBucket the trailer code:
+
+}
+
+818  DEBUG com.testhelper.CodeShellLoader  - Looking for code shell configuration file: ./resources/java-shell-configger.txt
+819  DEBUG com.testhelper.CodeShellLoader  - Found it, using file: ./resources/java-shell-configger.txt
+819  DEBUG com.testhelper.CodeShellLoader  - Read the first line: package com.selgentests.pageobjects;
+819  DEBUG com.testhelper.CodeShellLoader  - Read next line: // TODO:  Need to programatically generate the package name.
+819  DEBUG com.testhelper.CodeShellLoader  - Read next line:
+819  DEBUG com.testhelper.CodeShellLoader  - Read next line: /* Generated Page Object source file */
+819  DEBUG com.testhelper.CodeShellLoader  - Read next line:
+819  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebDriver;
+820  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebElement;
+820  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.FindBy;
+820  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.By;
+820  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.PageFactory;
+820  DEBUG com.testhelper.CodeShellLoader  - Read next line:
+820  DEBUG com.testhelper.CodeShellLoader  - Read next line:
+820  DEBUG com.testhelper.CodeShellLoader  - Read next line: public class <title>   {
+820  DEBUG com.testhelper.CodeShellLoader  - Read next line:
+820  DEBUG com.testhelper.CodeShellLoader  - Read next line: <CodeBlockGoesHere>
+820  DEBUG com.testhelper.CodeShellLoader  - Found code-block indicator, storing the header code:
+package com.selgentests.pageobjects;
+// TODO:  Need to programatically generate the package name.
+
+/* Generated Page Object source file */
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class <title>   {
+
+
+821  DEBUG com.testhelper.CodeShellLoader  - Erasing temp StringBuffer with a new StringBuffer for processing the trailer code.
+821  DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line:
+821  DEBUG com.testhelper.CodeShellLoader  - Found the line: }
+821  DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line: }
+821  DEBUG com.testhelper.CodeShellLoader  - Found the line: null
+821  DEBUG com.testhelper.CodeShellLoader  - Adding to CodeBucket the trailer code:
+
+}
+
+3857 DEBUG com.testhelper.CodeShellLoader  - Looking for code shell configuration file: ./resources/java-shell-configger.txt
+3867 DEBUG com.testhelper.CodeShellLoader  - Found it, using file: ./resources/java-shell-configger.txt
+3867 DEBUG com.testhelper.CodeShellLoader  - Read the first line: package com.selgentests.pageobjects;
+3868 DEBUG com.testhelper.CodeShellLoader  - Read next line: // TODO:  Need to programatically generate the package name.
+3868 DEBUG com.testhelper.CodeShellLoader  - Read next line: 
+3868 DEBUG com.testhelper.CodeShellLoader  - Read next line: /* Generated Page Object source file */
+3868 DEBUG com.testhelper.CodeShellLoader  - Read next line: 
+3868 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebDriver;
+3868 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebElement;
+3868 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.FindBy;
+3868 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.By;
+3868 DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.PageFactory;
+3868 DEBUG com.testhelper.CodeShellLoader  - Read next line: 
+3868 DEBUG com.testhelper.CodeShellLoader  - Read next line: 
+3868 DEBUG com.testhelper.CodeShellLoader  - Read next line: public class <title>   {
+3869 DEBUG com.testhelper.CodeShellLoader  - Read next line: 
+3869 DEBUG com.testhelper.CodeShellLoader  - Read next line: <CodeBlockGoesHere>
+3869 DEBUG com.testhelper.CodeShellLoader  - Found code-block indicator, storing the header code:
+package com.selgentests.pageobjects;
+// TODO:  Need to programatically generate the package name.
+
+/* Generated Page Object source file */
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class <title>   {
+
+
+3869 DEBUG com.testhelper.CodeShellLoader  - Erasing temp StringBuffer with a new StringBuffer for processing the trailer code.
+3869 DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line: 
+3869 DEBUG com.testhelper.CodeShellLoader  - Found the line: }
+3869 DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line: }
+3869 DEBUG com.testhelper.CodeShellLoader  - Found the line: null
+3869 DEBUG com.testhelper.CodeShellLoader  - Adding to CodeBucket the trailer code:
+
+}
+
+340  DEBUG com.testhelper.CodeShellLoader  - Looking for code shell configuration file: ./resources/java-shell-configger.txt
+340  DEBUG com.testhelper.CodeShellLoader  - Found it, using file: ./resources/java-shell-configger.txt
+340  DEBUG com.testhelper.CodeShellLoader  - Read the first line: package com.selgentests.pageobjects;
+340  DEBUG com.testhelper.CodeShellLoader  - Read next line: // TODO:  Need to programatically generate the package name.
+340  DEBUG com.testhelper.CodeShellLoader  - Read next line: 
+340  DEBUG com.testhelper.CodeShellLoader  - Read next line: /* Generated Page Object source file */
+340  DEBUG com.testhelper.CodeShellLoader  - Read next line: 
+341  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebDriver;
+341  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebElement;
+341  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.FindBy;
+341  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.By;
+341  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.PageFactory;
+341  DEBUG com.testhelper.CodeShellLoader  - Read next line: 
+341  DEBUG com.testhelper.CodeShellLoader  - Read next line: 
+341  DEBUG com.testhelper.CodeShellLoader  - Read next line: public class <title>   {
+341  DEBUG com.testhelper.CodeShellLoader  - Read next line: 
+341  DEBUG com.testhelper.CodeShellLoader  - Read next line: <CodeBlockGoesHere>
+341  DEBUG com.testhelper.CodeShellLoader  - Found code-block indicator, storing the header code:
+package com.selgentests.pageobjects;
+// TODO:  Need to programatically generate the package name.
+
+/* Generated Page Object source file */
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class <title>   {
+
+
+341  DEBUG com.testhelper.CodeShellLoader  - Erasing temp StringBuffer with a new StringBuffer for processing the trailer code.
+342  DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line: 
+342  DEBUG com.testhelper.CodeShellLoader  - Found the line: }
+342  DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line: }
+342  DEBUG com.testhelper.CodeShellLoader  - Found the line: null
+342  DEBUG com.testhelper.CodeShellLoader  - Adding to CodeBucket the trailer code:
+
+}
+
+331  DEBUG com.testhelper.CodeShellLoader  - Looking for code shell configuration file: ./resources/java-shell-configger.txt
+331  DEBUG com.testhelper.CodeShellLoader  - Found it, using file: ./resources/java-shell-configger.txt
+332  DEBUG com.testhelper.CodeShellLoader  - Read the first line: package com.selgentests.pageobjects;
+332  DEBUG com.testhelper.CodeShellLoader  - Read next line: // TODO:  Need to programatically generate the package name.
+332  DEBUG com.testhelper.CodeShellLoader  - Read next line: 
+332  DEBUG com.testhelper.CodeShellLoader  - Read next line: /* Generated Page Object source file */
+332  DEBUG com.testhelper.CodeShellLoader  - Read next line: 
+332  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebDriver;
+332  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.WebElement;
+332  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.FindBy;
+332  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.By;
+332  DEBUG com.testhelper.CodeShellLoader  - Read next line: import org.openqa.selenium.support.PageFactory;
+333  DEBUG com.testhelper.CodeShellLoader  - Read next line: 
+333  DEBUG com.testhelper.CodeShellLoader  - Read next line: 
+333  DEBUG com.testhelper.CodeShellLoader  - Read next line: public class <title>   {
+333  DEBUG com.testhelper.CodeShellLoader  - Read next line: 
+333  DEBUG com.testhelper.CodeShellLoader  - Read next line: <CodeBlockGoesHere>
+333  DEBUG com.testhelper.CodeShellLoader  - Found code-block indicator, storing the header code:
+package com.selgentests.pageobjects;
+// TODO:  Need to programatically generate the package name.
+
+/* Generated Page Object source file */
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class <title>   {
+
+
+333  DEBUG com.testhelper.CodeShellLoader  - Erasing temp StringBuffer with a new StringBuffer for processing the trailer code.
+333  DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line: 
+333  DEBUG com.testhelper.CodeShellLoader  - Found the line: }
+334  DEBUG com.testhelper.CodeShellLoader  - Adding to temp StringBuffer the trailer line: }
+334  DEBUG com.testhelper.CodeShellLoader  - Found the line: null
+334  DEBUG com.testhelper.CodeShellLoader  - Adding to CodeBucket the trailer code:
+
+}
+

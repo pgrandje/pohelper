@@ -1,0 +1,84 @@
+354  DEBUG com.testhelper.TagSwitcher  - Adding tag <a>
+354  DEBUG com.testhelper.TagSwitcher  - ... with code: 
+354  DEBUG com.testhelper.TagSwitcher  - com.testhelper.TagTemplate@2d58f9d3
+358  DEBUG com.testhelper.TagSwitcher  - Adding tag <h1>
+358  DEBUG com.testhelper.TagSwitcher  - ... with code: 
+359  DEBUG com.testhelper.TagSwitcher  - com.testhelper.TagTemplate@2c79a2e7
+360  DEBUG com.testhelper.TagSwitcher  - Adding tag <h2>
+360  DEBUG com.testhelper.TagSwitcher  - ... with code: 
+360  DEBUG com.testhelper.TagSwitcher  - com.testhelper.TagTemplate@65b60280
+686  DEBUG com.testhelper.TagSwitcher  - Adding tag <p>
+686  DEBUG com.testhelper.TagSwitcher  - ... with code: 
+686  DEBUG com.testhelper.TagSwitcher  - com.testhelper.TagTemplate@214a55f2
+688  DEBUG com.testhelper.TagSwitcher  - Adding tag <ol>
+688  DEBUG com.testhelper.TagSwitcher  - ... with code: 
+688  DEBUG com.testhelper.TagSwitcher  - com.testhelper.TagTemplate@175093f1
+690  DEBUG com.testhelper.TagSwitcher  - Adding tag <li>
+690  DEBUG com.testhelper.TagSwitcher  - ... with code: 
+690  DEBUG com.testhelper.TagSwitcher  - com.testhelper.TagTemplate@2b20bf2c
+709  DEBUG com.testhelper.TagSwitcher  - *** Dumping Tag Lookup Table ***
+709  DEBUG com.testhelper.TagSwitcher  - Key: <h2>   Member Code:    // Header2
+   @FindBy(<locator>)
+   private WebElement <symbol>;
+
+709  DEBUG com.testhelper.TagSwitcher  - Key: <h1>   Member Code:    // Header1
+   @FindBy(<locator>)
+   private WebElement <symbol>;
+
+709  DEBUG com.testhelper.TagSwitcher  - Key: <ol>   Member Code:    // numbered list begin
+<-- Code Block End -->
+
+
+<*** New Tag ***>
+<ul>
+<-- Code Block Begin -->
+   @FindBy(<locator>)
+   private WebElement <symbol>UiListItem;
+
+709  DEBUG com.testhelper.TagSwitcher  - Key: <p>   Member Code:    // Paragraph <p> element
+   @FindBy(<locator>)
+   private WebElement <symbol>;
+
+709  DEBUG com.testhelper.TagSwitcher  - Key: <li>   Member Code:    @FindBy(<locator>)
+   private WebElement <symbol>LiListItem;
+
+709  DEBUG com.testhelper.TagSwitcher  - Key: <a>   Member Code:    // Anchor tag (<a>)
+   @FindBy(<locator>)
+   private WebElement <symbol>;
+
+710  DEBUG com.testhelper.TagSwitcher  - *** End Tag Lookup Table ***
+710  DEBUG com.testhelper.TagSwitcher  - Looking up '<head>'
+710  DEBUG com.testhelper.TagSwitcher  - Tag not found in lookup table. Returning null.
+710  DEBUG com.testhelper.TagSwitcher  - Looking up '<title>'
+710  DEBUG com.testhelper.TagSwitcher  - Tag not found in lookup table. Returning null.
+711  DEBUG com.testhelper.TagSwitcher  - Looking up '<body>'
+711  DEBUG com.testhelper.TagSwitcher  - Tag not found in lookup table. Returning null.
+711  DEBUG com.testhelper.TagSwitcher  - Looking up '<h1>'
+711  DEBUG com.testhelper.TagSwitcher  - Returning template with member code:    // Header1
+   @FindBy(<locator>)
+   private WebElement <symbol>;
+
+727  DEBUG com.testhelper.TagSwitcher  - Looking up '<h1>'
+727  DEBUG com.testhelper.TagSwitcher  - Returning template with member code:    // Header1
+   @FindBy(<locator>)
+   private WebElement <symbol>;
+
+731  DEBUG com.testhelper.TagSwitcher  - Looking up '<h2>'
+731  DEBUG com.testhelper.TagSwitcher  - Returning template with member code:    // Header2
+   @FindBy(<locator>)
+   private WebElement <symbol>;
+
+735  DEBUG com.testhelper.TagSwitcher  - Looking up '<h1>'
+735  DEBUG com.testhelper.TagSwitcher  - Returning template with member code:    // Header1
+   @FindBy(<locator>)
+   private WebElement <symbol>;
+
+738  DEBUG com.testhelper.TagSwitcher  - Looking up '<p>'
+739  DEBUG com.testhelper.TagSwitcher  - Returning template with member code:    // Paragraph <p> element
+   @FindBy(<locator>)
+   private WebElement <symbol>;
+
+744  DEBUG com.testhelper.TagSwitcher  - Looking up '<div>'
+744  DEBUG com.testhelper.TagSwitcher  - Tag not found in lookup table. Returning null.
+744  DEBUG com.testhelper.TagSwitcher  - Looking up '<div>'
+744  DEBUG com.testhelper.TagSwitcher  - Tag not found in lookup table. Returning null.

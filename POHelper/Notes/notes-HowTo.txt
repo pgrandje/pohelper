@@ -1,0 +1,26 @@
+A) to deploy a jar
+
+1 have precompiled classes.
+
+2) from root  .. jar -cvmf manifest.mf com(src package root) selGen.jar
+one line i nthe manifest.mf file that says the main class.
+I must create this.
+3) to execute java -jar selGen.jar
+
+search Google for manifest file main class.
+
+
+B) Configure Tomcat to point to the project
+
+In the conf folder add an xml file who's name corresponds to the URL path after the hostname-port.
+For example:
+- I added the file "TomcatRoot"/conf/Catalina/localhost/testpages.xml
+- It's content defines a Context which sets the URL path and sets the 'docBase' attribute to the desired filepath.
+
+<Context path="/testpages" docBase="/Users/pgrandje/IdeaProjects/selgen/resources/testpages"/>
+
+
+I got info from this thread:
+    http://www.coderanch.com/t/87763/Tomcat/Configuring-context-CATALINA-HOME-webapps
+And from their docs:
+    http://tomcat.apache.org/tomcat-7.0-doc/config/engine.html

@@ -1,0 +1,36 @@
+697  DEBUG com.testhelper.CodeBucket  - Set filename to 'Tag_Tests.java'.
+697  DEBUG com.testhelper.CodeBucket  - Setting classname to 'Tag_Tests'.
+697  DEBUG com.testhelper.CodeBucket  - Using code header:
+697  DEBUG com.testhelper.CodeBucket  - package com.selgentests.pageobjects;
+// TODO:  Need to programatically generate the package name.
+
+/* Generated Page Object source file */
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class <title>   {
+
+
+698  DEBUG com.testhelper.CodeBucket  - Added the class name to the code header.
+698  DEBUG com.testhelper.CodeBucket  - Generated Code header will look like this:
+package com.selgentests.pageobjects;
+// TODO:  Need to programatically generate the package name.
+
+/* Generated Page Object source file */
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+
+
+public class Tag_Tests   {
+
+
+747  INFO  com.testhelper.CodeBucket  - Creating output file: /Users/pgrandje/IdeaProjects/SelGenTest/src/main/java/com/selgentests/pageobjects/Tag_Tests.java

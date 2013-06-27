@@ -1,0 +1,53 @@
+Known Issues:
+
+1) Tags with no text or attributes should not be generated, but should be reported.
+
+2) Tags with a title attribute can use title for a locator.  They may not be unique but I'm also using className
+which often won't be unique.  These should be controlled via a configuration option.
+
+3) Must deal with sibling-position when computing css locators.
+
+4) Need to configure the logs to rewrite each time.
+
+5) Command-line options
+-logs (default)
+-log="classname"
+-noLogs
+-generate
+-analyze
+-analyze-generate (default)
+-url="http://xxxxx"
+-pageOnly (default)
+-fullSite
+-useTitleAttributes
+
+
+6) Filtering is done via:
+    a) Template config file must list the tag
+    b) Tag must have either attributes or non-empty text.
+
+
+7)  How can I distinguish if a <div> requires a click?
+
+8) An analysis file could get out of date, what does that mean for generation?
+
+
+9)  Bug: Can't find the Facebook title tag when I'm logged into FB.
+
+10) Enhancement: Remove underscores from the filename.
+
+11) We begin a CSS Locator path when an ID is found or we hit the <body> tag while traversing up a Node's
+ancestor chain.  I could configure it to handle NAME attributes, this should be configurable in case Names are not
+unique. We don't consider attributes other than IDs or Names because no others can be assumed to be unique.  I should
+ add a configuration to specify an attribute other than ID or Name.
+
+
+12)  Bugs found writing locators:
+    For the textless <p> with no attributes, this returned true but should have been false.
+    For some reason, <li>s exist with attributes that can't be used as locators, but doesn't generate a css either.
+
+
+13) Node vs. Element.  Node is the more general base class.  Element is a tag, it's closing tag, it's contents, and attributes.
+
+
+14) When there's no <title> the generated page object file name defaults to uielement1
