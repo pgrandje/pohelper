@@ -1,1 +1,7 @@
 *IntelliJ*
+*.log
+*.iml
+*.ims
+*.iws
+*.ipr
+.svn

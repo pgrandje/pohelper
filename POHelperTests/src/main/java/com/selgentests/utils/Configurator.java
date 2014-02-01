@@ -1,7 +1,6 @@
 package com.selgentests.utils;
 
 import org.apache.log4j.Logger;
-import org.testng.Assert;
 
 
 
@@ -55,8 +54,8 @@ public class Configurator {
 		logger.info("Using browserName: " + browserName);
 		
 		// Verify no required parameters are null.
-		Assert.assertNotNull(url, "Setup error -- URL is null.");
-		Assert.assertNotNull(browserName, "Setup error -- Browser Name is null.");
+//		Assert.assertNotNull(url, "Setup error -- URL is null.");
+//		Assert.assertNotNull(browserName, "Setup error -- Browser Name is null.");
 		
 		// Set the Browser.
 		if(browserName.equalsIgnoreCase("IE") || browserName.equalsIgnoreCase("INTERNET EXPLORER"))  
