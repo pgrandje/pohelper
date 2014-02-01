@@ -1,0 +1,7 @@
+- Improve on the README
+- Rename Analysis File to Hints File and rename the module to Hints.
+- Modify the code generation to read user-selected tags from the Hints/Analysis file.
+- Update the command-line params with more functionality
+- Add to Hints/Analysis file the ability for user to specify the beginning of a new page object.
+- Add to Hints/Analysis file the ability for the user to edit the suggested locator and comment.
+- Add to Hints/Analysis file the ability for the user to edit the member and method names.
