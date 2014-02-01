@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by IntelliJ IDEA.
+ * Descriptors are small objects that control a single unit of the generation process and serve as a
+ * handle to an element to be generated.  The AnalysisDescriptor stores the information for a single
+ * Analysis record corresponding to a specific HTML tag in the DOM which is targeted for an
+ * Analysis record to be displayed to the user.
  * User: pgrandje
  * Date: 9/16/12
- * Time: 6:24 PM
- * To change this template use File | Settings | File Templates.
  */
 public class AnalysisDescriptor {
 

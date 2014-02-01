@@ -1,4 +1,6 @@
-- Improve on the README
+- Learn how to run app from the command-line.
+- Learn how to deploy the app to another location.
+- Add to the README as thoughts arise.
 - Rename Analysis File to Hints File and rename the module to Hints.
 - Modify the code generation to read user-selected tags from the Hints/Analysis file.
 - Update the command-line params with more functionality

@@ -8,11 +8,9 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * Created by IntelliJ IDEA.
+ * Reads in the Hints file for the Generator when the modified Hints file is used for code generation.
  * User: pgrandje
  * Date: 9/9/12
- * Time: 4:39 PM
- * To change this template use File | Settings | File Templates.
  */
 public class AnalysisReader {
 

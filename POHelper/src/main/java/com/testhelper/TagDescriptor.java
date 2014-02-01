@@ -10,20 +10,18 @@ import java.util.LinkedList;
 
 
 /**
- * Created by IntelliJ IDEA.
+ * Descriptors are small objects that control a single unit of the generation process and serve as a
+ * handle to an element to be generated.  The TagDescriptor stores the information for a
+ * specific HTML tag in the DOM which is targeted for code members and methods to be generated.
+ *
+ * Also stores attribute-value information also read from the page source.
+ * It performs the symbol generation based on attribute and textContent info read into an instance.
+ * After symbol generation, it stores the code snippets for this tag instance ready for dumping into the
+ * final source code file.
+ *
  * User: pgrandje
  * Date: 6/2/12
- * Time: 1:28 PM
- * To change this template use File | Settings | File Templates.
  */
-
-/* TagDescriptor corresponds to an actual instance of a tag in the page source.  It stores the
-   private member code and the method code ready to be written into the source code file.
-   It stores attribute-value information also read from the page source.
-   It performs the symbol generation based on attribute and textContent info read into an instance.
-   After symbol generation, it stores the code snippets for this tag instance ready for dumping into the
-   final source code file.
-*/
 public class TagDescriptor {
 
     private Configurator configurator;

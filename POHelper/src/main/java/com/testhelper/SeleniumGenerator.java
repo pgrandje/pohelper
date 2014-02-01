@@ -11,8 +11,10 @@ import org.apache.log4j.PropertyConfigurator;
 import org.w3c.dom.Node;
 
 /**
+ * This is the Main Entry Point for the entire app.
  * Creator:  Paul Grandjean
- *
+ * Date:  Was first created sometime in 2011 :-)
+ * Has since gone through multiple incremental modifications and refactorings.
  */
 
 public class SeleniumGenerator

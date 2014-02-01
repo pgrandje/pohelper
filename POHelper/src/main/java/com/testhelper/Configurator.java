@@ -25,7 +25,6 @@ import javax.xml.parsers.ParserConfigurationException;
  * @param  String[] args  -- command-line arguments passed to the configurator from main().
  * @author Paul Grandjean
  * Date: 5/5/12
- * Time: 10:49 AM
  */
 // A Singleton design pattern is used here to ensure there is only ever one instance of the Configurator.
 public class Configurator {

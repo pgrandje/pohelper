@@ -5,10 +5,10 @@ import org.apache.log4j.Logger;
 
 
 /**
- * Created by IntelliJ IDEA.
+ * Collects and stores the member and method names used during generation. This is to avoid duplicate
+ * symbol names being generated.
  * User: pgrandje
  * Date: 8/6/12
- * Time: 10:46 PM
  * To change this template use File | Settings | File Templates.
  */
 public class NameRecorder {

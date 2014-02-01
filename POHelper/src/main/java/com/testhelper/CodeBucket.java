@@ -7,11 +7,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * Created by IntelliJ IDEA.
+ * Stores the generated code as it is accumulated.  Serves as a buffer which can be modified before
+ * the code output is written or displayed.
  * User: pgrandje
  * Date: 6/3/12
- * Time: 6:06 PM
- * To change this template use File | Settings | File Templates.
  */
 public class CodeBucket {
 
