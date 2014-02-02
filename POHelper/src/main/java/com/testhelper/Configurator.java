@@ -26,8 +26,9 @@ import javax.xml.parsers.ParserConfigurationException;
  * @author Paul Grandjean
  * Date: 5/5/12
  */
-// A Singleton design pattern is used here to ensure there is only ever one instance of the Configurator.
 public class Configurator {
+
+    // A Singleton design pattern is used here to ensure there is only ever one instance of the Configurator.
 
     // The Configurator is a singleton, and is created by it's static factory method.
     private static Configurator singletonConfigurator;

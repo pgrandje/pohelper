@@ -5,11 +5,10 @@ import org.w3c.dom.Node;
 import org.apache.log4j.Logger;
 
 /**
- * Created by Paul Grandjean.
+ * Recursive function, the Node Scanner traverses the DOM and creates objects and initiates actions based on the DOM
+ * nodes it encounters.  This is the main engine driving the code generating process.
  * User: pgrandje
  * Date: 10/23/11
- * Time: 10:11 AM
- * To change this template use File | Settings | File Templates.
  */
 public class NodeScanner {
 

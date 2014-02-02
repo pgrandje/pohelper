@@ -9,7 +9,6 @@ import org.apache.log4j.Logger;
  * symbol names being generated.
  * User: pgrandje
  * Date: 8/6/12
- * To change this template use File | Settings | File Templates.
  */
 public class NameRecorder {
 

@@ -5,11 +5,11 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * Created by IntelliJ IDEA.
+ * List of Tag Descriptors.  This is the data structure containing info on all the HTML tags currently
+ * being processed.  Each element in the list corresponds to a specific HTML tag in the DOM that has
+ * been targeted for potentially generating code.
  * User: pgrandje
  * Date: 6/3/12
- * Time: 2:57 PM
- * To change this template use File | Settings | File Templates.
  */
 public class TagDescriptorList implements Iterable<TagDescriptor> {
 

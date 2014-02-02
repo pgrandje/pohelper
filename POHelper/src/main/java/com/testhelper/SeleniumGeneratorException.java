@@ -1,11 +1,9 @@
 package com.testhelper;
 
 /**
- * Created by IntelliJ IDEA.
+ * An exception type to identify error conditions specific to the page object helper/generator.
  * User: pgrandje
  * Date: 5/5/12
- * Time: 11:11 AM
- * To change this template use File | Settings | File Templates.
  */
 public class SeleniumGeneratorException extends RuntimeException {
 

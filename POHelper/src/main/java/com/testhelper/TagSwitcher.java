@@ -8,11 +8,13 @@ import java.util.Iterator;
 import org.apache.log4j.Logger;
 
 /**
- * Created by IntelliJ IDEA.
+ * Stores a map of key-value pairs where the keys are the HTML tag types (<div>, <ul> etc) from the config file and the
+ * values are their associated code-snippet templates. These pairings are specified in the code template file and
+ * stored in memory with this object.  As the Generator scans the dom, it looks up each tag in this data structure and
+ * if the encountered tag type is registered here, the code snippet for member-locator code, or the code snippet for
+ * the related method is returned to the generation engine.
  * User: pgrandje
  * Date: 10/23/11
- * Time: 11:10 AM
- * To change this template use File | Settings | File Templates.
  */
 public class TagSwitcher {
 
