@@ -12,9 +12,23 @@ Command-line Params
 
     -url http://www.abcnews.com -dest /Users/pgrandje/MyProjects/testgentests/mygeneratedpageobjects
 
+  This defaults to generating the page object code although there are other options, see below.
+
 - Currently I'm not running this from the command-line yet, although if you're comfortable setting up a typical java runtime
 environment you should only need to be sure your CLASSPATH is set correctly to run from the command-line.
 only from the IDE.
+
+- Other options
+-generate  (can be set to analyze for the hints file.)
+-codeShell or -codeShellTemplate -- for setting the filepath of the code template file.  This is the file that defines
+ the other shell, such as the class name, for the page object.
+-tagSwitch or tagSwitchTemplate -- specifies the filepath for the tags to be used for code generation and the code template
+ snippets for code generation.
+-loc or -locator -- specifies the strategy to use for writing WebElement locators.
+-defMem or -defaultMemberName -- specifies the string to use by default for WebElement members when no useful string
+ from the corresponding HTML tag can be used.
+-h or -help -- displays command-line help.
+
 
 
 

@@ -22,7 +22,6 @@ import javax.xml.parsers.ParserConfigurationException;
  * The Configurator sets the runtime configuration. This class is a singleton.  It's Constructor is private and both,
  * creating an new instance, or retrieving the one and only instance are both handled by the getConfigurator() method.
  * getConfigurator() operates as a Factory and a getter.
- * @param  String[] args  -- command-line arguments passed to the configurator from main().
  * @author Paul Grandjean
  * Date: 5/5/12
  */
@@ -34,6 +33,17 @@ public class Configurator {
     private static Configurator singletonConfigurator;
 
     private Logger logger;
+
+
+    private String commandLineHelp = "-generate  (can be set to analyze for the hints file.)\n" +
+            "-codeShell or -codeShellTemplate -- for setting the filepath of the code template file.  This is the file that defines\n" +
+            " the other shell, such as the class name, for the page object.\n" +
+            "-tagSwitch or tagSwitchTemplate -- specifies the filepath for the tags to be used for code generation and the code template\n" +
+            " snippets for code generation.\n" +
+            "-loc or -locator -- specifies the strategy to use for writing WebElement locators.\n" +
+            "-defMem or -defaultMemberName -- specifies the string to use by default for WebElement members when no useful string\n" +
+            " from the corresponding HTML tag can be used.\n" +
+            "-h or -help -- displays command-line help.";
 
     // URL
     private URL baseUrlToScan;
@@ -124,13 +134,6 @@ public class Configurator {
         generate = GenerateStatus.GENERATE_ONLY;
         destinationFilePath = ".";
 
-        // Next, load setting from the config file, if one exists
-
-        // loadConfigFile();
-
-
-
-
         // Command-line params will override the defaults and the config file.
 
         for (int i=0; i<args.length; i++) {
@@ -193,6 +196,9 @@ public class Configurator {
                 i++;
                 validateArgValue(args[i]);
                 defaultMemberName = args[i];
+            }
+            else if (args[i].equals("-h") || args[i].equals("-help")) {
+                printCommandLineHelp();
             }
             else {
                 printCommandLineHelp();
@@ -259,7 +265,7 @@ public class Configurator {
             return GenerateStatus.ANALYZE_AND_GENERATE;
         }
         else {
-            printCommandLineHelp();
+            printCommandLineError();
             throw new SeleniumGeneratorException("Error in command-line syntax.  Invalid -generate option found.");
         }
 
@@ -283,10 +289,12 @@ public class Configurator {
         return locatorConfig;
     }
 
-
     public void printCommandLineHelp() {
-        System.out.println("Syntax error in command-line parameters.");
+        System.out.println("");
+    }
 
+    public void printCommandLineError() {
+        System.out.println("Syntax error in command-line parameters. Use -h or -help for correct command-line parameters.");
     }
 
 
@@ -336,7 +344,7 @@ public class Configurator {
 
     //  *** XML-Config file processing methods ****
 
-        private void loadConfigFile() {
+    private void loadConfigFile() {
 
         DocumentBuilder dBuilder;
         Document doc;
