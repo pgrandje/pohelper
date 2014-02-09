@@ -5,25 +5,25 @@ import java.util.List;
 
 /**
  * Descriptors are small objects that control a single unit of the generation process and serve as a
- * handle to an element to be generated.  The AnalysisDescriptor stores the information for a single
+ * handle to an element to be generated.  The HintsDescriptor stores the information for a single
  * Analysis record corresponding to a specific HTML tag in the DOM which is targeted for an
  * Analysis record to be displayed to the user.
  * User: pgrandje
  * Date: 9/16/12
  */
-public class AnalysisDescriptor {
+public class HintsDescriptor {
 
     public enum LocatorType {ID, CSS_LOCATOR};
 
     private String tag;
     private String text;
-    private ArrayList<AnalysisAttribute> attributes;
+    private ArrayList<HintsAttribute> attributes;
     private LocatorType locatorType;
     private String locatorValue;
 
 
-    public AnalysisDescriptor() {
-        attributes = new ArrayList<AnalysisAttribute>();
+    public HintsDescriptor() {
+        attributes = new ArrayList<HintsAttribute>();
     }
 
     public String getTag() {
@@ -42,11 +42,11 @@ public class AnalysisDescriptor {
         this.text = text;
     }
 
-    public List<AnalysisAttribute> getAttributes() {
+    public List<HintsAttribute> getAttributes() {
         return this.attributes;
     }
 
-    public void addAttribute(AnalysisAttribute attribute) {
+    public void addAttribute(HintsAttribute attribute) {
         this.attributes.add(attribute);
     }
 

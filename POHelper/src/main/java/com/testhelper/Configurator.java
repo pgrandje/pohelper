@@ -51,9 +51,10 @@ public class Configurator {
     // **** Generation Configurations ****
 
     // Generation Choices
-    public enum GenerateStatus {GENERATE_ONLY, ANALYZE_ONLY, FROM_ANALYSIS, ANALYZE_AND_GENERATE };
+    public enum GenerateType {
+        CODE, HINTS_ONLY, CODE_FROM_HINTS, ANALYZE_AND_GENERATE };
     // Default if -generate param is not specified is to generate the sourcecode.
-    private GenerateStatus generate;
+    private GenerateType generate;
 
     // Locator Choices
     public enum LocatorConfig {CSS_ONLY, ATTRIBS_ONLY, ATTRIBS_CSS};
@@ -131,7 +132,7 @@ public class Configurator {
 
         // Set the default runtime values.
         // No default for the URL, if an invalid URL is supplied then an exception is thrown.  This is what we want.
-        generate = GenerateStatus.GENERATE_ONLY;
+        generate = GenerateType.CODE;
         destinationFilePath = ".";
 
         // Command-line params will override the defaults and the config file.
@@ -245,24 +246,20 @@ public class Configurator {
     }
 
 
-    private GenerateStatus assignGenerateValue(String generateOptionValue) {
+    private GenerateType assignGenerateValue(String generateOptionValue) {
 
-        if (generateOptionValue.equals("sourcecode")) {
+        if (generateOptionValue.equals("code")) {
 
             logger.info("Generating sourcecode only.");
-            return GenerateStatus.GENERATE_ONLY;
+            return GenerateType.CODE;
         }
-        else if (generateOptionValue.equals("analysis")) {
+        else if (generateOptionValue.equals("hints")) {
             logger.info("Generating analysis file only.");
-            return GenerateStatus.ANALYZE_ONLY;
+            return GenerateType.HINTS_ONLY;
         }
-        else if (generateOptionValue.equals("fromAnalysis")) {
-            logger.info("Generating both analysis file and sourcecode.");
-            return GenerateStatus.FROM_ANALYSIS;
-        }
-        else if (generateOptionValue.equals("both")) {
-            logger.info("Generating both analysis file and sourcecode.");
-            return GenerateStatus.ANALYZE_AND_GENERATE;
+        else if (generateOptionValue.equals("codefromhints")) {
+            logger.info("Generating code from hints file.");
+            return GenerateType.CODE_FROM_HINTS;
         }
         else {
             printCommandLineError();
@@ -280,7 +277,7 @@ public class Configurator {
         return destinationFilePath;
     }
 
-    public GenerateStatus getGenerateStatus() {
+    public GenerateType getGenerateStatus() {
         return generate;
     }
 

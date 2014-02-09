@@ -19,7 +19,7 @@ environment you should only need to be sure your CLASSPATH is set correctly to r
 only from the IDE.
 
 - Other options
--generate  (can be set to analyze for the hints file.)
+-generate code | hints | codefromhints
 -codeShell or -codeShellTemplate -- for setting the filepath of the code template file.  This is the file that defines
  the other shell, such as the class name, for the page object.
 -tagSwitch or tagSwitchTemplate -- specifies the filepath for the tags to be used for code generation and the code template

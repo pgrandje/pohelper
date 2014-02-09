@@ -37,7 +37,7 @@ public class SeleniumGenerator
         // CodeBucket accumulates and stores the code prior to writing it out.
         CodeBucket codeBucket = new CodeBucket();
 
-        AnalysisBucket analysisBucket = new AnalysisBucket();
+        HintsBucket analysisBucket = new HintsBucket();
 
         // NOTE: The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
         NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
@@ -52,7 +52,10 @@ public class SeleniumGenerator
         PageDescriptor pageObjectDescriptor = new PageDescriptor(pageSourceParser.getDom(), classNameRecorder);
         pageObjectDescriptor.setPageObjectName(codeBucket);
 
-
+        /* TODO: The NodeScanner, and several of the above objects, should be in the generate section below.
+                 You don't want to scan the nodes when you're generating from the HINTS FILE.
+                 But I do need a new TagDescriptorList that's built from the Hints file.  Is that correct?
+        */
         // Now -- Scan the nodes
         NodeScanner nodeScanner = new NodeScanner(tagSwitcher);
 
@@ -63,9 +66,9 @@ public class SeleniumGenerator
 
 
 
-        // Process the TagDescriptorList here to generate the analysis or code output (or both?).
+        // Process the TagDescriptorList here to generate the analysis or code output.
 
-        if (configurator.getGenerateStatus() == Configurator.GenerateStatus.ANALYZE_ONLY) {
+        if (configurator.getGenerateStatus() == Configurator.GenerateType.HINTS_ONLY) {
 
             // Write the analysis file.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
@@ -81,7 +84,7 @@ public class SeleniumGenerator
             analysisBucket.closeOutputFile();
 
         }
-        else if (configurator.getGenerateStatus() == Configurator.GenerateStatus.GENERATE_ONLY) {
+        else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE) {
 
             // Write the member code to the code buffer.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
@@ -98,16 +101,15 @@ public class SeleniumGenerator
             codeBucket.dumpToFile(configurator.getDestinationFilePath());
 
         }
-        else if (configurator.getGenerateStatus() == Configurator.GenerateStatus.FROM_ANALYSIS) {
+        else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE_FROM_HINTS) {
 
-            AnalysisReader analysisReader = new AnalysisReader();
-            analysisReader.openAnalysisFile();
+            HintsReader analysisReader = new HintsReader();
+            analysisReader.openHintsFile();
             analysisReader.loadAnalysis();
 
+            // TODO: Return a TagDescriptorList from the processing of the hints file--here.
+
             throw new SeleniumGeneratorException("Generation from analysis file is not yet implemented.");
-        }
-        else if (configurator.getGenerateStatus() == Configurator.GenerateStatus.ANALYZE_AND_GENERATE) {
-            throw new SeleniumGeneratorException("ANALYZE and GENERATE at the same time is not implemented.");
         }
         else {
             throw new SeleniumGeneratorException("Invalid configuration state.  Should never get here.");

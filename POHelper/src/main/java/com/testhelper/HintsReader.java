@@ -12,33 +12,33 @@ import java.io.IOException;
  * User: pgrandje
  * Date: 9/9/12
  */
-public class AnalysisReader {
+public class HintsReader {
 
     private final Logger logger = Logger.getLogger(this.getClass());
 
     // IntelliJ thinks filePath isn't used but it is in the open() method.
     private String filePath;
     private String defaultFilePath = "./analysis.txt";
-    private BufferedReader analysisFile;
+    private BufferedReader hintsFile;
 
     private final String recordDelimeter = "<*** New Tag ***>";
 
 
-    AnalysisReader() {}
+    HintsReader() {}
 
 
-    public void openAnalysisFile() throws FileNotFoundException {
-        openAnalysisFile(null);
+    public void openHintsFile() throws FileNotFoundException {
+        openHintsFile(null);
     }
 
 
-    public void openAnalysisFile(String filePath) throws FileNotFoundException {
+    public void openHintsFile(String filePath) throws FileNotFoundException {
 
         try {
             if (filePath == null) {
                 filePath = defaultFilePath;
             }
-            analysisFile = new BufferedReader(new FileReader(filePath));
+            hintsFile = new BufferedReader(new FileReader(filePath));
         }
         catch (FileNotFoundException fileNotFoundException) {
             throw fileNotFoundException;
@@ -47,13 +47,13 @@ public class AnalysisReader {
     }
 
 
-    public AnalysisDescriptorList loadAnalysis() throws IOException {
+    public HintsDescriptorList loadAnalysis() throws IOException {
 
         String currentTag = null;
 
-        String line = analysisFile.readLine();
+        String line = hintsFile.readLine();
 
-        AnalysisDescriptorList analysisDescriptorList = new AnalysisDescriptorList();
+        HintsDescriptorList analysisDescriptorList = new HintsDescriptorList();
 
         while (line != null){
 
@@ -65,13 +65,13 @@ public class AnalysisReader {
                 logger.debug("Processing a new tag.");
 
                 // Get the first field, which contains the tag.
-                line = analysisFile.readLine();
+                line = hintsFile.readLine();
 
                 // Check whether tag should be skipped, if so, skip all lines up to the next record, and re-loop.
                 if (line.charAt(0) == '*') {
                     logger.debug("Record marked as skipped.");
                     do {
-                        line = analysisFile.readLine();
+                        line = hintsFile.readLine();
                     } while ((line != null) && (!line.contains("<*** New Tag ***>")));
                     continue;
                 }
@@ -80,7 +80,7 @@ public class AnalysisReader {
 
                     // TODO:  put in exceptions for when I don't find what I'm expecting to find.
 
-                    AnalysisDescriptor analysisDescriptor = new AnalysisDescriptor();
+                    HintsDescriptor analysisDescriptor = new HintsDescriptor();
 
                     // Store the tag, it has already been read above.
                     String[] linePieces = line.split(": ");
@@ -89,13 +89,13 @@ public class AnalysisReader {
                     analysisDescriptor.setTag(tag);
 
                     // Read and store the text if we find it in the analysis.
-                    line = analysisFile.readLine();
+                    line = hintsFile.readLine();
                     if (line.contains("Text:")) {
                         linePieces = line.split(": ");
                         String text = linePieces[1];
                         logger.debug("Found text: " + text);
                         analysisDescriptor.setText(text);
-                        line = analysisFile.readLine();
+                        line = hintsFile.readLine();
                     }
 
                     // Read and store the list of attributes if we have them in the analysis.
@@ -104,12 +104,12 @@ public class AnalysisReader {
                         String attrNameValuePair = linePieces[1];
                         logger.debug("Found attribute name and value: " + attrNameValuePair);
                         String[] attrComponents = attrNameValuePair.split(" -- ");
-                        AnalysisAttribute analysisAttribute = new AnalysisAttribute();
+                        HintsAttribute analysisAttribute = new HintsAttribute();
                         String attrName = attrComponents[0].split(" = ")[1];
                         analysisAttribute.setAttributeName(attrName);
                         String attrValue = attrComponents[1].split(" = ")[1];
                         analysisAttribute.setAttributeValue(attrValue);
-                        line = analysisFile.readLine();
+                        line = hintsFile.readLine();
                     }
 
                     // Read and store the css locator if we have one in the analysis.
@@ -118,9 +118,9 @@ public class AnalysisReader {
                         String cssLocatorString = linePieces[1];
                         logger.debug("Found css locator string: " + cssLocatorString);
                         // TODO: Why am I only writing css locators to the analysis file?
-                        analysisDescriptor.setLocatorType(AnalysisDescriptor.LocatorType.CSS_LOCATOR);
+                        analysisDescriptor.setLocatorType(HintsDescriptor.LocatorType.CSS_LOCATOR);
                         analysisDescriptor.setLocatorValue(cssLocatorString);
-                        line = analysisFile.readLine();
+                        line = hintsFile.readLine();
                     }
 
                     analysisDescriptorList.add(analysisDescriptor);
@@ -130,7 +130,7 @@ public class AnalysisReader {
             }
 
 
-            line = analysisFile.readLine();
+            line = hintsFile.readLine();
 
         }
 

@@ -14,9 +14,9 @@ import java.io.IOException;
  * User: pgrandje
  * Date: 6/3/12
  */
-public class AnalysisBucket {
+public class HintsBucket {
 
-    private final Logger logger = Logger.getLogger(AnalysisBucket.class);
+    private final Logger logger = Logger.getLogger(HintsBucket.class);
 
     // The analysis text to be generated.
     private StringBuffer analysisBuffer;
@@ -24,12 +24,12 @@ public class AnalysisBucket {
     // For the output file.
     // TODO: Use the configurator to set the path for the Analysis file.
     private String outPutFilePath = "./";
-    private String outPutFileName = "Analysis.txt";
+    private String outPutFileName = "Hints.txt";
     private BufferedWriter outputFile;
 
 
 
-    public AnalysisBucket() {
+    public HintsBucket() {
         analysisBuffer = new StringBuffer();
     }
 
