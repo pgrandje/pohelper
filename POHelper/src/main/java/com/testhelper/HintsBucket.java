@@ -14,9 +14,9 @@ import java.io.IOException;
  * User: pgrandje
  * Date: 6/3/12
  */
-public class AnalysisBucket {
+public class HintsBucket {
 
-    private final Logger logger = Logger.getLogger(AnalysisBucket.class);
+    private final Logger logger = Logger.getLogger(HintsBucket.class);
 
     // The analysis text to be generated.
     private StringBuffer analysisBuffer;
@@ -29,7 +29,7 @@ public class AnalysisBucket {
 
 
 
-    public AnalysisBucket() {
+    public HintsBucket() {
         analysisBuffer = new StringBuffer();
     }
 

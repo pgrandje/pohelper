@@ -7,7 +7,7 @@ package com.testhelper;
  * Time: 6:26 PM
  * To change this template use File | Settings | File Templates.
  */
-public class AnalysisAttribute {
+public class HintsAttribute {
 
 
     String attributeName;

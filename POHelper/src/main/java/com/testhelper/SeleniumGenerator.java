@@ -37,7 +37,7 @@ public class SeleniumGenerator
         // CodeBucket accumulates and stores the code prior to writing it out.
         CodeBucket codeBucket = new CodeBucket();
 
-        AnalysisBucket analysisBucket = new AnalysisBucket();
+        HintsBucket analysisBucket = new HintsBucket();
 
         // NOTE: The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
         NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
@@ -100,7 +100,7 @@ public class SeleniumGenerator
         }
         else if (configurator.getGenerateStatus() == Configurator.GenerateStatus.FROM_ANALYSIS) {
 
-            AnalysisReader analysisReader = new AnalysisReader();
+            HintsReader analysisReader = new HintsReader();
             analysisReader.openAnalysisFile();
             analysisReader.loadAnalysis();
 

@@ -86,7 +86,7 @@ public class TagDescriptor {
 
     // *** Tag ***
 
-    // Used by the AnalysisBucket
+    // Used by the HintsBucket
     public String getTag() {
         return tag;
     }

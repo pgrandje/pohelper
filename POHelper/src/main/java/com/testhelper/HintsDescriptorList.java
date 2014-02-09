@@ -11,19 +11,19 @@ import java.util.List;
  * User: pgrandje
  * Date: 6/3/12
  */
-public class AnalysisDescriptorList implements Iterable<AnalysisDescriptor> {
+public class HintsDescriptorList implements Iterable<HintsDescriptor> {
 
-    private List<AnalysisDescriptor> analysisDescriptors;
+    private List<HintsDescriptor> analysisDescriptors;
 
 
-    AnalysisDescriptorList() {
+    HintsDescriptorList() {
         // There could be quite a few of these.  One for every node in the page source that we want our page object
         //      to know about.
-        analysisDescriptors = new ArrayList<AnalysisDescriptor>(100);
+        analysisDescriptors = new ArrayList<HintsDescriptor>(100);
     }
 
 
-    void add(AnalysisDescriptor descriptor) {
+    void add(HintsDescriptor descriptor) {
         analysisDescriptors.add(descriptor);
     }
 
@@ -33,8 +33,8 @@ public class AnalysisDescriptorList implements Iterable<AnalysisDescriptor> {
     }
 
 
-    public Iterator<AnalysisDescriptor> iterator() {
-        Iterator<AnalysisDescriptor> iterator = analysisDescriptors.iterator();
+    public Iterator<HintsDescriptor> iterator() {
+        Iterator<HintsDescriptor> iterator = analysisDescriptors.iterator();
         return iterator;
     }
 

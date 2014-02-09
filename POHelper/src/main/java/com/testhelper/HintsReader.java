@@ -12,7 +12,7 @@ import java.io.IOException;
  * User: pgrandje
  * Date: 9/9/12
  */
-public class AnalysisReader {
+public class HintsReader {
 
     private final Logger logger = Logger.getLogger(this.getClass());
 
@@ -24,7 +24,7 @@ public class AnalysisReader {
     private final String recordDelimeter = "<*** New Tag ***>";
 
 
-    AnalysisReader() {}
+    HintsReader() {}
 
 
     public void openAnalysisFile() throws FileNotFoundException {
@@ -47,13 +47,13 @@ public class AnalysisReader {
     }
 
 
-    public AnalysisDescriptorList loadAnalysis() throws IOException {
+    public HintsDescriptorList loadAnalysis() throws IOException {
 
         String currentTag = null;
 
         String line = analysisFile.readLine();
 
-        AnalysisDescriptorList analysisDescriptorList = new AnalysisDescriptorList();
+        HintsDescriptorList analysisDescriptorList = new HintsDescriptorList();
 
         while (line != null){
 
@@ -80,7 +80,7 @@ public class AnalysisReader {
 
                     // TODO:  put in exceptions for when I don't find what I'm expecting to find.
 
-                    AnalysisDescriptor analysisDescriptor = new AnalysisDescriptor();
+                    HintsDescriptor analysisDescriptor = new HintsDescriptor();
 
                     // Store the tag, it has already been read above.
                     String[] linePieces = line.split(": ");
@@ -104,7 +104,7 @@ public class AnalysisReader {
                         String attrNameValuePair = linePieces[1];
                         logger.debug("Found attribute name and value: " + attrNameValuePair);
                         String[] attrComponents = attrNameValuePair.split(" -- ");
-                        AnalysisAttribute analysisAttribute = new AnalysisAttribute();
+                        HintsAttribute analysisAttribute = new HintsAttribute();
                         String attrName = attrComponents[0].split(" = ")[1];
                         analysisAttribute.setAttributeName(attrName);
                         String attrValue = attrComponents[1].split(" = ")[1];
@@ -118,7 +118,7 @@ public class AnalysisReader {
                         String cssLocatorString = linePieces[1];
                         logger.debug("Found css locator string: " + cssLocatorString);
                         // TODO: Why am I only writing css locators to the analysis file?
-                        analysisDescriptor.setLocatorType(AnalysisDescriptor.LocatorType.CSS_LOCATOR);
+                        analysisDescriptor.setLocatorType(HintsDescriptor.LocatorType.CSS_LOCATOR);
                         analysisDescriptor.setLocatorValue(cssLocatorString);
                         line = analysisFile.readLine();
                     }
