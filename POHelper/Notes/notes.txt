@@ -52,3 +52,7 @@ unique. We don't consider attributes other than IDs or Names because no others c
 
 14) When there's no <title> the generated page object file name defaults to uielement1
 
+
+15) How to best locate the log4j.properties file?  I tried this but it didn't seem to work.  -Dlog4j.configuration=./resources
+Tried it in VM args along with the command-line args.
+

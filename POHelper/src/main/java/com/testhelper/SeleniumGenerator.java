@@ -22,6 +22,9 @@ public class SeleniumGenerator
 
     private static final Logger logger = Logger.getLogger(SeleniumGenerator.class);
 
+    private static Configurator configurator = null;
+    private static PageSourceParser pageSourceParser = null;
+
 
     public static void main(String[] args) throws IOException, ParserConfigurationException {
 
@@ -29,59 +32,42 @@ public class SeleniumGenerator
         PropertyConfigurator.configure("log4j.properties");
 
         // Sets the configuration using any command-line parameters
-        Configurator configurator = Configurator.getConfigurator(args);
-
-        // Parses the page source and provides access to the w3c document objects.
-        PageSourceParser pageSourceParser = new PageSourceParser(configurator.getUrl());
-
-        // CodeBucket accumulates and stores the code prior to writing it out.
-        CodeBucket codeBucket = new CodeBucket();
-
-        HintsBucket analysisBucket = new HintsBucket();
-
-        // NOTE: The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
-        NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
-
-
-        // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
-        TagSwitcher tagSwitcher = new TagSwitcher(configurator);
-
-
-        // Pre-process the CodeShell using info from the Document's page source and use this to store a description of
-        // the page.
-        PageDescriptor pageObjectDescriptor = new PageDescriptor(pageSourceParser.getDom(), classNameRecorder);
-        pageObjectDescriptor.setPageObjectName(codeBucket);
-
-
-        // Now -- Scan the nodes
-        NodeScanner nodeScanner = new NodeScanner(tagSwitcher);
-
-        Node root = pageSourceParser.getRootNode();
-        logger.info("Root Node is: " + root.getNodeName() + "-- value: " + root.getNodeValue());
-        TagDescriptorList tagDescriptorList = nodeScanner.scanForUIElements(root, 0);
-
-
-
+        configurator = Configurator.getConfigurator(args);
 
         // Process the TagDescriptorList here to generate the analysis or code output (or both?).
 
-        if (configurator.getGenerateStatus() == Configurator.GenerateStatus.ANALYZE_ONLY) {
+        if (configurator.getGenerateStatus() == Configurator.GenerateType.HINTS) {
 
+            // Parses the page source and provides access to the w3c document objects.
+            pageSourceParser = new PageSourceParser(configurator.getUrl());
+
+            HintsBucket hintsBucket = new HintsBucket();
+
+            TagDescriptorList tagDescriptorList = scanDOMsTags();
             // Write the analysis file.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
-                analysisBucket.addTag(tagDescriptor.getTag());
-                analysisBucket.addText(tagDescriptor.getTextValue());
-                analysisBucket.addAttribute(tagDescriptor.getAttributes());
-                analysisBucket.addCssLocator(tagDescriptor.makeCssLocator());
+                hintsBucket.addTag(tagDescriptor.getTag());
+                hintsBucket.addText(tagDescriptor.getTextValue());
+                hintsBucket.addAttribute(tagDescriptor.getAttributes());
+                hintsBucket.addCssLocator(tagDescriptor.makeCssLocator());
             }
 
-            // Dump the analysis file.
-            analysisBucket.createOutputFile("./Analysis.txt");
-            analysisBucket.dumpToFile();
-            analysisBucket.closeOutputFile();
+            // Dump the hints file.
+            // TODO:  Create another version of analysis.createOutputFile() that takes no params and uses the defaults.
+            hintsBucket.createOutputFile(null);
+            hintsBucket.dumpToFile();
+            hintsBucket.closeOutputFile();
 
         }
-        else if (configurator.getGenerateStatus() == Configurator.GenerateStatus.GENERATE_ONLY) {
+        else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE) {
+
+            // Parses the page source and provides access to the w3c document objects.
+            pageSourceParser = new PageSourceParser(configurator.getUrl());
+
+            // CodeBucket accumulates and stores the code prior to writing it out.
+            CodeBucket codeBucket = prepareCodeShell();
+
+            TagDescriptorList tagDescriptorList = scanDOMsTags();
 
             // Write the member code to the code buffer.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
@@ -94,26 +80,55 @@ public class SeleniumGenerator
                     codeBucket.addCode(tagDescriptor.getMethodCode());
             }
 
-            // Dump the generated sourcecode.
+            // Dump the  sourcecode.
             codeBucket.dumpToFile(configurator.getDestinationFilePath());
 
         }
-        else if (configurator.getGenerateStatus() == Configurator.GenerateStatus.FROM_ANALYSIS) {
-
-            HintsReader analysisReader = new HintsReader();
-            analysisReader.openAnalysisFile();
-            analysisReader.loadAnalysis();
+        else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE_FROM_HINTS) {
+            // TODO: This shouldn't run the node scanner, but the other two options need it.
+            HintsReader hintsReader = new HintsReader();
+            hintsReader.openHintsFile();
+            hintsReader.loadHints();
 
             throw new SeleniumGeneratorException("Generation from analysis file is not yet implemented.");
         }
-        else if (configurator.getGenerateStatus() == Configurator.GenerateStatus.ANALYZE_AND_GENERATE) {
-            throw new SeleniumGeneratorException("ANALYZE and GENERATE at the same time is not implemented.");
-        }
         else {
-            throw new SeleniumGeneratorException("Invalid configuration state.  Should never get here.");
+            throw new SeleniumGeneratorException("Invalid configuration option.");
         }
 
-        logger.info("SUCCESSFUL COMPLETION");
+        logger.info("SUCCESS");
 
     }
+
+
+    private static CodeBucket prepareCodeShell() throws IOException, ParserConfigurationException {
+
+        // CodeBucket accumulates and stores the code prior to writing it out.
+        CodeBucket codeBucket = new CodeBucket();
+
+        // NOTE: The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
+        NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
+
+        // Pre-process the CodeShell using info from the Document's page source and use this to store a description of
+        // the page.
+        PageDescriptor pageObjectDescriptor = new PageDescriptor(pageSourceParser.getDom(), classNameRecorder);
+        pageObjectDescriptor.setPageObjectName(codeBucket);
+
+        return codeBucket;
+    }
+
+
+    private static TagDescriptorList scanDOMsTags() throws IOException, ParserConfigurationException {
+
+        // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
+        TagSwitcher tagSwitcher = new TagSwitcher(configurator);
+
+        // Now -- Scan the nodes
+        NodeScanner nodeScanner = new NodeScanner(tagSwitcher);
+
+        Node root = pageSourceParser.getRootNode();
+        logger.info("Root Node is: " + root.getNodeName() + "-- value: " + root.getNodeValue());
+        return nodeScanner.scanForUIElements(root, 0);
+    }
+
 }

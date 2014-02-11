@@ -23,8 +23,8 @@ public class HintsBucket {
 
     // For the output file.
     // TODO: Use the configurator to set the path for the Analysis file.
-    private String outPutFilePath = "./";
-    private String outPutFileName = "Analysis.txt";
+    private String defaultOutPutFilePath = "./";
+    private String defaultOutPutFileName = "hints.txt";
     private BufferedWriter outputFile;
 
 
@@ -59,13 +59,13 @@ public class HintsBucket {
         analysisBuffer.append("Locator: " + locator + " \n");
     }
 
-    public void setOutPutFilePath(String path) {
-        outPutFilePath = path;
+    public void setDefaultOutPutFilePath(String path) {
+        defaultOutPutFilePath = path;
     }
 
 
     public void setOutputFileName(String fileName) {
-        outPutFileName = fileName;
+        defaultOutPutFileName = fileName;
     }
 
 
@@ -76,7 +76,7 @@ public class HintsBucket {
 
             // TODO:  should I redo this to require the path and filename be preset via their setters.
              if (filePath == null) {
-                  filePath = outPutFilePath + outPutFileName;
+                  filePath = defaultOutPutFilePath + defaultOutPutFileName;
              }
              logger.info("Creating output file: " + filePath);
              logger.info("Using current working directory: " + System.getProperty("user.dir"));

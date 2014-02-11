@@ -4,9 +4,11 @@ import com.selgentests.pageobjects.ABCNews_com_Breaking_News_Latest;
 import com.selgentests.pageobjects.Tag_Tests;
 import com.selgentests.testbase.TestBase;
 import com.selgentests.utils.TestException;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.testng.*;
+import org.testng.annotations.*;
+
 
 /**
  * Created by IntelliJ IDEA.
@@ -20,7 +22,7 @@ public class TagOnlyNoAttributesTest extends TestBase {
     @Test
     void h1Test() throws TestException {
 
-//		LoggerUtils.recordCurrentMethod(logger);
+        Logger logger = Logger.getLogger(TagOnlyNoAttributesTest.class);
 		Tag_Tests tagTestsPage = PageFactory.initElements(driver, Tag_Tests.class);
 
 		Assert.assertEquals(tagTestsPage.getH1_no_attributesText(), "H1 no attributes");
