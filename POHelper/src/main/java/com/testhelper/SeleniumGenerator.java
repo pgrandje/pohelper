@@ -23,7 +23,6 @@ public class SeleniumGenerator
     private static final Logger logger = Logger.getLogger(SeleniumGenerator.class);
 
     private static Configurator configurator = null;
-    private static PageSourceParser pageSourceParser = null;
 
 
     public static void main(String[] args) throws IOException, ParserConfigurationException {
@@ -39,11 +38,11 @@ public class SeleniumGenerator
         if (configurator.getGenerateStatus() == Configurator.GenerateType.HINTS) {
 
             // Parses the page source and provides access to the w3c document objects.
-            pageSourceParser = new PageSourceParser(configurator.getUrl());
+            PageDocument pageDocument = new PageDocument(configurator.getUrl());
 
-            HintsBucket hintsBucket = new HintsBucket();
+            HintsBucket hintsBucket = prepareHints(pageDocument);
 
-            TagDescriptorList tagDescriptorList = scanDOMsTags();
+            TagDescriptorList tagDescriptorList = scanDOMTags(pageDocument);
             // Write the analysis file.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
                 hintsBucket.addTag(tagDescriptor.getTag());
@@ -62,12 +61,12 @@ public class SeleniumGenerator
         else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE) {
 
             // Parses the page source and provides access to the w3c document objects.
-            pageSourceParser = new PageSourceParser(configurator.getUrl());
+            PageDocument pageDocument = new PageDocument(configurator.getUrl());
 
             // CodeBucket accumulates and stores the code prior to writing it out.
-            CodeBucket codeBucket = prepareCodeShell();
+            CodeBucket codeBucket = prepareCodeShell(pageDocument);
 
-            TagDescriptorList tagDescriptorList = scanDOMsTags();
+            TagDescriptorList tagDescriptorList = scanDOMTags(pageDocument);
 
             // Write the member code to the code buffer.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
@@ -85,12 +84,17 @@ public class SeleniumGenerator
 
         }
         else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE_FROM_HINTS) {
-            // TODO: This shouldn't run the node scanner, but the other two options need it.
-            HintsReader hintsReader = new HintsReader();
-            hintsReader.openHintsFile();
-            hintsReader.loadHints();
 
-            throw new SeleniumGeneratorException("Generation from analysis file is not yet implemented.");
+            HintsDocument hintsDocument = new HintsDocument();
+            // TODO: Use the Configurator to pass in the filepath to the hints file.
+            hintsDocument.loadHints();
+
+            // CodeBucket accumulates and stores the code prior to writing it out.
+            CodeBucket codeBucket = prepareCodeShell(hintsDocument);
+
+            // TODO: Call scanHintsDoc() from here.
+
+            throw new SeleniumGeneratorException("Generation from hints file is not yet implemented.");
         }
         else {
             throw new SeleniumGeneratorException("Invalid configuration option.");
@@ -100,25 +104,50 @@ public class SeleniumGenerator
 
     }
 
+    /* Right now this is to make the code above consisent between if statements, but it also is a stub allowing for
+       future expansion to do some pre-processing on the hints, for example, for hints on the classname.
+    */
+    private static HintsBucket prepareHints(PageDocument pageDocument) {
+        return new HintsBucket();
+    }
 
-    private static CodeBucket prepareCodeShell() throws IOException, ParserConfigurationException {
+
+
+    private static CodeBucket prepareCodeShell(PageDocument pageDocument) throws IOException, ParserConfigurationException {
 
         // CodeBucket accumulates and stores the code prior to writing it out.
         CodeBucket codeBucket = new CodeBucket();
 
-        // NOTE: The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
+        // TODO: The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
         NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
 
         // Pre-process the CodeShell using info from the Document's page source and use this to store a description of
         // the page.
-        PageDescriptor pageObjectDescriptor = new PageDescriptor(pageSourceParser.getDom(), classNameRecorder);
-        pageObjectDescriptor.setPageObjectName(codeBucket);
+        // TODO: just pass the page document and call getDom inside the PageDescriptor
+        PageDescriptor pageObjectDescriptor = new PageDescriptor();
+        pageObjectDescriptor.setPageObjectName(pageDocument, classNameRecorder, codeBucket);
 
         return codeBucket;
     }
 
+    private static CodeBucket prepareCodeShell(HintsDocument hintsDocument) throws IOException {
 
-    private static TagDescriptorList scanDOMsTags() throws IOException, ParserConfigurationException {
+            // CodeBucket accumulates and stores the code prior to writing it out.
+            CodeBucket codeBucket = new CodeBucket();
+
+            // TODO: The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
+            NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
+
+            // Pre-process the CodeShell using info from the Hints Document and use this to store a description of
+            // the page.
+            // TODO:  The Hints File needs a way of storing the classname.
+            PageDescriptor pageObjectDescriptor = new PageDescriptor();
+            pageObjectDescriptor.setPageObjectName(hintsDocument, classNameRecorder, codeBucket);
+
+            return codeBucket;
+        }
+
+    private static TagDescriptorList scanDOMTags(PageDocument pageDocument) throws IOException {
 
         // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
         TagSwitcher tagSwitcher = new TagSwitcher(configurator);
@@ -126,9 +155,25 @@ public class SeleniumGenerator
         // Now -- Scan the nodes
         NodeScanner nodeScanner = new NodeScanner(tagSwitcher);
 
-        Node root = pageSourceParser.getRootNode();
+        Node root = pageDocument.getRootNode();
         logger.info("Root Node is: " + root.getNodeName() + "-- value: " + root.getNodeValue());
         return nodeScanner.scanForUIElements(root, 0);
+    }
+
+
+    private static TagDescriptorList scanHintsFile(HintsDocument hintsDocument) throws IOException {
+
+            // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
+            TagSwitcher tagSwitcher = new TagSwitcher(configurator);
+
+            // Now -- Scan the nodes
+//            HintsScanner hintsScanner = new HintsScanner(tagSwitcher);
+//
+//            Node root = hintsDocument.getRootNode();
+//            logger.info("Root Node is: " + root.getNodeName() + "-- value: " + root.getNodeValue());
+//            return hintsScanner.scanForUIElements(root, 0);
+        // TODO: Remove this return stub when HintScanner is created.
+        return new TagDescriptorList();
     }
 
 }

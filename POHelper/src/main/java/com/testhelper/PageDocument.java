@@ -18,7 +18,7 @@ import java.net.URL;
  * Time: 9:03 PM
  * To change this template use File | Settings | File Templates.
  */
-public class PageSourceParser {
+public class PageDocument {
 
     private Document pageSource;
     private Element rootElement;
@@ -26,7 +26,7 @@ public class PageSourceParser {
 
     // TODO:  Does it make sense to catch these and report, or to just rethrow them?
     // IOException comes from cleaner.clean(url), ParserConfigurationException comes from DomSerializer
-    public PageSourceParser(URL url) throws IOException, ParserConfigurationException {
+    public PageDocument(URL url) throws IOException, ParserConfigurationException {
 
         // create an instance of HtmlCleaner and configure it.
         HtmlCleaner cleaner = new HtmlCleaner();

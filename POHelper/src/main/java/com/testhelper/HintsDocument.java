@@ -12,7 +12,7 @@ import java.io.IOException;
  * User: pgrandje
  * Date: 9/9/12
  */
-public class HintsReader {
+public class HintsDocument {
 
     private final Logger logger = Logger.getLogger(this.getClass());
 
@@ -24,15 +24,15 @@ public class HintsReader {
     private final String recordDelimeter = "<*** New Tag ***>";
 
 
-    HintsReader() {}
+    HintsDocument() {}
 
 
-    public void openHintsFile() throws FileNotFoundException {
-        openAnalysisFile(null);
+    private void openHintsFile() throws FileNotFoundException {
+        openHintsFile(null);
     }
 
 
-    public void openAnalysisFile(String filePath) throws FileNotFoundException {
+    private void openHintsFile(String filePath) throws FileNotFoundException {
 
         try {
             if (filePath == null) {
@@ -50,6 +50,8 @@ public class HintsReader {
     public HintsDescriptorList loadHints() throws IOException {
 
         String currentTag = null;
+
+        openHintsFile();
 
         String line = hintsFile.readLine();
 

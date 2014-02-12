@@ -19,34 +19,29 @@ public class PageDescriptor {
 
     private final Logger logger = Logger.getLogger(PageDescriptor.class);
 
-    private Document pageSource;
-    private NameRecorder classNameRecorder;
 
-
-    PageDescriptor(Document document, NameRecorder nameRecorder) {
-        pageSource = document;
-        classNameRecorder = nameRecorder;
+    PageDescriptor() {
     }
 
+    public void setPageObjectName(PageDocument pageDocument, NameRecorder pageObjectNameRecorder, CodeBucket codeBucket) {
 
-
-    public void setPageObjectName(CodeBucket codeBucket) {
+        // TODO: setPageObjectName() needs to determine if we're using pagesource or hints.
 
         // Get all <title> tags--hopefully there's one and only one.
-        Element root = pageSource.getDocumentElement();
+        Element root = pageDocument.getDom().getDocumentElement();
         NodeList nodeList = root.getElementsByTagName("title");
 
         if (nodeList.getLength() > 1) {
             logger.warn("Found more than one <title> tag, is this valid for a web page?");
-            codeBucket.setPageObjectName(makePageObjectName(nodeList.item(0)));
+            codeBucket.setPageObjectName(makePageObjectName(nodeList.item(0), pageObjectNameRecorder));
         }
         else if (nodeList.getLength() == 1)  {
             logger.info("Found exactly one <title> tag, using it's text for the page object's classname.");
-            codeBucket.setPageObjectName(makePageObjectName(nodeList.item(0)));
+            codeBucket.setPageObjectName(makePageObjectName(nodeList.item(0), pageObjectNameRecorder));
         }
         else if (nodeList.getLength() == 0) {
             logger.warn("<title> tag not found, using a default name for the page object.");
-            codeBucket.setPageObjectName(makePageObjectName(null));
+            codeBucket.setPageObjectName(makePageObjectName(null, pageObjectNameRecorder));
         }
         else if (nodeList.getLength() < 0) {
             throw new SeleniumGeneratorException(
@@ -57,7 +52,13 @@ public class PageDescriptor {
 
     }
 
-    private String makePageObjectName(Node titleNode)  {
+
+    public void setPageObjectName(HintsDocument hintsDocument, NameRecorder pageObjectNameRecorder, CodeBucket codeBucket) {
+        throw new SeleniumGeneratorException("Not yet implemented");
+    }
+
+
+    private String makePageObjectName(Node titleNode, NameRecorder pageObjectNameRecorder)  {
 
         String titleText;
         String className;
@@ -71,7 +72,7 @@ public class PageDescriptor {
             logger.info("Using title tag '" + titleNode.getNodeName() + "' with text \"" + titleText + "\"");
         }
 
-        className = classNameRecorder.makeSymbolName(titleText);
+        className = pageObjectNameRecorder.makeSymbolName(titleText);
         logger.info("Using symbol name '" + className + "' for the page object class name.");
 
         return className;
