@@ -7,3 +7,7 @@
 - Add to Hints/Analysis file the ability for user to specify the beginning of a new page object.
 - Add to Hints/Analysis file the ability for the user to edit the suggested locator and comment.
 - Add to Hints/Analysis file the ability for the user to edit the member and method names.
+
+
+
+- clean up the pom, can remove args4j probably, and testng from the main file.  Perhaps add junit for unit tests.
