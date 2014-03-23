@@ -25,6 +25,8 @@ public class SeleniumGenerator
 
     public static void main(String[] args) throws IOException, ParserConfigurationException {
 
+        // TODO: In main() I should put this construction stuff in a setup() method.
+
         // Used by the loggers
         PropertyConfigurator.configure("log4j.properties");
 
