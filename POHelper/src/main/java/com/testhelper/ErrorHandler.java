@@ -34,4 +34,5 @@ public class ErrorHandler {
             "-defMem or -defaultMemberName -- specifies the string to use by default for WebElement members when no useful string\n" +
             " from the corresponding HTML tag can be used.\n" +
             "-h or -help -- displays command-line help.";
+
 }

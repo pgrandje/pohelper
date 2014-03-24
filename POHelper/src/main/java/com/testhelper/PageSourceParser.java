@@ -10,6 +10,7 @@ import org.w3c.dom.Element;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.net.URL;
+import java.net.UnknownHostException;
 
 /**
  * Created by IntelliJ IDEA.
@@ -24,7 +25,7 @@ public class PageSourceParser {
     private Element rootElement;
 
 
-    // TODO:  Does it make sense to catch these and report, or to just rethrow them?
+
     // IOException comes from cleaner.clean(url), ParserConfigurationException comes from DomSerializer
     public PageSourceParser(URL url) throws IOException, ParserConfigurationException {
 
@@ -36,8 +37,15 @@ public class PageSourceParser {
         //TODO: props.setPruneTags(arg0);  //use this later when I know what to prune.
         props.setOmitComments(true);
 
-        // TODO: I need a verification that we can connect to the remote page before we get to this point.
-        TagNode nodes = cleaner.clean(url);
+        TagNode nodes = null;
+
+        try {
+            nodes = cleaner.clean(url);
+        } catch (UnknownHostException e) {
+            // TODO: Research a pattern for communicating error messages up to the  UI layer.
+            System.out.println("Host or page not found.  Using url: " + url.toString());
+            System.exit(0);
+        }
         // Get the page source into a Document object.
         pageSource = new DomSerializer(props, true).createDOM(nodes);
 
