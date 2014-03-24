@@ -34,16 +34,9 @@ public class Configurator {
 
     private Logger logger;
 
+    private String[] commandLineArgs;
 
-    private String commandLineHelp = "-generate  (can be set to analyze for the hints file.)\n" +
-            "-codeShell or -codeShellTemplate -- for setting the filepath of the code template file.  This is the file that defines\n" +
-            " the other shell, such as the class name, for the page object.\n" +
-            "-tagSwitch or tagSwitchTemplate -- specifies the filepath for the tags to be used for code generation and the code template\n" +
-            " snippets for code generation.\n" +
-            "-loc or -locator -- specifies the strategy to use for writing WebElement locators.\n" +
-            "-defMem or -defaultMemberName -- specifies the string to use by default for WebElement members when no useful string\n" +
-            " from the corresponding HTML tag can be used.\n" +
-            "-h or -help -- displays command-line help.";
+    private String errorMessage;
 
     // URL
     private URL baseUrlToScan;
@@ -89,7 +82,7 @@ public class Configurator {
     private boolean writeComments = false;
 
 
-   // **** Default Symbol Names ****
+    // **** Default Symbol Names ****
 
     // Default variable names
     private String pageObjectClassName = "DefaultPageObjectName";
@@ -105,25 +98,100 @@ public class Configurator {
     private String configFilePath = "/Users/pgrandje/IdeaProjects/selgen/resources/configuration.xml";
 
 
-
-    // Configurator is a singleton and can only be constructed using this method.
-    // For thread-safety using synchronized, just in case.
+    /**
+     * Configurator is a singleton and can only be constructed using this method.
+       For thread-safety using synchronized, just in case.
+     * @param args
+     * @return
+     */
     public static synchronized Configurator getConfigurator(String[] args) {
 
         if (singletonConfigurator == null) {
-               singletonConfigurator = new Configurator(args);
+           singletonConfigurator = new Configurator(args);
         }
         return singletonConfigurator;
     }
 
 
-    // This one could return an instance with default values stored, and could also load an xml-based config file.
-    public static Configurator getConfigurator() {
+    public static synchronized Configurator getConfigurator() {
+        if (singletonConfigurator == null) {
+           throw new SeleniumGeneratorException("Can't get Configurator without creating a new one requiring command-line args.");
+        }
         return singletonConfigurator;
     }
 
 
     private Configurator(String[] args) {
+        commandLineArgs = args;
+    }
+
+    /**
+     * Required params: -url and a valid url value are required.
+     * -dest is not required and will take a default of the current working directory if not supplied.
+     *
+     * @return
+     */
+    public boolean validateCommandline() {
+        // TODO: I don't like how I've written validateCommandLine() and processArgs() - refactor these.
+
+        boolean returnStatus = true;
+
+        for (int i=0; i<commandLineArgs.length; i++) {
+
+            if (commandLineArgs[i].equals("-url")) {
+                i++;
+                if (i >= commandLineArgs.length) {
+                    returnStatus = false;
+                    errorMessage = ErrorHandler.urlValueRequired;
+                    break;
+                }
+                try {
+                    // The url is saved in processArgs() so we don't need to assign it here where we're just validating.
+                    new URL(commandLineArgs[i]);
+                } catch (MalformedURLException e) {
+                    returnStatus = false;
+                    errorMessage = ErrorHandler.badUrl + " -- URL Exception says: " + e.getMessage();
+                }
+            }
+            // -dest is not required, but if it is supplied, it requires a directory path value.
+            else if (commandLineArgs[i].equals("-dest") || commandLineArgs[i].equals("-destination")) {
+                i++;
+                if (i >= commandLineArgs.length) {
+                    returnStatus = false;
+                    errorMessage = ErrorHandler.destValueRequired;
+                    break;
+                }
+                // validate the file path
+                if (verifyDirectory(commandLineArgs[i]) == false) {
+                    returnStatus = false;
+                    errorMessage = ErrorHandler.badDirectoryFilePath;
+                }
+            }
+        }
+
+        return returnStatus;
+    }
+
+    public String getErrorMessage() {
+        return errorMessage;
+    }
+
+
+
+    private boolean verifyDirectory(String directoryPath) {
+
+        boolean returnStatus = false;
+
+        if (new File(directoryPath).isDirectory())
+        {
+           returnStatus = true;
+        }
+
+        return returnStatus;
+}
+
+
+    public void processArgs() {
 
         logger = Logger.getLogger(Configurator.class);
 
@@ -137,54 +205,56 @@ public class Configurator {
 
         // Command-line params will override the defaults and the config file.
 
-        for (int i=0; i<args.length; i++) {
+        for (int i=0; i<commandLineArgs.length; i++) {
 
-            if (args[i].equals("-generate")) {
+            if (commandLineArgs[i].equals("-generate")) {
                 i++;
-                validateArgValue(args[i]);
-                generate = assignGenerateValue(args[i]);
+                checkForRequiredArgValue(commandLineArgs[i]);
+                generate = assignGenerateValue(commandLineArgs[i]);
                 logger.info("Generate state set to: " + generate.toString());
             }
-            else if (args[i].equals("-url")) {
+            else if (commandLineArgs[i].equals("-url")) {
                 i++;
-                validateArgValue(args[i]);
+                checkForRequiredArgValue(commandLineArgs[i]);
                 try {
-                    baseUrlToScan = new URL(args[i]);
+                    baseUrlToScan = new URL(commandLineArgs[i]);
                     logger.info("Configurator using URL via -url command-line arg, URL set to '" + baseUrlToScan + "'.");
                 }
+                // With the command-line validator, this is not necessary, but it still makes the code safer.
                 catch(MalformedURLException e) {
                     throw new SeleniumGeneratorException("Invalid URL on command line, exception message: " + e.getMessage() + "--Exception cause: " + e.getCause());
 
                 }
             }
-            else if (args[i].equals("-dest") || args[i].equals("-destination")) {
+            // The command-line validator verifies that if we get here, we have a valid filepath following.
+            else if (commandLineArgs[i].equals("-dest") || commandLineArgs[i].equals("-destination")) {
                 i++;
-                validateArgValue(args[i]);
-                destinationFilePath = verifyDirectory(args[i]);
+                checkForRequiredArgValue(commandLineArgs[i]);
+                destinationFilePath = commandLineArgs[i];
                 logger.info("Set destination folder to " + destinationFilePath);
             }
-            else if (args[i].equals("-codeShell") || args[i].equals("-codeShellTemplate")) {
+            else if (commandLineArgs[i].equals("-codeShell") || commandLineArgs[i].equals("-codeShellTemplate")) {
                 i++;
-                validateArgValue(args[i]);
-                codeShellTemplateFilePath = verifyFile(args[i]);
+                checkForRequiredArgValue(commandLineArgs[i]);
+                codeShellTemplateFilePath = checkConfigurationFileExists(commandLineArgs[i]);
                 logger.info("File path for Code Shell Template is set to: " + codeShellTemplateFilePath);
             }
-            else if (args[i].equals("-tagSwitch") || args[i].equals("-tagSwitcherConfig")) {
+            else if (commandLineArgs[i].equals("-tagSwitch") || commandLineArgs[i].equals("-tagSwitcherConfig")) {
                 i++;
-                validateArgValue(args[i]);
-                codeTemplateFilePath = verifyFile(args[i]);
+                checkForRequiredArgValue(commandLineArgs[i]);
+                codeTemplateFilePath = checkConfigurationFileExists(commandLineArgs[i]);
                 logger.info("File path for Tag Switcher's code template file is set to: " + codeTemplateFilePath);
             }
-            else if (args[i].equals("-loc") || args[i].equals("-locator")) {
+            else if (commandLineArgs[i].equals("-loc") || commandLineArgs[i].equals("-locator")) {
                 i++;
-                validateArgValue(args[i]);
-                if (args[i].equals("attribs_css")) {
+                checkForRequiredArgValue(commandLineArgs[i]);
+                if (commandLineArgs[i].equals("attribs_css")) {
                     locatorConfig = LocatorConfig.ATTRIBS_CSS;
                 }
-                else if (args[i].equals("attribs_only")) {
+                else if (commandLineArgs[i].equals("attribs_only")) {
                     locatorConfig = LocatorConfig.ATTRIBS_ONLY;
                 }
-                else if (args[i].equals("css_only")) {
+                else if (commandLineArgs[i].equals("css_only")) {
                     locatorConfig = LocatorConfig.CSS_ONLY;
                 }
                 else {
@@ -193,12 +263,12 @@ public class Configurator {
                 }
                 logger.info("Locator generation using " + locatorConfig.toString());
             }
-            else if (args[i].equals("-defMem") || args[i].equals("-defaultMemberName")) {
+            else if (commandLineArgs[i].equals("-defMem") || commandLineArgs[i].equals("-defaultMemberName")) {
                 i++;
-                validateArgValue(args[i]);
-                defaultMemberName = args[i];
+                checkForRequiredArgValue(commandLineArgs[i]);
+                defaultMemberName = commandLineArgs[i];
             }
-            else if (args[i].equals("-h") || args[i].equals("-help")) {
+            else if (commandLineArgs[i].equals("-h") || commandLineArgs[i].equals("-help")) {
                 printCommandLineHelp();
             }
             else {
@@ -211,7 +281,11 @@ public class Configurator {
     }
 
 
-    private void validateArgValue(String argValue) {
+    /*
+     * The command-line validator should make this method not necessary, but I'm keeping it as extra protection.
+     * @param argValue
+     */
+    private void checkForRequiredArgValue(String argValue) {
 
         if (argValue == null) {
             throw new SeleniumGeneratorException("Argument requires a value; value is 'null'.");
@@ -224,18 +298,12 @@ public class Configurator {
     }
 
 
-    private String verifyDirectory(String directoryPath) {
-
-        if (!new File(directoryPath).isDirectory())
-        {
-           throw new SeleniumGeneratorException("Directory path '" + directoryPath + "' is not an existing directory.");
-        }
-
-        return directoryPath;
-    }
-
-
-    private String verifyFile(String filePath) {
+    /*
+     * Verifies a required configuration file exists.  If not, throws an exception.
+     * This is private to be used as an internal verification.  It is not meant to verify command-line supplied
+     * filename values.
+     */
+    private String checkConfigurationFileExists(String filePath) {
 
         if (!new File(filePath).exists())
         {

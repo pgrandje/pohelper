@@ -36,6 +36,7 @@ public class PageSourceParser {
         //TODO: props.setPruneTags(arg0);  //use this later when I know what to prune.
         props.setOmitComments(true);
 
+        // TODO: I need a verification that we can connect to the remote page before we get to this point.
         TagNode nodes = cleaner.clean(url);
         // Get the page source into a Document object.
         pageSource = new DomSerializer(props, true).createDOM(nodes);

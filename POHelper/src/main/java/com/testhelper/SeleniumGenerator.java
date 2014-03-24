@@ -30,8 +30,14 @@ public class SeleniumGenerator
         // Used by the loggers
         PropertyConfigurator.configure("log4j.properties");
 
+
         // Sets the configuration using any command-line parameters
         Configurator configurator = Configurator.getConfigurator(args);
+        if (configurator.validateCommandline() == false) {
+            System.out.println(configurator.getErrorMessage());
+            System.exit(0);
+        };
+        configurator.processArgs();
 
         // Parses the page source and provides access to the w3c document objects.
         PageSourceParser pageSourceParser = new PageSourceParser(configurator.getUrl());
