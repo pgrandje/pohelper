@@ -6,3 +6,6 @@
 *.ipr
 .svn
 POHelper/RunFolder
+**/target/
+**/.idea/
+**/.svn/
