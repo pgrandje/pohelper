@@ -45,7 +45,7 @@ public class SeleniumGenerator
         // CodeBucket accumulates and stores the code prior to writing it out.
         CodeBucket codeBucket = new CodeBucket();
 
-        HintsBucket analysisBucket = new HintsBucket();
+        HintsBucket hintsBucket = new HintsBucket();
 
         // NOTE: The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
         NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
@@ -80,16 +80,16 @@ public class SeleniumGenerator
 
             // Write the analysis file.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
-                analysisBucket.addTag(tagDescriptor.getTag());
-                analysisBucket.addText(tagDescriptor.getTextValue());
-                analysisBucket.addAttribute(tagDescriptor.getAttributes());
-                analysisBucket.addCssLocator(tagDescriptor.makeCssLocator());
+                hintsBucket.addTag(tagDescriptor.getTag());
+                hintsBucket.addText(tagDescriptor.getTextValue());
+                hintsBucket.addAttribute(tagDescriptor.getAttributes());
+                hintsBucket.addCssLocator(tagDescriptor.makeCssLocator());
             }
 
             // Dump the analysis file.
-            analysisBucket.createOutputFile("./Analysis.txt");
-            analysisBucket.dumpToFile();
-            analysisBucket.closeOutputFile();
+            hintsBucket.createOutputFile("./Hints.txt");
+            hintsBucket.dumpToFile();
+            hintsBucket.closeOutputFile();
 
         }
         else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE) {
@@ -113,7 +113,7 @@ public class SeleniumGenerator
 
             HintsReader hintsReader = new HintsReader();
             hintsReader.openHintsFile();
-            hintsReader.loadAnalysis();
+            HintsDescriptorList hintsDescriptorList = hintsReader.loadAnalysis();
 
             // TODO: Return a TagDescriptorList from the processing of the hints file--here.
 

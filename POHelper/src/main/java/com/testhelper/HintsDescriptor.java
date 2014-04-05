@@ -15,6 +15,9 @@ public class HintsDescriptor {
 
     public enum LocatorType {ID, CSS_LOCATOR};
 
+    static public final String NEW_TAG_DELIMETER = "<*** UI Element ***>";
+
+
     private String tag;
     private String text;
     private ArrayList<HintsAttribute> attributes;

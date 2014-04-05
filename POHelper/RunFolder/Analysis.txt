@@ -356,667 +356,714 @@ Attribute: Type = href -- value = http://www.cnn.com/trends
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li > a 
 <*** UI Element ***>
 <li> 
-Text: Same-sex marriage 
+Text: Flight 370 
 Attribute: Type = class -- value = cnn_hpinthenewsl1
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: Same-sex marriage 
-Attribute: Type = href -- value = /2014/02/08/politics/holder-same-sex-marriage-rights/index.html?hpt=hp_inthenews
+Text: Flight 370 
+Attribute: Type = href -- value = /2014/04/05/world/asia/malaysia-airlines-plane/index.html?hpt=hp_inthenews
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
-Text: Heroin 
+Text: Fort Hood shooting 
 Attribute: Type = class -- value = cnn_hpinthenewsl2
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: Heroin 
-Attribute: Type = href -- value = /2014/02/07/us/long-island-heroin-youths/index.html?hpt=hp_inthenews
+Text: Fort Hood shooting 
+Attribute: Type = href -- value = /2014/04/04/us/fort-hood-shooting/index.html?hpt=hp_inthenews
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <li> 
-Text: Exonerated 
+Text: Afghan elections 
 Attribute: Type = class -- value = cnn_hpinthenewsl3
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: Exonerated 
-Attribute: Type = href -- value = /2014/02/08/justice/new-york-convicted-men-released/index.html?hpt=hp_inthenews
+Text: Afghan elections 
+Attribute: Type = href -- value = /2014/04/05/world/asia/afghanistan-elections/index.html?hpt=hp_inthenews
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(4) > a 
 <*** UI Element ***>
 <li> 
-Text: Iran 
+Text: Vacation with weed 
 Attribute: Type = class -- value = cnn_hpinthenewsl4
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: Iran 
-Attribute: Type = href -- value = /2014/02/08/world/meast/iran-navy/index.html?hpt=hp_inthenews
+Text: Vacation with weed 
+Attribute: Type = href -- value = /2014/04/03/living/weed-colorado-family-vacation/index.html?hpt=hp_inthenews
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(5) > a 
 <*** UI Element ***>
 <li> 
-Text: Castaway 
+Text: New emotions 
 Attribute: Type = class -- value = cnn_hpinthenewsl5
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(6) 
 <*** UI Element ***>
 <a> 
-Text: Castaway 
-Attribute: Type = href -- value = /2014/02/08/world/marshall-islands-castaway/index.html?hpt=hp_inthenews
+Text: New emotions 
+Attribute: Type = href -- value = /2014/04/04/health/facial-expressions/index.html?hpt=hp_inthenews
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(6) > a 
 <*** UI Element ***>
 <li> 
-Text: Soda death 
+Text: Apple  
 Attribute: Type = class -- value = cnn_hpinthenewsl6
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(7) 
 <*** UI Element ***>
 <a> 
-Text: Soda death 
-Attribute: Type = href -- value = /2014/02/08/justice/tennessee-girl-soda-death/index.html?hpt=hp_inthenews
+Text: Apple  
+Attribute: Type = href -- value = /2014/04/03/tech/mobile/apple-wwdc-2014/index.html?hpt=hp_inthenews
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(7) > a 
 <*** UI Element ***>
 <li> 
-Text: Meat recall 
+Text: Paulina Gretzky 
 Attribute: Type = class -- value = cnn_hpinthenewsl7
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(8) 
 <*** UI Element ***>
 <a> 
-Text: Meat recall 
-Attribute: Type = href -- value = /2014/02/08/us/beef-product-recall/index.html?hpt=hp_inthenews
+Text: Paulina Gretzky 
+Attribute: Type = href -- value = /2014/04/04/showbiz/celebrity-news-gossip/paulina-gretzky-golf-digest/index.html?hpt=hp_inthenews
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(8) > a 
 <*** UI Element ***>
 <li> 
-Text: Miami's artistic rebirth 
+Text: 'Chicagoland' 
 Attribute: Type = class -- value = cnn_hpinthenewsl8
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(9) 
 <*** UI Element ***>
 <a> 
-Text: Miami's artistic rebirth 
-Attribute: Type = href -- value = /2014/02/08/us/perez-art-museum-miami/index.html?hpt=hp_inthenews
+Text: 'Chicagoland' 
+Attribute: Type = href -- value = http://www.cnn.com/SPECIALS/us/chicagoland/index.html?hpt=hp_inthenews
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(9) > a 
 <*** UI Element ***>
 <li> 
-Text: 100 books 
+Text: Pangolin 
 Attribute: Type = class -- value = cnn_hpinthenewsl9
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(10) 
 <*** UI Element ***>
 <a> 
-Text: 100 books 
-Attribute: Type = href -- value = /2014/02/06/living/amazon-100-best-books/index.html?hpt=hp_inthenews
+Text: Pangolin 
+Attribute: Type = href -- value = http://www.cnn.com/interactive/2014/04/opinion/sutter-change-the-list-pangolin-trafficking/index.html?hpt=hp_c2&hpt=hp_inthenews
 Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(10) > a 
 <*** UI Element ***>
-<li> 
-Text: Sochi 
-Attribute: Type = class -- value = cnn_hpinthenewsl10
-Attribute: Type = data-vr-contentbox -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(11) 
-<*** UI Element ***>
-<a> 
-Text: Sochi 
-Attribute: Type = href -- value = http://www.cnn.com/SPORT/winter-olympics?hpt=hp_inthenews
-Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(11) > a 
-<*** UI Element ***>
 <h1> 
-Text: Castaway 'was a bit off' 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(2) > div > h1 
+Text: NEW FINDINGS MAY REFOCUS SEARCH 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(2) > div:nth-child(2) > h1 
 <*** UI Element ***>
 <a> 
-Text: Castaway 'was a bit off' 
-Attribute: Type = href -- value = /2014/02/08/world/marshall-islands-castaway/index.html?hpt=hp_t1
+Text: NEW FINDINGS MAY REFOCUS SEARCH 
+Attribute: Type = href -- value = /2014/04/05/world/asia/malaysia-airlines-plane/index.html?hpt=hp_t1
 Attribute: Type = target -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(2) > div > h1 > a 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(2) > div:nth-child(2) > h1 > a 
 <*** UI Element ***>
 <h1> 
-Text: But his mental health is now better, doctor says 
+Text: Pulse signal, new objects discovered 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div > h1 
 <*** UI Element ***>
 <a> 
-Text: But his mental health is now better, doctor says 
-Attribute: Type = href -- value = /2014/02/08/world/marshall-islands-castaway/index.html?hpt=hp_t1
+Text: Pulse signal, new objects discovered 
+Attribute: Type = href -- value = /2014/04/05/world/asia/malaysia-airlines-plane/index.html?hpt=hp_t1
 Attribute: Type = target -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div > h1 > a 
 <*** UI Element ***>
 <a> 
 Text: FULL STORY  
-Attribute: Type = href -- value = /2014/02/08/world/marshall-islands-castaway/index.html?hpt=hp_t1
+Attribute: Type = href -- value = /2014/04/05/world/asia/malaysia-airlines-plane/index.html?hpt=hp_t1
 Attribute: Type = target -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div > div > div > div > a 
 <*** UI Element ***>
 <li> 
-Text:   What is going on?   
+Text:   Is it or isn't it? New questions   
 Attribute: Type = class -- value = c_hpbullet1 c_hpfirstbullet
-Attribute: Type = data-vr-contentbox -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > ul > li 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li 
 <*** UI Element ***>
 <a> 
-Text: What is going on? 
-Attribute: Type = href -- value = /2014/02/06/world/castaway-five-things/index.html?hpt=hp_t1
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > ul > li > a 
+Text: Is it or isn't it? New questions 
+Attribute: Type = href -- value = /2014/04/05/world/malaysia-airlines-plane-questions/index.html?hpt=hp_t1
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li > a 
 <*** UI Element ***>
 <li> 
-Text:   'Castaway' out of hospital     
+Text:   Relatives react cautiously to clue    
 Attribute: Type = class -- value = c_hpbullet2
-Attribute: Type = data-vr-contentbox -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > ul > li:nth-child(2) 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: 'Castaway' out of hospital 
-Attribute: Type = href -- value = /video/data/2.0/video/world/2014/02/07/nr-pkg-marquez-sick-castaway.cnn.html?hpt=hp_t1
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > ul > li:nth-child(2) > a 
+Text: Relatives react cautiously to clue  
+Attribute: Type = href -- value = /2014/04/05/world/asia/malaysia-airlines-families-reaction/index.html?hpt=hp_t1
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text:   Expert adds note of caution     
+Attribute: Type = class -- value = c_hpbullet3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Expert adds note of caution 
+Attribute: Type = href -- value = /video/data/2.0/video/world/2014/04/05/newday-missing-plane-pulse-sound-skeptical.cnn.html?hpt=hp_t1
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/world/2014/02/07/nr-pkg-marquez-sick-castaway.cnn.html?hpt=hp_t1
+Attribute: Type = href -- value = /video/data/2.0/video/world/2014/04/05/newday-missing-plane-pulse-sound-skeptical.cnn.html?hpt=hp_t1
 Attribute: Type = target -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > ul > li:nth-child(2) > a:nth-child(4) 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(3) > a:nth-child(4) 
 <*** UI Element ***>
 <li> 
-Text:  NEW Zoo puts down healthy giraffe   
+Text:   Searching images  |  Photos  |  Maps   
+Attribute: Type = class -- value = c_hpbullet4
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Searching images 
+Attribute: Type = href -- value = /2014/04/04/world/asia/malaysia-airlines-plane-spotters/index.html?hpt=hp_t1
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<a> 
+Text: Photos 
+Attribute: Type = href -- value = /2014/03/07/asia/gallery/malaysia-airliner/index.html?hpt=hp_t1
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(4) > a:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Maps 
+Attribute: Type = href -- value = http://www.cnn.com/interactive/2014/03/world/malaysia-flight-map/index.html?hpt=hp_c2&hpt=hp_t1
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(4) > a:nth-child(8) 
+<*** UI Element ***>
+<li> 
+Text:   Car goes into Queens creek; 4 dead   
 Attribute: Type = class -- value = c_hpbullet1 c_hpfirstbullet
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li 
 <*** UI Element ***>
 <a> 
-Text: Zoo puts down healthy giraffe 
-Attribute: Type = href -- value = /2014/02/09/world/europe/denmark-zoo-giraffe/index.html?hpt=hp_t2
+Text: Car goes into Queens creek; 4 dead 
+Attribute: Type = href -- value = /2014/04/05/us/ny-four-dead-accident/index.html?hpt=hp_t2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li > a 
 <*** UI Element ***>
 <li> 
-Text:  NEW N.J. editor: 'We blew it' on Christie   
+Text:  NEW Afghans vote for new president    
 Attribute: Type = class -- value = c_hpbullet2
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: N.J. editor: 'We blew it' on Christie 
-Attribute: Type = href -- value = http://politicalticker.blogs.cnn.com/2014/02/09/star-ledger-editor-on-christie-endorsement-we-blew-it/?hpt=hp_t2
+Text: Afghans vote for new president  
+Attribute: Type = href -- value = /2014/04/05/world/asia/afghanistan-elections/index.html?hpt=hp_t2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
-Text:   Fiancée: Shooter said 'I hate thug music'   
+Text:   See inside Jeffrey Dahmer's home     
 Attribute: Type = class -- value = c_hpbullet3
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: Fiancée: Shooter said 'I hate thug music' 
-Attribute: Type = href -- value = http://www.hlntv.com/article/2014/02/08/michael-dunn-trial-jordan-davis-saturday?hpt=hp_t2
+Text: See inside Jeffrey Dahmer's home 
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/01/dnt-jeffrey-dahmer-home-for-sale.wkyc.html?hpt=hp_t2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(3) > a 
 <*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/01/dnt-jeffrey-dahmer-home-for-sale.wkyc.html?hpt=hp_t2
+Attribute: Type = target -- value = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(3) > a:nth-child(4) 
+<*** UI Element ***>
 <li> 
-Text:   Girlfriend: I heard pop, pop, pop     
+Text:   Baby fingerprinted and booked?   
 Attribute: Type = class -- value = c_hpbullet4
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: Girlfriend: I heard pop, pop, pop 
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/08/nr-michael-dunn-trial-fiancee-testimony-dunnan.cnn.html?hpt=hp_t2
+Text: Baby fingerprinted and booked? 
+Attribute: Type = href -- value = /2014/04/05/world/asia/pakistani-baby-charged/index.html?hpt=hp_t2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(4) > a 
 <*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/08/nr-michael-dunn-trial-fiancee-testimony-dunnan.cnn.html?hpt=hp_t2
-Attribute: Type = target -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(4) > a:nth-child(4) 
-<*** UI Element ***>
 <li> 
-Text:   Teen heroin use exploding in suburbs   
+Text:   For 3 killed, the Army was their life   
 Attribute: Type = class -- value = c_hpbullet5
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: Teen heroin use exploding in suburbs 
-Attribute: Type = href -- value = /2014/02/07/us/long-island-heroin-youths/index.html?hpt=hp_t2
+Text: For 3 killed, the Army was their life 
+Attribute: Type = href -- value = /2014/04/04/us/fort-hood-victims/index.html?hpt=hp_t2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(5) > a 
 <*** UI Element ***>
 <li> 
-Text:   Mom: 'How did I not see that?'     
+Text:   Injured soldier's wife opens up     
 Attribute: Type = class -- value = c_hpbullet6
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(6) 
 <*** UI Element ***>
 <a> 
-Text: Mom: 'How did I not see that?' 
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/07/erin-pkg-harlow-heroin-addict-after-rehab-teens.cnn.html?hpt=hp_t2
+Text: Injured soldier's wife opens up 
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/05/ac-bpr-renee-westbrook-husband-wounded.cnn-ap.html?hpt=hp_t2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(6) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/07/erin-pkg-harlow-heroin-addict-after-rehab-teens.cnn.html?hpt=hp_t2
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/05/ac-bpr-renee-westbrook-husband-wounded.cnn-ap.html?hpt=hp_t2
 Attribute: Type = target -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(6) > a:nth-child(4) 
 <*** UI Element ***>
 <li> 
-Text:   Rand Paul warns of Texas going blue   
+Text:   Stolen paintings found years later     
 Attribute: Type = class -- value = c_hpbullet7
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(7) 
 <*** UI Element ***>
 <a> 
-Text: Rand Paul warns of Texas going blue 
-Attribute: Type = href -- value = http://politicalticker.blogs.cnn.com/2014/02/09/rand-paul-warns-his-former-home-state-texas-could-turn-blue/?hpt=hp_t2
+Text: Stolen paintings found years later 
+Attribute: Type = href -- value = /video/data/2.0/video/world/2014/04/04/pkg-stolen-french-paintings-recovered.cnn.html?hpt=hp_t2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(7) > a 
 <*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/world/2014/04/04/pkg-stolen-french-paintings-recovered.cnn.html?hpt=hp_t2
+Attribute: Type = target -- value = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(7) > a:nth-child(4) 
+<*** UI Element ***>
 <li> 
-Text:   Can rape on campus be stopped?   
+Text:   Tyson recalls chicken nuggets   
 Attribute: Type = class -- value = c_hpbullet8
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(8) 
 <*** UI Element ***>
 <a> 
-Text: Can rape on campus be stopped? 
-Attribute: Type = href -- value = /2014/02/09/living/campus-sexual-violence-students-schools/index.html?hpt=hp_t2
+Text: Tyson recalls chicken nuggets 
+Attribute: Type = href -- value = http://money.cnn.com/2014/04/04/news/companies/tyson-chicken-nugget-recall/index.html?hpt=hp_t2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(8) > a 
 <*** UI Element ***>
 <li> 
-Text:   Report: Iran moving warships near U.S.   
+Text:   Driver who put train on escalator is fired   
 Attribute: Type = class -- value = c_hpbullet9
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(9) 
 <*** UI Element ***>
 <a> 
-Text: Report: Iran moving warships near U.S. 
-Attribute: Type = href -- value = /2014/02/08/world/meast/iran-navy/index.html?hpt=hp_t2
+Text: Driver who put train on escalator is fired 
+Attribute: Type = href -- value = /2014/04/04/us/chicago-ohare-train-derailment/index.html?hpt=hp_t2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(9) > a 
 <*** UI Element ***>
 <li> 
-Text:   Iran says it's sending a message      
+Text:   Baseball-size hail in Texas     
 Attribute: Type = class -- value = c_hpbullet10
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(10) 
 <*** UI Element ***>
 <a> 
-Text: Iran says it's sending a message  
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/09/newday-starr-iran-warships.cnn.html?hpt=hp_t2
+Text: Baseball-size hail in Texas 
+Attribute: Type = href -- value = /video/data/2.0/video/weather/2014/04/04/pkg-tx-stormy-college-weather.ktvt.html?hpt=hp_t2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(10) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/09/newday-starr-iran-warships.cnn.html?hpt=hp_t2
+Attribute: Type = href -- value = /video/data/2.0/video/weather/2014/04/04/pkg-tx-stormy-college-weather.ktvt.html?hpt=hp_t2
 Attribute: Type = target -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(10) > a:nth-child(4) 
 <*** UI Element ***>
 <li> 
-Text:   8.7 million pounds of meat recalled   
+Text:   NBA player: 'I believe in marijuana'   
 Attribute: Type = class -- value = c_hpbullet11
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(11) 
 <*** UI Element ***>
 <a> 
-Text: 8.7 million pounds of meat recalled 
-Attribute: Type = href -- value = /2014/02/08/us/beef-product-recall/index.html?hpt=hp_t2
+Text: NBA player: 'I believe in marijuana' 
+Attribute: Type = href -- value = http://bleacherreport.com/articles/2018261-larry-sanders-advocates-for-medical-marijuana-hours-after-nba-drug-suspension?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial&hpt=hp_t2
+Attribute: Type = target -- value = _blank
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(11) > a 
 <*** UI Element ***>
 <li> 
-Text:   See amazing tightrope stadium stunt     
+Text:   Beauty contestant's gun pic denied?     
 Attribute: Type = class -- value = c_hpbullet12
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(12) 
 <*** UI Element ***>
 <a> 
-Text: See amazing tightrope stadium stunt 
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/09/pkg-nik-wallenda-ga-dome-walk.cnn.html?hpt=hp_t2
+Text: Beauty contestant's gun pic denied? 
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/04/pkg-people-magazine-rejects-woman-gun-photo.ktvi.html?hpt=hp_t2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(12) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/09/pkg-nik-wallenda-ga-dome-walk.cnn.html?hpt=hp_t2
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/04/pkg-people-magazine-rejects-woman-gun-photo.ktvi.html?hpt=hp_t2
 Attribute: Type = target -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(12) > a:nth-child(4) 
 <*** UI Element ***>
 <li> 
-Text:   Parents charged in girl's soda death   
-Attribute: Type = class -- value = c_hpbullet13
-Attribute: Type = data-vr-contentbox -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(13) 
-<*** UI Element ***>
-<a> 
-Text: Parents charged in girl's soda death 
-Attribute: Type = href -- value = /2014/02/08/justice/tennessee-girl-soda-death/index.html?hpt=hp_t2
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(13) > a 
-<*** UI Element ***>
-<li> 
-Text:   How grape soda led to her death     
-Attribute: Type = class -- value = c_hpbullet14
-Attribute: Type = data-vr-contentbox -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(14) 
-<*** UI Element ***>
-<a> 
-Text: How grape soda led to her death 
-Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/02/07/dnt-girl-dies-after-being-forced-to-drink-too-much-soda.wjhl.html?hpt=hp_t2
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(14) > a 
-<*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/02/07/dnt-girl-dies-after-being-forced-to-drink-too-much-soda.wjhl.html?hpt=hp_t2
-Attribute: Type = target -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(14) > a:nth-child(4) 
-<*** UI Element ***>
-<li> 
-Text:   Basketball player shoves fan   
-Attribute: Type = class -- value = c_hpbullet15
-Attribute: Type = data-vr-contentbox -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(15) 
-<*** UI Element ***>
-<a> 
-Text: Basketball player shoves fan 
-Attribute: Type = href -- value = http://bleacherreport.com/articles/1953613-marcus-smart-pushes-fan-in-game-vs-texas-tech?hpt=hp_t2
-Attribute: Type = target -- value = _blank
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(15) > a 
-<*** UI Element ***>
-<li> 
-Text:   Gay couples to get federal benefits   
+Text:   Apple's big news coming in June   
 Attribute: Type = class -- value = c_hpbullet1 c_hpfirstbullet
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li 
 <*** UI Element ***>
 <a> 
-Text: Gay couples to get federal benefits 
-Attribute: Type = href -- value = /2014/02/08/politics/holder-same-sex-marriage-rights/index.html?hpt=hp_t3
+Text: Apple's big news coming in June 
+Attribute: Type = href -- value = /2014/04/03/tech/mobile/apple-wwdc-2014/index.html?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li > a 
 <*** UI Element ***>
 <li> 
-Text:   Billionaire is transforming Miami   
+Text:   15 new emotions identified   
 Attribute: Type = class -- value = c_hpbullet2
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: Billionaire is transforming Miami 
-Attribute: Type = href -- value = /2014/02/08/us/perez-art-museum-miami/index.html?hpt=hp_t3
+Text: 15 new emotions identified 
+Attribute: Type = href -- value = /2014/04/04/health/facial-expressions/index.html?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
-Text:   AOL reverses 401(k) cuts   
+Text:   Swimmer 'taken' by shark      
 Attribute: Type = class -- value = c_hpbullet3
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: AOL reverses 401(k) cuts 
-Attribute: Type = href -- value = http://money.cnn.com/2014/02/08/technology/aol-armstrong-401k/index.html?hpt=hp_t3
+Text: Swimmer 'taken' by shark  
+Attribute: Type = href -- value = /video/data/2.0/video/world/2014/04/03/dnt-australia-woman-taken-by-shark.seven-network.html?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(3) > a 
 <*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/world/2014/04/03/dnt-australia-woman-taken-by-shark.seven-network.html?hpt=hp_t3
+Attribute: Type = target -- value = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(3) > a:nth-child(4) 
+<*** UI Element ***>
 <li> 
-Text:   Biden slams New York airport     
+Text:   Two-legged pup's 1st beach run     
 Attribute: Type = class -- value = c_hpbullet4
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: Biden slams New York airport 
-Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/02/07/exp-erin-sot-biden-laguardia-third-world-country.cnn.html?hpt=hp_t3
+Text: Two-legged pup's 1st beach run 
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/03/dnt-two-legged-boxer-beach-run.kgw.html?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(4) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/02/07/exp-erin-sot-biden-laguardia-third-world-country.cnn.html?hpt=hp_t3
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/03/dnt-two-legged-boxer-beach-run.kgw.html?hpt=hp_t3
 Attribute: Type = target -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(4) > a:nth-child(4) 
 <*** UI Element ***>
 <li> 
-Text:   American adventurer missing in Mexico    
+Text:   Jack Kevorkian's art on sale   
 Attribute: Type = class -- value = c_hpbullet5
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: American adventurer missing in Mexico  
-Attribute: Type = href -- value = /2014/02/08/world/americas/missing-american-mexico/index.html?hpt=hp_t3
+Text: Jack Kevorkian's art on sale 
+Attribute: Type = href -- value = /2014/04/05/living/jack-kevorkian-art-for-sale/index.html?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) > a 
 <*** UI Element ***>
 <li> 
-Text:   See Justin Bieber get frisked in jail     
+Text:   Exhibit opens: The artist known as 'W'   
 Attribute: Type = class -- value = c_hpbullet6
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) 
 <*** UI Element ***>
 <a> 
-Text: See Justin Bieber get frisked in jail 
-Attribute: Type = href -- value = /video/data/2.0/video/showbiz/2014/02/07/dnt-fl-justin-bieber-arrest.wsvn.html?hpt=hp_t3
+Text: Exhibit opens: The artist known as 'W' 
+Attribute: Type = href -- value = /2014/04/04/politics/bush-paintings/index.html?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) > a 
 <*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/showbiz/2014/02/07/dnt-fl-justin-bieber-arrest.wsvn.html?hpt=hp_t3
-Attribute: Type = target -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) > a:nth-child(4) 
-<*** UI Element ***>
 <li> 
-Text:   Illegal? A new way to cheat Netflix     
+Text:   Journalist killed in brutal attack     
 Attribute: Type = class -- value = c_hpbullet7
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(7) 
 <*** UI Element ***>
 <a> 
-Text: Illegal? A new way to cheat Netflix 
-Attribute: Type = href -- value = /video/data/2.0/video/tech/2014/01/31/hola-internet-app-allows-you-to-access-netflix-from-anywhere.cnn.html?hpt=hp_t3
+Text: Journalist killed in brutal attack 
+Attribute: Type = href -- value = /video/data/2.0/video/world/2014/04/04/tsr-pkg-coren-journalists-killed-afghanistan.cnn-ap.html?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(7) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/tech/2014/01/31/hola-internet-app-allows-you-to-access-netflix-from-anywhere.cnn.html?hpt=hp_t3
+Attribute: Type = href -- value = /video/data/2.0/video/world/2014/04/04/tsr-pkg-coren-journalists-killed-afghanistan.cnn-ap.html?hpt=hp_t3
 Attribute: Type = target -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(7) > a:nth-child(4) 
 <*** UI Element ***>
 <li> 
-Text:   Giant 5-foot jellyfish hits the beach   
+Text:   'Thrones' is back: 'All men must die'      
 Attribute: Type = class -- value = c_hpbullet8
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(8) 
 <*** UI Element ***>
 <a> 
-Text: Giant 5-foot jellyfish hits the beach 
-Attribute: Type = href -- value = /2014/02/07/world/asia/australia-giant-jellyfish/index.html?hpt=hp_t3
+Text: 'Thrones' is back: 'All men must die'  
+Attribute: Type = href -- value = /video/data/2.0/video/showbiz/2014/04/03/orig-got-season-4-is-back-npr.cnn.html?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(8) > a 
 <*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/showbiz/2014/04/03/orig-got-season-4-is-back-npr.cnn.html?hpt=hp_t3
+Attribute: Type = target -- value = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(8) > a:nth-child(4) 
+<*** UI Element ***>
 <li> 
-Text:   Sex scandals rock military top brass     
+Text:   J-Lo backed TV channel buys Fuse   
 Attribute: Type = class -- value = c_hpbullet9
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(9) 
 <*** UI Element ***>
 <a> 
-Text: Sex scandals rock military top brass 
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/07/tsr-dnt-starr-military-leaders-under-investigation.cnn.html?hpt=hp_t3
+Text: J-Lo backed TV channel buys Fuse 
+Attribute: Type = href -- value = http://money.cnn.com/2014/04/04/news/companies/jennifer-lopez-fuse-tv/index.html?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(9) > a 
 <*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/07/tsr-dnt-starr-military-leaders-under-investigation.cnn.html?hpt=hp_t3
-Attribute: Type = target -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(9) > a:nth-child(4) 
-<*** UI Element ***>
 <li> 
-Text:   Watch toothpaste bomb explode     
+Text:   Skydiver attempting record dies   
 Attribute: Type = class -- value = c_hpbullet10
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(10) 
 <*** UI Element ***>
 <a> 
-Text: Watch toothpaste bomb explode 
-Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/02/06/tsr-dnt-todd-toothpaste-tube-bomb.cnn-ap.html?hpt=hp_t3
+Text: Skydiver attempting record dies 
+Attribute: Type = href -- value = /2014/04/03/us/arizona-skydiver-death/index.html?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(10) > a 
 <*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/02/06/tsr-dnt-todd-toothpaste-tube-bomb.cnn-ap.html?hpt=hp_t3
-Attribute: Type = target -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(10) > a:nth-child(4) 
-<*** UI Element ***>
 <li> 
-Text:   Firefighter cuffed while on duty     
+Text:   Wi-Fi speeds are about to triple   
 Attribute: Type = class -- value = c_hpbullet11
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(11) 
 <*** UI Element ***>
 <a> 
-Text: Firefighter cuffed while on duty 
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/07/newday-pkg-elam-firefighter-handcuffed-by-police.cnn.html?hpt=hp_t3
+Text: Wi-Fi speeds are about to triple 
+Attribute: Type = href -- value = http://money.cnn.com/2014/04/04/technology/innovation/qualcomm-wifi/index.html?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(11) > a 
 <*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/07/newday-pkg-elam-firefighter-handcuffed-by-police.cnn.html?hpt=hp_t3
-Attribute: Type = target -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(11) > a:nth-child(4) 
-<*** UI Element ***>
 <li> 
-Text:   'Walking Dead' zombies prank NYC     
+Text:   5 alternatives to the password   
 Attribute: Type = class -- value = c_hpbullet12
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(12) 
 <*** UI Element ***>
 <a> 
-Text: 'Walking Dead' zombies prank NYC 
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/08/newday-vo-new-york-zombie-prank.cnn.html?hpt=hp_t3
+Text: 5 alternatives to the password 
+Attribute: Type = href -- value = /2014/04/04/tech/innovation/5-biometrics-future/index.html?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(12) > a 
 <*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/08/newday-vo-new-york-zombie-prank.cnn.html?hpt=hp_t3
-Attribute: Type = target -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(12) > a:nth-child(4) 
-<*** UI Element ***>
 <li> 
-Text:   Drought hits ski towns hard   
+Text:   John Calipari: A fresh(man) outlook     
 Attribute: Type = class -- value = c_hpbullet13
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(13) 
 <*** UI Element ***>
 <a> 
-Text: Drought hits ski towns hard 
-Attribute: Type = href -- value = http://money.cnn.com/2014/02/07/smallbusiness/drought-ski-towns/index.html?hpt=hp_t3
+Text: John Calipari: A fresh(man) outlook 
+Attribute: Type = href -- value = /video/data/2.0/video/sports/2014/04/05/unguarded-john-calipari-final-four.cnn.html?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(13) > a 
 <*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/sports/2014/04/05/unguarded-john-calipari-final-four.cnn.html?hpt=hp_t3
+Attribute: Type = target -- value = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(13) > a:nth-child(4) 
+<*** UI Element ***>
 <li> 
-Text:   Who really brews your beer? Time  
+Text:   Pot cookies blamed for teen's death     
 Attribute: Type = class -- value = c_hpbullet14
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(14) 
 <*** UI Element ***>
 <a> 
-Text: Who really brews your beer? 
-Attribute: Type = href -- value = http://business.time.com/2014/02/06/who-really-owns-your-craft-beer/?hpt=hp_t3
-Attribute: Type = target -- value = _blank
+Text: Pot cookies blamed for teen's death 
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/03/marijuana-cookie-student-death-denver.kcnc.html?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(14) > a 
 <*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/03/marijuana-cookie-student-death-denver.kcnc.html?hpt=hp_t3
+Attribute: Type = target -- value = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(14) > a:nth-child(4) 
+<*** UI Element ***>
 <li> 
-Text:   Woman breastfeeds puppy     
+Text:   Wave of suicides at phone company     
 Attribute: Type = class -- value = c_hpbullet15
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(15) 
 <*** UI Element ***>
 <a> 
-Text: Woman breastfeeds puppy 
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/07/dnt-co-woman-breastfeed-puppy.krdo.html?hpt=hp_t3
+Text: Wave of suicides at phone company 
+Attribute: Type = href -- value = /video/data/2.0/video/world/2014/04/03/pkg-bittermann-france-telecom-orange-suicides.cnn.html?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(15) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/07/dnt-co-woman-breastfeed-puppy.krdo.html?hpt=hp_t3
+Attribute: Type = href -- value = /video/data/2.0/video/world/2014/04/03/pkg-bittermann-france-telecom-orange-suicides.cnn.html?hpt=hp_t3
 Attribute: Type = target -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(15) > a:nth-child(4) 
 <*** UI Element ***>
 <li> 
-Text:   Greene: He brought Beatles to America   
+Text:   Tribute: Why we love baseball     
 Attribute: Type = class -- value = c_hpbullet16
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(16) 
 <*** UI Element ***>
 <a> 
-Text: Greene: He brought Beatles to America 
-Attribute: Type = href -- value = /2014/02/09/opinion/greene-ed-sullivan-beatles/index.html?hpt=hp_t3
+Text: Tribute: Why we love baseball 
+Attribute: Type = href -- value = http://www.hlntv.com/video/2014/04/04/baseball-stills-babe-ruth-mickey-mantle-love?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(16) > a 
 <*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = http://www.hlntv.com/video/2014/04/04/baseball-stills-babe-ruth-mickey-mantle-love?hpt=hp_t3
+Attribute: Type = target -- value = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(16) > a:nth-child(4) 
+<*** UI Element ***>
 <li> 
-Text:   10 places to relive Beatlemania   
+Text:   Reality TV star gets married   
 Attribute: Type = class -- value = c_hpbullet17
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(17) 
 <*** UI Element ***>
 <a> 
-Text: 10 places to relive Beatlemania 
-Attribute: Type = href -- value = /2014/02/07/travel/beatles-travel-anniversary/index.html?hpt=hp_t3
+Text: Reality TV star gets married 
+Attribute: Type = href -- value = /2014/04/05/showbiz/kandi-burruss-married/index.html?hpt=hp_t3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(17) > a 
 <*** UI Element ***>
 <li> 
-Text:   Women don't need any more Big Lies   
+Text:   James Franco: 'I'm embarrassed' EW  
+Attribute: Type = class -- value = c_hpbullet18
+Attribute: Type = data-vr-contentbox -- value = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(18) 
+<*** UI Element ***>
+<a> 
+Text: James Franco: 'I'm embarrassed' 
+Attribute: Type = href -- value = http://popwatch.ew.com/2014/04/04/james-franco-instagram-teenager/?hpt=hp_t3
+Attribute: Type = target -- value = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(18) > a 
+<*** UI Element ***>
+<li> 
+Text:   Clinton is right: There are aliens Time  
+Attribute: Type = class -- value = c_hpbullet19
+Attribute: Type = data-vr-contentbox -- value = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(19) 
+<*** UI Element ***>
+<a> 
+Text: Clinton is right: There are aliens 
+Attribute: Type = href -- value = http://time.com/48208/clinton-aliens-kimmel-space/?hpt=hp_t3
+Attribute: Type = target -- value = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(19) > a 
+<*** UI Element ***>
+<li> 
+Text:   Should mentally ill soldiers own guns?   
 Attribute: Type = class -- value = c_hpbullet1 c_hpfirstbullet
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > ul > li 
 <*** UI Element ***>
 <a> 
-Text: Women don't need any more Big Lies 
-Attribute: Type = href -- value = /2014/02/08/health/selvaratnam-big-lie/index.html?hpt=hp_t4
+Text: Should mentally ill soldiers own guns? 
+Attribute: Type = href -- value = /2014/04/03/opinion/ritchie-guns-mental-illness/index.html?hpt=hp_t4
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > ul > li > a 
 <*** UI Element ***>
 <li> 
-Text:   LZ: Seinfeld is wrong on diversity   
+Text:   LZ: How Mozilla botched CEO's ouster   
 Attribute: Type = class -- value = c_hpbullet2
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: LZ: Seinfeld is wrong on diversity 
-Attribute: Type = href -- value = /2014/02/07/opinion/granderson-seinfeld-diversity/index.html?hpt=hp_t4
+Text: LZ: How Mozilla botched CEO's ouster 
+Attribute: Type = href -- value = /2014/04/04/opinion/granderson-mozilla-same-sex-marriage/index.html?hpt=hp_t4
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
-Text:   Bobcat gets stuck in car's grill      
+Text:   Why are Siri and others female?    
+Attribute: Type = class -- value = c_hpbullet3
+Attribute: Type = data-vr-contentbox -- value = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Why are Siri and others female?  
+Attribute: Type = href -- value = /2014/04/04/opinion/wheeler-cortana-siri/index.html?hpt=hp_t4
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:   9 months pregnant, didn't know it     
 Attribute: Type = class -- value = c_hpbullet1 c_hpfirstbullet
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li 
 <*** UI Element ***>
 <a> 
-Text: Bobcat gets stuck in car's grill  
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/07/tn-dnt-bobcat-gets-stuck-in-car-grill.wtvf.html?hpt=hp_t5
+Text: 9 months pregnant, didn't know it 
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/02/pkg-gives-birth-didnt-know-she-was-pregnant.wfsb.html?hpt=hp_t5
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/07/tn-dnt-bobcat-gets-stuck-in-car-grill.wtvf.html?hpt=hp_t5
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/02/pkg-gives-birth-didnt-know-she-was-pregnant.wfsb.html?hpt=hp_t5
 Attribute: Type = target -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li > a:nth-child(4) 
 <*** UI Element ***>
 <li> 
-Text:   Attack on power grid spurs worry   
+Text:   NBA star takes first date to Target   
 Attribute: Type = class -- value = c_hpbullet2
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: Attack on power grid spurs worry 
-Attribute: Type = href -- value = /2014/02/07/us/california-sniper-attack-power-substation/index.html?hpt=hp_t5
+Text: NBA star takes first date to Target 
+Attribute: Type = href -- value = http://bleacherreport.com/articles/2015483-rapper-iggy-azalea-says-laker-nick-young-took-her-to-target-on-first-date?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial&hpt=hp_t5
+Attribute: Type = target -- value = _blank
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
-Text:   'Biggest Losers': Before and after     
+Text:   What a shot! Amazing sports photos     
 Attribute: Type = class -- value = c_hpbullet3
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: 'Biggest Losers': Before and after 
-Attribute: Type = href -- value = /2014/02/07/showbiz/gallery/biggest-loser-winners/index.html?hpt=hp_t5
+Text: What a shot! Amazing sports photos 
+Attribute: Type = href -- value = /2014/04/01/worldsport/gallery/what-a-shot-0401/index.html?hpt=hp_t5
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /2014/02/07/showbiz/gallery/biggest-loser-winners/index.html?hpt=hp_t5
+Attribute: Type = href -- value = /2014/04/01/worldsport/gallery/what-a-shot-0401/index.html?hpt=hp_t5
 Attribute: Type = target -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(3) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   Most trafficked mammal in the world   
+Attribute: Type = class -- value = c_hpbullet4
+Attribute: Type = data-vr-contentbox -- value = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Most trafficked mammal in the world 
+Attribute: Type = href -- value = http://www.cnn.com/interactive/2014/04/opinion/sutter-change-the-list-pangolin-trafficking/index.html?hpt=hp_t5
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text:   Stars who are expecting in 2014     
+Attribute: Type = class -- value = c_hpbullet5
+Attribute: Type = data-vr-contentbox -- value = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Stars who are expecting in 2014 
+Attribute: Type = href -- value = /2013/02/13/showbiz/gallery/pregnant-celebrities-2013/index.html?hpt=hp_t5
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /2013/02/13/showbiz/gallery/pregnant-celebrities-2013/index.html?hpt=hp_t5
+Attribute: Type = target -- value = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(5) > a:nth-child(4) 
 <*** UI Element ***>
 <a> 
 Text:  
@@ -1025,285 +1072,260 @@ Attribute: Type = href -- value = http://www.cnn.com/trends?hpt=hp_t5
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(5) > a 
 <*** UI Element ***>
 <a> 
-Text: One-two punch for Team USA 
-Attribute: Type = href -- value = http://bleacherreport.com/articles/1953694-womens-snowboarding-slopestyle-olympics-2014-medal-winners-and-final-results?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial&hpt=hp_t2&hpt=hp_c2
-Attribute: Type = target -- value = _blank
+Text: This may be the last pangolin you see 
+Attribute: Type = href -- value = http://www.cnn.com/interactive/2014/04/opinion/sutter-change-the-list-pangolin-trafficking/index.html?hpt=hp_c2&hpt=hp_c2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div > div > a 
 <*** UI Element ***>
 <a> 
 Text: FULL STORY 
-Attribute: Type = href -- value = http://bleacherreport.com/articles/1953694-womens-snowboarding-slopestyle-olympics-2014-medal-winners-and-final-results?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial&hpt=hp_t2&hpt=hp_c2
-Attribute: Type = target -- value = _blank
+Attribute: Type = href -- value = http://www.cnn.com/interactive/2014/04/opinion/sutter-change-the-list-pangolin-trafficking/index.html?hpt=hp_c2&hpt=hp_c2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div > div:nth-child(2) > div > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = http://bleacherreport.com/articles/1953694-womens-snowboarding-slopestyle-olympics-2014-medal-winners-and-final-results?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial&hpt=hp_t2&hpt=hp_c2
-Attribute: Type = target -- value = _blank
+Attribute: Type = href -- value = http://www.cnn.com/interactive/2014/04/opinion/sutter-change-the-list-pangolin-trafficking/index.html?hpt=hp_c2&hpt=hp_c2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div > div:nth-child(3) > div > a 
 <*** UI Element ***>
 <li> 
-Text:   The easiest Olympic sport?     
+Text:   Inside the illegal wildlife trade     
 Attribute: Type = class -- value = c_hpbullet2 c_hpfirstbullet
-Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li 
 <*** UI Element ***>
 <a> 
-Text: The easiest Olympic sport? 
-Attribute: Type = href -- value = /video/data/2.0/video/sports/2014/02/06/curling-olympics-easiest-sport-orig-nws.cnn.html?hpt=hp_c2
+Text: Inside the illegal wildlife trade 
+Attribute: Type = href -- value = /video/data/2.0/video/world/2014/04/01/orig-ctl-wildlife-trafficking-pangolin.cnn.html?hpt=hp_c2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/sports/2014/02/06/curling-olympics-easiest-sport-orig-nws.cnn.html?hpt=hp_c2
+Attribute: Type = href -- value = /video/data/2.0/video/world/2014/04/01/orig-ctl-wildlife-trafficking-pangolin.cnn.html?hpt=hp_c2
 Attribute: Type = target -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li > a:nth-child(4) 
 <*** UI Element ***>
 <li> 
-Text:   A different perspective     
+Text:   7 ways to help   
 Attribute: Type = class -- value = c_hpbullet3
-Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: A different perspective 
-Attribute: Type = href -- value = /2014/02/08/worldsport/gallery/visions-of-sochi/index.html?hpt=hp_c2
+Text: 7 ways to help 
+Attribute: Type = href -- value = /2014/04/01/opinion/sutter-pangolin-help-change/index.html?hpt=hp_c2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2) > a 
 <*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /2014/02/08/worldsport/gallery/visions-of-sochi/index.html?hpt=hp_c2
-Attribute: Type = target -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2) > a:nth-child(4) 
-<*** UI Element ***>
 <li> 
-Text:   Bode's downhill disappointment   
+Text:   Name this 'walking pinecone'   
 Attribute: Type = class -- value = c_hpbullet4
-Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: Bode's downhill disappointment 
-Attribute: Type = href -- value = http://bleacherreport.com/articles/1953702-sochi-olympics-no-silver-lining-in-bode-millers-downhill-disappointment?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial&hpt=hp_t2&hpt=hp_c2&hpt=hp_c2
-Attribute: Type = target -- value = _blank
+Text: Name this 'walking pinecone' 
+Attribute: Type = href -- value = /2014/04/01/opinion/sutter-pangolin-name-change/index.html?hpt=hp_c2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <li> 
-Text:   Oops! Where's the ring?     
+Text:   'Honey badger' guy has a new video   
 Attribute: Type = class -- value = c_hpbullet5
-Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: Oops! Where's the ring? 
-Attribute: Type = href -- value = /video/data/2.0/video/world/2014/02/08/newday-nichols-olympic-rings.cnn.html?hpt=hp_c2
+Text: 'Honey badger' guy has a new video 
+Attribute: Type = href -- value = /2014/04/01/opinion/sutter-honey-badger-pangolin/index.html?hpt=hp_c2
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(4) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/world/2014/02/08/newday-nichols-olympic-rings.cnn.html?hpt=hp_c2
-Attribute: Type = target -- value = 
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(4) > a:nth-child(4) 
-<*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /2014/02/09/worldsport/gallery/ashley-wagner/index.html?hpt=hp_c3
+Attribute: Type = href -- value = /video/data/2.0/video/crime/2014/04/05/jvm-bts-schellpfeffer-murder-for-hire-plot.hln.html?hpt=hp_c3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div > div > div > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /2014/02/09/worldsport/gallery/ashley-wagner/index.html?hpt=hp_c3
+Attribute: Type = href -- value = /video/data/2.0/video/crime/2014/04/05/jvm-bts-schellpfeffer-murder-for-hire-plot.hln.html?hpt=hp_c3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > a 
 <*** UI Element ***>
 <a> 
-Text: Not the score she was hoping for 
-Attribute: Type = href -- value = /2014/02/09/worldsport/gallery/ashley-wagner/index.html?hpt=hp_c3
+Text: Attempted murder plot stuns partner 
+Attribute: Type = href -- value = /video/data/2.0/video/crime/2014/04/05/jvm-bts-schellpfeffer-murder-for-hire-plot.hln.html?hpt=hp_c3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/world/2014/02/09/newday-vo-bobsledder-bathroom-door.cnn.html?hpt=hp_c3
+Attribute: Type = href -- value = /2014/04/04/showbiz/celebrity-news-gossip/paulina-gretzky-golf-digest/index.html?hpt=hp_c3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div > a 
 <*** UI Element ***>
 <a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/world/2014/02/09/newday-vo-bobsledder-bathroom-door.cnn.html?hpt=hp_c3
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > a 
-<*** UI Element ***>
-<a> 
-Text: Bobsledder vs. bathroom door  
-Attribute: Type = href -- value = /video/data/2.0/video/world/2014/02/09/newday-vo-bobsledder-bathroom-door.cnn.html?hpt=hp_c3
+Text: Paulina Gretzky's controversial cover 
+Attribute: Type = href -- value = /2014/04/04/showbiz/celebrity-news-gossip/paulina-gretzky-golf-digest/index.html?hpt=hp_c3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /2014/02/08/worldsport/gallery/falling-down-in-sochi/index.html?hpt=hp_c3
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/02/dnt-man-survives-chainsaw-stuck-in-neck.wpxi.html?hpt=hp_c3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div > div > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /2014/02/08/worldsport/gallery/falling-down-in-sochi/index.html?hpt=hp_c3
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/02/dnt-man-survives-chainsaw-stuck-in-neck.wpxi.html?hpt=hp_c3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > a 
 <*** UI Element ***>
 <a> 
-Text: Falling down in Sochi 
-Attribute: Type = href -- value = /2014/02/08/worldsport/gallery/falling-down-in-sochi/index.html?hpt=hp_c3
+Text: 'Chainsaw was in me, still running' 
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/02/dnt-man-survives-chainsaw-stuck-in-neck.wpxi.html?hpt=hp_c3
 Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/crime/2014/02/08/ac-pkg-savidge-movie-theater-shooting-video.cnn.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div > div > div > a 
+Attribute: Type = href -- value = /2014/04/04/world/gallery/week-in-photos-0403/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div > div > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/crime/2014/02/08/ac-pkg-savidge-movie-theater-shooting-video.cnn.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div > div > div:nth-child(2) > a 
+Attribute: Type = href -- value = /2014/04/04/world/gallery/week-in-photos-0403/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div > div:nth-child(2) > a 
 <*** UI Element ***>
 <a> 
-Text: See security video of theater shooting 
-Attribute: Type = href -- value = /video/data/2.0/video/crime/2014/02/08/ac-pkg-savidge-movie-theater-shooting-video.cnn.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div > a 
-<*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/04/mxp-dnt-teacher-youtube-confession-charged-in-sex-case.hln.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > a 
+Text: The week in 33 photos 
+Attribute: Type = href -- value = /2014/04/04/world/gallery/week-in-photos-0403/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/04/mxp-dnt-teacher-youtube-confession-charged-in-sex-case.hln.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > a 
+Attribute: Type = href -- value = /2014/04/03/tech/innovation/3-d-printing-human-organs/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > div > div > a 
 <*** UI Element ***>
 <a> 
-Text: YouTube vid leads to teacher sex charges 
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/04/mxp-dnt-teacher-youtube-confession-charged-in-sex-case.hln.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > a 
-<*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/living/2014/02/04/natpkg-orig-ancil-carmen-carrera-transgender-model-fashion.cnn.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div > div > a 
+Text: New in 3-D printing - human organs? 
+Attribute: Type = href -- value = /2014/04/03/tech/innovation/3-d-printing-human-organs/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/living/2014/02/04/natpkg-orig-ancil-carmen-carrera-transgender-model-fashion.cnn.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > a 
-<*** UI Element ***>
-<a> 
-Text: Is America ready for this top model? 
-Attribute: Type = href -- value = /video/data/2.0/video/living/2014/02/04/natpkg-orig-ancil-carmen-carrera-transgender-model-fashion.cnn.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > a 
+Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/04/02/curry-snake-eats-crocodile.cnn.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > div > div > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = http://religion.blogs.cnn.com/2014/02/08/change-is-brewing-among-american-christians/?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(5) > div > div > a 
+Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/04/02/curry-snake-eats-crocodile.cnn.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > div > div:nth-child(2) > a 
 <*** UI Element ***>
 <a> 
-Text: Praise the Lord and pass the beer 
-Attribute: Type = href -- value = http://religion.blogs.cnn.com/2014/02/08/change-is-brewing-among-american-christians/?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(5) > a 
-<*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /2014/02/06/living/amazon-100-best-books/index.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(6) > div > div > a 
-<*** UI Element ***>
-<a> 
-Text: 100 books you should read in your lifetime 
-Attribute: Type = href -- value = /2014/02/06/living/amazon-100-best-books/index.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(6) > a 
+Text: Shocking video of a python eating a croc 
+Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/04/02/curry-snake-eats-crocodile.cnn.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /2014/02/09/us/hawaii-beetle-invasion/index.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(7) > div > div > a 
+Attribute: Type = href -- value = http://religion.blogs.cnn.com/2014/04/05/when-god-plays-the-villain/?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(9) > div > div > a 
 <*** UI Element ***>
 <a> 
-Text: Look who's eating Hawaii's palm trees 
-Attribute: Type = href -- value = /2014/02/09/us/hawaii-beetle-invasion/index.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(7) > a 
-<*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/02/07/sgmd-5-exercises-not-to-do.cnn.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(9) > div > div > a 
+Text: When God plays the villain 
+Attribute: Type = href -- value = http://religion.blogs.cnn.com/2014/04/05/when-god-plays-the-villain/?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(9) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/02/07/sgmd-5-exercises-not-to-do.cnn.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(9) > div > div:nth-child(2) > a 
-<*** UI Element ***>
-<a> 
-Text: 5 exercises you should avoid 
-Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/02/07/sgmd-5-exercises-not-to-do.cnn.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(9) > a 
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/05/dnt-goose-shatters-car-window.kcnc.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(10) > div > div > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /2014/02/07/showbiz/gallery/celebs-born-outside-the-us/index.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(10) > div > div > a 
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/05/dnt-goose-shatters-car-window.kcnc.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(10) > div > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: Goose smashes through windshield 
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/05/dnt-goose-shatters-car-window.kcnc.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(10) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /2014/02/07/showbiz/gallery/celebs-born-outside-the-us/index.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(10) > div > div:nth-child(2) > a 
+Attribute: Type = href -- value = /2014/04/04/living/integrated-prom-wilcox-county-georgia/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(11) > div > div > a 
 <*** UI Element ***>
 <a> 
-Text: U.S. celebs born overseas 
-Attribute: Type = href -- value = /2014/02/07/showbiz/gallery/celebs-born-outside-the-us/index.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(10) > a 
-<*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/02/07/leno-says-goodbye-earlystart.cnn.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(11) > div > div > a 
+Text: School's first racially integrated prom 
+Attribute: Type = href -- value = /2014/04/04/living/integrated-prom-wilcox-county-georgia/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(11) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/02/07/leno-says-goodbye-earlystart.cnn.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(11) > div > div:nth-child(2) > a 
+Attribute: Type = href -- value = /2014/04/04/tech/social-media/apparently-this-matters-crap-crappy-taxidermy/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(13) > div > div > a 
 <*** UI Element ***>
 <a> 
-Text: See weepy Jay Leno end 'Tonight' run 
-Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/02/07/leno-says-goodbye-earlystart.cnn.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(11) > a 
-<*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /2014/02/05/showbiz/gallery/seinfeld-where-are-they-now/index.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(13) > div > div > a 
+Text: Crappy taxidermy (it's a thing) 
+Attribute: Type = href -- value = /2014/04/04/tech/social-media/apparently-this-matters-crap-crappy-taxidermy/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(13) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /2014/02/05/showbiz/gallery/seinfeld-where-are-they-now/index.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(13) > div > div:nth-child(2) > a 
-<*** UI Element ***>
-<a> 
-Text: 'Seinfeld': Where are they now? 
-Attribute: Type = href -- value = /2014/02/05/showbiz/gallery/seinfeld-where-are-they-now/index.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(13) > a 
+Attribute: Type = href -- value = /2014/04/04/showbiz/gallery/kurt-cobain-20-years/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(14) > div > div > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /2014/02/07/travel/houston-astrodome-preservation/index.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(14) > div > div > a 
+Attribute: Type = href -- value = /2014/04/04/showbiz/gallery/kurt-cobain-20-years/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(14) > div > div:nth-child(2) > a 
 <*** UI Element ***>
 <a> 
-Text: Historic stadium or local eyesore? 
-Attribute: Type = href -- value = /2014/02/07/travel/houston-astrodome-preservation/index.html?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(14) > a 
+Text: Classic rock - 20 years since Nirvana  
+Attribute: Type = href -- value = /2014/04/04/showbiz/gallery/kurt-cobain-20-years/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(14) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = http://eatocracy.cnn.com/2014/02/06/chicken-broth/?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(15) > div > div > a 
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/03/lv-vo-train-slams-into-suv.cnn.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(15) > div > div > a 
 <*** UI Element ***>
 <a> 
-Text: This cooking trick changes everything 
-Attribute: Type = href -- value = http://eatocracy.cnn.com/2014/02/06/chicken-broth/?hpt=hp_c4
-Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(15) > a 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/03/lv-vo-train-slams-into-suv.cnn.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(15) > div > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: Car runs light, gets slammed by train 
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/03/lv-vo-train-slams-into-suv.cnn.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(15) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /2014/04/03/showbiz/big-bang-theory-set/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(17) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text: Secrets from set of 'Big Bang Theory' 
+Attribute: Type = href -- value = /2014/04/03/showbiz/big-bang-theory-set/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(17) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/showbiz/2014/04/03/conan-simon-helberg-spot-on-al-pacino-impression.team-coco.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(18) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/showbiz/2014/04/03/conan-simon-helberg-spot-on-al-pacino-impression.team-coco.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(18) > div > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: See 'Big Bang' star's spot-on Pacino 
+Attribute: Type = href -- value = /video/data/2.0/video/showbiz/2014/04/03/conan-simon-helberg-spot-on-al-pacino-impression.team-coco.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(18) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/crime/2014/04/03/dnt-woman-frozen-in-body-bag.kcal.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(19) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/crime/2014/04/03/dnt-woman-frozen-in-body-bag.kcal.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(19) > div > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: Family: Hospital froze her alive  
+Attribute: Type = href -- value = /video/data/2.0/video/crime/2014/04/03/dnt-woman-frozen-in-body-bag.kcal.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(19) > a 
 <*** UI Element ***>
 <a> 
 Text: Weather 
@@ -1359,14 +1381,14 @@ Text:
 
 Dow
 
-15,794.08
+16,412.71
 
 
 
-(+1.06 %)
+(-0.96 %)
 
 
-+165.55
+-159.84
 
 
  
@@ -1384,14 +1406,14 @@ Text:
 
 Nasdaq
 
-4,125.86
+4,127.73
 
 
 
-(+1.69 %)
+(-2.60 %)
 
 
-+68.739
+-110.014
 
 
  
@@ -1409,14 +1431,14 @@ Text:
 
 S&P
 
-1,797.02
+1,865.09
 
 
 
-(+1.33 %)
+(-1.25 %)
 
 
-+23.59
+-23.68
 
 
  
@@ -1455,7 +1477,7 @@ Text:
  
 
 
- Adventurer missing in Mexico 
+ American: Rwanda not just genocide
 
 
  
@@ -1466,69 +1488,69 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > d
 <a> 
 Text:  
  
-Attribute: Type = href -- value = /2014/02/08/world/americas/missing-american-mexico/index.html?hpt=hp_bn1
+Attribute: Type = href -- value = /2014/04/04/opinion/rwanda-20-years-after-genocide-irpt/index.html?hpt=hp_bn1
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li > div > div > a 
 <*** UI Element ***>
 <a> 
-Text: Adventurer missing in Mexico  
-Attribute: Type = href -- value = /2014/02/08/world/americas/missing-american-mexico/index.html?hpt=hp_bn1
+Text: American: Rwanda not just genocide 
+Attribute: Type = href -- value = /2014/04/04/opinion/rwanda-20-years-after-genocide-irpt/index.html?hpt=hp_bn1
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li > div > span > span > a 
 <*** UI Element ***>
 <li> 
-Text:  Can campus rape be stopped?
+Text:  Du Pont heir avoided prison
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: Can campus rape be stopped? 
-Attribute: Type = href -- value = /2014/02/09/living/campus-sexual-violence-students-schools/index.html?hpt=hp_bn1
+Text: Du Pont heir avoided prison 
+Attribute: Type = href -- value = /2014/04/02/justice/delaware-du-pont-rape-case/index.html?hpt=hp_bn1
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
-Text:  C'mon, winter's not that bad
+Text:  Man survives chainsaw in neck
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: C'mon, winter's not that bad 
-Attribute: Type = href -- value = /2014/02/07/travel/irpt-embracing-winter/index.html?hpt=hp_bn1
+Text: Man survives chainsaw in neck 
+Attribute: Type = href -- value = /2014/04/01/us/chainsaw-accident-survivor/index.html?hpt=hp_bn1
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <li> 
-Text:  Dad's emotional plea to Facebook
- 
+Text:  Yoda fan wins $425M
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: Dad's emotional plea to Facebook 
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/06/dads-emotional-plea-to-facebook.john-berlin.html?hpt=hp_bn1
+Text: Yoda fan wins $425M 
+Attribute: Type = href -- value = /2014/04/01/us/powerball-lottery-winner/index.html?hpt=hp_bn1
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(4) > a 
 <*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/06/dads-emotional-plea-to-facebook.john-berlin.html?hpt=hp_bn1
-Attribute: Type = target -- value = _self
-Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(4) > a:nth-child(2) 
-<*** UI Element ***>
 <li> 
-Text:  18-foot python found in Florida
+Text:  Is this a real chupacabra?
+ 
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: 18-foot python found in Florida 
-Attribute: Type = href -- value = /2014/02/06/us/florida-18-foot-python/index.html?hpt=hp_bn1
+Text: Is this a real chupacabra? 
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/02/dnt-tx-possible-chupacabra.kavu.html?hpt=hp_bn1
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/02/dnt-tx-possible-chupacabra.kavu.html?hpt=hp_bn1
+Attribute: Type = target -- value = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(5) > a:nth-child(2) 
 <*** UI Element ***>
 <a> 
 Text:  
@@ -1547,9 +1569,7 @@ Text:
  
 
 
-
- Oops! That wasn't supposed to happen
- 
+ Afghan election: Who's running?
 
 
  
@@ -1560,73 +1580,76 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > d
 <a> 
 Text:  
  
-Attribute: Type = href -- value = /video/data/2.0/video/world/2014/02/08/newday-nichols-olympic-rings.cnn.html?hpt=hp_bn2
+Attribute: Type = href -- value = /2014/04/02/world/asia/afghan-elections-candidate-profiles/index.html?hpt=hp_bn2
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li > div > div > a 
 <*** UI Element ***>
 <a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/world/2014/02/08/newday-nichols-olympic-rings.cnn.html?hpt=hp_bn2
-Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li > div > div > div > a 
-<*** UI Element ***>
-<a> 
-Text: Oops! That wasn't supposed to happen 
-Attribute: Type = href -- value = /video/data/2.0/video/world/2014/02/08/newday-nichols-olympic-rings.cnn.html?hpt=hp_bn2
+Text: Afghan election: Who's running? 
+Attribute: Type = href -- value = /2014/04/02/world/asia/afghan-elections-candidate-profiles/index.html?hpt=hp_bn2
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li > div > span > span > a 
 <*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/world/2014/02/08/newday-nichols-olympic-rings.cnn.html?hpt=hp_bn2
-Attribute: Type = target -- value = _self
-Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li > div > span > span > a:nth-child(2) 
-<*** UI Element ***>
 <li> 
-Text:  Bobsledder punches hole in door 
+Text:  Russia snaps back at NATO
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: Bobsledder punches hole in door  
-Attribute: Type = href -- value = /2014/02/09/world/europe/olympics-us-bobsledder-bathroom/index.html?hpt=hp_bn2
+Text: Russia snaps back at NATO 
+Attribute: Type = href -- value = /2014/04/03/world/europe/ukraine-crisis/index.html?hpt=hp_bn2
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
-Text:  Zoo puts down healthy giraffe
+Text:  What's the Oscar Pistorius defense?
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: Zoo puts down healthy giraffe 
-Attribute: Type = href -- value = /2014/02/09/world/europe/denmark-zoo-giraffe/index.html?hpt=hp_bn2
+Text: What's the Oscar Pistorius defense? 
+Attribute: Type = href -- value = /2014/03/27/world/africa/pistorius-trial-defense/index.html?hpt=hp_bn2
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <li> 
-Text:  'Tiger Mom': 3 traits to make it in U.S.
+Text:  Stolen art found 40 years later
+ 
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: 'Tiger Mom': 3 traits to make it in U.S. 
-Attribute: Type = href -- value = http://globalpublicsquare.blogs.cnn.com/2014/02/07/is-the-tiger-mom-controversy-misunderstood/?hpt=hp_bn2
+Text: Stolen art found 40 years later 
+Attribute: Type = href -- value = /video/data/2.0/video/world/2014/04/04/pkg-stolen-french-paintings-recovered.cnn.html?hpt=hp_bn2
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(4) > a 
 <*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/world/2014/04/04/pkg-stolen-french-paintings-recovered.cnn.html?hpt=hp_bn2
+Attribute: Type = target -- value = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(4) > a:nth-child(2) 
+<*** UI Element ***>
 <li> 
-Text:  Castaway 'was a bit off'
+Text:  5 strongest recorded quakes
+ 
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: Castaway 'was a bit off' 
-Attribute: Type = href -- value = /2014/02/08/world/marshall-islands-castaway/index.html?hpt=hp_bn2
+Text: 5 strongest recorded quakes 
+Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/04/03/orig-5-most-powerful-earthquakes-on-record-npr.cnn.html?hpt=hp_bn2
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/04/03/orig-5-most-powerful-earthquakes-on-record-npr.cnn.html?hpt=hp_bn2
+Attribute: Type = target -- value = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(5) > a:nth-child(2) 
 <*** UI Element ***>
 <a> 
 Text:  
@@ -1645,7 +1668,7 @@ Text:
  
 
 
- 2016: Not your daddy's GOP
+ Dems have a good week
 
 
  
@@ -1656,67 +1679,67 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > d
 <a> 
 Text:  
  
-Attribute: Type = href -- value = /2014/02/06/politics/2016-republican-field/index.html?hpt=hp_bn3
+Attribute: Type = href -- value = /2014/04/04/politics/king-inside-politics-democrats-good-week/index.html?hpt=hp_bn3
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li > div > div > a 
 <*** UI Element ***>
 <a> 
-Text: 2016: Not your daddy's GOP 
-Attribute: Type = href -- value = /2014/02/06/politics/2016-republican-field/index.html?hpt=hp_bn3
+Text: Dems have a good week 
+Attribute: Type = href -- value = /2014/04/04/politics/king-inside-politics-democrats-good-week/index.html?hpt=hp_bn3
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li > div > span > span > a 
 <*** UI Element ***>
 <li> 
-Text:  Will Joe Biden run again?
- 
+Text:  George W. Bush paintings unveiled
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: Will Joe Biden run again? 
-Attribute: Type = href -- value = /video/data/2.0/video/politics/2014/02/07/tsr-dnt-keilar-biden-may-run-in-2016.cnn.html?hpt=hp_bn3
+Text: George W. Bush paintings unveiled 
+Attribute: Type = href -- value = /2014/04/04/politics/bush-paintings/index.html?hpt=hp_bn3
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(2) > a 
 <*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/politics/2014/02/07/tsr-dnt-keilar-biden-may-run-in-2016.cnn.html?hpt=hp_bn3
-Attribute: Type = target -- value = _self
-Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(2) > a:nth-child(2) 
-<*** UI Element ***>
 <li> 
-Text:  What Biden said, what he meant
+Text:  Art critic weighs in
+ 
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: What Biden said, what he meant 
-Attribute: Type = href -- value = /2014/02/07/politics/biden-2016/index.html?hpt=hp_bn3
+Text: Art critic weighs in 
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/04/nr-intv-jerry-saltz-bush-paints-world-leaders.cnn.html?hpt=hp_bn3
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(3) > a 
 <*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/us/2014/04/04/nr-intv-jerry-saltz-bush-paints-world-leaders.cnn.html?hpt=hp_bn3
+Attribute: Type = target -- value = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(3) > a:nth-child(2) 
+<*** UI Element ***>
 <li> 
-Text:  Republicans slam Obama over jobs
+Text:  Big Papi, big selfies, big deals
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: Republicans slam Obama over jobs 
-Attribute: Type = href -- value = http://politicalticker.blogs.cnn.com/2014/02/07/republicans-slam-president-over-jobs-report/?hpt=hp_bn3
+Text: Big Papi, big selfies, big deals 
+Attribute: Type = href -- value = http://politicalticker.blogs.cnn.com/2014/04/04/299830/?hpt=hp_bn3
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(4) > a 
 <*** UI Element ***>
 <li> 
-Text:  Political Circus: Kerry's a soul man
+Text:  Special Coverage: 2014 midterms
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: Political Circus: Kerry's a soul man 
-Attribute: Type = href -- value = http://politicalticker.blogs.cnn.com/2014/02/07/political-circus-kerrys-a-soul-man-clinton-lights-up-the-web-and-biden-is/?hpt=hp_bn3
+Text: Special Coverage: 2014 midterms 
+Attribute: Type = href -- value = /specials/politics/2014-midterm-elections/index.html?hpt=hp_bn3
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(5) > a 
 <*** UI Element ***>
@@ -1737,7 +1760,7 @@ Text:
  
 
 
- Headset beams video to your eyes
+ 3-D printing human organs
 
 
  
@@ -1748,67 +1771,67 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > 
 <a> 
 Text:  
  
-Attribute: Type = href -- value = /2014/02/06/tech/innovation/glyph-avegant-headset/index.html?hpt=hp_bn5
+Attribute: Type = href -- value = /2014/04/03/tech/innovation/3-d-printing-human-organs/index.html?hpt=hp_bn5
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li > div > div > a 
 <*** UI Element ***>
 <a> 
-Text: Headset beams video to your eyes 
-Attribute: Type = href -- value = /2014/02/06/tech/innovation/glyph-avegant-headset/index.html?hpt=hp_bn5
+Text: 3-D printing human organs 
+Attribute: Type = href -- value = /2014/04/03/tech/innovation/3-d-printing-human-organs/index.html?hpt=hp_bn5
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li > div > span > span > a 
 <*** UI Element ***>
 <li> 
-Text:  The maddening pull of 'Flappy Bird'
+Text:  Apple news coming June 2
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: The maddening pull of 'Flappy Bird' 
-Attribute: Type = href -- value = /2014/02/05/tech/gaming-gadgets/flappy-bird-game/index.html?hpt=hp_bn5
+Text: Apple news coming June 2 
+Attribute: Type = href -- value = /2014/04/03/tech/mobile/apple-wwdc-2014/index.html?hpt=hp_bn5
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
-Text:  Your Facebook life in 62 seconds
+Text:  Underground sea found on Saturn moon
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: Your Facebook life in 62 seconds 
-Attribute: Type = href -- value = /2014/02/04/tech/social-media/facebook-look-back-video/index.html?hpt=hp_bn5
+Text: Underground sea found on Saturn moon 
+Attribute: Type = href -- value = /2014/04/03/tech/innovation/moon-saturn-ocean/index.html?hpt=hp_bn5
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <li> 
-Text:  Like? Facebook turns 10
+Text:  Amazon's big streaming move 
  
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: Like? Facebook turns 10 
-Attribute: Type = href -- value = /video/data/2.0/video/tech/2014/02/04/facebook-10-years-how-we-connect-orig-mcg.cnn.html?hpt=hp_bn5
+Text: Amazon's big streaming move  
+Attribute: Type = href -- value = /video/data/2.0/video/business/2014/04/03/wbt-amazon-unveils-fire-tv.cnn.html?hpt=hp_bn5
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(4) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/tech/2014/02/04/facebook-10-years-how-we-connect-orig-mcg.cnn.html?hpt=hp_bn5
+Attribute: Type = href -- value = /video/data/2.0/video/business/2014/04/03/wbt-amazon-unveils-fire-tv.cnn.html?hpt=hp_bn5
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(4) > a:nth-child(2) 
 <*** UI Element ***>
 <li> 
-Text:  Bill Gates' impact on computing
+Text:  U.S. gets new atomic clock
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: Bill Gates' impact on computing 
-Attribute: Type = href -- value = /2014/02/04/tech/innovation/bill-gates-microsoft-impact/index.html?hpt=hp_bn5
+Text: U.S. gets new atomic clock 
+Attribute: Type = href -- value = /2014/04/03/tech/innovation/new-atomic-clock/index.html?hpt=hp_bn5
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(5) > a 
 <*** UI Element ***>
@@ -1824,70 +1847,60 @@ Attribute: Type = href -- value = http://money.cnn.com?hpt=hp_bn6
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > h4 > a 
 <*** UI Element ***>
 <li> 
-Text:           Exotic car sales surge    
+Text:        Tyson recalls chicken nuggets sold at Sam's Club    
 Attribute: Type = class -- value = c_bulletwithimg
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li 
 <*** UI Element ***>
 <a> 
 Text:    
-Attribute: Type = href -- value = http://money.cnn.com/gallery/autos/2014/02/05/exotic-car-sales-records/index.html?source=cnn_bin
+Attribute: Type = href -- value = http://money.cnn.com/2014/04/04/news/companies/tyson-chicken-nugget-recall/index.html?source=cnn_bin
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li > div > div > a 
 <*** UI Element ***>
 <a> 
-Text:  
-Attribute: Type = href -- value = http://money.cnn.com/gallery/autos/2014/02/05/exotic-car-sales-records/index.html?source=cnn_bin
-Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li > div > div > div > a 
-<*** UI Element ***>
-<a> 
-Text:  Exotic car sales surge  
-Attribute: Type = href -- value = http://money.cnn.com/gallery/autos/2014/02/05/exotic-car-sales-records/index.html?source=cnn_bin
+Text:  Tyson recalls chicken nuggets sold at Sam's Club  
+Attribute: Type = href -- value = http://money.cnn.com/2014/04/04/news/companies/tyson-chicken-nugget-recall/index.html?source=cnn_bin
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li > div > span > span > a 
 <*** UI Element ***>
 <li> 
-Text:  Why Americans love prepaid cards   
+Text:  J-Lo backed TV channel buys Fuse network  
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: Why Americans love prepaid cards  
-Attribute: Type = href -- value = http://money.cnn.com/2014/02/06/pf/prepaid-cards/index.html?source=cnn_bin
+Text: J-Lo backed TV channel buys Fuse network 
+Attribute: Type = href -- value = http://money.cnn.com/2014/04/04/news/companies/jennifer-lopez-fuse-tv/index.html?source=cnn_bin
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
-Text:  Guns for women  
+Text:  GM submits 200,000 pages to safety agency  
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: Guns for women 
-Attribute: Type = href -- value = http://money.cnn.com/2014/02/07/news/companies/guns-women/index.html?source=cnn_bin
+Text: GM submits 200,000 pages to safety agency 
+Attribute: Type = href -- value = http://money.cnn.com/2014/04/04/news/companies/gm-recall-questions/index.html?source=cnn_bin
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <li> 
-Text:  50 Most Powerful Women - global     
+Text:  Anadarko to pay $5 billion for environmental cleanup  
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: 50 Most Powerful Women - global 
-Attribute: Type = href -- value = http://money.cnn.com/gallery/leadership/2014/02/06/global-most-powerful-women.fortune/index.html?source=cnn_bin
+Text: Anadarko to pay $5 billion for environmental cleanup 
+Attribute: Type = href -- value = http://money.cnn.com/2014/04/03/news/companies/anadarko-settlement/index.html?source=cnn_bin
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(4) > a 
 <*** UI Element ***>
-<a> 
-Text:    
-Attribute: Type = href -- value = http://money.cnn.com/gallery/leadership/2014/02/06/global-most-powerful-women.fortune/index.html?source=cnn_bin
-Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(4) > a:nth-child(2) 
-<*** UI Element ***>
 <li> 
-Text:  Inside Malibu's most colorful home     
+Text:  Audi RS7 'a performance monster'     
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: Inside Malibu's most colorful home 
-Attribute: Type = href -- value = http://money.cnn.com/video/pf/2014/02/06/pf-uh-malibu-modern-house.cnnmoney/index.html?source=cnn_bin
+Text: Audi RS7 'a performance monster' 
+Attribute: Type = href -- value = http://money.cnn.com/video/pf/2014/04/02/audi-rs7-review.cnnmoney/index.html?source=cnn_bin
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(5) > a 
 <*** UI Element ***>
 <a> 
 Text:    
-Attribute: Type = href -- value = http://money.cnn.com/video/pf/2014/02/06/pf-uh-malibu-modern-house.cnnmoney/index.html?source=cnn_bin
+Attribute: Type = href -- value = http://money.cnn.com/video/pf/2014/04/02/audi-rs7-review.cnnmoney/index.html?source=cnn_bin
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(5) > a:nth-child(2) 
 <*** UI Element ***>
 <a> 
@@ -1907,7 +1920,7 @@ Text:
  
 
 
- Elephants killed for terror
+ Should mentally ill own guns? 
 
 
  
@@ -1918,60 +1931,60 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > 
 <a> 
 Text:  
  
-Attribute: Type = href -- value = /2014/02/08/opinion/portman-elephants/index.html?hpt=hp_bn7
+Attribute: Type = href -- value = /2014/04/03/opinion/ritchie-guns-mental-illness/index.html?hpt=hp_bn7
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li > div > div > a 
 <*** UI Element ***>
 <a> 
-Text: Elephants killed for terror 
-Attribute: Type = href -- value = /2014/02/08/opinion/portman-elephants/index.html?hpt=hp_bn7
+Text: Should mentally ill own guns?  
+Attribute: Type = href -- value = /2014/04/03/opinion/ritchie-guns-mental-illness/index.html?hpt=hp_bn7
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li > div > span > span > a 
 <*** UI Element ***>
 <li> 
-Text:  He brought the Beatles to America
+Text:  Virtual assistants are the future 
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: He brought the Beatles to America 
-Attribute: Type = href -- value = /2014/02/09/opinion/greene-ed-sullivan-beatles/index.html?hpt=hp_bn7
+Text: Virtual assistants are the future  
+Attribute: Type = href -- value = /2014/04/04/opinion/ward-virtual-assistants/index.html?hpt=hp_bn7
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
-Text:  Is Bieber getting out of control?
+Text:  Is Internet driving Letterman away?
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: Is Bieber getting out of control? 
-Attribute: Type = href -- value = /2014/02/07/opinion/mark-bieber-pot-plane/index.html?hpt=hp_bn7
+Text: Is Internet driving Letterman away? 
+Attribute: Type = href -- value = /2014/04/04/opinion/bianculli-david-letterman/index.html?hpt=hp_bn7
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <li> 
-Text:  Reality TV helps Clay Aiken in politics
+Text:  Why is heir not in jail for child rape?
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: Reality TV helps Clay Aiken in politics 
-Attribute: Type = href -- value = /2014/02/07/opinion/omarosa-aiken-reality-tv/index.html?hpt=hp_bn7
+Text: Why is heir not in jail for child rape? 
+Attribute: Type = href -- value = /2014/04/03/opinion/robbins-dupont-heir-rape/index.html?hpt=hp_bn7
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(4) > a 
 <*** UI Element ***>
 <li> 
-Text:  Are dealers killers in Hoffman case?
+Text:  Rahm Emanuel's Chicago two cities
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: Are dealers killers in Hoffman case? 
-Attribute: Type = href -- value = /2014/02/07/opinion/kirchner-protass-hoffman-dealers/index.html?hpt=hp_bn7
+Text: Rahm Emanuel's Chicago two cities 
+Attribute: Type = href -- value = /2014/04/02/opinion/coval-chicagoland-rahm-emanuel/index.html?hpt=hp_bn7
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(5) > a 
 <*** UI Element ***>
@@ -1982,98 +1995,98 @@ Attribute: Type = href -- value = http://www.cnn.com/opinion?hpt=hp_bn7
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > div:nth-child(5) > a 
 <*** UI Element ***>
 <a> 
-Text: Huffington Post 
-Attribute: Type = href -- value = http://www.huffingtonpost.com?hpt=hp_bn8
+Text: AOL Lifestyle 
+Attribute: Type = href -- value = http://www.aol.com?hpt=hp_bn8
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > h4 > a 
 <*** UI Element ***>
 <li> 
-Text:  OLYMPIC SCARE: Attempted Hijacking In Turkey
+Text:  10 Easy fish recipes
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li 
 <*** UI Element ***>
 <a> 
-Text: OLYMPIC SCARE: Attempted Hijacking In Turkey 
-Attribute: Type = href -- value = http://www.huffingtonpost.com/2014/02/07/sochi-hijiacking-attempt_n_4746397.html?hpt=hp_bn8
+Text: 10 Easy fish recipes 
+Attribute: Type = href -- value = http://www.kitchendaily.com/read/fantastic-fish-recipes?hpt=hp_bn8
 Attribute: Type = target -- value = _blank
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li > a 
 <*** UI Element ***>
 <li> 
-Text:  Mitch meets his match
+Text:  Knitting for the chicest of dummies
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: Mitch meets his match 
-Attribute: Type = href -- value = http://www.huffingtonpost.com/2014/02/06/alison-lundergan-grimes-senate-poll_n_4741350.html?hpt=hp_bn8
+Text: Knitting for the chicest of dummies 
+Attribute: Type = href -- value = http://www.stylemepretty.com/living/2014/03/20/how-to-knit/?hpt=hp_bn8
 Attribute: Type = target -- value = _blank
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
-Text:  Another disappointing jobs report
+Text:  Eat your way to shiny hair
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: Another disappointing jobs report 
-Attribute: Type = href -- value = http://www.huffingtonpost.com/2014/02/07/january-jobs-report-unemployment-rate_n_4740294.html?hpt=hp_bn8
+Text: Eat your way to shiny hair 
+Attribute: Type = href -- value = http://www.stylelist.com/view/an-easy-way-to-get-shiny-healthy-hair/?hpt=hp_bn8
 Attribute: Type = target -- value = _blank
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <li> 
-Text:  Missing infant found alive
+Text:  Surprising ways to burn calories
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: Missing infant found alive 
-Attribute: Type = href -- value = http://www.huffingtonpost.com/2014/02/07/baby-kayden-powell-found_n_4747020.html?hpt=hp_bn8
+Text: Surprising ways to burn calories 
+Attribute: Type = href -- value = http://www.stylelist.com/view/surprising-ways-to-burn-calories/?hpt=hp_bn8
 Attribute: Type = target -- value = _blank
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(4) > a 
 <*** UI Element ***>
 <li> 
-Text:  You call that a hipster!?
+Text:  NYC's first female firefighter
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: You call that a hipster!? 
-Attribute: Type = href -- value = http://www.huffingtonpost.com/2014/02/05/you-call-that-a-hipster_n_4717993.html?hpt=hp_bn8
+Text: NYC's first female firefighter 
+Attribute: Type = href -- value = http://www.makers.com/brenda-berkman-0?hpt=hp_bn8
 Attribute: Type = target -- value = _blank
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(5) > a 
 <*** UI Element ***>
 <li> 
-Text:  4 year old begs Jesus for warmth
+Text:  DIY copper hanging plants
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(6) 
 <*** UI Element ***>
 <a> 
-Text: 4 year old begs Jesus for warmth 
-Attribute: Type = href -- value = http://www.huffingtonpost.com/2014/02/07/snow-shoveler-make-it-warm-jesus_n_4745914.html?hpt=hp_bn8
+Text: DIY copper hanging plants 
+Attribute: Type = href -- value = http://www.stylemepretty.com/living/2014/03/31/diy-copper-hanging-plants/?hpt=hp_bn8
 Attribute: Type = target -- value = _blank
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(6) > a 
 <*** UI Element ***>
 <li> 
-Text:  Join the 'Mile-Low Club' for $570K
+Text:  15 Time-saving dinner hacks
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(7) 
 <*** UI Element ***>
 <a> 
-Text: Join the 'Mile-Low Club' for $570K 
-Attribute: Type = href -- value = http://www.huffingtonpost.com/2014/02/07/mile-low-club-luxury-submarine-lovers-deep_n_4740784.html?hpt=hp_bn8
+Text: 15 Time-saving dinner hacks 
+Attribute: Type = href -- value = http://www.kitchendaily.com/read/15-time-saving-dinner-hacks?hpt=hp_bn8
 Attribute: Type = target -- value = _blank
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(7) > a 
 <*** UI Element ***>
 <a> 
 Text:  
 Attribute: Type = class -- value = cnn_mtpmorebtn
-Attribute: Type = href -- value = http://www.huffingtonpost.com?hpt=hp_bn8
+Attribute: Type = href -- value = http://www.aol.com?hpt=hp_bn8
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > div:nth-child(5) > a 
 <*** UI Element ***>
 <a> 
@@ -2087,7 +2100,7 @@ Text:
  
 
 
- Fresh Faces: 10 stars to watch
+ 'Game of Thrones' promises more 
 
 
  
@@ -2098,69 +2111,69 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > 
 <a> 
 Text:  
  
-Attribute: Type = href -- value = http://www.cnn.com/interactive/2014/01/entertainment/cnn10-fresh-faces/?hpt=hp_bn9
+Attribute: Type = href -- value = /2014/04/04/showbiz/game-of-thrones-season-four-preview/index.html?hpt=hp_bn9
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li > div > div > a 
 <*** UI Element ***>
 <a> 
-Text: Fresh Faces: 10 stars to watch 
-Attribute: Type = href -- value = http://www.cnn.com/interactive/2014/01/entertainment/cnn10-fresh-faces/?hpt=hp_bn9
+Text: 'Game of Thrones' promises more  
+Attribute: Type = href -- value = /2014/04/04/showbiz/game-of-thrones-season-four-preview/index.html?hpt=hp_bn9
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li > div > span > span > a 
 <*** UI Element ***>
 <li> 
-Text:  'Walking Dead': What to expect next
+Text:  Letterman's big announcement
+ 
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: 'Walking Dead': What to expect next 
-Attribute: Type = href -- value = /2014/02/07/showbiz/walking-dead-michonne-danai-gurira/index.html?hpt=hp_bn9
+Text: Letterman's big announcement 
+Attribute: Type = href -- value = /video/data/2.0/video/showbiz/2014/04/03/sot-letterman-announces-retirement.the-late-show-with-david-letterman-cbs-worldwide-pants.html?hpt=hp_bn9
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(2) > a 
 <*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/showbiz/2014/04/03/sot-letterman-announces-retirement.the-late-show-with-david-letterman-cbs-worldwide-pants.html?hpt=hp_bn9
+Attribute: Type = target -- value = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(2) > a:nth-child(2) 
+<*** UI Element ***>
 <li> 
-Text:  Is 'The LEGO Movie' really THAT good?
+Text:  Gabriel García Márquez ill 
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: Is 'The LEGO Movie' really THAT good? 
-Attribute: Type = href -- value = /2014/02/07/showbiz/movies/lego-movie-reviews-ew/index.html?hpt=hp_bn9
+Text: Gabriel García Márquez ill  
+Attribute: Type = href -- value = /2014/04/03/showbiz/gabriel-garcia-marquez-hospitalized/index.html?hpt=hp_bn9
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <li> 
-Text:  Hoffman mourned at private funeral
+Text:  Brown headed to D.C. for trial 
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: Hoffman mourned at private funeral 
-Attribute: Type = href -- value = /2014/02/07/showbiz/philip-seymour-hoffman-funeral/index.html?hpt=hp_bn9
+Text: Brown headed to D.C. for trial  
+Attribute: Type = href -- value = /2014/04/03/showbiz/chris-brown-extradited/index.html?hpt=hp_bn9
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(4) > a 
 <*** UI Element ***>
 <li> 
-Text:  Jay Leno's emotional goodbye 
- 
+Text:  Lawson turned away from flight
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: Jay Leno's emotional goodbye  
-Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/02/07/leno-says-goodbye-earlystart.cnn.html?hpt=hp_bn9
+Text: Lawson turned away from flight 
+Attribute: Type = href -- value = /2014/04/03/showbiz/uk-us-nigella-lawson/index.html?hpt=hp_bn9
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(5) > a 
-<*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/bestoftv/2014/02/07/leno-says-goodbye-earlystart.cnn.html?hpt=hp_bn9
-Attribute: Type = target -- value = _self
-Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(5) > a:nth-child(2) 
 <*** UI Element ***>
 <a> 
 Text:  
@@ -2179,7 +2192,7 @@ Text:
  
 
 
- Should this giant be saved?
+ Scotland's most spectacular castles
 
 
  
@@ -2190,60 +2203,60 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > 
 <a> 
 Text:  
  
-Attribute: Type = href -- value = /2014/02/07/travel/houston-astrodome-preservation/index.html?hpt=hp_bn10
+Attribute: Type = href -- value = /2014/04/04/travel/scottish-castles-for-tartan-day/index.html?hpt=hp_bn10
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li > div > div > a 
 <*** UI Element ***>
 <a> 
-Text: Should this giant be saved? 
-Attribute: Type = href -- value = /2014/02/07/travel/houston-astrodome-preservation/index.html?hpt=hp_bn10
+Text: Scotland's most spectacular castles 
+Attribute: Type = href -- value = /2014/04/04/travel/scottish-castles-for-tartan-day/index.html?hpt=hp_bn10
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li > div > span > span > a 
 <*** UI Element ***>
 <li> 
-Text:  Proof that winter's not so bad
+Text:  Goodyear's bigger, faster, Zeppelin
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: Proof that winter's not so bad 
-Attribute: Type = href -- value = /2014/02/07/travel/irpt-embracing-winter/index.html?hpt=hp_bn10
+Text: Goodyear's bigger, faster, Zeppelin 
+Attribute: Type = href -- value = /2014/04/03/travel/goodyear-zeppelin-blimp/index.html?hpt=hp_bn10
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
-Text:  15 amazing ancient ruins to explore
+Text:  Show us the prettiest libraries
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: 15 amazing ancient ruins to explore 
-Attribute: Type = href -- value = /2013/09/13/travel/15-ancient-ruins-you-might-not-know/index.html?hpt=hp_bn10
+Text: Show us the prettiest libraries 
+Attribute: Type = href -- value = http://ireport.cnn.com/topics/1114920?hpt=hp_bn10
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <li> 
-Text:  Area 51 spy jet pilots open up
+Text:  15 best U.S. spots for kids
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: Area 51 spy jet pilots open up 
-Attribute: Type = href -- value = /2014/02/05/travel/air-force-museum-spy-plane/index.html?hpt=hp_bn10
+Text: 15 best U.S. spots for kids 
+Attribute: Type = href -- value = /2014/04/01/travel/top-spots-for-kids-united-states/index.html?hpt=hp_bn10
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(4) > a 
 <*** UI Element ***>
 <li> 
-Text:  Travel photos we wish we'd taken
+Text:  And the world's busiest airport is ...
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: Travel photos we wish we'd taken 
-Attribute: Type = href -- value = /2013/02/05/travel/travel-photo-of-day/index.html?hpt=hp_bn10
+Text: And the world's busiest airport is ... 
+Attribute: Type = href -- value = /2014/03/31/travel/worlds-busiest-airport/index.html?hpt=hp_bn10
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(5) > a 
 <*** UI Element ***>
@@ -2264,7 +2277,7 @@ Text:
  
 
 
- Olympic moms: It's no sacrifice
+ Millennial moms want to stay home?
 
 
  
@@ -2275,62 +2288,69 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > 
 <a> 
 Text:  
  
-Attribute: Type = href -- value = /2014/02/07/living/olympic-moms-sacrifice-challenges-parents/index.html?hpt=hp_bn11
+Attribute: Type = href -- value = /2014/04/04/living/millennial-moms-new-report-parents/index.html?hpt=hp_bn11
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li > div > div > a 
 <*** UI Element ***>
 <a> 
-Text: Olympic moms: It's no sacrifice 
-Attribute: Type = href -- value = /2014/02/07/living/olympic-moms-sacrifice-challenges-parents/index.html?hpt=hp_bn11
+Text: Millennial moms want to stay home? 
+Attribute: Type = href -- value = /2014/04/04/living/millennial-moms-new-report-parents/index.html?hpt=hp_bn11
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li > div > span > span > a 
 <*** UI Element ***>
 <li> 
-Text:  15 wedding dresses in pop culture
+Text:  Why the beef with paternity leave?
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: 15 wedding dresses in pop culture 
-Attribute: Type = href -- value = /2014/02/07/living/15-best-wedding-dresses-matrimony/index.html?hpt=hp_bn11
+Text: Why the beef with paternity leave? 
+Attribute: Type = href -- value = /2014/04/04/living/boomer-esiason-apology-paternity-leave-debate-parents/index.html?hpt=hp_bn11
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
-Text:  More than a trans model
+Text:  Make your wedding florally fabulous
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: More than a trans model 
-Attribute: Type = href -- value = /2014/02/06/living/carmen-carrera-profile-nyfw/index.html?hpt=hp_bn11
+Text: Make your wedding florally fabulous 
+Attribute: Type = href -- value = /2014/04/04/living/preston-bailey-decorating-with-flowers-matrimony/index.html?hpt=hp_bn11
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <li> 
-Text:  Meet a school lunch hero
+Text:  Game of Thrones feast (no blood pie)
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: Meet a school lunch hero 
-Attribute: Type = href -- value = http://eatocracy.cnn.com/2014/02/05/texas-man-funds-lunch-for-school-kids/?hpt=hp_bn11
+Text: Game of Thrones feast (no blood pie) 
+Attribute: Type = href -- value = http://eatocracy.cnn.com/2013/03/28/game-of-thrones-dinner-party/?hpt=hp_bn11
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(4) > a 
 <*** UI Element ***>
 <li> 
-Text:  100 books to read in a lifetime
+Text:  Eternity with Duke's mayonnaise
+ 
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: 100 books to read in a lifetime 
-Attribute: Type = href -- value = /2014/02/06/living/amazon-100-best-books/index.html?hpt=hp_bn11
+Text: Eternity with Duke's mayonnaise 
+Attribute: Type = href -- value = /video/data/2.0/video/topvideos/2014/04/03/dnt-ashes-in-mayonnaise-jar.wbtv.html?hpt=hp_bn11
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = /video/data/2.0/video/topvideos/2014/04/03/dnt-ashes-in-mayonnaise-jar.wbtv.html?hpt=hp_bn11
+Attribute: Type = target -- value = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(5) > a:nth-child(2) 
 <*** UI Element ***>
 <a> 
 Text:  
@@ -2349,7 +2369,7 @@ Text:
  
 
 
- Subway removing bread chemical
+ Worst cities for spring allergies
 
 
  
@@ -2360,67 +2380,67 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > 
 <a> 
 Text:  
  
-Attribute: Type = href -- value = /2014/02/06/health/subway-bread-chemical/index.html?hpt=hp_bn13
+Attribute: Type = href -- value = /2014/03/31/health/worst-allergy-cities-spring/index.html?hpt=hp_bn13
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li > div > div > a 
 <*** UI Element ***>
 <a> 
-Text: Subway removing bread chemical 
-Attribute: Type = href -- value = /2014/02/06/health/subway-bread-chemical/index.html?hpt=hp_bn13
+Text: Worst cities for spring allergies 
+Attribute: Type = href -- value = /2014/03/31/health/worst-allergy-cities-spring/index.html?hpt=hp_bn13
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li > div > span > span > a 
 <*** UI Element ***>
 <li> 
-Text:  Jones battles heart disease
+Text:  E-cigs linked to poisonings
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: Jones battles heart disease 
-Attribute: Type = href -- value = /2014/02/03/health/iyw-star-jones/index.html?hpt=hp_bn13
+Text: E-cigs linked to poisonings 
+Attribute: Type = href -- value = /2014/04/03/health/ecigs-nicotine-poisoning/index.html?hpt=hp_bn13
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
-Text:  Weekend weight gain is OK
+Text:  PTSD: 9 questions, answered
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: Weekend weight gain is OK 
-Attribute: Type = href -- value = http://thechart.blogs.cnn.com/2014/02/06/relax-weekend-weight-gain-wont-kill-your-diet/?hpt=hp_bn13
+Text: PTSD: 9 questions, answered 
+Attribute: Type = href -- value = /2014/04/03/health/ptsd-fort-hood/index.html?hpt=hp_bn13
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <li> 
-Text:  Being a caregiver is hard
+Text:  Run more, live longer? Maybe not
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: Being a caregiver is hard 
-Attribute: Type = href -- value = /2014/02/07/health/caregiver-support/index.html?hpt=hp_bn13
+Text: Run more, live longer? Maybe not 
+Attribute: Type = href -- value = http://thechart.blogs.cnn.com/2014/04/03/running-more-may-not-help-you-live-longer/?hpt=hp_bn13
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(4) > a 
 <*** UI Element ***>
 <li> 
-Text:  Could drug have saved Hoffman?
+Text:  Pollen allergies? Don't eat these
  
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: Could drug have saved Hoffman? 
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/05/erin-gupta-naloxone-treatment-for-heroin-hoffman-death.cnn.html?hpt=hp_bn13
+Text: Pollen allergies? Don't eat these 
+Attribute: Type = href -- value = http://www.cnn.com/2014/04/03/health/gallery/allergies-reaction-foods/index.html?hpt=hp_bn13
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(5) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = /video/data/2.0/video/us/2014/02/05/erin-gupta-naloxone-treatment-for-heroin-hoffman-death.cnn.html?hpt=hp_bn13
+Attribute: Type = href -- value = http://www.cnn.com/2014/04/03/health/gallery/allergies-reaction-foods/index.html?hpt=hp_bn13
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(5) > a:nth-child(2) 
 <*** UI Element ***>
@@ -2444,7 +2464,7 @@ Text:
 
 
 
- Haunting exposures
+ 'The Silence' of genocide
  
 
 
@@ -2456,99 +2476,99 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > 
 <a> 
 Text:  
  
-Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2014/02/07/old-school-machine-makes-mesmerizing-portraits/?hpt=hp_bn14
+Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2014/04/03/like-being-in-the-valley-of-death/?hpt=hp_bn14
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li > div > div > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2014/02/07/old-school-machine-makes-mesmerizing-portraits/?hpt=hp_bn14
+Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2014/04/03/like-being-in-the-valley-of-death/?hpt=hp_bn14
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li > div > div > div > a 
 <*** UI Element ***>
 <a> 
-Text: Haunting exposures 
-Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2014/02/07/old-school-machine-makes-mesmerizing-portraits/?hpt=hp_bn14
+Text: 'The Silence' of genocide 
+Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2014/04/03/like-being-in-the-valley-of-death/?hpt=hp_bn14
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li > div > span > span > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2014/02/07/old-school-machine-makes-mesmerizing-portraits/?hpt=hp_bn14
+Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2014/04/03/like-being-in-the-valley-of-death/?hpt=hp_bn14
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li > div > span > span > a:nth-child(2) 
 <*** UI Element ***>
 <li> 
-Text:  The less-traveled London
+Text:  The week in 33 photos
  
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: The less-traveled London 
-Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2014/02/06/the-unseen-side-of-london/?hpt=hp_bn14
+Text: The week in 33 photos 
+Attribute: Type = href -- value = /2014/04/04/world/gallery/week-in-photos-0403/index.html?hpt=hp_bn14
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2014/02/06/the-unseen-side-of-london/?hpt=hp_bn14
+Attribute: Type = href -- value = /2014/04/04/world/gallery/week-in-photos-0403/index.html?hpt=hp_bn14
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(2) > a:nth-child(2) 
 <*** UI Element ***>
 <li> 
-Text:  War games for tweens
+Text:  Surviving land mines
  
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: War games for tweens 
-Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2014/02/04/war-games-all-too-real-for-young-patriots/?hpt=hp_bn14
+Text: Surviving land mines 
+Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2014/04/01/heroes-and-survivors-in-the-war-on-land-mines/?hpt=hp_bn14
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2014/02/04/war-games-all-too-real-for-young-patriots/?hpt=hp_bn14
+Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2014/04/01/heroes-and-survivors-in-the-war-on-land-mines/?hpt=hp_bn14
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(3) > a:nth-child(2) 
 <*** UI Element ***>
 <li> 
-Text:  Remnants of Olympic glory
+Text:  What a shot! 34 sports photos
  
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: Remnants of Olympic glory 
-Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2013/05/04/remnants-of-glory-in-former-olympic-cities/?hpt=hp_bn14
+Text: What a shot! 34 sports photos 
+Attribute: Type = href -- value = /2014/04/01/worldsport/gallery/what-a-shot-0401/index.html?hpt=hp_bn14
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(4) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2013/05/04/remnants-of-glory-in-former-olympic-cities/?hpt=hp_bn14
+Attribute: Type = href -- value = /2014/04/01/worldsport/gallery/what-a-shot-0401/index.html?hpt=hp_bn14
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(4) > a:nth-child(2) 
 <*** UI Element ***>
 <li> 
-Text:  Dangerous life in North Caucasus
+Text:  Fires for a cause
  
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: Dangerous life in North Caucasus 
-Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2013/02/11/living-dangerously-in-the-north-caucasus/?hpt=hp_bn14
+Text: Fires for a cause 
+Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2014/03/30/fires-bring-new-life-to-prairie/?hpt=hp_bn14
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(5) > a 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2013/02/11/living-dangerously-in-the-north-caucasus/?hpt=hp_bn14
+Attribute: Type = href -- value = http://cnnphotos.blogs.cnn.com/2014/03/30/fires-bring-new-life-to-prairie/?hpt=hp_bn14
 Attribute: Type = target -- value = _self
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(5) > a:nth-child(2) 
 <*** UI Element ***>
@@ -2565,111 +2585,134 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > 
 <*** UI Element ***>
 <li> 
 Text: 
-Fall cracks snowboarder's helmet
+Expert Final Four picks
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li 
 <*** UI Element ***>
 <a> 
-Text: Fall cracks snowboarder's helmet 
-Attribute: Type = href -- value = http://bleacherreport.com/articles/1953875-czech-snowboarder-sarka-pancochova-breaks-helmet-on-nasty-spill?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/1953875-czech-snowboarder-sarka-pancochova-breaks-helmet-on-nasty-spill?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Text: Expert Final Four picks 
+Attribute: Type = href -- value = http://bleacherreport.com/articles/2015260-br-expert-ncaa-bracket-picks-2014-predicting-who-will-win-in-the-final-four?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2015260-br-expert-ncaa-bracket-picks-2014-predicting-who-will-win-in-the-final-four?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li > a 
 <*** UI Element ***>
 <li> 
 Text: 
-Live: Figure skating medal round
+Complete Final Four guide
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: Live: Figure skating medal round 
-Attribute: Type = href -- value = http://bleacherreport.com/articles/1953783-olympic-figure-skating-2014-live-results-reaction-and-medal-updates-for-team-e?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/1953783-olympic-figure-skating-2014-live-results-reaction-and-medal-updates-for-team-e?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Text: Complete Final Four guide 
+Attribute: Type = href -- value = http://bleacherreport.com/articles/2010920-final-four-2014-full-breakdown-predictions-and-stars-to-watch?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2010920-final-four-2014-full-breakdown-predictions-and-stars-to-watch?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
 Text: 
-USA wins women's slopestyle gold
+Final Four by the numbers
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: USA wins women's slopestyle gold 
-Attribute: Type = href -- value = http://bleacherreport.com/articles/1953694-womens-snowboarding-slopestyle-olympics-2014-medal-winners-and-final-results?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/1953694-womens-snowboarding-slopestyle-olympics-2014-medal-winners-and-final-results?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Text: Final Four by the numbers 
+Attribute: Type = href -- value = http://bleacherreport.com/articles/2011681-final-four-2014-inside-the-numbers-of-the-ncaa-tournaments-final-weekend?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2011681-final-four-2014-inside-the-numbers-of-the-ncaa-tournaments-final-weekend?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <li> 
 Text: 
-OSU's Marcus Smart shoves fan
+Billy Donovan the next Coach K?
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: OSU's Marcus Smart shoves fan 
-Attribute: Type = href -- value = http://bleacherreport.com/articles/1953613-marcus-smart-pushes-fan-in-game-vs-texas-tech?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/1953613-marcus-smart-pushes-fan-in-game-vs-texas-tech?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Text: Billy Donovan the next Coach K? 
+Attribute: Type = href -- value = http://bleacherreport.com/articles/2018061-lets-acknowledge-billy-donovan-for-what-he-is-the-coach-k-of-this-generation?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2018061-lets-acknowledge-billy-donovan-for-what-he-is-the-coach-k-of-this-generation?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(4) > a 
 <*** UI Element ***>
 <li> 
 Text: 
-US figure skater not impressed
+Most unstoppable player left
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: US figure skater not impressed 
-Attribute: Type = href -- value = http://bleacherreport.com/articles/1953260-us-olympian-ashley-wagner-does-not-look-happy-about-her-score?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/1953260-us-olympian-ashley-wagner-does-not-look-happy-about-her-score?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Text: Most unstoppable player left 
+Attribute: Type = href -- value = http://bleacherreport.com/articles/2016978-why-shabazz-napier-is-the-unstoppable-force-of-the-2014-final-four?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2016978-why-shabazz-napier-is-the-unstoppable-force-of-the-2014-final-four?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(5) > a 
 <*** UI Element ***>
 <li> 
 Text: 
-Olympic medal tracker
+Kentucky's top star not satisfied
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(6) 
 <*** UI Element ***>
 <a> 
-Text: Olympic medal tracker 
-Attribute: Type = href -- value = http://bleacherreport.com/articles/1952988-olympic-2014-medal-count-updated-results-tracker-standings-list-of-winners?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/1952988-olympic-2014-medal-count-updated-results-tracker-standings-list-of-winners?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Text: Kentucky's top star not satisfied 
+Attribute: Type = href -- value = http://bleacherreport.com/articles/2017549-julius-randles-kentucky-journey-reaches-climax-with-2014-final-four-homecoming?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2017549-julius-randles-kentucky-journey-reaches-climax-with-2014-final-four-homecoming?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(6) > a 
 <*** UI Element ***>
 <li> 
 Text: 
-Opening Ceremony uniforms
+From daisy dukes to the Fab Five
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(7) 
 <*** UI Element ***>
 <a> 
-Text: Opening Ceremony uniforms 
-Attribute: Type = href -- value = http://bleacherreport.com/articles/1952463-2014-sochi-winter-olympics-opening-ceremony-grading-each-countrys-uniform?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/1952463-2014-sochi-winter-olympics-opening-ceremony-grading-each-countrys-uniform?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Text: From daisy dukes to the Fab Five 
+Attribute: Type = href -- value = http://bleacherreport.com/articles/2014358-2014-ncaa-tournament-the-history-of-the-final-four-style-and-fashion?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2014358-2014-ncaa-tournament-the-history-of-the-final-four-style-and-fashion?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(7) > a 
 <*** UI Element ***>
 <li> 
 Text: 
-Biggest problems at Sochi 
+UK eyes 2nd title in 3 years
+
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(8) 
 <*** UI Element ***>
 <a> 
-Text: Biggest problems at Sochi  
-Attribute: Type = href -- value = http://bleacherreport.com/articles/1952496-the-20-biggest-sochiproblems?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/1952496-the-20-biggest-sochiproblems?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Text: UK eyes 2nd title in 3 years 
+Attribute: Type = href -- value = http://bleacherreport.com/articles/2012256-no-2-wisconsin-vs-no-8-kentucky-final-four-preview-and-prediction?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2012256-no-2-wisconsin-vs-no-8-kentucky-final-four-preview-and-prediction?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(8) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = http://bleacherreport.com/articles/2012256-no-2-wisconsin-vs-no-8-kentucky-final-four-preview-and-prediction?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2012256-no-2-wisconsin-vs-no-8-kentucky-final-four-preview-and-prediction?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(8) > a:nth-child(2) 
 <*** UI Element ***>
 <li> 
 Text: 
-15-year-old Russian skater awes
+Can UConn beat Florida again? 
+
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(9) 
 <*** UI Element ***>
 <a> 
-Text: 15-year-old Russian skater awes 
-Attribute: Type = href -- value = http://bleacherreport.com/articles/1953244-russian-teen-yulia-lipnitskaya-steals-show-in-olympic-figure-skating-team-trophy?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/1953244-russian-teen-yulia-lipnitskaya-steals-show-in-olympic-figure-skating-team-trophy?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Text: Can UConn beat Florida again?  
+Attribute: Type = href -- value = http://bleacherreport.com/articles/2012245-no-1-florida-vs-no-7-uconn-final-four-preview-and-prediction?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2012245-no-1-florida-vs-no-7-uconn-final-four-preview-and-prediction?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(9) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: Type = href -- value = http://bleacherreport.com/articles/2012245-no-1-florida-vs-no-7-uconn-final-four-preview-and-prediction?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2012245-no-1-florida-vs-no-7-uconn-final-four-preview-and-prediction?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(9) > a:nth-child(2) 
 <*** UI Element ***>
 <a> 
 Text:  
@@ -2679,195 +2722,188 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > 
 <*** UI Element ***>
 <li> 
 Text: 
-Video rewind: 'Where's the beef?'
-
+How cute are Willard Scott and his new wife?
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li 
 <*** UI Element ***>
 <a> 
-Text: Video rewind: 'Where's the beef?' 
-Attribute: Type = href -- value = http://www.hlntv.com/video/2014/02/06/video-rewind-wheres-beef?hpt=hp_bn17
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://www.hlntv.com/video/2014/02/06/video-rewind-wheres-beef' })
+Text: How cute are Willard Scott and his new wife? 
+Attribute: Type = href -- value = http://www.hlntv.com/article/2014/04/03/willard-scott-married-paris-keena-adorable-wedding?hpt=hp_bn17
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/04/03/willard-scott-married-paris-keena-adorable-wedding' })
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li > a 
-<*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = http://www.hlntv.com/video/2014/02/06/video-rewind-wheres-beef?hpt=hp_bn17
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://www.hlntv.com/video/2014/02/06/video-rewind-wheres-beef' })
-Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li > a:nth-child(2) 
 <*** UI Element ***>
 <li> 
 Text: 
-The Allen/Farrow family tree
+Elk crossing has a surprise twist
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: The Allen/Farrow family tree 
-Attribute: Type = href -- value = http://www.hlntv.com/slideshow/2014/02/06/woody-allen-abuse-allegations?hpt=hp_bn17
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://www.hlntv.com/slideshow/2014/02/06/woody-allen-abuse-allegations' })
+Text: Elk crossing has a surprise twist 
+Attribute: Type = href -- value = http://www.hlntv.com/article/2014/04/03/elk-crossing-montana-viral-video?hpt=hp_bn17
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/04/03/elk-crossing-montana-viral-video' })
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
 Text: 
-Campus gets statue of guy in his undies
+Family wants girlfriend charged in teen's death
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: Campus gets statue of guy in his undies 
-Attribute: Type = href -- value = http://www.hlntv.com/article/2014/02/05/wellesley-statue-sleepwalker-college-art-controversy?hpt=hp_bn17
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/02/05/wellesley-statue-sleepwalker-college-art-controversy' })
+Text: Family wants girlfriend charged in teen's death 
+Attribute: Type = href -- value = http://www.hlntv.com/article/2014/04/03/Johran-McCormick-Texas-teen-shot-will-girlfriend-face-charges?hpt=hp_bn17
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/04/03/Johran-McCormick-Texas-teen-shot-will-girlfriend-face-charges' })
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <li> 
 Text: 
-Grieving father's plea to Facebook
+Old FSU logo out -- New logo leaked!
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: Grieving father's plea to Facebook 
-Attribute: Type = href -- value = http://www.hlntv.com/article/2014/02/06/facebook-videos-story-john-berlin-son-death?hpt=hp_bn17
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/02/06/facebook-videos-story-john-berlin-son-death' })
+Text: Old FSU logo out -- New logo leaked! 
+Attribute: Type = href -- value = http://www.hlntv.com/article/2014/04/03/new-seminole-logo-leaked?hpt=hp_bn17
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/04/03/new-seminole-logo-leaked' })
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(4) > a 
 <*** UI Element ***>
 <li> 
 Text: 
-Military dog seized by Taliban
+Watch: Cats react to viral videos!
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: Military dog seized by Taliban 
-Attribute: Type = href -- value = http://www.hlntv.com/article/2014/02/07/taliban-military-dog-hostage-afghanistan?hpt=hp_bn17
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/02/07/taliban-military-dog-hostage-afghanistan' })
+Text: Watch: Cats react to viral videos! 
+Attribute: Type = href -- value = http://www.hlntv.com/article/2014/04/03/cats-react-viral-videos?hpt=hp_bn17
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/04/03/cats-react-viral-videos' })
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(5) > a 
 <*** UI Element ***>
 <li> 
 Text: 
-School apologizes for menu
-
+David Letterman plans to retire in 2015!
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(6) 
 <*** UI Element ***>
 <a> 
-Text: School apologizes for menu 
-Attribute: Type = href -- value = http://www.hlntv.com/video/2014/02/07/black-history-month-controversy-lunch-fried-chicken?hpt=hp_bn17
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://www.hlntv.com/video/2014/02/07/black-history-month-controversy-lunch-fried-chicken' })
+Text: David Letterman plans to retire in 2015! 
+Attribute: Type = href -- value = http://www.hlntv.com/article/2014/04/03/david-letterman-retiring-2015-late-show-cbs?hpt=hp_bn17
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/04/03/david-letterman-retiring-2015-late-show-cbs' })
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(6) > a 
-<*** UI Element ***>
-<a> 
-Text:  
-Attribute: Type = href -- value = http://www.hlntv.com/video/2014/02/07/black-history-month-controversy-lunch-fried-chicken?hpt=hp_bn17
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://www.hlntv.com/video/2014/02/07/black-history-month-controversy-lunch-fried-chicken' })
-Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(6) > a:nth-child(2) 
 <*** UI Element ***>
 <li> 
 Text: 
-15 fictional guys we wish were our boyfriends
+Twitter timeline: Ft. Hood shooting as it happened
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(7) 
 <*** UI Element ***>
 <a> 
-Text: 15 fictional guys we wish were our boyfriends 
-Attribute: Type = href -- value = http://www.hlntv.com/slideshow/2014/02/07/fictional-characters-we-wish-were-our-boyfriends?hpt=hp_bn17
-Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://www.hlntv.com/slideshow/2014/02/07/fictional-characters-we-wish-were-our-boyfriends' })
+Text: Twitter timeline: Ft. Hood shooting as it happened 
+Attribute: Type = href -- value = http://www.hlntv.com/article/2014/04/03/fort-hood-timeline-shooting-Ivan-Lopez?hpt=hp_bn17
+Attribute: Type = onclick -- value = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/04/03/fort-hood-timeline-shooting-Ivan-Lopez' })
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(7) > a 
 <*** UI Element ***>
 <a> 
-Text: AOL Lifestyle 
-Attribute: Type = href -- value = http://www.aol.com?hpt=hp_bn18
+Text: Huffington Post 
+Attribute: Type = href -- value = http://www.mnn.com/?hpt=hp_bn18
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > h4 > a 
 <*** UI Element ***>
 <li> 
-Text:  What winter olympians eat
+Text:  Another sign Obamacare is working
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li 
 <*** UI Element ***>
 <a> 
-Text: What winter olympians eat 
-Attribute: Type = href -- value = http://www.kitchendaily.com/read/diets-olympians?hpt=hp_bn18
+Text: Another sign Obamacare is working 
+Attribute: Type = href -- value = http://www.huffingtonpost.com/2014/04/04/obamacare-medicaid-expansion_n_5091696.html?hpt=hp_bn18
 Attribute: Type = target -- value = _blank
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li > a 
 <*** UI Element ***>
 <li> 
-Text:  How to entertain on the fly
+Text:  Why every Final Four player will lose
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
-Text: How to entertain on the fly 
-Attribute: Type = href -- value = http://www.stylemepretty.com/living/2014/01/21/everything-you-need-for-entertaining-on-the-fly/?hpt=hp_bn18
+Text: Why every Final Four player will lose 
+Attribute: Type = href -- value = http://www.huffingtonpost.com/ben-hallman/final-four-players_b_5092368.html?hpt=hp_bn18
 Attribute: Type = target -- value = _blank
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
-Text:  Kim Kardashian is a brunette again
+Text:  Netflix's new series
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: Kim Kardashian is a brunette again 
-Attribute: Type = href -- value = http://www.stylelist.com/watch/kim-kardashian-is-a-brunette-once-again/?hpt=hp_bn18
+Text: Netflix's new series 
+Attribute: Type = href -- value = http://www.huffingtonpost.com/2014/04/03/netflix-narcos-_n_5087063.html?hpt=hp_bn18
 Attribute: Type = target -- value = _blank
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(3) > a 
 <*** UI Element ***>
 <li> 
-Text:  15 Valentine gifts you never thought of
+Text:  Back-alley abortions return
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: 15 Valentine gifts you never thought of 
-Attribute: Type = href -- value = http://www.stylemepretty.com/living/2014/01/30/valentines-gifts-you-havent-thought-of/?hpt=hp_bn18
+Text: Back-alley abortions return 
+Attribute: Type = href -- value = http://www.huffingtonpost.com/2014/04/03/back-alley-abortions_n_5065301.html?hpt=hp_bn18
 Attribute: Type = target -- value = _blank
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(4) > a 
 <*** UI Element ***>
 <li> 
-Text:  How to get great family photos
+Text:  Americans ignore climate change
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: How to get great family photos 
-Attribute: Type = href -- value = http://www.stylemepretty.com/living/2014/01/30/how-to-get-beautiful-family-photos/?hpt=hp_bn18
+Text: Americans ignore climate change 
+Attribute: Type = href -- value = http://www.huffingtonpost.com/2014/04/04/ipcc-report_n_5092182.html?hpt=hp_bn18
 Attribute: Type = target -- value = _blank
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(5) > a 
 <*** UI Element ***>
 <li> 
-Text:  Mayo beats ketchup as most popular condiment
+Text:  Conservatives call Reid "brain dead"
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(6) 
 <*** UI Element ***>
 <a> 
-Text: Mayo beats ketchup as most popular condiment 
-Attribute: Type = href -- value = http://www.kitchendaily.com/read/mayonnaise-trumps-ketchup-most-popular-condiment?hpt=hp_bn18
+Text: Conservatives call Reid "brain dead" 
+Attribute: Type = href -- value = http://www.huffingtonpost.com/2014/04/04/harry-reid-koch_n_5092685.html?hpt=hp_bn18
 Attribute: Type = target -- value = _blank
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(6) > a 
 <*** UI Element ***>
 <li> 
-Text:  Solid gold jewels made for a big night out
+Text:  Holder and the big marijuana decision
  
 Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(7) 
 <*** UI Element ***>
 <a> 
-Text: Solid gold jewels made for a big night out 
-Attribute: Type = href -- value = http://www.stylelist.com/view/solid-gold-jewels-made-for-a-big-night-out/?hpt=hp_bn18
+Text: Holder and the big marijuana decision 
+Attribute: Type = href -- value = http://www.huffingtonpost.com/2014/04/04/eric-holder-reschedule-marijuana_n_5092010.html?hpt=hp_bn18
 Attribute: Type = target -- value = _blank
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(7) > a 
 <*** UI Element ***>
 <a> 
 Text:  
 Attribute: Type = class -- value = cnn_mtpmorebtn
-Attribute: Type = href -- value = http://www.aol.com?hpt=hp_bn18
+Attribute: Type = href -- value = http://www.mnn.com/?hpt=hp_bn18
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > div:nth-child(5) > a 
 <*** UI Element ***>
 <a> 
@@ -2879,6 +2915,7 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > 
 Text: 
 Search 3 million Jobs on Indeed
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li 
 <*** UI Element ***>
 <a> 
@@ -2895,6 +2932,7 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > 
 Text: 
 Browse Jobs by Company, Title, or Location
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
@@ -2911,6 +2949,7 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > 
 Text: 
 Receive Job Alerts by Email
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
@@ -2927,6 +2966,7 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > 
 Text: 
 View 124k Insurance Jobs
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
@@ -2943,6 +2983,7 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > 
 Text: 
 Find Marketing Jobs
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
@@ -2959,6 +3000,7 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > 
 Text: 
 Apply for Health Care Jobs
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(6) 
 <*** UI Element ***>
 <a> 
@@ -2975,6 +3017,7 @@ Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > 
 Text: 
 Employers: Post your jobs on Indeed
  
+Attribute: Type = data-vr-contentbox -- value = 
 Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(7) 
 <*** UI Element ***>
 <a> 
@@ -3062,13 +3105,13 @@ Text:
  
 The Situation Room5pm ET / 2pm PT on CNN
  
-Crossfire6:30 ET / 3:30 PT on CNN
- 
 Erin Burnett: OutFront7pm ET / 4pm PT on CNN
  
 AC 3608pm ET / 5pm PT on CNN
  
-Piers Morgan Live9pm ET / PT on CNN
+Anthony BourdainReturns Sunday April 13
+ 
+Morgan SpurlockReturns Sunday April 13
  
 Attribute: Type = class -- value = cnnMustWatchTv
 Attribute: Type = data-vr-zone -- value = must-watch
@@ -3090,57 +3133,57 @@ Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(
 <*** UI Element ***>
 <li> 
 Text:  
-Crossfire6:30 ET / 3:30 PT on CNN 
-Attribute: Type = data-vr-contentbox -- value = 
-Attribute: Type = onclick -- value = location.href='http://crossfire.blogs.cnn.com/?hpt=hp_tvvideo';
-Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(2) 
-<*** UI Element ***>
-<a> 
-Text:  
-Crossfire6:30 ET / 3:30 PT on CNN 
-Attribute: Type = href -- value = http://crossfire.blogs.cnn.com/?hpt=hp_tvvideo
-Attribute: Type = rel -- value = external
-Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(2) > a 
-<*** UI Element ***>
-<li> 
-Text:  
 Erin Burnett: OutFront7pm ET / 4pm PT on CNN 
 Attribute: Type = data-vr-contentbox -- value = 
 Attribute: Type = onclick -- value = location.href='http://outfront.blogs.cnn.com/?hpt=hp_tvvideo';
-Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(3) 
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(2) 
 <*** UI Element ***>
 <a> 
 Text:  
 Erin Burnett: OutFront7pm ET / 4pm PT on CNN 
 Attribute: Type = href -- value = http://outfront.blogs.cnn.com/?hpt=hp_tvvideo
 Attribute: Type = rel -- value = external
-Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(3) > a 
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
 Text:  
 AC 3608pm ET / 5pm PT on CNN 
 Attribute: Type = data-vr-contentbox -- value = 
 Attribute: Type = onclick -- value = location.href='http://ac360.blogs.cnn.com/?hpt=hp_tvvideo';
-Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(4) 
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
 Text:  
 AC 3608pm ET / 5pm PT on CNN 
 Attribute: Type = href -- value = http://ac360.blogs.cnn.com/?hpt=hp_tvvideo
 Attribute: Type = rel -- value = external
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:  
+Anthony BourdainReturns Sunday April 13 
+Attribute: Type = data-vr-contentbox -- value = 
+Attribute: Type = onclick -- value = location.href='http://www.cnn.com/video/shows/anthony-bourdain-parts-unknown?hpt=hp_tvvideo';
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text:  
+Anthony BourdainReturns Sunday April 13 
+Attribute: Type = href -- value = http://www.cnn.com/video/shows/anthony-bourdain-parts-unknown?hpt=hp_tvvideo
+Attribute: Type = rel -- value = external
 Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(4) > a 
 <*** UI Element ***>
 <li> 
 Text:  
-Piers Morgan Live9pm ET / PT on CNN 
+Morgan SpurlockReturns Sunday April 13 
 Attribute: Type = data-vr-contentbox -- value = 
-Attribute: Type = onclick -- value = location.href='http://piersmorgan.blogs.cnn.com/?hpt=hp_tvvideo';
+Attribute: Type = onclick -- value = location.href='http://insideman.blogs.cnn.com?hpt=hp_tvvideo';
 Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
 Text:  
-Piers Morgan Live9pm ET / PT on CNN 
-Attribute: Type = href -- value = http://piersmorgan.blogs.cnn.com/?hpt=hp_tvvideo
+Morgan SpurlockReturns Sunday April 13 
+Attribute: Type = href -- value = http://insideman.blogs.cnn.com?hpt=hp_tvvideo
 Attribute: Type = rel -- value = external
 Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(5) > a 
 <*** UI Element ***>

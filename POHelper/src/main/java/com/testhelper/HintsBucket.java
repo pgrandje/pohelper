@@ -35,7 +35,7 @@ public class HintsBucket {
 
 
     public void addTag(String tag) {
-        analysisBuffer.append("<*** UI Element ***>\n");
+        analysisBuffer.append(HintsDescriptor.NEW_TAG_DELIMETER + "\n");
         analysisBuffer.append(tag + " \n");
     }
 

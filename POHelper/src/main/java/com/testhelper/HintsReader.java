@@ -53,14 +53,14 @@ public class HintsReader {
 
         String line = hintsFile.readLine();
 
-        HintsDescriptorList analysisDescriptorList = new HintsDescriptorList();
+        HintsDescriptorList hintsDescriptorList = new HintsDescriptorList();
 
         while (line != null){
 
             // There shouldn't be any blank lines in this file, so we'll treat that as an error.
 
             // Check for new record delimeter
-            if (line.contains("<*** New Tag ***>")) {
+            if (line.contains(HintsDescriptor.NEW_TAG_DELIMETER)) {
 
                 logger.debug("Processing a new tag.");
 
@@ -123,7 +123,7 @@ public class HintsReader {
                         line = hintsFile.readLine();
                     }
 
-                    analysisDescriptorList.add(analysisDescriptor);
+                    hintsDescriptorList.add(analysisDescriptor);
 
                 }
 
@@ -134,7 +134,7 @@ public class HintsReader {
 
         }
 
-        return analysisDescriptorList;
+        return hintsDescriptorList;
 
     }
 
