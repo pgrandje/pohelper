@@ -111,9 +111,9 @@ public class SeleniumGenerator
         }
         else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE_FROM_HINTS) {
 
-            HintsReader analysisReader = new HintsReader();
-            analysisReader.openHintsFile();
-            analysisReader.loadAnalysis();
+            HintsReader hintsReader = new HintsReader();
+            hintsReader.openHintsFile();
+            hintsReader.loadAnalysis();
 
             // TODO: Return a TagDescriptorList from the processing of the hints file--here.
 
