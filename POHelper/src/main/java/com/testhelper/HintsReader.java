@@ -82,6 +82,8 @@ public class HintsReader {
 
                     HintsDescriptor analysisDescriptor = new HintsDescriptor();
 
+                    logger.debug("Processing line: " + line);
+
                     // Store the tag, it has already been read above.
                     String[] linePieces = line.split(": ");
                     String tag = linePieces[1];
