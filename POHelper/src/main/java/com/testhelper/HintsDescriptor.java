@@ -15,7 +15,11 @@ public class HintsDescriptor {
 
     public enum LocatorType {ID, CSS_LOCATOR};
 
-    static public final String NEW_TAG_DELIMETER = "<*** UI Element ***>";
+    // TODO: Move the hints file indicators to they're own class.
+    static public final String NEW_TAG_DELIMITER = "<*** UI Element ***>";
+    static public final char IGNORE_CHAR = '*';
+    static public final String TEXT_MARKER = "Text: ";
+    static public final String ATTRIBUTE_MARKER = "Attribute: ";
 
 
     private String tag;
