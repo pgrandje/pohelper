@@ -63,15 +63,17 @@ public class HintsReader {
             // Check for new record delimiter
             if (line.contains(HintsDescriptor.NEW_TAG_DELIMITER)) {
 
-                logger.debug("Processing a new tag.");
+                logger.debug("Processing a new tag:");
 
                 // Get the first field, which contains the tag.
                 line = hintsFile.readLine();
+                logger.debug("Processing new tag on line: " + line);
 
                 // Check whether tag should be skipped, if so, skip all lines up to the next record, and re-loop.
-                if (line.charAt(0) == HintsDescriptor.IGNORE_CHAR) {
-                    logger.debug("Record marked as skipped.");
+                if (line.charAt(0) != HintsDescriptor.IGNORE_CHAR) {
+                    logger.trace("Skipping lines:");
                     do {
+                        logger.trace(line);
                         line = hintsFile.readLine();
                     } while ((line != null) && (!line.contains(HintsDescriptor.NEW_TAG_DELIMITER)));
                     continue;
@@ -80,10 +82,10 @@ public class HintsReader {
                     // Once it gets here, we have the tag field for a record that should get generated.
                     // TODO:  put in exceptions for when I don't find what I'm expecting to find.
 
-                    HintsDescriptor analysisDescriptor = new HintsDescriptor();
+                    HintsDescriptor hintsDescriptor = new HintsDescriptor();
 
                     // Store the tag, it has already been read above.
-                    analysisDescriptor.setTag(line.trim());
+                    hintsDescriptor.setTag(line.replace("*", "").trim());
 
                     // Read and store the text if we find it in the analysis.
                     line = hintsFile.readLine();
@@ -94,7 +96,7 @@ public class HintsReader {
 
                     String text = line.substring(HintsDescriptor.TEXT_MARKER.length());
                     logger.debug("Retrieved text '" + text + "'.");
-                    analysisDescriptor.setText(text);
+                    hintsDescriptor.setText(text);
                     line = hintsFile.readLine();
 
                     // Read and store the list of attributes if we have them in the analysis.
@@ -120,7 +122,7 @@ public class HintsReader {
                         hintsAttribute.setAttributeValue(attrValue);
 
                         // Add the hintsAttribute to the hintsDescriptor.
-                        analysisDescriptor.addAttribute(hintsAttribute);
+                        hintsDescriptor.addAttribute(hintsAttribute);
 
                         line = hintsFile.readLine();
                     }
@@ -130,12 +132,12 @@ public class HintsReader {
                         String locator = line.substring(HintsDescriptor.LOCATOR_MARKER.length());
                         logger.debug("Found locator '" + locator + "'.");
                         // TODO: Why am I only writing css locators to the analysis file?
-                        analysisDescriptor.setLocatorType(HintsDescriptor.LocatorType.CSS_LOCATOR);
-                        analysisDescriptor.setLocatorValue(locator);
+                        hintsDescriptor.setLocatorType(HintsDescriptor.LocatorType.CSS_LOCATOR);
+                        hintsDescriptor.setLocatorValue(locator);
                         line = hintsFile.readLine();
                     }
 
-                    hintsDescriptorList.add(analysisDescriptor);
+                    hintsDescriptorList.add(hintsDescriptor);
 
                 }
 
