@@ -10,7 +10,7 @@ import java.util.LinkedList;
 
 
 /**
- * Descriptors are small objects that control a single unit of the generation process and serve as a
+ * Descriptors are control a single unit of the generation process and serve as a
  * handle to an element to be generated.  The TagDescriptor stores the information for a
  * specific HTML tag in the DOM which is targeted for code members and methods to be generated.
  *
@@ -19,6 +19,8 @@ import java.util.LinkedList;
  * After symbol generation, it stores the code snippets for this tag instance ready for dumping into the
  * final source code file.
  *
+ * The TagDescriptor stores the code snippets that will be used for the eventual code generation.
+ *
  * User: pgrandje
  * Date: 6/2/12
  */
@@ -26,6 +28,7 @@ public class TagDescriptor {
 
     private Configurator configurator;
 
+    // TODO: Should we continue to store DOM elements here?  Generation from hints doesn't use these so it currently requires two constructors.
     private Node node;
     private NamedNodeMap attributes;
 
@@ -39,21 +42,20 @@ public class TagDescriptor {
     private final Logger logger = Logger.getLogger(TagDescriptor.class);
 
 
-
-    // TagTemplate provides the templates for the code snippets for the private members and the methods.
     // Takes a Node for computing css locators.  Using the node as the starting point to traverse up the parent tree.
     TagDescriptor(TagTemplate tagTemplate, Node node) {
+
+        this.configurator = Configurator.getConfigurator();
+
+        this.node = node;
+        this.attributes = node.getAttributes();
 
         // I could get the tag from either the Node or the template.  I'm choosing the Template since it's
         //  working and I might have to change the string if I get it from the Node.
         this.tag = tagTemplate.getTag();
         this.memberCode = new StringBuffer(tagTemplate.getMemberCode());
         this.methodCode = new StringBuffer(tagTemplate.getMethodCode());
-        this.node = node;
-        this.configurator = Configurator.getConfigurator();
-
         this.comment = new StringBuffer();
-        this.attributes = node.getAttributes();
 
         logger.debug("****************************");
         logger.debug("Creating new TagDescriptor for tag " + tag + ".");
@@ -66,6 +68,33 @@ public class TagDescriptor {
 
     }
 
+
+    // This constructor should only be used when generating from a hints file--where DOM elements aren't used.
+    TagDescriptor(TagTemplate tagTemplate) {
+
+        this.configurator = Configurator.getConfigurator();
+
+        // DOM elements not needed when generating from a hints file.
+        this.node = null;
+        this.attributes = null;
+
+        // I could get the tag from either the Node or the template.  I'm choosing the Template since it's
+        //  working and I might have to change the string if I get it from the Node.
+        this.tag = tagTemplate.getTag();
+        this.memberCode = new StringBuffer(tagTemplate.getMemberCode());
+        this.methodCode = new StringBuffer(tagTemplate.getMethodCode());
+        this.comment = new StringBuffer();
+
+        logger.debug("****************************");
+        logger.debug("Creating new TagDescriptor for tag " + tag + ".");
+
+        this.addTextValue();
+        this.recordInfoComments();
+
+        logger.debug("Using member code template:\n" + memberCode);
+        logger.debug("And method code template:\n" + methodCode);
+
+    }
 
 
     // *** Member and Method Code ***

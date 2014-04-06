@@ -40,6 +40,7 @@ public class SeleniumGenerator
         configurator.processArgs();
 
         // Parses the page source and provides access to the w3c document objects.
+        // TODO: Some of these actions should not be run when generating code from the hints file.
         PageSourceParser pageSourceParser = new PageSourceParser(configurator.getUrl());
 
         // CodeBucket accumulates and stores the code prior to writing it out.
@@ -57,6 +58,7 @@ public class SeleniumGenerator
 
         // Pre-process the CodeShell using info from the Document's page source and use this to store a description of
         // the page.
+        // TODO: When generating from a hints file, I need to start the code shell without needing the remote DOM.
         PageDescriptor pageObjectDescriptor = new PageDescriptor(pageSourceParser.getDom(), classNameRecorder);
         pageObjectDescriptor.setPageObjectName(codeBucket);
 
@@ -67,8 +69,9 @@ public class SeleniumGenerator
         // Now -- Scan the nodes
         NodeScanner nodeScanner = new NodeScanner(tagSwitcher);
 
+        // TODO: Def should not be scanning the page when generating from the hints file. Hints running should be done without needed remote website.
         Node root = pageSourceParser.getRootNode();
-        logger.info("Root Node is: " + root.getNodeName() + "-- value: " + root.getNodeValue());
+        logger.debug("Root Node is: " + root.getNodeName() + "-- value: " + root.getNodeValue());
         TagDescriptorList tagDescriptorList = nodeScanner.scanForUIElements(root, 0);
 
 
@@ -100,6 +103,7 @@ public class SeleniumGenerator
                     codeBucket.addCode(tagDescriptor.getMemberCode());
             }
 
+            // TODO: The code generation here is copied in the generate from hints section also--put this in a helper method.
             // Write the method code to the code buffer.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
                     codeBucket.addCode(tagDescriptor.getMethodCode());
@@ -115,9 +119,21 @@ public class SeleniumGenerator
             hintsReader.openHintsFile();
             HintsDescriptorList hintsDescriptorList = hintsReader.loadAnalysis();
 
-            // TODO: Return a TagDescriptorList from the processing of the hints file--here.
+            // Currently I just use the tagSwitcher since it's global to main()
+            TagDescriptorList hintsTagDescriptorList = new TagDescriptorList();
+            for(HintsDescriptor hintsDescriptor: hintsDescriptorList) {
+                TagTemplate tagTemplate = tagSwitcher.getTemplate(hintsDescriptor.getTag());
+                TagDescriptor hintsTagDescriptor = new TagDescriptor(tagTemplate);
+                hintsTagDescriptorList.add(hintsTagDescriptor);
+            }
 
-            throw new SeleniumGeneratorException("Generation from analysis file is not yet implemented.");
+            // Write the method code to the code buffer.
+            for(TagDescriptor tagDescriptor : tagDescriptorList) {
+                    codeBucket.addCode(tagDescriptor.getMethodCode());
+            }
+
+            // Dump the generated sourcecode.
+            codeBucket.dumpToFile(configurator.getDestinationFilePath());
         }
         else {
             throw new SeleniumGeneratorException("Invalid configuration state.  Should never get here.");

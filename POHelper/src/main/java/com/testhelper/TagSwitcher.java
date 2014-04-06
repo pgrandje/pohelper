@@ -38,6 +38,7 @@ public class TagSwitcher {
 
         configurator = config;
 
+        // TODO: Is there a pattern that should be used here with the CodeLoader to assign the code snippets to the Tag Switcher?
         codeLoader = new CodeLoader(this);
         codeLoader.loadConfig();
     }
