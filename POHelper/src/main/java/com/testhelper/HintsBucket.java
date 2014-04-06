@@ -50,7 +50,7 @@ public class HintsBucket {
 
         for (int i=0; i<numberOfAttributes; i++) {
             Attr attr = (Attr) attributes.item(i);
-            analysisBuffer.append("Attribute: Type = " + attr.getName() + " -- value = " + attr.getValue() + "\n");
+            analysisBuffer.append("Attribute: " + attr.getName() + " = " + attr.getValue() + "\n");
         }
     }
 

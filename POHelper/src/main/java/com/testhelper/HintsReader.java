@@ -103,9 +103,9 @@ public class HintsReader {
                         logger.debug("Found attribute line '" + attributePair + "'.");
                         // TODO: Simply attribute format in hints file.
                         // Attribute format: Type = class -- value = no-pad-left
-                        String[] attrComponents = attributePair.split(" -- ");
-                        String attrName = attrComponents[0].replace("Type = ", "");
-                        String attrValue = attrComponents[1].replace("value = ", "");
+                        String[] attrComponents = attributePair.split(" = ");
+                        String attrName = attrComponents[0];
+                        String attrValue = attrComponents[1];
                         HintsAttribute hintsAttribute = new HintsAttribute();
 
                         logger.debug("Storing attribute with name '" + attrName + "' and value '" + attrValue + "'");
