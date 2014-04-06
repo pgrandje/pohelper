@@ -20,6 +20,7 @@ public class HintsDescriptor {
     static public final char IGNORE_CHAR = '*';
     static public final String TEXT_MARKER = "Text: ";
     static public final String ATTRIBUTE_MARKER = "Attribute: ";
+    static public final String LOCATOR_MARKER = "Locator: ";
 
 
     private String tag;

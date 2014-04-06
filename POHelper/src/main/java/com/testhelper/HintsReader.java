@@ -92,23 +92,23 @@ public class HintsReader {
                         throw new SeleniumGeneratorException("Expected text filed in hints file not found.");
                     }
 
-                    String text = line.substring(line.indexOf(HintsDescriptor.TEXT_MARKER));
-                    logger.debug("Retrieved text: " + text);
+                    String text = line.substring(HintsDescriptor.TEXT_MARKER.length());
+                    logger.debug("Retrieved text '" + text + "'.");
                     analysisDescriptor.setText(text);
                     line = hintsFile.readLine();
 
                     // Read and store the list of attributes if we have them in the analysis.
                     while (line.startsWith(HintsDescriptor.ATTRIBUTE_MARKER)) {
-                        String attributeLine = line.substring(line.indexOf(HintsDescriptor.ATTRIBUTE_MARKER));
-                        logger.debug("Found attribute line: " + attributeLine);
+                        String attributePair = line.substring(HintsDescriptor.ATTRIBUTE_MARKER.length());
+                        logger.debug("Found attribute line '" + attributePair + "'.");
                         // TODO: Simply attribute format in hints file.
                         // Attribute format: Type = class -- value = no-pad-left
-                        String[] attrComponents = attributeLine.split(" -- ");
+                        String[] attrComponents = attributePair.split(" -- ");
                         String attrName = attrComponents[0].replace("Type = ", "");
-                        String attrValue = attrComponents[1].replace("Value = ", "");
+                        String attrValue = attrComponents[1].replace("value = ", "");
                         HintsAttribute hintsAttribute = new HintsAttribute();
 
-                        logger.debug("Storing attribute with name: '" + attrName + "' and value '" + attrValue + "'");
+                        logger.debug("Storing attribute with name '" + attrName + "' and value '" + attrValue + "'");
                         hintsAttribute.setAttributeName(attrName);
                         hintsAttribute.setAttributeValue(attrValue);
 
@@ -119,13 +119,12 @@ public class HintsReader {
                     }
 
                     // Read and store the css locator if we have one in the analysis.
-                    if (line.contains("Css Locator:")) {
-                        String[] linePieces = line.split(": ");
-                        String cssLocatorString = linePieces[1];
-                        logger.debug("Found css locator string: " + cssLocatorString);
+                    if (line.contains(HintsDescriptor.LOCATOR_MARKER)) {
+                        String locator = line.substring(HintsDescriptor.LOCATOR_MARKER.length());
+                        logger.debug("Found locator '" + locator + "'.");
                         // TODO: Why am I only writing css locators to the analysis file?
                         analysisDescriptor.setLocatorType(HintsDescriptor.LocatorType.CSS_LOCATOR);
-                        analysisDescriptor.setLocatorValue(cssLocatorString);
+                        analysisDescriptor.setLocatorValue(locator);
                         line = hintsFile.readLine();
                     }
 
