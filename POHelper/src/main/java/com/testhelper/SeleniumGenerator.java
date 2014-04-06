@@ -97,13 +97,13 @@ public class SeleniumGenerator
         }
         else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE) {
 
+            // TODO: The code generation here is copied in the generate from hints section also--put this in a helper method.
             // Write the member code to the code buffer.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
                     codeBucket.addCode(tagDescriptor.getComment());
                     codeBucket.addCode(tagDescriptor.getMemberCode());
             }
 
-            // TODO: The code generation here is copied in the generate from hints section also--put this in a helper method.
             // Write the method code to the code buffer.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
                     codeBucket.addCode(tagDescriptor.getMethodCode());
@@ -127,9 +127,15 @@ public class SeleniumGenerator
                 hintsTagDescriptorList.add(hintsTagDescriptor);
             }
 
+            // TODO: The code generation here is copied in sections above also--put this in a helper method.
+            // Write the member code to the code buffer.
+            for(TagDescriptor tagDescriptor : tagDescriptorList) {
+                    codeBucket.addCode(tagDescriptor.getComment());
+                    codeBucket.addCode(tagDescriptor.getMemberCode());
+            }
             // Write the method code to the code buffer.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
-                    codeBucket.addCode(tagDescriptor.getMethodCode());
+                codeBucket.addCode(tagDescriptor.getMethodCode());
             }
 
             // Dump the generated sourcecode.

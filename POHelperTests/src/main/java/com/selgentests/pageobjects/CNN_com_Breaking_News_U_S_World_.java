@@ -12,6 +12,3762 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CNN_com_Breaking_News_U_S_World_   {
 
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "hdr-banner-title")
+   private WebElement hdr_banner_title;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > ul > li")
+   private WebElement SET_EDITION_U_S_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > ul > li > span > a")
+   private WebElement SET_EDITION;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(2)")
+   private WebElement INTERNATIONALLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "cnn_switchEdition_intl")
+   private WebElement INTERNATIONAL2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3)")
+   private WebElement M_XICOLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3) > a")
+   private WebElement M_XICO2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(4)")
+   private WebElement ARABICLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(4) > a")
+   private WebElement ARABIC2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li")
+   private WebElement TV_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li > span > a")
+   private WebElement TV;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(2)")
+   private WebElement CNNLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(2) > a")
+   private WebElement CNN2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(3)")
+   private WebElement CNNiLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(3) > a")
+   private WebElement CNNi2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(4)")
+   private WebElement CNN_en_Espa_olLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(4) > a")
+   private WebElement CNN_en_Espa_ol2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(5)")
+   private WebElement HLNLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(5) > a")
+   private WebElement HLN2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(3) > ul > li")
+   private WebElement Sign_upLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(3) > ul > li > a")
+   private WebElement Sign_up2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(3) > ul > li:nth-child(2)")
+   private WebElement Log_inLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(3) > ul > li:nth-child(2) > a")
+   private WebElement Log_in2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(3) > ul > li")
+   private WebElement HomeLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "nav-home")
+   private WebElement Home2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(2)")
+   private WebElement TV_VideoLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "nav-video")
+   private WebElement TV_Video2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(3)")
+   private WebElement CNN_TrendsLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "nav-trends")
+   private WebElement CNN_Trends2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(4)")
+   private WebElement U_S_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "nav-us")
+   private WebElement U_S_2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(5)")
+   private WebElement WorldLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "nav-world")
+   private WebElement World2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(6)")
+   private WebElement PoliticsLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "nav-politics")
+   private WebElement Politics2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(7)")
+   private WebElement JusticeLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "nav-justice")
+   private WebElement Justice2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(8)")
+   private WebElement EntertainmentLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "nav-entertainment")
+   private WebElement Entertainment2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(9)")
+   private WebElement TechLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "nav-tech")
+   private WebElement Tech2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(10)")
+   private WebElement HealthLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "nav-health")
+   private WebElement Health2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(11)")
+   private WebElement LivingLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "nav-living")
+   private WebElement Living2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(12)")
+   private WebElement TravelLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "nav-travel")
+   private WebElement Travel2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(13)")
+   private WebElement OpinionLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "nav-opinion")
+   private WebElement Opinion2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(14)")
+   private WebElement iReportLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "nav-ireport")
+   private WebElement iReport2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(15)")
+   private WebElement MoneyLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "nav-money")
+   private WebElement Money2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(16)")
+   private WebElement SportsLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "nav-sports")
+   private WebElement Sports2;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "makeHPLink")
+   private WebElement Make_CNN_Your_Homepage;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li")
+   private WebElement BeganWithUnderscore_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li > a")
+   private WebElement uiElement1;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(2)")
+   private WebElement Flight_370LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(2) > a")
+   private WebElement Flight_3702;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(3)")
+   private WebElement Fort_Hood_shootingLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(3) > a")
+   private WebElement Fort_Hood_shooting2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(4)")
+   private WebElement Afghan_electionsLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(4) > a")
+   private WebElement Afghan_elections2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(5)")
+   private WebElement Ukraine_crisisLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(5) > a")
+   private WebElement Ukraine_crisis2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(6)")
+   private WebElement Final_FourLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(6) > a")
+   private WebElement Final_Four2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(7)")
+   private WebElement Paulina_GretzkyLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(7) > a")
+   private WebElement Paulina_Gretzky2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(8)")
+   private WebElement Archbishop_s_mansionLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(8) > a")
+   private WebElement Archbishop_s_mansion2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(9)")
+   private WebElement Death_Row_StoriesLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(9) > a")
+   private WebElement Death_Row_Stories2;
+
+
+
+
+   // Header1
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(2) > div:nth-child(2) > h1")
+   private WebElement Did_plane_purposely_try_to_avoid;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(2) > div:nth-child(2) > h1 > a")
+   private WebElement Did_plane_purposely_try_to_avoid2;
+
+
+
+
+   // Header1
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div > h1")
+   private WebElement Source_It_flew_north_of_Indonesi;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div > h1 > a")
+   private WebElement Source_It_flew_north_of_Indonesi2;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div > div > div > div > a")
+   private WebElement FULL_STORY_;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li")
+   private WebElement BeganWithUnderscore_Crews_race_to_pulse_site_PhotosLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li > a")
+   private WebElement Crews_race_to_pulse_site;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li > a:nth-child(4)")
+   private WebElement uiElement2;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li > a:nth-child(6)")
+   private WebElement Photos;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Zakaria_Conspiracy_theories_allLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(2) > a")
+   private WebElement Zakaria_Conspiracy_theories_allu;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Is_it_or_isn_t_it_Maps_RelativeLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(3) > a")
+   private WebElement Is_it_or_isn_t_it_;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(3) > a:nth-child(5)")
+   private WebElement Maps;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(3) > a:nth-child(8)")
+   private WebElement Relatives_react;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_Like_finding_grain_of_rice_in_pLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(4) > a")
+   private WebElement Like_finding_grain_of_rice_in_po;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(4) > a:nth-child(4)")
+   private WebElement uiElement3;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li")
+   private WebElement BeganWithUnderscore_NEW_Navy_picks_up_girl_1_sick_aLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li > a")
+   private WebElement Navy_picks_up_girl_1_sick_at_sea;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Medics_parachute_down_to_vesselLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(2) > a")
+   private WebElement Medics_parachute_down_to_vessel;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(2) > a:nth-child(4)")
+   private WebElement uiElement4;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Fort_Hood_shooter_vented_on_FacLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(3) > a")
+   private WebElement Fort_Hood_shooter_vented_on_Face;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_Stockpiled_weapons_ammunition_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(4) > a")
+   private WebElement Stockpiled_weapons_ammunition;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(4) > a:nth-child(4)")
+   private WebElement uiElement5;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_U_S_to_beef_up_defense_against_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(5) > a")
+   private WebElement U_S_to_beef_up_defense_against_N;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(6)")
+   private WebElement BeganWithUnderscore_Russian_flag_raised_over_UkrainLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(6) > a")
+   private WebElement Russian_flag_raised_over_Ukraini;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(7)")
+   private WebElement BeganWithUnderscore_Ukraine_Commando_plot_thwarted_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(7) > a")
+   private WebElement Ukraine_Commando_plot_thwarted;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(8)")
+   private WebElement BeganWithUnderscore_Creepy_crawly_reason_for_Mazda_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(8) > a")
+   private WebElement Creepy_crawly_reason_for_Mazda_r;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(9)")
+   private WebElement BeganWithUnderscore_Archbishop_I_ll_sell_my_2_2M_maLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(9) > a")
+   private WebElement Archbishop_I_ll_sell_my_2_2M_man;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(10)")
+   private WebElement BeganWithUnderscore_Afghan_voters_undeterred_by_TalLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(10) > a")
+   private WebElement Afghan_voters_undeterred_by_Tali;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(11)")
+   private WebElement BeganWithUnderscore_Al_Qaeda_chief_Who_killed_our_mLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(11) > a")
+   private WebElement Al_Qaeda_chief_Who_killed_our_ma;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(12)")
+   private WebElement BeganWithUnderscore_See_inside_Jeffrey_Dahmer_s_homLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(12) > a")
+   private WebElement See_inside_Jeffrey_Dahmer_s_home;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(12) > a:nth-child(4)")
+   private WebElement uiElement6;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(13)")
+   private WebElement BeganWithUnderscore_Baby_fingerprinted_and_booked_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(13) > a")
+   private WebElement Baby_fingerprinted_and_booked;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(14)")
+   private WebElement BeganWithUnderscore_Does_having_kids_make_you_happiLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(14) > a")
+   private WebElement Does_having_kids_make_you_happie;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(14) > a:nth-child(4)")
+   private WebElement uiElement7;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(15)")
+   private WebElement BeganWithUnderscore_Mannequin_in_trash_No_it_s_a_boLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(15) > a")
+   private WebElement Mannequin_in_trash_No_it_s_a_bod;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(15) > a:nth-child(4)")
+   private WebElement uiElement8;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(16)")
+   private WebElement BeganWithUnderscore_Beauty_contest_rejected_THIS_phLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(16) > a")
+   private WebElement Beauty_contest_rejected_THIS_pho;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(16) > a:nth-child(4)")
+   private WebElement uiElement9;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(17)")
+   private WebElement BeganWithUnderscore_Ridiculous_shot_caps_Final_FourLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(17) > a")
+   private WebElement BeganWithUnderscore_Ridiculous_shot_caps_Final_Four2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li")
+   private WebElement BeganWithUnderscore_Stopping_LeBron_3_flops_on_1_plLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li > a")
+   private WebElement Stopping_LeBron_3_flops_on_1_pla;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Family_Hospital_froze_her_aliveLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(2) > a")
+   private WebElement Family_Hospital_froze_her_alive_;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(2) > a:nth-child(4)")
+   private WebElement uiElement10;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Driver_who_put_train_on_escalatLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(3) > a")
+   private WebElement Driver_who_put_train_on_escalato;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_India_s_mind_blowingly_huge_eleLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(4) > a")
+   private WebElement India_s_mind_blowingly_huge_elec;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_Skydiver_dies_after_midair_collLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) > a")
+   private WebElement Skydiver_dies_after_midair_colli;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) > a:nth-child(4)")
+   private WebElement uiElement11;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6)")
+   private WebElement BeganWithUnderscore_Apple_s_big_news_coming_in_JuneLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) > a")
+   private WebElement Apple_s_big_news_coming_in_June;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(7)")
+   private WebElement BeganWithUnderscore_Swimmer_taken_by_shark_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(7) > a")
+   private WebElement Swimmer_taken_by_shark_;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(7) > a:nth-child(4)")
+   private WebElement uiElement12;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(8)")
+   private WebElement BeganWithUnderscore_Note_to_tardy_boss_gets_him_firLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(8) > a")
+   private WebElement Note_to_tardy_boss_gets_him_fire;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(8) > a:nth-child(4)")
+   private WebElement uiElement13;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(9)")
+   private WebElement BeganWithUnderscore_Homeless_man_withdraws_37_000_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(9) > a")
+   private WebElement Homeless_man_withdraws_37_000;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(9) > a:nth-child(4)")
+   private WebElement uiElement14;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(10)")
+   private WebElement BeganWithUnderscore_Wi_Fi_speeds_are_about_to_triplLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(10) > a")
+   private WebElement Wi_Fi_speeds_are_about_to_triple;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(11)")
+   private WebElement BeganWithUnderscore_Complex_offers_happiness_amenitLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(11) > a")
+   private WebElement Complex_offers_happiness_amenity;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(12)")
+   private WebElement BeganWithUnderscore_Wave_of_suicides_at_phone_compaLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(12) > a")
+   private WebElement Wave_of_suicides_at_phone_compan;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(12) > a:nth-child(4)")
+   private WebElement uiElement15;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(13)")
+   private WebElement BeganWithUnderscore_America_s_most_sprawling_citiesLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(13) > a")
+   private WebElement America_s_most_sprawling_cities;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(14)")
+   private WebElement BeganWithUnderscore_Reality_TV_star_gets_married_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(14) > a")
+   private WebElement Reality_TV_star_gets_married;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > ul > li")
+   private WebElement BeganWithUnderscore_Is_Internet_driving_Letterman_aLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > ul > li > a")
+   private WebElement Is_Internet_driving_Letterman_aw;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Rwanda_not_what_I_thought_it_woLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(2) > a")
+   private WebElement Rwanda_not_what_I_thought_it_wou;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_LZ_How_Mozilla_botched_CEO_s_ouLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(3) > a")
+   private WebElement LZ_How_Mozilla_botched_CEO_s_ous;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li")
+   private WebElement BeganWithUnderscore_Exhibit_opens_The_artist_known_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li > a")
+   private WebElement Exhibit_opens_The_artist_known_a;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_James_Franco_I_m_embarrassed_EWLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(2) > a")
+   private WebElement James_Franco_I_m_embarrassed_;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Clinton_is_right_There_are_alieLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(3) > a")
+   private WebElement Clinton_is_right_There_are_alien;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_What_a_shot_Amazing_sports_photLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(4) > a")
+   private WebElement What_a_shot_Amazing_sports_photo;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(4) > a:nth-child(4)")
+   private WebElement uiElement16;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(5) > a")
+   private WebElement uiElement17;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div > div > a")
+   private WebElement Rethinking_experimental_drugs;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div > div:nth-child(2) > div > a")
+   private WebElement FULL_STORY;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div > div:nth-child(3) > div > a")
+   private WebElement uiElement18;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li")
+   private WebElement BeganWithUnderscore_Compassionate_use_Their_storiesLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li > a")
+   private WebElement Compassionate_use_Their_stories;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li > a:nth-child(4)")
+   private WebElement uiElement19;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Dying_boy_receives_trial_drug_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2) > a")
+   private WebElement Dying_boy_receives_trial_drug;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2) > a:nth-child(4)")
+   private WebElement uiElement20;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_In_cancer_drug_battle_both_sideLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(3) > a")
+   private WebElement In_cancer_drug_battle_both_sides;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div > div > div > a")
+   private WebElement uiElement21;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div > a")
+   private WebElement The_dark_art_of_Dr_Death_;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div > a")
+   private WebElement uiElement22;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > a")
+   private WebElement uiElement23;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > a")
+   private WebElement Attempted_murder_plot_stuns_part;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div > div > a")
+   private WebElement uiElement24;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > a")
+   private WebElement Mankind_s_greatest_searches;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div > div > a")
+   private WebElement uiElement25;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > a")
+   private WebElement When_God_plays_the_villain;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > div > div > a")
+   private WebElement uiElement26;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > div > div:nth-child(2) > a")
+   private WebElement uiElement27;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > a")
+   private WebElement Is_this_mysterious_light_a_UFO_;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > div > div > a")
+   private WebElement uiElement28;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > div > div:nth-child(2) > a")
+   private WebElement uiElement29;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > a")
+   private WebElement Fantasy_worlds_brought_to_life;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(9) > div > div > a")
+   private WebElement uiElement30;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(9) > div > div:nth-child(2) > a")
+   private WebElement uiElement31;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(9) > a")
+   private WebElement Surprise_Bush_tricks_church;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(10) > div > div > a")
+   private WebElement uiElement32;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(10) > div > div:nth-child(2) > a")
+   private WebElement uiElement33;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(10) > a")
+   private WebElement Man_jumps_on_tracks_as_train_app;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(11) > div > div > a")
+   private WebElement uiElement34;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(11) > div > div:nth-child(2) > a")
+   private WebElement uiElement35;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(11) > a")
+   private WebElement The_week_in_33_photos;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(13) > div > div > a")
+   private WebElement uiElement36;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(13) > div > div:nth-child(2) > a")
+   private WebElement uiElement37;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(13) > a")
+   private WebElement Favorite_country_music_couples;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(14) > div > div > a")
+   private WebElement uiElement38;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(14) > a")
+   private WebElement Paulina_Gretzky_s_controversial_;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(15) > div > div > a")
+   private WebElement uiElement39;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(15) > div > div:nth-child(2) > a")
+   private WebElement uiElement40;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(15) > a")
+   private WebElement Shocking_video_of_a_python_eatin;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(17) > div > div > a")
+   private WebElement uiElement41;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(17) > a")
+   private WebElement School_s_first_racially_integrat;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(18) > div > div > a")
+   private WebElement uiElement42;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(18) > a")
+   private WebElement Secrets_from_set_of_Big_Bang_The;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(19) > div > div > a")
+   private WebElement uiElement43;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(19) > div > div:nth-child(2) > a")
+   private WebElement uiElement44;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(19) > a")
+   private WebElement See_Big_Bang_star_s_spot_on_Paci;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div > div > h4 > a")
+   private WebElement Weather;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "weatherLocBtn")
+   private WebElement Go;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > div:nth-child(3) > a")
+   private WebElement uiElement45;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(3) > div > h4 > a")
+   private WebElement LIVE_TV;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > a")
+   private WebElement CNN_TV;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > a:nth-child(2)")
+   private WebElement HLN_TV;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(2) > h4 > a")
+   private WebElement Markets;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "myQuotesBtn")
+   private WebElement My_quotes;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "defIndexBtn")
+   private WebElement Indexes;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ul > li")
+   private WebElement BeganWithUnderscore_Dow_16_412_71_0_96_159_84_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ul > li > div > span > a")
+   private WebElement Dow;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Nasdaq_4_127_73_2_60_110_014_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2) > div > span > a")
+   private WebElement Nasdaq;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_S_P_1_865_09_1_25_23_68_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(3) > div > span > a")
+   private WebElement S_P;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "getSymbolBtn")
+   private WebElement Get_Quotes;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(4) > a")
+   private WebElement CNNMoney_com;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(4) > a:nth-child(3)")
+   private WebElement NEW_My_Portfolio;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > h4 > a")
+   private WebElement U_S_3;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li")
+   private WebElement BeganWithUnderscore_American_Rwanda_not_just_genociLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li > div > div > a")
+   private WebElement BeganWithUnderscore_2;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li > div > span > span > a")
+   private WebElement American_Rwanda_not_just_genocid;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Du_Pont_heir_avoided_prison_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(2) > a")
+   private WebElement Du_Pont_heir_avoided_prison;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Man_survives_chainsaw_in_neck_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(3) > a")
+   private WebElement Man_survives_chainsaw_in_neck;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_Yoda_fan_wins_425M_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(4) > a")
+   private WebElement Yoda_fan_wins_425M;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_Is_this_a_real_chupacabra_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(5) > a")
+   private WebElement Is_this_a_real_chupacabra_;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(5) > a:nth-child(2)")
+   private WebElement uiElement46;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > div:nth-child(5) > a")
+   private WebElement uiElement47;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > h4 > a")
+   private WebElement World3;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li")
+   private WebElement BeganWithUnderscore_Afghan_election_Who_s_running_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li > div > div > a")
+   private WebElement BeganWithUnderscore_3;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li > div > span > span > a")
+   private WebElement Afghan_election_Who_s_running_;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_The_world_s_biggest_democratic_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(2) > a")
+   private WebElement The_world_s_biggest_democratic_e;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_What_s_the_Oscar_Pistorius_defeLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(3) > a")
+   private WebElement What_s_the_Oscar_Pistorius_defen;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_Stolen_art_found_40_years_laterLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(4) > a")
+   private WebElement Stolen_art_found_40_years_later;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(4) > a:nth-child(2)")
+   private WebElement uiElement48;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_5_strongest_recorded_quakes_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(5) > a")
+   private WebElement BeganWithDigit_5_strongest_recorded_quakes;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(5) > a:nth-child(2)")
+   private WebElement uiElement49;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > div:nth-child(5) > a")
+   private WebElement uiElement50;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > h4 > a")
+   private WebElement Politics3;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li")
+   private WebElement BeganWithUnderscore_Dems_have_a_good_week_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li > div > div > a")
+   private WebElement BeganWithUnderscore_4;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li > div > span > span > a")
+   private WebElement Dems_have_a_good_week;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_George_W_Bush_paintings_unveileLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(2) > a")
+   private WebElement George_W_Bush_paintings_unveiled;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Art_critic_weighs_in_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(3) > a")
+   private WebElement Art_critic_weighs_in;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(3) > a:nth-child(2)")
+   private WebElement uiElement51;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_Big_Papi_big_selfies_big_deals_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(4) > a")
+   private WebElement Big_Papi_big_selfies_big_deals;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_Special_Coverage_2014_midterms_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(5) > a")
+   private WebElement Special_Coverage_2014_midterms;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > div:nth-child(5) > a")
+   private WebElement uiElement52;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > h4 > a")
+   private WebElement Tech3;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li")
+   private WebElement BeganWithUnderscore_3_D_printing_human_organs_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li > div > div > a")
+   private WebElement BeganWithUnderscore_5;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li > div > span > span > a")
+   private WebElement BeganWithDigit_3_D_printing_human_organs;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Apple_news_coming_June_2_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(2) > a")
+   private WebElement Apple_news_coming_June_2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Underground_sea_found_on_SaturnLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(3) > a")
+   private WebElement Underground_sea_found_on_Saturn_;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_Amazon_s_big_streaming_move_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(4) > a")
+   private WebElement Amazon_s_big_streaming_move_;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(4) > a:nth-child(2)")
+   private WebElement uiElement53;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_U_S_gets_new_atomic_clock_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(5) > a")
+   private WebElement U_S_gets_new_atomic_clock;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > div:nth-child(5) > a")
+   private WebElement uiElement54;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > h4 > a")
+   private WebElement Business;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li")
+   private WebElement BeganWithUnderscore_Tyson_recalls_chicken_nuggets_sLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li > div > div > a")
+   private WebElement BeganWithUnderscore_6;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li > div > span > span > a")
+   private WebElement BeganWithUnderscore_Tyson_recalls_chicken_nuggets_s2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_J_Lo_backed_TV_channel_buys_FusLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(2) > a")
+   private WebElement J_Lo_backed_TV_channel_buys_Fuse;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_GM_submits_200_000_pages_to_safLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(3) > a")
+   private WebElement GM_submits_200_000_pages_to_safe;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_Anadarko_to_pay_5_billion_for_eLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(4) > a")
+   private WebElement Anadarko_to_pay_5_billion_for_en;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_Audi_RS7_a_performance_monster_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(5) > a")
+   private WebElement Audi_RS7_a_performance_monster_;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(5) > a:nth-child(2)")
+   private WebElement BeganWithUnderscore_7;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > div:nth-child(5) > a")
+   private WebElement uiElement55;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > h4 > a")
+   private WebElement Opinion3;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li")
+   private WebElement BeganWithUnderscore_Should_mentally_ill_own_guns_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li > div > div > a")
+   private WebElement BeganWithUnderscore_8;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li > div > span > span > a")
+   private WebElement Should_mentally_ill_own_guns_;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Virtual_assistants_are_the_futuLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(2) > a")
+   private WebElement Virtual_assistants_are_the_futur;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Is_Internet_driving_Letterman_a2LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(3) > a")
+   private WebElement Is_Internet_driving_Letterman_aw2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_Why_is_heir_not_in_jail_for_chiLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(4) > a")
+   private WebElement Why_is_heir_not_in_jail_for_chil;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_Rahm_Emanuel_s_Chicago_two_citiLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(5) > a")
+   private WebElement Rahm_Emanuel_s_Chicago_two_citie;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > div:nth-child(5) > a")
+   private WebElement uiElement56;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > h4 > a")
+   private WebElement AOL_Lifestyle;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li")
+   private WebElement BeganWithUnderscore_10_Easy_fish_recipes_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li > a")
+   private WebElement BeganWithDigit_10_Easy_fish_recipes;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Knitting_for_the_chicest_of_dumLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(2) > a")
+   private WebElement Knitting_for_the_chicest_of_dumm;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Eat_your_way_to_shiny_hair_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(3) > a")
+   private WebElement Eat_your_way_to_shiny_hair;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_Surprising_ways_to_burn_calorieLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(4) > a")
+   private WebElement Surprising_ways_to_burn_calories;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_NYC_s_first_female_firefighter_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(5) > a")
+   private WebElement NYC_s_first_female_firefighter;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(6)")
+   private WebElement BeganWithUnderscore_DIY_copper_hanging_plants_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(6) > a")
+   private WebElement DIY_copper_hanging_plants;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(7)")
+   private WebElement BeganWithUnderscore_15_Time_saving_dinner_hacks_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(7) > a")
+   private WebElement BeganWithDigit_15_Time_saving_dinner_hacks;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > div:nth-child(5) > a")
+   private WebElement uiElement57;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > h4 > a")
+   private WebElement Entertainment3;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li")
+   private WebElement BeganWithUnderscore_Game_of_Thrones_promises_more_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li > div > div > a")
+   private WebElement BeganWithUnderscore_9;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li > div > span > span > a")
+   private WebElement BeganWithUnderscore_Game_of_Thrones_promises_more_2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Letterman_s_big_announcement_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(2) > a")
+   private WebElement Letterman_s_big_announcement;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(2) > a:nth-child(2)")
+   private WebElement uiElement58;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Gabriel_Garc_a_M_rquez_ill_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(3) > a")
+   private WebElement Gabriel_Garc_a_M_rquez_ill_;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_Brown_headed_to_D_C_for_trial_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(4) > a")
+   private WebElement Brown_headed_to_D_C_for_trial_;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_Lawson_turned_away_from_flight_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(5) > a")
+   private WebElement Lawson_turned_away_from_flight;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > div:nth-child(5) > a")
+   private WebElement uiElement59;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > h4 > a")
+   private WebElement Travel3;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li")
+   private WebElement BeganWithUnderscore_Scotland_s_most_spectacular_casLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li > div > div > a")
+   private WebElement BeganWithUnderscore_10;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li > div > span > span > a")
+   private WebElement Scotland_s_most_spectacular_cast;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Goodyear_s_bigger_faster_ZeppelLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(2) > a")
+   private WebElement Goodyear_s_bigger_faster_Zeppeli;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Show_us_the_prettiest_librariesLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(3) > a")
+   private WebElement Show_us_the_prettiest_libraries;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_15_best_U_S_spots_for_kids_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(4) > a")
+   private WebElement BeganWithDigit_15_best_U_S_spots_for_kids;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_And_the_world_s_busiest_airportLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(5) > a")
+   private WebElement And_the_world_s_busiest_airport_;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > div:nth-child(5) > a")
+   private WebElement uiElement60;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > h4 > a")
+   private WebElement Living3;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li")
+   private WebElement BeganWithUnderscore_Millennial_moms_want_to_stay_hoLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li > div > div > a")
+   private WebElement BeganWithUnderscore_11;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li > div > span > span > a")
+   private WebElement Millennial_moms_want_to_stay_hom;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Why_the_beef_with_paternity_leaLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(2) > a")
+   private WebElement Why_the_beef_with_paternity_leav;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Make_your_wedding_florally_fabuLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(3) > a")
+   private WebElement Make_your_wedding_florally_fabul;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_Game_of_Thrones_feast_no_blood_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(4) > a")
+   private WebElement Game_of_Thrones_feast_no_blood_p;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_Eternity_with_Duke_s_mayonnaiseLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(5) > a")
+   private WebElement Eternity_with_Duke_s_mayonnaise;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(5) > a:nth-child(2)")
+   private WebElement uiElement61;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > div:nth-child(5) > a")
+   private WebElement uiElement62;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > h4 > a")
+   private WebElement Health3;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li")
+   private WebElement BeganWithUnderscore_Worst_cities_for_spring_allergiLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li > div > div > a")
+   private WebElement BeganWithUnderscore_12;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li > div > span > span > a")
+   private WebElement Worst_cities_for_spring_allergie;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_E_cigs_linked_to_poisonings_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(2) > a")
+   private WebElement E_cigs_linked_to_poisonings;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_PTSD_9_questions_answered_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(3) > a")
+   private WebElement PTSD_9_questions_answered;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_Run_more_live_longer_Maybe_not_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(4) > a")
+   private WebElement Run_more_live_longer_Maybe_not;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_Pollen_allergies_Don_t_eat_thesLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(5) > a")
+   private WebElement Pollen_allergies_Don_t_eat_these;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(5) > a:nth-child(2)")
+   private WebElement uiElement63;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > div:nth-child(5) > a")
+   private WebElement uiElement64;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > h4 > a")
+   private WebElement Photography;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li")
+   private WebElement BeganWithUnderscore_The_Silence_of_genocide_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li > div > div > a")
+   private WebElement BeganWithUnderscore_13;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li > div > div > div > a")
+   private WebElement uiElement65;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li > div > span > span > a")
+   private WebElement BeganWithUnderscore_The_Silence_of_genocide;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li > div > span > span > a:nth-child(2)")
+   private WebElement uiElement66;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_The_week_in_33_photos_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(2) > a")
+   private WebElement The_week_in_33_photos2;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(2) > a:nth-child(2)")
+   private WebElement uiElement67;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Surviving_land_mines_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(3) > a")
+   private WebElement Surviving_land_mines;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(3) > a:nth-child(2)")
+   private WebElement uiElement68;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_What_a_shot_34_sports_photos_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(4) > a")
+   private WebElement What_a_shot_34_sports_photos;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(4) > a:nth-child(2)")
+   private WebElement uiElement69;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_Fires_for_a_cause_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(5) > a")
+   private WebElement Fires_for_a_cause;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(5) > a:nth-child(2)")
+   private WebElement uiElement70;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > div:nth-child(5) > a")
+   private WebElement uiElement71;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > h4 > a")
+   private WebElement Sports3;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li")
+   private WebElement BeganWithUnderscore_Kentucky_s_game_winning_shot_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li > a")
+   private WebElement Kentucky_s_game_winning_shot;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li > a:nth-child(2)")
+   private WebElement uiElement72;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_UK_s_Harrison_can_t_miss_in_cluLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(2) > a")
+   private WebElement UK_s_Harrison_can_t_miss_in_clut;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Don_t_call_Kentucky_a_No_8_seedLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(3) > a")
+   private WebElement Don_t_call_Kentucky_a_No_8_seed;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_Final_Four_winners_and_losers_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(4) > a")
+   private WebElement Final_Four_winners_and_losers;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_UConn_beats_Florida_on_to_titleLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(5) > a")
+   private WebElement UConn_beats_Florida_on_to_title_;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(6)")
+   private WebElement BeganWithUnderscore_UConn_slays_final_No_1_giant_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(6) > a")
+   private WebElement UConn_slays_final_No_1_giant;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(7)")
+   private WebElement BeganWithUnderscore_National_title_game_preview_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(7) > a")
+   private WebElement National_title_game_preview;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(8)")
+   private WebElement BeganWithUnderscore_The_pain_of_falling_1_point_shoLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(8) > a")
+   private WebElement The_pain_of_falling_1_point_shor;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(9)")
+   private WebElement BeganWithUnderscore_Title_favorite_Florida_falls_haLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(9) > a")
+   private WebElement Title_favorite_Florida_falls_har;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > div:nth-child(5) > a")
+   private WebElement uiElement73;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li")
+   private WebElement BeganWithUnderscore_How_cute_are_Willard_Scott_and_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li > a")
+   private WebElement How_cute_are_Willard_Scott_and_h;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Elk_crossing_has_a_surprise_twiLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(2) > a")
+   private WebElement Elk_crossing_has_a_surprise_twis;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Family_wants_girlfriend_chargedLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(3) > a")
+   private WebElement Family_wants_girlfriend_charged_;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_Old_FSU_logo_out_New_logo_leakeLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(4) > a")
+   private WebElement Old_FSU_logo_out_New_logo_leaked;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_Watch_Cats_react_to_viral_videoLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(5) > a")
+   private WebElement Watch_Cats_react_to_viral_videos;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(6)")
+   private WebElement BeganWithUnderscore_David_Letterman_plans_to_retireLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(6) > a")
+   private WebElement David_Letterman_plans_to_retire_;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(7)")
+   private WebElement BeganWithUnderscore_Twitter_timeline_Ft_Hood_shootiLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(7) > a")
+   private WebElement Twitter_timeline_Ft_Hood_shootin;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > h4 > a")
+   private WebElement Huffington_Post;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li")
+   private WebElement BeganWithUnderscore_Another_sign_Obamacare_is_workiLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li > a")
+   private WebElement Another_sign_Obamacare_is_workin;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Why_every_Final_Four_player_wilLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(2) > a")
+   private WebElement Why_every_Final_Four_player_will;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Netflix_s_new_series_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(3) > a")
+   private WebElement Netflix_s_new_series;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_Back_alley_abortions_return_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(4) > a")
+   private WebElement Back_alley_abortions_return;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_Americans_ignore_climate_changeLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(5) > a")
+   private WebElement Americans_ignore_climate_change;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(6)")
+   private WebElement BeganWithUnderscore_Conservatives_call_Reid_brain_dLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(6) > a")
+   private WebElement Conservatives_call_Reid_brain_de;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(7)")
+   private WebElement BeganWithUnderscore_Holder_and_the_big_marijuana_deLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(7) > a")
+   private WebElement Holder_and_the_big_marijuana_dec;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > div:nth-child(5) > a")
+   private WebElement uiElement74;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > h4 > a")
+   private WebElement Indeed_com_Job_Search;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li")
+   private WebElement BeganWithUnderscore_Search_3_million_Jobs_on_IndeedLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li > a")
+   private WebElement Search_3_million_Jobs_on_Indeed;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Browse_Jobs_by_Company_Title_orLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(2) > a")
+   private WebElement Browse_Jobs_by_Company_Title_or_;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Receive_Job_Alerts_by_Email_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(3) > a")
+   private WebElement Receive_Job_Alerts_by_Email;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_View_124k_Insurance_Jobs_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(4) > a")
+   private WebElement View_124k_Insurance_Jobs;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_Find_Marketing_Jobs_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(5) > a")
+   private WebElement Find_Marketing_Jobs;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(6)")
+   private WebElement BeganWithUnderscore_Apply_for_Health_Care_Jobs_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(6) > a")
+   private WebElement Apply_for_Health_Care_Jobs;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(7)")
+   private WebElement BeganWithUnderscore_Employers_Post_your_jobs_on_IndLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(7) > a")
+   private WebElement Employers_Post_your_jobs_on_Inde;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > div:nth-child(5) > a")
+   private WebElement uiElement75;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > h4 > a")
+   private WebElement Play_CNN_Games_;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > ul > a")
+   private WebElement uiElement76;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > ul > ul > li")
+   private WebElement BeganWithUnderscore_Play_Mahjongg_Dimensions_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > ul > ul > li > a")
+   private WebElement Play_Mahjongg_Dimensions_;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > ul > ul > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Play_Tri_Peaks_Solitaire_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > ul > ul > li:nth-child(2) > a")
+   private WebElement Play_Tri_Peaks_Solitaire_;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > ul > ul > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_Play_now_CNN_Jigsaw_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > ul > ul > li:nth-child(3) > a")
+   private WebElement Play_now_CNN_Jigsaw_;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > div:nth-child(5) > a")
+   private WebElement uiElement77;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(8) > div > div > h4 > a")
+   private WebElement TV_Video3;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > div > a")
+   private WebElement HLN3;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > div > a:nth-child(2)")
+   private WebElement Full_Schedule;
+
+
+
+
+   // numbered list begin
+<-- Code Block End -->
+
+
+<*** New Tag ***>
+<ul>
+<-- Code Block Begin -->
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol")
+   private WebElement BeganWithUnderscore_The_Situation_Room5pm_ET_2pm_PTUiListItem;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li")
+   private WebElement BeganWithUnderscore_The_Situation_Room5pm_ET_2pm_PT2LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li > a")
+   private WebElement BeganWithUnderscore_The_Situation_Room5pm_ET_2pm_PT3;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(2)")
+   private WebElement BeganWithUnderscore_Erin_Burnett_OutFront7pm_ET_4pmLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(2) > a")
+   private WebElement BeganWithUnderscore_Erin_Burnett_OutFront7pm_ET_4pm2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(3)")
+   private WebElement BeganWithUnderscore_AC_3608pm_ET_5pm_PT_on_CNNLiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(3) > a")
+   private WebElement BeganWithUnderscore_AC_3608pm_ET_5pm_PT_on_CNN2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(4)")
+   private WebElement BeganWithUnderscore_Anthony_BourdainReturns_Sunday_LiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(4) > a")
+   private WebElement BeganWithUnderscore_Anthony_BourdainReturns_Sunday_2;
+
+
+
+
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(5)")
+   private WebElement BeganWithUnderscore_Morgan_SpurlockReturns_Sunday_ALiListItem;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(5) > a")
+   private WebElement BeganWithUnderscore_Morgan_SpurlockReturns_Sunday_A2;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div > a")
+   private WebElement View_Collections;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a")
+   private WebElement Home3;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(2)")
+   private WebElement Video;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(3)")
+   private WebElement CNN_Trends3;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(4)")
+   private WebElement U_S_4;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(5)")
+   private WebElement World4;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(6)")
+   private WebElement Politics4;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(7)")
+   private WebElement Justice3;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(8)")
+   private WebElement Entertainment4;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(9)")
+   private WebElement Tech4;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(10)")
+   private WebElement Health4;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(11)")
+   private WebElement Living4;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(12)")
+   private WebElement Travel4;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(13)")
+   private WebElement Opinion4;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(14)")
+   private WebElement iReport3;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(15)")
+   private WebElement Money3;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(16)")
+   private WebElement Sports4;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a")
+   private WebElement Tools_widgets;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(2)")
+   private WebElement RSS;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(3)")
+   private WebElement Podcasts;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(4)")
+   private WebElement Blogs;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(5)")
+   private WebElement CNN_mobile;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(6)")
+   private WebElement My_profile;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(7)")
+   private WebElement E_mail_alerts;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(8)")
+   private WebElement Desktop_Alerts;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(9)")
+   private WebElement CNN_shop;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(10)")
+   private WebElement Site_map;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(11)")
+   private WebElement Contact_us;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div > a")
+   private WebElement CNN_en_ESPA_OL;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div > a:nth-child(2)")
+   private WebElement CNN_M_xico;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div > a:nth-child(3)")
+   private WebElement CNN_Chile;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div > a:nth-child(4)")
+   private WebElement CNN_Expansi_n;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div:nth-child(2) > a")
+   private WebElement BeganWithUnderscore_14;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div:nth-child(2) > a:nth-child(2)")
+   private WebElement BeganWithUnderscore_15;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div:nth-child(2) > a:nth-child(3)")
+   private WebElement T_rk_e;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div:nth-child(3) > a")
+   private WebElement CNN_TV2;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div:nth-child(3) > a:nth-child(2)")
+   private WebElement HLN4;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div:nth-child(3) > a:nth-child(3)")
+   private WebElement Transcripts;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div > a")
+   private WebElement Turner_Broadcasting_System_Inc_;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(2) > a")
+   private WebElement Terms_of_service;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(2) > a:nth-child(2)")
+   private WebElement Privacy_guidelines;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(id = "cnn_cnsnt_trst")
+   private WebElement cnn_cnsnt_trst;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(2) > a:nth-child(5)")
+   private WebElement Advertise_with_us;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(2) > a:nth-child(6)")
+   private WebElement About_us;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(2) > a:nth-child(7)")
+   private WebElement Work_for_us;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(2) > a:nth-child(8)")
+   private WebElement Help;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(3) > a")
+   private WebElement CNN_Newsource;
+
+
+
+
+   // Anchor tag (<a>)
+   @FindBy(css = "body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(3) > a:nth-child(2)")
+   private WebElement License_Footage;
+
+
    public String gethdr_banner_titleLinkText() {
       return hdr_banner_title.getText();
    }
@@ -672,6 +4428,43 @@ public class CNN_com_Breaking_News_U_S_World_   {
    }
 
 
+   public String getBeganWithUnderscore_NEW_Navy_picks_up_girl_1_sick_aLiListItemText() {
+      return BeganWithUnderscore_NEW_Navy_picks_up_girl_1_sick_aLiListItem.getText();
+   }
+
+
+   public String getNavy_picks_up_girl_1_sick_at_seaLinkText() {
+      return Navy_picks_up_girl_1_sick_at_sea.getText();
+   }
+
+   public void clickNavy_picks_up_girl_1_sick_at_sea() {
+      Navy_picks_up_girl_1_sick_at_sea.click();
+   }
+
+
+   public String getBeganWithUnderscore_Medics_parachute_down_to_vesselLiListItemText() {
+      return BeganWithUnderscore_Medics_parachute_down_to_vesselLiListItem.getText();
+   }
+
+
+   public String getMedics_parachute_down_to_vesselLinkText() {
+      return Medics_parachute_down_to_vessel.getText();
+   }
+
+   public void clickMedics_parachute_down_to_vessel() {
+      Medics_parachute_down_to_vessel.click();
+   }
+
+
+   public String getuiElement4LinkText() {
+      return uiElement4.getText();
+   }
+
+   public void clickuiElement4() {
+      uiElement4.click();
+   }
+
+
    public String getBeganWithUnderscore_Fort_Hood_shooter_vented_on_FacLiListItemText() {
       return BeganWithUnderscore_Fort_Hood_shooter_vented_on_FacLiListItem.getText();
    }
@@ -700,12 +4493,12 @@ public class CNN_com_Breaking_News_U_S_World_   {
    }
 
 
-   public String getuiElement4LinkText() {
-      return uiElement4.getText();
+   public String getuiElement5LinkText() {
+      return uiElement5.getText();
    }
 
-   public void clickuiElement4() {
-      uiElement4.click();
+   public void clickuiElement5() {
+      uiElement5.click();
    }
 
 
@@ -751,6 +4544,20 @@ public class CNN_com_Breaking_News_U_S_World_   {
    }
 
 
+   public String getBeganWithUnderscore_Creepy_crawly_reason_for_Mazda_LiListItemText() {
+      return BeganWithUnderscore_Creepy_crawly_reason_for_Mazda_LiListItem.getText();
+   }
+
+
+   public String getCreepy_crawly_reason_for_Mazda_rLinkText() {
+      return Creepy_crawly_reason_for_Mazda_r.getText();
+   }
+
+   public void clickCreepy_crawly_reason_for_Mazda_r() {
+      Creepy_crawly_reason_for_Mazda_r.click();
+   }
+
+
    public String getBeganWithUnderscore_Archbishop_I_ll_sell_my_2_2M_maLiListItemText() {
       return BeganWithUnderscore_Archbishop_I_ll_sell_my_2_2M_maLiListItem.getText();
    }
@@ -762,43 +4569,6 @@ public class CNN_com_Breaking_News_U_S_World_   {
 
    public void clickArchbishop_I_ll_sell_my_2_2M_man() {
       Archbishop_I_ll_sell_my_2_2M_man.click();
-   }
-
-
-   public String getBeganWithUnderscore_Air_guard_Navy_sent_to_get_babyLiListItemText() {
-      return BeganWithUnderscore_Air_guard_Navy_sent_to_get_babyLiListItem.getText();
-   }
-
-
-   public String getAir_guard_Navy_sent_to_get_babyLinkText() {
-      return Air_guard_Navy_sent_to_get_baby.getText();
-   }
-
-   public void clickAir_guard_Navy_sent_to_get_baby() {
-      Air_guard_Navy_sent_to_get_baby.click();
-   }
-
-
-   public String getBeganWithUnderscore_Medics_parachute_down_to_vesselLiListItemText() {
-      return BeganWithUnderscore_Medics_parachute_down_to_vesselLiListItem.getText();
-   }
-
-
-   public String getMedics_parachute_down_to_vesselLinkText() {
-      return Medics_parachute_down_to_vessel.getText();
-   }
-
-   public void clickMedics_parachute_down_to_vessel() {
-      Medics_parachute_down_to_vessel.click();
-   }
-
-
-   public String getuiElement5LinkText() {
-      return uiElement5.getText();
-   }
-
-   public void clickuiElement5() {
-      uiElement5.click();
    }
 
 
@@ -1012,20 +4782,6 @@ public class CNN_com_Breaking_News_U_S_World_   {
 
    public void clickIndia_s_mind_blowingly_huge_elec() {
       India_s_mind_blowingly_huge_elec.click();
-   }
-
-
-   public String getBeganWithUnderscore_Tyson_recalls_chicken_nuggets_LiListItemText() {
-      return BeganWithUnderscore_Tyson_recalls_chicken_nuggets_LiListItem.getText();
-   }
-
-
-   public String getTyson_recalls_chicken_nuggetsLinkText() {
-      return Tyson_recalls_chicken_nuggets.getText();
-   }
-
-   public void clickTyson_recalls_chicken_nuggets() {
-      Tyson_recalls_chicken_nuggets.click();
    }
 
 
@@ -1543,12 +5299,12 @@ public class CNN_com_Breaking_News_U_S_World_   {
    }
 
 
-   public String getThe_week_in_33_photosLinkText() {
-      return The_week_in_33_photos.getText();
+   public String getFantasy_worlds_brought_to_lifeLinkText() {
+      return Fantasy_worlds_brought_to_life.getText();
    }
 
-   public void clickThe_week_in_33_photos() {
-      The_week_in_33_photos.click();
+   public void clickFantasy_worlds_brought_to_life() {
+      Fantasy_worlds_brought_to_life.click();
    }
 
 
@@ -1570,12 +5326,12 @@ public class CNN_com_Breaking_News_U_S_World_   {
    }
 
 
-   public String getFavorite_country_music_couplesLinkText() {
-      return Favorite_country_music_couples.getText();
+   public String getSurprise_Bush_tricks_churchLinkText() {
+      return Surprise_Bush_tricks_church.getText();
    }
 
-   public void clickFavorite_country_music_couples() {
-      Favorite_country_music_couples.click();
+   public void clickSurprise_Bush_tricks_church() {
+      Surprise_Bush_tricks_church.click();
    }
 
 
@@ -1597,12 +5353,12 @@ public class CNN_com_Breaking_News_U_S_World_   {
    }
 
 
-   public String getSurprise_Bush_tricks_churchLinkText() {
-      return Surprise_Bush_tricks_church.getText();
+   public String getMan_jumps_on_tracks_as_train_appLinkText() {
+      return Man_jumps_on_tracks_as_train_app.getText();
    }
 
-   public void clickSurprise_Bush_tricks_church() {
-      Surprise_Bush_tricks_church.click();
+   public void clickMan_jumps_on_tracks_as_train_app() {
+      Man_jumps_on_tracks_as_train_app.click();
    }
 
 
@@ -1624,12 +5380,12 @@ public class CNN_com_Breaking_News_U_S_World_   {
    }
 
 
-   public String getMan_jumps_on_tracks_as_train_appLinkText() {
-      return Man_jumps_on_tracks_as_train_app.getText();
+   public String getThe_week_in_33_photosLinkText() {
+      return The_week_in_33_photos.getText();
    }
 
-   public void clickMan_jumps_on_tracks_as_train_app() {
-      Man_jumps_on_tracks_as_train_app.click();
+   public void clickThe_week_in_33_photos() {
+      The_week_in_33_photos.click();
    }
 
 
@@ -1642,21 +5398,21 @@ public class CNN_com_Breaking_News_U_S_World_   {
    }
 
 
-   public String getPaulina_Gretzky_s_controversial_LinkText() {
-      return Paulina_Gretzky_s_controversial_.getText();
-   }
-
-   public void clickPaulina_Gretzky_s_controversial_() {
-      Paulina_Gretzky_s_controversial_.click();
-   }
-
-
    public String getuiElement37LinkText() {
       return uiElement37.getText();
    }
 
    public void clickuiElement37() {
       uiElement37.click();
+   }
+
+
+   public String getFavorite_country_music_couplesLinkText() {
+      return Favorite_country_music_couples.getText();
+   }
+
+   public void clickFavorite_country_music_couples() {
+      Favorite_country_music_couples.click();
    }
 
 
@@ -1669,12 +5425,12 @@ public class CNN_com_Breaking_News_U_S_World_   {
    }
 
 
-   public String getOh_baby_See_who_s_expectingLinkText() {
-      return Oh_baby_See_who_s_expecting.getText();
+   public String getPaulina_Gretzky_s_controversial_LinkText() {
+      return Paulina_Gretzky_s_controversial_.getText();
    }
 
-   public void clickOh_baby_See_who_s_expecting() {
-      Oh_baby_See_who_s_expecting.click();
+   public void clickPaulina_Gretzky_s_controversial_() {
+      Paulina_Gretzky_s_controversial_.click();
    }
 
 
@@ -2056,17 +5812,17 @@ public class CNN_com_Breaking_News_U_S_World_   {
    }
 
 
-   public String getBeganWithUnderscore_Russia_snaps_back_at_NATO_LiListItemText() {
-      return BeganWithUnderscore_Russia_snaps_back_at_NATO_LiListItem.getText();
+   public String getBeganWithUnderscore_The_world_s_biggest_democratic_LiListItemText() {
+      return BeganWithUnderscore_The_world_s_biggest_democratic_LiListItem.getText();
    }
 
 
-   public String getRussia_snaps_back_at_NATOLinkText() {
-      return Russia_snaps_back_at_NATO.getText();
+   public String getThe_world_s_biggest_democratic_eLinkText() {
+      return The_world_s_biggest_democratic_e.getText();
    }
 
-   public void clickRussia_snaps_back_at_NATO() {
-      Russia_snaps_back_at_NATO.click();
+   public void clickThe_world_s_biggest_democratic_e() {
+      The_world_s_biggest_democratic_e.click();
    }
 
 
