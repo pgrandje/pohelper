@@ -18,7 +18,7 @@ public class HintsReader {
 
     // IntelliJ thinks filePath isn't used but it is in the open() method.
     private String filePath;
-    private String defaultFilePath = "./analysis.txt";
+    private String defaultFilePath = "./hints.txt";
     private BufferedReader hintsFile;
 
     private final String recordDelimeter = "<*** New Tag ***>";
@@ -83,7 +83,7 @@ public class HintsReader {
                     HintsDescriptor analysisDescriptor = new HintsDescriptor();
 
                     // Store the tag, it has already been read above.
-                    analysisDescriptor.setTag(line);
+                    analysisDescriptor.setTag(line.trim());
 
                     // Read and store the text if we find it in the analysis.
                     line = hintsFile.readLine();
@@ -102,10 +102,17 @@ public class HintsReader {
                         String attributePair = line.substring(HintsDescriptor.ATTRIBUTE_MARKER.length());
                         logger.debug("Found attribute line '" + attributePair + "'.");
                         // TODO: Simply attribute format in hints file.
-                        // Attribute format: Type = class -- value = no-pad-left
+                        // Attribute format: class = value where value could be null.
+                        // TODO: Make the Hints file not have an '=' when the attribute value is missing.
                         String[] attrComponents = attributePair.split(" = ");
+                        if (attrComponents[0] == null) {
+                            throw new SeleniumGeneratorException("Hints file has Attribute record with no attribute.");
+                        }
                         String attrName = attrComponents[0];
-                        String attrValue = attrComponents[1];
+                        String attrValue = null;
+                        if (attrComponents.length == 2) {
+                             attrValue = attrComponents[1];
+                        }
                         HintsAttribute hintsAttribute = new HintsAttribute();
 
                         logger.debug("Storing attribute with name '" + attrName + "' and value '" + attrValue + "'");

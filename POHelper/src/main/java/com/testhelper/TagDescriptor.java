@@ -88,9 +88,6 @@ public class TagDescriptor {
         logger.debug("****************************");
         logger.debug("Creating new TagDescriptor for tag " + tag + ".");
 
-        this.addTextValue();
-        this.recordInfoComments();
-
         logger.debug("Using member code template:\n" + memberCode);
         logger.debug("And method code template:\n" + methodCode);
 
@@ -124,7 +121,7 @@ public class TagDescriptor {
     // *** Text Value ***
 
     // Called from constructor to load text content before it's needed.
-    public void addTextValue() {
+    private void addTextValue() {
 
         textContent = node.getTextContent();
 
