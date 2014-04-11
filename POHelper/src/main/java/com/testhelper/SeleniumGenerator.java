@@ -59,27 +59,22 @@ public class SeleniumGenerator
         // Pre-process the CodeShell using info from the Document's page source and use this to store a description of
         // the page.
         // TODO: When generating from a hints file, I need to start the code shell without needing the remote DOM.
+        // TODO: And, when generating the hints file, I need to access the DOM, without generating the code shell.
         PageDescriptor pageObjectDescriptor = new PageDescriptor(pageSourceParser.getDom(), classNameRecorder);
         pageObjectDescriptor.setPageObjectName(codeBucket);
-
-        /* TODO: The NodeScanner, and several of the above objects, should be in the generate section below.
-                 You don't want to scan the nodes when you're generating from the HINTS FILE.
-                 But I do need a new TagDescriptorList that's built from the Hints file.  Is that correct?
-        */
-        // Now -- Scan the nodes
-        NodeScanner nodeScanner = new NodeScanner(tagSwitcher);
-
-        // TODO: Def should not be scanning the page when generating from the hints file. Hints running should be done without needed remote website.
-        Node root = pageSourceParser.getRootNode();
-        logger.debug("Root Node is: " + root.getNodeName() + "-- value: " + root.getNodeValue());
-        TagDescriptorList tagDescriptorList = nodeScanner.scanForUIElements(root, 0);
-
-
 
 
         // Process the TagDescriptorList here to generate the analysis or code output.
 
         if (configurator.getGenerateStatus() == Configurator.GenerateType.HINTS_ONLY) {
+
+            // Now -- Scan the nodes
+            NodeScanner nodeScanner = new NodeScanner(tagSwitcher);
+
+            // TODO: Def should not be scanning the page when generating from the hints file. Hints running should be done without needed remote website.
+            Node root = pageSourceParser.getRootNode();
+            logger.debug("Root Node is: " + root.getNodeName() + "-- value: " + root.getNodeValue());
+            TagDescriptorList tagDescriptorList = nodeScanner.scanForUIElements(root, 0);
 
             // Write the analysis file.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
@@ -96,6 +91,15 @@ public class SeleniumGenerator
 
         }
         else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE) {
+
+            // TODO: Fetching and parsing the DOM is identical from the hints generation above, this could be a helper method.
+            // Now -- Scan the nodes
+            NodeScanner nodeScanner = new NodeScanner(tagSwitcher);
+
+            // TODO: Def should not be scanning the page when generating from the hints file. Hints running should be done without needed remote website.
+            Node root = pageSourceParser.getRootNode();
+            logger.debug("Root Node is: " + root.getNodeName() + "-- value: " + root.getNodeValue());
+            TagDescriptorList tagDescriptorList = nodeScanner.scanForUIElements(root, 0);
 
             // TODO: The code generation here is copied in the generate from hints section also--put this in a helper method.
             // Write the member code to the code buffer.
@@ -119,23 +123,27 @@ public class SeleniumGenerator
             hintsReader.openHintsFile();
             HintsDescriptorList hintsDescriptorList = hintsReader.loadAnalysis();
 
+            NameRecorder memberNameRecorder = new NameRecorder("Member Name Recorder");
+
             // Currently I just use the tagSwitcher since it's global to main()
             TagDescriptorList hintsTagDescriptorList = new TagDescriptorList();
             for(HintsDescriptor hintsDescriptor: hintsDescriptorList) {
                 TagTemplate tagTemplate = tagSwitcher.getTemplate(hintsDescriptor.getTag());
                 TagDescriptor hintsTagDescriptor = new TagDescriptor(tagTemplate);
+                hintsTagDescriptor.writeLocator();
+                hintsTagDescriptor.writeMemberAndMethods(memberNameRecorder);
                 hintsTagDescriptorList.add(hintsTagDescriptor);
             }
 
             // TODO: The code generation here is copied in sections above also--put this in a helper method.
             // Write the member code to the code buffer.
-            for(TagDescriptor tagDescriptor : tagDescriptorList) {
-                    codeBucket.addCode(tagDescriptor.getComment());
-                    codeBucket.addCode(tagDescriptor.getMemberCode());
+            for(TagDescriptor hintsTagDescriptor : hintsTagDescriptorList) {
+                    codeBucket.addCode(hintsTagDescriptor.getComment());
+                    codeBucket.addCode(hintsTagDescriptor.getMemberCode());
             }
             // Write the method code to the code buffer.
-            for(TagDescriptor tagDescriptor : tagDescriptorList) {
-                codeBucket.addCode(tagDescriptor.getMethodCode());
+            for(TagDescriptor hintsTagDescriptor : hintsTagDescriptorList) {
+                codeBucket.addCode(hintsTagDescriptor.getMethodCode());
             }
 
             // Dump the generated sourcecode.
