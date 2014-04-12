@@ -4,5 +4,6 @@
 *.ims
 *.iws
 *.ipr
+*.class
 .svn
 POHelper/RunFolder
