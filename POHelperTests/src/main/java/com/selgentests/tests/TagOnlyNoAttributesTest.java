@@ -1,6 +1,5 @@
 package com.selgentests.tests;
 
-import com.selgentests.pageobjects.ABCNews_com_Breaking_News_Latest;
 import com.selgentests.pageobjects.Tag_Tests;
 import com.selgentests.testbase.TestBase;
 import com.selgentests.utils.TestException;
