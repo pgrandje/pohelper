@@ -38,6 +38,7 @@ public class TagSwitcher {
 
         configurator = config;
 
+        // TODO: Is there a pattern that should be used here with the CodeLoader to assign the code snippets to the Tag Switcher?
         codeLoader = new CodeLoader(this);
         codeLoader.loadConfig();
     }
@@ -54,6 +55,9 @@ public class TagSwitcher {
 
     TagTemplate getTemplate(String tag) {
 
+        // trim white space for a little extra protection.
+        String tagTrimmed = tag.trim();
+
         // First time lookup table is used, dump the table to the log.
         if (dumpTableFlag == true) {
 
@@ -68,8 +72,8 @@ public class TagSwitcher {
             dumpTableFlag = false;
         }
 
-        logger.debug("Looking up " + "'" + tag + "'");
-        TagTemplate template = lookUpMap.get(tag);
+        logger.debug("Looking up " + "'" + tagTrimmed + "'");
+        TagTemplate template = lookUpMap.get(tagTrimmed);
 
         if (template != null) {
             logger.debug("Returning template with member code: " + template.getMemberCode());

@@ -35,12 +35,12 @@ public class HintsBucket {
 
 
     public void addTag(String tag) {
-        analysisBuffer.append("<*** UI Element ***>\n");
+        analysisBuffer.append(HintsDescriptor.NEW_TAG_DELIMITER + "\n");
         analysisBuffer.append(tag + " \n");
     }
 
     public void addText(String text) {
-        analysisBuffer.append("Text: " + text + " \n");
+        analysisBuffer.append(HintsDescriptor.TEXT_MARKER + text + " \n");
     }
 
 
@@ -50,13 +50,13 @@ public class HintsBucket {
 
         for (int i=0; i<numberOfAttributes; i++) {
             Attr attr = (Attr) attributes.item(i);
-            analysisBuffer.append("Attribute: Type = " + attr.getName() + " -- value = " + attr.getValue() + "\n");
+            analysisBuffer.append(HintsDescriptor.ATTRIBUTE_MARKER + attr.getName() + " = " + attr.getValue() + "\n");
         }
     }
 
 
     public void addCssLocator(String locator) {
-        analysisBuffer.append("Locator: " + locator + " \n");
+        analysisBuffer.append(HintsDescriptor.LOCATOR_MARKER + locator + " \n");
     }
 
     public void setOutPutFilePath(String path) {

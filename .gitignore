@@ -4,8 +4,12 @@
 *.ims
 *.iws
 *.ipr
+#.class
 .svn
 POHelper/RunFolder
+<<<<<<< HEAD
 **/target/
 **/.idea/
 **/.svn/
+=======
+>>>>>>> errorhandler-and-first-cut-for-hints-generator

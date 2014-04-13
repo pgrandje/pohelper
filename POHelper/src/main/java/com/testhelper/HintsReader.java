@@ -18,7 +18,7 @@ public class HintsReader {
 
     // IntelliJ thinks filePath isn't used but it is in the open() method.
     private String filePath;
-    private String defaultFilePath = "./analysis.txt";
+    private String defaultFilePath = "./hints.txt";
     private BufferedReader hintsFile;
 
     private final String recordDelimeter = "<*** New Tag ***>";
@@ -53,77 +53,91 @@ public class HintsReader {
 
         String line = hintsFile.readLine();
 
-        HintsDescriptorList analysisDescriptorList = new HintsDescriptorList();
+        HintsDescriptorList hintsDescriptorList = new HintsDescriptorList();
 
+        // There shouldn't be any blank lines in this file, so we'll treat that as end of file.
         while (line != null){
 
-            // There shouldn't be any blank lines in this file, so we'll treat that as an error.
+            logger.debug("Processing line: " + line);
 
-            // Check for new record delimeter
-            if (line.contains("<*** New Tag ***>")) {
+            // Check for new record delimiter
+            if (line.contains(HintsDescriptor.NEW_TAG_DELIMITER)) {
 
-                logger.debug("Processing a new tag.");
+                logger.debug("Processing a new tag:");
 
                 // Get the first field, which contains the tag.
                 line = hintsFile.readLine();
+                logger.debug("Processing new tag on line: " + line);
 
                 // Check whether tag should be skipped, if so, skip all lines up to the next record, and re-loop.
-                if (line.charAt(0) == '*') {
-                    logger.debug("Record marked as skipped.");
+                if (line.charAt(0) != HintsDescriptor.IGNORE_CHAR) {
+                    logger.trace("Skipping lines:");
                     do {
+                        logger.trace(line);
                         line = hintsFile.readLine();
-                    } while ((line != null) && (!line.contains("<*** New Tag ***>")));
+                    } while ((line != null) && (!line.contains(HintsDescriptor.NEW_TAG_DELIMITER)));
                     continue;
                 }
-                // Once it gets here, we have the tag field for a record that should get generated.
                 else {
-
+                    // Once it gets here, we have the tag field for a record that should get generated.
                     // TODO:  put in exceptions for when I don't find what I'm expecting to find.
 
-                    HintsDescriptor analysisDescriptor = new HintsDescriptor();
+                    HintsDescriptor hintsDescriptor = new HintsDescriptor();
 
                     // Store the tag, it has already been read above.
-                    String[] linePieces = line.split(": ");
-                    String tag = linePieces[1];
-                    logger.debug("Found tag: " + tag);
-                    analysisDescriptor.setTag(tag);
+                    hintsDescriptor.setTag(line.replace("*", "").trim());
 
                     // Read and store the text if we find it in the analysis.
                     line = hintsFile.readLine();
-                    if (line.contains("Text:")) {
-                        linePieces = line.split(": ");
-                        String text = linePieces[1];
-                        logger.debug("Found text: " + text);
-                        analysisDescriptor.setText(text);
-                        line = hintsFile.readLine();
+                    // TODO: the Text field should always follow, change 'if' to throw an exception if it's not found.
+                    if (!line.startsWith(HintsDescriptor.TEXT_MARKER)) {
+                        throw new SeleniumGeneratorException("Expected text filed in hints file not found.");
                     }
 
+                    String text = line.substring(HintsDescriptor.TEXT_MARKER.length());
+                    logger.debug("Retrieved text '" + text + "'.");
+                    hintsDescriptor.setText(text);
+                    line = hintsFile.readLine();
+
                     // Read and store the list of attributes if we have them in the analysis.
-                    while (line.contains("Attr:")) {
-                        linePieces = line.split(": ");
-                        String attrNameValuePair = linePieces[1];
-                        logger.debug("Found attribute name and value: " + attrNameValuePair);
-                        String[] attrComponents = attrNameValuePair.split(" -- ");
-                        HintsAttribute analysisAttribute = new HintsAttribute();
-                        String attrName = attrComponents[0].split(" = ")[1];
-                        analysisAttribute.setAttributeName(attrName);
-                        String attrValue = attrComponents[1].split(" = ")[1];
-                        analysisAttribute.setAttributeValue(attrValue);
+                    while (line.startsWith(HintsDescriptor.ATTRIBUTE_MARKER)) {
+                        String attributePair = line.substring(HintsDescriptor.ATTRIBUTE_MARKER.length());
+                        logger.debug("Found attribute line '" + attributePair + "'.");
+                        // TODO: Simply attribute format in hints file.
+                        // Attribute format: class = value where value could be null.
+                        // TODO: Make the Hints file not have an '=' when the attribute value is missing.
+                        String[] attrComponents = attributePair.split(" = ");
+                        if (attrComponents[0] == null) {
+                            throw new SeleniumGeneratorException("Hints file has Attribute record with no attribute.");
+                        }
+                        String attrName = attrComponents[0];
+                        String attrValue = null;
+                        if (attrComponents.length == 2) {
+                             attrValue = attrComponents[1];
+                        }
+                        HintsAttribute hintsAttribute = new HintsAttribute();
+
+                        logger.debug("Storing attribute with name '" + attrName + "' and value '" + attrValue + "'");
+                        hintsAttribute.setAttributeName(attrName);
+                        hintsAttribute.setAttributeValue(attrValue);
+
+                        // Add the hintsAttribute to the hintsDescriptor.
+                        hintsDescriptor.addAttribute(hintsAttribute);
+
                         line = hintsFile.readLine();
                     }
 
                     // Read and store the css locator if we have one in the analysis.
-                    if (line.contains("Css Locator:")) {
-                        linePieces = line.split(": ");
-                        String cssLocatorString = linePieces[1];
-                        logger.debug("Found css locator string: " + cssLocatorString);
+                    if (line.contains(HintsDescriptor.LOCATOR_MARKER)) {
+                        String locator = line.substring(HintsDescriptor.LOCATOR_MARKER.length());
+                        logger.debug("Found locator '" + locator + "'.");
                         // TODO: Why am I only writing css locators to the analysis file?
-                        analysisDescriptor.setLocatorType(HintsDescriptor.LocatorType.CSS_LOCATOR);
-                        analysisDescriptor.setLocatorValue(cssLocatorString);
+                        hintsDescriptor.setLocatorType(HintsDescriptor.LocatorType.CSS_LOCATOR);
+                        hintsDescriptor.setLocatorValue(locator);
                         line = hintsFile.readLine();
                     }
 
-                    analysisDescriptorList.add(analysisDescriptor);
+                    hintsDescriptorList.add(hintsDescriptor);
 
                 }
 
@@ -134,7 +148,7 @@ public class HintsReader {
 
         }
 
-        return analysisDescriptorList;
+        return hintsDescriptorList;
 
     }
 
