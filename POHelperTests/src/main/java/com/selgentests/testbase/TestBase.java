@@ -16,13 +16,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 /**
- * Created by IntelliJ IDEA.
  * User: pgrandje
  * Date: 4/14/13
  * Time: 1:40 PM
  * To change this template use File | Settings | File Templates.
- */
-/* The base class is responsible for starting up the browser (or headless browser in the case of HTML-Unit) and to return the WebDriver.
+ * The base class is responsible for starting up the browser (or headless browser in the case of HTML-Unit) and to return the WebDriver.
  * It's also responsible for closing the browser.
  */
 public class TestBase {
@@ -38,7 +36,7 @@ public class TestBase {
 	public void startUp() throws TestException {
 
         // Used by the loggers
-//        PropertyConfigurator.configure("log4j.properties");
+        PropertyConfigurator.configure("log4j.properties");
 
 		logger = Logger.getLogger(this.getClass());
 		logger.info("*** Running startUp ***");
