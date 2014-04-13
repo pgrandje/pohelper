@@ -41,7 +41,7 @@ public class Configurator {
 
 		// Retrieve runtime params from command-line for user name, password, URL for the AUT and the browser.
 		if(url == null) {
-			url = "http://localhost:8080/testpages/tagtests.html";
+			url = "http://localhost:8080/testhtml/htmltests/";
 		}
 		if(browserName == null) {
             browserName = "FF";
