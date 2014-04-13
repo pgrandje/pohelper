@@ -5,8 +5,10 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.Attr;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 
 /**
@@ -33,16 +35,21 @@ public class TagDescriptor {
     private NamedNodeMap attributes;
 
     private String tag;
+    private HashMap<String, String> attributePairs;
     private StringBuffer memberCode;
     private StringBuffer methodCode;
     private String textContent;
     private StringBuffer comment;
+    private String storedLocator;
 
+    // TODO: Used by the writeLocator from a HintsDescriptor -- but both methods could probably use this object.
+    private HintsDescriptor.Locator locator;
 
     private final Logger logger = Logger.getLogger(TagDescriptor.class);
 
 
     // Takes a Node for computing css locators.  Using the node as the starting point to traverse up the parent tree.
+    // TODO: Consider removing Node from the TagDescriptor constructor into  setter method.
     TagDescriptor(TagTemplate tagTemplate, Node node) {
 
         this.configurator = Configurator.getConfigurator();
@@ -60,7 +67,7 @@ public class TagDescriptor {
         logger.debug("****************************");
         logger.debug("Creating new TagDescriptor for tag " + tag + ".");
 
-        this.addTextValue();
+        this.addTextValueViaHtmlNode();
         this.recordInfoComments();
 
         logger.debug("Using member code template:\n" + memberCode);
@@ -70,7 +77,7 @@ public class TagDescriptor {
 
 
     // This constructor should only be used when generating from a hints file--where DOM elements aren't used.
-    TagDescriptor(TagTemplate tagTemplate) {
+    TagDescriptor(TagTemplate tagTemplate, HintsDescriptor hintsDescriptor) {
 
         this.configurator = Configurator.getConfigurator();
 
@@ -90,6 +97,18 @@ public class TagDescriptor {
 
         logger.debug("Using member code template:\n" + memberCode);
         logger.debug("And method code template:\n" + methodCode);
+
+        logger.debug("Setting text content '" + hintsDescriptor.getText() + "'.");
+        this.textContent = hintsDescriptor.getText();
+
+        logger.debug("Setting attributes...");
+
+        attributePairs = new HashMap<String, String>();
+        List<HintsAttribute> hintsAttributes = hintsDescriptor.getAttributes();
+        for(HintsAttribute hintsAttribute: hintsAttributes) {
+            logger.debug("Setting attribute with name '" + hintsAttribute.getAttributeName() + "' with value '" + hintsAttribute.getAttributeValue() + "'.");
+            attributePairs.put(hintsAttribute.getAttributeName(), hintsAttribute.getAttributeValue());
+        }
 
     }
 
@@ -121,14 +140,15 @@ public class TagDescriptor {
     // *** Text Value ***
 
     // Called from constructor to load text content before it's needed.
-    private void addTextValue() {
+    // TODO: Consider two separate TagDescriptor classes, getting info via Nodes, the other via a Hints descriptor.
+    private void addTextValueViaHtmlNode() {
 
         textContent = node.getTextContent();
 
         // Log whether we found text or not.
         // When textContent doesn't exist, node.getTextContent() returns an empty string but not a null.  This must be handled.
         if ((textContent != null) && (!textContent.isEmpty())) {
-            logger.debug("In method addTextValue() -- Found textContent, saving '" + textContent + "' to tag bucket.");
+            logger.debug("In method addTextValueViaHtmlNode() -- Found textContent, saving '" + textContent + "' to tag bucket.");
         }
         else {
             logger.debug("No textContent found for this node, node: " + node.getNodeName());
@@ -165,6 +185,7 @@ public class TagDescriptor {
             if (node.hasAttributes()) {
 
                 for(int i=0; i < attributes.getLength(); i++) {
+                    // TODO: When I decouple TagDescriptor from the Node, be sure to remove this 'Node attr' also.
                     Node attr = attributes.item(i);
                     comment.append("   // Attrib: " + attr.getNodeName() + " = " + attr.getNodeValue());
                 }
@@ -194,6 +215,34 @@ public class TagDescriptor {
     // **** Locator ****
 
 
+    // Locator write method for writing locator from Hints.
+    public void writeLocator(HintsDescriptor.Locator hintsLocator) {
+        locator = hintsLocator;
+        writeLocatorWithLocatorObject(locator);
+    }
+
+    // Locator write method for writing locator from Hints.
+    private void writeLocatorWithLocatorObject(HintsDescriptor.Locator locator)  {
+
+        logger.debug("Writing locator from hints using Locator Type '" + locator.type.toString() + "' and value '" + locator.locatorValue + "'.");
+
+        // TODO: This locatorString building logic could go in the Locator class.
+        String locatorString = null;
+        if (locator.type == HintsDescriptor.LocatorType.ID) {
+            locatorString = "id = ";
+        }
+        else if (locator.type == HintsDescriptor.LocatorType.CSS_LOCATOR) {
+            locatorString = "css = ";
+        }
+        locatorString = locatorString + "\"" + locator.locatorValue + "\"";
+
+        // TODO: If I have to replace the entire StringBuffer it may make more sense for memberCode to just be a String.
+        // TODO: Why am I using replaceAll()?  Shouldn't I be using replace()?  I thought replaceAll() required a regex.
+        memberCode = new StringBuffer(
+                        memberCode.toString().replaceAll(configurator.getLocatorIndicator(), locatorString));
+
+    }
+
     // Note--Returns a boolean because if we can't write a locator we won't generate code.
     public boolean writeLocator() {
 
@@ -222,25 +271,30 @@ public class TagDescriptor {
     }
 
 
+
+
+
+
     // TODO:  For the textless <p> with no attributes, this returned true but should have been false.
     // TODO: For some reason, <li>s exist with attributes that can't be used as locators, but doesn't generate a css either.
     private boolean writeLocatorUsingAttributes() {
 
         logger.debug("Are there attributes we can use for writing the locator?");
 
-        if (node.hasAttributes()) {
+        if (attributePairs != null && !attributePairs.isEmpty()) {
 
             logger.debug("Yes, there's attributes for this tag.");
             // If an ID attribute exists, use its value for the symbols.
-            if(attributes.getNamedItem("id") != null) {
+            if(attributePairs.get("id") != null) {
                 writeLocatorWithAttribute("id", "id");
                 return true;
             }
-            else if(attributes.getNamedItem("name") != null) {
+            // TODO:  Am I duplicating my retrievals of the attribute value?  Seems that I can just retrieve the value once and pass it.
+            else if(attributePairs.get("name") != null) {
                 this.writeLocatorWithAttribute("name", "name");
                 return true;
             }
-            else if(configurator.getLocatorUsesClassnames() == true && attributes.getNamedItem("class") != null) {
+            else if(configurator.getLocatorUsesClassnames() == true && attributePairs.get("class") != null) {
                 this.writeLocatorWithAttribute("class", "className");
                 return true;
             }
@@ -263,7 +317,7 @@ public class TagDescriptor {
     // I think this will work regardless of whether the symbols have been assigned yet or not, but I haven't tested it that way.
     private void writeLocatorWithAttribute(String attribute, String locatorType)  {
 
-        String locatorText = attributes.getNamedItem(attribute).getNodeValue();
+        String locatorText = attributePairs.get(attribute);
 
         logger.debug("Using '" + attribute + "' for locator assignment. Value is " + locatorText + ".");
 
@@ -489,6 +543,7 @@ public class TagDescriptor {
      *  - any attributes that exist.
      *  - a default symbol name.
     */
+    // TODO: If the TagDescripter stored a ref to the NameRecorder I could avoid having to pass it so often.
     public void writeMemberAndMethods(NameRecorder symbolNameRecorder) {
 
         if (writeMemberNameUsingTextContent(symbolNameRecorder) == true) {
@@ -531,17 +586,17 @@ public class TagDescriptor {
 
         logger.debug("Checking whether there's attributes we can use for symbol writing.");
 
-        // TODO: check this--should I query the node for attributes or just check the private attribute member?
-        if (node.hasAttributes()) {
+        // if attributes exist...
+        if (attributePairs != null && !attributePairs.isEmpty()) {
 
             // If an ID attribute exists, use its value for the symbols.
-            if(attributes.getNamedItem("id") != null) {
+            if(attributePairs.get("id") != null) {
                 logger.debug("Using ID attribute.");
-                attributeValue = attributes.getNamedItem("id").getNodeValue();
+                attributeValue = attributePairs.get("id");
             }
-            else if(attributes.getNamedItem("name") != null) {
+            else if(attributePairs.get("name") != null) {
                 logger.debug("Using NAME attribute.");
-                attributeValue = attributes.getNamedItem("name").getNodeValue();
+                attributeValue = attributePairs.get("name");
             }
             /*
             else if(attributes.getNamedItem("class") != null) {

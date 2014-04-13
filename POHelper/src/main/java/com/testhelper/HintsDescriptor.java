@@ -25,9 +25,22 @@ public class HintsDescriptor {
 
     private String tag;
     private String text;
+    // TODO: Change the Hints attributes to use a HashMap--I don't need a separate HintsAttribute class just for named pairs.
     private ArrayList<HintsAttribute> attributes;
     private LocatorType locatorType;
     private String locatorValue;
+
+    public class Locator {
+        LocatorType type;
+        String locatorValue;
+        Locator(LocatorType type, String value) {
+            this.type = type;
+            this.locatorValue = value;
+        }
+    }
+
+    // TODO: Make sure the HintsDesriptor internal Locator is set by the setters below.
+    private Locator locator;
 
 
     public HintsDescriptor() {
@@ -69,6 +82,11 @@ public class HintsDescriptor {
 
     public String getLocatorValue() {
         return locatorValue;
+    }
+
+    public Locator getLocator() {
+        locator = new Locator(locatorType, locatorValue);
+        return locator;
     }
 
     public void setLocatorValue(String locatorValue) {
