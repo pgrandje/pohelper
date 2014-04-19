@@ -1,0 +1,3452 @@
+<*** UI Element ***>
+* <a>
+Text:  
+Attribute: href = /
+Attribute: id = hdr-banner-title
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div > a 
+<*** UI Element ***>
+*<li>
+Text: SET EDITION:  U.S. 
+Attribute: class = no-pad-left
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > ul > li 
+<*** UI Element ***>
+*<a>
+Text: SET EDITION 
+Attribute: class = cnn_hdr-editionlnk
+Attribute: href = javascript:cnn_initeditionhtml(3);
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > ul > li > span > a 
+<*** UI Element ***>
+*<li>
+Text: INTERNATIONAL 
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(2) 
+<*** UI Element ***>
+*<a>
+Text: INTERNATIONAL 
+Attribute: href = http://edition.cnn.com/?hpt=ed_Intl
+Attribute: id = cnn_switchEdition_intl
+Attribute: title = CNN INTERNATIONAL
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+*<li>
+Text: MÉXICO 
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3) 
+<*** UI Element ***>
+*<a>
+Text: MÉXICO 
+Attribute: href = http://mexico.cnn.com/?hpt=ed_Mexico
+Attribute: hreflang = es
+Attribute: title = CNN MÉXICO
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text: ARABIC 
+Attribute: class = no-border
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: ARABIC 
+Attribute: href = http://arabic.cnn.com/?hpt=ed_Arabic
+Attribute: hreflang = ar
+Attribute: title = CNN ARABIC
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text: TV:   
+Attribute: class = no-pad-left no-border no-pad-right
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li 
+<*** UI Element ***>
+<a> 
+Text: TV 
+Attribute: class = cnn_hdr-editionlnk
+Attribute: href = /CNN/Programs
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li > span > a 
+<*** UI Element ***>
+<li> 
+Text: CNN 
+Attribute: class = no-pad-left
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: CNN 
+Attribute: href = /cnn/programs/
+Attribute: title = CNN TV programming schedule
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text: CNNi 
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: CNNi 
+Attribute: href = /cnni/
+Attribute: title = CNN International TV programming schedule
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text: CNN en Español 
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: CNN en Español 
+Attribute: href = http://cnnespanol.cnn.com/
+Attribute: hreflang = es
+Attribute: title = CNN in Spanish
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text: HLN 
+Attribute: class = no-border
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: HLN 
+Attribute: href = http://www.hlntv.com
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(3) > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<li> 
+Text: Sign up 
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(3) > ul > li 
+<*** UI Element ***>
+<a> 
+Text: Sign up 
+Attribute: href = javascript:void(0);
+Attribute: onclick = showOverlay('profile_signup_overlay');return false;
+Attribute: title = Sign up
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(3) > ul > li > a 
+<*** UI Element ***>
+<li> 
+Text: Log in 
+Attribute: class = no-border no-pad-right
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(3) > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Log in 
+Attribute: href = javascript:void(0);
+Attribute: onclick = showOverlay('profile_signin_overlay');return false;
+Attribute: title = Log in
+Locator: body > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(3) > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text: Home 
+Attribute: class = no-border
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li 
+<*** UI Element ***>
+<a> 
+Text: Home 
+Attribute: class = nav-on
+Attribute: href = /
+Attribute: id = nav-home
+Attribute: title = 
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li > a 
+<*** UI Element ***>
+<li> 
+Text: TV & Video 
+Attribute: class = no-border
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: TV & Video 
+Attribute: class = nav-media no-border
+Attribute: href = /video/?hpt=sitenav
+Attribute: id = nav-video
+Attribute: title = Video Breaking News Videos from CNN.com
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text: CNN Trends 
+Attribute: class = no-border
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: CNN Trends 
+Attribute: class = nav-media
+Attribute: href = /trends/?hpt=sitenav
+Attribute: id = nav-trends
+Attribute: title = CNN Trends powered by Zite
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text: U.S. 
+Attribute: class = 
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: U.S. 
+Attribute: class = 
+Attribute: href = /US/?hpt=sitenav
+Attribute: id = nav-us
+Attribute: title = U.S. News, Headlines, Stories, and Video from CNN.com
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text: World 
+Attribute: class = 
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: World 
+Attribute: class = 
+Attribute: href = /WORLD/?hpt=sitenav
+Attribute: id = nav-world
+Attribute: title = World News International Headlines Stories and Video from CNN.com
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<li> 
+Text: Politics 
+Attribute: class = 
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(6) 
+<*** UI Element ***>
+<a> 
+Text: Politics 
+Attribute: class = 
+Attribute: href = /POLITICS/?hpt=sitenav
+Attribute: id = nav-politics
+Attribute: title = Election and Politics News from CNN.com
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(6) > a 
+<*** UI Element ***>
+<li> 
+Text: Justice 
+Attribute: class = 
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(7) 
+<*** UI Element ***>
+<a> 
+Text: Justice 
+Attribute: class = 
+Attribute: href = /JUSTICE/?hpt=sitenav
+Attribute: id = nav-justice
+Attribute: title = Justice News Courts Celebrity Docket and Law News from CNN.com
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(7) > a 
+<*** UI Element ***>
+<li> 
+Text: Entertainment 
+Attribute: class = 
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(8) 
+<*** UI Element ***>
+<a> 
+Text: Entertainment 
+Attribute: class = 
+Attribute: href = /SHOWBIZ/?hpt=sitenav
+Attribute: id = nav-entertainment
+Attribute: title = Entertainment News Celebrities Movies and TV from CNN.com
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(8) > a 
+<*** UI Element ***>
+<li> 
+Text: Tech 
+Attribute: class = 
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(9) 
+<*** UI Element ***>
+<a> 
+Text: Tech 
+Attribute: class = 
+Attribute: href = /TECH/?hpt=sitenav
+Attribute: id = nav-tech
+Attribute: title = Technology Computers Internet and Personal Tech News from CNN.com
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(9) > a 
+<*** UI Element ***>
+<li> 
+Text: Health 
+Attribute: class = 
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(10) 
+<*** UI Element ***>
+<a> 
+Text: Health 
+Attribute: class = 
+Attribute: href = /HEALTH/?hpt=sitenav
+Attribute: id = nav-health
+Attribute: title = Health News Medicine Diet Fitness and Parenting from CNN.com
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(10) > a 
+<*** UI Element ***>
+<li> 
+Text: Living 
+Attribute: class = 
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(11) 
+<*** UI Element ***>
+<a> 
+Text: Living 
+Attribute: class = 
+Attribute: href = /LIVING/?hpt=sitenav
+Attribute: id = nav-living
+Attribute: title = Living News Personal Work and Home from CNN.com
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(11) > a 
+<*** UI Element ***>
+<li> 
+Text: Travel 
+Attribute: class = 
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(12) 
+<*** UI Element ***>
+<a> 
+Text: Travel 
+Attribute: class = 
+Attribute: href = /TRAVEL/?hpt=sitenav
+Attribute: id = nav-travel
+Attribute: title = Travel News Vacations Destinations and Video from CNN.com
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(12) > a 
+<*** UI Element ***>
+<li> 
+Text: Opinion 
+Attribute: class = 
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(13) 
+<*** UI Element ***>
+<a> 
+Text: Opinion 
+Attribute: class = 
+Attribute: href = /OPINION/?hpt=sitenav
+Attribute: id = nav-opinion
+Attribute: title = Opinion Editorial Analysis and Insight from CNN.com
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(13) > a 
+<*** UI Element ***>
+<li> 
+Text: iReport 
+Attribute: class = 
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(14) 
+<*** UI Element ***>
+<a> 
+Text: iReport 
+Attribute: class = 
+Attribute: href = http://ireport.cnn.com/?hpt=sitenav
+Attribute: id = nav-ireport
+Attribute: title = CNN iReport – Share your story, discuss the issues with CNN.com
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(14) > a 
+<*** UI Element ***>
+<li> 
+Text: Money 
+Attribute: class = 
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(15) 
+<*** UI Element ***>
+<a> 
+Text: Money 
+Attribute: class = 
+Attribute: href = http://money.cnn.com/?hpt=sitenav
+Attribute: id = nav-money
+Attribute: title = Business financial personal finance news from CNNMoney
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(15) > a 
+<*** UI Element ***>
+<li> 
+Text: Sports 
+Attribute: class = 
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(16) 
+<*** UI Element ***>
+<a> 
+Text: Sports 
+Attribute: class = 
+Attribute: href = http://bleacherreport.com/?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-nav
+Attribute: id = nav-sports
+Attribute: title = The latest sports news and insights on all of your teams and today's hot topics from Bleacher Report (BleacherReport.com).
+Locator: body > div:nth-child(3) > div:nth-child(3) > ul > li:nth-child(16) > a 
+<*** UI Element ***>
+<a> 
+Text: Make CNN Your Homepage 
+Attribute: class = realmLink
+Attribute: href = #
+Attribute: id = makeHPLink
+Attribute: onclick = cnnMakeHP('homepage_set_overlay');
+Locator: body > div:nth-child(7) > div > div > div > div > div:nth-child(2) > div > a 
+<*** UI Element ***>
+<li> 
+Text: 
+
+ 
+Attribute: class = first
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = http://www.cnn.com/trends
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li > a 
+<*** UI Element ***>
+<li> 
+Text: Flight 370 
+Attribute: class = cnn_hpinthenewsl1
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Flight 370 
+Attribute: href = /2014/04/05/world/asia/malaysia-airlines-plane/index.html?hpt=hp_inthenews
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text: Fort Hood shooting 
+Attribute: class = cnn_hpinthenewsl2
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Fort Hood shooting 
+Attribute: href = /2014/04/05/us/fort-hood-gunman-facebook/index.html?hpt=hp_inthenews
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text: Afghan elections 
+Attribute: class = cnn_hpinthenewsl3
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Afghan elections 
+Attribute: href = /2014/04/05/world/asia/afghanistan-elections/index.html?hpt=hp_inthenews
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text: Ukraine crisis 
+Attribute: class = cnn_hpinthenewsl4
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Ukraine crisis 
+Attribute: href = /2014/04/05/world/europe/ukraine-crisis/index.html?hpt=hp_inthenews
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<li> 
+Text: Kurt Cobain 
+Attribute: class = cnn_hpinthenewsl5
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(6) 
+<*** UI Element ***>
+<a> 
+Text: Kurt Cobain 
+Attribute: href = /2014/04/04/showbiz/gallery/kurt-cobain-20-years/index.html?hpt=hp_inthenews
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(6) > a 
+<*** UI Element ***>
+<li> 
+Text: Apple  
+Attribute: class = cnn_hpinthenewsl6
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(7) 
+<*** UI Element ***>
+<a> 
+Text: Apple  
+Attribute: href = /2014/04/03/tech/mobile/apple-wwdc-2014/index.html?hpt=hp_inthenews
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(7) > a 
+<*** UI Element ***>
+<li> 
+Text: Paulina Gretzky 
+Attribute: class = cnn_hpinthenewsl7
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(8) 
+<*** UI Element ***>
+<a> 
+Text: Paulina Gretzky 
+Attribute: href = /2014/04/04/showbiz/celebrity-news-gossip/paulina-gretzky-golf-digest/index.html?hpt=hp_inthenews
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(8) > a 
+<*** UI Element ***>
+<li> 
+Text: 'Chicagoland' 
+Attribute: class = cnn_hpinthenewsl8
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(9) 
+<*** UI Element ***>
+<a> 
+Text: 'Chicagoland' 
+Attribute: href = http://www.cnn.com/SPECIALS/us/chicagoland/index.html?hpt=hp_inthenews
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(9) > a 
+<*** UI Element ***>
+<li> 
+Text: Pangolin 
+Attribute: class = cnn_hpinthenewsl9
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(10) 
+<*** UI Element ***>
+<a> 
+Text: Pangolin 
+Attribute: href = http://www.cnn.com/interactive/2014/04/opinion/sutter-change-the-list-pangolin-trafficking/index.html?hpt=hp_c2&hpt=hp_inthenews
+Locator: body > div:nth-child(7) > div > div:nth-child(3) > div > ul > li:nth-child(10) > a 
+<*** UI Element ***>
+<h1> 
+Text: Search gets a pulse 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(2) > div:nth-child(2) > h1 
+<*** UI Element ***>
+<a> 
+Text: Search gets a pulse 
+Attribute: href = /2014/04/05/world/asia/malaysia-airlines-plane/index.html?hpt=hp_t1
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(2) > div:nth-child(2) > h1 > a 
+<*** UI Element ***>
+<h1> 
+Text: Chinese detect an undersea signal 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div > h1 
+<*** UI Element ***>
+<a> 
+Text: Chinese detect an undersea signal 
+Attribute: href = /2014/04/05/world/asia/malaysia-airlines-plane/index.html?hpt=hp_t1
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div > h1 > a 
+<*** UI Element ***>
+<a> 
+Text: FULL STORY  
+Attribute: href = /2014/04/05/world/asia/malaysia-airlines-plane/index.html?hpt=hp_t1
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div > div > div > div > a 
+<*** UI Element ***>
+<li> 
+Text:   Is it or isn't it?  |  Relatives react  |  Maps   
+Attribute: class = c_hpbullet1 c_hpfirstbullet
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li 
+<*** UI Element ***>
+<a> 
+Text: Is it or isn't it? 
+Attribute: href = /2014/04/05/world/malaysia-airlines-plane-questions/index.html?hpt=hp_t1
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li > a 
+<*** UI Element ***>
+<a> 
+Text: Relatives react 
+Attribute: href = /2014/04/05/world/asia/malaysia-airlines-families-reaction/index.html?hpt=hp_t1
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li > a:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Maps 
+Attribute: href = http://www.cnn.com/interactive/2014/03/world/malaysia-flight-map/index.html?hpt=hp_c2&hpt=hp_t1
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li > a:nth-child(8) 
+<*** UI Element ***>
+<li> 
+Text:   Pinger locator: A shot in the dark?     
+Attribute: class = c_hpbullet2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Pinger locator: A shot in the dark? 
+Attribute: href = /video/data/2.0/video/world/2014/04/05/pkg-todd-pinger-locator.cnn.html?hpt=hp_t1
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/world/2014/04/05/pkg-todd-pinger-locator.cnn.html?hpt=hp_t1
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(2) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   Expert adds note of caution     
+Attribute: class = c_hpbullet3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Expert adds note of caution 
+Attribute: href = /video/data/2.0/video/world/2014/04/05/newday-missing-plane-pulse-sound-skeptical.cnn.html?hpt=hp_t1
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/world/2014/04/05/newday-missing-plane-pulse-sound-skeptical.cnn.html?hpt=hp_t1
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(3) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   Photos    |  History's great searches   
+Attribute: class = c_hpbullet4
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Photos 
+Attribute: href = /2014/03/07/asia/gallery/malaysia-airliner/index.html?hpt=hp_t1
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2014/03/07/asia/gallery/malaysia-airliner/index.html?hpt=hp_t1
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(4) > a:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: History's great searches 
+Attribute: href = /2014/04/05/us/mankinds-great-searches-malaysia-airlines-plane/index.html?hpt=hp_t1
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div > div > div:nth-child(4) > div:nth-child(2) > div > ul > li:nth-child(4) > a:nth-child(6) 
+<*** UI Element ***>
+<li> 
+Text:   Fort Hood shooter vented on Facebook   
+Attribute: class = c_hpbullet1 c_hpfirstbullet
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li 
+<*** UI Element ***>
+<a> 
+Text: Fort Hood shooter vented on Facebook 
+Attribute: href = /2014/04/05/us/fort-hood-gunman-facebook/index.html?hpt=hp_t2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li > a 
+<*** UI Element ***>
+<li> 
+Text:   Stockpiled weapons, ammunition     
+Attribute: class = c_hpbullet2
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Stockpiled weapons, ammunition 
+Attribute: href = /video/data/2.0/video/bestoftv/2014/04/04/ac-brown-ft-hood-latest.cnn.html?hpt=hp_t2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/bestoftv/2014/04/04/ac-brown-ft-hood-latest.cnn.html?hpt=hp_t2
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(2) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   For 3 victims, Army was their life   
+Attribute: class = c_hpbullet3
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: For 3 victims, Army was their life 
+Attribute: href = /2014/04/04/us/fort-hood-victims/index.html?hpt=hp_t2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:  NEW Air guard, Navy sent to get baby   
+Attribute: class = c_hpbullet4
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Air guard, Navy sent to get baby 
+Attribute: href = /2014/04/05/us/high-seas-rescue-sick-girl/index.html?hpt=hp_t2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text:   Pararescuemen first to reach boat     
+Attribute: class = c_hpbullet5
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Pararescuemen first to reach boat 
+Attribute: href = /video/data/2.0/video/us/2014/04/05/dnt-national-guard-one-year-old-rescue.kgtv.html?hpt=hp_t2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2014/04/05/dnt-national-guard-one-year-old-rescue.kgtv.html?hpt=hp_t2
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(5) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:  NEW Ukraine: Commando plot thwarted   
+Attribute: class = c_hpbullet6
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(6) 
+<*** UI Element ***>
+<a> 
+Text: Ukraine: Commando plot thwarted 
+Attribute: href = /2014/04/05/world/europe/ukraine-crisis/index.html?hpt=hp_t2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(6) > a 
+<*** UI Element ***>
+<li> 
+Text:   Afghans vote despite Taliban threat   
+Attribute: class = c_hpbullet7
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(7) 
+<*** UI Element ***>
+<a> 
+Text: Afghans vote despite Taliban threat 
+Attribute: href = /2014/04/05/world/asia/afghanistan-elections/index.html?hpt=hp_t2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(7) > a 
+<*** UI Element ***>
+<li> 
+Text:   Al Qaeda chief: Who killed our man?   
+Attribute: class = c_hpbullet8
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(8) 
+<*** UI Element ***>
+<a> 
+Text: Al Qaeda chief: Who killed our man? 
+Attribute: href = /2014/04/05/world/meast/syria-civil-war/index.html?hpt=hp_t2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(8) > a 
+<*** UI Element ***>
+<li> 
+Text:   See inside Jeffrey Dahmer's home     
+Attribute: class = c_hpbullet9
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(9) 
+<*** UI Element ***>
+<a> 
+Text: See inside Jeffrey Dahmer's home 
+Attribute: href = /video/data/2.0/video/us/2014/04/01/dnt-jeffrey-dahmer-home-for-sale.wkyc.html?hpt=hp_t2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(9) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2014/04/01/dnt-jeffrey-dahmer-home-for-sale.wkyc.html?hpt=hp_t2
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(9) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   Baby fingerprinted and booked   
+Attribute: class = c_hpbullet10
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(10) 
+<*** UI Element ***>
+<a> 
+Text: Baby fingerprinted and booked 
+Attribute: href = /2014/04/05/world/asia/pakistani-baby-charged/index.html?hpt=hp_t2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(10) > a 
+<*** UI Element ***>
+<li> 
+Text:   Does having kids make you happier?     
+Attribute: class = c_hpbullet11
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(11) 
+<*** UI Element ***>
+<a> 
+Text: Does having kids make you happier? 
+Attribute: href = /video/data/2.0/video/living/2014/01/14/nr-brooke-wallace-no-kids-happy-life.cnn.html?hpt=hp_t2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(11) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/living/2014/01/14/nr-brooke-wallace-no-kids-happy-life.cnn.html?hpt=hp_t2
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(11) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   Mannequin in trash? No, it's a body     
+Attribute: class = c_hpbullet12
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(12) 
+<*** UI Element ***>
+<a> 
+Text: Mannequin in trash? No, it's a body 
+Attribute: href = /video/data/2.0/video/us/2014/04/05/body-found-mistaken-as-mannequin.wfts.html?hpt=hp_t2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(12) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2014/04/05/body-found-mistaken-as-mannequin.wfts.html?hpt=hp_t2
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(12) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   Beauty contest rejected THIS photo     
+Attribute: class = c_hpbullet13
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(13) 
+<*** UI Element ***>
+<a> 
+Text: Beauty contest rejected THIS photo 
+Attribute: href = /video/data/2.0/video/us/2014/04/04/pkg-people-magazine-rejects-woman-gun-photo.ktvi.html?hpt=hp_t2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(13) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2014/04/04/pkg-people-magazine-rejects-woman-gun-photo.ktvi.html?hpt=hp_t2
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(13) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   NCAA Final Four: Acid test   
+Attribute: class = c_hpbullet14
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(14) 
+<*** UI Element ***>
+<a> 
+Text: NCAA Final Four: Acid test 
+Attribute: href = /2014/04/05/us/final-four-games/index.html?hpt=hp_t2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(14) > a 
+<*** UI Element ***>
+<li> 
+Text:   Live blog: UConn vs. Florida   
+Attribute: class = c_hpbullet15
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(15) 
+<*** UI Element ***>
+<a> 
+Text: Live blog: UConn vs. Florida 
+Attribute: href = http://bleacherreport.com/articles/2015416-florida-vs-uconn-live-score-highlights-for-final-four?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial &hpt=hp_t2
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(15) > a 
+<*** UI Element ***>
+<li> 
+Text:   Watch live  |  Scores  |  Highlights   
+Attribute: class = c_hpbullet16
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(16) 
+<*** UI Element ***>
+<a> 
+Text: Watch live 
+Attribute: href = http://www.ncaa.com/march-madness-live?hpt=hp_t2
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(16) > a 
+<*** UI Element ***>
+<a> 
+Text: Scores 
+Attribute: href = http://www.ncaa.com/scoreboard/basketball-men/d1/2014/04/05?hpt=hp_t2
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(16) > a:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Highlights 
+Attribute: href = http://bleacherreport.com/video?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial&hpt=hp_t2
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(16) > a:nth-child(8) 
+<*** UI Element ***>
+<li> 
+Text:   Stopping LeBron: 3 flops on 1 play?   
+Attribute: class = c_hpbullet1 c_hpfirstbullet
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li 
+<*** UI Element ***>
+<a> 
+Text: Stopping LeBron: 3 flops on 1 play? 
+Attribute: href = http://bleacherreport.com/articles/2018782-timberwolves-players-flop-3-times-in-a-single-heat-possession?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial&hpt=hp_t3
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li > a 
+<*** UI Element ***>
+<li> 
+Text:   Driver who put train on escalator is fired   
+Attribute: class = c_hpbullet2
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Driver who put train on escalator is fired 
+Attribute: href = /2014/04/04/us/chicago-ohare-train-derailment/index.html?hpt=hp_t3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text:   Car goes into Queens creek; 4 dead   
+Attribute: class = c_hpbullet3
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Car goes into Queens creek; 4 dead 
+Attribute: href = /2014/04/05/us/ny-four-dead-accident/index.html?hpt=hp_t3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:   Tyson recalls chicken nuggets   
+Attribute: class = c_hpbullet4
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Tyson recalls chicken nuggets 
+Attribute: href = http://money.cnn.com/2014/04/04/news/companies/tyson-chicken-nugget-recall/index.html?hpt=hp_t3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text:   Skydiver attempting record dies ...   
+Attribute: class = c_hpbullet5
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Skydiver attempting record dies ... 
+Attribute: href = /2014/04/03/us/arizona-skydiver-death/index.html?hpt=hp_t3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<li> 
+Text:   ... another dies after midair collision      
+Attribute: class = c_hpbullet6
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) 
+<*** UI Element ***>
+<a> 
+Text: ... another dies after midair collision  
+Attribute: href = /video/data/2.0/video/us/2014/04/05/dnt-skydiver-dies-after-mid-air-collision.kswb.html?hpt=hp_t3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2014/04/05/dnt-skydiver-dies-after-mid-air-collision.kswb.html?hpt=hp_t3
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   Apple's big news coming in June   
+Attribute: class = c_hpbullet7
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(7) 
+<*** UI Element ***>
+<a> 
+Text: Apple's big news coming in June 
+Attribute: href = /2014/04/03/tech/mobile/apple-wwdc-2014/index.html?hpt=hp_t3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(7) > a 
+<*** UI Element ***>
+<li> 
+Text:   Swimmer 'taken' by shark      
+Attribute: class = c_hpbullet8
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(8) 
+<*** UI Element ***>
+<a> 
+Text: Swimmer 'taken' by shark  
+Attribute: href = /video/data/2.0/video/world/2014/04/03/dnt-australia-woman-taken-by-shark.seven-network.html?hpt=hp_t3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(8) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/world/2014/04/03/dnt-australia-woman-taken-by-shark.seven-network.html?hpt=hp_t3
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(8) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   Note to tardy boss gets him fired     
+Attribute: class = c_hpbullet9
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(9) 
+<*** UI Element ***>
+<a> 
+Text: Note to tardy boss gets him fired 
+Attribute: href = /video/data/2.0/video/us/2014/04/01/mxp-boss-learn-to-be-on-time.hln.html?hpt=hp_t3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(9) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2014/04/01/mxp-boss-learn-to-be-on-time.hln.html?hpt=hp_t3
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(9) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   'Thrones' is back: 'All men must die'      
+Attribute: class = c_hpbullet10
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(10) 
+<*** UI Element ***>
+<a> 
+Text: 'Thrones' is back: 'All men must die'  
+Attribute: href = /video/data/2.0/video/showbiz/2014/04/03/orig-got-season-4-is-back-npr.cnn.html?hpt=hp_t3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(10) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/showbiz/2014/04/03/orig-got-season-4-is-back-npr.cnn.html?hpt=hp_t3
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(10) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   Homeless man withdraws $37,000     
+Attribute: class = c_hpbullet11
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(11) 
+<*** UI Element ***>
+<a> 
+Text: Homeless man withdraws $37,000 
+Attribute: href = /video/data/2.0/video/us/2014/04/04/dnt-me-rogers-man-withdraws-37k-from-atm.wgme.html?hpt=hp_t3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(11) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2014/04/04/dnt-me-rogers-man-withdraws-37k-from-atm.wgme.html?hpt=hp_t3
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(11) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   Wi-Fi speeds are about to triple   
+Attribute: class = c_hpbullet12
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(12) 
+<*** UI Element ***>
+<a> 
+Text: Wi-Fi speeds are about to triple 
+Attribute: href = http://money.cnn.com/2014/04/04/technology/innovation/qualcomm-wifi/index.html?hpt=hp_t3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(12) > a 
+<*** UI Element ***>
+<li> 
+Text:   Pot cookies blamed for teen's death     
+Attribute: class = c_hpbullet13
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(13) 
+<*** UI Element ***>
+<a> 
+Text: Pot cookies blamed for teen's death 
+Attribute: href = /video/data/2.0/video/us/2014/04/03/marijuana-cookie-student-death-denver.kcnc.html?hpt=hp_t3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(13) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2014/04/03/marijuana-cookie-student-death-denver.kcnc.html?hpt=hp_t3
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(13) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   Wave of suicides at phone company     
+Attribute: class = c_hpbullet14
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(14) 
+<*** UI Element ***>
+<a> 
+Text: Wave of suicides at phone company 
+Attribute: href = /video/data/2.0/video/world/2014/04/03/pkg-bittermann-france-telecom-orange-suicides.cnn.html?hpt=hp_t3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(14) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/world/2014/04/03/pkg-bittermann-france-telecom-orange-suicides.cnn.html?hpt=hp_t3
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(14) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   Reality TV star gets married   
+Attribute: class = c_hpbullet15
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(15) 
+<*** UI Element ***>
+<a> 
+Text: Reality TV star gets married 
+Attribute: href = /2014/04/05/showbiz/kandi-burruss-married/index.html?hpt=hp_t3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(15) > a 
+<*** UI Element ***>
+<li> 
+Text:   Is Internet driving Letterman away?   
+Attribute: class = c_hpbullet1 c_hpfirstbullet
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > ul > li 
+<*** UI Element ***>
+<a> 
+Text: Is Internet driving Letterman away? 
+Attribute: href = /2014/04/04/opinion/bianculli-david-letterman/index.html?hpt=hp_t4
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > ul > li > a 
+<*** UI Element ***>
+<li> 
+Text:   LZ: How Mozilla botched CEO's ouster   
+Attribute: class = c_hpbullet2
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: LZ: How Mozilla botched CEO's ouster 
+Attribute: href = /2014/04/04/opinion/granderson-mozilla-same-sex-marriage/index.html?hpt=hp_t4
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text:   Exhibit opens: The artist known as 'W'   
+Attribute: class = c_hpbullet1 c_hpfirstbullet
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li 
+<*** UI Element ***>
+<a> 
+Text: Exhibit opens: The artist known as 'W' 
+Attribute: href = /2014/04/04/politics/bush-paintings/index.html?hpt=hp_t5
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li > a 
+<*** UI Element ***>
+<li> 
+Text:   James Franco: 'I'm embarrassed' EW  
+Attribute: class = c_hpbullet2
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: James Franco: 'I'm embarrassed' 
+Attribute: href = http://popwatch.ew.com/2014/04/04/james-franco-instagram-teenager/?hpt=hp_t5
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text:   Clinton is right: There are aliens Time  
+Attribute: class = c_hpbullet3
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Clinton is right: There are aliens 
+Attribute: href = http://time.com/48208/clinton-aliens-kimmel-space/?hpt=hp_t5
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:   What a shot! Amazing sports photos     
+Attribute: class = c_hpbullet4
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: What a shot! Amazing sports photos 
+Attribute: href = /2014/04/01/worldsport/gallery/what-a-shot-0401/index.html?hpt=hp_t5
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2014/04/01/worldsport/gallery/what-a-shot-0401/index.html?hpt=hp_t5
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(4) > a:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpvmsbtn
+Attribute: href = http://www.cnn.com/trends?hpt=hp_t5
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: Archbishop's $2.2M mansion for sale 
+Attribute: href = http://religion.blogs.cnn.com/2014/04/05/archbishop-of-atlanta-to-vacate-2-2-million-mansion-in-early-may/?hpt=hp_c2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text: FULL STORY 
+Attribute: href = http://religion.blogs.cnn.com/2014/04/05/archbishop-of-atlanta-to-vacate-2-2-million-mansion-in-early-may/?hpt=hp_c2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div > div:nth-child(2) > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = http://religion.blogs.cnn.com/2014/04/05/archbishop-of-atlanta-to-vacate-2-2-million-mansion-in-early-may/?hpt=hp_c2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div > div:nth-child(3) > div > a 
+<*** UI Element ***>
+<li> 
+Text:   'Bling Bishop' resigns   
+Attribute: class = c_hpbullet2 c_hpfirstbullet
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li 
+<*** UI Element ***>
+<a> 
+Text: 'Bling Bishop' resigns 
+Attribute: href = /2014/03/26/world/europe/vatican-german-bishop-resigns/index.html?hpt=hp_c2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li > a 
+<*** UI Element ***>
+<li> 
+Text:   Vatican reacts     
+Attribute: class = c_hpbullet3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Vatican reacts 
+Attribute: href = /video/data/2.0/video/world/2014/03/26/idesk-gallagher-vatican-bling-bishop-resigns.cnn.html?hpt=hp_c2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/world/2014/03/26/idesk-gallagher-vatican-bling-bishop-resigns.cnn.html?hpt=hp_c2
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   Bishop defends his Benz, Bentley      
+Attribute: class = c_hpbullet4
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Bishop defends his Benz, Bentley  
+Attribute: href = /video/data/2.0/video/us/2013/10/13/newday-intv-pastor-defends-driving-bentley.cnn.html?hpt=hp_c2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2013/10/13/newday-intv-pastor-defends-driving-bentley.cnn.html?hpt=hp_c2
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(3) > a:nth-child(4) 
+<*** UI Element ***>
+<li> 
+Text:   The humble Pope Francis     
+Attribute: class = c_hpbullet5
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: The humble Pope Francis 
+Attribute: href = /2013/11/09/world/gallery/pope-francis/index.html?hpt=hp_c2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2013/11/09/world/gallery/pope-francis/index.html?hpt=hp_c2
+Attribute: target = 
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(4) > a:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/crime/2014/04/05/jvm-bts-schellpfeffer-murder-for-hire-plot.hln.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div > div > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/crime/2014/04/05/jvm-bts-schellpfeffer-murder-for-hire-plot.hln.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: Attempted murder plot stuns partner 
+Attribute: href = /video/data/2.0/video/crime/2014/04/05/jvm-bts-schellpfeffer-murder-for-hire-plot.hln.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2014/04/04/showbiz/celebrity-news-gossip/paulina-gretzky-golf-digest/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text: Paulina Gretzky's controversial cover 
+Attribute: href = /2014/04/04/showbiz/celebrity-news-gossip/paulina-gretzky-golf-digest/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2014/04/02/dnt-man-survives-chainsaw-stuck-in-neck.wpxi.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2014/04/02/dnt-man-survives-chainsaw-stuck-in-neck.wpxi.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: 'Chainsaw was in me, still running' 
+Attribute: href = /video/data/2.0/video/us/2014/04/02/dnt-man-survives-chainsaw-stuck-in-neck.wpxi.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2014/04/04/world/gallery/week-in-photos-0403/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2014/04/04/world/gallery/week-in-photos-0403/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: The week in 33 photos 
+Attribute: href = /2014/04/04/world/gallery/week-in-photos-0403/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2013/02/13/showbiz/gallery/pregnant-celebrities-2013/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2013/02/13/showbiz/gallery/pregnant-celebrities-2013/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > div > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: Baby no. 2 on the way for Snooki 
+Attribute: href = /2013/02/13/showbiz/gallery/pregnant-celebrities-2013/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2014/04/03/tech/innovation/3-d-printing-human-organs/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text: New in 3-D printing - human organs? 
+Attribute: href = /2014/04/03/tech/innovation/3-d-printing-human-organs/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/bestoftv/2014/04/02/curry-snake-eats-crocodile.cnn.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(9) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/bestoftv/2014/04/02/curry-snake-eats-crocodile.cnn.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(9) > div > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: Shocking video of a python eating a croc 
+Attribute: href = /video/data/2.0/video/bestoftv/2014/04/02/curry-snake-eats-crocodile.cnn.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(9) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2014/04/05/world/gallery/pillow-fight-day/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(10) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2014/04/05/world/gallery/pillow-fight-day/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(10) > div > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: Happy International Pillow Fight Day! 
+Attribute: href = /2014/04/05/world/gallery/pillow-fight-day/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(10) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2014/04/05/dnt-goose-shatters-car-window.kcnc.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(11) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2014/04/05/dnt-goose-shatters-car-window.kcnc.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(11) > div > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: Goose smashes through windshield 
+Attribute: href = /video/data/2.0/video/us/2014/04/05/dnt-goose-shatters-car-window.kcnc.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(11) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2014/04/04/living/integrated-prom-wilcox-county-georgia/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(13) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text: School's first racially integrated prom 
+Attribute: href = /2014/04/04/living/integrated-prom-wilcox-county-georgia/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(13) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2014/04/04/showbiz/gallery/kurt-cobain-20-years/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(14) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2014/04/04/showbiz/gallery/kurt-cobain-20-years/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(14) > div > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: Classic rock - 20 years since Nirvana  
+Attribute: href = /2014/04/04/showbiz/gallery/kurt-cobain-20-years/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(14) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2014/04/03/lv-vo-train-slams-into-suv.cnn.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(15) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2014/04/03/lv-vo-train-slams-into-suv.cnn.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(15) > div > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: Car runs light, gets slammed by train 
+Attribute: href = /video/data/2.0/video/us/2014/04/03/lv-vo-train-slams-into-suv.cnn.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(15) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2014/04/03/showbiz/big-bang-theory-set/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(17) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text: Secrets from set of 'Big Bang Theory' 
+Attribute: href = /2014/04/03/showbiz/big-bang-theory-set/index.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(17) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/showbiz/2014/04/03/conan-simon-helberg-spot-on-al-pacino-impression.team-coco.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(18) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/showbiz/2014/04/03/conan-simon-helberg-spot-on-al-pacino-impression.team-coco.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(18) > div > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: See 'Big Bang' star's spot-on Pacino 
+Attribute: href = /video/data/2.0/video/showbiz/2014/04/03/conan-simon-helberg-spot-on-al-pacino-impression.team-coco.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(18) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/crime/2014/04/03/dnt-woman-frozen-in-body-bag.kcal.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(19) > div > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/crime/2014/04/03/dnt-woman-frozen-in-body-bag.kcal.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(19) > div > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: Family: Hospital froze her alive  
+Attribute: href = /video/data/2.0/video/crime/2014/04/03/dnt-woman-frozen-in-body-bag.kcal.html?hpt=hp_c3
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(19) > a 
+<*** UI Element ***>
+<a> 
+Text: Weather 
+Attribute: href = http://weather.cnn.com/weather/forecast.jsp
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div > div > h4 > a 
+<*** UI Element ***>
+<a> 
+Text: Go 
+Attribute: href = javascript:MainLocalObj.Weather.checkInput('weather',document.localAllLookupForm.inputField.value);
+Attribute: id = weatherLocBtn
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > div > form > fieldset > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = http://newday.blogs.cnn.com/
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > div:nth-child(3) > a 
+<*** UI Element ***>
+<a> 
+Text: LIVE TV 
+Attribute: href = /video/data/2.0/video/cvptve/cvpstream1.html?hpt=hp_livenow_tve_txt
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(3) > div > h4 > a 
+<*** UI Element ***>
+<a> 
+Text: CNN TV 
+Attribute: href = http://www.cnn.com/CNN/Programs/?hpt=hp_livenow
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > a 
+<*** UI Element ***>
+<a> 
+Text: HLN TV 
+Attribute: href = http://www.hlntv.com/schedule/?hpt=hp_livenow
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > a:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Markets 
+Attribute: href = http://money.cnn.com/data/markets/
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(2) > h4 > a 
+<*** UI Element ***>
+<a> 
+Text: My quotes 
+Attribute: class = toggle togOff
+Attribute: id = myQuotesBtn
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2) > div > a 
+<*** UI Element ***>
+<a> 
+Text: Indexes 
+Attribute: class = toggle togOn
+Attribute: id = defIndexBtn
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2) > div > a:nth-child(3) 
+<*** UI Element ***>
+<li> 
+Text: 
+ 
+
+Dow
+
+16,412.71
+
+
+
+(-0.96 %)
+
+
+-159.84
+
+
+ 
+Attribute: class = market-0
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ul > li 
+<*** UI Element ***>
+<a> 
+Text: Dow 
+Attribute: href = http://money.cnn.com/data/markets/dow/
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ul > li > div > span > a 
+<*** UI Element ***>
+<li> 
+Text: 
+ 
+
+Nasdaq
+
+4,127.73
+
+
+
+(-2.60 %)
+
+
+-110.014
+
+
+ 
+Attribute: class = market-1
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Nasdaq 
+Attribute: href = http://money.cnn.com/data/markets/nasdaq/
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(2) > div > span > a 
+<*** UI Element ***>
+<li> 
+Text: 
+ 
+
+S&P
+
+1,865.09
+
+
+
+(-1.25 %)
+
+
+-23.68
+
+
+ 
+Attribute: class = market-2
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: S&P 
+Attribute: href = http://money.cnn.com/data/markets/sandp/
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(3) > div > span > a 
+<*** UI Element ***>
+<a> 
+Text: Get Quotes 
+Attribute: href = javascript: MainLocalObj.Markets.lookupStockSymbol();
+Attribute: id = getSymbolBtn
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(2) > form > div > a 
+<*** UI Element ***>
+<a> 
+Text: CNNMoney.com 
+Attribute: href = http://money.cnn.com/data/markets
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(4) > a 
+<*** UI Element ***>
+<a> 
+Text: NEW: My Portfolio 
+Attribute: href = https://portfolio.money.cnn.com/
+Locator: body > div:nth-child(7) > div > div:nth-child(5) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > div:nth-child(4) > a:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: U.S. 
+Attribute: href = http://www.cnn.com/US?hpt=hp_bn1
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > h4 > a 
+<*** UI Element ***>
+<li> 
+Text: 
+
+ 
+
+
+ American: Rwanda not just genocide
+
+
+ 
+Attribute: class = c_bulletwithimg
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li 
+<*** UI Element ***>
+<a> 
+Text:  
+ 
+Attribute: href = /2014/04/04/opinion/rwanda-20-years-after-genocide-irpt/index.html?hpt=hp_bn1
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li > div > div > a 
+<*** UI Element ***>
+<a> 
+Text: American: Rwanda not just genocide 
+Attribute: href = /2014/04/04/opinion/rwanda-20-years-after-genocide-irpt/index.html?hpt=hp_bn1
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li > div > span > span > a 
+<*** UI Element ***>
+<li> 
+Text:  Du Pont heir avoided prison
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Du Pont heir avoided prison 
+Attribute: href = /2014/04/02/justice/delaware-du-pont-rape-case/index.html?hpt=hp_bn1
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text:  Man survives chainsaw in neck
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Man survives chainsaw in neck 
+Attribute: href = /2014/04/01/us/chainsaw-accident-survivor/index.html?hpt=hp_bn1
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:  Yoda fan wins $425M
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Yoda fan wins $425M 
+Attribute: href = /2014/04/01/us/powerball-lottery-winner/index.html?hpt=hp_bn1
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text:  Is this a real chupacabra?
+ 
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Is this a real chupacabra? 
+Attribute: href = /video/data/2.0/video/us/2014/04/02/dnt-tx-possible-chupacabra.kavu.html?hpt=hp_bn1
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2014/04/02/dnt-tx-possible-chupacabra.kavu.html?hpt=hp_bn1
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > ul > ul > li:nth-child(5) > a:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpmorebtn
+Attribute: href = http://www.cnn.com/US?hpt=hp_bn1
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(2) > div > div > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: World 
+Attribute: href = http://www.cnn.com/world/?hpt=hp_bn2
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > h4 > a 
+<*** UI Element ***>
+<li> 
+Text: 
+
+ 
+
+
+ Afghan election: Who's running?
+
+
+ 
+Attribute: class = c_bulletwithimg
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li 
+<*** UI Element ***>
+<a> 
+Text:  
+ 
+Attribute: href = /2014/04/02/world/asia/afghan-elections-candidate-profiles/index.html?hpt=hp_bn2
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li > div > div > a 
+<*** UI Element ***>
+<a> 
+Text: Afghan election: Who's running? 
+Attribute: href = /2014/04/02/world/asia/afghan-elections-candidate-profiles/index.html?hpt=hp_bn2
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li > div > span > span > a 
+<*** UI Element ***>
+<li> 
+Text:  Russia snaps back at NATO
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Russia snaps back at NATO 
+Attribute: href = /2014/04/03/world/europe/ukraine-crisis/index.html?hpt=hp_bn2
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text:  What's the Oscar Pistorius defense?
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: What's the Oscar Pistorius defense? 
+Attribute: href = /2014/03/27/world/africa/pistorius-trial-defense/index.html?hpt=hp_bn2
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:  Stolen art found 40 years later
+ 
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Stolen art found 40 years later 
+Attribute: href = /video/data/2.0/video/world/2014/04/04/pkg-stolen-french-paintings-recovered.cnn.html?hpt=hp_bn2
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/world/2014/04/04/pkg-stolen-french-paintings-recovered.cnn.html?hpt=hp_bn2
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(4) > a:nth-child(2) 
+<*** UI Element ***>
+<li> 
+Text:  5 strongest recorded quakes
+ 
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: 5 strongest recorded quakes 
+Attribute: href = /video/data/2.0/video/bestoftv/2014/04/03/orig-5-most-powerful-earthquakes-on-record-npr.cnn.html?hpt=hp_bn2
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/bestoftv/2014/04/03/orig-5-most-powerful-earthquakes-on-record-npr.cnn.html?hpt=hp_bn2
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > ul > ul > li:nth-child(5) > a:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpmorebtn
+Attribute: href = http://www.cnn.com/world/?hpt=hp_bn2
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(3) > div > div > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: Politics 
+Attribute: href = http://www.cnn.com/politics?hpt=hp_bn3
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > h4 > a 
+<*** UI Element ***>
+<li> 
+Text: 
+
+ 
+
+
+ Dems have a good week
+
+
+ 
+Attribute: class = c_bulletwithimg
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li 
+<*** UI Element ***>
+<a> 
+Text:  
+ 
+Attribute: href = /2014/04/04/politics/king-inside-politics-democrats-good-week/index.html?hpt=hp_bn3
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li > div > div > a 
+<*** UI Element ***>
+<a> 
+Text: Dems have a good week 
+Attribute: href = /2014/04/04/politics/king-inside-politics-democrats-good-week/index.html?hpt=hp_bn3
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li > div > span > span > a 
+<*** UI Element ***>
+<li> 
+Text:  George W. Bush paintings unveiled
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: George W. Bush paintings unveiled 
+Attribute: href = /2014/04/04/politics/bush-paintings/index.html?hpt=hp_bn3
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text:  Art critic weighs in
+ 
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Art critic weighs in 
+Attribute: href = /video/data/2.0/video/us/2014/04/04/nr-intv-jerry-saltz-bush-paints-world-leaders.cnn.html?hpt=hp_bn3
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/us/2014/04/04/nr-intv-jerry-saltz-bush-paints-world-leaders.cnn.html?hpt=hp_bn3
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(3) > a:nth-child(2) 
+<*** UI Element ***>
+<li> 
+Text:  Big Papi, big selfies, big deals
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Big Papi, big selfies, big deals 
+Attribute: href = http://politicalticker.blogs.cnn.com/2014/04/04/299830/?hpt=hp_bn3
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text:  Special Coverage: 2014 midterms
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Special Coverage: 2014 midterms 
+Attribute: href = /specials/politics/2014-midterm-elections/index.html?hpt=hp_bn3
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > ul > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpmorebtn
+Attribute: href = http://www.cnn.com/politics?hpt=hp_bn3
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(4) > div > div > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: Tech 
+Attribute: href = http://www.cnn.com/TECH/?hpt=hp_bn5
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > h4 > a 
+<*** UI Element ***>
+<li> 
+Text: 
+
+ 
+
+
+ 3-D printing human organs
+
+
+ 
+Attribute: class = c_bulletwithimg
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li 
+<*** UI Element ***>
+<a> 
+Text:  
+ 
+Attribute: href = /2014/04/03/tech/innovation/3-d-printing-human-organs/index.html?hpt=hp_bn5
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li > div > div > a 
+<*** UI Element ***>
+<a> 
+Text: 3-D printing human organs 
+Attribute: href = /2014/04/03/tech/innovation/3-d-printing-human-organs/index.html?hpt=hp_bn5
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li > div > span > span > a 
+<*** UI Element ***>
+<li> 
+Text:  Apple news coming June 2
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Apple news coming June 2 
+Attribute: href = /2014/04/03/tech/mobile/apple-wwdc-2014/index.html?hpt=hp_bn5
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text:  Underground sea found on Saturn moon
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Underground sea found on Saturn moon 
+Attribute: href = /2014/04/03/tech/innovation/moon-saturn-ocean/index.html?hpt=hp_bn5
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:  Amazon's big streaming move 
+ 
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Amazon's big streaming move  
+Attribute: href = /video/data/2.0/video/business/2014/04/03/wbt-amazon-unveils-fire-tv.cnn.html?hpt=hp_bn5
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/business/2014/04/03/wbt-amazon-unveils-fire-tv.cnn.html?hpt=hp_bn5
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(4) > a:nth-child(2) 
+<*** UI Element ***>
+<li> 
+Text:  U.S. gets new atomic clock
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: U.S. gets new atomic clock 
+Attribute: href = /2014/04/03/tech/innovation/new-atomic-clock/index.html?hpt=hp_bn5
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > ul > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpmorebtn
+Attribute: href = http://www.cnn.com/TECH/?hpt=hp_bn5
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(10) > div > div > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: Business 
+Attribute: href = http://money.cnn.com?hpt=hp_bn6
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > h4 > a 
+<*** UI Element ***>
+<li> 
+Text:        Tyson recalls chicken nuggets sold at Sam's Club    
+Attribute: class = c_bulletwithimg
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li 
+<*** UI Element ***>
+<a> 
+Text:    
+Attribute: href = http://money.cnn.com/2014/04/04/news/companies/tyson-chicken-nugget-recall/index.html?source=cnn_bin
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li > div > div > a 
+<*** UI Element ***>
+<a> 
+Text:  Tyson recalls chicken nuggets sold at Sam's Club  
+Attribute: href = http://money.cnn.com/2014/04/04/news/companies/tyson-chicken-nugget-recall/index.html?source=cnn_bin
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li > div > span > span > a 
+<*** UI Element ***>
+<li> 
+Text:  J-Lo backed TV channel buys Fuse network  
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: J-Lo backed TV channel buys Fuse network 
+Attribute: href = http://money.cnn.com/2014/04/04/news/companies/jennifer-lopez-fuse-tv/index.html?source=cnn_bin
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text:  GM submits 200,000 pages to safety agency  
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: GM submits 200,000 pages to safety agency 
+Attribute: href = http://money.cnn.com/2014/04/04/news/companies/gm-recall-questions/index.html?source=cnn_bin
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:  Anadarko to pay $5 billion for environmental cleanup  
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Anadarko to pay $5 billion for environmental cleanup 
+Attribute: href = http://money.cnn.com/2014/04/03/news/companies/anadarko-settlement/index.html?source=cnn_bin
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text:  Audi RS7 'a performance monster'     
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Audi RS7 'a performance monster' 
+Attribute: href = http://money.cnn.com/video/pf/2014/04/02/audi-rs7-review.cnnmoney/index.html?source=cnn_bin
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:    
+Attribute: href = http://money.cnn.com/video/pf/2014/04/02/audi-rs7-review.cnnmoney/index.html?source=cnn_bin
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > ul > ul > li:nth-child(5) > a:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpmorebtn
+Attribute: href = http://money.cnn.com?hpt=hp_bn6
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(11) > div > div > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: Opinion 
+Attribute: href = http://www.cnn.com/opinion?hpt=hp_bn7
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > h4 > a 
+<*** UI Element ***>
+<li> 
+Text: 
+
+ 
+
+
+ Should mentally ill own guns? 
+
+
+ 
+Attribute: class = c_bulletwithimg
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li 
+<*** UI Element ***>
+<a> 
+Text:  
+ 
+Attribute: href = /2014/04/03/opinion/ritchie-guns-mental-illness/index.html?hpt=hp_bn7
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li > div > div > a 
+<*** UI Element ***>
+<a> 
+Text: Should mentally ill own guns?  
+Attribute: href = /2014/04/03/opinion/ritchie-guns-mental-illness/index.html?hpt=hp_bn7
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li > div > span > span > a 
+<*** UI Element ***>
+<li> 
+Text:  Virtual assistants are the future 
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Virtual assistants are the future  
+Attribute: href = /2014/04/04/opinion/ward-virtual-assistants/index.html?hpt=hp_bn7
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text:  Is Internet driving Letterman away?
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Is Internet driving Letterman away? 
+Attribute: href = /2014/04/04/opinion/bianculli-david-letterman/index.html?hpt=hp_bn7
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:  Why is heir not in jail for child rape?
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Why is heir not in jail for child rape? 
+Attribute: href = /2014/04/03/opinion/robbins-dupont-heir-rape/index.html?hpt=hp_bn7
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text:  Rahm Emanuel's Chicago two cities
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Rahm Emanuel's Chicago two cities 
+Attribute: href = /2014/04/02/opinion/coval-chicagoland-rahm-emanuel/index.html?hpt=hp_bn7
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > ul > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpmorebtn
+Attribute: href = http://www.cnn.com/opinion?hpt=hp_bn7
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(12) > div > div > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: AOL Lifestyle 
+Attribute: href = http://www.aol.com?hpt=hp_bn8
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > h4 > a 
+<*** UI Element ***>
+<li> 
+Text:  10 Easy fish recipes
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li 
+<*** UI Element ***>
+<a> 
+Text: 10 Easy fish recipes 
+Attribute: href = http://www.kitchendaily.com/read/fantastic-fish-recipes?hpt=hp_bn8
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li > a 
+<*** UI Element ***>
+<li> 
+Text:  Knitting for the chicest of dummies
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Knitting for the chicest of dummies 
+Attribute: href = http://www.stylemepretty.com/living/2014/03/20/how-to-knit/?hpt=hp_bn8
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text:  Eat your way to shiny hair
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Eat your way to shiny hair 
+Attribute: href = http://www.stylelist.com/view/an-easy-way-to-get-shiny-healthy-hair/?hpt=hp_bn8
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:  Surprising ways to burn calories
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Surprising ways to burn calories 
+Attribute: href = http://www.stylelist.com/view/surprising-ways-to-burn-calories/?hpt=hp_bn8
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text:  NYC's first female firefighter
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: NYC's first female firefighter 
+Attribute: href = http://www.makers.com/brenda-berkman-0?hpt=hp_bn8
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<li> 
+Text:  DIY copper hanging plants
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(6) 
+<*** UI Element ***>
+<a> 
+Text: DIY copper hanging plants 
+Attribute: href = http://www.stylemepretty.com/living/2014/03/31/diy-copper-hanging-plants/?hpt=hp_bn8
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(6) > a 
+<*** UI Element ***>
+<li> 
+Text:  15 Time-saving dinner hacks
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(7) 
+<*** UI Element ***>
+<a> 
+Text: 15 Time-saving dinner hacks 
+Attribute: href = http://www.kitchendaily.com/read/15-time-saving-dinner-hacks?hpt=hp_bn8
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > ul > li:nth-child(7) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpmorebtn
+Attribute: href = http://www.aol.com?hpt=hp_bn8
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(13) > div > div > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: Entertainment 
+Attribute: href = http://www.cnn.com/showbiz?hpt=hp_bn9
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > h4 > a 
+<*** UI Element ***>
+<li> 
+Text: 
+
+ 
+
+
+ 'Game of Thrones' promises more 
+
+
+ 
+Attribute: class = c_bulletwithimg
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li 
+<*** UI Element ***>
+<a> 
+Text:  
+ 
+Attribute: href = /2014/04/04/showbiz/game-of-thrones-season-four-preview/index.html?hpt=hp_bn9
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li > div > div > a 
+<*** UI Element ***>
+<a> 
+Text: 'Game of Thrones' promises more  
+Attribute: href = /2014/04/04/showbiz/game-of-thrones-season-four-preview/index.html?hpt=hp_bn9
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li > div > span > span > a 
+<*** UI Element ***>
+<li> 
+Text:  Letterman's big announcement
+ 
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Letterman's big announcement 
+Attribute: href = /video/data/2.0/video/showbiz/2014/04/03/sot-letterman-announces-retirement.the-late-show-with-david-letterman-cbs-worldwide-pants.html?hpt=hp_bn9
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/showbiz/2014/04/03/sot-letterman-announces-retirement.the-late-show-with-david-letterman-cbs-worldwide-pants.html?hpt=hp_bn9
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(2) > a:nth-child(2) 
+<*** UI Element ***>
+<li> 
+Text:  Gabriel García Márquez ill 
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Gabriel García Márquez ill  
+Attribute: href = /2014/04/03/showbiz/gabriel-garcia-marquez-hospitalized/index.html?hpt=hp_bn9
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:  Brown headed to D.C. for trial 
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Brown headed to D.C. for trial  
+Attribute: href = /2014/04/03/showbiz/chris-brown-extradited/index.html?hpt=hp_bn9
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text:  Lawson turned away from flight
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Lawson turned away from flight 
+Attribute: href = /2014/04/03/showbiz/uk-us-nigella-lawson/index.html?hpt=hp_bn9
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > ul > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpmorebtn
+Attribute: href = http://www.cnn.com/showbiz?hpt=hp_bn9
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(18) > div > div > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: Travel 
+Attribute: href = http://www.cnn.com/TRAVEL/?hpt=hp_bn10
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > h4 > a 
+<*** UI Element ***>
+<li> 
+Text: 
+
+ 
+
+
+ Scotland's most spectacular castles
+
+
+ 
+Attribute: class = c_bulletwithimg
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li 
+<*** UI Element ***>
+<a> 
+Text:  
+ 
+Attribute: href = /2014/04/04/travel/scottish-castles-for-tartan-day/index.html?hpt=hp_bn10
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li > div > div > a 
+<*** UI Element ***>
+<a> 
+Text: Scotland's most spectacular castles 
+Attribute: href = /2014/04/04/travel/scottish-castles-for-tartan-day/index.html?hpt=hp_bn10
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li > div > span > span > a 
+<*** UI Element ***>
+<li> 
+Text:  Goodyear's bigger, faster, Zeppelin
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Goodyear's bigger, faster, Zeppelin 
+Attribute: href = /2014/04/03/travel/goodyear-zeppelin-blimp/index.html?hpt=hp_bn10
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text:  Show us the prettiest libraries
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Show us the prettiest libraries 
+Attribute: href = http://ireport.cnn.com/topics/1114920?hpt=hp_bn10
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:  15 best U.S. spots for kids
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: 15 best U.S. spots for kids 
+Attribute: href = /2014/04/01/travel/top-spots-for-kids-united-states/index.html?hpt=hp_bn10
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text:  And the world's busiest airport is ...
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: And the world's busiest airport is ... 
+Attribute: href = /2014/03/31/travel/worlds-busiest-airport/index.html?hpt=hp_bn10
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > ul > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpmorebtn
+Attribute: href = http://www.cnn.com/TRAVEL/?hpt=hp_bn10
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(19) > div > div > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: Living 
+Attribute: href = http://www.cnn.com/LIVING/?hpt=hp_bn11
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > h4 > a 
+<*** UI Element ***>
+<li> 
+Text: 
+
+ 
+
+
+ Millennial moms want to stay home?
+
+
+ 
+Attribute: class = c_bulletwithimg
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li 
+<*** UI Element ***>
+<a> 
+Text:  
+ 
+Attribute: href = /2014/04/04/living/millennial-moms-new-report-parents/index.html?hpt=hp_bn11
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li > div > div > a 
+<*** UI Element ***>
+<a> 
+Text: Millennial moms want to stay home? 
+Attribute: href = /2014/04/04/living/millennial-moms-new-report-parents/index.html?hpt=hp_bn11
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li > div > span > span > a 
+<*** UI Element ***>
+<li> 
+Text:  Why the beef with paternity leave?
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Why the beef with paternity leave? 
+Attribute: href = /2014/04/04/living/boomer-esiason-apology-paternity-leave-debate-parents/index.html?hpt=hp_bn11
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text:  Make your wedding florally fabulous
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Make your wedding florally fabulous 
+Attribute: href = /2014/04/04/living/preston-bailey-decorating-with-flowers-matrimony/index.html?hpt=hp_bn11
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:  Game of Thrones feast (no blood pie)
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Game of Thrones feast (no blood pie) 
+Attribute: href = http://eatocracy.cnn.com/2013/03/28/game-of-thrones-dinner-party/?hpt=hp_bn11
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text:  Eternity with Duke's mayonnaise
+ 
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Eternity with Duke's mayonnaise 
+Attribute: href = /video/data/2.0/video/topvideos/2014/04/03/dnt-ashes-in-mayonnaise-jar.wbtv.html?hpt=hp_bn11
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /video/data/2.0/video/topvideos/2014/04/03/dnt-ashes-in-mayonnaise-jar.wbtv.html?hpt=hp_bn11
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > ul > ul > li:nth-child(5) > a:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpmorebtn
+Attribute: href = http://www.cnn.com/LIVING/?hpt=hp_bn11
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(20) > div > div > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: Health 
+Attribute: href = http://www.cnn.com/HEALTH/index.html?hpt=hp_bn13
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > h4 > a 
+<*** UI Element ***>
+<li> 
+Text: 
+
+ 
+
+
+ Worst cities for spring allergies
+
+
+ 
+Attribute: class = c_bulletwithimg
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li 
+<*** UI Element ***>
+<a> 
+Text:  
+ 
+Attribute: href = /2014/03/31/health/worst-allergy-cities-spring/index.html?hpt=hp_bn13
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li > div > div > a 
+<*** UI Element ***>
+<a> 
+Text: Worst cities for spring allergies 
+Attribute: href = /2014/03/31/health/worst-allergy-cities-spring/index.html?hpt=hp_bn13
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li > div > span > span > a 
+<*** UI Element ***>
+<li> 
+Text:  E-cigs linked to poisonings
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: E-cigs linked to poisonings 
+Attribute: href = /2014/04/03/health/ecigs-nicotine-poisoning/index.html?hpt=hp_bn13
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text:  PTSD: 9 questions, answered
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: PTSD: 9 questions, answered 
+Attribute: href = /2014/04/03/health/ptsd-fort-hood/index.html?hpt=hp_bn13
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:  Run more, live longer? Maybe not
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Run more, live longer? Maybe not 
+Attribute: href = http://thechart.blogs.cnn.com/2014/04/03/running-more-may-not-help-you-live-longer/?hpt=hp_bn13
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text:  Pollen allergies? Don't eat these
+ 
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Pollen allergies? Don't eat these 
+Attribute: href = http://www.cnn.com/2014/04/03/health/gallery/allergies-reaction-foods/index.html?hpt=hp_bn13
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = http://www.cnn.com/2014/04/03/health/gallery/allergies-reaction-foods/index.html?hpt=hp_bn13
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > ul > ul > li:nth-child(5) > a:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpmorebtn
+Attribute: href = http://www.cnn.com/HEALTH/index.html?hpt=hp_bn13
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(26) > div > div > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: Photography 
+Attribute: href = http://www.cnn.com/photos?hpt=hp_bn14
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > h4 > a 
+<*** UI Element ***>
+<li> 
+Text: 
+
+ 
+
+
+
+
+
+ 'The Silence' of genocide
+ 
+
+
+ 
+Attribute: class = c_bulletwithimg
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li 
+<*** UI Element ***>
+<a> 
+Text:  
+ 
+Attribute: href = http://cnnphotos.blogs.cnn.com/2014/04/03/like-being-in-the-valley-of-death/?hpt=hp_bn14
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li > div > div > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = http://cnnphotos.blogs.cnn.com/2014/04/03/like-being-in-the-valley-of-death/?hpt=hp_bn14
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li > div > div > div > a 
+<*** UI Element ***>
+<a> 
+Text: 'The Silence' of genocide 
+Attribute: href = http://cnnphotos.blogs.cnn.com/2014/04/03/like-being-in-the-valley-of-death/?hpt=hp_bn14
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li > div > span > span > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = http://cnnphotos.blogs.cnn.com/2014/04/03/like-being-in-the-valley-of-death/?hpt=hp_bn14
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li > div > span > span > a:nth-child(2) 
+<*** UI Element ***>
+<li> 
+Text:  The week in 33 photos
+ 
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: The week in 33 photos 
+Attribute: href = /2014/04/04/world/gallery/week-in-photos-0403/index.html?hpt=hp_bn14
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2014/04/04/world/gallery/week-in-photos-0403/index.html?hpt=hp_bn14
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(2) > a:nth-child(2) 
+<*** UI Element ***>
+<li> 
+Text:  Surviving land mines
+ 
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Surviving land mines 
+Attribute: href = http://cnnphotos.blogs.cnn.com/2014/04/01/heroes-and-survivors-in-the-war-on-land-mines/?hpt=hp_bn14
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = http://cnnphotos.blogs.cnn.com/2014/04/01/heroes-and-survivors-in-the-war-on-land-mines/?hpt=hp_bn14
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(3) > a:nth-child(2) 
+<*** UI Element ***>
+<li> 
+Text:  What a shot! 34 sports photos
+ 
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: What a shot! 34 sports photos 
+Attribute: href = /2014/04/01/worldsport/gallery/what-a-shot-0401/index.html?hpt=hp_bn14
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = /2014/04/01/worldsport/gallery/what-a-shot-0401/index.html?hpt=hp_bn14
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(4) > a:nth-child(2) 
+<*** UI Element ***>
+<li> 
+Text:  Fires for a cause
+ 
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Fires for a cause 
+Attribute: href = http://cnnphotos.blogs.cnn.com/2014/03/30/fires-bring-new-life-to-prairie/?hpt=hp_bn14
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = http://cnnphotos.blogs.cnn.com/2014/03/30/fires-bring-new-life-to-prairie/?hpt=hp_bn14
+Attribute: target = _self
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > ul > li:nth-child(5) > a:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpmorebtn
+Attribute: href = http://www.cnn.com/photos?hpt=hp_bn14
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(27) > div > div > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: Sports 
+Attribute: href = http://bleacherreport.com?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > h4 > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Live blog: UConn vs. Florida 
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li 
+<*** UI Element ***>
+<a> 
+Text: Live blog: UConn vs. Florida  
+Attribute: href = http://bleacherreport.com/articles/2015416-florida-vs-uconn-live-score-highlights-for-final-four?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: onclick = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2015416-florida-vs-uconn-live-score-highlights-for-final-four?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Watch Final Four games live
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Watch Final Four games live 
+Attribute: href = http://ble.ac/1halNf5?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: onclick = _vrtrack({ track_url : 'http://ble.ac/1halNf5?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Watch March Madness highlights
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Watch March Madness highlights 
+Attribute: href = http://bleacherreport.com/video?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: onclick = _vrtrack({ track_url : 'http://bleacherreport.com/video?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Most unstoppable player left
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Most unstoppable player left 
+Attribute: href = http://bleacherreport.com/articles/2016978-why-shabazz-napier-is-the-unstoppable-force-of-the-2014-final-four?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: onclick = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2016978-why-shabazz-napier-is-the-unstoppable-force-of-the-2014-final-four?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Billy Donovan the next Coach K?
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Billy Donovan the next Coach K? 
+Attribute: href = http://bleacherreport.com/articles/2018061-lets-acknowledge-billy-donovan-for-what-he-is-the-coach-k-of-this-generation?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: onclick = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2018061-lets-acknowledge-billy-donovan-for-what-he-is-the-coach-k-of-this-generation?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Kentucky's top star not satisfied
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(6) 
+<*** UI Element ***>
+<a> 
+Text: Kentucky's top star not satisfied 
+Attribute: href = http://bleacherreport.com/articles/2017549-julius-randles-kentucky-journey-reaches-climax-with-2014-final-four-homecoming?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: onclick = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2017549-julius-randles-kentucky-journey-reaches-climax-with-2014-final-four-homecoming?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(6) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+From daisy dukes to the Fab Five
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(7) 
+<*** UI Element ***>
+<a> 
+Text: From daisy dukes to the Fab Five 
+Attribute: href = http://bleacherreport.com/articles/2014358-2014-ncaa-tournament-the-history-of-the-final-four-style-and-fashion?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: onclick = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2014358-2014-ncaa-tournament-the-history-of-the-final-four-style-and-fashion?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(7) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+NBAer: 'I believe in marijuana'
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(8) 
+<*** UI Element ***>
+<a> 
+Text: NBAer: 'I believe in marijuana' 
+Attribute: href = http://bleacherreport.com/articles/2018261-larry-sanders-advocates-for-medical-marijuana-hours-after-nba-drug-suspension?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: onclick = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2018261-larry-sanders-advocates-for-medical-marijuana-hours-after-nba-drug-suspension?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(8) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Trump, Cuban feud over NFL team
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(9) 
+<*** UI Element ***>
+<a> 
+Text: Trump, Cuban feud over NFL team 
+Attribute: href = http://bleacherreport.com/articles/2018663-donald-trump-blasts-mark-cuban-over-comments-about-buying-buffalo-bills?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: onclick = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2018663-donald-trump-blasts-mark-cuban-over-comments-about-buying-buffalo-bills?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > ul > ul > li:nth-child(9) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpmorebtn
+Attribute: href = http://bleacherreport.com?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(28) > div > div > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+How cute are Willard Scott and his new wife?
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li 
+<*** UI Element ***>
+<a> 
+Text: How cute are Willard Scott and his new wife? 
+Attribute: href = http://www.hlntv.com/article/2014/04/03/willard-scott-married-paris-keena-adorable-wedding?hpt=hp_bn17
+Attribute: onclick = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/04/03/willard-scott-married-paris-keena-adorable-wedding' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Elk crossing has a surprise twist
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Elk crossing has a surprise twist 
+Attribute: href = http://www.hlntv.com/article/2014/04/03/elk-crossing-montana-viral-video?hpt=hp_bn17
+Attribute: onclick = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/04/03/elk-crossing-montana-viral-video' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Family wants girlfriend charged in teen's death
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Family wants girlfriend charged in teen's death 
+Attribute: href = http://www.hlntv.com/article/2014/04/03/Johran-McCormick-Texas-teen-shot-will-girlfriend-face-charges?hpt=hp_bn17
+Attribute: onclick = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/04/03/Johran-McCormick-Texas-teen-shot-will-girlfriend-face-charges' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Old FSU logo out -- New logo leaked!
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Old FSU logo out -- New logo leaked! 
+Attribute: href = http://www.hlntv.com/article/2014/04/03/new-seminole-logo-leaked?hpt=hp_bn17
+Attribute: onclick = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/04/03/new-seminole-logo-leaked' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Watch: Cats react to viral videos!
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Watch: Cats react to viral videos! 
+Attribute: href = http://www.hlntv.com/article/2014/04/03/cats-react-viral-videos?hpt=hp_bn17
+Attribute: onclick = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/04/03/cats-react-viral-videos' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+David Letterman plans to retire in 2015!
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(6) 
+<*** UI Element ***>
+<a> 
+Text: David Letterman plans to retire in 2015! 
+Attribute: href = http://www.hlntv.com/article/2014/04/03/david-letterman-retiring-2015-late-show-cbs?hpt=hp_bn17
+Attribute: onclick = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/04/03/david-letterman-retiring-2015-late-show-cbs' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(6) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Twitter timeline: Ft. Hood shooting as it happened
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(7) 
+<*** UI Element ***>
+<a> 
+Text: Twitter timeline: Ft. Hood shooting as it happened 
+Attribute: href = http://www.hlntv.com/article/2014/04/03/fort-hood-timeline-shooting-Ivan-Lopez?hpt=hp_bn17
+Attribute: onclick = _vrtrack({ track_url : 'http://www.hlntv.com/article/2014/04/03/fort-hood-timeline-shooting-Ivan-Lopez' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(34) > div > div > div > ul > ul > li:nth-child(7) > a 
+<*** UI Element ***>
+<a> 
+Text: Huffington Post 
+Attribute: href = http://www.mnn.com/?hpt=hp_bn18
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > h4 > a 
+<*** UI Element ***>
+<li> 
+Text:  Another sign Obamacare is working
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li 
+<*** UI Element ***>
+<a> 
+Text: Another sign Obamacare is working 
+Attribute: href = http://www.huffingtonpost.com/2014/04/04/obamacare-medicaid-expansion_n_5091696.html?hpt=hp_bn18
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li > a 
+<*** UI Element ***>
+<li> 
+Text:  Why every Final Four player will lose
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Why every Final Four player will lose 
+Attribute: href = http://www.huffingtonpost.com/ben-hallman/final-four-players_b_5092368.html?hpt=hp_bn18
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text:  Netflix's new series
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Netflix's new series 
+Attribute: href = http://www.huffingtonpost.com/2014/04/03/netflix-narcos-_n_5087063.html?hpt=hp_bn18
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:  Back-alley abortions return
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: Back-alley abortions return 
+Attribute: href = http://www.huffingtonpost.com/2014/04/03/back-alley-abortions_n_5065301.html?hpt=hp_bn18
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text:  Americans ignore climate change
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Americans ignore climate change 
+Attribute: href = http://www.huffingtonpost.com/2014/04/04/ipcc-report_n_5092182.html?hpt=hp_bn18
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<li> 
+Text:  Conservatives call Reid "brain dead"
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(6) 
+<*** UI Element ***>
+<a> 
+Text: Conservatives call Reid "brain dead" 
+Attribute: href = http://www.huffingtonpost.com/2014/04/04/harry-reid-koch_n_5092685.html?hpt=hp_bn18
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(6) > a 
+<*** UI Element ***>
+<li> 
+Text:  Holder and the big marijuana decision
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(7) 
+<*** UI Element ***>
+<a> 
+Text: Holder and the big marijuana decision 
+Attribute: href = http://www.huffingtonpost.com/2014/04/04/eric-holder-reschedule-marijuana_n_5092010.html?hpt=hp_bn18
+Attribute: target = _blank
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > ul > li:nth-child(7) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpmorebtn
+Attribute: href = http://www.mnn.com/?hpt=hp_bn18
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(35) > div > div > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: Indeed.com Job Search 
+Attribute: href = http://www.indeed.com/?hpt=hp_bn19
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > h4 > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Search 3 million Jobs on Indeed
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li 
+<*** UI Element ***>
+<a> 
+Text: Search 3 million Jobs on Indeed 
+Attribute: href = 
+http://www.indeed.com/?kw=3+million+jobs&sid=us_cnn&utm_source=publisher&utm_medium=referral&utm_campaign=cnn-partner&utm_term=3+millions+jobs&indpubnum=3957652204875274&chnl=3millionjobs
+&hpt=hp_bn19
+Attribute: onclick = _vrtrack({ track_url : '
+http://www.indeed.com/?kw=3+million+jobs&sid=us_cnn&utm_source=publisher&utm_medium=referral&utm_campaign=cnn-partner&utm_term=3+millions+jobs&indpubnum=3957652204875274&chnl=3millionjobs
+' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Browse Jobs by Company, Title, or Location
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Browse Jobs by Company, Title, or Location 
+Attribute: href = 
+http://www.indeed.com/find-jobs.jsp?kw=browse+jobs&sid=us_cnn&utm_source=publisher&utm_medium=referral&utm_campaign=cnn-partner&utm_term=browse+jobs&indpubnum=3957652204875274&chnl=browsejobs
+&hpt=hp_bn19
+Attribute: onclick = _vrtrack({ track_url : '
+http://www.indeed.com/find-jobs.jsp?kw=browse+jobs&sid=us_cnn&utm_source=publisher&utm_medium=referral&utm_campaign=cnn-partner&utm_term=browse+jobs&indpubnum=3957652204875274&chnl=browsejobs
+' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Receive Job Alerts by Email
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Receive Job Alerts by Email 
+Attribute: href = 
+http://www.indeed.com/alert?&kw=job+alert&sid=us_cnn&utm_source=publisher&utm_medium=referral&utm_campaign=cnn-partner&utm_term=job+alert&indpubnum=3957652204875274&chnl=jobalert
+&hpt=hp_bn19
+Attribute: onclick = _vrtrack({ track_url : '
+http://www.indeed.com/alert?&kw=job+alert&sid=us_cnn&utm_source=publisher&utm_medium=referral&utm_campaign=cnn-partner&utm_term=job+alert&indpubnum=3957652204875274&chnl=jobalert
+' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+View 124k Insurance Jobs
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: View 124k Insurance Jobs 
+Attribute: href = 
+http://www.indeed.com/q-Insurance-jobs.html?kw=insurance&sid=us_cnn&utm_source=publisher&utm_medium=referral&utm_campaign=cnn-partner&utm_term=insurance&indpubnum=3957652204875274&chnl=insurancejobs
+&hpt=hp_bn19
+Attribute: onclick = _vrtrack({ track_url : '
+http://www.indeed.com/q-Insurance-jobs.html?kw=insurance&sid=us_cnn&utm_source=publisher&utm_medium=referral&utm_campaign=cnn-partner&utm_term=insurance&indpubnum=3957652204875274&chnl=insurancejobs
+' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Find Marketing Jobs
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Find Marketing Jobs 
+Attribute: href = 
+http://www.indeed.com/q-Marketing-jobs.html?kw=marketing&sid=us_cnn&utm_source=publisher&utm_medium=referral&utm_campaign=cnn-partner&utm_term=marketing&indpubnum=3957652204875274&chnl=marketingjobs
+&hpt=hp_bn19
+Attribute: onclick = _vrtrack({ track_url : '
+http://www.indeed.com/q-Marketing-jobs.html?kw=marketing&sid=us_cnn&utm_source=publisher&utm_medium=referral&utm_campaign=cnn-partner&utm_term=marketing&indpubnum=3957652204875274&chnl=marketingjobs
+' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(5) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Apply for Health Care Jobs
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(6) 
+<*** UI Element ***>
+<a> 
+Text: Apply for Health Care Jobs 
+Attribute: href = 
+http://www.indeed.com/q-Health-Care-jobs.html?kw=health+care&sid=us_cnn&utm_source=publisher&utm_medium=referral&utm_campaign=cnn-partner&utm_term=health+care&indpubnum=3957652204875274&chnl=healthcare
+&hpt=hp_bn19
+Attribute: onclick = _vrtrack({ track_url : '
+http://www.indeed.com/q-Health-Care-jobs.html?kw=health+care&sid=us_cnn&utm_source=publisher&utm_medium=referral&utm_campaign=cnn-partner&utm_term=health+care&indpubnum=3957652204875274&chnl=healthcare
+' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(6) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Employers: Post your jobs on Indeed
+ 
+Attribute: data-vr-contentbox = 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(7) 
+<*** UI Element ***>
+<a> 
+Text: Employers: Post your jobs on Indeed 
+Attribute: href = 
+http://ads.indeed.com/?kw=employer&sid=us_cnn&utm_source=publisher&utm_medium=referral&utm_campaign=cnn-partner&utm_term=employer&indpubnum=3957652204875274&chnl=employer
+&hpt=hp_bn19
+Attribute: onclick = _vrtrack({ track_url : '
+http://ads.indeed.com/?kw=employer&sid=us_cnn&utm_source=publisher&utm_medium=referral&utm_campaign=cnn-partner&utm_term=employer&indpubnum=3957652204875274&chnl=employer
+' })
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > ul > ul > li:nth-child(7) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpmorebtn
+Attribute: href = http://www.indeed.com/?hpt=hp_bn19
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(36) > div > div > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: Play CNN Games! 
+Attribute: href = http://games.cnn.com/?hpt=hp_bn20
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > h4 > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: href = http://games.cnn.com/?hpt=hp_bn20
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > ul > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Play Mahjongg Dimensions!
+ 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > ul > ul > li 
+<*** UI Element ***>
+<a> 
+Text: Play Mahjongg Dimensions! 
+Attribute: href = http://games.cnn.com/games/mahjongg-dimensions/mahjongg-dimensions.aspx?hpt=hp_bn20
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > ul > ul > li > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Play Tri Peaks Solitaire!
+ 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > ul > ul > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Play Tri Peaks Solitaire! 
+Attribute: href = http://games.cnn.com/games/tri-peaks-solitaire/tri-peaks-solitaire.aspx?hpt=hp_bn20
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > ul > ul > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text: 
+Play now: CNN Jigsaw!
+ 
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > ul > ul > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Play now: CNN Jigsaw! 
+Attribute: href = http://games.cnn.com/games/jigsaw-puzzle/jigsaw-puzzle.aspx?hpt=hp_bn20
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > ul > ul > li:nth-child(3) > a 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: class = cnn_mtpmorebtn
+Attribute: href = http://games.cnn.com/?hpt=hp_bn20
+Locator: body > div:nth-child(7) > div > div:nth-child(7) > div:nth-child(37) > div > div > div > div:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: TV & Video 
+Attribute: href = /video/?hpt=hp_tvvideo
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div > h4 > a 
+<*** UI Element ***>
+<a> 
+Text: HLN 
+Attribute: href = http://www.hlntv.com/?hpt=hp_tvvideo
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > div > a 
+<*** UI Element ***>
+<a> 
+Text: Full Schedule 
+Attribute: href = http://www.cnn.com/CNN/Programs/?hpt=hp_tvvideo
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > div > a:nth-child(2) 
+<*** UI Element ***>
+<ol> 
+Text: 
+ 
+The Situation Room5pm ET / 2pm PT on CNN
+ 
+Erin Burnett: OutFront7pm ET / 4pm PT on CNN
+ 
+AC 3608pm ET / 5pm PT on CNN
+ 
+Anthony BourdainReturns Sunday April 13
+ 
+Morgan SpurlockReturns Sunday April 13
+ 
+Attribute: class = cnnMustWatchTv
+Attribute: data-vr-zone = must-watch
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol 
+<*** UI Element ***>
+<li> 
+Text:  
+The Situation Room5pm ET / 2pm PT on CNN 
+Attribute: data-vr-contentbox = 
+Attribute: onclick = location.href='http://situationroom.blogs.cnn.com/?hpt=hp_tvvideo';
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li 
+<*** UI Element ***>
+<a> 
+Text:  
+The Situation Room5pm ET / 2pm PT on CNN 
+Attribute: href = http://situationroom.blogs.cnn.com/?hpt=hp_tvvideo
+Attribute: rel = external
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li > a 
+<*** UI Element ***>
+<li> 
+Text:  
+Erin Burnett: OutFront7pm ET / 4pm PT on CNN 
+Attribute: data-vr-contentbox = 
+Attribute: onclick = location.href='http://outfront.blogs.cnn.com/?hpt=hp_tvvideo';
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text:  
+Erin Burnett: OutFront7pm ET / 4pm PT on CNN 
+Attribute: href = http://outfront.blogs.cnn.com/?hpt=hp_tvvideo
+Attribute: rel = external
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(2) > a 
+<*** UI Element ***>
+<li> 
+Text:  
+AC 3608pm ET / 5pm PT on CNN 
+Attribute: data-vr-contentbox = 
+Attribute: onclick = location.href='http://ac360.blogs.cnn.com/?hpt=hp_tvvideo';
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text:  
+AC 3608pm ET / 5pm PT on CNN 
+Attribute: href = http://ac360.blogs.cnn.com/?hpt=hp_tvvideo
+Attribute: rel = external
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(3) > a 
+<*** UI Element ***>
+<li> 
+Text:  
+Anthony BourdainReturns Sunday April 13 
+Attribute: data-vr-contentbox = 
+Attribute: onclick = location.href='http://www.cnn.com/video/shows/anthony-bourdain-parts-unknown?hpt=hp_tvvideo';
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text:  
+Anthony BourdainReturns Sunday April 13 
+Attribute: href = http://www.cnn.com/video/shows/anthony-bourdain-parts-unknown?hpt=hp_tvvideo
+Attribute: rel = external
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(4) > a 
+<*** UI Element ***>
+<li> 
+Text:  
+Morgan SpurlockReturns Sunday April 13 
+Attribute: data-vr-contentbox = 
+Attribute: onclick = location.href='http://insideman.blogs.cnn.com?hpt=hp_tvvideo';
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text:  
+Morgan SpurlockReturns Sunday April 13 
+Attribute: href = http://insideman.blogs.cnn.com?hpt=hp_tvvideo
+Attribute: rel = external
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > ol > li:nth-child(5) > a 
+<*** UI Element ***>
+<a> 
+Text: View Collections 
+Attribute: href = /video/?hpt=hp_tvvideo
+Locator: body > div:nth-child(7) > div > div:nth-child(8) > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div > a 
+<*** UI Element ***>
+<a> 
+Text: Home 
+Attribute: href = /
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a 
+<*** UI Element ***>
+<a> 
+Text: Video 
+Attribute: href = /video/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: CNN Trends 
+Attribute: href = /trends/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: U.S. 
+Attribute: href = /US/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: World 
+Attribute: href = /WORLD/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: Politics 
+Attribute: href = /POLITICS/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(6) 
+<*** UI Element ***>
+<a> 
+Text: Justice 
+Attribute: href = /JUSTICE/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(7) 
+<*** UI Element ***>
+<a> 
+Text: Entertainment 
+Attribute: href = /SHOWBIZ/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(8) 
+<*** UI Element ***>
+<a> 
+Text: Tech 
+Attribute: href = /TECH/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(9) 
+<*** UI Element ***>
+<a> 
+Text: Health 
+Attribute: href = /HEALTH/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(10) 
+<*** UI Element ***>
+<a> 
+Text: Living 
+Attribute: href = /LIVING/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(11) 
+<*** UI Element ***>
+<a> 
+Text: Travel 
+Attribute: href = /TRAVEL/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(12) 
+<*** UI Element ***>
+<a> 
+Text: Opinion 
+Attribute: href = /OPINION/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(13) 
+<*** UI Element ***>
+<a> 
+Text: iReport 
+Attribute: href = http://ireport.cnn.com/?cnn=yes
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(14) 
+<*** UI Element ***>
+<a> 
+Text: Money 
+Attribute: href = http://money.cnn.com/?cnn=yes
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(15) 
+<*** UI Element ***>
+<a> 
+Text: Sports 
+Attribute: href = http://bleacherreport.com/?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-footer
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div > a:nth-child(16) 
+<*** UI Element ***>
+<a> 
+Text: Tools & widgets 
+Attribute: href = /tools/index.html
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: RSS 
+Attribute: href = /services/rss/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Podcasts 
+Attribute: href = /services/podcasting/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Blogs 
+Attribute: href = /exchange/blogs/index.html
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: CNN mobile 
+Attribute: href = /mobile/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: My profile 
+Attribute: href = /profile/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(6) 
+<*** UI Element ***>
+<a> 
+Text: E-mail alerts 
+Attribute: href = /profile/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(7) 
+<*** UI Element ***>
+<a> 
+Text: Desktop Alerts 
+Attribute: href =  /macalerts/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(8) 
+<*** UI Element ***>
+<a> 
+Text: CNN shop 
+Attribute: href = http://www.turnerstoreonline.com/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(9) 
+<*** UI Element ***>
+<a> 
+Text: Site map 
+Attribute: href = /sitemap/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(10) 
+<*** UI Element ***>
+<a> 
+Text: Contact us 
+Attribute: href = /feedback/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(6) > div:nth-child(2) > a:nth-child(11) 
+<*** UI Element ***>
+<a> 
+Text: CNN en ESPAÑOL 
+Attribute: href = /espanol/
+Attribute: hreflang = es
+Attribute: title = CNN in Spanish
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div > a 
+<*** UI Element ***>
+<a> 
+Text: CNN México 
+Attribute: href = http://mexico.cnn.com
+Attribute: hreflang = es
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div > a:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: CNN Chile 
+Attribute: href = http://www.cnnchile.com
+Attribute: hreflang = es
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div > a:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: CNN Expansión 
+Attribute: href = http://www.cnnexpansion.com
+Attribute: hreflang = es
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div > a:nth-child(4) 
+<*** UI Element ***>
+<a> 
+Text: العربية 
+Attribute: href = http://arabic.cnn.com/
+Attribute: hreflang = ar
+Attribute: title = CNN Arabic
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: 日本語 
+Attribute: href = http://www.cnn.co.jp/
+Attribute: hreflang = ja
+Attribute: title = CNN Japan
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div:nth-child(2) > a:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Türkçe 
+Attribute: href = http://www.cnnturk.com/
+Attribute: hreflang = tr
+Attribute: title = CNN Turkey
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div:nth-child(2) > a:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: CNN TV 
+Attribute: href = /CNN/Programs/
+Attribute: title = CNN TV programming schedule
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div:nth-child(3) > a 
+<*** UI Element ***>
+<a> 
+Text: HLN 
+Attribute: href = /HLN/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div:nth-child(3) > a:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text: Transcripts 
+Attribute: href = http://transcripts.cnn.com/TRANSCRIPTS/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(8) > div:nth-child(3) > a:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Turner Broadcasting System, Inc. 
+Attribute: class = cnn_ftrtbslink
+Attribute: href = http://www.turner.com/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div > a 
+<*** UI Element ***>
+<a> 
+Text: Terms of service 
+Attribute: href = /interactive_legal.html
+Attribute: rel = nofollow
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(2) > a 
+<*** UI Element ***>
+<a> 
+Text: Privacy guidelines 
+Attribute: href = /privacy.html
+Attribute: rel = nofollow
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(2) > a:nth-child(2) 
+<*** UI Element ***>
+<a> 
+Text:  
+Attribute: id = cnn_cnsnt_trst
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(2) > a:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: Advertise with us 
+Attribute: href = /services/advertise/main.html
+Attribute: rel = nofollow
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(2) > a:nth-child(5) 
+<*** UI Element ***>
+<a> 
+Text: About us 
+Attribute: href = /about/
+Attribute: rel = nofollow
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(2) > a:nth-child(6) 
+<*** UI Element ***>
+<a> 
+Text: Work for us 
+Attribute: href = http://www.turner.com/careers/
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(2) > a:nth-child(7) 
+<*** UI Element ***>
+<a> 
+Text: Help 
+Attribute: href = /help/
+Attribute: rel = help
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(2) > a:nth-child(8) 
+<*** UI Element ***>
+<a> 
+Text: CNN Newsource 
+Attribute: href = http://www.cnnnewsource.com
+Attribute: rel = nofollow
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(3) > a 
+<*** UI Element ***>
+<a> 
+Text: License Footage 
+Attribute: href = http://www.cnnimagesource.com
+Attribute: rel = nofollow
+Locator: body > div:nth-child(7) > div > div:nth-child(12) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(9) > div:nth-child(3) > a:nth-child(2) 
