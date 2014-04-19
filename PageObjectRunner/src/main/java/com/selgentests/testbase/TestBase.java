@@ -71,6 +71,8 @@ public class TestBase {
 			logger.error("Exception Class: " + exception.getClass());
 		}
 
+        driver.get("http://localhost:8080/testhtml/htmltests/");
+
 	}
 
 
