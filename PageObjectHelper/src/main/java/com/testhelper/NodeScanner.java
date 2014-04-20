@@ -82,7 +82,7 @@ public class NodeScanner {
                 if (tagTemplate != null) {
 
                     // Load up a new TagDescriptor for future code processing and addCode it to the TagDescriptorList
-                    TagDescriptor tagDescriptor = new TagDescriptor(tagTemplate, current);
+                    TagDescriptor tagDescriptor = TagDescriptor.createTagDescriptor(tagTemplate, current);
 
                     // The tag is only recorded for generation if a locator can be written.  Locators are written based
                     // on an ID, a CSS Locator (which should always be obtainable), or on a attribute previously identfied

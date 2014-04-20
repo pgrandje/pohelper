@@ -1,0 +1,8 @@
+Refactor TODOS:
+
+Should I remove the HintsAttribute object and use a map?  Or should a make a more general Attribute object and put that in the TagDescriptor also?
+
+Is a HashMap the right way to store attributes?  Seems that I can't iterate through it.
+
+
+

@@ -5,10 +5,7 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.Attr;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 
 /**
@@ -28,11 +25,9 @@ import java.util.List;
  */
 public class TagDescriptor {
 
-    private Configurator configurator;
+    private final Logger logger = Logger.getLogger(TagDescriptor.class);
 
-    // TODO: Should we continue to store DOM elements here?  Generation from hints doesn't use these so it currently requires two constructors.
-    private Node node;
-    private NamedNodeMap attributes;
+    private Configurator configurator;
 
     private String tag;
     private HashMap<String, String> attributePairs;
@@ -40,179 +35,130 @@ public class TagDescriptor {
     private StringBuffer methodCode;
     private String textContent;
     private StringBuffer comment;
-    private String storedLocator;
-
-    // TODO: Used by the writeLocator from a HintsDescriptor -- but both methods could probably use this object.
-    private HintsDescriptor.Locator locator;
-
-    private final Logger logger = Logger.getLogger(TagDescriptor.class);
+    private String locator;
 
 
-    // Takes a Node for computing css locators.  Using the node as the starting point to traverse up the parent tree.
-    // TODO: Consider removing Node from the TagDescriptor constructor into  setter method.
-    TagDescriptor(TagTemplate tagTemplate, Node node) {
+    // *** Constructors, Factories, and Factory support methods ***
 
-        this.configurator = Configurator.getConfigurator();
+    private TagDescriptor(TagTemplate tagTemplate, String textValue) {
 
-        this.node = node;
-        this.attributes = node.getAttributes();
+        configurator = Configurator.getConfigurator();
 
         // I could get the tag from either the Node or the template.  I'm choosing the Template since it's
         //  working and I might have to change the string if I get it from the Node.
-        this.tag = tagTemplate.getTag();
-        this.memberCode = new StringBuffer(tagTemplate.getMemberCode());
-        this.methodCode = new StringBuffer(tagTemplate.getMethodCode());
-        this.comment = new StringBuffer();
+        tag = tagTemplate.getTag();
+        logger.info("Creating new TagDescriptor with tag '" + tag + "'.");
 
-        logger.debug("****************************");
-        logger.debug("Creating new TagDescriptor for tag " + tag + ".");
-
-        this.addTextValueViaHtmlNode();
-        this.recordInfoComments();
-
+        memberCode = new StringBuffer(tagTemplate.getMemberCode());
+        methodCode = new StringBuffer(tagTemplate.getMethodCode());
         logger.debug("Using member code template:\n" + memberCode);
         logger.debug("And method code template:\n" + methodCode);
 
-    }
+        comment = new StringBuffer();
 
-
-    // This constructor should only be used when generating from a hints file--where DOM elements aren't used.
-    TagDescriptor(TagTemplate tagTemplate, HintsDescriptor hintsDescriptor) {
-
-        this.configurator = Configurator.getConfigurator();
-
-        // DOM elements not needed when generating from a hints file.
-        this.node = null;
-        this.attributes = null;
-
-        // I could get the tag from either the Node or the template.  I'm choosing the Template since it's
-        //  working and I might have to change the string if I get it from the Node.
-        this.tag = tagTemplate.getTag();
-        this.memberCode = new StringBuffer(tagTemplate.getMemberCode());
-        this.methodCode = new StringBuffer(tagTemplate.getMethodCode());
-        this.comment = new StringBuffer();
-
-        logger.debug("****************************");
         logger.debug("Creating new TagDescriptor for tag " + tag + ".");
 
-        logger.debug("Using member code template:\n" + memberCode);
-        logger.debug("And method code template:\n" + methodCode);
+        textContent = textValue;
 
-        logger.debug("Setting text content '" + hintsDescriptor.getText() + "'.");
-        this.textContent = hintsDescriptor.getText();
-
-        logger.debug("Setting attributes...");
-
-        attributePairs = new HashMap<String, String>();
-        List<HintsAttribute> hintsAttributes = hintsDescriptor.getAttributes();
-        for(HintsAttribute hintsAttribute: hintsAttributes) {
-            logger.debug("Setting attribute with name '" + hintsAttribute.getAttributeName() + "' with value '" + hintsAttribute.getAttributeValue() + "'.");
-            attributePairs.put(hintsAttribute.getAttributeName(), hintsAttribute.getAttributeValue());
-        }
-
-    }
-
-
-    // *** Member and Method Code ***
-
-    public String getMemberCode() {
-        logger.trace("Getting member code " + memberCode);
-        return memberCode.toString();
-    }
-
-
-    public String getMethodCode() {
-        logger.trace("Getting method code " + methodCode);
-        return methodCode.toString();
-    }
-
-
-
-
-    // *** Tag ***
-
-    // Used by the HintsBucket
-    public String getTag() {
-        return tag;
-    }
-
-
-    // *** Text Value ***
-
-    // Called from constructor to load text content before it's needed.
-    // TODO: Consider two separate TagDescriptor classes, getting info via Nodes, the other via a Hints descriptor.
-    private void addTextValueViaHtmlNode() {
-
-        textContent = node.getTextContent();
-
-        // Log whether we found text or not.
-        // When textContent doesn't exist, node.getTextContent() returns an empty string but not a null.  This must be handled.
+        /* Log whether we found text or not.  When textContent doesn't exist, node.getTextContent() returns an empty
+           string but not a null.  This must be handled.
+         */
         if ((textContent != null) && (!textContent.isEmpty())) {
             logger.debug("In method addTextValueViaHtmlNode() -- Found textContent, saving '" + textContent + "' to tag bucket.");
         }
         else {
-            logger.debug("No textContent found for this node, node: " + node.getNodeName());
+            logger.debug("No textContent found.");
         }
 
+        recordInfoComments();
+
     }
 
 
-    public String getTextValue() {
-        return textContent;
+
+    public static TagDescriptor createTagDescriptor(TagTemplate template, Node node) {
+
+        TagDescriptor tagDescriptor = new TagDescriptor(template, node.getTextContent());
+
+        tagDescriptor.attributePairs = new HashMap<String, String>();
+        NamedNodeMap nodeAttributes = node.getAttributes();
+        for(int i=0; i < nodeAttributes.getLength(); i++) {
+            Attr attr = (Attr) nodeAttributes.item(i);
+            tagDescriptor.attributePairs.put(attr.getName(), attr.getValue());
+        }
+
+        return tagDescriptor;
     }
 
 
+    public static TagDescriptor createTagDescriptor(TagTemplate template, HintsDescriptor hintsDescriptor) {
 
-    // *** Attributes ***
+        TagDescriptor tagDescriptor = new TagDescriptor(template, hintsDescriptor.getText());
 
-    public NamedNodeMap getAttributes() {
-        return attributes;
+        tagDescriptor.attributePairs = new HashMap<String, String>();
+        List<HintsAttribute> hintsAttributes = hintsDescriptor.getAttributes();
+        for(HintsAttribute hintsAttribute: hintsAttributes) {
+            tagDescriptor.attributePairs.put(hintsAttribute.getAttributeName(), hintsAttribute.getAttributeValue());
+        }
+
+        return tagDescriptor;
     }
-
-
-    // **** Info Comments ****
 
 
     private void recordInfoComments() {
 
-        // The Configurator decides whether to store the comments or not for the final writing.  This decision was somewhat
-        // arbitrary.  I could also always store the comments, and then write them or not at during the final code write.
+        // The Configurator decides whether to store the comments or not for the final writing.
         if(configurator.getWriteComments() == true) {
 
             comment.append("   // Tag: " + tag + "\n");
             comment.append("   // Text Contained by tag: " + textContent);
 
-            if (node.hasAttributes()) {
-
-                for(int i=0; i < attributes.getLength(); i++) {
-                    // TODO: When I decouple TagDescriptor from the Node, be sure to remove this 'Node attr' also.
-                    Node attr = attributes.item(i);
-                    comment.append("   // Attrib: " + attr.getNodeName() + " = " + attr.getNodeValue());
+            if (!attributePairs.isEmpty()) {
+                for (Map.Entry attributePair : attributePairs.entrySet()) {
+                    comment.append("   // Attribute: " + attributePair.getKey() + " = " + attributePair.getValue());
                 }
-
             }
 
-            logger.debug("Stored comment block:");
+            logger.debug("Stored comment block:\n");
             logger.debug(comment.toString());
 
         }
         else {
-            logger.debug("Not recording comments");
+            logger.debug("No comments recorded due to Configurator setting of comments to false.");
         }
 
     }
 
+    // *** Accessors ***
+
+    public String getTag() {
+        logger.trace("Getting the tag: " + tag);
+        return tag;
+    }
+
+    public String getMemberCode() {
+        logger.trace("Getting the member code:\n" + memberCode);
+        return memberCode.toString();
+    }
+
+    public String getMethodCode() {
+        logger.trace("Getting the method code:\n" + methodCode);
+        return methodCode.toString();
+    }
+
+    public String getTextValue() {
+        logger.trace("Getting the text content: " + textContent);
+        return textContent;
+    }
 
     public String getComment() {
-        logger.trace("Getting comment " + comment);
+        logger.trace("Getting the comment: " + comment);
         return comment.toString();
     }
 
 
 
-
-
-    // **** Locator ****
+    // **** Locator creation and storage ****
 
 
     // Locator write method for writing locator from Hints.
@@ -263,8 +209,7 @@ public class TagDescriptor {
             return true;
         }
         else {
-            logger.debug("Cannot write locator for node '" + node.getNodeName() + "', setting write status to false.");
-            logger.debug("It's node.hasAttributes() reports: " + node.hasAttributes());
+            logger.debug("Cannot write locator for node '" + tag + "', setting write status to false.");
             return false;
         }
 
@@ -352,7 +297,7 @@ public class TagDescriptor {
 
     // Get the css string using the node's ancestors.
     // This is public because it's also used to write the analysis file.
-    public String makeCssLocator() {
+    private String makeCssLocator() {
 
         // This flag records the condition where an ID attribute is found and we can stop searching ancestor nodes.
         boolean foundId = false;
@@ -386,8 +331,7 @@ public class TagDescriptor {
             if (ancestorNode.hasAttributes()) {
 
                 NamedNodeMap parentAttributes = ancestorNode.getAttributes();
-                int numberOfAttributes = parentAttributes.getLength();
-                logger.debug("Current ancestor node has " + numberOfAttributes + " attributes.");
+                logger.debug("Current ancestor node has " + parentAttributes.getLength() + " attributes.");
 
                 Attr attrib = (Attr) parentAttributes.getNamedItem("ID");
                 if (attrib != null) {

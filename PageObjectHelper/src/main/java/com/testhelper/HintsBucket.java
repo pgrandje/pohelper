@@ -46,12 +46,11 @@ public class HintsBucket {
 
     public void addAttribute(NamedNodeMap attributes) {
 
-        int numberOfAttributes = attributes.getLength();
-
-        for (int i=0; i<numberOfAttributes; i++) {
+        for (int i=0; i<attributes.getLength(); i++) {
             Attr attr = (Attr) attributes.item(i);
             analysisBuffer.append(HintsDescriptor.ATTRIBUTE_MARKER + attr.getName() + " = " + attr.getValue() + "\n");
         }
+
     }
 
 
