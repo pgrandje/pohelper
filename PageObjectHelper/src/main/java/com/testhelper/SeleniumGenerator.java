@@ -104,13 +104,13 @@ public class SeleniumGenerator
             // TODO: The code generation here is copied in the generate from hints section also--put this in a helper method.
             // Write the member code to the code buffer.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
-                    codeBucket.addCode(tagDescriptor.getComment());
-                    codeBucket.addCode(tagDescriptor.getMemberCode());
+                codeBucket.addCode(tagDescriptor.getComment());
+                codeBucket.addCode(tagDescriptor.getMemberCode());
             }
 
             // Write the method code to the code buffer.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
-                    codeBucket.addCode(tagDescriptor.getMethodCode());
+                codeBucket.addCode(tagDescriptor.getMethodCode());
             }
 
             // Dump the generated sourcecode.

@@ -91,14 +91,10 @@ public class NodeScanner {
                     //        can be written.  WriteLocator() ad writeMemberAndMethods() could be run from the TagDescriptor contructor,
                     //        decoupling these to classes further. As is, if the locator can't be computed, the tag is not added
                     //        to the list for generation.  But this would preclude writing only informational comments to the output.
-                    if(tagDescriptor.writeLocator() == false) {
-                        logger.warn("Locator could not be written for this node with nodename '" + current.getNodeName() + "'.");
-                    }
-                    else {
-                        tagDescriptor.writeMemberAndMethods(memberNameRecorder);
-                        tagDescriptorList.add(tagDescriptor);
-                    }
-
+                    Locator locator = LocatorMaker.createLocatorMaker(Configurator.getConfigurator()).makeLocator(current);
+                    tagDescriptor.writeLocatorString(locator);
+                    tagDescriptor.writeMemberAndMethods(memberNameRecorder);
+                    tagDescriptorList.add(tagDescriptor);
                 }
 
             }
