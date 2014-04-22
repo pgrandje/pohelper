@@ -53,7 +53,7 @@ public class LocatorMaker {
         else if ((configurator.getLocatorConfig() == Configurator.LocatorConfig.ATTRIBS_CSS ||
                   configurator.getLocatorConfig() == Configurator.LocatorConfig.CSS_ONLY
                  ) &&
-                    writeLocatorWithCss(node) == true
+                    makeCssLocator(node) == true
                 ) {
             logger.debug("Locator written using css locator.");
             return locator;
@@ -119,10 +119,23 @@ public class LocatorMaker {
 
 
 
+    private boolean makeCssLocator(Node node) {
+
+        String cssLocator = makeCssLocatorString(node);
+        if ((cssLocator == null) || cssLocator.isEmpty()) {
+            logger.warn("WARNING: CSS locator is null or is empty.");
+            return false;
+        }
+
+        locator = new Locator(Locator.LocatorType.CSS, cssLocator);
+        return true;
+
+    }
+
 
     // Get the css string using the node's ancestors.
     // This is public because it's also used to write the analysis file.
-    private String makeCssLocator(Node node) {
+    private String makeCssLocatorString(Node node) {
 
         // This flag records the condition where an ID attribute is found and we can stop searching ancestor nodes.
         boolean foundId = false;
@@ -300,23 +313,6 @@ public class LocatorMaker {
     }
 
 
-    private boolean writeLocatorWithCss(Node node) {
-
-        String cssLocator = makeCssLocator(node);
-
-        if ((cssLocator == null) || cssLocator.isEmpty()) {
-            logger.warn("WARNING: CSS locator is null or is empty.");
-            return false;
-        }
-
-        // replace the <locator> symbol in the member code snippet.
-        StringBuffer alteredMemberCode = new StringBuffer(
-                        memberCode.toString().replaceAll("<locator>", "css = \"" + cssLocator + "\""));
-        memberCode = alteredMemberCode;
-
-        return true;
-
-    }
 
 
 

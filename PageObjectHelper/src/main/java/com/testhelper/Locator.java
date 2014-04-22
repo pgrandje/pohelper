@@ -7,27 +7,45 @@ package com.testhelper;
  */
 public class Locator {
 
-    public enum LocatorType {ID, NAME, CLASS, CSS, OTHER_ATTRIBUTE};
+    public enum LocatorType {
+        ID ("id"),
+        NAME ("name"),
+        CLASS ("class"),
+        CSS ("css");
+
+        private final String typeString;
+
+        private LocatorType(String s) {
+            typeString = s;
+        }
+
+        private String getTypeStringName(){
+           return typeString;
+        }
+
+    }
 
     private LocatorType type;
-    private String typeStringName;
     private String value;
 
     public Locator(LocatorType type, String value) {
+        if (type == null)
+            throw new SeleniumGeneratorException("Null LocatorType passed to new Locator.");
         this.type = type;
         this.value = value;
-        setTypeStringName(type);
     }
+
+    // setType() is not needed, we want to enforce setting the type when a Locator is constructed.
 
     public LocatorType getType() {
         return type;
     }
 
-    public void setType(LocatorType type) {
-        this.type = type;
-    }
-
     public String getValue() {
+        if (value == null)
+            throw new SeleniumGeneratorException("Locator value must not be null when assigning it to code.");
+        else if (value.isEmpty())
+            throw new SeleniumGeneratorException("Locator value must not be an empty string when assigning it to code.");
         return value;
     }
 
@@ -35,26 +53,8 @@ public class Locator {
         this.value = value;
     }
 
-    public void setTypeStringName(LocatorType type) {
-
-        if (type == LocatorType.ID) {
-            typeStringName = "id";
-        }
-        else if (type == LocatorType.NAME) {
-            typeStringName = "name";
-        }
-        else if (type == LocatorType.CLASS) {
-            typeStringName = "class";
-        }
-        else if (type == LocatorType.CSS) {
-            typeStringName = "css";
-        }
-        else {
-            typeStringName = null;
-        }
-    }
-
     public String getTypeStringName() {
-        return typeStringName;
+        return type.getTypeStringName();
     }
+
 }

@@ -162,22 +162,6 @@ public class TagDescriptor {
 
     public void writeLocatorString(Locator locator) {
         // TODO: Verify String.replaceAll() and not String.replace() is what I want for setting locator values.
-
-        if (locator == null) {
-            throw new SeleniumGeneratorException("Got null Locator object writing locator string in TagDescriptor.");
-        }
-        else if (locator.getTypeStringName() == null ||
-                 locator.getValue() == null
-                ) {
-            throw new SeleniumGeneratorException("Invalid locator object--One or both of it's type string name or it's value is null.");
-        }
-        else if (locator.getTypeStringName().isEmpty() ||
-                 locator.getValue().isEmpty()
-                ) {
-            throw new SeleniumGeneratorException("Invalid locator object--type name is '" + locator.getTypeStringName() + " value is '" + locator.getValue() + "'.");
-        }
-
-
         StringBuffer alteredMemberCode = new StringBuffer(
                         memberCode.toString().replaceAll(configurator.getLocatorIndicator(), locator.getTypeStringName() + " = \"" + locator.getValue() + "\""));
         memberCode = alteredMemberCode;

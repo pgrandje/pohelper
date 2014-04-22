@@ -14,3 +14,6 @@ Verify in TagDescriptor if I should use String.replace() instead of String.repla
 
 
 In TagDescriptor.writeLocatorString() move the locator validation in to a validate() method in Locator class.
+
+
+All TagDescriptor logging should be DEBUG.
