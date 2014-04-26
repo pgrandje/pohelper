@@ -20,6 +20,8 @@ import java.util.*;
  *
  * The TagDescriptor stores the code snippets that will be used for the eventual code generation.
  *
+ * TagDescriptor is also used for generating the Hints for a given tag.
+ *
  * User: pgrandje
  * Date: 6/2/12
  */
@@ -40,6 +42,7 @@ public class TagDescriptor {
 
     // *** Constructors, Factories, and Factory support methods ***
 
+    // TODO: 2 different constructor for TagDescriptor is probably better than a factory--plus, I could use two diff types.
     public static TagDescriptor createTagDescriptor(TagTemplate template, Node node) {
 
         TagDescriptor tagDescriptor = new TagDescriptor(template, node.getTextContent());
@@ -155,7 +158,14 @@ public class TagDescriptor {
         return comment.toString();
     }
 
+    // TODO: Some methods are only needed when writing hints and others are for writing code directly.  Can I separate this into two TagDescriptor types.
+    public HashMap<String, String> getAttributePairs() {
+        return attributePairs;
+    }
 
+    public String getLocatorString() {
+        return locatorString;
+    }
 
     // **** Locator String ****
 
@@ -175,7 +185,7 @@ public class TagDescriptor {
      *  - any attributes that exist.
      *  - a default symbol name.
     */
-    // TODO: If the TagDescripter stored a ref to the NameRecorder I could avoid having to pass it so often.
+    // TODO: If the TagDescriptor stored a ref to the NameRecorder I could avoid having to pass it so often.
     public void writeMemberAndMethods(NameRecorder symbolNameRecorder) {
 
         if (writeMemberNameUsingTextContent(symbolNameRecorder) == true) {

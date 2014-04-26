@@ -80,8 +80,8 @@ public class SeleniumGenerator
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
                 hintsBucket.addTag(tagDescriptor.getTag());
                 hintsBucket.addText(tagDescriptor.getTextValue());
-                hintsBucket.addAttribute(tagDescriptor.getAttributes());
-                hintsBucket.addCssLocator(tagDescriptor.makeCssLocator());
+                hintsBucket.addAttributes(tagDescriptor.getAttributePairs());
+                hintsBucket.addLocator(tagDescriptor.getLocatorString());
             }
 
             // Dump the analysis file.
