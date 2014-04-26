@@ -308,23 +308,25 @@ public class LocatorFactory {
 
 
     // Locator write method for writing locator from Hints.
-    public void createLocator(HintsDescriptor.Locator locator)  {
+    // TODO: If HintsDescriptor can use the Locator Type, I can remove this method entirely.
+    public static Locator createLocator(HintsDescriptor.Locator hintsLocator)  {
 
-        logger.debug("Writing locator from hints using Locator Type '" + locator.type.toString() + "' and value '" + locator.locatorValue + "'.");
+        logger.debug("Writing locator from Hints Locator using Type '" +
+                hintsLocator.type.toString() + "' and value '" + hintsLocator.locatorValue + "'.");
 
+        // TODO:  If I change the HintsLocator in the HintsDescriptor to use my new Locator type, I can eliminate all this code.
+
+        locator = new Locator(hintsLocator.type, "");
         String locatorString = null;
-        if (locator.type == HintsDescriptor.LocatorType.ID) {
+        if (hintsLocator.type == HintsDescriptor.LocatorType.ID) {
             locatorString = "id = ";
         }
         else if (locator.type == HintsDescriptor.LocatorType.CSS_LOCATOR) {
             locatorString = "css = ";
         }
-        locatorString = locatorString + "\"" + locator.locatorValue + "\"";
 
-        // TODO: If I have to replace the entire StringBuffer it may make more sense for memberCode to just be a String.
-        // TODO: Why am I using replaceAll()?  Shouldn't I be using replace()?  I thought replaceAll() required a regex.
-        memberCode = new StringBuffer(
-        memberCode.toString().replaceAll(configurator.getLocatorIndicator(), locatorString));
+
+        return locator;
 
     }
 

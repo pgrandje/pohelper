@@ -130,7 +130,8 @@ public class SeleniumGenerator
             for(HintsDescriptor hintsDescriptor: hintsDescriptorList) {
                 TagTemplate tagTemplate = tagSwitcher.getTemplate(hintsDescriptor.getTag());
                 TagDescriptor tagDescriptor = TagDescriptor.createTagDescriptor(tagTemplate, hintsDescriptor);
-                tagDescriptor.createLocator(hintsDescriptor.getLocator());
+                Locator locator = LocatorFactory.createLocator(hintsDescriptor.getLocator());
+                tagDescriptor.writeLocatorString(locator);
                 tagDescriptor.writeMemberAndMethods(memberNameRecorder);
                 tagDescriptorList.add(tagDescriptor);
             }

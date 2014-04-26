@@ -19,3 +19,6 @@ In TagDescriptor.writeLocatorString() move the locator validation in to a valida
 All TagDescriptor logging should be DEBUG.
 
 Combine the createLocatorMaker() factory and makeLocator() into one method.
+
+
+Change the HintsDescriptor's HintsLocator to just use the Locator.
