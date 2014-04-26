@@ -17,30 +17,21 @@ import java.util.LinkedList;
  * User: pgrandje
  * Date: 4/20/14
  */
-public class LocatorMaker {
+public class LocatorFactory {
 
-    private static final Logger logger = Logger.getLogger(LocatorMaker.class);
+    private static final Logger logger = Logger.getLogger(LocatorFactory.class);
 
-    private Configurator configurator;
+    private static Configurator configurator;
 
-    private Locator locator;
+    /* The Locator is returned by the top-level factory function, but it's the lower-level functions that do the building.
+       So, it's a member to avoid passing it.
+    */
+    static Locator locator = null;
 
     // Factory that creates the locatorMaker to create locators from the DOM.  Node is the UI element to be located.
-    public static LocatorMaker createLocatorMaker(Configurator configurator) {
+    public static Locator createLocator(Node node) {
 
-        LocatorMaker locatorMaker = new LocatorMaker();
-        locatorMaker.configurator = configurator;
-
-        return locatorMaker;
-    }
-
-
-
-
-    /* Writing the locator using a Node requires the DOM to be loaded using org.w3c.dom.
-       Returns a boolean because if we can't write a locator we want to inform the calling program.
-     */
-    public Locator makeLocator(Node node) {
+        configurator = Configurator.getConfigurator();
 
         if ((configurator.getLocatorConfig() == Configurator.LocatorConfig.ATTRIBS_CSS ||
              configurator.getLocatorConfig() == Configurator.LocatorConfig.ATTRIBS_ONLY
@@ -48,6 +39,7 @@ public class LocatorMaker {
                 makeAttributeLocator(node) == true
            ) {
             logger.debug("Locator written using an attribute.");
+            // TODO: Not easy to read--I should show how locator get assigned here and return at the bottom.
             return locator;
         }
         else if ((configurator.getLocatorConfig() == Configurator.LocatorConfig.ATTRIBS_CSS ||
@@ -72,7 +64,7 @@ public class LocatorMaker {
 
     // TODO:  Fix Bug--A textless <p> with no attributes returned true but should have returned false.
     // TODO: Fis Bug -- <li>s exist with attributes that can't be used as locators, but doesn't generate a css either.
-    private boolean makeAttributeLocator(Node node) {
+    private static boolean makeAttributeLocator(Node node) {
 
         logger.debug("Are there attributes we can use for writing the locator? ...");
 
@@ -119,7 +111,7 @@ public class LocatorMaker {
 
 
 
-    private boolean makeCssLocator(Node node) {
+    private static boolean makeCssLocator(Node node) {
 
         String cssLocator = makeCssLocatorString(node);
         if ((cssLocator == null) || cssLocator.isEmpty()) {
@@ -135,7 +127,7 @@ public class LocatorMaker {
 
     // Get the css string using the node's ancestors.
     // This is public because it's also used to write the analysis file.
-    private String makeCssLocatorString(Node node) {
+    private static String makeCssLocatorString(Node node) {
 
         // This flag records the condition where an ID attribute is found and we can stop searching ancestor nodes.
         boolean foundId = false;
@@ -315,21 +307,11 @@ public class LocatorMaker {
 
 
 
-
-
-
     // Locator write method for writing locator from Hints.
-    public String writeLocator(HintsDescriptor.Locator hintsLocator) {
-        locatorFromHints = hintsLocator;
-        writeLocatorWithLocatorObject(locatorFromHints);
-    }
-
-    // Locator write method for writing locator from Hints.
-    private void writeLocatorWithLocatorObject(HintsDescriptor.Locator locator)  {
+    public void createLocator(HintsDescriptor.Locator locator)  {
 
         logger.debug("Writing locator from hints using Locator Type '" + locator.type.toString() + "' and value '" + locator.locatorValue + "'.");
 
-        // TODO: This locatorString building logic could go in the Locator class.
         String locatorString = null;
         if (locator.type == HintsDescriptor.LocatorType.ID) {
             locatorString = "id = ";

@@ -126,23 +126,23 @@ public class SeleniumGenerator
             NameRecorder memberNameRecorder = new NameRecorder("Member Name Recorder");
 
             // Currently I just use the tagSwitcher since it's global to main()
-            TagDescriptorList hintsTagDescriptorList = new TagDescriptorList();
+            TagDescriptorList tagDescriptorList = new TagDescriptorList();
             for(HintsDescriptor hintsDescriptor: hintsDescriptorList) {
                 TagTemplate tagTemplate = tagSwitcher.getTemplate(hintsDescriptor.getTag());
-                TagDescriptor hintsTagDescriptor = TagDescriptor.createTagDescriptor(tagTemplate, hintsDescriptor);
-                hintsTagDescriptor.writeLocator(hintsDescriptor.getLocator());
-                hintsTagDescriptor.writeMemberAndMethods(memberNameRecorder);
-                hintsTagDescriptorList.add(hintsTagDescriptor);
+                TagDescriptor tagDescriptor = TagDescriptor.createTagDescriptor(tagTemplate, hintsDescriptor);
+                tagDescriptor.createLocator(hintsDescriptor.getLocator());
+                tagDescriptor.writeMemberAndMethods(memberNameRecorder);
+                tagDescriptorList.add(tagDescriptor);
             }
 
             // TODO: The code generation here is copied in sections above also--put this in a helper method.
             // Write the member code to the code buffer.
-            for(TagDescriptor hintsTagDescriptor : hintsTagDescriptorList) {
+            for(TagDescriptor hintsTagDescriptor : tagDescriptorList) {
                     codeBucket.addCode(hintsTagDescriptor.getComment());
                     codeBucket.addCode(hintsTagDescriptor.getMemberCode());
             }
             // Write the method code to the code buffer.
-            for(TagDescriptor hintsTagDescriptor : hintsTagDescriptorList) {
+            for(TagDescriptor hintsTagDescriptor : tagDescriptorList) {
                 codeBucket.addCode(hintsTagDescriptor.getMethodCode());
             }
 

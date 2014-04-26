@@ -40,6 +40,35 @@ public class TagDescriptor {
 
     // *** Constructors, Factories, and Factory support methods ***
 
+    public static TagDescriptor createTagDescriptor(TagTemplate template, Node node) {
+
+        TagDescriptor tagDescriptor = new TagDescriptor(template, node.getTextContent());
+
+        tagDescriptor.attributePairs = new HashMap<String, String>();
+        NamedNodeMap nodeAttributes = node.getAttributes();
+        for(int i=0; i < nodeAttributes.getLength(); i++) {
+            Attr attr = (Attr) nodeAttributes.item(i);
+            tagDescriptor.attributePairs.put(attr.getName(), attr.getValue());
+        }
+
+        return tagDescriptor;
+    }
+
+
+    public static TagDescriptor createTagDescriptor(TagTemplate template, HintsDescriptor hintsDescriptor) {
+
+        TagDescriptor tagDescriptor = new TagDescriptor(template, hintsDescriptor.getText());
+
+        tagDescriptor.attributePairs = new HashMap<String, String>();
+        List<HintsAttribute> hintsAttributes = hintsDescriptor.getAttributes();
+        for(HintsAttribute hintsAttribute: hintsAttributes) {
+            tagDescriptor.attributePairs.put(hintsAttribute.getAttributeName(), hintsAttribute.getAttributeValue());
+        }
+
+        return tagDescriptor;
+    }
+
+
     private TagDescriptor(TagTemplate tagTemplate, String textValue) {
 
         configurator = Configurator.getConfigurator();
@@ -72,36 +101,6 @@ public class TagDescriptor {
 
         recordInfoComments();
 
-    }
-
-
-
-    public static TagDescriptor createTagDescriptor(TagTemplate template, Node node) {
-
-        TagDescriptor tagDescriptor = new TagDescriptor(template, node.getTextContent());
-
-        tagDescriptor.attributePairs = new HashMap<String, String>();
-        NamedNodeMap nodeAttributes = node.getAttributes();
-        for(int i=0; i < nodeAttributes.getLength(); i++) {
-            Attr attr = (Attr) nodeAttributes.item(i);
-            tagDescriptor.attributePairs.put(attr.getName(), attr.getValue());
-        }
-
-        return tagDescriptor;
-    }
-
-
-    public static TagDescriptor createTagDescriptor(TagTemplate template, HintsDescriptor hintsDescriptor) {
-
-        TagDescriptor tagDescriptor = new TagDescriptor(template, hintsDescriptor.getText());
-
-        tagDescriptor.attributePairs = new HashMap<String, String>();
-        List<HintsAttribute> hintsAttributes = hintsDescriptor.getAttributes();
-        for(HintsAttribute hintsAttribute: hintsAttributes) {
-            tagDescriptor.attributePairs.put(hintsAttribute.getAttributeName(), hintsAttribute.getAttributeValue());
-        }
-
-        return tagDescriptor;
     }
 
 
