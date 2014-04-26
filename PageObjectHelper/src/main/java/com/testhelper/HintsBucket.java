@@ -7,6 +7,8 @@ import org.w3c.dom.NamedNodeMap;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Stores the Hints file output as it is accumulated.  Serves as a buffer which can be modified before
@@ -44,18 +46,16 @@ public class HintsBucket {
     }
 
 
-    public void addAttribute(NamedNodeMap attributes) {
-
-        int numberOfAttributes = attributes.getLength();
-
-        for (int i=0; i<numberOfAttributes; i++) {
-            Attr attr = (Attr) attributes.item(i);
-            analysisBuffer.append(HintsDescriptor.ATTRIBUTE_MARKER + attr.getName() + " = " + attr.getValue() + "\n");
+    public void addAttributes(HashMap<String, String> attributePairs) {
+        if (!attributePairs.isEmpty()) {
+            for (Map.Entry attributePair : attributePairs.entrySet()) {
+                analysisBuffer.append(HintsDescriptor.ATTRIBUTE_MARKER + attributePair.getKey() + " = " + attributePair.getValue() + "\n");
+            }
         }
     }
 
 
-    public void addCssLocator(String locator) {
+    public void addLocator(String locator) {
         analysisBuffer.append(HintsDescriptor.LOCATOR_MARKER + locator + " \n");
     }
 

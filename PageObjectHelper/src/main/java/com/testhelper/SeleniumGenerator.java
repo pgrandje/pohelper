@@ -80,8 +80,8 @@ public class SeleniumGenerator
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
                 hintsBucket.addTag(tagDescriptor.getTag());
                 hintsBucket.addText(tagDescriptor.getTextValue());
-                hintsBucket.addAttribute(tagDescriptor.getAttributes());
-                hintsBucket.addCssLocator(tagDescriptor.makeCssLocator());
+                hintsBucket.addAttributes(tagDescriptor.getAttributePairs());
+                hintsBucket.addLocator(tagDescriptor.getLocatorString());
             }
 
             // Dump the analysis file.
@@ -104,13 +104,13 @@ public class SeleniumGenerator
             // TODO: The code generation here is copied in the generate from hints section also--put this in a helper method.
             // Write the member code to the code buffer.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
-                    codeBucket.addCode(tagDescriptor.getComment());
-                    codeBucket.addCode(tagDescriptor.getMemberCode());
+                codeBucket.addCode(tagDescriptor.getComment());
+                codeBucket.addCode(tagDescriptor.getMemberCode());
             }
 
             // Write the method code to the code buffer.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
-                    codeBucket.addCode(tagDescriptor.getMethodCode());
+                codeBucket.addCode(tagDescriptor.getMethodCode());
             }
 
             // Dump the generated sourcecode.
@@ -126,23 +126,24 @@ public class SeleniumGenerator
             NameRecorder memberNameRecorder = new NameRecorder("Member Name Recorder");
 
             // Currently I just use the tagSwitcher since it's global to main()
-            TagDescriptorList hintsTagDescriptorList = new TagDescriptorList();
+            TagDescriptorList tagDescriptorList = new TagDescriptorList();
             for(HintsDescriptor hintsDescriptor: hintsDescriptorList) {
                 TagTemplate tagTemplate = tagSwitcher.getTemplate(hintsDescriptor.getTag());
-                TagDescriptor hintsTagDescriptor = new TagDescriptor(tagTemplate, hintsDescriptor);
-                hintsTagDescriptor.writeLocator(hintsDescriptor.getLocator());
-                hintsTagDescriptor.writeMemberAndMethods(memberNameRecorder);
-                hintsTagDescriptorList.add(hintsTagDescriptor);
+                TagDescriptor tagDescriptor = TagDescriptor.createTagDescriptor(tagTemplate, hintsDescriptor);
+                Locator locator = LocatorFactory.createLocator(hintsDescriptor.getLocator());
+                tagDescriptor.writeLocatorString(locator);
+                tagDescriptor.writeMemberAndMethods(memberNameRecorder);
+                tagDescriptorList.add(tagDescriptor);
             }
 
             // TODO: The code generation here is copied in sections above also--put this in a helper method.
             // Write the member code to the code buffer.
-            for(TagDescriptor hintsTagDescriptor : hintsTagDescriptorList) {
+            for(TagDescriptor hintsTagDescriptor : tagDescriptorList) {
                     codeBucket.addCode(hintsTagDescriptor.getComment());
                     codeBucket.addCode(hintsTagDescriptor.getMemberCode());
             }
             // Write the method code to the code buffer.
-            for(TagDescriptor hintsTagDescriptor : hintsTagDescriptorList) {
+            for(TagDescriptor hintsTagDescriptor : tagDescriptorList) {
                 codeBucket.addCode(hintsTagDescriptor.getMethodCode());
             }
 

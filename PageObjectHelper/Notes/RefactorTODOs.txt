@@ -1,0 +1,24 @@
+Refactor TODOS:
+
+Should I remove the HintsAttribute object and use a map?  Or should a make a more general Attribute object and put that in the TagDescriptor also?
+
+Is a HashMap the right way to store attributes?  Seems that I can't iterate through it.
+
+
+In Locator add the code for turning enums into strings.
+
+Verify in TagDescriptor if I should use String.replace() instead of String.replaceAll().
+
+*** Change LocatorMaker.writeLocator() returning boolean to returning a Locator.
+    I prob shouldn't not generate the code in NodeScanner simply because it couldn't write a locator.
+
+
+In TagDescriptor.writeLocatorString() move the locator validation in to a validate() method in Locator class.
+
+
+All TagDescriptor logging should be DEBUG.
+
+Combine the createLocatorMaker() factory and makeLocator() into one method.
+
+
+Change the HintsDescriptor's HintsLocator to just use the Locator.
