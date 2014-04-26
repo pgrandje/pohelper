@@ -10,9 +10,13 @@ Command-line Params
 -------------------
 - I typically run with the -url and -dest options.  I set these in the IDE's run params input box.  For example
 
-    -url http://www.abcnews.com -dest /Users/pgrandje/MyProjects/testgentests/mygeneratedpageobjects
+    -url http://<my remote page> -dest <Path to My Projects Folder>/PageObjectRunner/src/main/java/com/selgentests/pageobjects
 
   This defaults to generating the page object code although there are other options, see below.
+
+  For example: Here's one I commonly ran when testing the app:
+
+  -url http://www.cnn.com -dest /Users/pgrandje/IdeaProjects/POHelper/PageObjectRunner/src/main/java/com/selgentests/pageobjects
 
 - Currently I'm not running this from the command-line yet, although if you're comfortable setting up a typical java runtime
 environment you should only need to be sure your CLASSPATH is set correctly to run from the command-line.
