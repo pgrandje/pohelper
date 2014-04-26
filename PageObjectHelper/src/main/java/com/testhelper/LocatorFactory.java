@@ -268,7 +268,7 @@ public class LocatorFactory {
 
 
 
-    private String processSiblingPosition(Node currentNode) {
+    private static String processSiblingPosition(Node currentNode) {
 
         int counter = 1;
         boolean processNthChild = false;
@@ -305,8 +305,6 @@ public class LocatorFactory {
     }
 
 
-
-
     // Locator write method for writing locator from Hints.
     // TODO: If HintsDescriptor can use the Locator Type, I can remove this method entirely.
     public static Locator createLocator(HintsDescriptor.Locator hintsLocator)  {
@@ -314,17 +312,12 @@ public class LocatorFactory {
         logger.debug("Writing locator from Hints Locator using Type '" +
                 hintsLocator.type.toString() + "' and value '" + hintsLocator.locatorValue + "'.");
 
-        // TODO:  If I change the HintsLocator in the HintsDescriptor to use my new Locator type, I can eliminate all this code.
-
-        locator = new Locator(hintsLocator.type, "");
-        String locatorString = null;
         if (hintsLocator.type == HintsDescriptor.LocatorType.ID) {
-            locatorString = "id = ";
+            locator = new Locator(Locator.LocatorType.ID, hintsLocator.locatorValue);
         }
-        else if (locator.type == HintsDescriptor.LocatorType.CSS_LOCATOR) {
-            locatorString = "css = ";
+        else if (hintsLocator.type == HintsDescriptor.LocatorType.CSS_LOCATOR) {
+            locator = new Locator(Locator.LocatorType.CSS, hintsLocator.locatorValue);
         }
-
 
         return locator;
 
