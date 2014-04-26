@@ -306,17 +306,38 @@ public class LocatorFactory {
 
 
     // Locator write method for writing locator from Hints.
-    // TODO: If HintsDescriptor can use the Locator Type, I can remove this method entirely.
-    public static Locator createLocator(HintsDescriptor.Locator hintsLocator)  {
+    public static Locator createLocator(String hintsLocatorString)  {
 
-        logger.debug("Writing locator from Hints Locator using Type '" +
-                hintsLocator.type.toString() + "' and value '" + hintsLocator.locatorValue + "'.");
-
-        if (hintsLocator.type == HintsDescriptor.LocatorType.ID) {
-            locator = new Locator(Locator.LocatorType.ID, hintsLocator.locatorValue);
+        if ((hintsLocatorString == null) || (hintsLocatorString.equals("null"))) {
+            logger.warn("Locator is null after reading from hints file.");
         }
-        else if (hintsLocator.type == HintsDescriptor.LocatorType.CSS_LOCATOR) {
-            locator = new Locator(Locator.LocatorType.CSS, hintsLocator.locatorValue);
+        else {
+            logger.debug("Creating locator from string '" + hintsLocatorString + "'.");
+
+            String [] locatorStringComponents = hintsLocatorString.split(" = ");
+            String locatorTypeString = locatorStringComponents[0];
+            String locatorValueString = locatorStringComponents[1];
+
+            Locator.LocatorType locatorType = null;
+            // TODO: Use a switch-case when creating Locator types from a string.
+            if (locatorTypeString.equals(HintsDescriptor.LOCATOR_TYPE_STRING_ID)) {
+                locatorType = Locator.LocatorType.ID;
+            }
+            else if (locatorTypeString.equals(HintsDescriptor.LOCATOR_TYPE_STRING_NAME)) {
+                locatorType = Locator.LocatorType.NAME;
+            }
+            else if (locatorTypeString.equals(HintsDescriptor.LOCATOR_TYPE_STRING_CLASS)) {
+                locatorType = Locator.LocatorType.CLASS;
+            }
+            else if (locatorTypeString.equals(HintsDescriptor.LOCATOR_TYPE_STRING_CSS)) {
+                locatorType = Locator.LocatorType.CSS;
+            }
+            else {
+                logger.warn("Unknown Locator string found in hints file. Locator Type is null!");
+                locatorType = null;
+            }
+
+            locator = new Locator(locatorType, locatorValueString);
         }
 
         return locator;

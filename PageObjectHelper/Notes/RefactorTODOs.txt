@@ -2,7 +2,7 @@ Refactor TODOS:
 
 Should I remove the HintsAttribute object and use a map?  Or should a make a more general Attribute object and put that in the TagDescriptor also?
 
-Is a HashMap the right way to store attributes?  Seems that I can't iterate through it.
+Is a HashMap the right way to store attributes?  An Attribute object would give helpful type checking.
 
 
 In Locator add the code for turning enums into strings.
@@ -21,4 +21,4 @@ All TagDescriptor logging should be DEBUG.
 Combine the createLocatorMaker() factory and makeLocator() into one method.
 
 
-Change the HintsDescriptor's HintsLocator to just use the Locator.
+

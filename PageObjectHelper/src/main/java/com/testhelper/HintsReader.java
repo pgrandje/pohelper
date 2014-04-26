@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * Reads in the Hints file for the Generator when the modified Hints file is used for code generation.
@@ -129,11 +130,12 @@ public class HintsReader {
 
                     // Read and store the css locator if we have one in the analysis.
                     if (line.contains(HintsDescriptor.LOCATOR_MARKER)) {
-                        String locator = line.substring(HintsDescriptor.LOCATOR_MARKER.length());
-                        logger.debug("Found locator '" + locator + "'.");
-                        // TODO: Why am I only writing css locators to the analysis file?
-                        hintsDescriptor.setLocatorType(HintsDescriptor.LocatorType.CSS_LOCATOR);
-                        hintsDescriptor.setLocatorValue(locator);
+                        String locatorString = line.substring(HintsDescriptor.LOCATOR_MARKER.length());
+                        logger.debug("Found locator string '" + locatorString + "'.");
+
+                        Locator locator = LocatorFactory.createLocator(locatorString);
+                        hintsDescriptor.setLocator(locator);
+
                         line = hintsFile.readLine();
                     }
 
