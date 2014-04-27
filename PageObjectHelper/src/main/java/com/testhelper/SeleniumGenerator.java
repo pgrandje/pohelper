@@ -129,7 +129,7 @@ public class SeleniumGenerator
             TagDescriptorList tagDescriptorList = new TagDescriptorList();
             for(HintsDescriptor hintsDescriptor: hintsDescriptorList) {
                 TagTemplate tagTemplate = tagSwitcher.getTemplate(hintsDescriptor.getTag());
-                TagDescriptor tagDescriptor = TagDescriptor.createTagDescriptor(tagTemplate, hintsDescriptor);
+                TagDescriptor tagDescriptor = new TagDescriptor(tagTemplate, hintsDescriptor);
                 // TODO: If the tagDescriptor has already been passed the hintsDescriptor with it's stored Locator, this call to writeLocatorString() could be done internally.
                 tagDescriptor.writeLocatorString(hintsDescriptor.getLocator());
                 tagDescriptor.writeMemberAndMethods(memberNameRecorder);
