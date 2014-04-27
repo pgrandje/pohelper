@@ -156,7 +156,6 @@ public class TagDescriptor {
         return comment.toString();
     }
 
-    // TODO: Some methods are only needed when writing hints and others are for writing code directly.  Can I separate this into two TagDescriptor types.
     public HashMap<String, String> getAttributePairs() {
         return attributePairs;
     }
@@ -183,31 +182,30 @@ public class TagDescriptor {
      *  - a default symbol name.
     */
     // TODO: If the TagDescriptor stored a ref to the NameRecorder I could avoid having to pass it so often.
-    public void writeMemberAndMethods(NameRecorder symbolNameRecorder) {
+    public void writeMemberAndMethods(NameRecorder memberNameRecorder) {
 
-        if (writeMemberNameUsingTextContent(symbolNameRecorder) == true) {
-            logger.debug("Symbols written using tag's textContent value.");
+        if (writeMemberNameUsingTextContent(memberNameRecorder) == true) {
+            logger.debug("Symbols written using tag's text content.");
         }
-        else if (writeMemberNameUsingAttributeValue(symbolNameRecorder) == true) {
-            logger.debug("Symbols written using tag's attribute values.");
+        else if (writeMemberNameUsingAttributeValue(memberNameRecorder) == true) {
+            logger.debug("Symbols written using an attribute value.");
         }
         else {
-            writeDefaultMemberName(symbolNameRecorder);
+            writeDefaultMemberName(memberNameRecorder);
             logger.debug("Tag had no textContent or attributes we could use for symbol writing.  Using default symbol names.");
         }
 
     }
 
 
-
-    private boolean writeMemberNameUsingTextContent(NameRecorder nameRecorder) {
+    private boolean writeMemberNameUsingTextContent(NameRecorder memberNameRecorder) {
 
         logger.debug("Checking whether there's textContent we can use for symbol writing.");
 
         if (textContent != null && !textContent.isEmpty()) {
 
             logger.debug("Using text content '" + textContent + "' for symbol replacement.");
-            writeMemberAndMethodNames(nameRecorder.makeSymbolName(textContent));
+            writeMemberAndMethodNames(memberNameRecorder.makeSymbolName(textContent));
 
             return true;
 
@@ -219,7 +217,7 @@ public class TagDescriptor {
 
     // Sets the Generate Status to true if it find attributes it can use for symbol writing.
     // Returns false if it had no attributes it could use for symbol writing.
-    private boolean writeMemberNameUsingAttributeValue(NameRecorder nameRecorder) {
+    private boolean writeMemberNameUsingAttributeValue(NameRecorder memberNameRecorder) {
 
         String attributeValue;
 
@@ -248,7 +246,7 @@ public class TagDescriptor {
             }
 
             logger.debug("Using attribute value '" + attributeValue + "' for symbol replacement.");
-            writeMemberAndMethodNames(nameRecorder.makeSymbolName(attributeValue));
+            writeMemberAndMethodNames(memberNameRecorder.makeSymbolName(attributeValue));
             return true;
 
         }
@@ -261,10 +259,10 @@ public class TagDescriptor {
 
 
 
-    private void writeDefaultMemberName(NameRecorder nameRecorder) {
+    private void writeDefaultMemberName(NameRecorder memberNameRecorder) {
 
         logger.debug("Writing member and method names using default symbol names.");
-        writeMemberAndMethodNames(nameRecorder.makeSymbolName(null));
+        writeMemberAndMethodNames(memberNameRecorder.makeSymbolName(null));
 
     }
 
@@ -282,6 +280,5 @@ public class TagDescriptor {
         methodCode = alteredMethodCode;
 
     }
-
 
 }
