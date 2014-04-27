@@ -13,33 +13,29 @@ import java.util.List;
  */
 public class HintsDescriptor {
 
-    public enum LocatorType {ID, CSS_LOCATOR};
-
     // TODO: Move the hints file indicators to they're own class.
     static public final String NEW_TAG_DELIMITER = "<*** UI Element ***>";
     static public final char IGNORE_CHAR = '*';
     static public final String TEXT_MARKER = "Text: ";
     static public final String ATTRIBUTE_MARKER = "Attribute: ";
     static public final String LOCATOR_MARKER = "Locator: ";
-
+    static public final String LOCATOR_TYPE_STRING_ID = "id";
+    static public final String LOCATOR_TYPE_STRING_NAME = "name";
+    static public final String LOCATOR_TYPE_STRING_CLASS = "class";
+    static public final String LOCATOR_TYPE_STRING_CSS = "css";
 
     private String tag;
     private String text;
     // TODO: Change the Hints attributes to use a HashMap--I don't need a separate HintsAttribute class just for named pairs.
     private ArrayList<HintsAttribute> attributes;
-    private LocatorType locatorType;
-    private String locatorValue;
 
-    public class Locator {
-        LocatorType type;
-        String locatorValue;
-        Locator(LocatorType type, String value) {
-            this.type = type;
-            this.locatorValue = value;
-        }
-    }
 
-    // TODO: Make sure the HintsDesriptor internal Locator is set by the setters below.
+    /* HintsDecriptor gets a locator when the hints are read by the HintsReader.  This Locator is then passed
+       to a TagDescriptor to write the locator code.  Note: the TagDescriptor does not store a Locator object like
+       HintsDescriptor does. It could, but it doesn't since it hasn't needed it.  However the Hints Descriptor would
+       either need to store the hints file's locator string and then later call LocatorFactory, or store the Locator
+       object itself, and the the LocatorFactory is called when reading the Hints file..
+    */
     private Locator locator;
 
 
@@ -72,25 +68,12 @@ public class HintsDescriptor {
     }
 
 
-    public LocatorType getLocatorType() {
-        return locatorType;
-    }
-
-    public void setLocatorType(LocatorType locatorType) {
-        this.locatorType = locatorType;
-    }
-
-    public String getLocatorValue() {
-        return locatorValue;
+    public void setLocator(Locator locator) {
+        this.locator = locator;
     }
 
     public Locator getLocator() {
-        locator = new Locator(locatorType, locatorValue);
         return locator;
-    }
-
-    public void setLocatorValue(String locatorValue) {
-        this.locatorValue = locatorValue;
     }
 
 }
