@@ -28,32 +28,30 @@ public class GeneratorEngine
 
         if (configurator.getGenerateStatus() == Configurator.GenerateType.HINTS_ONLY) {
 
-            HintsBucket hintsBucket = new HintsBucket();
-
             // TODO: Create a helper method -- These 3 lines are the same in each branch except for the Bucket used.
             // Pre-process using info from the Document's page source and use this to store a description of the page.
             // The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
             NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
             PageDescriptor pageDescriptor = new PageDescriptor(PageScanner.getScanner().getDom(), classNameRecorder);
-            pageDescriptor.setPageObjectName(hintsBucket);
+            pageDescriptor.setPageObjectName(HintsBucket.getBucket());
 
             // Now -- Scan the nodes
             TagDescriptorList tagDescriptorList = PageScanner.getScanner().scan();
 
             // Write the hints file.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
-                hintsBucket.addTag(tagDescriptor.getTag());
-                hintsBucket.addText(tagDescriptor.getTextValue());
-                hintsBucket.addAttributes(tagDescriptor.getAttributePairs());
-                hintsBucket.addLocator(tagDescriptor.getLocatorString());
+                HintsBucket.getBucket().addTag(tagDescriptor.getTag());
+                HintsBucket.getBucket().addText(tagDescriptor.getTextValue());
+                HintsBucket.getBucket().addAttributes(tagDescriptor.getAttributePairs());
+                HintsBucket.getBucket().addLocator(tagDescriptor.getLocatorString());
             }
 
             // TODO: Hints file name should only come from the Configurator
             // TODO: Merge these 3 methods into one -- HintsBucket.writeHintsFile()
             // Dump the hints file.
-            hintsBucket.createOutputFile("./Hints.txt");
-            hintsBucket.dumpToFile();
-            hintsBucket.closeOutputFile();
+            HintsBucket.getBucket().createOutputFile("./Hints.txt");
+            HintsBucket.getBucket().dumpToFile();
+            HintsBucket.getBucket().closeOutputFile();
 
         }
         else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE) {

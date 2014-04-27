@@ -18,6 +18,8 @@ public class HintsBucket {
 
     private final Logger logger = Logger.getLogger(HintsBucket.class);
 
+    private static HintsBucket hintsBucket;
+
     // The hints text to be generated.
     private StringBuffer hintsHeader;
     private StringBuffer hintsBuffer;
@@ -29,8 +31,15 @@ public class HintsBucket {
     private BufferedWriter outputFile;
 
 
+    // HintsBucket is a singleton since we would only ever need one at a time.
+    public static HintsBucket getBucket()  {
+        if (hintsBucket == null) {
+            hintsBucket = new HintsBucket();
+        }
+        return hintsBucket;
+    }
 
-    public HintsBucket() {
+    private HintsBucket() {
         hintsBuffer = new StringBuffer();
     }
 
