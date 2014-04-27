@@ -21,32 +21,19 @@ public class GeneratorEngine
 {
 
     private static final Logger logger = Logger.getLogger(GeneratorEngine.class);
-
+    private static Configurator configurator = null;
 
     public static void main(String[] args) throws IOException, ParserConfigurationException {
 
-        // TODO: In main() I should put this construction stuff in a setup() method.
-
-        // Used by the loggers
-        PropertyConfigurator.configure("log4j.properties");
-
-
-        // Sets the configuration using any command-line parameters
-        Configurator configurator = Configurator.getConfigurator(args);
-        if (configurator.validateCommandline() == false) {
-            System.out.println(configurator.getErrorMessage());
-            System.exit(0);
-        };
-        configurator.processArgs();
+        setUpConfiguration(args);
 
         // Parses the page source and provides access to the w3c document objects.
         // TODO: Some of these actions should not be run when generating code from the hints file.
+        // TODO: Does the PageSourceParser need to be it's own object?  Or, can I use a factory with a fluent pattern?
         PageSourceParser pageSourceParser = new PageSourceParser(configurator.getUrl());
 
         // CodeBucket accumulates and stores the code prior to writing it out.
         CodeBucket codeBucket = new CodeBucket();
-
-        HintsBucket hintsBucket = new HintsBucket();
 
         // NOTE: The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
         NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
@@ -70,6 +57,8 @@ public class GeneratorEngine
 
             // Now -- Scan the nodes
             NodeScanner nodeScanner = new NodeScanner(tagSwitcher);
+
+            HintsBucket hintsBucket = new HintsBucket();
 
             // TODO: Def should not be scanning the page when generating from the hints file. Hints running should be done without needed remote website.
             Node root = pageSourceParser.getRootNode();
@@ -155,6 +144,21 @@ public class GeneratorEngine
         }
 
         logger.info("SUCCESSFUL COMPLETION");
+
+    }
+
+    private static void setUpConfiguration(String[] args) {
+
+                // Used by the loggers
+        PropertyConfigurator.configure("log4j.properties");
+
+        // Sets the configuration using any command-line parameters
+        configurator = Configurator.getConfigurator(args);
+        if (configurator.validateCommandline() == false) {
+            System.out.println(configurator.getErrorMessage());
+            System.exit(0);
+        };
+        configurator.processArgs();
 
     }
 }
