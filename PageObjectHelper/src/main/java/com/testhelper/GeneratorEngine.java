@@ -25,7 +25,7 @@ public class GeneratorEngine
         setConfiguration(args);
 
 
-        // Process the TagDescriptorList here to generate the analysis or code output.
+        // Generate the hints or code output.
 
         if (configurator.getGenerateStatus() == Configurator.GenerateType.HINTS_ONLY) {
 
@@ -40,7 +40,7 @@ public class GeneratorEngine
             // Now -- Scan the nodes
             TagDescriptorList tagDescriptorList = NodeScanner.getNodeScanner().scanForUIElements(pageSourceParser.getRootNode(), 0);
 
-            // Write the analysis file.
+            // Write the hints file.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
                 hintsBucket.addTag(tagDescriptor.getTag());
                 hintsBucket.addText(tagDescriptor.getTextValue());
@@ -48,7 +48,7 @@ public class GeneratorEngine
                 hintsBucket.addLocator(tagDescriptor.getLocatorString());
             }
 
-            // Dump the analysis file.
+            // Dump the hints file.
             hintsBucket.createOutputFile("./Hints.txt");
             hintsBucket.dumpToFile();
             hintsBucket.closeOutputFile();
@@ -102,7 +102,7 @@ public class GeneratorEngine
             HintsReader hintsReader = new HintsReader();
             hintsReader.openHintsFile();
             // TODO: Store the class name in the HintsDescriptorList.
-            HintsDescriptorList hintsDescriptorList = hintsReader.loadAnalysis();
+            HintsDescriptorList hintsDescriptorList = hintsReader.loadHints();
 
             // The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
             NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");

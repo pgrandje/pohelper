@@ -48,7 +48,7 @@ public class HintsReader {
     }
 
 
-    public HintsDescriptorList loadAnalysis() throws IOException {
+    public HintsDescriptorList loadHints() throws IOException {
 
         String currentTag = null;
 
