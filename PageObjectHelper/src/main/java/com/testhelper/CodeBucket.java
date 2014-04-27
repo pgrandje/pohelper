@@ -90,6 +90,7 @@ public class CodeBucket extends AbstractBucket {
 
     private void createOutputFile(String filePath) {
 
+        // TODO: try-catch in closeOutputFile and createOutputFile are redundant
         try {
 
              if (filePath == null) {
@@ -117,12 +118,12 @@ public class CodeBucket extends AbstractBucket {
 
     public void dumpToFile(String filePath) {
 
-        createOutputFile(filePath);
-
         try {
+            createOutputFile(filePath);
             outputFile.write(codeHeader.toString());
             outputFile.write(codeBuffer.toString());
             outputFile.write(codeTrailer.toString());
+            closeOutputFile();
 
         } catch (IOException e) {
             logger.error("Exception writing to code output file");
@@ -130,12 +131,12 @@ public class CodeBucket extends AbstractBucket {
             throw new SeleniumGeneratorException("Caught I/O Exception in CodeBucket.dumpToFile().");
         }
 
-        closeOutputFile();
     }
 
 
     public void closeOutputFile() {
 
+        // TODO: try-catch in closeOutputFile and createOutputFile are redundant
         try {
             outputFile.close();
         } catch (IOException e) {

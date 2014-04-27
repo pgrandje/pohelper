@@ -142,12 +142,11 @@ public class GeneratorEngine
             HintsBucket.getBucket().addLocator(tagDescriptor.getLocatorString());
         }
 
-        // TODO: Hints file name should only come from the Configurator
-        // TODO: Merge these 3 methods into one -- HintsBucket.writeHintsFile()
+
         // Dump the hints file.
-        HintsBucket.getBucket().createOutputFile("./Hints.txt");
-        HintsBucket.getBucket().dumpToFile();
-        HintsBucket.getBucket().closeOutputFile();
+        // TODO: default file path can be stored in the Bucket and Configurator used to change it.  Don't need to pass the filename from calling method.
+        HintsBucket.getBucket().dumpToFile("./Hints.txt");
+
 
     }
 

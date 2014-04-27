@@ -88,8 +88,9 @@ public class HintsBucket extends AbstractBucket {
     }
 
 
-    public void createOutputFile(String filePath) {
+    private void createOutputFile(String filePath) {
 
+        // TODO: try-catch in closeOutputFile and createOutputFile are redundant -- unless they are called separately but they don't need to be.
         // Set up the output file for the code output.
         try {
 
@@ -117,11 +118,13 @@ public class HintsBucket extends AbstractBucket {
     }
 
 
-    public void dumpToFile() {
+    public void dumpToFile(String filePath) {
 
         try {
+            createOutputFile(filePath);
             outputFile.write(hintsHeader.toString());
             outputFile.write(hintsBuffer.toString());
+            closeOutputFile();
 
         } catch (IOException e) {
             System.out.println("Exception writing to code output file");
@@ -129,12 +132,12 @@ public class HintsBucket extends AbstractBucket {
             System.out.println(e.getStackTrace());
             throw new SeleniumGeneratorException("Caught I/O Exception in CodeBucket.dumpToFile().");
         }
-
     }
 
 
     public void closeOutputFile() {
 
+        // TODO: try-catch in closeOutputFile and createOutputFile are redundant
         try {
             outputFile.close();
         } catch (IOException e) {
