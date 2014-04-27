@@ -28,22 +28,22 @@ import java.util.*;
 public class TagDescriptor {
 
     private final Logger logger = Logger.getLogger(TagDescriptor.class);
-
     private Configurator configurator;
 
     private String tag;
     private HashMap<String, String> attributePairs;
-    private StringBuffer memberCode;
-    private StringBuffer methodCode;
     private String textContent;
-    private StringBuffer comment;
     private String locatorString;
 
+    private StringBuffer memberCode;
+    private StringBuffer methodCode;
+    private StringBuffer comment;
 
-    // *** Constructors, Factories, and Factory support methods ***
 
-    // TODO: 2 different constructor for TagDescriptor is probably better than a factory--plus, I could use two diff types.
-    public static TagDescriptor createTagDescriptor(TagTemplate template, Node node) {
+
+    // *** Constructors ***
+
+    public TagDescriptor(TagTemplate template, Node node) {
 
         TagDescriptor tagDescriptor = new TagDescriptor(template, node.getTextContent());
 
@@ -54,11 +54,10 @@ public class TagDescriptor {
             tagDescriptor.attributePairs.put(attr.getName(), attr.getValue());
         }
 
-        return tagDescriptor;
     }
 
 
-    public static TagDescriptor createTagDescriptor(TagTemplate template, HintsDescriptor hintsDescriptor) {
+    public TagDescriptor(TagTemplate template, HintsDescriptor hintsDescriptor) {
 
         TagDescriptor tagDescriptor = new TagDescriptor(template, hintsDescriptor.getText());
 
@@ -68,7 +67,6 @@ public class TagDescriptor {
             tagDescriptor.attributePairs.put(hintsAttribute.getAttributeName(), hintsAttribute.getAttributeValue());
         }
 
-        return tagDescriptor;
     }
 
 
@@ -79,7 +77,7 @@ public class TagDescriptor {
         // I could get the tag from either the Node or the template.  I'm choosing the Template since it's
         //  working and I might have to change the string if I get it from the Node.
         tag = tagTemplate.getTag();
-        logger.info("Creating new TagDescriptor with tag '" + tag + "'.");
+        logger.debug("Creating new TagDescriptor with tag '" + tag + "'.");
 
         memberCode = new StringBuffer(tagTemplate.getMemberCode());
         methodCode = new StringBuffer(tagTemplate.getMethodCode());
@@ -158,13 +156,8 @@ public class TagDescriptor {
         return comment.toString();
     }
 
-    // TODO: Some methods are only needed when writing hints and others are for writing code directly.  Can I separate this into two TagDescriptor types.
     public HashMap<String, String> getAttributePairs() {
         return attributePairs;
-    }
-
-    public String getLocatorString() {
-        return locatorString;
     }
 
     // **** Locator String ****
@@ -176,6 +169,9 @@ public class TagDescriptor {
         memberCode = alteredMemberCode;
     }
 
+    public String getLocatorString() {
+        return locatorString;
+    }
 
     //   *** Symbol Names ***
 
@@ -186,31 +182,30 @@ public class TagDescriptor {
      *  - a default symbol name.
     */
     // TODO: If the TagDescriptor stored a ref to the NameRecorder I could avoid having to pass it so often.
-    public void writeMemberAndMethods(NameRecorder symbolNameRecorder) {
+    public void writeMemberAndMethods(NameRecorder memberNameRecorder) {
 
-        if (writeMemberNameUsingTextContent(symbolNameRecorder) == true) {
-            logger.debug("Symbols written using tag's textContent value.");
+        if (writeMemberNameUsingTextContent(memberNameRecorder) == true) {
+            logger.debug("Symbols written using tag's text content.");
         }
-        else if (writeMemberNameUsingAttributeValue(symbolNameRecorder) == true) {
-            logger.debug("Symbols written using tag's attribute values.");
+        else if (writeMemberNameUsingAttributeValue(memberNameRecorder) == true) {
+            logger.debug("Symbols written using an attribute value.");
         }
         else {
-            writeDefaultMemberName(symbolNameRecorder);
+            writeDefaultMemberName(memberNameRecorder);
             logger.debug("Tag had no textContent or attributes we could use for symbol writing.  Using default symbol names.");
         }
 
     }
 
 
-
-    private boolean writeMemberNameUsingTextContent(NameRecorder nameRecorder) {
+    private boolean writeMemberNameUsingTextContent(NameRecorder memberNameRecorder) {
 
         logger.debug("Checking whether there's textContent we can use for symbol writing.");
 
         if (textContent != null && !textContent.isEmpty()) {
 
             logger.debug("Using text content '" + textContent + "' for symbol replacement.");
-            writeMemberAndMethodNames(nameRecorder.makeSymbolName(textContent));
+            writeMemberAndMethodNames(memberNameRecorder.makeSymbolName(textContent));
 
             return true;
 
@@ -222,7 +217,7 @@ public class TagDescriptor {
 
     // Sets the Generate Status to true if it find attributes it can use for symbol writing.
     // Returns false if it had no attributes it could use for symbol writing.
-    private boolean writeMemberNameUsingAttributeValue(NameRecorder nameRecorder) {
+    private boolean writeMemberNameUsingAttributeValue(NameRecorder memberNameRecorder) {
 
         String attributeValue;
 
@@ -251,7 +246,7 @@ public class TagDescriptor {
             }
 
             logger.debug("Using attribute value '" + attributeValue + "' for symbol replacement.");
-            writeMemberAndMethodNames(nameRecorder.makeSymbolName(attributeValue));
+            writeMemberAndMethodNames(memberNameRecorder.makeSymbolName(attributeValue));
             return true;
 
         }
@@ -264,10 +259,10 @@ public class TagDescriptor {
 
 
 
-    private void writeDefaultMemberName(NameRecorder nameRecorder) {
+    private void writeDefaultMemberName(NameRecorder memberNameRecorder) {
 
         logger.debug("Writing member and method names using default symbol names.");
-        writeMemberAndMethodNames(nameRecorder.makeSymbolName(null));
+        writeMemberAndMethodNames(memberNameRecorder.makeSymbolName(null));
 
     }
 
@@ -285,6 +280,5 @@ public class TagDescriptor {
         methodCode = alteredMethodCode;
 
     }
-
 
 }

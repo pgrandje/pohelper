@@ -2,10 +2,8 @@ Refactor TODOS:
 
 Should I remove the HintsAttribute object and use a map?  Or should a make a more general Attribute object and put that in the TagDescriptor also?
 
-Is a HashMap the right way to store attributes?  An Attribute object would give helpful type checking.
 
 
-In Locator add the code for turning enums into strings.
 
 Verify in TagDescriptor if I should use String.replace() instead of String.replaceAll().
 
@@ -13,12 +11,10 @@ Verify in TagDescriptor if I should use String.replace() instead of String.repla
     I prob shouldn't not generate the code in NodeScanner simply because it couldn't write a locator.
 
 
-In TagDescriptor.writeLocatorString() move the locator validation in to a validate() method in Locator class.
-
-
-All TagDescriptor logging should be DEBUG.
 
 Combine the createLocatorMaker() factory and makeLocator() into one method.
 
 
+NameRecorder needs a separate method for writing default names--don't require a null to be passed.  See TagDescriptor line 265
+    writeMemberAndMethodNames(memberNameRecorder.makeSymbolName(null));
 
