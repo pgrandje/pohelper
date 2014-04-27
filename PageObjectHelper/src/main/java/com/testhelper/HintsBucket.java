@@ -1,8 +1,6 @@
 package com.testhelper;
 
 import org.apache.log4j.Logger;
-import org.w3c.dom.Attr;
-import org.w3c.dom.NamedNodeMap;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -20,8 +18,9 @@ public class HintsBucket {
 
     private final Logger logger = Logger.getLogger(HintsBucket.class);
 
-    // The analysis text to be generated.
-    private StringBuffer analysisBuffer;
+    // The hints text to be generated.
+    private StringBuffer hintsHeader;
+    private StringBuffer hintsBuffer;
 
     // For the output file.
     // TODO: Use the configurator to set the path for the Analysis file.
@@ -32,31 +31,42 @@ public class HintsBucket {
 
 
     public HintsBucket() {
-        analysisBuffer = new StringBuffer();
+        hintsBuffer = new StringBuffer();
+    }
+
+
+    public void setPageObjectName(String pageName) {
+
+        logger.debug("Setting classname to '" + pageName + "'.");
+
+        StringBuffer tempBuffer = new StringBuffer();
+        tempBuffer.append(HintsDescriptor.PAGE_MARKER + ": " + pageName);
+
+        hintsHeader = tempBuffer;
     }
 
 
     public void addTag(String tag) {
-        analysisBuffer.append(HintsDescriptor.NEW_TAG_DELIMITER + "\n");
-        analysisBuffer.append(tag + " \n");
+        hintsBuffer.append(HintsDescriptor.NEW_TAG_DELIMITER + "\n");
+        hintsBuffer.append(tag + " \n");
     }
 
     public void addText(String text) {
-        analysisBuffer.append(HintsDescriptor.TEXT_MARKER + text + " \n");
+        hintsBuffer.append(HintsDescriptor.TEXT_MARKER + text + " \n");
     }
 
 
     public void addAttributes(HashMap<String, String> attributePairs) {
         if (!attributePairs.isEmpty()) {
             for (Map.Entry attributePair : attributePairs.entrySet()) {
-                analysisBuffer.append(HintsDescriptor.ATTRIBUTE_MARKER + attributePair.getKey() + " = " + attributePair.getValue() + "\n");
+                hintsBuffer.append(HintsDescriptor.ATTRIBUTE_MARKER + attributePair.getKey() + " = " + attributePair.getValue() + "\n");
             }
         }
     }
 
 
     public void addLocator(String locator) {
-        analysisBuffer.append(HintsDescriptor.LOCATOR_MARKER + locator + " \n");
+        hintsBuffer.append(HintsDescriptor.LOCATOR_MARKER + locator + " \n");
     }
 
     public void setOutPutFilePath(String path) {
@@ -101,7 +111,8 @@ public class HintsBucket {
     public void dumpToFile() {
 
         try {
-            outputFile.write(analysisBuffer.toString());
+            outputFile.write(hintsHeader.toString());
+            outputFile.write(hintsBuffer.toString());
 
         } catch (IOException e) {
             System.out.println("Exception writing to code output file");

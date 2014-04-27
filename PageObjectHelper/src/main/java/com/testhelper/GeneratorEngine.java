@@ -30,7 +30,12 @@ public class GeneratorEngine
 
             HintsBucket hintsBucket = new HintsBucket();
 
-            // TODO: Hint's generation needs a PageDescriptor for setting the suggested PageName into the Hints file.
+            // TODO: Create a helper method -- These 3 lines are the same in each branch except for the Bucket used.
+            // Pre-process using info from the Document's page source and use this to store a description of the page.
+            // The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
+            NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
+            PageDescriptor pageDescriptor = new PageDescriptor(PageScanner.getScanner().getDom(), classNameRecorder);
+            pageDescriptor.setPageObjectName(hintsBucket);
 
             // Now -- Scan the nodes
             TagDescriptorList tagDescriptorList = PageScanner.getScanner().scan();
@@ -43,6 +48,8 @@ public class GeneratorEngine
                 hintsBucket.addLocator(tagDescriptor.getLocatorString());
             }
 
+            // TODO: Hints file name should only come from the Configurator
+            // TODO: Merge these 3 methods into one -- HintsBucket.writeHintsFile()
             // Dump the hints file.
             hintsBucket.createOutputFile("./Hints.txt");
             hintsBucket.dumpToFile();
@@ -51,8 +58,7 @@ public class GeneratorEngine
         }
         else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE) {
 
-            // Pre-process the CodeShell using info from the Document's page source and use this to store a description of
-            // the page.
+            // Pre-process using info from the Document's page source and use this to store a description of the page.
             // The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
             NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
             PageDescriptor pageDescriptor = new PageDescriptor(PageScanner.getScanner().getDom(), classNameRecorder);

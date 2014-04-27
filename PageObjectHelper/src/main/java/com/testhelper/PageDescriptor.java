@@ -19,8 +19,9 @@ public class PageDescriptor {
 
     private final Logger logger = Logger.getLogger(PageDescriptor.class);
 
-    // TODO: The PageDescriptor should not hold the Document!!
+    // Uses the HTMl to get the page title, and any other page-level properties for naming the page object class.
     private Document pageSource;
+
     // TODO: The classNameRecorder does not need to be a private member of PageDescriptor, it can be passed when needed.
     private NameRecorder classNameRecorder;
 
@@ -60,6 +61,36 @@ public class PageDescriptor {
         }
 
     }
+
+
+    // TODO: Remove duplicate setPageObject() after creating a Bucket base class--the only diff is the type of bucket used.
+    public void setPageObjectName(HintsBucket hintsBucket) {
+
+        // Get all <title> tags--hopefully there's one and only one.
+        Element root = pageSource.getDocumentElement();
+        NodeList nodeList = root.getElementsByTagName("title");
+
+        if (nodeList.getLength() > 1) {
+            logger.warn("Found more than one <title> tag, is this valid for a web page?");
+            hintsBucket.setPageObjectName(makePageObjectName(nodeList.item(0)));
+        }
+        else if (nodeList.getLength() == 1)  {
+            logger.info("Found exactly one <title> tag, using it's text for the page object's classname.");
+            hintsBucket.setPageObjectName(makePageObjectName(nodeList.item(0)));
+        }
+        else if (nodeList.getLength() == 0) {
+            logger.warn("<title> tag not found, using a default name for the page object.");
+            hintsBucket.setPageObjectName(makePageObjectName(null));
+        }
+        else if (nodeList.getLength() < 0) {
+            throw new SeleniumGeneratorException(
+                      "Unknown condition--Retrieving <title> tag return a negative NodeList length.  " +
+                      "This should never happen."
+                     );
+        }
+
+    }
+
 
     private String makePageObjectName(Node titleNode)  {
 

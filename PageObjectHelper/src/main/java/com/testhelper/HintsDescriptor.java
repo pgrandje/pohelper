@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class HintsDescriptor {
 
-    // TODO: Move the hints file indicators to they're own class.
+    static public final String PAGE_MARKER = "Page Name: ";
     static public final String NEW_TAG_DELIMITER = "<*** UI Element ***>";
     static public final char IGNORE_CHAR = '*';
     static public final String TEXT_MARKER = "Text: ";

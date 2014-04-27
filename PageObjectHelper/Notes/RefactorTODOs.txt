@@ -21,3 +21,6 @@ NameRecorder needs a separate method for writing default names--don't require a 
 
 
 PageDescriptor needs a constructor to support creation from a hints file.
+
+
+Make a base class for CodeBucket and HintsBucket and move the setPageName code into it.
