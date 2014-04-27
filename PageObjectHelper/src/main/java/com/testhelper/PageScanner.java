@@ -16,6 +16,8 @@ public class PageScanner {
 
     private final Logger logger = Logger.getLogger(PageScanner.class);
 
+    private static PageScanner scanner = null;
+
     // Returns code for a given tag.
     private TagSwitcher tagSwitcher;
 
@@ -23,9 +25,11 @@ public class PageScanner {
 
     private NameRecorder memberNameRecorder;
 
-
+    // PageScanner is a singleton since we would only ever need one at a time.
     public static PageScanner getNodeScanner()  throws IOException {
-        PageScanner scanner = new PageScanner();
+        if (scanner == null) {
+            scanner = new PageScanner();
+        }
         return scanner;
     }
 
