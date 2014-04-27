@@ -12,7 +12,7 @@ import java.io.IOException;
  * User: pgrandje
  * Date: 6/3/12
  */
-public class CodeBucket {
+public class CodeBucket extends AbstractBucket {
 
     private final Logger logger = Logger.getLogger(CodeBucket.class);
 
@@ -66,7 +66,7 @@ public class CodeBucket {
         codeTrailer = trailer;
     }
 
-
+    @Override
     public void setPageObjectName(String pageName) {
 
         outPutFileName = pageName + ".java";

@@ -5,5 +5,8 @@ package com.testhelper;
  * User: pgrandje
  * Date: 4/27/14
  */
-public class AbstractBucket {
+public abstract class AbstractBucket {
+
+    public abstract void setPageObjectName(String pageName);
+
 }

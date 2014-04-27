@@ -14,7 +14,7 @@ import java.util.Map;
  * User: pgrandje
  * Date: 6/3/12
  */
-public class HintsBucket {
+public class HintsBucket extends AbstractBucket {
 
     private final Logger logger = Logger.getLogger(HintsBucket.class);
 
@@ -43,7 +43,7 @@ public class HintsBucket {
         hintsBuffer = new StringBuffer();
     }
 
-
+    @Override
     public void setPageObjectName(String pageName) {
 
         logger.debug("Setting classname to '" + pageName + "'.");
