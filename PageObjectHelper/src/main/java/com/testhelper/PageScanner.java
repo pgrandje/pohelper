@@ -88,8 +88,6 @@ public class PageScanner {
         return document;
     }
 
-
-
     public TagDescriptorList scan() {
         return scanForUIElements(document.getDocumentElement(), 0);
     }

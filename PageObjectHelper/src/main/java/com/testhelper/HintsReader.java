@@ -56,6 +56,17 @@ public class HintsReader {
 
         HintsDescriptorList hintsDescriptorList = new HintsDescriptorList();
 
+
+        if (line.contains(HintsDescriptor.PAGE_MARKER)) {
+            String pageName = line.substring(HintsDescriptor.PAGE_MARKER.length());
+            logger.debug("Page name is: " + pageName);
+            hintsDescriptorList.setPageName(pageName);
+        }
+        else {
+            throw new SeleniumGeneratorException("Page name not found in Hints file.");
+        }
+
+
         // There shouldn't be any blank lines in this file, so we'll treat that as end of file.
         while (line != null){
 

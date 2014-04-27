@@ -13,6 +13,7 @@ import java.util.List;
  */
 public class HintsDescriptorList implements Iterable<HintsDescriptor> {
 
+    private String pageName;
     private List<HintsDescriptor> analysisDescriptors;
 
 
@@ -22,6 +23,13 @@ public class HintsDescriptorList implements Iterable<HintsDescriptor> {
         analysisDescriptors = new ArrayList<HintsDescriptor>(100);
     }
 
+    public String getPageName() {
+        return pageName;
+    }
+
+    public void setPageName(String pageName) {
+        this.pageName = pageName;
+    }
 
     void add(HintsDescriptor descriptor) {
         analysisDescriptors.add(descriptor);
