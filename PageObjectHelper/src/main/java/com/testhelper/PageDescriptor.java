@@ -19,7 +19,9 @@ public class PageDescriptor {
 
     private final Logger logger = Logger.getLogger(PageDescriptor.class);
 
+    // TODO: The PageDescriptor should not hold the Document!!
     private Document pageSource;
+    // TODO: The classNameRecorder does not need to be a private member of PageDescriptor, it can be passed when needed.
     private NameRecorder classNameRecorder;
 
 
@@ -28,7 +30,9 @@ public class PageDescriptor {
         classNameRecorder = nameRecorder;
     }
 
-
+    PageDescriptor(String pageName, NameRecorder nameRecorder) {
+        classNameRecorder = nameRecorder;
+    }
 
     public void setPageObjectName(CodeBucket codeBucket) {
 

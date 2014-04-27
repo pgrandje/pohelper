@@ -13,8 +13,8 @@ import org.w3c.dom.Node;
 /**
  * This is the Main Entry Point for the entire app.
  * Creator:  Paul Grandjean
- * Date:  Was first created sometime in 2011 :-)
- * Has since gone through multiple incremental modifications and refactorings.
+ * Date:  First created sometime in 2011 in Salt Lake City, Utah :-)
+ * Has since gone through many incremental refactorings and is gradually growing mature in its years.
  */
 
 public class GeneratorEngine
@@ -27,40 +27,25 @@ public class GeneratorEngine
 
         setUpConfiguration(args);
 
-        // Parses the page source and provides access to the w3c document objects.
-        // TODO: Some of these actions should not be run when generating code from the hints file.
-        // TODO: Does the PageSourceParser need to be it's own object?  Or, can I use a factory with a fluent pattern?
-        PageSourceParser pageSourceParser = new PageSourceParser(configurator.getUrl());
-
-        // CodeBucket accumulates and stores the code prior to writing it out.
-        CodeBucket codeBucket = new CodeBucket();
-
-        // NOTE: The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
-        NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
-
-
-        // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
-        TagSwitcher tagSwitcher = new TagSwitcher(configurator);
-
-
-        // Pre-process the CodeShell using info from the Document's page source and use this to store a description of
-        // the page.
-        // TODO: When generating from a hints file, I need to start the code shell without needing the remote DOM.
-        // TODO: And, when generating the hints file, I need to access the DOM, without generating the code shell.
-        PageDescriptor pageObjectDescriptor = new PageDescriptor(pageSourceParser.getDom(), classNameRecorder);
-        pageObjectDescriptor.setPageObjectName(codeBucket);
-
 
         // Process the TagDescriptorList here to generate the analysis or code output.
 
         if (configurator.getGenerateStatus() == Configurator.GenerateType.HINTS_ONLY) {
 
+            // Parses the page source and provides the root node to the DOM.
+            // TODO: To generate hints we still need to get the page name so we can add this at the top of the hints file.
+            PageSourceParser pageSourceParser = new PageSourceParser(configurator.getUrl());
+
+            // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
+            TagSwitcher tagSwitcher = new TagSwitcher(configurator);
+
             // Now -- Scan the nodes
+            // TODO: Does the NodeScanner need a tagSwitcher to generate hints?
+            // TODO: I only need the TagSwitcher to pass to the NodeScanner--why not create it inside the NodeScanner?
             NodeScanner nodeScanner = new NodeScanner(tagSwitcher);
 
             HintsBucket hintsBucket = new HintsBucket();
 
-            // TODO: Def should not be scanning the page when generating from the hints file. Hints running should be done without needed remote website.
             Node root = pageSourceParser.getRootNode();
             logger.debug("Root Node is: " + root.getNodeName() + "-- value: " + root.getNodeValue());
             TagDescriptorList tagDescriptorList = nodeScanner.scanForUIElements(root, 0);
@@ -81,6 +66,25 @@ public class GeneratorEngine
         }
         else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE) {
 
+            // CodeBucket accumulates and stores the code prior to writing it out.
+            CodeBucket codeBucket = new CodeBucket();
+
+            // TODO: Does the PageSourceParser need to be it's own object?  Or, can I use a factory with a fluent pattern?
+            // Parses the page source and provides access to the w3c document objects.
+            PageSourceParser pageSourceParser = new PageSourceParser(configurator.getUrl());
+            // Pre-process the CodeShell using info from the Document's page source and use this to store a description of
+            // the page.
+            // TODO: When generating from a hints file, I need to start the code shell without needing the remote DOM.
+            // TODO: And, when generating the hints file, I need to access the DOM, without generating the code shell.
+            // The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
+            NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
+            PageDescriptor pageObjectDescriptor = new PageDescriptor(pageSourceParser.getDom(), classNameRecorder);
+            pageObjectDescriptor.setPageObjectName(codeBucket);
+
+
+            // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
+            TagSwitcher tagSwitcher = new TagSwitcher(configurator);
+            // TODO: I only need the TagSwitcher to pass to the NodeScanner--why not create it inside the NodeScanner?
             // TODO: Fetching and parsing the DOM is identical from the hints generation above, this could be a helper method.
             // Now -- Scan the nodes
             NodeScanner nodeScanner = new NodeScanner(tagSwitcher);
@@ -108,10 +112,20 @@ public class GeneratorEngine
         }
         else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE_FROM_HINTS) {
 
+            // CodeBucket accumulates and stores the code prior to writing it out.
+            CodeBucket codeBucket = new CodeBucket();
+
             HintsReader hintsReader = new HintsReader();
             hintsReader.openHintsFile();
+            // TODO: Store the class name in the HintsDescriptorList.
             HintsDescriptorList hintsDescriptorList = hintsReader.loadAnalysis();
 
+            // The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
+            NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
+            PageDescriptor pageObjectDescriptor = new PageDescriptor(hintsDescriptorList.getPageName(), classNameRecorder);
+            pageObjectDescriptor.setPageObjectName(codeBucket);
+
+            TagSwitcher tagSwitcher = new TagSwitcher(configurator);
             NameRecorder memberNameRecorder = new NameRecorder("Member Name Recorder");
 
             // Currently I just use the tagSwitcher since it's global to main()

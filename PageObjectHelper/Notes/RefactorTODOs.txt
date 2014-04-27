@@ -18,3 +18,6 @@ Combine the createLocatorMaker() factory and makeLocator() into one method.
 NameRecorder needs a separate method for writing default names--don't require a null to be passed.  See TagDescriptor line 265
     writeMemberAndMethodNames(memberNameRecorder.makeSymbolName(null));
 
+
+
+PageDescriptor needs a constructor to support creation from a hints file.
