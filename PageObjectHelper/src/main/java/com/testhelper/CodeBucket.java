@@ -16,6 +16,8 @@ public class CodeBucket {
 
     private final Logger logger = Logger.getLogger(CodeBucket.class);
 
+    private static CodeBucket codeBucket = null;
+
     private CodeShellLoader codeShellLoader;
 
     // The source code to be generated.
@@ -28,8 +30,16 @@ public class CodeBucket {
     private BufferedWriter outputFile;
 
 
+    // CodeBucket is a singleton since we would only ever need one at a time.
+    public static CodeBucket getBucket()  throws IOException {
+        if (codeBucket == null) {
+            codeBucket = new CodeBucket();
+        }
+        return codeBucket;
+    }
 
-    public CodeBucket() throws IOException {
+
+    private CodeBucket() throws IOException {
 
         codeBuffer = new StringBuffer();
 

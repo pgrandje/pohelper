@@ -51,28 +51,20 @@ public class GeneratorEngine
         }
         else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE) {
 
-            // CodeBucket accumulates and stores the code prior to writing it out.
-            CodeBucket codeBucket = new CodeBucket();
-
             // Pre-process the CodeShell using info from the Document's page source and use this to store a description of
             // the page.
             // The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
             NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
             PageDescriptor pageDescriptor = new PageDescriptor(PageScanner.getScanner().getDom(), classNameRecorder);
-            pageDescriptor.setPageObjectName(codeBucket);
-
-            // TODO: Fetching and parsing the DOM is identical from the hints generation above, this could be a helper method.
+            pageDescriptor.setPageObjectName(CodeBucket.getBucket());
 
             // Scan the nodes
             TagDescriptorList tagDescriptorList = PageScanner.getScanner().scan();
 
-            writeCodeFromTagDescriptors(tagDescriptorList, codeBucket);
+            writeCodeFromTagDescriptors(tagDescriptorList);
 
         }
         else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE_FROM_HINTS) {
-
-            // CodeBucket accumulates and stores the code prior to writing it out.
-            CodeBucket codeBucket = new CodeBucket();
 
             HintsReader hintsReader = new HintsReader();
             hintsReader.openHintsFile();
@@ -82,7 +74,7 @@ public class GeneratorEngine
             // The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
             NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
             PageDescriptor pageObjectDescriptor = new PageDescriptor(hintsDescriptorList.getPageName(), classNameRecorder);
-            pageObjectDescriptor.setPageObjectName(codeBucket);
+            pageObjectDescriptor.setPageObjectName(CodeBucket.getBucket());
 
             TagSwitcher tagSwitcher = new TagSwitcher(configurator);
             NameRecorder memberNameRecorder = new NameRecorder("Member Name Recorder");
@@ -98,7 +90,7 @@ public class GeneratorEngine
                 tagDescriptorList.add(tagDescriptor);
             }
 
-            writeCodeFromTagDescriptors(tagDescriptorList, codeBucket);
+            writeCodeFromTagDescriptors(tagDescriptorList);
 
         }
         else {
@@ -112,7 +104,7 @@ public class GeneratorEngine
 
     private static void setConfiguration(String[] args) {
 
-                // Used by the loggers
+        // Used by the loggers
         PropertyConfigurator.configure("log4j.properties");
 
         // Sets the configuration using any command-line parameters
@@ -121,12 +113,15 @@ public class GeneratorEngine
             System.out.println(configurator.getErrorMessage());
             System.exit(0);
         };
+
         configurator.processArgs();
 
     }
 
 
-    private static void writeCodeFromTagDescriptors(TagDescriptorList tagDescriptorList, CodeBucket codeBucket) {
+    private static void writeCodeFromTagDescriptors(TagDescriptorList tagDescriptorList) throws IOException {
+
+        CodeBucket codeBucket = CodeBucket.getBucket();
 
         // Write the member code to the code buffer.
         for(TagDescriptor hintsTagDescriptor : tagDescriptorList) {
@@ -142,4 +137,5 @@ public class GeneratorEngine
         codeBucket.dumpToFile(configurator.getDestinationFilePath());
 
     }
+
 }
