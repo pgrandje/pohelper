@@ -4,6 +4,8 @@ import org.w3c.dom.Node;
 
 import org.apache.log4j.Logger;
 
+import java.io.IOException;
+
 /**
  * Recursive function, the Node Scanner traverses the DOM and creates objects and initiates actions based on the DOM
  * nodes it encounters.  This is the main engine driving the code generating process.
@@ -22,10 +24,16 @@ public class NodeScanner {
     private NameRecorder memberNameRecorder;
 
 
+    public static NodeScanner getNodeScanner()  throws IOException {
+        NodeScanner scanner = new NodeScanner();
+        return scanner;
+    }
 
-    NodeScanner(TagSwitcher tagSwitcher) {
+    // TagSwitcher throws the IOException when it can't find it's configuration file.
+    private NodeScanner() throws IOException {
 
-        this.tagSwitcher = tagSwitcher;
+        // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
+        this.tagSwitcher = new TagSwitcher(Configurator.getConfigurator());;
         this.tagDescriptorList = new TagDescriptorList();
         this.memberNameRecorder = new NameRecorder("Member Name Recorder");
     }

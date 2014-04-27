@@ -7,9 +7,6 @@ import java.io.IOException;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-
-import org.w3c.dom.Node;
-
 /**
  * This is the Main Entry Point for the entire app.
  * Creator:  Paul Grandjean
@@ -25,7 +22,7 @@ public class GeneratorEngine
 
     public static void main(String[] args) throws IOException, ParserConfigurationException {
 
-        setUpConfiguration(args);
+        setConfiguration(args);
 
 
         // Process the TagDescriptorList here to generate the analysis or code output.
@@ -37,19 +34,11 @@ public class GeneratorEngine
             // Parses the page source and provides the root node to the DOM.
             // TODO: To generate hints we still need to get the page name so we can add this at the top of the hints file.
             PageSourceParser pageSourceParser = new PageSourceParser();
-            Node root = pageSourceParser.getRootNode();
-            logger.debug("Root Node is: " + root.getNodeName() + "-- value: " + root.getNodeValue());
 
             // TODO: Hint's generation still needs the PageDescriptor for setting the suggested PageName into the Hints file.
 
-            // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
-            TagSwitcher tagSwitcher = new TagSwitcher(configurator);
-
             // Now -- Scan the nodes
-            // TODO: Does the NodeScanner need a tagSwitcher to generate hints?
-            // TODO: I only need the TagSwitcher to pass to the NodeScanner--why not create it inside the NodeScanner?
-            NodeScanner nodeScanner = new NodeScanner(tagSwitcher);
-            TagDescriptorList tagDescriptorList = nodeScanner.scanForUIElements(root, 0);
+            TagDescriptorList tagDescriptorList = NodeScanner.getNodeScanner().scanForUIElements(pageSourceParser.getRootNode(), 0);
 
             // Write the analysis file.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
@@ -72,28 +61,22 @@ public class GeneratorEngine
 
             // TODO: Does the PageSourceParser need to be it's own object?  Or, can I use a factory with a fluent pattern?
             // Parses the page source and provides access to the w3c document objects.
-            PageSourceParser pageSourceParser = new PageSourceParser(configurator.getUrl());
+            PageSourceParser pageSourceParser = new PageSourceParser();
             // Pre-process the CodeShell using info from the Document's page source and use this to store a description of
             // the page.
             // TODO: When generating from a hints file, I need to start the code shell without needing the remote DOM.
             // TODO: And, when generating the hints file, I need to access the DOM, without generating the code shell.
             // The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
             NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
-            PageDescriptor pageObjectDescriptor = new PageDescriptor(pageSourceParser.getDom(), classNameRecorder);
-            pageObjectDescriptor.setPageObjectName(codeBucket);
+            PageDescriptor pageDescriptor = new PageDescriptor(pageSourceParser.getDom(), classNameRecorder);
+            pageDescriptor.setPageObjectName(codeBucket);
 
-
-            // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
-            TagSwitcher tagSwitcher = new TagSwitcher(configurator);
-            // TODO: I only need the TagSwitcher to pass to the NodeScanner--why not create it inside the NodeScanner?
             // TODO: Fetching and parsing the DOM is identical from the hints generation above, this could be a helper method.
-            // Now -- Scan the nodes
-            NodeScanner nodeScanner = new NodeScanner(tagSwitcher);
 
             // TODO: Def should not be scanning the page when generating from the hints file. Hints running should be done without needed remote website.
-            Node root = pageSourceParser.getRootNode();
-            logger.debug("Root Node is: " + root.getNodeName() + "-- value: " + root.getNodeValue());
-            TagDescriptorList tagDescriptorList = nodeScanner.scanForUIElements(root, 0);
+
+            // Scan the nodes
+            TagDescriptorList tagDescriptorList = NodeScanner.getNodeScanner().scanForUIElements(pageSourceParser.getRootNode(), 0);
 
             // TODO: The code generation here is copied in the generate from hints section also--put this in a helper method.
             // Write the member code to the code buffer.
@@ -162,7 +145,8 @@ public class GeneratorEngine
 
     }
 
-    private static void setUpConfiguration(String[] args) {
+
+    private static void setConfiguration(String[] args) {
 
                 // Used by the loggers
         PropertyConfigurator.configure("log4j.properties");
