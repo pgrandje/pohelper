@@ -24,21 +24,16 @@ public class GeneratorEngine
 
         setConfiguration(args);
 
-
         // Generate the hints or code output.
 
         if (configurator.getGenerateStatus() == Configurator.GenerateType.HINTS_ONLY) {
 
             HintsBucket hintsBucket = new HintsBucket();
 
-            // Parses the page source and provides the root node to the DOM.
-            // TODO: To generate hints we still need to get the page name so we can add this at the top of the hints file.
-            PageSourceParser pageSourceParser = new PageSourceParser();
-
-            // TODO: Hint's generation still needs the PageDescriptor for setting the suggested PageName into the Hints file.
+            // TODO: Hint's generation needs a PageDescriptor for setting the suggested PageName into the Hints file.
 
             // Now -- Scan the nodes
-            TagDescriptorList tagDescriptorList = PageScanner.getNodeScanner().scan(pageSourceParser.getRootNode());
+            TagDescriptorList tagDescriptorList = PageScanner.getScanner().scan();
 
             // Write the hints file.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
@@ -59,24 +54,18 @@ public class GeneratorEngine
             // CodeBucket accumulates and stores the code prior to writing it out.
             CodeBucket codeBucket = new CodeBucket();
 
-            // TODO: Does the PageSourceParser need to be it's own object?  Or, can I use a factory with a fluent pattern?
-            // Parses the page source and provides access to the w3c document objects.
-            PageSourceParser pageSourceParser = new PageSourceParser();
             // Pre-process the CodeShell using info from the Document's page source and use this to store a description of
             // the page.
-            // TODO: When generating from a hints file, I need to start the code shell without needing the remote DOM.
-            // TODO: And, when generating the hints file, I need to access the DOM, without generating the code shell.
             // The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
             NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
-            PageDescriptor pageDescriptor = new PageDescriptor(pageSourceParser.getDom(), classNameRecorder);
+            PageDescriptor pageDescriptor = new PageDescriptor(PageScanner.getScanner().getDom(), classNameRecorder);
             pageDescriptor.setPageObjectName(codeBucket);
 
             // TODO: Fetching and parsing the DOM is identical from the hints generation above, this could be a helper method.
 
-            // TODO: Def should not be scanning the page when generating from the hints file. Hints running should be done without needed remote website.
 
             // Scan the nodes
-            TagDescriptorList tagDescriptorList = PageScanner.getNodeScanner().scan(pageSourceParser.getRootNode());
+            TagDescriptorList tagDescriptorList = PageScanner.getScanner().scan();
 
             // TODO: The code generation here is copied in the generate from hints section also--put this in a helper method.
             // Write the member code to the code buffer.

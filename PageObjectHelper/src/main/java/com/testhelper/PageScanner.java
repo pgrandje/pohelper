@@ -1,10 +1,18 @@
 package com.testhelper;
 
+import org.htmlcleaner.CleanerProperties;
+import org.htmlcleaner.DomSerializer;
+import org.htmlcleaner.HtmlCleaner;
+import org.htmlcleaner.TagNode;
+import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 
 import org.apache.log4j.Logger;
 
+import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.net.URL;
+import java.net.UnknownHostException;
 
 /**
  * Recursive function, the Node Scanner traverses the DOM and creates objects and initiates actions based on the DOM
@@ -18,15 +26,19 @@ public class PageScanner {
 
     private static PageScanner scanner = null;
 
+    // w3c.org Document object for the page's DOM.
+    private Document document;
+
     // Returns code for a given tag.
     private TagSwitcher tagSwitcher;
+
 
     private TagDescriptorList tagDescriptorList;
 
     private NameRecorder memberNameRecorder;
 
     // PageScanner is a singleton since we would only ever need one at a time.
-    public static PageScanner getNodeScanner()  throws IOException {
+    public static PageScanner getScanner()  throws IOException, ParserConfigurationException {
         if (scanner == null) {
             scanner = new PageScanner();
         }
@@ -34,16 +46,52 @@ public class PageScanner {
     }
 
     // TagSwitcher throws the IOException when it can't find it's configuration file.
-    private PageScanner() throws IOException {
+    private PageScanner() throws IOException, ParserConfigurationException {
 
         // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
         this.tagSwitcher = new TagSwitcher(Configurator.getConfigurator());;
         this.tagDescriptorList = new TagDescriptorList();
         this.memberNameRecorder = new NameRecorder("Member Name Recorder");
+        parsePage();
     }
 
-    public TagDescriptorList scan(Node parent) {
-        return scanForUIElements(parent, 0);
+
+
+    // IOException comes from cleaner.clean(url), ParserConfigurationException comes from DomSerializer
+    private void parsePage() throws IOException, ParserConfigurationException {
+
+        URL url = Configurator.getConfigurator().getUrl();
+
+        // create an instance of HtmlCleaner and configure it.
+        HtmlCleaner cleaner = new HtmlCleaner();
+        // take default cleaner properties
+        CleanerProperties props = cleaner.getProperties();
+        props.setAllowMultiWordAttributes(true);
+        //TODO: props.setPruneTags(arg0);  //use this later when I know what to prune.
+        props.setOmitComments(true);
+
+        TagNode nodes = null;
+
+        try {
+            nodes = cleaner.clean(url);
+        } catch (UnknownHostException e) {
+            // TODO: Research a pattern for communicating error messages up to the  UI layer.
+            System.out.println("Host or page not found.  Using url: " + url.toString());
+            System.exit(0);
+        }
+        // Get the page source into a Document object.
+        document = new DomSerializer(props, true).createDOM(nodes);
+
+    }
+
+    public Document getDom() {
+        return document;
+    }
+
+
+
+    public TagDescriptorList scan() {
+        return scanForUIElements(document.getDocumentElement(), 0);
     }
 
 
