@@ -7,7 +7,7 @@ package com.testhelper;
  * Date: 6/10/12
  */
 public class NodeType {
-    // TODO:  Change NodeType to an enum and move this to which ever class uses it--probably the NodeScanner
+    // TODO:  Change NodeType to an enum and move this to which ever class uses it--probably the PageScanner
     public static final short TAG = 1;
     public static final short TEXT = 2;
     public static final short SCRIPT = 3;

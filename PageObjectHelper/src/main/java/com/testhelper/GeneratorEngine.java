@@ -38,7 +38,7 @@ public class GeneratorEngine
             // TODO: Hint's generation still needs the PageDescriptor for setting the suggested PageName into the Hints file.
 
             // Now -- Scan the nodes
-            TagDescriptorList tagDescriptorList = NodeScanner.getNodeScanner().scanForUIElements(pageSourceParser.getRootNode(), 0);
+            TagDescriptorList tagDescriptorList = PageScanner.getNodeScanner().scan(pageSourceParser.getRootNode());
 
             // Write the hints file.
             for(TagDescriptor tagDescriptor : tagDescriptorList) {
@@ -76,7 +76,7 @@ public class GeneratorEngine
             // TODO: Def should not be scanning the page when generating from the hints file. Hints running should be done without needed remote website.
 
             // Scan the nodes
-            TagDescriptorList tagDescriptorList = NodeScanner.getNodeScanner().scanForUIElements(pageSourceParser.getRootNode(), 0);
+            TagDescriptorList tagDescriptorList = PageScanner.getNodeScanner().scan(pageSourceParser.getRootNode());
 
             // TODO: The code generation here is copied in the generate from hints section also--put this in a helper method.
             // Write the member code to the code buffer.

@@ -12,9 +12,9 @@ import java.io.IOException;
  * User: pgrandje
  * Date: 10/23/11
  */
-public class NodeScanner {
+public class PageScanner {
 
-    private final Logger logger = Logger.getLogger(NodeScanner.class);
+    private final Logger logger = Logger.getLogger(PageScanner.class);
 
     // Returns code for a given tag.
     private TagSwitcher tagSwitcher;
@@ -24,13 +24,13 @@ public class NodeScanner {
     private NameRecorder memberNameRecorder;
 
 
-    public static NodeScanner getNodeScanner()  throws IOException {
-        NodeScanner scanner = new NodeScanner();
+    public static PageScanner getNodeScanner()  throws IOException {
+        PageScanner scanner = new PageScanner();
         return scanner;
     }
 
     // TagSwitcher throws the IOException when it can't find it's configuration file.
-    private NodeScanner() throws IOException {
+    private PageScanner() throws IOException {
 
         // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
         this.tagSwitcher = new TagSwitcher(Configurator.getConfigurator());;
@@ -38,9 +38,13 @@ public class NodeScanner {
         this.memberNameRecorder = new NameRecorder("Member Name Recorder");
     }
 
+    public TagDescriptorList scan(Node parent) {
+        return scanForUIElements(parent, 0);
+    }
+
 
     // After scanning the page source, returns a list of all the nodes we want code for along with their code snippets.
-    public TagDescriptorList scanForUIElements(Node parent, int level)
+    private TagDescriptorList scanForUIElements(Node parent, int level)
     {
         logger.info("Entered scanForUIElements using parent node '" + parent.getNodeName() + "' at Level " + level);
 
