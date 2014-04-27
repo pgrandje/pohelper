@@ -27,7 +27,9 @@ public class PageSourceParser {
 
 
     // IOException comes from cleaner.clean(url), ParserConfigurationException comes from DomSerializer
-    public PageSourceParser(URL url) throws IOException, ParserConfigurationException {
+    public PageSourceParser() throws IOException, ParserConfigurationException {
+
+        URL url = Configurator.getConfigurator().getUrl();
 
         // create an instance of HtmlCleaner and configure it.
         HtmlCleaner cleaner = new HtmlCleaner();

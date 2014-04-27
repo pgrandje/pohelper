@@ -32,9 +32,15 @@ public class GeneratorEngine
 
         if (configurator.getGenerateStatus() == Configurator.GenerateType.HINTS_ONLY) {
 
+            HintsBucket hintsBucket = new HintsBucket();
+
             // Parses the page source and provides the root node to the DOM.
             // TODO: To generate hints we still need to get the page name so we can add this at the top of the hints file.
-            PageSourceParser pageSourceParser = new PageSourceParser(configurator.getUrl());
+            PageSourceParser pageSourceParser = new PageSourceParser();
+            Node root = pageSourceParser.getRootNode();
+            logger.debug("Root Node is: " + root.getNodeName() + "-- value: " + root.getNodeValue());
+
+            // TODO: Hint's generation still needs the PageDescriptor for setting the suggested PageName into the Hints file.
 
             // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
             TagSwitcher tagSwitcher = new TagSwitcher(configurator);
@@ -43,11 +49,6 @@ public class GeneratorEngine
             // TODO: Does the NodeScanner need a tagSwitcher to generate hints?
             // TODO: I only need the TagSwitcher to pass to the NodeScanner--why not create it inside the NodeScanner?
             NodeScanner nodeScanner = new NodeScanner(tagSwitcher);
-
-            HintsBucket hintsBucket = new HintsBucket();
-
-            Node root = pageSourceParser.getRootNode();
-            logger.debug("Root Node is: " + root.getNodeName() + "-- value: " + root.getNodeValue());
             TagDescriptorList tagDescriptorList = nodeScanner.scanForUIElements(root, 0);
 
             // Write the analysis file.
