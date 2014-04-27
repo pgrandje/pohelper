@@ -17,10 +17,10 @@ import org.w3c.dom.Node;
  * Has since gone through multiple incremental modifications and refactorings.
  */
 
-public class SeleniumGenerator
+public class GeneratorEngine
 {
 
-    private static final Logger logger = Logger.getLogger(SeleniumGenerator.class);
+    private static final Logger logger = Logger.getLogger(GeneratorEngine.class);
 
 
     public static void main(String[] args) throws IOException, ParserConfigurationException {
