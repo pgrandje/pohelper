@@ -19,24 +19,29 @@ public class PageDescriptor {
 
     private final Logger logger = Logger.getLogger(PageDescriptor.class);
 
-    // Uses the HTMl to get the page title, and any other page-level properties for naming the page object class.
-    private Document pageSource;
+    private String pageName;
 
-    // TODO: The classNameRecorder does not need to be a private member of PageDescriptor, it can be passed when needed.
-    private NameRecorder classNameRecorder;
-
-
-    PageDescriptor(Document document, NameRecorder nameRecorder) {
-        pageSource = document;
-        classNameRecorder = nameRecorder;
+    PageDescriptor() {
     }
 
-    PageDescriptor(String pageName, NameRecorder nameRecorder) {
-        classNameRecorder = nameRecorder;
+    PageDescriptor(String pageObjectName) {
+        this.pageName = pageObjectName;
     }
 
 
-    public void setPageObjectName(AbstractBucket bucket) {
+    public String getPageName() {
+        return pageName;
+    }
+
+    public void setPageName(String pageObjectName, NameRecorder classNameRecorder, AbstractBucket bucket) {
+
+        // Coming from the hints file, the pagename should already be unique--But we'll redo it to be certain.
+        pageName = classNameRecorder.makeSymbolName(pageObjectName);
+        bucket.setPageObjectName(pageName);
+    }
+
+
+    public void setPageName(Document pageSource, NameRecorder classNameRecorder, AbstractBucket bucket) {
 
         // Get all <title> tags--hopefully there's one and only one.
         Element root = pageSource.getDocumentElement();
@@ -44,15 +49,15 @@ public class PageDescriptor {
 
         if (nodeList.getLength() > 1) {
             logger.warn("Found more than one <title> tag, is this valid for a web page?");
-            bucket.setPageObjectName(makePageObjectName(nodeList.item(0)));
+            bucket.setPageObjectName(makePageNameFromTitle(nodeList.item(0), classNameRecorder));
         }
         else if (nodeList.getLength() == 1)  {
             logger.info("Found exactly one <title> tag, using it's text for the page object's classname.");
-            bucket.setPageObjectName(makePageObjectName(nodeList.item(0)));
+            bucket.setPageObjectName(makePageNameFromTitle(nodeList.item(0), classNameRecorder));
         }
         else if (nodeList.getLength() == 0) {
             logger.warn("<title> tag not found, using a default name for the page object.");
-            bucket.setPageObjectName(makePageObjectName(null));
+            bucket.setPageObjectName(makePageNameFromTitle(null, classNameRecorder));
         }
         else if (nodeList.getLength() < 0) {
             throw new SeleniumGeneratorException(
@@ -64,12 +69,13 @@ public class PageDescriptor {
     }
 
 
-    private String makePageObjectName(Node titleNode)  {
+    private String makePageNameFromTitle(Node titleNode, NameRecorder classNameRecorder)  {
 
         String titleText;
         String className;
 
         // If there was no title node, fetch a default symbolname.  Otherwise, use the title for the symbol name.
+        // TODO: A null for a page name will not work--need to create a makeDefaultPageName().
         if (titleNode == null) {
             titleText = null;
         }
@@ -80,6 +86,9 @@ public class PageDescriptor {
 
         className = classNameRecorder.makeSymbolName(titleText);
         logger.info("Using symbol name '" + className + "' for the page object class name.");
+
+        // TODO: PageName in PageDescriptor is stored differently than in the simpler case--make these consistent.
+        pageName = className;
 
         return className;
 

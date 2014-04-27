@@ -28,39 +28,17 @@ public class GeneratorEngine
 
         if (configurator.getGenerateStatus() == Configurator.GenerateType.HINTS_ONLY) {
 
-            // TODO: Create a helper method -- These 3 lines are the same in each branch except for the Bucket used.
-            // Pre-process using info from the Document's page source and use this to store a description of the page.
-            // The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
-            NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
-            PageDescriptor pageDescriptor = new PageDescriptor(PageScanner.getScanner().getDom(), classNameRecorder);
-            pageDescriptor.setPageObjectName(HintsBucket.getBucket());
+            setPageName();
 
-            // Now -- Scan the nodes
+            // Scan the DOM to get a list of tags and their attributes.
+            // TODO: I should use a different type of TagDescriptor when generating hints and not needing the code snippets.
             TagDescriptorList tagDescriptorList = PageScanner.getScanner().scan();
 
-            // Write the hints file.
-            for(TagDescriptor tagDescriptor : tagDescriptorList) {
-                HintsBucket.getBucket().addTag(tagDescriptor.getTag());
-                HintsBucket.getBucket().addText(tagDescriptor.getTextValue());
-                HintsBucket.getBucket().addAttributes(tagDescriptor.getAttributePairs());
-                HintsBucket.getBucket().addLocator(tagDescriptor.getLocatorString());
-            }
-
-            // TODO: Hints file name should only come from the Configurator
-            // TODO: Merge these 3 methods into one -- HintsBucket.writeHintsFile()
-            // Dump the hints file.
-            HintsBucket.getBucket().createOutputFile("./Hints.txt");
-            HintsBucket.getBucket().dumpToFile();
-            HintsBucket.getBucket().closeOutputFile();
-
+            writeHintsFromTagDescriptors(tagDescriptorList);
         }
         else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE) {
 
-            // Pre-process using info from the Document's page source and use this to store a description of the page.
-            // The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
-            NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
-            PageDescriptor pageDescriptor = new PageDescriptor(PageScanner.getScanner().getDom(), classNameRecorder);
-            pageDescriptor.setPageObjectName(CodeBucket.getBucket());
+            setPageName();
 
             // Scan the nodes
             TagDescriptorList tagDescriptorList = PageScanner.getScanner().scan();
@@ -77,8 +55,8 @@ public class GeneratorEngine
 
             // The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
             NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
-            PageDescriptor pageObjectDescriptor = new PageDescriptor(hintsDescriptorList.getPageName(), classNameRecorder);
-            pageObjectDescriptor.setPageObjectName(CodeBucket.getBucket());
+            PageDescriptor pageObjectDescriptor = new PageDescriptor();
+            pageObjectDescriptor.setPageName(hintsDescriptorList.getPageName(), classNameRecorder, CodeBucket.getBucket());
 
             TagSwitcher tagSwitcher = new TagSwitcher(configurator);
             NameRecorder memberNameRecorder = new NameRecorder("Member Name Recorder");
@@ -123,6 +101,17 @@ public class GeneratorEngine
     }
 
 
+    /*
+        Pre-process using info from the Document's page source and use this to store a description of the page.
+        The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
+     */
+    private static void setPageName() throws IOException, ParserConfigurationException{
+        NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
+        PageDescriptor pageDescriptor = new PageDescriptor();
+        pageDescriptor.setPageName(PageScanner.getScanner().getDom(), classNameRecorder, HintsBucket.getBucket());
+    }
+
+
     private static void writeCodeFromTagDescriptors(TagDescriptorList tagDescriptorList) throws IOException {
 
         CodeBucket codeBucket = CodeBucket.getBucket();
@@ -139,6 +128,26 @@ public class GeneratorEngine
 
         // Dump the generated sourcecode.
         codeBucket.dumpToFile(configurator.getDestinationFilePath());
+
+    }
+
+
+    private static void writeHintsFromTagDescriptors(TagDescriptorList tagDescriptorList) throws IOException {
+
+        // Write the hints file.
+        for(TagDescriptor tagDescriptor : tagDescriptorList) {
+            HintsBucket.getBucket().addTag(tagDescriptor.getTag());
+            HintsBucket.getBucket().addText(tagDescriptor.getTextValue());
+            HintsBucket.getBucket().addAttributes(tagDescriptor.getAttributePairs());
+            HintsBucket.getBucket().addLocator(tagDescriptor.getLocatorString());
+        }
+
+        // TODO: Hints file name should only come from the Configurator
+        // TODO: Merge these 3 methods into one -- HintsBucket.writeHintsFile()
+        // Dump the hints file.
+        HintsBucket.getBucket().createOutputFile("./Hints.txt");
+        HintsBucket.getBucket().dumpToFile();
+        HintsBucket.getBucket().closeOutputFile();
 
     }
 
