@@ -63,24 +63,10 @@ public class GeneratorEngine
 
             // TODO: Fetching and parsing the DOM is identical from the hints generation above, this could be a helper method.
 
-
             // Scan the nodes
             TagDescriptorList tagDescriptorList = PageScanner.getScanner().scan();
 
-            // TODO: The code generation here is copied in the generate from hints section also--put this in a helper method.
-            // Write the member code to the code buffer.
-            for(TagDescriptor tagDescriptor : tagDescriptorList) {
-                codeBucket.addCode(tagDescriptor.getComment());
-                codeBucket.addCode(tagDescriptor.getMemberCode());
-            }
-
-            // Write the method code to the code buffer.
-            for(TagDescriptor tagDescriptor : tagDescriptorList) {
-                codeBucket.addCode(tagDescriptor.getMethodCode());
-            }
-
-            // Dump the generated sourcecode.
-            codeBucket.dumpToFile(configurator.getDestinationFilePath());
+            writeCodeFromTagDescriptors(tagDescriptorList, codeBucket);
 
         }
         else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE_FROM_HINTS) {
@@ -112,19 +98,8 @@ public class GeneratorEngine
                 tagDescriptorList.add(tagDescriptor);
             }
 
-            // TODO: The code generation here is copied in sections above also--put this in a helper method.
-            // Write the member code to the code buffer.
-            for(TagDescriptor hintsTagDescriptor : tagDescriptorList) {
-                    codeBucket.addCode(hintsTagDescriptor.getComment());
-                    codeBucket.addCode(hintsTagDescriptor.getMemberCode());
-            }
-            // Write the method code to the code buffer.
-            for(TagDescriptor hintsTagDescriptor : tagDescriptorList) {
-                codeBucket.addCode(hintsTagDescriptor.getMethodCode());
-            }
+            writeCodeFromTagDescriptors(tagDescriptorList, codeBucket);
 
-            // Dump the generated sourcecode.
-            codeBucket.dumpToFile(configurator.getDestinationFilePath());
         }
         else {
             throw new SeleniumGeneratorException("Invalid configuration state.  Should never get here.");
@@ -147,6 +122,24 @@ public class GeneratorEngine
             System.exit(0);
         };
         configurator.processArgs();
+
+    }
+
+
+    private static void writeCodeFromTagDescriptors(TagDescriptorList tagDescriptorList, CodeBucket codeBucket) {
+
+        // Write the member code to the code buffer.
+        for(TagDescriptor hintsTagDescriptor : tagDescriptorList) {
+                codeBucket.addCode(hintsTagDescriptor.getComment());
+                codeBucket.addCode(hintsTagDescriptor.getMemberCode());
+        }
+        // Write the method code to the code buffer.
+        for(TagDescriptor hintsTagDescriptor : tagDescriptorList) {
+            codeBucket.addCode(hintsTagDescriptor.getMethodCode());
+        }
+
+        // Dump the generated sourcecode.
+        codeBucket.dumpToFile(configurator.getDestinationFilePath());
 
     }
 }
