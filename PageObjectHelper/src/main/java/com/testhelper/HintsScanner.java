@@ -23,7 +23,6 @@ public class HintsScanner {
     private String filePath;
     private String defaultFilePath = "./hints.txt";
     private BufferedReader hintsFile;
-    private final String recordDelimeter = "<*** New Tag ***>";
 
     // Returns code for a given tag.
     private TagSwitcher tagSwitcher;
@@ -31,7 +30,6 @@ public class HintsScanner {
     // Records names used for members to avoid duplicates.
     private NameRecorder memberNameRecorder;
 
-    private TagDescriptorList tagDescriptorList;
 
 
     // PageScanner is a singleton since we would only ever need one at a time.
@@ -47,7 +45,6 @@ public class HintsScanner {
 
         // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
         this.tagSwitcher = new TagSwitcher(Configurator.getConfigurator());;
-        this.tagDescriptorList = new TagDescriptorList();
         this.memberNameRecorder = new NameRecorder("Member Name Recorder");
         openHintsFile();
     }
@@ -82,8 +79,8 @@ public class HintsScanner {
         TagDescriptorList tagDescriptorList = new TagDescriptorList();
 
 
-        if (line.contains(HintsDescriptor.PAGE_MARKER)) {
-            String pageName = line.substring(HintsDescriptor.PAGE_MARKER.length());
+        if (line.contains(HintsFileDelimeters.PAGE_MARKER)) {
+            String pageName = line.substring(HintsFileDelimeters.PAGE_MARKER.length());
             logger.debug("Page name is: " + pageName);
             tagDescriptorList.setPageName(pageName);
         }
@@ -98,7 +95,7 @@ public class HintsScanner {
             logger.debug("Processing line: " + line);
 
             // Check for new record delimiter
-            if (line.contains(HintsDescriptor.NEW_TAG_DELIMITER)) {
+            if (line.contains(HintsFileDelimeters.NEW_TAG_DELIMITER)) {
 
                 logger.debug("Processing a new tag:");
 
@@ -107,12 +104,12 @@ public class HintsScanner {
                 logger.debug("Processing new tag on line: " + line);
 
                 // Check whether tag should be skipped, if so, skip all lines up to the next record, and re-loop.
-                if (line.charAt(0) != HintsDescriptor.IGNORE_CHAR) {
+                if (line.charAt(0) != HintsFileDelimeters.IGNORE_CHAR) {
                     logger.trace("Skipping lines:");
                     do {
                         logger.trace(line);
                         line = hintsFile.readLine();
-                    } while ((line != null) && (!line.contains(HintsDescriptor.NEW_TAG_DELIMITER)));
+                    } while ((line != null) && (!line.contains(HintsFileDelimeters.NEW_TAG_DELIMITER)));
                     continue;
                 }
                 else {
@@ -125,11 +122,11 @@ public class HintsScanner {
                     // Read and store the text if we find it in the analysis.
                     line = hintsFile.readLine();
                     // The Text field should always follow; throw an exception if it's not found.
-                    if (!line.startsWith(HintsDescriptor.TEXT_MARKER)) {
+                    if (!line.startsWith(HintsFileDelimeters.TEXT_MARKER)) {
                         throw new SeleniumGeneratorException("Expected text marker not found in hints file.");
                     }
 
-                    String text = line.substring(HintsDescriptor.TEXT_MARKER.length());
+                    String text = line.substring(HintsFileDelimeters.TEXT_MARKER.length());
                     logger.debug("Retrieved text '" + text + "'.");
                     tagDescriptor.setTextValue(text);
                     line = hintsFile.readLine();
@@ -139,9 +136,9 @@ public class HintsScanner {
 
                     HashMap<String, String> attributes = new HashMap<String, String>();
 
-                    while (line.startsWith(HintsDescriptor.ATTRIBUTE_MARKER)) {
+                    while (line.startsWith(HintsFileDelimeters.ATTRIBUTE_MARKER)) {
 
-                        String[] attrComponents = line.substring(HintsDescriptor.ATTRIBUTE_MARKER.length()).split(" = ");
+                        String[] attrComponents = line.substring(HintsFileDelimeters.ATTRIBUTE_MARKER.length()).split(" = ");
 
                         // TODO: Simplify attribute format in hints file.
                         // Attribute format: class = value where value could be null.
@@ -164,8 +161,8 @@ public class HintsScanner {
                     tagDescriptor.setAttributes(attributes);
 
                     // Read and store the css locator if we have one in the analysis.
-                    if (line.contains(HintsDescriptor.LOCATOR_MARKER)) {
-                        String locatorString = line.substring(HintsDescriptor.LOCATOR_MARKER.length());
+                    if (line.contains(HintsFileDelimeters.LOCATOR_MARKER)) {
+                        String locatorString = line.substring(HintsFileDelimeters.LOCATOR_MARKER.length());
                         logger.debug("Found locator string '" + locatorString + "'.");
 
                         Locator locator = LocatorFactory.createLocator(locatorString);
@@ -174,6 +171,7 @@ public class HintsScanner {
                         line = hintsFile.readLine();
                     }
 
+                    tagDescriptor.writeMemberAndMethods(memberNameRecorder);
                     tagDescriptorList.add(tagDescriptor);
 
                 }

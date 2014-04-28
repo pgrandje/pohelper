@@ -12,7 +12,7 @@ import java.util.List;
  * User: pgrandje
  * Date: 9/16/12
  */
-public class HintsDescriptor {
+public class HintsFileDelimeters {
 
     static public final String PAGE_MARKER = "Page Name: ";
     static public final String NEW_TAG_DELIMITER = "<*** UI Element ***>";
