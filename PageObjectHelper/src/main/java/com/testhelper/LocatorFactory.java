@@ -11,7 +11,7 @@ import java.util.LinkedList;
 /**
  * TODO: Add javadoc here.
  * Constructed using a factory since
- *      a) it could work off a wc3-Node or a HintsDescriptor and
+ *      a) it could work off a wc3-Node or a HintsToCodeDescriptor and
  *      b) we only need it when we need it, we won't need it's instance to be retained from the calling methods, so
  *         using a factory with a fluent api will properly restrict how this is used.
  * User: pgrandje
@@ -320,16 +320,16 @@ public class LocatorFactory {
 
             Locator.LocatorType locatorType = null;
             // TODO: Use a switch-case when creating Locator types from a string.
-            if (locatorTypeString.equals(HintsDescriptor.LOCATOR_TYPE_STRING_ID)) {
+            if (locatorTypeString.equals(HintsToCodeDescriptor.LOCATOR_TYPE_STRING_ID)) {
                 locatorType = Locator.LocatorType.ID;
             }
-            else if (locatorTypeString.equals(HintsDescriptor.LOCATOR_TYPE_STRING_NAME)) {
+            else if (locatorTypeString.equals(HintsToCodeDescriptor.LOCATOR_TYPE_STRING_NAME)) {
                 locatorType = Locator.LocatorType.NAME;
             }
-            else if (locatorTypeString.equals(HintsDescriptor.LOCATOR_TYPE_STRING_CLASS)) {
+            else if (locatorTypeString.equals(HintsToCodeDescriptor.LOCATOR_TYPE_STRING_CLASS)) {
                 locatorType = Locator.LocatorType.CLASS;
             }
-            else if (locatorTypeString.equals(HintsDescriptor.LOCATOR_TYPE_STRING_CSS)) {
+            else if (locatorTypeString.equals(HintsToCodeDescriptor.LOCATOR_TYPE_STRING_CSS)) {
                 locatorType = Locator.LocatorType.CSS;
             }
             else {

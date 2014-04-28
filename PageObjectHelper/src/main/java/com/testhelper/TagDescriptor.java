@@ -31,6 +31,11 @@ public class TagDescriptor {
     private Configurator configurator;
 
     private String tag;
+
+    public void setAttributes(HashMap<String, String> attributePairs) {
+        this.attributePairs = attributePairs;
+    }
+
     private HashMap<String, String> attributePairs;
     private String textContent;
     private String locatorString;
@@ -43,62 +48,20 @@ public class TagDescriptor {
 
     // *** Constructors ***
 
-    public TagDescriptor(TagTemplate template, Node node) {
 
-        TagDescriptor tagDescriptor = new TagDescriptor(template, node.getTextContent());
-
-        tagDescriptor.attributePairs = new HashMap<String, String>();
-        NamedNodeMap nodeAttributes = node.getAttributes();
-        for(int i=0; i < nodeAttributes.getLength(); i++) {
-            Attr attr = (Attr) nodeAttributes.item(i);
-            tagDescriptor.attributePairs.put(attr.getName(), attr.getValue());
-        }
-
-    }
-
-
-    public TagDescriptor(TagTemplate template, HintsDescriptor hintsDescriptor) {
-
-        TagDescriptor tagDescriptor = new TagDescriptor(template, hintsDescriptor.getText());
-
-        tagDescriptor.attributePairs = new HashMap<String, String>();
-        List<HintsAttribute> hintsAttributes = hintsDescriptor.getAttributes();
-        for(HintsAttribute hintsAttribute: hintsAttributes) {
-            tagDescriptor.attributePairs.put(hintsAttribute.getAttributeName(), hintsAttribute.getAttributeValue());
-        }
-
-    }
-
-
-    private TagDescriptor(TagTemplate tagTemplate, String textValue) {
+    public TagDescriptor(TagTemplate tagTemplate) {
 
         configurator = Configurator.getConfigurator();
 
-        // I could get the tag from either the Node or the template.  I'm choosing the Template since it's
-        //  working and I might have to change the string if I get it from the Node.
         tag = tagTemplate.getTag();
         logger.debug("Creating new TagDescriptor with tag '" + tag + "'.");
 
         memberCode = new StringBuffer(tagTemplate.getMemberCode());
         methodCode = new StringBuffer(tagTemplate.getMethodCode());
-        logger.debug("Using member code template:\n" + memberCode);
-        logger.debug("And method code template:\n" + methodCode);
+        logger.trace("Using member code template:\n" + memberCode);
+        logger.trace("And method code template:\n" + methodCode);
 
         comment = new StringBuffer();
-
-        logger.debug("Creating new TagDescriptor for tag " + tag + ".");
-
-        textContent = textValue;
-
-        /* Log whether we found text or not.  When textContent doesn't exist, node.getTextContent() returns an empty
-           string but not a null.  This must be handled.
-         */
-        if ((textContent != null) && (!textContent.isEmpty())) {
-            logger.debug("In method addTextValueViaHtmlNode() -- Found textContent, saving '" + textContent + "' to tag bucket.");
-        }
-        else {
-            logger.debug("No textContent found.");
-        }
 
         recordInfoComments();
 
@@ -132,33 +95,35 @@ public class TagDescriptor {
     // *** Accessors ***
 
     public String getTag() {
-        logger.trace("Getting the tag: " + tag);
         return tag;
     }
 
     public String getMemberCode() {
-        logger.trace("Getting the member code:\n" + memberCode);
         return memberCode.toString();
     }
 
     public String getMethodCode() {
-        logger.trace("Getting the method code:\n" + methodCode);
         return methodCode.toString();
     }
 
     public String getTextValue() {
-        logger.trace("Getting the text content: " + textContent);
         return textContent;
     }
 
+
+    public void setTextValue(String text) {
+        textContent = text;
+    }
+
     public String getComment() {
-        logger.trace("Getting the comment: " + comment);
         return comment.toString();
     }
 
     public HashMap<String, String> getAttributePairs() {
         return attributePairs;
     }
+
+
 
     // **** Locator String ****
 

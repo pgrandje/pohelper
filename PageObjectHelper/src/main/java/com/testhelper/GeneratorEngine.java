@@ -48,31 +48,16 @@ public class GeneratorEngine
         }
         else if (configurator.getGenerateStatus() == Configurator.GenerateType.CODE_FROM_HINTS) {
 
-            HintsReader hintsReader = new HintsReader();
-            hintsReader.openHintsFile();
-            // TODO: Store the class name in the HintsDescriptorList.
-            HintsDescriptorList hintsDescriptorList = hintsReader.loadHints();
-
             // The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
             NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
             PageDescriptor pageObjectDescriptor = new PageDescriptor();
             pageObjectDescriptor.setPageName(hintsDescriptorList.getPageName(), classNameRecorder, CodeBucket.getBucket());
+            // TODO: Should I continue to use the PageDescriptor for the page name?  Or should I store it in the List?
+            setPageName(classNameRecorder);
 
-            TagSwitcher tagSwitcher = new TagSwitcher(configurator);
-            NameRecorder memberNameRecorder = new NameRecorder("Member Name Recorder");
+            TagDescriptorList hintsDescriptorList = HintsScanner.getScanner().scan();
 
-            // Currently I just use the tagSwitcher since it's global to main()
-            TagDescriptorList tagDescriptorList = new TagDescriptorList();
-            for(HintsDescriptor hintsDescriptor: hintsDescriptorList) {
-                TagTemplate tagTemplate = tagSwitcher.getTemplate(hintsDescriptor.getTag());
-                TagDescriptor tagDescriptor = new TagDescriptor(tagTemplate, hintsDescriptor);
-                // TODO: If the tagDescriptor has already been passed the hintsDescriptor with it's stored Locator, this call to writeLocatorString() could be done internally.
-                tagDescriptor.writeLocatorString(hintsDescriptor.getLocator());
-                tagDescriptor.writeMemberAndMethods(memberNameRecorder);
-                tagDescriptorList.add(tagDescriptor);
-            }
-
-            writeCodeFromTagDescriptors(tagDescriptorList);
+            writeCodeFromTagDescriptors(hintsDescriptorList);
 
         }
         else {
@@ -106,7 +91,7 @@ public class GeneratorEngine
         The Class Name Recorder will need to be available for all generated classes when I'm crawling a site.
      */
     private static void setPageName() throws IOException, ParserConfigurationException{
-        NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
+        classNameRecorder = new NameRecorder("Class Name Recorder");
         PageDescriptor pageDescriptor = new PageDescriptor();
         pageDescriptor.setPageName(PageScanner.getScanner().getDom(), classNameRecorder, HintsBucket.getBucket());
     }

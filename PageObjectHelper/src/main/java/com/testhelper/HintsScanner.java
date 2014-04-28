@@ -6,34 +6,59 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Reads in the Hints file for the Generator when the modified Hints file is used for code generation.
  * User: pgrandje
  * Date: 9/9/12
  */
-public class HintsReader {
+public class HintsScanner {
 
     private final Logger logger = Logger.getLogger(this.getClass());
+
+    private static HintsScanner scanner = null;
 
     // IntelliJ thinks filePath isn't used but it is in the open() method.
     private String filePath;
     private String defaultFilePath = "./hints.txt";
     private BufferedReader hintsFile;
-
     private final String recordDelimeter = "<*** New Tag ***>";
 
+    // Returns code for a given tag.
+    private TagSwitcher tagSwitcher;
 
-    HintsReader() {}
+    // Records names used for members to avoid duplicates.
+    private NameRecorder memberNameRecorder;
+
+    private TagDescriptorList tagDescriptorList;
 
 
-    public void openHintsFile() throws FileNotFoundException {
-        openHintsFile(null);
+    // PageScanner is a singleton since we would only ever need one at a time.
+    public static HintsScanner getScanner()  throws IOException {
+        if (scanner == null) {
+            scanner = new HintsScanner();
+        }
+        return scanner;
+    }
+
+    // TagSwitcher throws the IOException when it can't find it's configuration file.
+    private HintsScanner() throws IOException {
+
+        // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
+        this.tagSwitcher = new TagSwitcher(Configurator.getConfigurator());;
+        this.tagDescriptorList = new TagDescriptorList();
+        this.memberNameRecorder = new NameRecorder("Member Name Recorder");
+        openHintsFile();
     }
 
 
-    public void openHintsFile(String filePath) throws FileNotFoundException {
+    private void openHintsFile() throws FileNotFoundException {
+        openHintsFile(null);
+    }
+
+    // TODO: Get hints file path from Configurator
+    private void openHintsFile(String filePath) throws FileNotFoundException {
 
         try {
             if (filePath == null) {
@@ -48,19 +73,19 @@ public class HintsReader {
     }
 
 
-    public HintsDescriptorList loadHints() throws IOException {
+    public TagDescriptorList scan() throws IOException {
 
         String currentTag = null;
 
         String line = hintsFile.readLine();
 
-        HintsDescriptorList hintsDescriptorList = new HintsDescriptorList();
+        TagDescriptorList tagDescriptorList = new TagDescriptorList();
 
 
         if (line.contains(HintsDescriptor.PAGE_MARKER)) {
             String pageName = line.substring(HintsDescriptor.PAGE_MARKER.length());
             logger.debug("Page name is: " + pageName);
-            hintsDescriptorList.setPageName(pageName);
+            tagDescriptorList.setPageName(pageName);
         }
         else {
             throw new SeleniumGeneratorException("Page name not found in Hints file.");
@@ -91,53 +116,52 @@ public class HintsReader {
                     continue;
                 }
                 else {
-                    // Once it gets here, we have the tag field for a record that should get generated.
-                    // TODO:  put in exceptions for when I don't find what I'm expecting to find.
-
-                    HintsDescriptor hintsDescriptor = new HintsDescriptor();
 
                     // Store the tag, it has already been read above.
-                    hintsDescriptor.setTag(line.replace("*", "").trim());
+                    String tag = line.replace("*", "").trim();
+
+                    TagDescriptor tagDescriptor = new TagDescriptor(tagSwitcher.getTemplate(tag));
 
                     // Read and store the text if we find it in the analysis.
                     line = hintsFile.readLine();
-                    // TODO: the Text field should always follow, change 'if' to throw an exception if it's not found.
+                    // The Text field should always follow; throw an exception if it's not found.
                     if (!line.startsWith(HintsDescriptor.TEXT_MARKER)) {
-                        throw new SeleniumGeneratorException("Expected text filed in hints file not found.");
+                        throw new SeleniumGeneratorException("Expected text marker not found in hints file.");
                     }
 
                     String text = line.substring(HintsDescriptor.TEXT_MARKER.length());
                     logger.debug("Retrieved text '" + text + "'.");
-                    hintsDescriptor.setText(text);
+                    tagDescriptor.setTextValue(text);
                     line = hintsFile.readLine();
 
+
                     // Read and store the list of attributes if we have them in the analysis.
+
+                    HashMap<String, String> attributes = new HashMap<String, String>();
+
                     while (line.startsWith(HintsDescriptor.ATTRIBUTE_MARKER)) {
-                        String attributePair = line.substring(HintsDescriptor.ATTRIBUTE_MARKER.length());
-                        logger.debug("Found attribute line '" + attributePair + "'.");
-                        // TODO: Simply attribute format in hints file.
+
+                        String[] attrComponents = line.substring(HintsDescriptor.ATTRIBUTE_MARKER.length()).split(" = ");
+
+                        // TODO: Simplify attribute format in hints file.
                         // Attribute format: class = value where value could be null.
                         // TODO: Make the Hints file not have an '=' when the attribute value is missing.
-                        String[] attrComponents = attributePair.split(" = ");
+
                         if (attrComponents[0] == null) {
                             throw new SeleniumGeneratorException("Hints file has Attribute record with no attribute.");
                         }
-                        String attrName = attrComponents[0];
-                        String attrValue = null;
-                        if (attrComponents.length == 2) {
-                             attrValue = attrComponents[1];
+
+                        logger.debug("Storing attribute '" + attrComponents[0]);
+                        if (attrComponents[1] != null) {
+                            logger.debug("   .... with value '" + attrComponents[1] + "'");
                         }
-                        HintsAttribute hintsAttribute = new HintsAttribute();
 
-                        logger.debug("Storing attribute with name '" + attrName + "' and value '" + attrValue + "'");
-                        hintsAttribute.setAttributeName(attrName);
-                        hintsAttribute.setAttributeValue(attrValue);
-
-                        // Add the hintsAttribute to the hintsDescriptor.
-                        hintsDescriptor.addAttribute(hintsAttribute);
+                        attributes.put(attrComponents[0], attrComponents[1]);
 
                         line = hintsFile.readLine();
                     }
+
+                    tagDescriptor.setAttributes(attributes);
 
                     // Read and store the css locator if we have one in the analysis.
                     if (line.contains(HintsDescriptor.LOCATOR_MARKER)) {
@@ -145,12 +169,12 @@ public class HintsReader {
                         logger.debug("Found locator string '" + locatorString + "'.");
 
                         Locator locator = LocatorFactory.createLocator(locatorString);
-                        hintsDescriptor.setLocator(locator);
+                        tagDescriptor.writeLocatorString(locator);
 
                         line = hintsFile.readLine();
                     }
 
-                    hintsDescriptorList.add(hintsDescriptor);
+                    tagDescriptorList.add(tagDescriptor);
 
                 }
 
@@ -161,7 +185,7 @@ public class HintsReader {
 
         }
 
-        return hintsDescriptorList;
+        return tagDescriptorList;
 
     }
 

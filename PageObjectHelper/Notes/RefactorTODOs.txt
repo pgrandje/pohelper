@@ -21,3 +21,6 @@ NameRecorder needs a separate method for writing default names--don't require a 
 
 
 Make CodeBucket and HintsBucket consistent.
+
+
+Rename the TagSwitcher, it's really a Code Template Picker.

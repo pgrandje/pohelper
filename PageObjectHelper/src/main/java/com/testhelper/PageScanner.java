@@ -4,7 +4,9 @@ import org.htmlcleaner.CleanerProperties;
 import org.htmlcleaner.DomSerializer;
 import org.htmlcleaner.HtmlCleaner;
 import org.htmlcleaner.TagNode;
+import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
+import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
 import org.apache.log4j.Logger;
@@ -13,6 +15,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.net.URL;
 import java.net.UnknownHostException;
+import java.util.HashMap;
 
 /**
  * Recursive function, the Node Scanner traverses the DOM and creates objects and initiates actions based on the DOM
@@ -32,10 +35,12 @@ public class PageScanner {
     // Returns code for a given tag.
     private TagSwitcher tagSwitcher;
 
+    // Records names used for members to avoid duplicates.
+    private NameRecorder memberNameRecorder;
 
     private TagDescriptorList tagDescriptorList;
 
-    private NameRecorder memberNameRecorder;
+
 
     // PageScanner is a singleton since we would only ever need one at a time.
     public static PageScanner getScanner()  throws IOException, ParserConfigurationException {
@@ -144,7 +149,7 @@ public class PageScanner {
                 if (tagTemplate != null) {
 
                     // Load up a new TagDescriptor for future code processing and addCode it to the TagDescriptorList
-                    TagDescriptor tagDescriptor = new TagDescriptor(tagTemplate, current);
+                    TagDescriptor tagDescriptor = new TagDescriptor(tagTemplate);
 
                     // The tag is only recorded for generation if a locator can be written.  Locators are written based
                     // on an ID, a CSS Locator (which should always be obtainable), or on a attribute previously identfied
@@ -153,6 +158,7 @@ public class PageScanner {
                     //        can be written.  WriteLocator() ad writeMemberAndMethods() could be run from the TagDescriptor contructor,
                     //        decoupling these to classes further. As is, if the locator can't be computed, the tag is not added
                     //        to the list for generation.  But this would preclude writing only informational comments to the output.
+                    tagDescriptor.setAttributes(setAttributePairs(current));
                     Locator locator = LocatorFactory.createLocator(current);
                     tagDescriptor.writeLocatorString(locator);
                     tagDescriptor.writeMemberAndMethods(memberNameRecorder);
@@ -167,5 +173,19 @@ public class PageScanner {
 
        return tagDescriptorList;
     };
+
+
+    private HashMap<String, String> setAttributePairs(Node node) {
+
+        HashMap<String,String> attributePairs = new HashMap<String, String>();
+        NamedNodeMap nodeAttributes = node.getAttributes();
+        for(int i=0; i < nodeAttributes.getLength(); i++) {
+            Attr attr = (Attr) nodeAttributes.item(i);
+            attributePairs.put(attr.getName(), attr.getValue());
+        }
+
+        return attributePairs;
+
+    }
 
 }
