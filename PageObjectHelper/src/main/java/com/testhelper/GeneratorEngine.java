@@ -100,7 +100,7 @@ public class GeneratorEngine
     private static void writeCodeFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
 
         CodeBucket codeBucket = CodeBucket.getBucket();
-        codeBucket.setPageObjectName(pageDescriptor.getPageName());
+        codeBucket.setPageObjectName(pageDescriptor.getPageObjectName());
 
         // Write the member code to the code buffer.
         for(TagDescriptor tagDescriptor : tagDescriptorList) {
@@ -121,7 +121,7 @@ public class GeneratorEngine
     private static void writeHintsFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
 
         HintsBucket hintsBucket = HintsBucket.getBucket();
-        hintsBucket.setPageObjectName(pageDescriptor.getPageName());
+        hintsBucket.setPageObjectName(pageDescriptor.getPageObjectName());
 
         // Write the hints file.
         for(TagDescriptor tagDescriptor : tagDescriptorList) {

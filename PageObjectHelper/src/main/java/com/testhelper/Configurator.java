@@ -104,7 +104,7 @@ public class Configurator {
      * @param args
      * @return
      */
-    public static synchronized Configurator getConfigurator(String[] args) {
+    public static Configurator getConfigurator(String[] args) {
 
         if (singletonConfigurator == null) {
            singletonConfigurator = new Configurator(args);
@@ -113,7 +113,7 @@ public class Configurator {
     }
 
 
-    public static synchronized Configurator getConfigurator() {
+    public static Configurator getConfigurator() {
         if (singletonConfigurator == null) {
            throw new SeleniumGeneratorException("Can't get Configurator without creating a new one requiring command-line args.");
         }
