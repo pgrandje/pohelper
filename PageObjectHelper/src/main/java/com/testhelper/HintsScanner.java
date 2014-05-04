@@ -70,24 +70,36 @@ public class HintsScanner {
     }
 
 
-    public TagDescriptorList scan() throws IOException {
+    public PageDescriptor setPageName(NameRecorder classNameRecorder) throws IOException {
 
-        String currentTag = null;
+        PageDescriptor pageDescriptor = null;
 
         String line = hintsFile.readLine();
 
-        TagDescriptorList tagDescriptorList = new TagDescriptorList();
-
-
         if (line.contains(HintsFileDelimeters.PAGE_MARKER)) {
-            String pageName = line.substring(HintsFileDelimeters.PAGE_MARKER.length());
+            String title = line.substring(HintsFileDelimeters.PAGE_MARKER.length());
+            String pageName = classNameRecorder.makeSymbolName(title);
             logger.debug("Page name is: " + pageName);
-            tagDescriptorList.setPageName(pageName);
+            pageDescriptor = new PageDescriptor(pageName);
         }
         else {
             throw new SeleniumGeneratorException("Page name not found in Hints file.");
         }
 
+        return pageDescriptor;
+    }
+
+
+
+    public TagDescriptorList scan() throws IOException {
+
+        String line = hintsFile.readLine();
+
+        if (line.contains(HintsFileDelimeters.PAGE_MARKER)) {
+            throw new SeleniumGeneratorException("Reading from first line of hints file but page name should have been read already.");
+        }
+
+        TagDescriptorList tagDescriptorList = new TagDescriptorList();
 
         // There shouldn't be any blank lines in this file, so we'll treat that as end of file.
         while (line != null){

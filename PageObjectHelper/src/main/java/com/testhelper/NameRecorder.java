@@ -36,7 +36,7 @@ public class NameRecorder {
     }
 
 
-    private String makeDefaultSymbolName() {
+    public String makeDefaultSymbolName() {
 
         logger.debug("**** Making a default symbol name ****");
         StringBuffer newSymbolName = new StringBuffer();
@@ -49,8 +49,10 @@ public class NameRecorder {
     }
 
 
-    // if text is null it returns a default symbol name.
-    // This is to avoid calling methods to have to call two different methods.
+    /* If text is null it returns a default symbol name.
+       This is to avoid calling methods to have to call two different methods.
+       TODO: Re-evaluate if passing a null to makeSymbolName() vs. calling makeDefaultSymbolName()
+    */
     public String makeSymbolName(String text) {
 
         if (text == null) {

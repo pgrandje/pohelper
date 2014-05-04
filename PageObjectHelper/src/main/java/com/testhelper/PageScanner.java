@@ -4,10 +4,7 @@ import org.htmlcleaner.CleanerProperties;
 import org.htmlcleaner.DomSerializer;
 import org.htmlcleaner.HtmlCleaner;
 import org.htmlcleaner.TagNode;
-import org.w3c.dom.Attr;
-import org.w3c.dom.Document;
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.Node;
+import org.w3c.dom.*;
 
 import org.apache.log4j.Logger;
 
@@ -88,6 +85,53 @@ public class PageScanner {
         document = new DomSerializer(props, true).createDOM(nodes);
 
     }
+
+
+    public PageDescriptor setPageName(NameRecorder classNameRecorder) {
+
+        PageDescriptor pageDescriptor = null;
+
+        // Get all <title> tags--hopefully there's one and only one.
+        NodeList titleTagList = document.getElementsByTagName("title");
+
+        if (null == titleTagList) {
+            throw new SeleniumGeneratorException("Retrieving <title> returned a null list.");
+        }
+        else if (titleTagList.getLength() == 1)  {
+            logger.info("Found exactly one <title> tag, using it's text for the page object's classname.");
+            pageDescriptor = makePageNameFromTitle(titleTagList.item(0), classNameRecorder);
+        }
+        else if (titleTagList.getLength() > 1) {
+            logger.warn("Found more than one <title> tag, is this valid for a web page?");
+            pageDescriptor = makePageNameFromTitle(titleTagList.item(0), classNameRecorder);
+        }
+        else if (titleTagList.getLength() == 0) {
+            logger.warn("<title> tag not found, using a default name for the page object.");
+            pageDescriptor = makeDefaultPageName(classNameRecorder);
+        }
+
+        return pageDescriptor;
+    }
+
+
+    private PageDescriptor makeDefaultPageName(NameRecorder nameRecorder) {
+        return  new PageDescriptor(nameRecorder.makeDefaultSymbolName());
+    }
+
+
+    private PageDescriptor makePageNameFromTitle(Node titleNode, NameRecorder classNameRecorder)  {
+
+        String titleText = titleNode.getTextContent();
+        logger.info("Using title tag '" + titleNode.getNodeName() + "' with text \"" + titleText + "\"");
+        String className = classNameRecorder.makeSymbolName(titleText);
+        logger.info("ClassRecorder returned name '" + className + "' for the page object class name.");
+
+        return new PageDescriptor(className);
+
+    }
+
+
+
 
     public Document getDom() {
         return document;
