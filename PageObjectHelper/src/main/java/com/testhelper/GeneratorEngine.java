@@ -28,7 +28,7 @@ public class GeneratorEngine
     /* Accumulates the classnames used for each page object to ensure uniqueness.
        The classNameRecorder needs to exist, and accumulate page names for all pages generated.
     */
-    private static final NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
+    private static NameRecorder classNameRecorder = null;
 
 
     public static void main(String[] args) throws IOException, ParserConfigurationException {
@@ -40,6 +40,7 @@ public class GeneratorEngine
            hints file when generating hints.
          */
         PageDescriptor pageDescriptor = null;
+        classNameRecorder = new NameRecorder("Class Name Recorder");
 
         // Generate the hints or code output.
 

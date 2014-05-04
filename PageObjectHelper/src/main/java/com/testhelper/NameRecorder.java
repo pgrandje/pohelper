@@ -13,7 +13,6 @@ import org.apache.log4j.Logger;
 public class NameRecorder {
 
     private Logger logger;
-    private Configurator configurator;
 
     private String instanceName;
     private HashMap<String, Integer> recordedNames;
@@ -24,15 +23,10 @@ public class NameRecorder {
 
     // TODO:  Name recorder should have a config option for removing underscores--I could use this for the className.
     public NameRecorder(String name) {
-
         logger = Logger.getLogger(NameRecorder.class);
         instanceName = name;
-
-        this.configurator = Configurator.getConfigurator();
-
         recordedNames = new HashMap<String, Integer>(200);
         logger.debug("**** " + instanceName + " Name Recorder Created ***");
-
     }
 
 
@@ -42,7 +36,7 @@ public class NameRecorder {
         StringBuffer newSymbolName = new StringBuffer();
 
         defaultSymbolCounter++;
-        newSymbolName.append(configurator.getDefaultMemberName() + defaultSymbolCounter);
+        newSymbolName.append(Configurator.getConfigurator().getDefaultMemberName() + defaultSymbolCounter);
         logger.debug("Returning symbol name: " + newSymbolName);
 
         return newSymbolName.toString();
