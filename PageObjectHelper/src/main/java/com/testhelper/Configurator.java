@@ -45,7 +45,7 @@ public class Configurator {
 
     // Generation Choices
     public enum GenerateType {
-        CODE, HINTS_ONLY, CODE_FROM_HINTS, ANALYZE_AND_GENERATE };
+        CODE, HINTS, CODE_FROM_HINTS, ANALYZE_AND_GENERATE };
     // Default if -generate param is not specified is to generate the sourcecode.
     private GenerateType generate;
 
@@ -323,7 +323,7 @@ public class Configurator {
         }
         else if (generateOptionValue.equals("hints")) {
             logger.info("Generating analysis file only.");
-            return GenerateType.HINTS_ONLY;
+            return GenerateType.HINTS;
         }
         else if (generateOptionValue.equals("codefromhints")) {
             logger.info("Generating code from hints file.");

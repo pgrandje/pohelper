@@ -87,7 +87,7 @@ public class PageScanner {
     }
 
 
-    public PageDescriptor setPageName(NameRecorder classNameRecorder) {
+    public PageDescriptor getPageName(NameRecorder classNameRecorder) {
 
         PageDescriptor pageDescriptor = null;
 

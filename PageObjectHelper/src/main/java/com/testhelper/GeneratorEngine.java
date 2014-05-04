@@ -8,7 +8,13 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 /**
- * This is the Main Entry Point for the entire app.
+ * Currently This is the Main Entry Point for the app.
+ * Eventually, this will provide an API for code and hints generation, and a separate class will provide an interactive
+ * command-line.  In addition other UIs will be considered where each will send generate commands to this class.
+ *
+ * The Generator is the entry point for generation of code and hints from a web site, and of code from a previously
+ * generated hints file.
+ *
  * Creator:  Paul Grandjean
  * Date:  First created sometime in 2011 in Salt Lake City, Utah :-)
  * Has since gone through many incremental refactorings and is gradually growing mature in its years.
@@ -19,7 +25,9 @@ public class GeneratorEngine
 
     private static final Logger logger = Logger.getLogger(GeneratorEngine.class);
 
-    // The classNameRecorder needs to exist, and accumulate page names for all pages generated.
+    /* Accumulates the classnames used for each page object to ensure uniqueness.
+       The classNameRecorder needs to exist, and accumulate page names for all pages generated.
+    */
     private static final NameRecorder classNameRecorder = new NameRecorder("Class Name Recorder");
 
 
@@ -28,30 +36,29 @@ public class GeneratorEngine
         setConfiguration(args);
 
         /* A new PageDescriptor is created for each page or hints file scanned.
-           The PageDescriptor is then used to name the class name in the code bucket when generating code or the hints file when generating hints.
+           The PageDescriptor is then used to name the class name in the code bucket when generating code or in the
+           hints file when generating hints.
          */
         PageDescriptor pageDescriptor = null;
 
         // Generate the hints or code output.
 
-        if (Configurator.getConfigurator().getGenerateStatus() == Configurator.GenerateType.HINTS_ONLY) {
+        if (Configurator.getConfigurator().getGenerateStatus() == Configurator.GenerateType.HINTS) {
 
-            pageDescriptor = PageScanner.getScanner().setPageName(classNameRecorder);
+            pageDescriptor = PageScanner.getScanner().getPageName(classNameRecorder);
 
             // Scan the DOM to get a list of tags and their attributes.
             // TODO: Should I use a different type of TagDescriptor when generating hints and not needing the code snippets?
             TagDescriptorList tagDescriptorList = PageScanner.getScanner().scan();
-
             writeHintsFromTagDescriptors(pageDescriptor, tagDescriptorList);
+
         }
         else if (Configurator.getConfigurator().getGenerateStatus() == Configurator.GenerateType.CODE) {
 
-            pageDescriptor = PageScanner.getScanner().setPageName(classNameRecorder);
+            pageDescriptor = PageScanner.getScanner().getPageName(classNameRecorder);
 
             // Scan the nodes
             TagDescriptorList tagDescriptorList = PageScanner.getScanner().scan();
-
-            // TODO: Write the page name into the code bucket.
             writeCodeFromTagDescriptors(pageDescriptor, tagDescriptorList);
 
         }
@@ -59,9 +66,8 @@ public class GeneratorEngine
 
             pageDescriptor = HintsScanner.getScanner().setPageName(classNameRecorder);
 
-            TagDescriptorList hintsDescriptorList = HintsScanner.getScanner().scan();
-
-            writeCodeFromTagDescriptors(pageDescriptor, hintsDescriptorList);
+            TagDescriptorList tagDescriptorList = HintsScanner.getScanner().scan();
+            writeCodeFromTagDescriptors(pageDescriptor, tagDescriptorList);
 
         }
         else {
@@ -97,13 +103,13 @@ public class GeneratorEngine
         codeBucket.setPageObjectName(pageDescriptor.getPageName());
 
         // Write the member code to the code buffer.
-        for(TagDescriptor hintsTagDescriptor : tagDescriptorList) {
-                codeBucket.addCode(hintsTagDescriptor.getComment());
-                codeBucket.addCode(hintsTagDescriptor.getMemberCode());
+        for(TagDescriptor tagDescriptor : tagDescriptorList) {
+            codeBucket.addCode(tagDescriptor.getComment());
+            codeBucket.addCode(tagDescriptor.getMemberCode());
         }
         // Write the method code to the code buffer.
-        for(TagDescriptor hintsTagDescriptor : tagDescriptorList) {
-            codeBucket.addCode(hintsTagDescriptor.getMethodCode());
+        for(TagDescriptor tagDescriptor : tagDescriptorList) {
+            codeBucket.addCode(tagDescriptor.getMethodCode());
         }
 
         // Dump the generated sourcecode.
@@ -119,10 +125,11 @@ public class GeneratorEngine
 
         // Write the hints file.
         for(TagDescriptor tagDescriptor : tagDescriptorList) {
+            // TODO: Resolve--Why does the CodeBucket just have an addCode() method, but the HintsBucket has 4 different methods?
             hintsBucket.addTag(tagDescriptor.getTag());
-            hintsBucket.getBucket().addText(tagDescriptor.getTextValue());
-            hintsBucket.getBucket().addAttributes(tagDescriptor.getAttributePairs());
-            hintsBucket.getBucket().addLocator(tagDescriptor.getLocatorString());
+            hintsBucket.addText(tagDescriptor.getTextValue());
+            hintsBucket.addAttributes(tagDescriptor.getAttributePairs());
+            hintsBucket.addLocator(tagDescriptor.getLocatorString());
         }
 
         // Dump the hints file.
