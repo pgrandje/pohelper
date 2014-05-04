@@ -16,10 +16,12 @@ public class PageDescriptor {
 
     PageDescriptor(String pageObjectName) {
         this.pageObjectName = pageObjectName;
+        logger.info("Page name set to: " + pageObjectName);
     }
 
 
     public String getPageObjectName() {
+        logger.info("Fetching the page object name: " + pageObjectName);
         return pageObjectName;
     }
 

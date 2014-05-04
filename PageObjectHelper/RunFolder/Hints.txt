@@ -1,5 +1,6 @@
-Page Name: : CNN_com_Breaking_News_U_S_World_<*** UI Element ***>
-<a> 
+Page Name: : CNN_com_Breaking_News_U_S_World_
+<*** UI Element ***>
+*<a>
 Text: null 
 Attribute: id = hdr-banner-title
 Attribute: href = /
@@ -10,7 +11,7 @@ Text: null
 Attribute: class = no-pad-left
 Locator: null 
 <*** UI Element ***>
-<a> 
+*<a>
 Text: null 
 Attribute: class = cnn_hdr-editionlnk
 Attribute: href = javascript:cnn_initeditionhtml(3);
@@ -20,7 +21,7 @@ Locator: null
 Text: null 
 Locator: null 
 <*** UI Element ***>
-<a> 
+*<a>
 Text: null 
 Attribute: id = cnn_switchEdition_intl
 Attribute: title = CNN INTERNATIONAL
@@ -31,7 +32,7 @@ Locator: null
 Text: null 
 Locator: null 
 <*** UI Element ***>
-<a> 
+*<a>
 Text: null 
 Attribute: hreflang = es
 Attribute: title = CNN MÉXICO
@@ -66,7 +67,7 @@ Text: null
 Attribute: class = no-pad-left
 Locator: null 
 <*** UI Element ***>
-<a> 
+*<a>
 Text: null 
 Attribute: title = CNN TV programming schedule
 Attribute: href = /cnn/programs/
@@ -470,6 +471,22 @@ Locator: null
 <li> 
 Text: null 
 Attribute: class = c_hpbullet1 c_hpfirstbullet
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: href = /video/data/2.0/video/bestoftv/2014/05/04/nr-kaye-intv-circus-accident-eyewitnesses.cnn.html?hpt=hp_t1
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: target = 
+Attribute: href = /video/data/2.0/video/bestoftv/2014/05/04/nr-kaye-intv-circus-accident-eyewitnesses.cnn.html?hpt=hp_t1
+Locator: null 
+<*** UI Element ***>
+<li> 
+Text: null 
+Attribute: class = c_hpbullet1 c_hpfirstbullet
 Attribute: data-vr-contentbox = 
 Locator: null 
 <*** UI Element ***>
@@ -486,7 +503,7 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /2014/05/03/politics/washington-correspondents-dinner/index.html?hpt=hp_t2
+Attribute: href = /2014/05/04/us/florida-goblin-shark/index.html?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -497,13 +514,7 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /video/data/2.0/video/bestoftv/2014/05/04/sot-whcd-mchale-cnn-other-media.cnn.html?hpt=hp_t2
-Locator: null 
-<*** UI Element ***>
-<a> 
-Text: null 
-Attribute: target = 
-Attribute: href = /video/data/2.0/video/bestoftv/2014/05/04/sot-whcd-mchale-cnn-other-media.cnn.html?hpt=hp_t2
+Attribute: href = /2014/05/04/us/clippers-shelly-sterling/index.html?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -514,7 +525,13 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /2014/05/04/us/clippers-shelly-sterling/index.html?hpt=hp_t2
+Attribute: href = /video/data/2.0/video/bestoftv/2014/05/04/nd-snl-clippers-drama.cnn.html?hpt=hp_t2
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: target = 
+Attribute: href = /video/data/2.0/video/bestoftv/2014/05/04/nd-snl-clippers-drama.cnn.html?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -525,13 +542,13 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /video/data/2.0/video/bestoftv/2014/05/04/nd-snl-clippers-drama.cnn.html?hpt=hp_t2
+Attribute: href = /video/data/2.0/video/bestoftv/2014/05/02/exp-tsr-todd-sterling-divorce-stall-tactics.cnn.html?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <a> 
 Text: null 
 Attribute: target = 
-Attribute: href = /video/data/2.0/video/bestoftv/2014/05/04/nd-snl-clippers-drama.cnn.html?hpt=hp_t2
+Attribute: href = /video/data/2.0/video/bestoftv/2014/05/02/exp-tsr-todd-sterling-divorce-stall-tactics.cnn.html?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -542,13 +559,7 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /video/data/2.0/video/bestoftv/2014/05/02/exp-tsr-todd-sterling-divorce-stall-tactics.cnn.html?hpt=hp_t2
-Locator: null 
-<*** UI Element ***>
-<a> 
-Text: null 
-Attribute: target = 
-Attribute: href = /video/data/2.0/video/bestoftv/2014/05/02/exp-tsr-todd-sterling-divorce-stall-tactics.cnn.html?hpt=hp_t2
+Attribute: href = http://money.cnn.com/2014/05/04/news/companies/clippers-sponsors/index.html?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -559,7 +570,7 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = http://money.cnn.com/2014/05/04/news/companies/clippers-sponsors/index.html?hpt=hp_t2
+Attribute: href = /2014/05/03/politics/washington-correspondents-dinner/index.html?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -570,7 +581,13 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /2014/05/04/world/europe/ukraine-crisis/index.html?hpt=hp_t2
+Attribute: href = /video/data/2.0/video/bestoftv/2014/05/04/sot-whcd-mchale-cnn-other-media.cnn.html?hpt=hp_t2
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: target = 
+Attribute: href = /video/data/2.0/video/bestoftv/2014/05/04/sot-whcd-mchale-cnn-other-media.cnn.html?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -581,13 +598,7 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /video/data/2.0/video/world/2014/05/04/vo-pro-russian-activists-free-detainees.cnn.html?hpt=hp_t2
-Locator: null 
-<*** UI Element ***>
-<a> 
-Text: null 
-Attribute: target = 
-Attribute: href = /video/data/2.0/video/world/2014/05/04/vo-pro-russian-activists-free-detainees.cnn.html?hpt=hp_t2
+Attribute: href = /2014/05/04/world/europe/ukraine-crisis/index.html?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -609,7 +620,13 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /2014/05/04/us/condoleeza-rice-rutgers-protests/index.html?hpt=hp_t2
+Attribute: href = /video/data/2.0/video/bestoftv/2014/05/04/exp-new-day-sunday-anchors-reveal-throwback-prom-photos.cnn.html?hpt=hp_t2
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: target = 
+Attribute: href = /video/data/2.0/video/bestoftv/2014/05/04/exp-new-day-sunday-anchors-reveal-throwback-prom-photos.cnn.html?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -620,7 +637,7 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /2014/05/04/world/europe/nothern-ireland-gerry-adams-released/index.html?hpt=hp_t2
+Attribute: href = /2014/05/04/us/condoleeza-rice-rutgers-protests/index.html?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -631,7 +648,7 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = http://www.hlntv.com/slideshow/2014/04/28/schenecker-julie-crime-scene-photos-murder-trial-children?hpt=hp_t2
+Attribute: href = /2014/05/04/world/europe/nothern-ireland-gerry-adams-released/index.html?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -642,7 +659,7 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /2014/05/02/justice/minnesota-attack-thwarted/index.html?hpt=hp_t2
+Attribute: href = http://www.hlntv.com/slideshow/2014/04/28/schenecker-julie-crime-scene-photos-murder-trial-children?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -653,7 +670,7 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /2014/05/04/world/africa/nigeria-abducted-girls/index.html?hpt=hp_t2
+Attribute: href = /2014/05/02/justice/minnesota-attack-thwarted/index.html?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -664,7 +681,7 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /2014/05/04/us/rocky-top-tennessee/index.html?hpt=hp_t2
+Attribute: href = /2014/05/04/world/africa/nigeria-abducted-girls/index.html?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -675,13 +692,7 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /video/data/2.0/video/us/2014/05/03/pkg-mini-horse-sinkhole.whdh.html?hpt=hp_t2
-Locator: null 
-<*** UI Element ***>
-<a> 
-Text: null 
-Attribute: target = 
-Attribute: href = /video/data/2.0/video/us/2014/05/03/pkg-mini-horse-sinkhole.whdh.html?hpt=hp_t2
+Attribute: href = /2014/05/04/us/rocky-top-tennessee/index.html?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -692,8 +703,13 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: target = _blank
-Attribute: href = http://bleacherreport.com/articles/2050332-brazilian-fan-killed-by-thrown-toilet-at-world-cup-stadium?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial&hpt=hp_t2
+Attribute: href = /video/data/2.0/video/us/2014/05/03/pkg-mini-horse-sinkhole.whdh.html?hpt=hp_t2
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: target = 
+Attribute: href = /video/data/2.0/video/us/2014/05/03/pkg-mini-horse-sinkhole.whdh.html?hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -704,13 +720,8 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /video/data/2.0/video/us/2014/05/01/vo-noaa-underwater-tar-lillies.noaa-ocean-explorer.html?hpt=hp_t2
-Locator: null 
-<*** UI Element ***>
-<a> 
-Text: null 
-Attribute: target = 
-Attribute: href = /video/data/2.0/video/us/2014/05/01/vo-noaa-underwater-tar-lillies.noaa-ocean-explorer.html?hpt=hp_t2
+Attribute: target = _blank
+Attribute: href = http://bleacherreport.com/articles/2050332-brazilian-fan-killed-by-thrown-toilet-at-world-cup-stadium?utm_source=cnn.com&utm_medium=referral&utm_campaign=editorial&hpt=hp_t2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -771,7 +782,13 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /2014/05/02/tech/social-media/apparently-this-matters-airplane-paperclip-armrest/index.html?hpt=hp_t3
+Attribute: href = /video/data/2.0/video/showbiz/2014/05/01/mxp-fallon-diaz-photobomb-tourists.hln.html?hpt=hp_t3
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: target = 
+Attribute: href = /video/data/2.0/video/showbiz/2014/05/01/mxp-fallon-diaz-photobomb-tourists.hln.html?hpt=hp_t3
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -782,13 +799,7 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /video/data/2.0/video/us/2014/05/01/wtnh-pkg-sturgeon-washes-ashore.wtnh.html?hpt=hp_t3
-Locator: null 
-<*** UI Element ***>
-<a> 
-Text: null 
-Attribute: target = 
-Attribute: href = /video/data/2.0/video/us/2014/05/01/wtnh-pkg-sturgeon-washes-ashore.wtnh.html?hpt=hp_t3
+Attribute: href = /2014/05/02/tech/social-media/apparently-this-matters-airplane-paperclip-armrest/index.html?hpt=hp_t3
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -799,13 +810,13 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /video/data/2.0/video/us/2014/04/29/dnt-kansas-thieves-steal-entire-kitchen-sink.kwch.html?hpt=hp_t3
+Attribute: href = /video/data/2.0/video/us/2014/05/01/wtnh-pkg-sturgeon-washes-ashore.wtnh.html?hpt=hp_t3
 Locator: null 
 <*** UI Element ***>
 <a> 
 Text: null 
 Attribute: target = 
-Attribute: href = /video/data/2.0/video/us/2014/04/29/dnt-kansas-thieves-steal-entire-kitchen-sink.kwch.html?hpt=hp_t3
+Attribute: href = /video/data/2.0/video/us/2014/05/01/wtnh-pkg-sturgeon-washes-ashore.wtnh.html?hpt=hp_t3
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -816,13 +827,13 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /video/data/2.0/video/bestoftv/2014/05/02/orig-cinco-de-mayo-what-you-need-to-know-npr-jb.cnn.html?hpt=hp_t3
+Attribute: href = /video/data/2.0/video/us/2014/05/01/vo-noaa-underwater-tar-lillies.noaa-ocean-explorer.html?hpt=hp_t3
 Locator: null 
 <*** UI Element ***>
 <a> 
 Text: null 
 Attribute: target = 
-Attribute: href = /video/data/2.0/video/bestoftv/2014/05/02/orig-cinco-de-mayo-what-you-need-to-know-npr-jb.cnn.html?hpt=hp_t3
+Attribute: href = /video/data/2.0/video/us/2014/05/01/vo-noaa-underwater-tar-lillies.noaa-ocean-explorer.html?hpt=hp_t3
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -833,7 +844,13 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /2014/05/03/world/asia/south-korea-ferry-sinking/index.html?hpt=hp_t3
+Attribute: href = /video/data/2.0/video/us/2014/04/29/dnt-kansas-thieves-steal-entire-kitchen-sink.kwch.html?hpt=hp_t3
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: target = 
+Attribute: href = /video/data/2.0/video/us/2014/04/29/dnt-kansas-thieves-steal-entire-kitchen-sink.kwch.html?hpt=hp_t3
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -844,13 +861,7 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /video/data/2.0/video/us/2014/05/03/pkg-hook-up-truck.kgo.html?hpt=hp_t3
-Locator: null 
-<*** UI Element ***>
-<a> 
-Text: null 
-Attribute: target = 
-Attribute: href = /video/data/2.0/video/us/2014/05/03/pkg-hook-up-truck.kgo.html?hpt=hp_t3
+Attribute: href = /2014/05/03/world/asia/south-korea-ferry-sinking/index.html?hpt=hp_t3
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -861,13 +872,13 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /video/data/2.0/video/world/2014/04/30/pkg-canada-rotting-whale-on-trout-river.cbc-news.html?hpt=hp_t3
+Attribute: href = /video/data/2.0/video/us/2014/05/03/pkg-hook-up-truck.kgo.html?hpt=hp_t3
 Locator: null 
 <*** UI Element ***>
 <a> 
 Text: null 
 Attribute: target = 
-Attribute: href = /video/data/2.0/video/world/2014/04/30/pkg-canada-rotting-whale-on-trout-river.cbc-news.html?hpt=hp_t3
+Attribute: href = /video/data/2.0/video/us/2014/05/03/pkg-hook-up-truck.kgo.html?hpt=hp_t3
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -939,6 +950,23 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
+Attribute: href = /video/data/2.0/video/world/2014/04/30/pkg-canada-rotting-whale-on-trout-river.cbc-news.html?hpt=hp_t5
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: target = 
+Attribute: href = /video/data/2.0/video/world/2014/04/30/pkg-canada-rotting-whale-on-trout-river.cbc-news.html?hpt=hp_t5
+Locator: null 
+<*** UI Element ***>
+<li> 
+Text: null 
+Attribute: class = c_hpbullet4
+Attribute: data-vr-contentbox = 
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
 Attribute: href = /2014/04/29/worldsport/gallery/what-a-shot-0429/index.html?hpt=hp_t5
 Locator: null 
 <*** UI Element ***>
@@ -950,7 +978,7 @@ Locator: null
 <*** UI Element ***>
 <li> 
 Text: null 
-Attribute: class = c_hpbullet4
+Attribute: class = c_hpbullet5
 Attribute: data-vr-contentbox = 
 Locator: null 
 <*** UI Element ***>
@@ -973,17 +1001,17 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /2014/05/04/us/civil-war-150th-anniversary-prisons/index.html?hpt=hp_c2
+Attribute: href = /2014/05/01/travel/mexico-city-things-to-know/index.html?hpt=hp_c2
 Locator: null 
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /2014/05/04/us/civil-war-150th-anniversary-prisons/index.html?hpt=hp_c2
+Attribute: href = /2014/05/01/travel/mexico-city-things-to-know/index.html?hpt=hp_c2
 Locator: null 
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /2014/05/04/us/civil-war-150th-anniversary-prisons/index.html?hpt=hp_c2
+Attribute: href = /2014/05/01/travel/mexico-city-things-to-know/index.html?hpt=hp_c2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -993,13 +1021,13 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /2014/05/04/us/gallery/camp-lawton-civil-war/index.html?hpt=hp_c2
+Attribute: href = /video/data/2.0/video/world/2014/04/29/bourdain-show-extension-mexico-city-orig-ms.cnn.html?hpt=hp_c2
 Locator: null 
 <*** UI Element ***>
 <a> 
 Text: null 
 Attribute: target = 
-Attribute: href = /2014/05/04/us/gallery/camp-lawton-civil-war/index.html?hpt=hp_c2
+Attribute: href = /video/data/2.0/video/world/2014/04/29/bourdain-show-extension-mexico-city-orig-ms.cnn.html?hpt=hp_c2
 Locator: null 
 <*** UI Element ***>
 <li> 
@@ -1009,7 +1037,92 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = http://www.cnn.com/2010/US/08/17/georgia.civil.war.camp/index.html?hpt=hp_c2
+Attribute: href = http://eatocracy.cnn.com/2014/05/01/parts-unknown-bourdain-mexico-city/?hpt=hp_c2
+Locator: null 
+<*** UI Element ***>
+<li> 
+Text: null 
+Attribute: class = c_hpbullet4
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: href = /2014/05/01/travel/gallery/mexico-city-things-to-know/index.html?hpt=hp_c2
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: target = 
+Attribute: href = /2014/05/01/travel/gallery/mexico-city-things-to-know/index.html?hpt=hp_c2
+Locator: null 
+<*** UI Element ***>
+<li> 
+Text: null 
+Attribute: class = c_hpbullet5
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: href = /video/data/2.0/video/world/2014/04/29/bourdain-show-extension-mexico-city-orig-ms.cnn.html?hpt=hp_c2
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: target = 
+Attribute: href = /video/data/2.0/video/world/2014/04/29/bourdain-show-extension-mexico-city-orig-ms.cnn.html?hpt=hp_c2
+Locator: null 
+<*** UI Element ***>
+<li> 
+Text: null 
+Attribute: class = c_hpbullet6
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: href = /2014/04/30/travel/gallery/bourdain-mexico/index.html?hpt=hp_c2
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: target = 
+Attribute: href = /2014/04/30/travel/gallery/bourdain-mexico/index.html?hpt=hp_c2
+Locator: null 
+<*** UI Element ***>
+<li> 
+Text: null 
+Attribute: class = c_hpbullet7
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: target = _blank
+Attribute: href = https://twitter.com/partsunknowncnn?hpt=hp_c2
+Locator: null 
+<*** UI Element ***>
+<li> 
+Text: null 
+Attribute: class = c_hpbullet8
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: href = http://www.cnn.com/video/shows/anthony-bourdain-parts-unknown?hpt=hp_c2
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: target = 
+Attribute: href = http://www.cnn.com/video/shows/anthony-bourdain-parts-unknown?hpt=hp_c2
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: href = /2014/05/04/us/civil-war-150th-anniversary-prisons/index.html?hpt=hp_c3
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: href = /2014/05/04/us/civil-war-150th-anniversary-prisons/index.html?hpt=hp_c3
 Locator: null 
 <*** UI Element ***>
 <a> 
@@ -1099,27 +1212,17 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /2014/05/04/us/florida-goblin-shark/index.html?hpt=hp_c3
+Attribute: href = /video/data/2.0/video/us/2014/04/30/panhandler-sign-do-not-text-and-drive.wmtw.html?hpt=hp_c3
 Locator: null 
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /2014/05/04/us/florida-goblin-shark/index.html?hpt=hp_c3
+Attribute: href = /video/data/2.0/video/us/2014/04/30/panhandler-sign-do-not-text-and-drive.wmtw.html?hpt=hp_c3
 Locator: null 
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /video/data/2.0/video/bestoftv/2014/05/04/exp-new-day-sunday-anchors-reveal-throwback-prom-photos.cnn.html?hpt=hp_c3
-Locator: null 
-<*** UI Element ***>
-<a> 
-Text: null 
-Attribute: href = /video/data/2.0/video/bestoftv/2014/05/04/exp-new-day-sunday-anchors-reveal-throwback-prom-photos.cnn.html?hpt=hp_c3
-Locator: null 
-<*** UI Element ***>
-<a> 
-Text: null 
-Attribute: href = /video/data/2.0/video/bestoftv/2014/05/04/exp-new-day-sunday-anchors-reveal-throwback-prom-photos.cnn.html?hpt=hp_c3
+Attribute: href = /video/data/2.0/video/us/2014/04/30/panhandler-sign-do-not-text-and-drive.wmtw.html?hpt=hp_c3
 Locator: null 
 <*** UI Element ***>
 <a> 
@@ -1139,42 +1242,17 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /video/data/2.0/video/showbiz/2014/05/01/mxp-fallon-diaz-photobomb-tourists.hln.html?hpt=hp_c3
+Attribute: href = /2014/05/03/showbiz/gallery/white-house-correspondents-dinner-2014/index.html?hpt=hp_c3
 Locator: null 
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /video/data/2.0/video/showbiz/2014/05/01/mxp-fallon-diaz-photobomb-tourists.hln.html?hpt=hp_c3
+Attribute: href = /2014/05/03/showbiz/gallery/white-house-correspondents-dinner-2014/index.html?hpt=hp_c3
 Locator: null 
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: href = /video/data/2.0/video/showbiz/2014/05/01/mxp-fallon-diaz-photobomb-tourists.hln.html?hpt=hp_c3
-Locator: null 
-<*** UI Element ***>
-<a> 
-Text: null 
-Attribute: href = /2014/05/02/showbiz/tv/girl-meets-world-premiere-date/index.html?hpt=hp_c3
-Locator: null 
-<*** UI Element ***>
-<a> 
-Text: null 
-Attribute: href = /2014/05/02/showbiz/tv/girl-meets-world-premiere-date/index.html?hpt=hp_c3
-Locator: null 
-<*** UI Element ***>
-<a> 
-Text: null 
-Attribute: href = /video/data/2.0/video/showbiz/2014/04/29/conan-chelsea-handler-casual-sex.teamcoco.html?hpt=hp_c3
-Locator: null 
-<*** UI Element ***>
-<a> 
-Text: null 
-Attribute: href = /video/data/2.0/video/showbiz/2014/04/29/conan-chelsea-handler-casual-sex.teamcoco.html?hpt=hp_c3
-Locator: null 
-<*** UI Element ***>
-<a> 
-Text: null 
-Attribute: href = /video/data/2.0/video/showbiz/2014/04/29/conan-chelsea-handler-casual-sex.teamcoco.html?hpt=hp_c3
+Attribute: href = /2014/05/03/showbiz/gallery/white-house-correspondents-dinner-2014/index.html?hpt=hp_c3
 Locator: null 
 <*** UI Element ***>
 <a> 
@@ -1195,6 +1273,36 @@ Locator: null
 <a> 
 Text: null 
 Attribute: href = /2013/02/05/travel/travel-photo-of-day/index.html?hpt=hp_c3
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: href = /video/data/2.0/video/world/2014/04/25/dnt-rescued-animal-not-a-puppy.cbc.html?hpt=hp_c3
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: href = /video/data/2.0/video/world/2014/04/25/dnt-rescued-animal-not-a-puppy.cbc.html?hpt=hp_c3
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: href = /video/data/2.0/video/world/2014/04/25/dnt-rescued-animal-not-a-puppy.cbc.html?hpt=hp_c3
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: href = /video/data/2.0/video/showbiz/2014/04/29/conan-chelsea-handler-casual-sex.teamcoco.html?hpt=hp_c3
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: href = /video/data/2.0/video/showbiz/2014/04/29/conan-chelsea-handler-casual-sex.teamcoco.html?hpt=hp_c3
+Locator: null 
+<*** UI Element ***>
+<a> 
+Text: null 
+Attribute: href = /video/data/2.0/video/showbiz/2014/04/29/conan-chelsea-handler-casual-sex.teamcoco.html?hpt=hp_c3
 Locator: null 
 <*** UI Element ***>
 <a> 
@@ -2281,8 +2389,8 @@ Locator: null
 <*** UI Element ***>
 <a> 
 Text: null 
-Attribute: onclick = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2051152-mavericks-vs-spurs-game-7-live-score-highlights-and-reaction?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
-Attribute: href = http://bleacherreport.com/articles/2051152-mavericks-vs-spurs-game-7-live-score-highlights-and-reaction?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
+Attribute: onclick = _vrtrack({ track_url : 'http://bleacherreport.com/articles/2051225-mavericks-vs-spurs-game-7-score-and-twitter-reaction-from-2014-nba-playoffs?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin' })
+Attribute: href = http://bleacherreport.com/articles/2051225-mavericks-vs-spurs-game-7-score-and-twitter-reaction-from-2014-nba-playoffs?utm_source=cnn.com&utm_medium=referral&utm_campaign=cnn-sports-bin&hpt=hp_bn15
 Locator: null 
 <*** UI Element ***>
 <li> 

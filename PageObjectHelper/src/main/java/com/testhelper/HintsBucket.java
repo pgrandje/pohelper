@@ -49,7 +49,7 @@ public class HintsBucket extends AbstractBucket {
         logger.debug("Setting classname to '" + pageName + "'.");
 
         StringBuffer tempBuffer = new StringBuffer();
-        tempBuffer.append(HintsFileDelimeters.PAGE_MARKER + ": " + pageName);
+        tempBuffer.append(HintsFileDelimeters.PAGE_MARKER + ": " + pageName + "\n");
 
         hintsHeader = tempBuffer;
     }

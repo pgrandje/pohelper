@@ -70,14 +70,13 @@ public class CodeBucket extends AbstractBucket {
     public void setPageObjectName(String pageName) {
 
         outPutFileName = pageName + ".java";
-        logger.debug("Set filename to '" + outPutFileName + "'.");
+        logger.info("Setting filename to '" + outPutFileName + "'.");
 
-        logger.debug("Setting classname to '" + pageName + "'.");
+        logger.info("Setting classname to '" + pageName + "'.");
         logger.debug("Using code header:");
         logger.debug(codeHeader);
 
         StringBuffer tempBuffer = new StringBuffer();
-        // TODO:  This title indicator should be configurable.
         tempBuffer.append(codeHeader.toString().replaceAll("<title>", pageName));
         logger.debug("Added the class name to the code header.");
         logger.debug("Generated Code header will look like this:\n" + tempBuffer);
@@ -97,7 +96,7 @@ public class CodeBucket extends AbstractBucket {
                   throw new SeleniumGeneratorException("Output file path is null.");
              }
              filePath = filePath + "/" + outPutFileName;
-             logger.info("Creating output file: " + filePath);
+             logger.info("Writing output file: " + filePath);
              outputFile = new BufferedWriter(new FileWriter(filePath));
 
         }
@@ -120,8 +119,11 @@ public class CodeBucket extends AbstractBucket {
 
         try {
             createOutputFile(filePath);
+            logger.trace("Writing code header:\n" + codeHeader.toString());
             outputFile.write(codeHeader.toString());
+            logger.trace("Writing code buffer:\n" + codeBuffer.toString());
             outputFile.write(codeBuffer.toString());
+            logger.trace("Writing code trailer:\n" + codeTrailer.toString());
             outputFile.write(codeTrailer.toString());
             closeOutputFile();
 
@@ -138,6 +140,7 @@ public class CodeBucket extends AbstractBucket {
 
         // TODO: try-catch in closeOutputFile and createOutputFile are redundant
         try {
+            logger.info("Closing output file.");
             outputFile.close();
         } catch (IOException e) {
             logger.error("Exception writing to code output file");
