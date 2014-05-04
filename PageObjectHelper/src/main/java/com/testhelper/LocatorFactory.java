@@ -320,16 +320,16 @@ public class LocatorFactory {
 
             Locator.LocatorType locatorType = null;
             // TODO: Use a switch-case when creating Locator types from a string.
-            if (locatorTypeString.equals(HintsToCodeDescriptor.LOCATOR_TYPE_STRING_ID)) {
+            if (locatorTypeString.equals(HintsFileDelimeters.LOCATOR_TYPE_STRING_ID)) {
                 locatorType = Locator.LocatorType.ID;
             }
-            else if (locatorTypeString.equals(HintsToCodeDescriptor.LOCATOR_TYPE_STRING_NAME)) {
+            else if (locatorTypeString.equals(HintsFileDelimeters.LOCATOR_TYPE_STRING_NAME)) {
                 locatorType = Locator.LocatorType.NAME;
             }
-            else if (locatorTypeString.equals(HintsToCodeDescriptor.LOCATOR_TYPE_STRING_CLASS)) {
+            else if (locatorTypeString.equals(HintsFileDelimeters.LOCATOR_TYPE_STRING_CLASS)) {
                 locatorType = Locator.LocatorType.CLASS;
             }
-            else if (locatorTypeString.equals(HintsToCodeDescriptor.LOCATOR_TYPE_STRING_CSS)) {
+            else if (locatorTypeString.equals(HintsFileDelimeters.LOCATOR_TYPE_STRING_CSS)) {
                 locatorType = Locator.LocatorType.CSS;
             }
             else {

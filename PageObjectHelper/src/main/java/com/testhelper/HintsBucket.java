@@ -49,33 +49,33 @@ public class HintsBucket extends AbstractBucket {
         logger.debug("Setting classname to '" + pageName + "'.");
 
         StringBuffer tempBuffer = new StringBuffer();
-        tempBuffer.append(HintsToCodeDescriptor.PAGE_MARKER + ": " + pageName);
+        tempBuffer.append(HintsFileDelimeters.PAGE_MARKER + ": " + pageName);
 
         hintsHeader = tempBuffer;
     }
 
 
     public void addTag(String tag) {
-        hintsBuffer.append(HintsToCodeDescriptor.NEW_TAG_DELIMITER + "\n");
+        hintsBuffer.append(HintsFileDelimeters.NEW_TAG_DELIMITER + "\n");
         hintsBuffer.append(tag + " \n");
     }
 
     public void addText(String text) {
-        hintsBuffer.append(HintsToCodeDescriptor.TEXT_MARKER + text + " \n");
+        hintsBuffer.append(HintsFileDelimeters.TEXT_MARKER + text + " \n");
     }
 
 
     public void addAttributes(HashMap<String, String> attributePairs) {
         if (!attributePairs.isEmpty()) {
             for (Map.Entry attributePair : attributePairs.entrySet()) {
-                hintsBuffer.append(HintsToCodeDescriptor.ATTRIBUTE_MARKER + attributePair.getKey() + " = " + attributePair.getValue() + "\n");
+                hintsBuffer.append(HintsFileDelimeters.ATTRIBUTE_MARKER + attributePair.getKey() + " = " + attributePair.getValue() + "\n");
             }
         }
     }
 
 
     public void addLocator(String locator) {
-        hintsBuffer.append(HintsToCodeDescriptor.LOCATOR_MARKER + locator + " \n");
+        hintsBuffer.append(HintsFileDelimeters.LOCATOR_MARKER + locator + " \n");
     }
 
     public void setOutPutFilePath(String path) {
