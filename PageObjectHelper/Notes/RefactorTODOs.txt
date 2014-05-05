@@ -24,3 +24,14 @@ Make CodeBucket and HintsBucket consistent.
 
 
 Rename the TagSwitcher, it's really a Code Template Picker.
+
+In LocatorFactory -  change the mult return statements to assignment and then return a returnState variable.
+
+Remove the TagDescriptorList class and just replace it with a standard List<TagDescriptors>.  Less overhead and allows the power of a standard list.
+
+
+Fix Bugs:
+- Extra blank lines in the code output.
+- BeganWithUnderscore classname when generating from hints.
+- One line of CNNs generated code not compiling
+- Way too long css strings.

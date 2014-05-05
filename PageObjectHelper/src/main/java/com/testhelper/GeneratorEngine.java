@@ -146,7 +146,7 @@ public class GeneratorEngine
 
     private static void verifyTagDescriptorList(TagDescriptorList tagDescriptorList) {
 
-        if (null != tagDescriptorList) {
+        if (null == tagDescriptorList) {
             throw new SeleniumGeneratorException("Got null Tag Descriptor List--cannot generate code or hints.");
         }
 
