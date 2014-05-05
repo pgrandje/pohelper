@@ -133,9 +133,9 @@ public class TagDescriptor {
     }
 
 
-    // TODO: Only the hints file needs to get the locator string--another reason to have two diff types of TagDescriptors.
+    // TODO: Only the hints file needs to get the locator string--another reason to have two diff types of TagDescriptors. -- Or, code this to a standard interface.
     public String getLocatorString() {
-        return locator.getTypeStringName() + " = \"" + locator.getValue() + "\"";
+        return locator.getTypeStringName() + " = " + locator.getValue();
     }
 
 
@@ -150,7 +150,7 @@ public class TagDescriptor {
     // TODO: If the TagDescriptor stored a ref to the NameRecorder I could avoid having to pass it so often.
     public void writeMemberAndMethods(NameRecorder memberNameRecorder) {
 
-        logger.debug("Writing locator string using locator type: " + locator.getTypeStringName() + " with value " + locator.getValue());
+        logger.debug("Writing locator string using locator type '" + locator.getTypeStringName() + "' with value '" + locator.getValue() + "'.");
 
         // TODO: Verify String.replaceAll() and not String.replace() is what I want for setting locator values.
         StringBuffer alteredMemberCode = new StringBuffer(

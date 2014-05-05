@@ -100,6 +100,8 @@ public class GeneratorEngine
 
     private static void writeCodeFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
 
+        verifyTagDescriptorList(tagDescriptorList);
+
         CodeBucket codeBucket = CodeBucket.getBucket();
         codeBucket.setPageObjectName(pageDescriptor.getPageObjectName());
 
@@ -121,12 +123,14 @@ public class GeneratorEngine
 
     private static void writeHintsFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
 
+        verifyTagDescriptorList(tagDescriptorList);
+
         HintsBucket hintsBucket = HintsBucket.getBucket();
         hintsBucket.setPageObjectName(pageDescriptor.getPageObjectName());
 
         // Write the hints file.
         for(TagDescriptor tagDescriptor : tagDescriptorList) {
-            // TODO: Resolve--Why does the CodeBucket just have an addCode() method, but the HintsBucket has 4 different methods?
+            // TODO: Why does the CodeBucket just have an addCode() method, but the HintsBucket has 4 different methods?   If I 'code to an interface' I an eliminate the 2 diff ways of handling hints and code.
             hintsBucket.addTag(tagDescriptor.getTag());
             hintsBucket.addText(tagDescriptor.getTextValue());
             hintsBucket.addAttributes(tagDescriptor.getAttributePairs());
@@ -136,6 +140,19 @@ public class GeneratorEngine
         // Dump the hints file.
         // TODO: default file path can be stored in the Bucket and Configurator used to change it.  Don't need to pass the filename from calling method.
         hintsBucket.dumpToFile("./Hints.txt");
+
+    }
+
+
+    private static void verifyTagDescriptorList(TagDescriptorList tagDescriptorList) {
+
+        if (null != tagDescriptorList) {
+            throw new SeleniumGeneratorException("Got null Tag Descriptor List--cannot generate code or hints.");
+        }
+
+        if (tagDescriptorList.getNumberOfBuckets() == 0) {
+            throw new SeleniumGeneratorException("Tag Descriptor List is empty--cannot generate code or hints.");
+        }
 
     }
 

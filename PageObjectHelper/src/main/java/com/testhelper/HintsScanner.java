@@ -104,16 +104,15 @@ public class HintsScanner {
         // There shouldn't be any blank lines in this file, so we'll treat that as end of file.
         while (line != null){
 
-            logger.debug("Processing line: " + line);
+            logger.trace("Processing line: " + line);
 
             // Check for new record delimiter
             if (line.contains(HintsFileDelimeters.NEW_TAG_DELIMITER)) {
 
-                logger.debug("Processing a new tag:");
+                logger.trace("Processing a new tag:");
 
                 // Get the first field, which contains the tag.
                 line = hintsFile.readLine();
-                logger.debug("Processing new tag on line: " + line);
 
                 // Check whether tag should be skipped, if so, skip all lines up to the next record, and re-loop.
                 if (line.charAt(0) != HintsFileDelimeters.IGNORE_CHAR) {
@@ -179,8 +178,6 @@ public class HintsScanner {
 
                         Locator locator = LocatorFactory.createLocator(locatorString);
                         tagDescriptor.setLocator(locator);
-
-                        line = hintsFile.readLine();
                     }
                     else {
                         throw new SeleniumGeneratorException("Found missing locator in hints file.");

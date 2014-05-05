@@ -1,17 +1,17 @@
 Page Name: : CNN_com_Breaking_News_U_S_World_
 <*** UI Element ***>
-<a> 
+*<a>
 Text: null 
 Attribute: id = hdr-banner-title
 Attribute: href = /
 Locator: id = "hdr-banner-title" 
 <*** UI Element ***>
-<li> 
+*<li>
 Text: null 
 Attribute: class = no-pad-left
 Locator: css = "body > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(2) > ul > li" 
 <*** UI Element ***>
-<a> 
+*<a>
 Text: null 
 Attribute: class = cnn_hdr-editionlnk
 Attribute: href = javascript:cnn_initeditionhtml(3);
@@ -21,7 +21,7 @@ Locator: css = "body > div:nth-child(4) > div:nth-child(2) > div > div:nth-child
 Text: null 
 Locator: css = "body > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(2)" 
 <*** UI Element ***>
-<a> 
+*<a>
 Text: null 
 Attribute: id = cnn_switchEdition_intl
 Attribute: title = CNN INTERNATIONAL
@@ -32,7 +32,7 @@ Locator: id = "cnn_switchEdition_intl"
 Text: null 
 Locator: css = "body > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3)" 
 <*** UI Element ***>
-<a> 
+*<a>
 Text: null 
 Attribute: hreflang = es
 Attribute: title = CNN MÉXICO

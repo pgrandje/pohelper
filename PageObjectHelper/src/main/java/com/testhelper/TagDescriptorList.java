@@ -11,6 +11,7 @@ import java.util.List;
  * User: pgrandje
  * Date: 6/3/12
  */
+// TODO: TagDescriptorList can be removed.  Just use a list directly rather than encapsulating it--that would be more powerful.
 public class TagDescriptorList implements Iterable<TagDescriptor> {
 
     private List<TagDescriptor> tagDescriptors;
