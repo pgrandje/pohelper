@@ -56,11 +56,13 @@ public class HintsBucket extends AbstractBucket {
 
 
     public void addTag(String tag) {
+        logger.debug("Adding tag: " + tag);
         hintsBuffer.append(HintsFileDelimeters.NEW_TAG_DELIMITER + "\n");
         hintsBuffer.append(tag + " \n");
     }
 
     public void addText(String text) {
+        logger.debug("Adding text: " + text);
         hintsBuffer.append(HintsFileDelimeters.TEXT_MARKER + text + " \n");
     }
 
@@ -75,6 +77,7 @@ public class HintsBucket extends AbstractBucket {
 
 
     public void addLocator(String locator) {
+        logger.debug("Adding locator: " + locator);
         hintsBuffer.append(HintsFileDelimeters.LOCATOR_MARKER + locator + " \n");
     }
 
@@ -120,6 +123,7 @@ public class HintsBucket extends AbstractBucket {
 
     public void dumpToFile(String filePath) {
 
+        logger.debug("Dumping file using filepath: " + filePath);
         try {
             createOutputFile(filePath);
             outputFile.write(hintsHeader.toString());

@@ -178,9 +178,12 @@ public class HintsScanner {
                         logger.debug("Found locator string '" + locatorString + "'.");
 
                         Locator locator = LocatorFactory.createLocator(locatorString);
-                        tagDescriptor.writeLocatorString(locator);
+                        tagDescriptor.setLocator(locator);
 
                         line = hintsFile.readLine();
+                    }
+                    else {
+                        throw new SeleniumGeneratorException("Found missing locator in hints file.");
                     }
 
                     tagDescriptor.writeMemberAndMethods(memberNameRecorder);

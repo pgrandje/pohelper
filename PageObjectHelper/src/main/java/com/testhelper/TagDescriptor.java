@@ -38,7 +38,8 @@ public class TagDescriptor {
 
     private HashMap<String, String> attributePairs;
     private String textContent;
-    private String locatorString;
+    // TODO: Refactor to two different TagDescriptor types--The hints generation use the locatorString, but the code generation doesn't need it, it uses member and method code.
+    private Locator locator;
 
     private StringBuffer memberCode;
     private StringBuffer methodCode;
@@ -125,18 +126,18 @@ public class TagDescriptor {
 
 
 
-    // **** Locator String ****
+    // **** Locator ****
 
-    public void writeLocatorString(Locator locator) {
-        // TODO: Verify String.replaceAll() and not String.replace() is what I want for setting locator values.
-        StringBuffer alteredMemberCode = new StringBuffer(
-                        memberCode.toString().replaceAll(configurator.getLocatorIndicator(), locator.getTypeStringName() + " = \"" + locator.getValue() + "\""));
-        memberCode = alteredMemberCode;
+    public void setLocator(Locator locator) {
+        this.locator = locator;
     }
 
+
+    // TODO: Only the hints file needs to get the locator string--another reason to have two diff types of TagDescriptors.
     public String getLocatorString() {
-        return locatorString;
+        return locator.getTypeStringName() + " = \"" + locator.getValue() + "\"";
     }
+
 
     //   *** Symbol Names ***
 
@@ -148,6 +149,14 @@ public class TagDescriptor {
     */
     // TODO: If the TagDescriptor stored a ref to the NameRecorder I could avoid having to pass it so often.
     public void writeMemberAndMethods(NameRecorder memberNameRecorder) {
+
+        logger.debug("Writing locator string using locator type: " + locator.getTypeStringName() + " with value " + locator.getValue());
+
+        // TODO: Verify String.replaceAll() and not String.replace() is what I want for setting locator values.
+        StringBuffer alteredMemberCode = new StringBuffer(
+                        memberCode.toString().replaceAll(configurator.getLocatorIndicator(), locator.getTypeStringName() + " = \"" + locator.getValue() + "\""));
+        logger.debug("Storing locator string as: " + alteredMemberCode);
+        memberCode = alteredMemberCode;
 
         if (writeMemberNameUsingTextContent(memberNameRecorder) == true) {
             logger.debug("Symbols written using tag's text content.");
