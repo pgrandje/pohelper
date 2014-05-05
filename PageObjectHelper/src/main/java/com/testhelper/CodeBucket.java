@@ -48,17 +48,13 @@ public class CodeBucket extends AbstractBucket {
 
     }
 
-
     public void setCodeHeader(StringBuffer header) {
         codeHeader = header;
     }
 
-
-    // Includes two blank lines for readability of the generated code.
-    // TODO:  Blank lines could be a configurable setting.
     public void addCode(String string) {
         codeBuffer.append(string);
-        codeBuffer.append("\n\n");
+        codeBuffer.append("\n");
     }
 
 

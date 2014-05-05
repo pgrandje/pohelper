@@ -1,9 +1,5 @@
 Refactor TODOS:
 
-Should I remove the HintsAttribute object and use a map?  Or should a make a more general Attribute object and put that in the TagDescriptor also?
-
-
-
 
 Verify in TagDescriptor if I should use String.replace() instead of String.replaceAll().
 
@@ -23,11 +19,13 @@ NameRecorder needs a separate method for writing default names--don't require a 
 Make CodeBucket and HintsBucket consistent.
 
 
-Rename the TagSwitcher, it's really a Code Template Picker.
+Rename the TagSwitcher, it's really a Code Template Switcher.
 
 In LocatorFactory -  change the mult return statements to assignment and then return a returnState variable.
 
 Remove the TagDescriptorList class and just replace it with a standard List<TagDescriptors>.  Less overhead and allows the power of a standard list.
+
+Rename the Exception class.
 
 
 Fix Bugs:
