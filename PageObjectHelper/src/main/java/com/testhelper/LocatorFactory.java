@@ -124,7 +124,7 @@ public class LocatorFactory {
         // This flag records the condition where an ID attribute is found and we can stop searching ancestor nodes.
         boolean foundId = false;
 
-        logger.debug("*** Making a CSS Locator ***.");
+        logger.debug("Making a CSS Locator.");
 
         // This will store the path of nodes which we'll use to construct the cssLocator string.
         // Be sure to use a list that is ordered.
