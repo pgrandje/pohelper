@@ -32,7 +32,7 @@ public class CodeLoader {
         try {
             filePath = configurator.getCodeTemplateFilePath();
             if (filePath == null) {
-                throw new SeleniumGeneratorException("Found null file path to Tag Switcher config file.");
+                throw new TestHelperException("Found null file path to Tag Switcher config file.");
             }
             logger.debug("Looking for config file: " + filePath);
             logger.debug("Using current working directory: " + System.getProperty("user.dir"));
@@ -107,7 +107,7 @@ public class CodeLoader {
                         line = configFile.readLine();
                     }
                     else {
-                        throw new SeleniumGeneratorException("Expected member code block not found.");
+                        throw new TestHelperException("Expected member code block not found.");
                     }
 
                     // Accumulate the code lines for the member code
@@ -121,7 +121,7 @@ public class CodeLoader {
                     }
 
                     if (null == line) {
-                        throw new SeleniumGeneratorException("File syntax error.  End of file found but expecting method code delimiter.");
+                        throw new TestHelperException("File syntax error.  End of file found but expecting method code delimiter.");
                     }
                     else {
                         // Advance the line past the method code delimiter.
@@ -138,7 +138,7 @@ public class CodeLoader {
                     }
 
                     if (null == line) {
-                        throw new SeleniumGeneratorException("Found end of file while processing method code block.");
+                        throw new TestHelperException("Found end of file while processing method code block.");
                     }
 
                     // At code end, load the tag-codeblock pair in to the lookup table.
@@ -147,7 +147,7 @@ public class CodeLoader {
                     //      a null into the lookup table.  That would be a confusing bug to diagnose.
                     if (null == currentTag) {
                         logger.error("Found null tag in CodeLoader prior to loading TagSwitcher.");
-                        throw new SeleniumGeneratorException("Found null tag in CodeLoader prior to loading TagSwitcher.");
+                        throw new TestHelperException("Found null tag in CodeLoader prior to loading TagSwitcher.");
                     }
 
                     // Log the code snippets that we'll use for this tag.
@@ -172,7 +172,7 @@ public class CodeLoader {
                 else {
 
                     logger.error("Unknown condition in tag switcher config file.");
-                    throw new SeleniumGeneratorException("Unknown condition in tag switcher config file.");
+                    throw new TestHelperException("Unknown condition in tag switcher config file.");
 
                 }
 

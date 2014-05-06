@@ -95,7 +95,7 @@ public class PageScanner {
         NodeList titleTagList = document.getElementsByTagName("title");
 
         if (null == titleTagList) {
-            throw new SeleniumGeneratorException("Retrieving <title> returned a null list.");
+            throw new TestHelperException("Retrieving <title> returned a null list.");
         }
         else if (titleTagList.getLength() == 1)  {
             logger.info("Found exactly one <title> tag, using it's text for the page object's classname.");

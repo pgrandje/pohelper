@@ -72,7 +72,7 @@ public class GeneratorEngine
 
         }
         else {
-            throw new SeleniumGeneratorException("Invalid configuration state.  Should never get here.");
+            throw new TestHelperException("Invalid configuration state.  Should never get here.");
         }
 
         logger.info("SUCCESSFUL COMPLETION");
@@ -149,11 +149,11 @@ public class GeneratorEngine
     private static void verifyTagDescriptorList(TagDescriptorList tagDescriptorList) {
 
         if (null == tagDescriptorList) {
-            throw new SeleniumGeneratorException("Got null Tag Descriptor List--cannot generate code or hints.");
+            throw new TestHelperException("Got null Tag Descriptor List--cannot generate code or hints.");
         }
 
         if (tagDescriptorList.getNumberOfBuckets() == 0) {
-            throw new SeleniumGeneratorException("Tag Descriptor List is empty--cannot generate code or hints.");
+            throw new TestHelperException("Tag Descriptor List is empty--cannot generate code or hints.");
         }
 
     }

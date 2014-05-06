@@ -83,7 +83,7 @@ public class HintsScanner {
             pageDescriptor = new PageDescriptor(pageName);
         }
         else {
-            throw new SeleniumGeneratorException("Page name not found in Hints file.");
+            throw new TestHelperException("Page name not found in Hints file.");
         }
 
         return pageDescriptor;
@@ -96,7 +96,7 @@ public class HintsScanner {
         String line = hintsFile.readLine();
 
         if (line.contains(HintsFileDelimeters.PAGE_MARKER)) {
-            throw new SeleniumGeneratorException("Reading from first line of hints file but page name should have been read already.");
+            throw new TestHelperException("Reading from first line of hints file but page name should have been read already.");
         }
 
         TagDescriptorList tagDescriptorList = new TagDescriptorList();
@@ -134,7 +134,7 @@ public class HintsScanner {
                     line = hintsFile.readLine();
                     // The Text field should always follow; throw an exception if it's not found.
                     if (!line.startsWith(HintsFileDelimeters.TEXT_MARKER)) {
-                        throw new SeleniumGeneratorException("Expected text marker not found in hints file.");
+                        throw new TestHelperException("Expected text marker not found in hints file.");
                     }
 
                     String text = line.substring(HintsFileDelimeters.TEXT_MARKER.length());
@@ -156,7 +156,7 @@ public class HintsScanner {
                         // TODO: Make the Hints file not have an '=' when the attribute value is missing.
 
                         if (attrComponents[0] == null) {
-                            throw new SeleniumGeneratorException("Hints file has Attribute record with no attribute.");
+                            throw new TestHelperException("Hints file has Attribute record with no attribute.");
                         }
 
                         logger.debug("Storing attribute '" + attrComponents[0]);
@@ -180,7 +180,7 @@ public class HintsScanner {
                         tagDescriptor.setLocator(locator);
                     }
                     else {
-                        throw new SeleniumGeneratorException("Found missing locator in hints file.");
+                        throw new TestHelperException("Found missing locator in hints file.");
                     }
 
                     tagDescriptor.writeMemberAndMethods(memberNameRecorder);

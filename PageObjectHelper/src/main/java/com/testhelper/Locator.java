@@ -30,7 +30,7 @@ public class Locator {
 
     public Locator(LocatorType type, String value) {
         if (type == null)
-            throw new SeleniumGeneratorException("Null LocatorType passed to new Locator.");
+            throw new TestHelperException("Null LocatorType passed to new Locator.");
         this.type = type;
         this.value = value;
     }
@@ -43,9 +43,9 @@ public class Locator {
 
     public String getValue() {
         if (value == null)
-            throw new SeleniumGeneratorException("Locator value must not be null when assigning it to code.");
+            throw new TestHelperException("Locator value must not be null when assigning it to code.");
         else if (value.isEmpty())
-            throw new SeleniumGeneratorException("Locator value must not be an empty string when assigning it to code.");
+            throw new TestHelperException("Locator value must not be an empty string when assigning it to code.");
         return value;
     }
 

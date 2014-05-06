@@ -90,7 +90,7 @@ public class CodeBucket extends AbstractBucket {
         try {
 
              if (filePath == null) {
-                  throw new SeleniumGeneratorException("Output file path is null.");
+                  throw new TestHelperException("Output file path is null.");
              }
              filePath = filePath + "/" + outPutFileName;
              logger.info("Writing output file: " + filePath);
@@ -103,7 +103,7 @@ public class CodeBucket extends AbstractBucket {
             logger.error("Cause: " + ioException.getCause());
             logger.error("Message: " + ioException.getMessage());
             logger.error("Stack Trace: " + ioException.getStackTrace());
-            throw new SeleniumGeneratorException("Could not open final output file.  Message: " +
+            throw new TestHelperException("Could not open final output file.  Message: " +
                                                   ioException.getMessage()
                                                 );
 
@@ -127,7 +127,7 @@ public class CodeBucket extends AbstractBucket {
         } catch (IOException e) {
             logger.error("Exception writing to code output file");
             logger.error("Message: " + e.getMessage());
-            throw new SeleniumGeneratorException("Caught I/O Exception in CodeBucket.dumpToFile().");
+            throw new TestHelperException("Caught I/O Exception in CodeBucket.dumpToFile().");
         }
 
     }
@@ -142,7 +142,7 @@ public class CodeBucket extends AbstractBucket {
         } catch (IOException e) {
             logger.error("Exception writing to code output file");
             logger.error("Message: " + e.getMessage());
-            throw new SeleniumGeneratorException("Exception writing to code output file.  Message: " + e.getMessage());
+            throw new TestHelperException("Exception writing to code output file.  Message: " + e.getMessage());
         }
 
     }

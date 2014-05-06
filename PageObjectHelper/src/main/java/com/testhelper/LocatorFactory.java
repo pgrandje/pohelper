@@ -212,7 +212,7 @@ public class LocatorFactory {
         // Verify there's at least one ancestor, if not, throw an exception.
         // This condition should never be false, but it's here as an extra check in case bugs are introduced in the future.
         if (ancestorIterator.hasNext() == false) {
-            throw new SeleniumGeneratorException("Unknown condition, first Node in CSS Selector ancestor not found.");
+            throw new TestHelperException("Unknown condition, first Node in CSS Selector ancestor not found.");
         }
 
         // Get the first oldest ancestor--the top of the chain.
@@ -243,7 +243,7 @@ public class LocatorFactory {
         else {
             logger.error("Encountered unknown state for ancestor node.  This should never happen!");
             logger.error("Current ancestor Node is '" + ancestorNode.getNodeName() + "'.");
-            throw new SeleniumGeneratorException("Encountered unknown state for first ancestor node when writing CSS Locator");
+            throw new TestHelperException("Encountered unknown state for first ancestor node when writing CSS Locator");
         }
 
 

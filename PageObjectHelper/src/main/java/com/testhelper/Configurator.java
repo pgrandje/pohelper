@@ -115,7 +115,7 @@ public class Configurator {
 
     public static Configurator getConfigurator() {
         if (singletonConfigurator == null) {
-           throw new SeleniumGeneratorException("Can't get Configurator without creating a new one requiring command-line args.");
+           throw new TestHelperException("Can't get Configurator without creating a new one requiring command-line args.");
         }
         return singletonConfigurator;
     }
@@ -222,7 +222,7 @@ public class Configurator {
                 }
                 // With the command-line validator, this is not necessary, but it still makes the code safer.
                 catch(MalformedURLException e) {
-                    throw new SeleniumGeneratorException("Invalid URL on command line, exception message: " + e.getMessage() + "--Exception cause: " + e.getCause());
+                    throw new TestHelperException("Invalid URL on command line, exception message: " + e.getMessage() + "--Exception cause: " + e.getCause());
 
                 }
             }
@@ -259,7 +259,7 @@ public class Configurator {
                 }
                 else {
                     printCommandLineHelp();
-                    throw new SeleniumGeneratorException("Error in command-line.  Invalid value for -locator.");
+                    throw new TestHelperException("Error in command-line.  Invalid value for -locator.");
                 }
                 logger.info("Locator generation using " + locatorConfig.toString());
             }
@@ -273,7 +273,7 @@ public class Configurator {
             }
             else {
                 printCommandLineHelp();
-                throw new SeleniumGeneratorException("Unknown argument found.");
+                throw new TestHelperException("Unknown argument found.");
             }
 
         }
@@ -288,11 +288,11 @@ public class Configurator {
     private void checkForRequiredArgValue(String argValue) {
 
         if (argValue == null) {
-            throw new SeleniumGeneratorException("Argument requires a value; value is 'null'.");
+            throw new TestHelperException("Argument requires a value; value is 'null'.");
         }
 
         if (argValue.charAt(0) == '-') {
-            throw new SeleniumGeneratorException("Argument requires a value; value is missing.  In place of value found option '" + argValue + "' ");
+            throw new TestHelperException("Argument requires a value; value is missing.  In place of value found option '" + argValue + "' ");
         }
 
     }
@@ -307,7 +307,7 @@ public class Configurator {
 
         if (!new File(filePath).exists())
         {
-           throw new SeleniumGeneratorException("File '" + filePath + "' doesn't exist.");
+           throw new TestHelperException("File '" + filePath + "' doesn't exist.");
         }
 
         return filePath;
@@ -331,7 +331,7 @@ public class Configurator {
         }
         else {
             printCommandLineError();
-            throw new SeleniumGeneratorException("Error in command-line syntax.  Invalid -generate option found.");
+            throw new TestHelperException("Error in command-line syntax.  Invalid -generate option found.");
         }
 
     }
@@ -422,11 +422,11 @@ public class Configurator {
             doc = dBuilder.parse(fXmlFile);
             doc.getDocumentElement().normalize();
         } catch (ParserConfigurationException e) {
-            throw new SeleniumGeneratorException("Parser configuration exception parsing configuration file.  Exception message: " + e.getMessage());
+            throw new TestHelperException("Parser configuration exception parsing configuration file.  Exception message: " + e.getMessage());
         } catch (SAXException e) {
-            throw new SeleniumGeneratorException("SAX exception parsing configuration file.  Exception message: " + e.getMessage());
+            throw new TestHelperException("SAX exception parsing configuration file.  Exception message: " + e.getMessage());
         } catch (IOException e) {
-            throw new SeleniumGeneratorException("I/O exception loading configuration file.  Exception message: " + e.getMessage());
+            throw new TestHelperException("I/O exception loading configuration file.  Exception message: " + e.getMessage());
         }
 
         processConfigFileOption(doc, "generate");
@@ -444,7 +444,7 @@ public class Configurator {
 		// Just in case the user entered more than one of the same argument, we'll get the whole list.
         NodeList nList = doc.getElementsByTagName(option);
         if (nList.getLength() > 1) {
-            throw new SeleniumGeneratorException("Multiple '" + option + "' tags found in the configuration file.");
+            throw new TestHelperException("Multiple '" + option + "' tags found in the configuration file.");
         }
 
         // Any given option, may, or may not, be included in the config file, so the nList for a given option could return
@@ -453,7 +453,7 @@ public class Configurator {
 
             Node node = nList.item(0);
             if (node.getNodeType() != Node.ELEMENT_NODE) {
-               throw new SeleniumGeneratorException("Configuration file error, node '" + node.getNodeName() + "' is not an Element Node.");
+               throw new TestHelperException("Configuration file error, node '" + node.getNodeName() + "' is not an Element Node.");
             }
 
             Element element = (Element) node;
@@ -462,7 +462,7 @@ public class Configurator {
         }
 
         if(optionValue == null) {
-            throw new SeleniumGeneratorException("Configuration file error.  Option value not recognized.");
+            throw new TestHelperException("Configuration file error.  Option value not recognized.");
         }
 
 
