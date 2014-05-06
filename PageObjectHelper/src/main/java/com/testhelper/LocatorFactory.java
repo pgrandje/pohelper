@@ -57,47 +57,42 @@ public class LocatorFactory {
 
     private static boolean makeAttributeLocator(Node node) {
 
-        logger.debug("Are there attributes we can use for writing the locator? ...");
+        boolean returnStatus = false;
 
         NamedNodeMap attributes =  node.getAttributes();
 
         if (attributes != null && attributes.getLength() != 0) {
 
-            logger.debug("Yes, the tag has attributes.");
+            logger.debug("The tag has attributes.  Determining if there's an id, name, or classname we can use for a locator.");
             // If an ID attribute exists, use its value for the symbols.
             if(attributes.getNamedItem("id") != null) {
                 Attr attr = ((Attr)attributes.getNamedItem("id"));
                 logger.debug("Using Attribute: " + attr.getName() + " = " + attr.getValue());
                 locator = new Locator(Locator.LocatorType.ID, attr.getValue());
                 // TODO: setup up a status variable to put the returns in one place.
-                return true;
+                returnStatus = true;
             }
             // If no id, but there's a name attribute, use that.
             else if(attributes.getNamedItem("name") != null) {
                 Attr attr = ((Attr)attributes.getNamedItem("name"));
                 logger.debug("Using Attribute: " + attr.getName() + " = " + attr.getValue());
                 locator = new Locator(Locator.LocatorType.NAME, attr.getValue());
-                return true;
+                returnStatus = true;
             }
             // If no id or name, but there's a class name, use that if the configuration allows using class names.
             else if(configurator.getLocatorUsesClassnames() == true && attributes.getNamedItem("class") != null) {
                 Attr attr = ((Attr)attributes.getNamedItem("class"));
                 logger.debug("Using Attribute: " + attr.getName() + " = " + attr.getValue());
                 locator = new Locator(Locator.LocatorType.CLASS, attr.getValue());
-                return true;
+                returnStatus = true;
             }
-            // TODO:  Configure this to trap an arbitrary attribute to use for a locator.
-            // If no id, name, or classname, I should see if there's another unique attribute I can use.
             else {
-                logger.info("No attributes found that we can use for writing a locator, but it does have other attributes.");
-                return false;
+                logger.info("No id, name, or classname, but there are other attributes.");
             }
 
         }
 
-        // It didn't have any attributes so must return false.
-        logger.debug("No, there's no attributes for this tag.");
-        return false;
+        return returnStatus;
     }
 
 

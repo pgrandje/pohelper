@@ -1,4 +1,4 @@
-package com.selgentests.pageobjects;
+package com.testhelper.pageobjects;
 
 /* Generated Page Object source file */
 
