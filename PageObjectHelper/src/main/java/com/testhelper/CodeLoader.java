@@ -62,7 +62,9 @@ public class CodeLoader {
             String line = configFile.readLine();
 
 
-            while (line != null){
+            // TODO: CodeLoader's file read loop would be easier to read if I had inner-loops processing white-space.
+
+            while (null != line){
 
                 // For blank lines, just drop out of the if, go to the bottom, and advance the line.
                 if (line.isEmpty()) {
@@ -77,6 +79,7 @@ public class CodeLoader {
                     // Get the tag
                     line = configFile.readLine();
                     logger.debug("Reading tag " + line);
+                    // TODO: in CodeLoader--add a check to verify this next line is a tag.
 
                     // This expects the file's string to be a tag, if I need to generalize beyond tags this would be
                     // where to start making the changes for reading the new info, along with redesigning the TagSwitcher to go beyond tags.
@@ -95,8 +98,7 @@ public class CodeLoader {
                     currentMemberCode = "";
                     currentMethodCode = "";
 
-                    // Note: You should always have both member code and method code in the config file, otherwise it's an error.
-                    // And the member code should always precede the method code.
+                    // TODO: CodeLoader should handle the case where there's no method code template.
 
                     // At this point we should be at the begin of a member code block, otherwise it's an error.
                     //      If it's correct, advance to the next line for loading the code.
@@ -105,7 +107,7 @@ public class CodeLoader {
                         line = configFile.readLine();
                     }
                     else {
-                        throw new RuntimeException("Expected member code block not found.");
+                        throw new SeleniumGeneratorException("Expected member code block not found.");
                     }
 
                     // Accumulate the code lines for the member code
@@ -118,8 +120,8 @@ public class CodeLoader {
                         line = configFile.readLine();
                     }
 
-                    if (line == null) {
-                        throw new RuntimeException("Found end of file while processing member code block.");
+                    if (null == line) {
+                        throw new SeleniumGeneratorException("Found end of file while processing member code block.");
                     }
                     else {
                         // advance the line to ensure we don't addCode the delimeter itself to the code snippet.
@@ -127,7 +129,7 @@ public class CodeLoader {
                     }
 
                     // Accumulate the code lines for the method code.
-                    while (!line.contains(fileDelimiters.codeBlockEndDelimeter) && (line != null)) {
+                    while (!line.contains(fileDelimiters.codeBlockEndDelimeter) && (null != line)) {
 
                         logger.debug("Processing Code Line: " + line);
                         currentMethodCode += line;
@@ -135,17 +137,17 @@ public class CodeLoader {
                         line = configFile.readLine();
                     }
 
-                    if (line == null) {
-                        throw new RuntimeException("Found end of file while processing method code block.");
+                    if (null == line) {
+                        throw new SeleniumGeneratorException("Found end of file while processing method code block.");
                     }
 
                     // At code end, load the tag-codeblock pair in to the lookup table.
 
                     // This is just a double-check, it should never happen but may as well be safe.  Don't want to load
                     //      a null into the lookup table.  That would be a confusing bug to diagnose.
-                    if (currentTag == null) {
+                    if (null == currentTag) {
                         logger.error("Found null tag in CodeLoader prior to loading TagSwitcher.");
-                        throw new RuntimeException("Found null tag in CodeLoader prior to loading TagSwitcher.");
+                        throw new SeleniumGeneratorException("Found null tag in CodeLoader prior to loading TagSwitcher.");
                     }
 
                     // Log the code snippets that we'll use for this tag.

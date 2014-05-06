@@ -63,17 +63,22 @@
 <-- Code Block Begin -->
 <-- Member Code Block -->
    // numbered list begin
+   @FindBy(<locator>)
+   private WebElement <symbol>_olListBlock;
+<-- Method Code Block -->
+   // ol list block -- no methods supplied.
 <-- Code Block End -->
 
 
 <*** New Tag ***>
 <ul>
 <-- Code Block Begin -->
+<-- Member Code Block -->
    @FindBy(<locator>)
-   private WebElement <symbol>UiListItem;
+   private WebElement <symbol>_ulListBlock;
 <-- Method Code Block -->
-   public String get<symbol>UiListItemText() {
-      return <symbol>UiListItem.getText();
+   public String get<symbol>_ulListBlockText() {
+      return <symbol>_ulListBlock.getText();
    }
 <-- Code Block End -->
 
