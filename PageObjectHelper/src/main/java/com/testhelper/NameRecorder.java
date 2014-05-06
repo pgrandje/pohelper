@@ -13,7 +13,6 @@ import org.apache.log4j.Logger;
 public class NameRecorder {
 
     private Logger logger;
-    private Configurator configurator;
 
     private String instanceName;
     private HashMap<String, Integer> recordedNames;
@@ -24,33 +23,30 @@ public class NameRecorder {
 
     // TODO:  Name recorder should have a config option for removing underscores--I could use this for the className.
     public NameRecorder(String name) {
-
         logger = Logger.getLogger(NameRecorder.class);
         instanceName = name;
-
-        this.configurator = Configurator.getConfigurator();
-
         recordedNames = new HashMap<String, Integer>(200);
         logger.debug("**** " + instanceName + " Name Recorder Created ***");
-
     }
 
 
-    private String makeDefaultSymbolName() {
+    public String makeDefaultSymbolName() {
 
         logger.debug("**** Making a default symbol name ****");
         StringBuffer newSymbolName = new StringBuffer();
 
         defaultSymbolCounter++;
-        newSymbolName.append(configurator.getDefaultMemberName() + defaultSymbolCounter);
+        newSymbolName.append(Configurator.getConfigurator().getDefaultMemberName() + defaultSymbolCounter);
         logger.debug("Returning symbol name: " + newSymbolName);
 
         return newSymbolName.toString();
     }
 
 
-    // if text is null it returns a default symbol name.
-    // This is to avoid calling methods to have to call two different methods.
+    /* If text is null it returns a default symbol name.
+       This is to avoid calling methods to have to call two different methods.
+       TODO: Re-evaluate if passing a null to makeSymbolName() vs. calling makeDefaultSymbolName()
+    */
     public String makeSymbolName(String text) {
 
         if (text == null) {

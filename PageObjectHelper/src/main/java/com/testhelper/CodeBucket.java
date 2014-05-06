@@ -12,9 +12,11 @@ import java.io.IOException;
  * User: pgrandje
  * Date: 6/3/12
  */
-public class CodeBucket {
+public class CodeBucket extends AbstractBucket {
 
     private final Logger logger = Logger.getLogger(CodeBucket.class);
+
+    private static CodeBucket codeBucket = null;
 
     private CodeShellLoader codeShellLoader;
 
@@ -28,8 +30,16 @@ public class CodeBucket {
     private BufferedWriter outputFile;
 
 
+    // CodeBucket is a singleton since we would only ever need one at a time.
+    public static CodeBucket getBucket()  throws IOException {
+        if (codeBucket == null) {
+            codeBucket = new CodeBucket();
+        }
+        return codeBucket;
+    }
 
-    public CodeBucket() throws IOException {
+
+    private CodeBucket() throws IOException {
 
         codeBuffer = new StringBuffer();
 
@@ -38,17 +48,13 @@ public class CodeBucket {
 
     }
 
-
     public void setCodeHeader(StringBuffer header) {
         codeHeader = header;
     }
 
-
-    // Includes two blank lines for readability of the generated code.
-    // TODO:  Blank lines could be a configurable setting.
     public void addCode(String string) {
         codeBuffer.append(string);
-        codeBuffer.append("\n\n");
+        codeBuffer.append("\n");
     }
 
 
@@ -56,18 +62,17 @@ public class CodeBucket {
         codeTrailer = trailer;
     }
 
-
+    @Override
     public void setPageObjectName(String pageName) {
 
         outPutFileName = pageName + ".java";
-        logger.debug("Set filename to '" + outPutFileName + "'.");
+        logger.info("Setting filename to '" + outPutFileName + "'.");
 
-        logger.debug("Setting classname to '" + pageName + "'.");
+        logger.info("Setting classname to '" + pageName + "'.");
         logger.debug("Using code header:");
         logger.debug(codeHeader);
 
         StringBuffer tempBuffer = new StringBuffer();
-        // TODO:  This title indicator should be configurable.
         tempBuffer.append(codeHeader.toString().replaceAll("<title>", pageName));
         logger.debug("Added the class name to the code header.");
         logger.debug("Generated Code header will look like this:\n" + tempBuffer);
@@ -80,13 +85,14 @@ public class CodeBucket {
 
     private void createOutputFile(String filePath) {
 
+        // TODO: try-catch in closeOutputFile and createOutputFile are redundant
         try {
 
              if (filePath == null) {
                   throw new SeleniumGeneratorException("Output file path is null.");
              }
              filePath = filePath + "/" + outPutFileName;
-             logger.info("Creating output file: " + filePath);
+             logger.info("Writing output file: " + filePath);
              outputFile = new BufferedWriter(new FileWriter(filePath));
 
         }
@@ -107,12 +113,15 @@ public class CodeBucket {
 
     public void dumpToFile(String filePath) {
 
-        createOutputFile(filePath);
-
         try {
+            createOutputFile(filePath);
+            logger.trace("Writing code header:\n" + codeHeader.toString());
             outputFile.write(codeHeader.toString());
+            logger.trace("Writing code buffer:\n" + codeBuffer.toString());
             outputFile.write(codeBuffer.toString());
+            logger.trace("Writing code trailer:\n" + codeTrailer.toString());
             outputFile.write(codeTrailer.toString());
+            closeOutputFile();
 
         } catch (IOException e) {
             logger.error("Exception writing to code output file");
@@ -120,13 +129,14 @@ public class CodeBucket {
             throw new SeleniumGeneratorException("Caught I/O Exception in CodeBucket.dumpToFile().");
         }
 
-        closeOutputFile();
     }
 
 
     public void closeOutputFile() {
 
+        // TODO: try-catch in closeOutputFile and createOutputFile are redundant
         try {
+            logger.info("Closing output file.");
             outputFile.close();
         } catch (IOException e) {
             logger.error("Exception writing to code output file");

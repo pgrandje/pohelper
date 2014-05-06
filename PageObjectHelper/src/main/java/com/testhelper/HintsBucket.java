@@ -1,8 +1,6 @@
 package com.testhelper;
 
 import org.apache.log4j.Logger;
-import org.w3c.dom.Attr;
-import org.w3c.dom.NamedNodeMap;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -16,12 +14,15 @@ import java.util.Map;
  * User: pgrandje
  * Date: 6/3/12
  */
-public class HintsBucket {
+public class HintsBucket extends AbstractBucket {
 
     private final Logger logger = Logger.getLogger(HintsBucket.class);
 
-    // The analysis text to be generated.
-    private StringBuffer analysisBuffer;
+    private static HintsBucket hintsBucket;
+
+    // The hints text to be generated.
+    private StringBuffer hintsHeader;
+    private StringBuffer hintsBuffer;
 
     // For the output file.
     // TODO: Use the configurator to set the path for the Analysis file.
@@ -30,33 +31,54 @@ public class HintsBucket {
     private BufferedWriter outputFile;
 
 
+    // HintsBucket is a singleton since we would only ever need one at a time.
+    public static HintsBucket getBucket()  {
+        if (hintsBucket == null) {
+            hintsBucket = new HintsBucket();
+        }
+        return hintsBucket;
+    }
 
-    public HintsBucket() {
-        analysisBuffer = new StringBuffer();
+    private HintsBucket() {
+        hintsBuffer = new StringBuffer();
+    }
+
+    @Override
+    public void setPageObjectName(String pageName) {
+
+        logger.debug("Setting classname to '" + pageName + "'.");
+
+        StringBuffer tempBuffer = new StringBuffer();
+        tempBuffer.append(HintsFileDelimeters.PAGE_MARKER + ": " + pageName + "\n");
+
+        hintsHeader = tempBuffer;
     }
 
 
     public void addTag(String tag) {
-        analysisBuffer.append(HintsDescriptor.NEW_TAG_DELIMITER + "\n");
-        analysisBuffer.append(tag + " \n");
+        logger.debug("Adding tag: " + tag);
+        hintsBuffer.append(HintsFileDelimeters.NEW_TAG_DELIMITER + "\n");
+        hintsBuffer.append(tag + " \n");
     }
 
     public void addText(String text) {
-        analysisBuffer.append(HintsDescriptor.TEXT_MARKER + text + " \n");
+        logger.debug("Adding text: " + text);
+        hintsBuffer.append(HintsFileDelimeters.TEXT_MARKER + text + " \n");
     }
 
 
     public void addAttributes(HashMap<String, String> attributePairs) {
         if (!attributePairs.isEmpty()) {
             for (Map.Entry attributePair : attributePairs.entrySet()) {
-                analysisBuffer.append(HintsDescriptor.ATTRIBUTE_MARKER + attributePair.getKey() + " = " + attributePair.getValue() + "\n");
+                hintsBuffer.append(HintsFileDelimeters.ATTRIBUTE_MARKER + attributePair.getKey() + " = " + attributePair.getValue() + "\n");
             }
         }
     }
 
 
     public void addLocator(String locator) {
-        analysisBuffer.append(HintsDescriptor.LOCATOR_MARKER + locator + " \n");
+        logger.debug("Adding locator: " + locator);
+        hintsBuffer.append(HintsFileDelimeters.LOCATOR_MARKER + locator + " \n");
     }
 
     public void setOutPutFilePath(String path) {
@@ -69,8 +91,9 @@ public class HintsBucket {
     }
 
 
-    public void createOutputFile(String filePath) {
+    private void createOutputFile(String filePath) {
 
+        // TODO: try-catch in closeOutputFile and createOutputFile are redundant -- unless they are called separately but they don't need to be.
         // Set up the output file for the code output.
         try {
 
@@ -98,10 +121,14 @@ public class HintsBucket {
     }
 
 
-    public void dumpToFile() {
+    public void dumpToFile(String filePath) {
 
+        logger.debug("Dumping file using filepath: " + filePath);
         try {
-            outputFile.write(analysisBuffer.toString());
+            createOutputFile(filePath);
+            outputFile.write(hintsHeader.toString());
+            outputFile.write(hintsBuffer.toString());
+            closeOutputFile();
 
         } catch (IOException e) {
             System.out.println("Exception writing to code output file");
@@ -109,12 +136,12 @@ public class HintsBucket {
             System.out.println(e.getStackTrace());
             throw new SeleniumGeneratorException("Caught I/O Exception in CodeBucket.dumpToFile().");
         }
-
     }
 
 
     public void closeOutputFile() {
 
+        // TODO: try-catch in closeOutputFile and createOutputFile are redundant
         try {
             outputFile.close();
         } catch (IOException e) {
