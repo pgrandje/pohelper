@@ -1,4 +1,4 @@
-package com.selgentests.utils;
+package com.testhelper.utils;
 
 import org.apache.log4j.Logger;
 

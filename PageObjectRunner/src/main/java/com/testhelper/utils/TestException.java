@@ -1,4 +1,4 @@
-package com.selgentests.utils;
+package com.testhelper.utils;
 
 
 public class TestException extends Exception {

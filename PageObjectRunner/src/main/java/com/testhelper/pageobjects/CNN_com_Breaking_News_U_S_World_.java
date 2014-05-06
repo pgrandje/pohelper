@@ -1,5 +1,4 @@
-package com.selgentests.pageobjects;
-// TODO:  Need to programatically generate the package name.
+package com.testhelper.pageobjects;
 
 /* Generated Page Object source file */
 

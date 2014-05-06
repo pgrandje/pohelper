@@ -1,8 +1,8 @@
-package com.selgentests.tests;
+package com.testhelper.tests;
 
-import com.selgentests.pageobjects.Tag_Tests;
-import com.selgentests.testbase.TestBase;
-import com.selgentests.utils.TestException;
+import com.testhelper.pageobjects.Tag_Tests;
+import com.testhelper.testbase.TestBase;
+import com.testhelper.utils.TestException;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
