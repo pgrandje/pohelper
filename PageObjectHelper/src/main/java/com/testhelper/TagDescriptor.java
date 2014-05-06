@@ -88,10 +88,23 @@ public class TagDescriptor {
 
         }
         else {
-            logger.debug("No comments recorded due to Configurator setting of comments to false.");
+            logger.debug("Comments configuration == false.  No comments stored.");
         }
 
     }
+
+
+    public boolean hasComments() {
+
+        boolean returnStatus = true;
+
+        if ((null == comment) || (comment.length() == 0 )) {
+            returnStatus = false;
+        }
+
+        return returnStatus;
+    }
+
 
     // *** Accessors ***
 

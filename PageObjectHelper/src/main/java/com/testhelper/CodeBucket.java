@@ -53,6 +53,7 @@ public class CodeBucket extends AbstractBucket {
     }
 
     public void addCode(String string) {
+        logger.trace("Adding string to code bucket:\n" + string);
         codeBuffer.append(string);
         codeBuffer.append("\n");
     }

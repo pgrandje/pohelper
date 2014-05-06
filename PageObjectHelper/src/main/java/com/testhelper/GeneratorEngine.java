@@ -107,7 +107,9 @@ public class GeneratorEngine
 
         // Write the member code to the code buffer.
         for(TagDescriptor tagDescriptor : tagDescriptorList) {
-            codeBucket.addCode(tagDescriptor.getComment());
+            if (tagDescriptor.hasComments()) {
+                codeBucket.addCode(tagDescriptor.getComment());
+            }
             codeBucket.addCode(tagDescriptor.getMemberCode());
         }
         // Write the method code to the code buffer.

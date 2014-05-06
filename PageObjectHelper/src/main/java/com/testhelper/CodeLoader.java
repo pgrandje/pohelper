@@ -112,7 +112,7 @@ public class CodeLoader {
 
                     // Accumulate the code lines for the member code
                     // I also check for null here to make sure we don't have an infinite loop.
-                    while (!line.contains(fileDelimiters.methodDelimeter) && (line != null)) {
+                    while (!line.contains(fileDelimiters.methodDelimeter) && (null != line)) {
 
                         logger.debug("Processing Member code line: " + line);
                         currentMemberCode += line;
@@ -121,10 +121,10 @@ public class CodeLoader {
                     }
 
                     if (null == line) {
-                        throw new SeleniumGeneratorException("Found end of file while processing member code block.");
+                        throw new SeleniumGeneratorException("File syntax error.  End of file found but expecting method code delimiter.");
                     }
                     else {
-                        // advance the line to ensure we don't addCode the delimeter itself to the code snippet.
+                        // Advance the line past the method code delimiter.
                         line = configFile.readLine();
                     }
 

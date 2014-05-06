@@ -58,7 +58,7 @@ public class TagSwitcher {
         // trim white space for a little extra protection.
         String tagTrimmed = tag.trim();
 
-        // First time lookup table is used, dump the table to the log.
+        // TODO: Do I still need this? --> First time lookup table is used, dump the table to the log.
         if (dumpTableFlag == true) {
 
             logger.debug("*** Dumping Tag Lookup Table ***");
