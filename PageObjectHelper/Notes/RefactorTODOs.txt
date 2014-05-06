@@ -15,9 +15,19 @@ Refactor TODOS:
 
 - In LocatorFactory -  change the mult return statements to assignment and then return a returnState variable.
 
+- TODO:  Change NodeType to an enum and move this to which ever class uses it--probably the PageScanner
 
+- TODO: Add javadoc to Locator and LocatorFactory
 
 Bug fix TODOS:
 
 - BeganWithUnderscore classname when generating from hints.
 - Way too long css strings.
+- Need to programatically generate the package name.
+
+
+
+Investigate:
+- LocatorFactory.makeAttributeLocator()
+    // A textless <p> with no attributes returned true but should have returned false.
+    // <li>s existed with attributes that can't be used as locators, but doesn't generate a css either.

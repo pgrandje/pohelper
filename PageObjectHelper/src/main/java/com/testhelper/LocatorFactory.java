@@ -39,8 +39,6 @@ public class LocatorFactory {
                 makeAttributeLocator(node) == true
            ) {
             logger.debug("Locator written using an attribute.");
-            // TODO: Not easy to read--I should show how locator get assigned here and return at the bottom.
-            return locator;
         }
         else if ((configurator.getLocatorConfig() == Configurator.LocatorConfig.ATTRIBS_CSS ||
                   configurator.getLocatorConfig() == Configurator.LocatorConfig.CSS_ONLY
@@ -48,22 +46,15 @@ public class LocatorFactory {
                     makeCssLocator(node) == true
                 ) {
             logger.debug("Locator written using css locator.");
-            return locator;
         }
         else {
             logger.debug("Cannot write locator for node '" + node.getNodeName() + "'.");
-            return locator;
         }
 
+        return locator;
     }
 
 
-
-
-
-
-    // TODO:  Fix Bug--A textless <p> with no attributes returned true but should have returned false.
-    // TODO: Fis Bug -- <li>s exist with attributes that can't be used as locators, but doesn't generate a css either.
     private static boolean makeAttributeLocator(Node node) {
 
         logger.debug("Are there attributes we can use for writing the locator? ...");
