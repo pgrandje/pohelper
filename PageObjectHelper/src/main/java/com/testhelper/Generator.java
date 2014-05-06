@@ -20,10 +20,10 @@ import org.apache.log4j.PropertyConfigurator;
  * Has since gone through many incremental refactorings and is gradually growing mature in its years.
  */
 
-public class GeneratorEngine
+public class Generator
 {
 
-    private static final Logger logger = Logger.getLogger(GeneratorEngine.class);
+    private static final Logger logger = Logger.getLogger(Generator.class);
 
     /* Accumulates the classnames used for each page object to ensure uniqueness.
        The classNameRecorder needs to exist, and accumulate page names for all pages generated.
@@ -72,7 +72,7 @@ public class GeneratorEngine
 
         }
         else {
-            throw new SeleniumGeneratorException("Invalid configuration state.  Should never get here.");
+            throw new TestHelperException("Invalid configuration state.  Should never get here.");
         }
 
         logger.info("SUCCESSFUL COMPLETION");
@@ -107,7 +107,9 @@ public class GeneratorEngine
 
         // Write the member code to the code buffer.
         for(TagDescriptor tagDescriptor : tagDescriptorList) {
-            codeBucket.addCode(tagDescriptor.getComment());
+            if (tagDescriptor.hasComments()) {
+                codeBucket.addCode(tagDescriptor.getComment());
+            }
             codeBucket.addCode(tagDescriptor.getMemberCode());
         }
         // Write the method code to the code buffer.
@@ -147,11 +149,11 @@ public class GeneratorEngine
     private static void verifyTagDescriptorList(TagDescriptorList tagDescriptorList) {
 
         if (null == tagDescriptorList) {
-            throw new SeleniumGeneratorException("Got null Tag Descriptor List--cannot generate code or hints.");
+            throw new TestHelperException("Got null Tag Descriptor List--cannot generate code or hints.");
         }
 
-        if (tagDescriptorList.getNumberOfBuckets() == 0) {
-            throw new SeleniumGeneratorException("Tag Descriptor List is empty--cannot generate code or hints.");
+        if (tagDescriptorList.size() == 0) {
+            throw new TestHelperException("Tag Descriptor List is empty--cannot generate code or hints.");
         }
 
     }

@@ -9,11 +9,13 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 /**
- * TODO: Add javadoc here.
- * Constructed using a factory since
- *      a) it could work off a wc3-Node or a HintsToCodeDescriptor and
- *      b) we only need it when we need it, we won't need it's instance to be retained from the calling methods, so
- *         using a factory with a fluent api will properly restrict how this is used.
+ * Contructs Locator objects.  This isolates the algorithms for creaing Locators to one area and provides an API
+ * for constructing Locators.
+ *
+ * Used a factory pattern since
+ *      a) It needs to create a Locator from either a wc3-Node or a HintsToCodeDescriptor.
+ *      b) We don't need it's instance to be retained from the calling methods.
+ *
  * User: pgrandje
  * Date: 4/20/14
  */
@@ -29,7 +31,7 @@ public class LocatorFactory {
     static Locator locator = null;
 
     // Factory that creates the locatorMaker to create locators from the DOM.  Node is the UI element to be located.
-    public static Locator createLocator(Node node) {
+    public static Locator makeLocator(Node node) {
 
         configurator = Configurator.getConfigurator();
 
@@ -39,8 +41,6 @@ public class LocatorFactory {
                 makeAttributeLocator(node) == true
            ) {
             logger.debug("Locator written using an attribute.");
-            // TODO: Not easy to read--I should show how locator get assigned here and return at the bottom.
-            return locator;
         }
         else if ((configurator.getLocatorConfig() == Configurator.LocatorConfig.ATTRIBS_CSS ||
                   configurator.getLocatorConfig() == Configurator.LocatorConfig.CSS_ONLY
@@ -48,65 +48,53 @@ public class LocatorFactory {
                     makeCssLocator(node) == true
                 ) {
             logger.debug("Locator written using css locator.");
-            return locator;
         }
         else {
             logger.debug("Cannot write locator for node '" + node.getNodeName() + "'.");
-            return locator;
         }
 
+        return locator;
     }
 
 
-
-
-
-
-    // TODO:  Fix Bug--A textless <p> with no attributes returned true but should have returned false.
-    // TODO: Fis Bug -- <li>s exist with attributes that can't be used as locators, but doesn't generate a css either.
     private static boolean makeAttributeLocator(Node node) {
 
-        logger.debug("Are there attributes we can use for writing the locator? ...");
+        boolean returnStatus = false;
 
         NamedNodeMap attributes =  node.getAttributes();
 
         if (attributes != null && attributes.getLength() != 0) {
 
-            logger.debug("Yes, the tag has attributes.");
+            logger.debug("The tag has attributes.  Determining if there's an id, name, or classname we can use for a locator.");
             // If an ID attribute exists, use its value for the symbols.
             if(attributes.getNamedItem("id") != null) {
                 Attr attr = ((Attr)attributes.getNamedItem("id"));
                 logger.debug("Using Attribute: " + attr.getName() + " = " + attr.getValue());
                 locator = new Locator(Locator.LocatorType.ID, attr.getValue());
                 // TODO: setup up a status variable to put the returns in one place.
-                return true;
+                returnStatus = true;
             }
             // If no id, but there's a name attribute, use that.
             else if(attributes.getNamedItem("name") != null) {
                 Attr attr = ((Attr)attributes.getNamedItem("name"));
                 logger.debug("Using Attribute: " + attr.getName() + " = " + attr.getValue());
                 locator = new Locator(Locator.LocatorType.NAME, attr.getValue());
-                return true;
+                returnStatus = true;
             }
             // If no id or name, but there's a class name, use that if the configuration allows using class names.
             else if(configurator.getLocatorUsesClassnames() == true && attributes.getNamedItem("class") != null) {
                 Attr attr = ((Attr)attributes.getNamedItem("class"));
                 logger.debug("Using Attribute: " + attr.getName() + " = " + attr.getValue());
                 locator = new Locator(Locator.LocatorType.CLASS, attr.getValue());
-                return true;
+                returnStatus = true;
             }
-            // TODO:  Configure this to trap an arbitrary attribute to use for a locator.
-            // If no id, name, or classname, I should see if there's another unique attribute I can use.
             else {
-                logger.info("No attributes found that we can use for writing a locator, but it does have other attributes.");
-                return false;
+                logger.info("No id, name, or classname, but there are other attributes.");
             }
 
         }
 
-        // It didn't have any attributes so must return false.
-        logger.debug("No, there's no attributes for this tag.");
-        return false;
+        return returnStatus;
     }
 
 
@@ -114,8 +102,9 @@ public class LocatorFactory {
     private static boolean makeCssLocator(Node node) {
 
         String cssLocator = makeCssLocatorString(node);
-        if ((cssLocator == null) || cssLocator.isEmpty()) {
-            logger.warn("WARNING: CSS locator is null or is empty.");
+
+        if ((null == cssLocator) || cssLocator.isEmpty()) {
+            logger.warn("CSS locator is either null or empty.");
             return false;
         }
 
@@ -132,7 +121,7 @@ public class LocatorFactory {
         // This flag records the condition where an ID attribute is found and we can stop searching ancestor nodes.
         boolean foundId = false;
 
-        logger.debug("*** Making a CSS Locator ***.");
+        logger.debug("Making a CSS Locator.");
 
         // This will store the path of nodes which we'll use to construct the cssLocator string.
         // Be sure to use a list that is ordered.
@@ -212,7 +201,7 @@ public class LocatorFactory {
         // Verify there's at least one ancestor, if not, throw an exception.
         // This condition should never be false, but it's here as an extra check in case bugs are introduced in the future.
         if (ancestorIterator.hasNext() == false) {
-            throw new SeleniumGeneratorException("Unknown condition, first Node in CSS Selector ancestor not found.");
+            throw new TestHelperException("Unknown condition, first Node in CSS Selector ancestor not found.");
         }
 
         // Get the first oldest ancestor--the top of the chain.
@@ -243,7 +232,7 @@ public class LocatorFactory {
         else {
             logger.error("Encountered unknown state for ancestor node.  This should never happen!");
             logger.error("Current ancestor Node is '" + ancestorNode.getNodeName() + "'.");
-            throw new SeleniumGeneratorException("Encountered unknown state for first ancestor node when writing CSS Locator");
+            throw new TestHelperException("Encountered unknown state for first ancestor node when writing CSS Locator");
         }
 
 
@@ -306,7 +295,7 @@ public class LocatorFactory {
 
 
     // Locator write method for writing locator from Hints.
-    public static Locator createLocator(String hintsLocatorString)  {
+    public static Locator makeLocator(String hintsLocatorString)  {
 
         if ((hintsLocatorString == null) || (hintsLocatorString.equals("null"))) {
             logger.warn("Locator is null after reading from hints file.");

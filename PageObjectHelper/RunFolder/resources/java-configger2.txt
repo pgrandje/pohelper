@@ -2,16 +2,15 @@
 <a>
 <-- Code Block Begin -->
 <-- Member Code Block -->
-   // Anchor tag (<a>)
    @FindBy(<locator>)
-   private WebElement <symbol>;
+   private WebElement <symbol>_a;
 <-- Method Code Block -->
    public String get<symbol>LinkText() {
-      return <symbol>.getText();
+      return <symbol>_a.getText();
    }
 
    public void click<symbol>() {
-      <symbol>.click();
+      <symbol>_a.click();
    }
 <-- Code Block End -->
 
@@ -20,12 +19,11 @@
 <h1>
 <-- Code Block Begin -->
 <-- Member Code Block -->
-   // Header1
    @FindBy(<locator>)
-   private WebElement <symbol>;
+   private WebElement <symbol>_h1;
 <-- Method Code Block -->
    public String get<symbol>Text() {
-      return <symbol>.getText();
+      return <symbol>_h1.getText();
    }
 <-- Code Block End -->
 
@@ -34,12 +32,11 @@
 <h2>
 <-- Code Block Begin -->
 <-- Member Code Block -->
-   // Header2
    @FindBy(<locator>)
-   private WebElement <symbol>;
+   private WebElement <symbol>_h2;
 <-- Method Code Block -->
    public String get<symbol>Text() {
-      return <symbol>.getText();
+      return <symbol>_h2.getText();
    }
 <-- Code Block End -->
 
@@ -48,12 +45,11 @@
 <p>
 <-- Code Block Begin -->
 <-- Member Code Block -->
-   // Paragraph <p> element
    @FindBy(<locator>)
-   private WebElement <symbol>;
+   private WebElement <symbol>_pTag;
 <-- Method Code Block -->
    public String get<symbol>ParagraphText() {
-      return <symbol>.getText();
+      return <symbol>_pTag.getText();
    }
 <-- Code Block End -->
 
@@ -62,18 +58,22 @@
 <ol>
 <-- Code Block Begin -->
 <-- Member Code Block -->
-   // numbered list begin
+   @FindBy(<locator>)
+   private WebElement <symbol>_olListBlock;
+<-- Method Code Block -->
+   // ol list block -- no methods supplied.
 <-- Code Block End -->
 
 
 <*** New Tag ***>
 <ul>
 <-- Code Block Begin -->
+<-- Member Code Block -->
    @FindBy(<locator>)
-   private WebElement <symbol>UiListItem;
+   private WebElement <symbol>_ulListBlock;
 <-- Method Code Block -->
-   public String get<symbol>UiListItemText() {
-      return <symbol>UiListItem.getText();
+   public String get<symbol>_ulListBlockText() {
+      return <symbol>_ulListBlock.getText();
    }
 <-- Code Block End -->
 

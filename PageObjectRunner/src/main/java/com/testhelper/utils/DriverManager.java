@@ -1,13 +1,11 @@
-package com.selgentests.utils;
+package com.testhelper.utils;
 
-import com.selgentests.utils.Configurator.BROWSER;
-import com.selgentests.utils.Configurator.DESTINATION;
+import com.testhelper.utils.Configurator.BROWSER;
+import com.testhelper.utils.Configurator.DESTINATION;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;

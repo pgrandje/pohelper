@@ -1,14 +1,14 @@
-package com.selgentests.testbase;
+package com.testhelper.testbase;
 
 import java.util.concurrent.TimeUnit;
 
-import com.selgentests.utils.DriverManager;
-import com.selgentests.utils.TestException;
+import com.testhelper.utils.DriverManager;
+import com.testhelper.utils.TestException;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 
-import com.selgentests.utils.Configurator;
+import com.testhelper.utils.Configurator;
 
 import org.openqa.selenium.WebDriverException;
 import org.testng.*;

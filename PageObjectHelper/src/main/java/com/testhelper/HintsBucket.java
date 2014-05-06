@@ -134,7 +134,7 @@ public class HintsBucket extends AbstractBucket {
             System.out.println("Exception writing to code output file");
             System.out.println("Message: " + e.getMessage());
             System.out.println(e.getStackTrace());
-            throw new SeleniumGeneratorException("Caught I/O Exception in CodeBucket.dumpToFile().");
+            throw new TestHelperException("Caught I/O Exception in CodeBucket.dumpToFile().");
         }
     }
 

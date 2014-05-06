@@ -72,7 +72,7 @@ public class CodeShellLoader {
 
           if (line == null) {
               logger.debug("Unexpected null line found, with code-block indicator not found.");
-              throw new SeleniumGeneratorException("Unexpected null line in Code Shell Loader");
+              throw new TestHelperException("Unexpected null line in Code Shell Loader");
           }
 
           // clear the StringBuffer by starting a new one.

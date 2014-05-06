@@ -95,7 +95,7 @@ public class PageScanner {
         NodeList titleTagList = document.getElementsByTagName("title");
 
         if (null == titleTagList) {
-            throw new SeleniumGeneratorException("Retrieving <title> returned a null list.");
+            throw new TestHelperException("Retrieving <title> returned a null list.");
         }
         else if (titleTagList.getLength() == 1)  {
             logger.info("Found exactly one <title> tag, using it's text for the page object's classname.");
@@ -203,7 +203,7 @@ public class PageScanner {
                     //        decoupling these to classes further. As is, if the locator can't be computed, the tag is not added
                     //        to the list for generation.  But this would preclude writing only informational comments to the output.
                     tagDescriptor.setAttributes(setAttributePairs(current));
-                    Locator locator = LocatorFactory.createLocator(current);
+                    Locator locator = LocatorFactory.makeLocator(current);
                     tagDescriptor.setLocator(locator);
                     tagDescriptor.writeMemberAndMethods(memberNameRecorder);
                     tagDescriptorList.add(tagDescriptor);

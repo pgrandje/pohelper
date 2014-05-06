@@ -5,9 +5,9 @@ package com.testhelper;
  * User: pgrandje
  * Date: 5/5/12
  */
-public class SeleniumGeneratorException extends RuntimeException {
+public class TestHelperException extends RuntimeException {
 
-    SeleniumGeneratorException(String message) {
+    TestHelperException(String message) {
         super(message);
     }
 
