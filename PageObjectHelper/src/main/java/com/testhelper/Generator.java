@@ -20,10 +20,10 @@ import org.apache.log4j.PropertyConfigurator;
  * Has since gone through many incremental refactorings and is gradually growing mature in its years.
  */
 
-public class GeneratorEngine
+public class Generator
 {
 
-    private static final Logger logger = Logger.getLogger(GeneratorEngine.class);
+    private static final Logger logger = Logger.getLogger(Generator.class);
 
     /* Accumulates the classnames used for each page object to ensure uniqueness.
        The classNameRecorder needs to exist, and accumulate page names for all pages generated.
