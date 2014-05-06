@@ -29,7 +29,7 @@ public class LocatorFactory {
     static Locator locator = null;
 
     // Factory that creates the locatorMaker to create locators from the DOM.  Node is the UI element to be located.
-    public static Locator createLocator(Node node) {
+    public static Locator makeLocator(Node node) {
 
         configurator = Configurator.getConfigurator();
 
@@ -105,8 +105,9 @@ public class LocatorFactory {
     private static boolean makeCssLocator(Node node) {
 
         String cssLocator = makeCssLocatorString(node);
-        if ((cssLocator == null) || cssLocator.isEmpty()) {
-            logger.warn("WARNING: CSS locator is null or is empty.");
+
+        if ((null == cssLocator) || cssLocator.isEmpty()) {
+            logger.warn("CSS locator is either null or empty.");
             return false;
         }
 
@@ -297,7 +298,7 @@ public class LocatorFactory {
 
 
     // Locator write method for writing locator from Hints.
-    public static Locator createLocator(String hintsLocatorString)  {
+    public static Locator makeLocator(String hintsLocatorString)  {
 
         if ((hintsLocatorString == null) || (hintsLocatorString.equals("null"))) {
             logger.warn("Locator is null after reading from hints file.");
