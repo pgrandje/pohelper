@@ -152,7 +152,7 @@ public class GeneratorEngine
             throw new TestHelperException("Got null Tag Descriptor List--cannot generate code or hints.");
         }
 
-        if (tagDescriptorList.getNumberOfBuckets() == 0) {
+        if (tagDescriptorList.size() == 0) {
             throw new TestHelperException("Tag Descriptor List is empty--cannot generate code or hints.");
         }
 
