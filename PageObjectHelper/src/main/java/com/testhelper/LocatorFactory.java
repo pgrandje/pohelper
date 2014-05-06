@@ -9,11 +9,13 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 /**
- * TODO: Add javadoc here.
- * Constructed using a factory since
- *      a) it could work off a wc3-Node or a HintsToCodeDescriptor and
- *      b) we only need it when we need it, we won't need it's instance to be retained from the calling methods, so
- *         using a factory with a fluent api will properly restrict how this is used.
+ * Contructs Locator objects.  This isolates the algorithms for creaing Locators to one area and provides an API
+ * for constructing Locators.
+ *
+ * Used a factory pattern since
+ *      a) It needs to create a Locator from either a wc3-Node or a HintsToCodeDescriptor.
+ *      b) We don't need it's instance to be retained from the calling methods.
+ *
  * User: pgrandje
  * Date: 4/20/14
  */

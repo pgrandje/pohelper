@@ -1,7 +1,7 @@
 package com.testhelper;
 
 /**
- * TODO: Add javadoc here.
+ * Stores everything needed to construct a Selenium locator string.
  * User: pgrandje
  * Date: 4/20/14
  */
