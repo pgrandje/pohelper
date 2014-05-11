@@ -40,21 +40,13 @@ public class Configurator {
 
         logger = Logger.getLogger(this.getClass());
 
-//        url = System.getProperty("url");
 		browserName = System.getProperty("browserName");
-
-		// if the url for the test was not supplied, throw an exception.
-//		if(url == null) {
-//			throw new TestException("URL not supplied.");
-//		}
 
         // Default to Firefox if the browser isn't specified.
 		if(browserName == null) {
             browserName = "FF";
 		}
 
-		// Log the configuration.
-		logger.info("Using url: " + url);
 		logger.info("Using browserName: " + browserName);
 		
 		// This isn't necessary, but it's an extra assurance that no required parameters are null.
