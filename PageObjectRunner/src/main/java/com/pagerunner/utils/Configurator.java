@@ -5,10 +5,15 @@ import org.testng.Assert;
 
 
 /**
- * TODO: Do Javadocs for Page Runner
- * Browser Name should be either: IE, FF.  System properties' values are converted toUpper() to standardize them.
+ * Set configuration parameters for running tests.  Specifically:
+ * Browser name: Reads this from the command-line parameter -DbrowserName.  Possible values: "Firefox", "FF", or "FFox"
+ * or "Chrome" - case insensitive.
+ * Url: The page to run the test against.  This is configured as a parameter to the test itself since each test class
+ * will run tests for a different page object and therefore, against a different test page.  The url is set within the
+ * Configurator from the TestBase class and stored with in the Configurator for later use.
+ * @author pgrandje
+ * @date 05/11/2014
  */
-//
 public class Configurator {
 	
 	// A constant used to set the implicit wait time throughout the test project
@@ -47,9 +52,7 @@ public class Configurator {
 		if(browserName == null) {
             browserName = "FF";
 		}
-        browserName = browserName.toUpperCase();
 
-		
 		// Log the configuration.
 		logger.info("Using url: " + url);
 		logger.info("Using browserName: " + browserName);
@@ -59,6 +62,7 @@ public class Configurator {
 		Assert.assertNotNull(browserName, "Setup error -- Browser Name is null.");
 		
 		// Set the Browser.
+        // TODO: Set these browser strings to string constant member.
 		if(browserName.equalsIgnoreCase("FF") || browserName.equalsIgnoreCase("Firefox") || browserName.equalsIgnoreCase("FFox"))
     	{
     		browser = BROWSER.FIREFOX;
