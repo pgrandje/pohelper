@@ -12,10 +12,7 @@ import com.pagerunner.utils.Configurator;
 
 import org.openqa.selenium.WebDriverException;
 import org.testng.*;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.*;
 
 /**
  * User: pgrandje  TODO:  javadocs for TestBase
@@ -28,16 +25,25 @@ import org.testng.annotations.BeforeMethod;
 public class TestBase {
 
     protected Logger logger;
-	protected WebDriver driver;
+	protected Configurator configurator;
+    protected WebDriver driver;
+
+    /* Configurator needs to be explicitly assigned before the DriverManager runs.  Therefore a constructor makes the most
+       sense to ensure that everywhere the test class exists, a configurator will be available.
+    */
+    public TestBase() {
+        PropertyConfigurator.configure("log4j.properties");
+        logger = Logger.getLogger(this.getClass());
+        configurator = Configurator.get();
+    }
 
 
 	@BeforeClass
-	public void startUp() throws TestException {
-
-        PropertyConfigurator.configure("log4j.properties");
-		logger = Logger.getLogger(this.getClass());
+    @Parameters("url")
+	public void startUp(String url) throws TestException {
 
         logger.info("*** Start Up ***");
+        configurator.setUrl(url);
 
 		try {
 

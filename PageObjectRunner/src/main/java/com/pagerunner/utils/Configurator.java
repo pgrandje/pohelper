@@ -25,28 +25,28 @@ public class Configurator {
 	
 	public enum BROWSER {FIREFOX, CHROME};
 
-	private String url;
+    private String url;
 	private String browserName;
 	private BROWSER browser;
 	
-	public static Configurator get() throws TestException {
+	public static Configurator get() {
 		if(configurator == null) {
 			configurator = new Configurator();
 		}
 		return configurator;
 	}
 	
-	private Configurator() throws TestException {
+	private Configurator() {
 
         logger = Logger.getLogger(this.getClass());
 
-        url = System.getProperty("url");
+//        url = System.getProperty("url");
 		browserName = System.getProperty("browserName");
 
 		// if the url for the test was not supplied, throw an exception.
-		if(url == null) {
-			throw new TestException("URL not supplied.");
-		}
+//		if(url == null) {
+//			throw new TestException("URL not supplied.");
+//		}
 
         // Default to Firefox if the browser isn't specified.
 		if(browserName == null) {
@@ -58,7 +58,6 @@ public class Configurator {
 		logger.info("Using browserName: " + browserName);
 		
 		// This isn't necessary, but it's an extra assurance that no required parameters are null.
-		Assert.assertNotNull(url, "Setup error -- URL is null.");
 		Assert.assertNotNull(browserName, "Setup error -- Browser Name is null.");
 		
 		// Set the Browser.
@@ -72,7 +71,10 @@ public class Configurator {
 			browser = BROWSER.CHROME;
 		}
 		else {
-			throw new TestException("Invalid Browser Name specified.");
+            /* Using a RunTimeException allows me to not have to throw this from the test classes, which allows not having
+               to specify an explicit constructor in each test class.
+            */
+			throw new RuntimeException("Error creating Configuration--Invalid Browser Name specified.");
 		}
 		
 	}
@@ -80,7 +82,11 @@ public class Configurator {
 	public String getUrl() {
 		return url;
 	}
-	
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
 	public BROWSER getBrowser() {
 		return browser;
 	}

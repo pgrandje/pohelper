@@ -5,6 +5,7 @@ import com.pagerunner.testbase.TestBase;
 import com.pagerunner.utils.TestException;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 /**
@@ -16,7 +17,6 @@ import org.testng.annotations.Test;
  */
 public class TagOnlyNoAttributesTest extends TestBase {
 
-    // TODO: Fix this test--it returns the page title.
     @Test
     void h1Test() throws TestException {
 
