@@ -1,14 +1,13 @@
-package com.testhelper.testbase;
+package com.pagerunner.testbase;
 
 import java.util.concurrent.TimeUnit;
 
-import com.testhelper.utils.DriverManager;
-import com.testhelper.utils.TestException;
+import com.pagerunner.utils.DriverManager;
+import com.pagerunner.utils.TestException;
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 
-import com.testhelper.utils.Configurator;
+import com.pagerunner.utils.Configurator;
 
 import org.openqa.selenium.WebDriverException;
 import org.testng.*;

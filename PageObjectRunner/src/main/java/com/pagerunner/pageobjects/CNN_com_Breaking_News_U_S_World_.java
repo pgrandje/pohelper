@@ -1,4 +1,4 @@
-package com.testhelper.pageobjects;
+package com.pagerunner.pageobjects;
 
 /* Generated Page Object source file */
 

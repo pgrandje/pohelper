@@ -1,4 +1,4 @@
-package com.testhelper.pageobjects;
+package com.pagerunner.pageobjects;
 // TODO:  Need to programatically generate the package name.
 
 /* Generated Page Object source file */

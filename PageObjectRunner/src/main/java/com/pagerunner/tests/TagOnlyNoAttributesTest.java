@@ -1,8 +1,8 @@
-package com.testhelper.tests;
+package com.pagerunner.tests;
 
-import com.testhelper.pageobjects.Tag_Tests;
-import com.testhelper.testbase.TestBase;
-import com.testhelper.utils.TestException;
+import com.pagerunner.pageobjects.Tag_Tests;
+import com.pagerunner.testbase.TestBase;
+import com.pagerunner.utils.TestException;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;

@@ -1,11 +1,13 @@
-package com.testhelper.utils;
+package com.pagerunner.utils;
 
 import org.apache.log4j.Logger;
 
 
-
-// Browser Name should be either: IE, FF, Chrome, HTMLUNIT.  Strings are converted toUpper() to standardize them.
-// 
+/**
+ * TODO: Do Javadocs for Page Runner
+ * Browser Name should be either: IE, FF.  System properties' values are converted toUpper() to standardize them.
+ */
+//
 public class Configurator {
 	
 	// A constant used to set the implicit wait time throughout the test project
@@ -15,13 +17,13 @@ public class Configurator {
 	
 	private Logger logger;
 	
-	public enum BROWSER { FIREFOX, IE, CHROME, SAFARI, HTMLUNIT };
+	public enum BROWSER {FIREFOX, CHROME};
 	public enum DESTINATION {LOCAL, REMOTE};
 
 	private String url;
 	private String browserName;
+    private String remoteEnvironment;
 	private BROWSER browser;
-	private String remoteEnvironment;
 	private DESTINATION destination;
 	
 	public static Configurator get() throws TestException {
@@ -43,6 +45,7 @@ public class Configurator {
 		if(url == null) {
 			url = "http://localhost:8080/testhtml/htmltests";
 		}
+
 		if(browserName == null) {
             browserName = "FF";
 		}
@@ -58,11 +61,7 @@ public class Configurator {
 //		Assert.assertNotNull(browserName, "Setup error -- Browser Name is null.");
 		
 		// Set the Browser.
-		if(browserName.equalsIgnoreCase("IE") || browserName.equalsIgnoreCase("INTERNET EXPLORER"))  
-    	{
-			browser = BROWSER.IE;
-    	}
-    	else if(browserName.equalsIgnoreCase("FF") || browserName.equalsIgnoreCase("Firefox") || browserName.equalsIgnoreCase("FFox"))
+		if(browserName.equalsIgnoreCase("FF") || browserName.equalsIgnoreCase("Firefox") || browserName.equalsIgnoreCase("FFox"))
     	{
     		browser = BROWSER.FIREFOX;
     	}
@@ -70,18 +69,8 @@ public class Configurator {
 		{
 			browser = BROWSER.CHROME;
 		}
-		// NOTE:  Safari not supported yet by WebDriver
-		else if (browserName.equalsIgnoreCase("Safari"))
-		{
-			browser = BROWSER.SAFARI;
-			throw new TestException("Safari not yet supported by WebDriver.");
-		}
-		else if (browserName.equalsIgnoreCase("HTML") || browserName.equalsIgnoreCase("HTMLUNIT") )
-		{
-			browser = BROWSER.HTMLUNIT;	
-		}
 		else {
-			throw new TestException("Invalid Browser Name passed from command-line.");
+			throw new TestException("Invalid Browser Name specified.");
 		}
 		
 		if (remoteEnvironment == null) {
@@ -98,37 +87,12 @@ public class Configurator {
 		return url;
 	}
 	
-	public String getCmdLineBrowserName() {
-		return browserName;
-	}
-	
 	public BROWSER getBrowser() {
 		return browser;
 	}
-	
-	public String getRemoteEnvironment() {
-		return remoteEnvironment;
-	}	
-
 
 	public DESTINATION getDestination() {
 		return destination;
-	}
-
-	public final String getUrl() {
-		return url;
-	}
-
-	public final void setUrl(String url) {
-		this.url = url;
-	}
-
-	public final String getBrowserName() {
-		return browserName;
-	}
-
-	public final void setBrowserName(String browserName) {
-		this.browserName = browserName;
 	}
 	
 	
