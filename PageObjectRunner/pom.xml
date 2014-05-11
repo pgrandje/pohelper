@@ -2,12 +2,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>PageObjectRunner</groupId>
-  <artifactId>PageObjectRunner</artifactId>
+  <groupId>PageTester</groupId>
+  <artifactId>PageTester</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
-
-  <name>PageObjectRunner</name>
+  <name>PageTester</name>
 <!--  <url>http://maven.apache.org</url> -->
 
   <properties>
@@ -28,7 +27,6 @@
     <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
-      <!-- not sure what the current version is, but it's prob this one. -->
       <version>1.2.17</version>
     </dependency>
   </dependencies>
