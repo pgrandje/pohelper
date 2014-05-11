@@ -4,8 +4,6 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -76,7 +74,7 @@ public class DriverManager {
     	
     	// TODO:  Should I relocate retrieval of the URL?  This class should be just managing the browser, shouldn't it?
     	//			Could even rename it to BrowserManager.
-    	driver.get(configurator.getCmdLineBaseUrl());
+    	driver.get(configurator.getUrl());
     	
 		return driver;
     }

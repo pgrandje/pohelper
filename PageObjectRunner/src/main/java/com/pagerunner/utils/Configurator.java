@@ -1,6 +1,7 @@
 package com.pagerunner.utils;
 
 import org.apache.log4j.Logger;
+import org.testng.Assert;
 
 
 /**
@@ -18,13 +19,10 @@ public class Configurator {
 	private Logger logger;
 	
 	public enum BROWSER {FIREFOX, CHROME};
-	public enum DESTINATION {LOCAL, REMOTE};
 
 	private String url;
 	private String browserName;
-    private String remoteEnvironment;
 	private BROWSER browser;
-	private DESTINATION destination;
 	
 	public static Configurator get() throws TestException {
 		if(configurator == null) {
@@ -39,13 +37,13 @@ public class Configurator {
 
         url = System.getProperty("url");
 		browserName = System.getProperty("browserName");
-        remoteEnvironment = System.getProperty("remoteEnvironment");
 
-		// Retrieve runtime params from command-line for user name, password, URL for the AUT and the browser.
+		// if the url for the test was not supplied, throw an exception.
 		if(url == null) {
-			url = "http://localhost:8080/testhtml/htmltests";
+			throw new TestException("URL not supplied.");
 		}
 
+        // Default to Firefox if the browser isn't specified.
 		if(browserName == null) {
             browserName = "FF";
 		}
@@ -56,9 +54,9 @@ public class Configurator {
 		logger.info("Using url: " + url);
 		logger.info("Using browserName: " + browserName);
 		
-		// Verify no required parameters are null.
-//		Assert.assertNotNull(url, "Setup error -- URL is null.");
-//		Assert.assertNotNull(browserName, "Setup error -- Browser Name is null.");
+		// This isn't necessary, but it's an extra assurance that no required parameters are null.
+		Assert.assertNotNull(url, "Setup error -- URL is null.");
+		Assert.assertNotNull(browserName, "Setup error -- Browser Name is null.");
 		
 		// Set the Browser.
 		if(browserName.equalsIgnoreCase("FF") || browserName.equalsIgnoreCase("Firefox") || browserName.equalsIgnoreCase("FFox"))
@@ -73,27 +71,14 @@ public class Configurator {
 			throw new TestException("Invalid Browser Name specified.");
 		}
 		
-		if (remoteEnvironment == null) {
-			destination = DESTINATION.LOCAL;
-		}
-		else {
-			destination = DESTINATION.REMOTE;
-		}
-		
 	}
 
-	
-	public String getCmdLineBaseUrl() {
+	public String getUrl() {
 		return url;
 	}
 	
 	public BROWSER getBrowser() {
 		return browser;
 	}
-
-	public DESTINATION getDestination() {
-		return destination;
-	}
-	
 	
 }
