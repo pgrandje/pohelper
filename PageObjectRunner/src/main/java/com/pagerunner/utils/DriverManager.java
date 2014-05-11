@@ -21,15 +21,17 @@ public class DriverManager {
 	
 	
 	// Determines which browser and loads it.  At the end it sends the base URL to retrieve the starting web page.
-	public static synchronized WebDriver getDriver(Configurator configurator) throws TestException
+	public static synchronized WebDriver getDriver() throws TestException
     {
 		final Logger logger;
     	
     	WebDriver driver = null;
     	
     	logger = Logger.getLogger(DriverManager.class.getName());
+
+        Configurator configurator = Configurator.get();
 		
-    	// First process REMOTE browsers
+    	// First process REMOTE browsers  TODO:  Will I ever need a REMOTE configuration for running basic tests?
     	if (configurator.getDestination() == Configurator.DESTINATION.REMOTE && configurator.getBrowser() == Configurator.BROWSER.FIREFOX) {
     		
     		logger.info("Setting WebDriver to run FIREFOX on a REMOTEHOST.");

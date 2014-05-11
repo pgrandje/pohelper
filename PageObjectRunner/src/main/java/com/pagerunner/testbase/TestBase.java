@@ -29,7 +29,6 @@ public class TestBase {
 
     protected Logger logger;
 	protected WebDriver driver;
-	protected Configurator testConfigurator;
 
 
 	@BeforeClass
@@ -42,7 +41,7 @@ public class TestBase {
 
 		try {
 
-			driver = DriverManager.getDriver(testConfigurator);
+			driver = DriverManager.getDriver();
 			Assert.assertNotNull(driver, "*** TEST FAILURE -- WEBDRIVER IS NULL!!! ***");
 
 			// Set implicit waits throughout the whole test.
