@@ -36,7 +36,7 @@ public class TestBase {
 	public void startUp() throws TestException {
 
         // Used by the loggers
-        PropertyConfigurator.configure("log4j.properties");
+//        PropertyConfigurator.configure("log4j.properties");
 
 		logger = Logger.getLogger(this.getClass());
 		logger.info("*** Running startUp ***");

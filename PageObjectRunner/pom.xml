@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>SelGenTest</groupId>
-  <artifactId>SelGenTest</artifactId>
+  <groupId>PageObjectRunner</groupId>
+  <artifactId>PageObjectRunner</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
 
-  <name>SelGenTest</name>
+  <name>PageObjectRunner</name>
 <!--  <url>http://maven.apache.org</url> -->
 
   <properties>
@@ -18,7 +18,7 @@
     <dependency>
 		<groupId>org.seleniumhq.selenium</groupId>
 		<artifactId>selenium-java</artifactId>
-		<version>2.5.0</version>
+		<version>2.41.0</version>
 	</dependency>
     <dependency>
         <groupId>org.testng</groupId>
@@ -29,7 +29,7 @@
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
       <!-- not sure what the current version is, but it's prob this one. -->
-      <version>1.2.16</version>
+      <version>1.2.17</version>
     </dependency>
   </dependencies>
 </project>
