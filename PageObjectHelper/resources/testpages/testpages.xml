@@ -1,0 +1,2 @@
+<!-- install into /usr/local/tomcat/conf/Catalina/localhost -->
+<Context path="/testpages" docBase="/Users/pgrandje/IdeaProjects/POHelper/PageObjectHelper/resources/testpages"/>
