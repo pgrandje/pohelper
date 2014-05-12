@@ -1,26 +1,28 @@
 package com.pagerunner.testbase;
 
-import java.util.concurrent.TimeUnit;
-
+import com.pagerunner.utils.Configurator;
 import com.pagerunner.utils.DriverManager;
 import com.pagerunner.utils.TestException;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
-import com.pagerunner.utils.Configurator;
-
-import org.openqa.selenium.WebDriverException;
-import org.testng.*;
-import org.testng.annotations.*;
+import java.util.concurrent.TimeUnit;
 
 /**
- * User: pgrandje  TODO:  javadocs for TestBase
- * Date: 4/14/13
- * Time: 1:40 PM
- * To change this template use File | Settings | File Templates.
+ * Base class for all Tests that run page objects generated from the Page Object Helper.  Tests derive from
+ * this base class.
+ * Note that these tests will be run against the test pages that are provided with this project.  The tests
+ * provided are for 'known pages' that were used as 'standard test pages' for testing the Page Object Helper.  Tests themselves cannot
+ *
  * The base class is responsible for starting up the browser (or headless browser in the case of HTML-Unit) and to return the WebDriver.
  * It's also responsible for closing the browser.
+ *
+ * @author : Paul Grandjean
+ * Date : 4/14/13
  */
 public class TestBase {
 

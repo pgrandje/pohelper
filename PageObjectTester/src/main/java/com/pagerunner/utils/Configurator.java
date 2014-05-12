@@ -11,8 +11,8 @@ import org.testng.Assert;
  * Url: The page to run the test against.  This is configured as a parameter to the test itself since each test class
  * will run tests for a different page object and therefore, against a different test page.  The url is set within the
  * Configurator from the TestBase class and stored with in the Configurator for later use.
- * @author pgrandje
- * @date 05/11/2014
+ * @author Paul Grandjean
+ * @Date 05/11/2014
  */
 public class Configurator {
 	

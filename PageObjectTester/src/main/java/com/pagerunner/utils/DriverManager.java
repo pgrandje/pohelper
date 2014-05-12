@@ -7,8 +7,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 /**
- * Assigns starts the WebDriver, opens the requested browser and loads the test app into it.
- * @return Webdriver Instance
+ * Starts the WebDriver.  Select a Webdriver according to command-line parameters.  Defaults to Firefox.
+ * Opens the requested browser and loads the test page into it.
+ * @return WebDriver the Selenium WebDriver that manages the browser instance.
+ * @author Paul Grandjean
  */
 public class DriverManager {
 	

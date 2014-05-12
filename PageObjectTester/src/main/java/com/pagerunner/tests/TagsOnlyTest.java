@@ -5,15 +5,19 @@ import com.pagerunner.testbase.TestBase;
 import com.pagerunner.utils.TestException;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 /**
- * Created by IntelliJ IDEA.
- * User: pgrandje
+ * This test verifies the page object webelements are generated correctly for specific html tags.
+ * Tests for tags only.  That is, tags with no attributes.  Also varying the positions of tags are not
+ * tested here.  This is the most basic test proved.
+ *
+ * This tests the page object generated when the PageObjectHelper runs against the standard test page tagtests.html
+ * Verifies by checking the text for each tag defined in tagtest.html is correctly returned to the test by
+ * the generated page object.
+ *
+ * @author : Paul Grandjean
  * Date: 5/6/13
- * Time: 8:58 PM
- * To change this template use File | Settings | File Templates.
  */
 public class TagsOnlyTest extends TestBase {
 
