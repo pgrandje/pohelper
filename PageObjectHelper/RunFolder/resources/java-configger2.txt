@@ -42,6 +42,31 @@
 
 
 <*** New Tag ***>
+<h3>
+<-- Code Block Begin -->
+<-- Member Code Block -->
+   @FindBy(<locator>)
+   private WebElement <symbol>_h3;
+<-- Method Code Block -->
+   public String get<symbol>h3Text() {
+      return <symbol>_h3.getText();
+   }
+<-- Code Block End -->
+
+
+<*** New Tag ***>
+<div>
+<-- Code Block Begin -->
+<-- Member Code Block -->
+   @FindBy(<locator>)
+   private WebElement <symbol>_div;
+<-- Method Code Block -->
+   public String get<symbol>DivText() {
+      return <symbol>_div.getText();
+   }
+<-- Code Block End -->
+
+<*** New Tag ***>
 <p>
 <-- Code Block Begin -->
 <-- Member Code Block -->
