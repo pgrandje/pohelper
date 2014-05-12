@@ -45,33 +45,10 @@ public class TestBase {
         logger.info("*** Start Up ***");
         configurator.setUrl(url);
 
-		try {
-
-			driver = DriverManager.getDriver();
-			Assert.assertNotNull(driver, "*** TEST FAILURE -- WEBDRIVER IS NULL!!! ***");
-
-			// Set implicit waits throughout the whole test.
-			driver.manage().timeouts().implicitlyWait(Configurator.DEFAULT_IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
-
-		} catch (TestException testException) {
-			logger.error("TEST FAILURE -- WEBDRIVER SETUP FAILED, BROWSER NOT OPENED -- TestBase caught TestException -- Exception Message: " + testException.getMessage());
-			logger.error("Exception Cause: " + testException.getCause());
-			logger.error("Exception Class: " + testException.getClass());
-		} catch (WebDriverException webDriverException) {
-            System.out.println("TEST FAILURE -- WEBDRIVER SETUP FAILED, BROWSER NOT OPENED -- TestBase caught an arbitrary Exception -- Exception Message " + webDriverException.getMessage());
-			logger.error("TEST FAILURE -- WEBDRIVER SETUP FAILED, BROWSER NOT OPENED -- TestBase caught  RuntimeException -- Exception Message " + webDriverException.getMessage());
-			logger.error("Exception Cause: " + webDriverException.getCause());
-			logger.error("Exception Class: " + webDriverException.getClass());
-		}
-		catch (Exception exception) {
-            System.out.println("TEST FAILURE -- WEBDRIVER SETUP FAILED, BROWSER NOT OPENED -- TestBase caught an arbitrary Exception -- Exception Message " + exception.getMessage());
-			logger.error("TEST FAILURE -- WEBDRIVER SETUP FAILED, BROWSER NOT OPENED -- TestBase caught an arbitrary Exception -- Exception Message " + exception.getMessage());
-			logger.error("Exception Cause: " + exception.getCause());
-			logger.error("Exception Class: " + exception.getClass());
-		}
-
+        driver = DriverManager.getDriver();
+        // Set implicit waits throughout the whole test.
+        driver.manage().timeouts().implicitlyWait(Configurator.DEFAULT_IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
 	}
-
 
 	@AfterClass
 	public synchronized void tearDown() {
@@ -79,19 +56,6 @@ public class TestBase {
 		logger.info("Closing browser.");
 		driver.close();
 	}
-
-
-    // TODO: Do I need this method: getPageObjectAndLogIt()?
-	// Gets the Header page object and checks that it's ready for testing.
-	// Logs it's progress using INFO logging level.
-//	protected <T> PageObjectBase getPageObjectAndLogIt(Class<T> pageObjectClassName) {
-//
-//		logger.info("Fetching page object " + pageObjectClassName.getName() + " in TestBase.");
-//		MtmPageObjectBase pageObject = (MtmPageObjectBase) PageFactory.initElements(driver, pageObjectClassName);
-//		logger.info(pageObjectClassName.getName() + " page object is ready.");
-//
-//		return pageObject;
-//	}
 
 }
 
