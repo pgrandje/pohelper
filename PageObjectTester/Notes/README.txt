@@ -8,7 +8,7 @@ And to run a suite testng requires the test classes to be specified.
     <test name="TagOnlyNoAttributesTest">
     <parameter name="url" value="http://localhost:8080/testhtml/htmltests/"/>
     <classes>
-       <class name="com.pagerunner.tests.TagOnlyNoAttributesTest" />
+       <class name="com.pagerunner.tests.TagsOnlyTest" />
     </classes>
     </test>
 </suite>
