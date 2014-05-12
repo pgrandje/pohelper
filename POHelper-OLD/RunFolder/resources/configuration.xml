@@ -1,7 +1,0 @@
-<?xml version= "1.0" ?>
-<configuration>
-    <generate>sourcecode</generate>
-    <locator>attribs-css</locator>
-    <destination>/Users/pgrandje/IdeaProjects/Sel20Eval/src/test/java/com/paulgrandjean/components</destination>
-    <url>http://www.bbc.com</url>
-</configuration>

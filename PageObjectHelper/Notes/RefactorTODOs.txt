@@ -14,6 +14,8 @@ Refactor TODOS:
 
 - TODO: Add javadoc to Locator and LocatorFactory
 
+- Reorganize the Notes
+
 Bug fix TODOS:
 
 - BeganWithUnderscore classname when generating from hints.
