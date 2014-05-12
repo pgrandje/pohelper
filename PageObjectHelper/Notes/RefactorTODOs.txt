@@ -16,8 +16,18 @@ Refactor TODOS:
 
 - Reorganize the Notes
 
-Bug fix TODOS:
+- Add a TestException for when the page isn't found.  Currently it gets Unable to locate element
+- Rename TestException to PageTesterException
 
+- Rename package testhelper to pagehelper or pageobjecthelper
+
+- Rename package pagerunner to pagetester or pageobjecttester
+
+- Perhaps all package names should have a common root of com.pageobjecthelper
+
+
+Bug fix TODOS:
+- Text no longer being used for WebElement member names. Why not?  It used to, didn't it?
 - BeganWithUnderscore classname when generating from hints.
 - Way too long css strings.
 - I shouldn't not generate code in NodeScanner simply because it couldn't write a locator.
