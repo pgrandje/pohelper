@@ -20,14 +20,17 @@ public class TagsOnly   {
    @FindBy(css = "body > p")
    private WebElement uiElement3_pTag;
 
+   @FindBy(css = "body > div")
+   private WebElement uiElement4_div;
+
    @FindBy(css = "body > ul")
-   private WebElement uiElement4_ulListBlock;
+   private WebElement uiElement5_ulListBlock;
 
    @FindBy(css = "body > ul > li")
-   private WebElement uiElement5LiListItem;
+   private WebElement uiElement6LiListItem;
 
    @FindBy(css = "body > ul > li:nth-child(2)")
-   private WebElement uiElement6LiListItem;
+   private WebElement uiElement7LiListItem;
 
    public String getuiElement1Text() {
       return uiElement1_h1.getText();
@@ -41,16 +44,20 @@ public class TagsOnly   {
       return uiElement3_pTag.getText();
    }
 
-   public String getuiElement4_ulListBlockText() {
-      return uiElement4_ulListBlock.getText();
+   public String getuiElement4DivText() {
+      return uiElement4_div.getText();
    }
 
-   public String getuiElement5LiListItemText() {
-      return uiElement5LiListItem.getText();
+   public String getuiElement5_ulListBlockText() {
+      return uiElement5_ulListBlock.getText();
    }
 
    public String getuiElement6LiListItemText() {
       return uiElement6LiListItem.getText();
+   }
+
+   public String getuiElement7LiListItemText() {
+      return uiElement7LiListItem.getText();
    }
 
 

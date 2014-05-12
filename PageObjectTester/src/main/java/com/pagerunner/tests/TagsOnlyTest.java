@@ -29,9 +29,10 @@ public class TagsOnlyTest extends TestBase {
 		Assert.assertEquals(tagsOnlyPage.getuiElement1Text(), "header 1");
         Assert.assertEquals(tagsOnlyPage.getuiElement2Text(), "header 2");
         Assert.assertEquals(tagsOnlyPage.getuiElement3ParagraphText(), "paragraph");
-        Assert.assertEquals(tagsOnlyPage.getuiElement4_ulListBlockText(), "ul\nfirst li\nsecond li");
-        Assert.assertEquals(tagsOnlyPage.getuiElement5LiListItemText(), "first li");
-        Assert.assertEquals(tagsOnlyPage.getuiElement6LiListItemText(), "second li");
+        Assert.assertEquals(tagsOnlyPage.getuiElement4DivText(), "div");
+        Assert.assertEquals(tagsOnlyPage.getuiElement5_ulListBlockText(), "ul\nfirst li\nsecond li");
+        Assert.assertEquals(tagsOnlyPage.getuiElement6LiListItemText(), "first li");
+        Assert.assertEquals(tagsOnlyPage.getuiElement7LiListItemText(), "second li");
 	}
 
 }
