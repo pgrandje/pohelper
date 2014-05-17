@@ -2,59 +2,62 @@ package com.pagerunner.pageobjects;
 
 /* Generated Page Object source file */
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
 
 
 public class TagsOnly   {
 
    @FindBy(css = "body > h1")
-   private WebElement uiElement1_h1;
+   private WebElement header_1_h1;
 
    @FindBy(css = "body > h2")
-   private WebElement uiElement2_h2;
+   private WebElement header_2_h2;
 
    @FindBy(css = "body > p")
-   private WebElement uiElement3_pTag;
+   private WebElement paragraph_pTag;
 
    @FindBy(css = "body > div")
-   private WebElement uiElement4_div;
+   private WebElement div_div;
 
    @FindBy(css = "body > ul")
-   private WebElement uiElement5_ulListBlock;
+   private WebElement ul_first_li_second_li__ulListBlock;
 
    @FindBy(css = "body > ul > li")
-   private WebElement uiElement6LiListItem;
+   private WebElement BeganWithUnderscore_first_li_LiListItem;
 
    @FindBy(css = "body > ul > li:nth-child(2)")
-   private WebElement uiElement7LiListItem;
+   private WebElement BeganWithUnderscore_second_li_LiListItem;
 
-   public String getuiElement1Text() {
-      return uiElement1_h1.getText();
+   public String getheader_1Text() {
+      return header_1_h1.getText();
    }
 
-   public String getuiElement2Text() {
-      return uiElement2_h2.getText();
+   public String getheader_2Text() {
+      return header_2_h2.getText();
    }
 
-   public String getuiElement3ParagraphText() {
-      return uiElement3_pTag.getText();
+   public String getparagraphParagraphText() {
+      return paragraph_pTag.getText();
    }
 
-   public String getuiElement4DivText() {
-      return uiElement4_div.getText();
+   public String getdivDivText() {
+      return div_div.getText();
    }
 
-   public String getuiElement5_ulListBlockText() {
-      return uiElement5_ulListBlock.getText();
+   public String getul_first_li_second_li__ulListBlockText() {
+      return ul_first_li_second_li__ulListBlock.getText();
    }
 
-   public String getuiElement6LiListItemText() {
-      return uiElement6LiListItem.getText();
+   public String getBeganWithUnderscore_first_li_LiListItemText() {
+      return BeganWithUnderscore_first_li_LiListItem.getText();
    }
 
-   public String getuiElement7LiListItemText() {
-      return uiElement7LiListItem.getText();
+   public String getBeganWithUnderscore_second_li_LiListItemText() {
+      return BeganWithUnderscore_second_li_LiListItem.getText();
    }
 
 

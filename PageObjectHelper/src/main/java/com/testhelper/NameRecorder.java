@@ -55,7 +55,7 @@ public class NameRecorder {
 
         StringBuffer stringBuffer = new StringBuffer();
 
-        logger.debug("**** Making new symbol name beginning with text: " + text + " ****");
+        logger.debug("**** Making new symbol name using text: " + text + " ****");
 
         // This is the Text-->Symbol Name SYMBOL-MAKING code.
 
