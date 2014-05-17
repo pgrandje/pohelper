@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.net.ConnectException;
 import java.net.URL;
 import java.net.UnknownHostException;
 import java.util.HashMap;
@@ -80,6 +81,11 @@ public class PageScanner {
             // TODO: Research a pattern for communicating error messages up to the  UI layer.
             System.out.println("Host or page not found.  Using url: " + url.toString());
             System.exit(0);
+        }
+        catch (ConnectException e) {
+                // TODO: Research a pattern for communicating error messages up to the  UI layer.
+                System.out.println("ERROR: Host or page not found.  Using url: " + url.toString());
+                System.exit(0);
         }
         // Get the page source into a Document object.
         document = new DomSerializer(props, true).createDOM(nodes);
