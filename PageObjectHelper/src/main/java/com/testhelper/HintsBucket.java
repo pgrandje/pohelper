@@ -20,16 +20,6 @@ public class HintsBucket extends AbstractBucket {
 
     private static HintsBucket hintsBucket;
 
-    // The hints text to be generated.
-    private StringBuffer hintsHeader;
-    private StringBuffer hintsBuffer;
-
-    // For the output file.
-    // TODO: Use the configurator to set the path for the Analysis file.
-    private String outPutFilePath = "./";
-    private String outPutFileName = "Hints.txt";
-    private BufferedWriter outputFile;
-
 
     // HintsBucket is a singleton since we would only ever need one at a time.
     public static HintsBucket getBucket()  {
@@ -39,8 +29,10 @@ public class HintsBucket extends AbstractBucket {
         return hintsBucket;
     }
 
+
+    // **** WARNING: **** HintsBucket never sets the trailer--it will throw a null ptr exception!!!!
     private HintsBucket() {
-        hintsBuffer = new StringBuffer();
+        super();
     }
 
     @Override
@@ -51,26 +43,27 @@ public class HintsBucket extends AbstractBucket {
         StringBuffer tempBuffer = new StringBuffer();
         tempBuffer.append(HintsFileDelimeters.PAGE_MARKER + ": " + pageName + "\n");
 
-        hintsHeader = tempBuffer;
+        // **** WARNING **** header is not initialized by CodeTemplateLoader in the hints bucket.  It will be null if I just add append.  But initializing in different places is confusing and error-prone!!!
+        header.append(tempBuffer);
     }
 
 
     public void addTag(String tag) {
         logger.debug("Adding tag: " + tag);
-        hintsBuffer.append(HintsFileDelimeters.NEW_TAG_DELIMITER + "\n");
-        hintsBuffer.append(tag + " \n");
+        body.append(HintsFileDelimeters.NEW_TAG_DELIMITER + "\n");
+        body.append(tag + " \n");
     }
 
     public void addText(String text) {
         logger.debug("Adding text: " + text);
-        hintsBuffer.append(HintsFileDelimeters.TEXT_MARKER + text + " \n");
+        body.append(HintsFileDelimeters.TEXT_MARKER + text + " \n");
     }
 
 
     public void addAttributes(HashMap<String, String> attributePairs) {
         if (!attributePairs.isEmpty()) {
             for (Map.Entry attributePair : attributePairs.entrySet()) {
-                hintsBuffer.append(HintsFileDelimeters.ATTRIBUTE_MARKER + attributePair.getKey() + " = " + attributePair.getValue() + "\n");
+                body.append(HintsFileDelimeters.ATTRIBUTE_MARKER + attributePair.getKey() + " = " + attributePair.getValue() + "\n");
             }
         }
     }
@@ -78,78 +71,8 @@ public class HintsBucket extends AbstractBucket {
 
     public void addLocator(String locator) {
         logger.debug("Adding locator: " + locator);
-        hintsBuffer.append(HintsFileDelimeters.LOCATOR_MARKER + locator + " \n");
+        body.append(HintsFileDelimeters.LOCATOR_MARKER + locator + " \n");
     }
 
-    public void setOutPutFilePath(String path) {
-        outPutFilePath = path;
-    }
-
-
-    public void setOutputFileName(String fileName) {
-        outPutFileName = fileName;
-    }
-
-
-    private void createOutputFile(String filePath) {
-
-        // TODO: try-catch in closeOutputFile and createOutputFile are redundant -- unless they are called separately but they don't need to be.
-        // Set up the output file for the code output.
-        try {
-
-            // TODO:  should I redo this to require the path and filename be preset via their setters.
-             if (filePath == null) {
-                  filePath = outPutFilePath + outPutFileName;
-             }
-             logger.info("Creating output file: " + filePath);
-             logger.info("Using current working directory: " + System.getProperty("user.dir"));
-             outputFile = new BufferedWriter(new FileWriter(filePath));
-
-        }
-        catch (IOException ioException) {
-
-            logger.info("File Not Opened in: " + ioException.getClass());
-            logger.info("Cause: " + ioException.getCause());
-            logger.info("Message: " + ioException.getMessage());
-            logger.info("Stack Trace: " + ioException.getStackTrace());
-            System.out.println("File Not Opened in: " + ioException.getClass());
-            System.out.println(ioException.getStackTrace());
-            System.exit(0);
-
-        }
-
-    }
-
-
-    public void dumpToFile(String filePath) {
-
-        logger.debug("Dumping file using filepath: " + filePath);
-        try {
-            createOutputFile(filePath);
-            outputFile.write(hintsHeader.toString());
-            outputFile.write(hintsBuffer.toString());
-            closeOutputFile();
-
-        } catch (IOException e) {
-            System.out.println("Exception writing to code output file");
-            System.out.println("Message: " + e.getMessage());
-            System.out.println(e.getStackTrace());
-            throw new TestHelperException("Caught I/O Exception in CodeBucket.dumpToFile().");
-        }
-    }
-
-
-    public void closeOutputFile() {
-
-        // TODO: try-catch in closeOutputFile and createOutputFile are redundant
-        try {
-            outputFile.close();
-        } catch (IOException e) {
-            System.out.println("Exception writing to code output file");
-            System.out.println("Message: " + e.getMessage());
-            System.out.println(e.getStackTrace());
-        }
-
-    }
 
 }

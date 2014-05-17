@@ -68,7 +68,7 @@ public class CodeShellLoader {
           }
 
           logger.debug("Found code-block indicator, storing the header code:\n" + stringBuffer);
-          codeBucket.setCodeHeader(stringBuffer);
+          codeBucket.setHeader(stringBuffer);
 
           if (line == null) {
               logger.debug("Unexpected null line found, with code-block indicator not found.");
@@ -96,7 +96,7 @@ public class CodeShellLoader {
           }
 
           logger.debug("Adding to CodeBucket the trailer code:\n" + stringBuffer);
-          codeBucket.setCodeTrailer(stringBuffer);
+          codeBucket.setTrailer(stringBuffer);
 
         } catch (IOException e) {
             logger.error("Readline Exception in CodeShellLoader: " + e.getMessage());
