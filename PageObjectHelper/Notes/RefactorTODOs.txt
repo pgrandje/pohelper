@@ -5,11 +5,6 @@ Refactor TODOS:
 
 - Combine the createLocatorMaker() factory and makeLocator() into one method.
 
-- NameRecorder needs a separate method for writing default names--don't require a null to be passed.  See TagDescriptor line 265
-    writeMemberAndMethodNames(memberNameRecorder.makeSymbolName(null));
-
-- Make CodeBucket and HintsBucket consistent.
-
 - TODO:  Change NodeType to an enum and move this to which ever class uses it--probably the PageScanner
 
 - TODO: Add javadoc to Locator and LocatorFactory
@@ -27,8 +22,9 @@ Refactor TODOS:
 
 
 Bug fix TODOS:
+- Generating CNN from hints creates filename "BeginWithUnderscore".  But the page name actually ends with an underscore it seems.
 - Way too long css strings.
-- I shouldn't not generate code in NodeScanner simply because it couldn't write a locator.
+- Should I not generate code in PageScanner simply because it couldn't write a locator?  Currently this is the case.  Am I throwing an exception?
 
 
 Investigate:

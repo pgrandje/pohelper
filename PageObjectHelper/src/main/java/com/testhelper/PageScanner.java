@@ -84,7 +84,7 @@ public class PageScanner {
         }
         catch (ConnectException e) {
                 // TODO: Research a pattern for communicating error messages up to the  UI layer.
-                System.out.println("ERROR: Host or page not found.  Using url: " + url.toString());
+                System.out.println("FATAL ERROR: Host or page not found.  Using url: " + url.toString());
                 System.exit(0);
         }
         // Get the page source into a Document object.

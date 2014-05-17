@@ -40,25 +40,28 @@ public class CodeBucket extends AbstractBucket {
         codeShellLoader.loadConfig(this);
     }
 
+    @Override
+    public void setFileName(String pageName) {
+        super.setFileName(pageName + ".java");
+        logger.info("Setting filename to '" + getFileName() + "'.");
+    }
 
 
     @Override
     public void setPageObjectName(String pageName) {
 
-        fileName = pageName + ".java";
-        logger.info("Setting filename to '" + fileName + "'.");
-
         logger.info("Setting classname to '" + pageName + "'.");
         logger.debug("Using code header:");
         logger.debug(header);
 
-        StringBuffer tempBuffer = new StringBuffer();
-        tempBuffer.append(header.toString().replaceAll("<title>", pageName));
-        logger.debug("Added the class name to the code header.");
-        logger.debug("Generated Code header will look like this:\n" + tempBuffer);
+        // TODO: IMPROVEMENT NEEDED -- This removes the initialized buffer and replaces it.  And the CodeShellLoader did the same thing.  Is there a less wasteful way?
+        StringBuffer alteredHeader = new StringBuffer();
+        alteredHeader.append(header.toString().replaceAll("<title>", pageName));
+        logger.debug("Added the class name to the code header:\n" + alteredHeader);
 
-        // Header has already been initialized from the constructor calling the CodeShellLoader.
-        header.append(tempBuffer);
+        // Header was already been initialized from the constructor calling the CodeShellLoader.  But we reassign it
+        // here to the now altered header.
+        header = alteredHeader;
     }
 
 }

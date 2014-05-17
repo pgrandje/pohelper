@@ -17,8 +17,8 @@ public abstract class AbstractBucket {
 
     private final Logger logger = Logger.getLogger(AbstractBucket.class);
 
-    // The source or hints to be generated.
-    /* Note:  I'm not catching exceptions for these being null.  Body is initialized in constructor.  But header and
+    /* The source or hints to be generated.
+       Note:  I'm not catching exceptions for these being null.  Body is initialized in constructor.  But header and
               trailer are not and are only set if they are explicitely set with the methods.  I decided to just throw a
               null ptr exception if this occurs.
     */
@@ -26,17 +26,30 @@ public abstract class AbstractBucket {
     protected StringBuffer body;
     protected StringBuffer trailer;
 
-    // For the output file.
-    protected String fileName;
-    protected BufferedWriter outputFile;
+    // File path and name will not have defaults.  Throwing an exception if these have not been set.
+    private String filePath;
+    private String fileName;
+    private BufferedWriter outputFile;
 
 
     AbstractBucket() {
+        header = new StringBuffer();
         body = new StringBuffer();
+        trailer = new StringBuffer();
     }
 
 
     public abstract void setPageObjectName(String pageName);
+
+
+    public String getFileName() {
+        return fileName;
+    }
+
+
+    public void setFileName(String name) {
+        fileName = name;
+    };
 
 
     public void setHeader(StringBuffer header) {
@@ -56,12 +69,35 @@ public abstract class AbstractBucket {
     }
 
 
-    public void dumpToFile(String filePath) {
+    /**
+     * If filepath is configured from the command-line, and therefore stored in the Configurator, the filepath is set
+     * to that value.  Otherwise, the current working directory is used for the output file destination.
+     */
+    public void setFilePath() {
+
+        String configuredFilePath = Configurator.getConfigurator().getDestinationFilePath();
+
+        if (configuredFilePath != null) {
+            filePath = configuredFilePath;
+        }
+        else {
+            filePath = System.getProperty("user.dir");
+        }
+    }
+
+
+    public void dumpToFile() {
 
         try {
+
             if (filePath == null) {
                  throw new TestHelperException("Output file path is null.");
             }
+
+            if (fileName == null) {
+                 throw new TestHelperException("Output file name is null.");
+            }
+
             filePath = filePath + "/" + fileName;
             logger.info("Using current working directory: " + System.getProperty("user.dir"));
             logger.info("Writing output file: " + filePath);

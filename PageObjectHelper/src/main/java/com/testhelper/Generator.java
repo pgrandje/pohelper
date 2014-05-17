@@ -117,6 +117,8 @@ public class Generator
         verifyTagDescriptorList(tagDescriptorList);
 
         CodeBucket codeBucket = CodeBucket.getBucket();
+        codeBucket.setFilePath();
+        codeBucket.setFileName(pageDescriptor.getPageObjectName());
         codeBucket.setPageObjectName(pageDescriptor.getPageObjectName());
 
         // Write the members to the code buffer.
@@ -133,7 +135,7 @@ public class Generator
         }
 
         // Dump the generated sourcecode.
-        codeBucket.dumpToFile(Configurator.getConfigurator().getDestinationFilePath());
+        codeBucket.dumpToFile();
 
     }
 
@@ -143,6 +145,8 @@ public class Generator
         verifyTagDescriptorList(tagDescriptorList);
 
         HintsBucket hintsBucket = HintsBucket.getBucket();
+        hintsBucket.setFilePath();
+        hintsBucket.setFileName(pageDescriptor.getPageObjectName());
         hintsBucket.setPageObjectName(pageDescriptor.getPageObjectName());
 
         // Write the hints file.
@@ -155,7 +159,7 @@ public class Generator
 
         // Dump the hints file.
         // TODO: default file path can be stored in the Bucket and Configurator used to change it.  Don't need to pass the filename from calling method.
-        hintsBucket.dumpToFile("./Hints.txt");
+        hintsBucket.dumpToFile();
 
     }
 

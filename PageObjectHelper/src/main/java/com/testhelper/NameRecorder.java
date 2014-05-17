@@ -49,16 +49,9 @@ public class NameRecorder {
     */
     public String makeSymbolName(String text) {
 
-        if (text == null) {
-            return makeDefaultSymbolName();
-        }
-
         StringBuffer stringBuffer = new StringBuffer();
 
         logger.debug("Got text: '" + text + "'.");
-
-        // text could even begin with white space, so we need to trim it first.
-        text = text.trim();
 
         if (text.contains("\n")) {
             text = text.substring(0,text.indexOf("\n"));

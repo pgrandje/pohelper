@@ -35,6 +35,14 @@ public class HintsBucket extends AbstractBucket {
         super();
     }
 
+
+    @Override
+    public void setFileName(String pageName) {
+        super.setFileName(pageName + "Hints.text");
+        logger.info("Setting filename to '" + getFileName() + "'.");
+    }
+
+
     @Override
     public void setPageObjectName(String pageName) {
 
@@ -43,7 +51,6 @@ public class HintsBucket extends AbstractBucket {
         StringBuffer tempBuffer = new StringBuffer();
         tempBuffer.append(HintsFileDelimeters.PAGE_MARKER + ": " + pageName + "\n");
 
-        // **** WARNING **** header is not initialized by CodeTemplateLoader in the hints bucket.  It will be null if I just add append.  But initializing in different places is confusing and error-prone!!!
         header.append(tempBuffer);
     }
 
@@ -73,6 +80,5 @@ public class HintsBucket extends AbstractBucket {
         logger.debug("Adding locator: " + locator);
         body.append(HintsFileDelimeters.LOCATOR_MARKER + locator + " \n");
     }
-
 
 }

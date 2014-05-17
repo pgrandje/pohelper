@@ -126,7 +126,24 @@ public class TagDescriptor {
 
 
     public void setTextValue(String text) {
-        textContent = text;
+
+        // Or, it could be only whitespace!
+        if (text == null) {
+            textContent = null;
+        }
+        else {
+            // text could begin with white space, so we need to trim it first, and then afterwards, again it could be empty.
+            text = text.trim();
+
+            if (text.isEmpty()) {
+                textContent = null;
+            }
+
+            textContent = text;
+
+        }
+
+        return;
     }
 
     public String getComment() {
@@ -249,7 +266,7 @@ public class TagDescriptor {
     private void writeDefaultMemberName(NameRecorder memberNameRecorder) {
 
         logger.debug("Writing member and method names using default symbol names.");
-        writeMemberAndMethodNames(memberNameRecorder.makeSymbolName(null));
+        writeMemberAndMethodNames(memberNameRecorder.makeDefaultSymbolName());
 
     }
 
