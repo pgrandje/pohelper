@@ -49,11 +49,15 @@ public class Generator
             pageDescriptor = PageScanner.getScanner().getPageName(classNameRecorder);
 
             // Scan the DOM to get a list of tags and their attributes.
-            // TODO: Should I use a different type of TagDescriptor when generating hints and not needing the code snippets?
             TagDescriptorList tagDescriptorList = PageScanner.getScanner().scan();
             writeHintsFromTagDescriptors(pageDescriptor, tagDescriptorList);
 
         }
+        /* Possible Design Pattern: This condition, and the one above, can both call a Bucket.writeContents()
+            method, with the same params and the same param setup code.  The only difference is the bucket used.
+           So, I think a Builder Pattern or Factory Pattern could be used to build the appropriate bucket based
+           on the Configurator's generate-status.  I could also pass in a Scanner object maybe which covers the Hints Scanning case also.
+         */
         else if (Configurator.getConfigurator().getGenerateStatus() == Configurator.GenerateType.CODE) {
 
             pageDescriptor = PageScanner.getScanner().getPageName(classNameRecorder);
@@ -63,6 +67,8 @@ public class Generator
             writeCodeFromTagDescriptors(pageDescriptor, tagDescriptorList);
 
         }
+        /* Possible Design Pattern: This condition is also similar.  The only difference is the Scanner used.
+        */
         else if (Configurator.getConfigurator().getGenerateStatus() == Configurator.GenerateType.CODE_FROM_HINTS) {
 
             pageDescriptor = HintsScanner.getScanner().setPageName(classNameRecorder);
@@ -98,6 +104,14 @@ public class Generator
 
 
 
+    /* Possible Design Pattern: Both writing hints and writing code use a TagDescriptorList and a Bucket.  But they
+       write very different things, and use different buckets.  Yet they both create a type of OutputBucket.
+       What type of pattern can be used here?
+        - Some sort of Adapter that translates TagDescriptors to the correct bucket?
+        - Some sort of Builder that returns a specific Bucket?
+        - TODO: Each bucket must override a writeBucket content method?  Then pass the Code Bucket in as a specific type of an
+            abstract output bucket.This is easiest! ****
+    */
     private static void writeCodeFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
 
         verifyTagDescriptorList(tagDescriptorList);
@@ -105,14 +119,15 @@ public class Generator
         CodeBucket codeBucket = CodeBucket.getBucket();
         codeBucket.setPageObjectName(pageDescriptor.getPageObjectName());
 
-        // Write the member code to the code buffer.
+        // Write the members to the code buffer.
         for(TagDescriptor tagDescriptor : tagDescriptorList) {
             if (tagDescriptor.hasComments()) {
                 codeBucket.addCode(tagDescriptor.getComment());
             }
             codeBucket.addCode(tagDescriptor.getMemberCode());
         }
-        // Write the method code to the code buffer.
+
+        // Write the methods to the code buffer.
         for(TagDescriptor tagDescriptor : tagDescriptorList) {
             codeBucket.addCode(tagDescriptor.getMethodCode());
         }
@@ -132,7 +147,6 @@ public class Generator
 
         // Write the hints file.
         for(TagDescriptor tagDescriptor : tagDescriptorList) {
-            // TODO: Why does the CodeBucket just have an addCode() method, but the HintsBucket has 4 different methods?   If I 'code to an interface' I an eliminate the 2 diff ways of handling hints and code.
             hintsBucket.addTag(tagDescriptor.getTag());
             hintsBucket.addText(tagDescriptor.getTextValue());
             hintsBucket.addAttributes(tagDescriptor.getAttributePairs());
