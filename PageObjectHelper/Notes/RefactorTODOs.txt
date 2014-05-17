@@ -27,7 +27,6 @@ Refactor TODOS:
 
 
 Bug fix TODOS:
-- BeganWithUnderscore classname when generating from hints.
 - Way too long css strings.
 - I shouldn't not generate code in NodeScanner simply because it couldn't write a locator.
 
