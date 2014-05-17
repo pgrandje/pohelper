@@ -24,13 +24,13 @@ public class TagsOnly   {
    private WebElement div_div;
 
    @FindBy(css = "body > ul")
-   private WebElement ul_first_li_second_li__ulListBlock;
+   private WebElement ul_ulListBlock;
 
    @FindBy(css = "body > ul > li")
-   private WebElement BeganWithUnderscore_first_li_LiListItem;
+   private WebElement first_liLiListItem;
 
    @FindBy(css = "body > ul > li:nth-child(2)")
-   private WebElement BeganWithUnderscore_second_li_LiListItem;
+   private WebElement second_liLiListItem;
 
    public String getheader_1Text() {
       return header_1_h1.getText();
@@ -48,16 +48,16 @@ public class TagsOnly   {
       return div_div.getText();
    }
 
-   public String getul_first_li_second_li__ulListBlockText() {
-      return ul_first_li_second_li__ulListBlock.getText();
+   public String getul_ulListBlockText() {
+      return ul_ulListBlock.getText();
    }
 
-   public String getBeganWithUnderscore_first_li_LiListItemText() {
-      return BeganWithUnderscore_first_li_LiListItem.getText();
+   public String getfirst_liLiListItemText() {
+      return first_liLiListItem.getText();
    }
 
-   public String getBeganWithUnderscore_second_li_LiListItemText() {
-      return BeganWithUnderscore_second_li_LiListItem.getText();
+   public String getsecond_liLiListItemText() {
+      return second_liLiListItem.getText();
    }
 
 
