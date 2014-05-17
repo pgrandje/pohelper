@@ -1,6 +1,6 @@
 Page Name: : CNN_com_Breaking_News_U_S_World_
 <*** UI Element ***>
-<div> 
+*<div>
 Text: cnnad_renderAd("http://ads.cnn.com/js.ng/site=cnn&cnn_pagetype=main&cnn_position=1x1_top&cnn_rollup=homepage&page.allowcompete=no", "35d8d28e57bc6dbd"); 
 Attribute: id = ad-35d8d28e57bc6dbd
 Attribute: style = padding: 0; margin: 0; border: 0;
@@ -12,12 +12,12 @@ Text:
 Attribute: id = cnn_ipadappbanner
 Locator: id = cnn_ipadappbanner 
 <*** UI Element ***>
-<div> 
+*<div>
 Text: SET EDITION:  U.S. INTERNATIONAL MÉXICO ARABIC    TV:   CNN CNNi CNN en Español HLN      Sign up Log in                Home TV & Video CNN Trends U.S. World Politics Justice Entertainment Tech Health Living Travel Opinion iReport Money Sports 
 Attribute: id = cnn_hdr
 Locator: id = cnn_hdr 
 <*** UI Element ***>
-<div> 
+*<div>
 Text:  
 Attribute: id = cnn_hdr-prompt
 Attribute: style = display:none

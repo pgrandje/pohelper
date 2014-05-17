@@ -20,12 +20,14 @@ Refactor TODOS:
 
 - Perhaps all package names should have a common root of com.pageobjecthelper
 
+- Configurator needs a review and refactoring--it's gotten really messy and appears buggy.
+
 
 Bug fix TODOS:
-- Generating CNN from hints creates filename "BeginWithUnderscore".  But the page name actually ends with an underscore it seems.
+- Rename "BeginWithUnderscore" to BeganWithSpecialChar_[char]_.
 - Way too long css strings.
 - Should I not generate code in PageScanner simply because it couldn't write a locator?  Currently this is the case.  Am I throwing an exception?
-
+- If no hints are selected, needs to catch this condiontion the HintsScanner and give a graceful error.  Currently it throws an App exception on empty TagDescriptorList.
 
 Investigate:
 - LocatorFactory.makeAttributeLocator()

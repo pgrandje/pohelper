@@ -74,9 +74,6 @@ public class Configurator {
     // Code shell template hooks and parameters.
     private String codeShellCodeBlockIndicator = "<CodeBlockGoesHere>";
 
-
-
-
     // TODO:  Investigate if this is being used yet.  And if so, is it used correctly?
     // Indicates if informative comments are written to the generated code.
     private boolean writeComments = false;
@@ -96,7 +93,8 @@ public class Configurator {
     private String codeTemplateFilePath = "./resources/java-configger2.txt";
     private String destinationFilePath = ".";
     private String configFilePath = "/Users/pgrandje/IdeaProjects/selgen/resources/configuration.xml";
-
+    // No default for the hints file name.  I'd rather force the user into knowing what they're reading.
+    private String hintsFileName;
 
     /**
      * Configurator is a singleton and can only be constructed using this method.
@@ -156,6 +154,8 @@ public class Configurator {
             // -dest is not required, but if it is supplied, it requires a directory path value.
             else if (commandLineArgs[i].equals("-dest") || commandLineArgs[i].equals("-destination")) {
                 i++;
+                // TODO: Checking the cnt > commandLineArgs.length is too weak for determining if it's value is a valid filepath.
+                // TODO: This may be overkill now--There's an existing method that checks for a supplied param.
                 if (i >= commandLineArgs.length) {
                     returnStatus = false;
                     errorMessage = ErrorHandler.destValueRequired;
@@ -233,6 +233,13 @@ public class Configurator {
                 destinationFilePath = commandLineArgs[i];
                 logger.info("Set destination folder to " + destinationFilePath);
             }
+            else if (commandLineArgs[i].equals("-hints")) {
+                i++;
+                // TODO: This isn't quite a valid check because an indexing error could get thrown.
+                checkForRequiredArgValue(commandLineArgs[i]);
+                hintsFileName = commandLineArgs[i];
+                logger.info("Using Hints file: " + hintsFileName);
+            }
             else if (commandLineArgs[i].equals("-codeShell") || commandLineArgs[i].equals("-codeShellTemplate")) {
                 i++;
                 checkForRequiredArgValue(commandLineArgs[i]);
@@ -287,12 +294,13 @@ public class Configurator {
      */
     private void checkForRequiredArgValue(String argValue) {
 
+        // TODO: This would be a good check, but an index exception would probably be called first from the calling method.
         if (argValue == null) {
             throw new TestHelperException("Argument requires a value; value is 'null'.");
         }
 
         if (argValue.charAt(0) == '-') {
-            throw new TestHelperException("Argument requires a value; value is missing.  In place of value found option '" + argValue + "' ");
+            throw new TestHelperException("Argument requires a value but value is missing.  In place of value found option '" + argValue + "' ");
         }
 
     }
@@ -337,6 +345,10 @@ public class Configurator {
     }
 
 
+    public GenerateType getGenerateStatus() {
+        return generate;
+    }
+
     public URL getUrl() {
         return baseUrlToScan;
     }
@@ -345,10 +357,9 @@ public class Configurator {
         return destinationFilePath;
     }
 
-    public GenerateType getGenerateStatus() {
-        return generate;
+    public String getHintsFilePath() {
+        return hintsFileName;
     }
-
 
     public LocatorConfig getLocatorConfig() {
         return locatorConfig;
@@ -362,7 +373,6 @@ public class Configurator {
         System.out.println("Syntax error in command-line parameters. Use -h or -help for correct command-line parameters.");
     }
 
-
     public String getPageObjectClassName() {
         return pageObjectClassName;
     }
@@ -370,7 +380,6 @@ public class Configurator {
     public String getCodeShellTemplateFilePath() {
         return codeShellTemplateFilePath;
     }
-
 
     public String getCodeShellCodeBlockIndicator() {
         return codeShellCodeBlockIndicator;
@@ -465,13 +474,6 @@ public class Configurator {
             throw new TestHelperException("Configuration file error.  Option value not recognized.");
         }
 
-
-        // TODO:  put a switch-case here to process each option
-
-
     }
-
-
-
 
 }

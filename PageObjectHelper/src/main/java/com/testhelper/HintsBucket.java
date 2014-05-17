@@ -38,7 +38,7 @@ public class HintsBucket extends AbstractBucket {
 
     @Override
     public void setFileName(String pageName) {
-        super.setFileName(pageName + "Hints.text");
+        super.setFileName(pageName + "_Hints.txt");
         logger.info("Setting filename to '" + getFileName() + "'.");
     }
 

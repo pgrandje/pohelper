@@ -11,33 +11,25 @@ import org.openqa.selenium.support.PageFactory;
 
 public class BeganWithUnderscore_CNN_com_Breaking_News_U_S_World   {
 
-   @FindBy(id = "hdr-banner-title ")
-   private WebElement null_a;
+   @FindBy(id = "ad-35d8d28e57bc6dbd ")
+   private WebElement cnnad_renderAd_http_ads_cnn_com__div;
 
-   @FindBy(css = "body > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(2) > ul > li ")
-   private WebElement null2LiListItem;
+   @FindBy(id = "cnn_hdr ")
+   private WebElement SET_EDITION_U_S_INTERNATIONAL_M__div;
 
-   @FindBy(css = "body > div:nth-child(4) > div:nth-child(2) > div > div:nth-child(2) > ul > li > span > a ")
-   private WebElement null3_a;
+   @FindBy(id = "cnn_hdr-prompt ")
+   private WebElement cnn_hdr_prompt_div;
 
-   public String getnullLinkText() {
-      return null_a.getText();
+   public String getcnnad_renderAd_http_ads_cnn_com_DivText() {
+      return cnnad_renderAd_http_ads_cnn_com__div.getText();
    }
 
-   public void clicknull() {
-      null_a.click();
+   public String getSET_EDITION_U_S_INTERNATIONAL_M_DivText() {
+      return SET_EDITION_U_S_INTERNATIONAL_M__div.getText();
    }
 
-   public String getnull2LiListItemText() {
-      return null2LiListItem.getText();
-   }
-
-   public String getnull3LinkText() {
-      return null3_a.getText();
-   }
-
-   public void clicknull3() {
-      null3_a.click();
+   public String getcnn_hdr_promptDivText() {
+      return cnn_hdr_prompt_div.getText();
    }
 
 
