@@ -140,7 +140,7 @@ public class Configurator {
                 i++;
                 if (i >= commandLineArgs.length) {
                     returnStatus = false;
-                    errorMessage = ErrorHandler.urlValueRequired;
+                    errorMessage = MessageLibrary.urlValueRequired;
                     break;
                 }
                 try {
@@ -148,7 +148,7 @@ public class Configurator {
                     new URL(commandLineArgs[i]);
                 } catch (MalformedURLException e) {
                     returnStatus = false;
-                    errorMessage = ErrorHandler.badUrl + " -- URL Exception says: " + e.getMessage();
+                    errorMessage = MessageLibrary.badUrl + " -- URL Exception says: " + e.getMessage();
                 }
             }
             // -dest is not required, but if it is supplied, it requires a directory path value.
@@ -158,13 +158,13 @@ public class Configurator {
                 // TODO: This may be overkill now--There's an existing method that checks for a supplied param.
                 if (i >= commandLineArgs.length) {
                     returnStatus = false;
-                    errorMessage = ErrorHandler.destValueRequired;
+                    errorMessage = MessageLibrary.destValueRequired;
                     break;
                 }
                 // validate the file path
                 if (verifyDirectory(commandLineArgs[i]) == false) {
                     returnStatus = false;
-                    errorMessage = ErrorHandler.badDirectoryFilePath;
+                    errorMessage = MessageLibrary.badDirectoryFilePath;
                 }
             }
         }

@@ -484,7 +484,7 @@ Attribute: id = cnnMakeHPContainer
 Locator: id = cnnMakeHPContainer 
 <*** UI Element ***>
 <div> 
-Text: updated 8:56 PM EDT, Sat May 17, 2014
+Text: updated 9:10 PM EDT, Sat May 17, 2014
 
 
 Make CNN Your Homepage
@@ -564,7 +564,7 @@ FULL STORY
 
 
 
- THE LATEST     2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     California Chrome wins Preakness     Photos: Triple Crown winners        Giant fossilized dinosaur unearthed       Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits     MORE TOP STORIES     Nations unite in hunt for Nigeria girls     Source: Mayor tapped for HUD chief     Turkish PM: Boo me, 'get slapped'     Death sentence not final for Christian     Woman falls down elevator shaft      Porsche sued in Walker-Rodas crash     GM lists no-no words for employees     12-foot python found where?       Bush's dog Miss Beazley dies     Shocking video of terrorist brutality       Ready for $0 trading commissions?     Deer crashes into WHAT?!       Is gluten-free food a joke?       Jameis Winston caught shoplifting       Trucks meet short bridge, and ...       These the worst public apologies?       Favorite websites: Then and now HLN    Alex Morgan's fantastic golf swing     OPINION     What will happen if the bees disappear?     Rove's attack on Hillary was shrewd     IN CASE YOU MISSED IT     Olympians are dentist's nightmare     Cereals more than 50% sugar Time    Pentagon has zombie apocalypse plan     Russia's wild costume parties       2 big meals better than 6 small ones     17 'revenge is sweet' plots EW      
+ THE LATEST     2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     Giant fossilized dinosaur unearthed       California Chrome wins Preakness     Photos: Triple Crown winners        Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits     MORE TOP STORIES     Nations unite in hunt for Nigeria girls     Source: Mayor tapped for HUD chief     Turkish PM: Boo me, 'get slapped'     Death sentence not final for Christian     Woman falls down elevator shaft      Porsche sued in Walker-Rodas crash     GM lists no-no words for employees     12-foot python found where?       Bush's dog Miss Beazley dies     Shocking video of terrorist brutality       Ready for $0 trading commissions?     Deer crashes into WHAT?!       Is gluten-free food a joke?       Jameis Winston caught shoplifting       Trucks meet short bridge, and ...       These the worst public apologies?       Favorite websites: Then and now HLN    Alex Morgan's fantastic golf swing     OPINION     What will happen if the bees disappear?     Rove's attack on Hillary was shrewd     IN CASE YOU MISSED IT     Olympians are dentist's nightmare     Cereals more than 50% sugar Time    Pentagon has zombie apocalypse plan     Russia's wild costume parties       2 big meals better than 6 small ones     17 'revenge is sweet' plots EW      
 
 
 
@@ -1757,7 +1757,7 @@ Attribute: align = center
 Locator: css = body > div:nth-child(8) 
 <*** UI Element ***>
 <div> 
-Text: updated 8:56 PM EDT, Sat May 17, 2014
+Text: updated 9:10 PM EDT, Sat May 17, 2014
 
 
 Make CNN Your Homepage
@@ -1837,7 +1837,7 @@ FULL STORY
 
 
 
- THE LATEST     2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     California Chrome wins Preakness     Photos: Triple Crown winners        Giant fossilized dinosaur unearthed       Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits     MORE TOP STORIES     Nations unite in hunt for Nigeria girls     Source: Mayor tapped for HUD chief     Turkish PM: Boo me, 'get slapped'     Death sentence not final for Christian     Woman falls down elevator shaft      Porsche sued in Walker-Rodas crash     GM lists no-no words for employees     12-foot python found where?       Bush's dog Miss Beazley dies     Shocking video of terrorist brutality       Ready for $0 trading commissions?     Deer crashes into WHAT?!       Is gluten-free food a joke?       Jameis Winston caught shoplifting       Trucks meet short bridge, and ...       These the worst public apologies?       Favorite websites: Then and now HLN    Alex Morgan's fantastic golf swing     OPINION     What will happen if the bees disappear?     Rove's attack on Hillary was shrewd     IN CASE YOU MISSED IT     Olympians are dentist's nightmare     Cereals more than 50% sugar Time    Pentagon has zombie apocalypse plan     Russia's wild costume parties       2 big meals better than 6 small ones     17 'revenge is sweet' plots EW      
+ THE LATEST     2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     Giant fossilized dinosaur unearthed       California Chrome wins Preakness     Photos: Triple Crown winners        Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits     MORE TOP STORIES     Nations unite in hunt for Nigeria girls     Source: Mayor tapped for HUD chief     Turkish PM: Boo me, 'get slapped'     Death sentence not final for Christian     Woman falls down elevator shaft      Porsche sued in Walker-Rodas crash     GM lists no-no words for employees     12-foot python found where?       Bush's dog Miss Beazley dies     Shocking video of terrorist brutality       Ready for $0 trading commissions?     Deer crashes into WHAT?!       Is gluten-free food a joke?       Jameis Winston caught shoplifting       Trucks meet short bridge, and ...       These the worst public apologies?       Favorite websites: Then and now HLN    Alex Morgan's fantastic golf swing     OPINION     What will happen if the bees disappear?     Rove's attack on Hillary was shrewd     IN CASE YOU MISSED IT     Olympians are dentist's nightmare     Cereals more than 50% sugar Time    Pentagon has zombie apocalypse plan     Russia's wild costume parties       2 big meals better than 6 small ones     17 'revenge is sweet' plots EW      
 
 
 
@@ -3030,7 +3030,7 @@ Attribute: id = cnn_maincntnr
 Locator: id = cnn_maincntnr 
 <*** UI Element ***>
 <div> 
-Text: updated 8:56 PM EDT, Sat May 17, 2014
+Text: updated 9:10 PM EDT, Sat May 17, 2014
 
 
 Make CNN Your Homepage
@@ -3040,7 +3040,7 @@ Attribute: class = cnn_contentarea
 Locator: css = body > div:nth-child(8) > div > div 
 <*** UI Element ***>
 <div> 
-Text: updated 8:56 PM EDT, Sat May 17, 2014
+Text: updated 9:10 PM EDT, Sat May 17, 2014
 
 
 Make CNN Your Homepage
@@ -3050,7 +3050,7 @@ Attribute: id = cnn_toptstmparea
 Locator: id = cnn_toptstmparea 
 <*** UI Element ***>
 <div> 
-Text: updated 8:56 PM EDT, Sat May 17, 2014
+Text: updated 9:10 PM EDT, Sat May 17, 2014
 
 
 Make CNN Your Homepage
@@ -3059,7 +3059,7 @@ UAstring=navigator.userAgent;if (UAstring.indexOf('iPad')>-1){$('makeHPLink').hi
 Locator: css = body > div:nth-child(8) > div > div > div > div 
 <*** UI Element ***>
 <div> 
-Text: updated 8:56 PM EDT, Sat May 17, 2014 
+Text: updated 9:10 PM EDT, Sat May 17, 2014 
 Attribute: style = float:left
 Locator: css = body > div:nth-child(8) > div > div > div > div > div 
 <*** UI Element ***>
@@ -3253,7 +3253,7 @@ FULL STORY
 
 
 
- THE LATEST     2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     California Chrome wins Preakness     Photos: Triple Crown winners        Giant fossilized dinosaur unearthed       Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits     MORE TOP STORIES     Nations unite in hunt for Nigeria girls     Source: Mayor tapped for HUD chief     Turkish PM: Boo me, 'get slapped'     Death sentence not final for Christian     Woman falls down elevator shaft      Porsche sued in Walker-Rodas crash     GM lists no-no words for employees     12-foot python found where?       Bush's dog Miss Beazley dies     Shocking video of terrorist brutality       Ready for $0 trading commissions?     Deer crashes into WHAT?!       Is gluten-free food a joke?       Jameis Winston caught shoplifting       Trucks meet short bridge, and ...       These the worst public apologies?       Favorite websites: Then and now HLN    Alex Morgan's fantastic golf swing     OPINION     What will happen if the bees disappear?     Rove's attack on Hillary was shrewd     IN CASE YOU MISSED IT     Olympians are dentist's nightmare     Cereals more than 50% sugar Time    Pentagon has zombie apocalypse plan     Russia's wild costume parties       2 big meals better than 6 small ones     17 'revenge is sweet' plots EW      
+ THE LATEST     2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     Giant fossilized dinosaur unearthed       California Chrome wins Preakness     Photos: Triple Crown winners        Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits     MORE TOP STORIES     Nations unite in hunt for Nigeria girls     Source: Mayor tapped for HUD chief     Turkish PM: Boo me, 'get slapped'     Death sentence not final for Christian     Woman falls down elevator shaft      Porsche sued in Walker-Rodas crash     GM lists no-no words for employees     12-foot python found where?       Bush's dog Miss Beazley dies     Shocking video of terrorist brutality       Ready for $0 trading commissions?     Deer crashes into WHAT?!       Is gluten-free food a joke?       Jameis Winston caught shoplifting       Trucks meet short bridge, and ...       These the worst public apologies?       Favorite websites: Then and now HLN    Alex Morgan's fantastic golf swing     OPINION     What will happen if the bees disappear?     Rove's attack on Hillary was shrewd     IN CASE YOU MISSED IT     Olympians are dentist's nightmare     Cereals more than 50% sugar Time    Pentagon has zombie apocalypse plan     Russia's wild costume parties       2 big meals better than 6 small ones     17 'revenge is sweet' plots EW      
 
 
 
@@ -3561,7 +3561,7 @@ FULL STORY
 
 
 
- THE LATEST     2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     California Chrome wins Preakness     Photos: Triple Crown winners        Giant fossilized dinosaur unearthed       Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits     MORE TOP STORIES     Nations unite in hunt for Nigeria girls     Source: Mayor tapped for HUD chief     Turkish PM: Boo me, 'get slapped'     Death sentence not final for Christian     Woman falls down elevator shaft      Porsche sued in Walker-Rodas crash     GM lists no-no words for employees     12-foot python found where?       Bush's dog Miss Beazley dies     Shocking video of terrorist brutality       Ready for $0 trading commissions?     Deer crashes into WHAT?!       Is gluten-free food a joke?       Jameis Winston caught shoplifting       Trucks meet short bridge, and ...       These the worst public apologies?       Favorite websites: Then and now HLN    Alex Morgan's fantastic golf swing     OPINION     What will happen if the bees disappear?     Rove's attack on Hillary was shrewd     IN CASE YOU MISSED IT     Olympians are dentist's nightmare     Cereals more than 50% sugar Time    Pentagon has zombie apocalypse plan     Russia's wild costume parties       2 big meals better than 6 small ones     17 'revenge is sweet' plots EW      
+ THE LATEST     2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     Giant fossilized dinosaur unearthed       California Chrome wins Preakness     Photos: Triple Crown winners        Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits     MORE TOP STORIES     Nations unite in hunt for Nigeria girls     Source: Mayor tapped for HUD chief     Turkish PM: Boo me, 'get slapped'     Death sentence not final for Christian     Woman falls down elevator shaft      Porsche sued in Walker-Rodas crash     GM lists no-no words for employees     12-foot python found where?       Bush's dog Miss Beazley dies     Shocking video of terrorist brutality       Ready for $0 trading commissions?     Deer crashes into WHAT?!       Is gluten-free food a joke?       Jameis Winston caught shoplifting       Trucks meet short bridge, and ...       These the worst public apologies?       Favorite websites: Then and now HLN    Alex Morgan's fantastic golf swing     OPINION     What will happen if the bees disappear?     Rove's attack on Hillary was shrewd     IN CASE YOU MISSED IT     Olympians are dentist's nightmare     Cereals more than 50% sugar Time    Pentagon has zombie apocalypse plan     Russia's wild costume parties       2 big meals better than 6 small ones     17 'revenge is sweet' plots EW      
 
 
 
@@ -3613,7 +3613,7 @@ FULL STORY
 
 
 
- THE LATEST     2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     California Chrome wins Preakness     Photos: Triple Crown winners        Giant fossilized dinosaur unearthed       Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits     MORE TOP STORIES     Nations unite in hunt for Nigeria girls     Source: Mayor tapped for HUD chief     Turkish PM: Boo me, 'get slapped'     Death sentence not final for Christian     Woman falls down elevator shaft      Porsche sued in Walker-Rodas crash     GM lists no-no words for employees     12-foot python found where?       Bush's dog Miss Beazley dies     Shocking video of terrorist brutality       Ready for $0 trading commissions?     Deer crashes into WHAT?!       Is gluten-free food a joke?       Jameis Winston caught shoplifting       Trucks meet short bridge, and ...       These the worst public apologies?       Favorite websites: Then and now HLN    Alex Morgan's fantastic golf swing     OPINION     What will happen if the bees disappear?     Rove's attack on Hillary was shrewd     IN CASE YOU MISSED IT     Olympians are dentist's nightmare     Cereals more than 50% sugar Time    Pentagon has zombie apocalypse plan     Russia's wild costume parties       2 big meals better than 6 small ones     17 'revenge is sweet' plots EW   
+ THE LATEST     2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     Giant fossilized dinosaur unearthed       California Chrome wins Preakness     Photos: Triple Crown winners        Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits     MORE TOP STORIES     Nations unite in hunt for Nigeria girls     Source: Mayor tapped for HUD chief     Turkish PM: Boo me, 'get slapped'     Death sentence not final for Christian     Woman falls down elevator shaft      Porsche sued in Walker-Rodas crash     GM lists no-no words for employees     12-foot python found where?       Bush's dog Miss Beazley dies     Shocking video of terrorist brutality       Ready for $0 trading commissions?     Deer crashes into WHAT?!       Is gluten-free food a joke?       Jameis Winston caught shoplifting       Trucks meet short bridge, and ...       These the worst public apologies?       Favorite websites: Then and now HLN    Alex Morgan's fantastic golf swing     OPINION     What will happen if the bees disappear?     Rove's attack on Hillary was shrewd     IN CASE YOU MISSED IT     Olympians are dentist's nightmare     Cereals more than 50% sugar Time    Pentagon has zombie apocalypse plan     Russia's wild costume parties       2 big meals better than 6 small ones     17 'revenge is sweet' plots EW   
 Attribute: id = cnn_maint1lftf
 Attribute: class = breaking
 Locator: id = cnn_maint1lftf 
@@ -3872,17 +3872,17 @@ Attribute: class = cnn_maint1dline
 Locator: css = body > div:nth-child(8) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(2) 
 <*** UI Element ***>
 <div> 
-Text: THE LATEST     2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     California Chrome wins Preakness     Photos: Triple Crown winners        Giant fossilized dinosaur unearthed       Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits     MORE TOP STORIES     Nations unite in hunt for Nigeria girls     Source: Mayor tapped for HUD chief     Turkish PM: Boo me, 'get slapped'     Death sentence not final for Christian     Woman falls down elevator shaft      Porsche sued in Walker-Rodas crash     GM lists no-no words for employees     12-foot python found where?       Bush's dog Miss Beazley dies     Shocking video of terrorist brutality       Ready for $0 trading commissions?     Deer crashes into WHAT?!       Is gluten-free food a joke?       Jameis Winston caught shoplifting       Trucks meet short bridge, and ...       These the worst public apologies?       Favorite websites: Then and now HLN    Alex Morgan's fantastic golf swing     OPINION     What will happen if the bees disappear?     Rove's attack on Hillary was shrewd     IN CASE YOU MISSED IT     Olympians are dentist's nightmare     Cereals more than 50% sugar Time    Pentagon has zombie apocalypse plan     Russia's wild costume parties       2 big meals better than 6 small ones     17 'revenge is sweet' plots EW   
+Text: THE LATEST     2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     Giant fossilized dinosaur unearthed       California Chrome wins Preakness     Photos: Triple Crown winners        Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits     MORE TOP STORIES     Nations unite in hunt for Nigeria girls     Source: Mayor tapped for HUD chief     Turkish PM: Boo me, 'get slapped'     Death sentence not final for Christian     Woman falls down elevator shaft      Porsche sued in Walker-Rodas crash     GM lists no-no words for employees     12-foot python found where?       Bush's dog Miss Beazley dies     Shocking video of terrorist brutality       Ready for $0 trading commissions?     Deer crashes into WHAT?!       Is gluten-free food a joke?       Jameis Winston caught shoplifting       Trucks meet short bridge, and ...       These the worst public apologies?       Favorite websites: Then and now HLN    Alex Morgan's fantastic golf swing     OPINION     What will happen if the bees disappear?     Rove's attack on Hillary was shrewd     IN CASE YOU MISSED IT     Olympians are dentist's nightmare     Cereals more than 50% sugar Time    Pentagon has zombie apocalypse plan     Russia's wild costume parties       2 big meals better than 6 small ones     17 'revenge is sweet' plots EW   
 Attribute: id = cnn_maintt2bul
 Locator: id = cnn_maintt2bul 
 <*** UI Element ***>
 <div> 
-Text: THE LATEST     2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     California Chrome wins Preakness     Photos: Triple Crown winners        Giant fossilized dinosaur unearthed       Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits     MORE TOP STORIES     Nations unite in hunt for Nigeria girls     Source: Mayor tapped for HUD chief     Turkish PM: Boo me, 'get slapped'     Death sentence not final for Christian     Woman falls down elevator shaft      Porsche sued in Walker-Rodas crash     GM lists no-no words for employees     12-foot python found where?       Bush's dog Miss Beazley dies     Shocking video of terrorist brutality       Ready for $0 trading commissions?     Deer crashes into WHAT?!       Is gluten-free food a joke?       Jameis Winston caught shoplifting       Trucks meet short bridge, and ...       These the worst public apologies?       Favorite websites: Then and now HLN    Alex Morgan's fantastic golf swing     OPINION     What will happen if the bees disappear?     Rove's attack on Hillary was shrewd     IN CASE YOU MISSED IT     Olympians are dentist's nightmare     Cereals more than 50% sugar Time    Pentagon has zombie apocalypse plan     Russia's wild costume parties       2 big meals better than 6 small ones     17 'revenge is sweet' plots EW   
+Text: THE LATEST     2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     Giant fossilized dinosaur unearthed       California Chrome wins Preakness     Photos: Triple Crown winners        Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits     MORE TOP STORIES     Nations unite in hunt for Nigeria girls     Source: Mayor tapped for HUD chief     Turkish PM: Boo me, 'get slapped'     Death sentence not final for Christian     Woman falls down elevator shaft      Porsche sued in Walker-Rodas crash     GM lists no-no words for employees     12-foot python found where?       Bush's dog Miss Beazley dies     Shocking video of terrorist brutality       Ready for $0 trading commissions?     Deer crashes into WHAT?!       Is gluten-free food a joke?       Jameis Winston caught shoplifting       Trucks meet short bridge, and ...       These the worst public apologies?       Favorite websites: Then and now HLN    Alex Morgan's fantastic golf swing     OPINION     What will happen if the bees disappear?     Rove's attack on Hillary was shrewd     IN CASE YOU MISSED IT     Olympians are dentist's nightmare     Cereals more than 50% sugar Time    Pentagon has zombie apocalypse plan     Russia's wild costume parties       2 big meals better than 6 small ones     17 'revenge is sweet' plots EW   
 Attribute: class = cnn_mtt1content
 Locator: css = body > div:nth-child(8) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div 
 <*** UI Element ***>
 <div> 
-Text: THE LATEST     2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     California Chrome wins Preakness     Photos: Triple Crown winners        Giant fossilized dinosaur unearthed       Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits 
+Text: THE LATEST     2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     Giant fossilized dinosaur unearthed       California Chrome wins Preakness     Photos: Triple Crown winners        Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits 
 Attribute: data-vr-zone = THE LATEST
 Locator: css = body > div:nth-child(8) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div 
 <*** UI Element ***>
@@ -3892,7 +3892,7 @@ Attribute: class = cnn_divline
 Locator: css = body > div:nth-child(8) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > div 
 <*** UI Element ***>
 <ul> 
-Text: 2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     California Chrome wins Preakness     Photos: Triple Crown winners        Giant fossilized dinosaur unearthed       Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits 
+Text: 2 planes nearly collide over Pacific       Jet dropped 600 feet in 1 minute     Giant fossilized dinosaur unearthed       California Chrome wins Preakness     Photos: Triple Crown winners        Divers find ancient human remains     New video of underwater discovery       Missing woman killed, then put in lake     CDC: MERS case transmitted in U.S.      Teen: School kicked me out of prom       She was 11, working on tobacco farm     NFL's Saints sign paralyzed player       2nd not good enough; Barca coach quits 
 Attribute: class = cnn_bulletbin
 Locator: css = body > div:nth-child(8) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul 
 <*** UI Element ***>
@@ -3925,48 +3925,48 @@ Attribute: href = /2014/05/16/travel/hawaii-near-collision-ntsb/index.html?hpt=h
 Locator: css = body > div:nth-child(8) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(2) > a 
 <*** UI Element ***>
 <li> 
-Text: California Chrome wins Preakness 
+Text: Giant fossilized dinosaur unearthed    
 Attribute: class = c_hpbullet3
 Attribute: data-vr-contentbox = 
 Locator: css = body > div:nth-child(8) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(3) 
 <*** UI Element ***>
 <a> 
-Text: California Chrome wins Preakness 
-Attribute: href = /2014/05/17/us/preakness-stakes/index.html?hpt=hp_t2
+Text: Giant fossilized dinosaur unearthed 
+Attribute: href = /video/data/2.0/video/bestoftv/2014/05/17/nr-vo-dino-femur-south-america.cnn.html?hpt=hp_t2
 Locator: css = body > div:nth-child(8) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(3) > a 
 <*** UI Element ***>
+<a> 
+Text:  
+Attribute: target = 
+Attribute: href = /video/data/2.0/video/bestoftv/2014/05/17/nr-vo-dino-femur-south-america.cnn.html?hpt=hp_t2
+Locator: css = body > div:nth-child(8) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(3) > a:nth-child(4) 
+<*** UI Element ***>
 <li> 
-Text: Photos: Triple Crown winners     
+Text: California Chrome wins Preakness 
 Attribute: class = c_hpbullet4
 Attribute: data-vr-contentbox = 
 Locator: css = body > div:nth-child(8) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(4) 
 <*** UI Element ***>
 <a> 
-Text: Photos: Triple Crown winners 
-Attribute: href = /2012/06/07/worldsport/gallery/triple-crown-winners/index.html?hpt=hp_t2
+Text: California Chrome wins Preakness 
+Attribute: href = /2014/05/17/us/preakness-stakes/index.html?hpt=hp_t2
 Locator: css = body > div:nth-child(8) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(4) > a 
 <*** UI Element ***>
-<a> 
-Text:  
-Attribute: target = 
-Attribute: href = /2012/06/07/worldsport/gallery/triple-crown-winners/index.html?hpt=hp_t2
-Locator: css = body > div:nth-child(8) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(4) > a:nth-child(4) 
-<*** UI Element ***>
 <li> 
-Text: Giant fossilized dinosaur unearthed    
+Text: Photos: Triple Crown winners     
 Attribute: class = c_hpbullet5
 Attribute: data-vr-contentbox = 
 Locator: css = body > div:nth-child(8) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(5) 
 <*** UI Element ***>
 <a> 
-Text: Giant fossilized dinosaur unearthed 
-Attribute: href = /video/data/2.0/video/bestoftv/2014/05/17/nr-vo-dino-femur-south-america.cnn.html?hpt=hp_t2
+Text: Photos: Triple Crown winners 
+Attribute: href = /2012/06/07/worldsport/gallery/triple-crown-winners/index.html?hpt=hp_t2
 Locator: css = body > div:nth-child(8) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(5) > a 
 <*** UI Element ***>
 <a> 
 Text:  
 Attribute: target = 
-Attribute: href = /video/data/2.0/video/bestoftv/2014/05/17/nr-vo-dino-femur-south-america.cnn.html?hpt=hp_t2
+Attribute: href = /2012/06/07/worldsport/gallery/triple-crown-winners/index.html?hpt=hp_t2
 Locator: css = body > div:nth-child(8) > div > div:nth-child(5) > div:nth-child(2) > div > div:nth-child(3) > div > div > ul > li:nth-child(5) > a:nth-child(4) 
 <*** UI Element ***>
 <li> 
