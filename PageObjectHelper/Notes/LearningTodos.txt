@@ -1,4 +1,5 @@
 MySql
+Drupal - Read their documentation on setting up a site.
 Drupal - Set up a website for my photography.
 Apache vs. Tomcat
 Maven parent POM.

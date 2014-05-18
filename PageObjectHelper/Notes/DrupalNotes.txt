@@ -1,4 +1,7 @@
-Install:  (not certain this is completely accurate.  I wrote it a couple of months after I actually did this for Drupal 7)
+Drupal 7
+**********
+Install:
+(not certain this is completely accurate.  I wrote it a couple of months after I actually did this for Drupal 7)
 - Download and install MAMP.  This installs apache and mysql.  Not sure if it installs php also.  Unpack it and install
 it in /Applications.
 - Run MAMP.  It will let you start up the Apache and MySql servers and allow you to test them.  If you see the MAMP
@@ -16,6 +19,21 @@ My Configurations:
 
 Drupal 7
 - username/password = admin/admin
+- mysql username/password = root/root
+
+
+
+MySql
+********
+Authentication
+- mysql username/password = root/root
+Running MySql under MAMP
+cd /Applications/MAMP/Library/bin
+./mysql --host=localhost -u root -proot 
+> show databases;
+
+- I created a script in ~pgrandje/bin
+
 
 
 
