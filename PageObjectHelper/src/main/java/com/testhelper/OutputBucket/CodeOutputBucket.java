@@ -45,7 +45,6 @@ public class CodeOutputBucket extends AbstractOutputBucket {
         logger.info("Setting filename to '" + getFileName() + "'.");
     }
 
-
     @Override
     public void setPageObjectName(String pageName) {
 

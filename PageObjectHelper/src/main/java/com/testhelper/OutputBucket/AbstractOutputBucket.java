@@ -40,7 +40,9 @@ public abstract class AbstractOutputBucket implements OutputBucket {
         trailer = new StringBuffer();
     }
 
-
+    /* Not part of the interface in case we want a more general output bucket, but we do want to require the Hints and
+         CodeBuckets to set the page name.
+    */
     public abstract void setPageObjectName(String pageName);
 
 

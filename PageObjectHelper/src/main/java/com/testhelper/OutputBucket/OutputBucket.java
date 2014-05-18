@@ -8,9 +8,6 @@ package com.testhelper.outputbucket;
  */
 public interface OutputBucket {
 
-
-    public abstract void setPageObjectName(String pageName);
-
     /**
       * If filepath is configured from the command-line, and therefore stored in the Configurator, the filepath is set
       * to that value.  Otherwise, the current working directory is used for the output file destination.
