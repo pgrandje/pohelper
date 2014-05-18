@@ -1,0 +1,5 @@
+MySql
+Drupal - Set up a website for my photography.
+Apache vs. Tomcat
+Maven parent POM.
+Design Patterns -- Builder, Command, Factory
