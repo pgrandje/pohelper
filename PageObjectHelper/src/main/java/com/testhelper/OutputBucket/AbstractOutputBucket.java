@@ -15,7 +15,7 @@ import java.io.IOException;
  * User: pgrandje
  * Date: 4/27/14
  */
-public abstract class AbstractOutputBucket {
+public abstract class AbstractOutputBucket implements OutputBucket {
 
     private final Logger logger = Logger.getLogger(AbstractOutputBucket.class);
 

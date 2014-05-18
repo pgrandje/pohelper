@@ -4,6 +4,8 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import java.io.IOException;
 
+import com.testhelper.outputbucket.CodeOutputBucket;
+import com.testhelper.outputbucket.HintsOutputBucket;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
@@ -116,7 +118,7 @@ public class Generator
 
         verifyTagDescriptorList(tagDescriptorList);
 
-        outputbucket.CodeOutputBucket codeBucket = OutputBucket.CodeOutputBucket.getBucket();
+        CodeOutputBucket codeBucket = CodeOutputBucket.getBucket();
         codeBucket.setFilePath();
         codeBucket.setFileName(pageDescriptor.getPageObjectName());
         codeBucket.setPageObjectName(pageDescriptor.getPageObjectName());
@@ -144,7 +146,7 @@ public class Generator
 
         verifyTagDescriptorList(tagDescriptorList);
 
-        outputbucket.HintsOutputBucket hintsBucket = OutputBucket.HintsOutputBucket.getBucket();
+        HintsOutputBucket hintsBucket = HintsOutputBucket.getBucket();
         hintsBucket.setFilePath();
         hintsBucket.setFileName(pageDescriptor.getPageObjectName());
         hintsBucket.setPageObjectName(pageDescriptor.getPageObjectName());

@@ -1,5 +1,6 @@
 package com.testhelper;
 
+import com.testhelper.outputbucket.CodeOutputBucket;
 import org.apache.log4j.Logger;
 
 import java.io.BufferedReader;
@@ -44,7 +45,7 @@ public class CodeShellLoader {
     }
 
 
-    public void loadConfig(outputbucket.CodeOutputBucket codeBucket) throws IOException {
+    public void loadConfig(CodeOutputBucket codeBucket) throws IOException {
 
       openConfigFile(configurator.getCodeShellTemplateFilePath());
       StringBuffer stringBuffer = new StringBuffer();
