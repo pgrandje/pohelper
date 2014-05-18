@@ -1,10 +1,8 @@
-package com.testhelper;
+package com.testhelper.outputbucket;
 
+import com.testhelper.HintsFileDelimeters;
 import org.apache.log4j.Logger;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,24 +12,24 @@ import java.util.Map;
  * User: pgrandje
  * Date: 6/3/12
  */
-public class HintsBucket extends AbstractBucket {
+public class HintsOutputBucket extends AbstractOutputBucket {
 
-    private final Logger logger = Logger.getLogger(HintsBucket.class);
+    private final Logger logger = Logger.getLogger(HintsOutputBucket.class);
 
-    private static HintsBucket hintsBucket;
+    private static HintsOutputBucket hintsBucket;
 
 
-    // HintsBucket is a singleton since we would only ever need one at a time.
-    public static HintsBucket getBucket()  {
+    // HintsOutputBucket is a singleton since we would only ever need one at a time.
+    public static HintsOutputBucket getBucket()  {
         if (hintsBucket == null) {
-            hintsBucket = new HintsBucket();
+            hintsBucket = new HintsOutputBucket();
         }
         return hintsBucket;
     }
 
 
-    // **** WARNING: **** HintsBucket never sets the trailer--it will throw a null ptr exception!!!!
-    private HintsBucket() {
+    // **** WARNING: **** HintsOutputBucket never sets the trailer--it will throw a null ptr exception!!!!
+    private HintsOutputBucket() {
         super();
     }
 

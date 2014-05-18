@@ -53,7 +53,7 @@ public class Generator
             writeHintsFromTagDescriptors(pageDescriptor, tagDescriptorList);
 
         }
-        /* Possible Design Pattern: This condition, and the one above, can both call a Bucket.writeContents()
+        /* Possible Design Pattern: This condition, and the one above, can both call a outputbucket.writeContents()
             method, with the same params and the same param setup code.  The only difference is the bucket used.
            So, I think a Builder Pattern or Factory Pattern could be used to build the appropriate bucket based
            on the Configurator's generate-status.  I could also pass in a Scanner object maybe which covers the Hints Scanning case also.
@@ -104,19 +104,19 @@ public class Generator
 
 
 
-    /* Possible Design Pattern: Both writing hints and writing code use a TagDescriptorList and a Bucket.  But they
-       write very different things, and use different buckets.  Yet they both create a type of OutputBucket.
+    /* Possible Design Pattern: Both writing hints and writing code use a TagDescriptorList and a outputbucket.  But they
+       write very different things, and use different buckets.  Yet they both create a type of outputbucket.
        What type of pattern can be used here?
         - Some sort of Adapter that translates TagDescriptors to the correct bucket?
-        - Some sort of Builder that returns a specific Bucket?
-        - TODO: Each bucket must override a writeBucket content method?  Then pass the Code Bucket in as a specific type of an
+        - Some sort of Builder that returns a specific outputbucket?
+        - TODO: Each bucket must override a writeBucket content method?  Then pass the Code outputbucket in as a specific type of an
             abstract output bucket.This is easiest! ****
     */
     private static void writeCodeFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
 
         verifyTagDescriptorList(tagDescriptorList);
 
-        CodeBucket codeBucket = CodeBucket.getBucket();
+        outputbucket.CodeOutputBucket codeBucket = OutputBucket.CodeOutputBucket.getBucket();
         codeBucket.setFilePath();
         codeBucket.setFileName(pageDescriptor.getPageObjectName());
         codeBucket.setPageObjectName(pageDescriptor.getPageObjectName());
@@ -144,7 +144,7 @@ public class Generator
 
         verifyTagDescriptorList(tagDescriptorList);
 
-        HintsBucket hintsBucket = HintsBucket.getBucket();
+        outputbucket.HintsOutputBucket hintsBucket = OutputBucket.HintsOutputBucket.getBucket();
         hintsBucket.setFilePath();
         hintsBucket.setFileName(pageDescriptor.getPageObjectName());
         hintsBucket.setPageObjectName(pageDescriptor.getPageObjectName());
@@ -158,7 +158,7 @@ public class Generator
         }
 
         // Dump the hints file.
-        // TODO: default file path can be stored in the Bucket and Configurator used to change it.  Don't need to pass the filename from calling method.
+        // TODO: default file path can be stored in the outputbucket and Configurator used to change it.  Don't need to pass the filename from calling method.
         hintsBucket.dumpToFile();
 
     }

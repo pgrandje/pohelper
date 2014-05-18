@@ -1,9 +1,8 @@
-package com.testhelper;
+package com.testhelper.outputbucket;
 
+import com.testhelper.CodeShellLoader;
 import org.apache.log4j.Logger;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
 
 /**
@@ -12,19 +11,19 @@ import java.io.IOException;
  * User: pgrandje
  * Date: 6/3/12
  */
-public class CodeBucket extends AbstractBucket {
+public class CodeOutputBucket extends AbstractOutputBucket {
 
-    private final Logger logger = Logger.getLogger(CodeBucket.class);
+    private final Logger logger = Logger.getLogger(CodeOutputBucket.class);
 
-    private static CodeBucket codeBucket = null;
+    private static CodeOutputBucket codeBucket = null;
 
     private CodeShellLoader codeShellLoader;
 
 
-    // CodeBucket is a singleton since we would only ever need one at a time.
-    public static CodeBucket getBucket()  throws IOException {
+    // CodeOutputBucket is a singleton since we would only ever need one at a time.
+    public static CodeOutputBucket getBucket()  throws IOException {
         if (codeBucket == null) {
-            codeBucket = new CodeBucket();
+            codeBucket = new CodeOutputBucket();
         }
         return codeBucket;
     }
@@ -33,10 +32,10 @@ public class CodeBucket extends AbstractBucket {
     /**
      * The CodeShellLoader initializes the header and trailer.
      */
-    private CodeBucket() throws IOException {
+    private CodeOutputBucket() throws IOException {
         super();
         codeShellLoader = new CodeShellLoader();
-        // TODO: Re-evaluate:  Is this the best interface to pass the CodeBucket into the CodeLoader?  CodeShellLoader does this but CodeLoader does not.
+        // TODO: Re-evaluate:  Is this the best interface to pass the CodeOutputBucket into the CodeLoader?  CodeShellLoader does this but CodeLoader does not.
         codeShellLoader.loadConfig(this);
     }
 

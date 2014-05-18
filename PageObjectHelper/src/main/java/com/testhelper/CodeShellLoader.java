@@ -44,7 +44,7 @@ public class CodeShellLoader {
     }
 
 
-    public void loadConfig(CodeBucket codeBucket) throws IOException {
+    public void loadConfig(outputbucket.CodeOutputBucket codeBucket) throws IOException {
 
       openConfigFile(configurator.getCodeShellTemplateFilePath());
       StringBuffer stringBuffer = new StringBuffer();
@@ -57,7 +57,7 @@ public class CodeShellLoader {
 
           while (line != null && !line.contains(configurator.getCodeShellCodeBlockIndicator())){
 
-              // Be sure the blank lines are also saved to the CodeBucket buffer as whitespace.
+              // Be sure the blank lines are also saved to the CodeOutputBucket buffer as whitespace.
               stringBuffer.append(line);
               stringBuffer.append("\n");
 
@@ -84,7 +84,7 @@ public class CodeShellLoader {
 
           while(line != null) {
 
-              // Be sure the blank lines are also saved to the CodeBucket buffer as whitespace.
+              // Be sure the blank lines are also saved to the CodeOutputBucket buffer as whitespace.
               logger.debug("Adding to temp StringBuffer the trailer line: " + line);
               stringBuffer.append(line);
               stringBuffer.append("\n");
@@ -95,7 +95,7 @@ public class CodeShellLoader {
 
           }
 
-          logger.debug("Adding to CodeBucket the trailer code:\n" + stringBuffer);
+          logger.debug("Adding to CodeOutputBucket the trailer code:\n" + stringBuffer);
           codeBucket.setTrailer(stringBuffer);
 
         } catch (IOException e) {

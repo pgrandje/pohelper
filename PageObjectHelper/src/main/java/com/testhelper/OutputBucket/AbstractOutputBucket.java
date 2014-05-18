@@ -1,5 +1,7 @@
-package com.testhelper;
+package com.testhelper.outputbucket;
 
+import com.testhelper.Configurator;
+import com.testhelper.TestHelperException;
 import org.apache.log4j.Logger;
 
 import java.io.BufferedWriter;
@@ -7,19 +9,19 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * Base class for both CodeBucket and HintsBucket file writing.  Contains 3 buffers for managing a header, body, and
+ * Base class for both CodeOutputBucket and HintsOutputBucket file writing.  Contains 3 buffers for managing a header, body, and
  * trailer portions of the output.  Methods here handle the file opening, naming, and writing
  * also with providing an interface for setting the page object name via an abstract method.
  * User: pgrandje
  * Date: 4/27/14
  */
-public abstract class AbstractBucket {
+public abstract class AbstractOutputBucket {
 
-    private final Logger logger = Logger.getLogger(AbstractBucket.class);
+    private final Logger logger = Logger.getLogger(AbstractOutputBucket.class);
 
     /* The source or hints to be generated.
        Note:  I'm not catching exceptions for these being null.  Body is initialized in constructor.  But header and
-              trailer are not and are only set if they are explicitely set with the methods.  I decided to just throw a
+              trailer are not and are only set if they are explicitly set with the methods.  I decided to just throw a
               null ptr exception if this occurs.
     */
     protected StringBuffer header;
@@ -32,7 +34,7 @@ public abstract class AbstractBucket {
     private BufferedWriter outputFile;
 
 
-    AbstractBucket() {
+    AbstractOutputBucket() {
         header = new StringBuffer();
         body = new StringBuffer();
         trailer = new StringBuffer();
@@ -62,9 +64,9 @@ public abstract class AbstractBucket {
     }
 
 
-    public void addCode(String string) {
-        logger.trace("Adding string to bucket:\n" + string);
-        body.append(string);
+    public void addCode(String codeString) {
+        logger.trace("Adding string to bucket:\n" + codeString);
+        body.append(codeString);
         body.append("\n");
     }
 
