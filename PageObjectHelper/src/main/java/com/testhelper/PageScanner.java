@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.net.ConnectException;
 import java.net.URL;
 import java.net.UnknownHostException;
 import java.util.HashMap;
@@ -80,6 +81,11 @@ public class PageScanner {
             // TODO: Research a pattern for communicating error messages up to the  UI layer.
             System.out.println("Host or page not found.  Using url: " + url.toString());
             System.exit(0);
+        }
+        catch (ConnectException e) {
+                // TODO: Research a pattern for communicating error messages up to the  UI layer.
+                System.out.println("FATAL ERROR: Host or page not found.  Using url: " + url.toString());
+                System.exit(0);
         }
         // Get the page source into a Document object.
         document = new DomSerializer(props, true).createDOM(nodes);
@@ -203,6 +209,7 @@ public class PageScanner {
                     //        decoupling these to classes further. As is, if the locator can't be computed, the tag is not added
                     //        to the list for generation.  But this would preclude writing only informational comments to the output.
                     tagDescriptor.setAttributes(setAttributePairs(current));
+                    tagDescriptor.setTextValue(current.getTextContent());
                     Locator locator = LocatorFactory.makeLocator(current);
                     tagDescriptor.setLocator(locator);
                     tagDescriptor.writeMemberAndMethods(memberNameRecorder);

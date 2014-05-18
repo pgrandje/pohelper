@@ -21,7 +21,6 @@ public class HintsScanner {
 
     // IntelliJ thinks filePath isn't used but it is in the open() method.
     private String filePath;
-    private String defaultFilePath = "./hints.txt";
     private BufferedReader hintsFile;
 
     // Returns code for a given tag.
@@ -51,18 +50,13 @@ public class HintsScanner {
 
 
     private void openHintsFile() throws FileNotFoundException {
-        openHintsFile(null);
-    }
 
-    // TODO: Get hints file path from Configurator
-    private void openHintsFile(String filePath) throws FileNotFoundException {
+        filePath = Configurator.getConfigurator().getHintsFilePath();
 
         try {
-            if (filePath == null) {
-                filePath = defaultFilePath;
-            }
             hintsFile = new BufferedReader(new FileReader(filePath));
         }
+        // TODO: Rather than rethrowing FileNotFoundException--translate this into an app-specific exception for defining our own error-API.
         catch (FileNotFoundException fileNotFoundException) {
             throw fileNotFoundException;
         }
@@ -77,7 +71,7 @@ public class HintsScanner {
         String line = hintsFile.readLine();
 
         if (line.contains(HintsFileDelimeters.PAGE_MARKER)) {
-            String title = line.substring(HintsFileDelimeters.PAGE_MARKER.length());
+            String title = line.substring(HintsFileDelimeters.PAGE_MARKER.length() + 1);
             String pageName = classNameRecorder.makeSymbolName(title);
             logger.debug("Page name is: " + pageName);
             pageDescriptor = new PageDescriptor(pageName);
@@ -95,6 +89,7 @@ public class HintsScanner {
 
         String line = hintsFile.readLine();
 
+        // TODO: Need additional check for the <UI Element Marker> when first reading hintsFile.
         if (line.contains(HintsFileDelimeters.PAGE_MARKER)) {
             throw new TestHelperException("Reading from first line of hints file but page name should have been read already.");
         }
@@ -104,15 +99,14 @@ public class HintsScanner {
         // There shouldn't be any blank lines in this file, so we'll treat that as end of file.
         while (line != null){
 
-            logger.trace("Processing line: " + line);
+            logger.debug("Processing line: " + line);
 
             // Check for new record delimiter
             if (line.contains(HintsFileDelimeters.NEW_TAG_DELIMITER)) {
 
-                logger.trace("Processing a new tag:");
-
                 // Get the first field, which contains the tag.
                 line = hintsFile.readLine();
+                logger.debug("Processing a new tag:");
 
                 // Check whether tag should be skipped, if so, skip all lines up to the next record, and re-loop.
                 if (line.charAt(0) != HintsFileDelimeters.IGNORE_CHAR) {

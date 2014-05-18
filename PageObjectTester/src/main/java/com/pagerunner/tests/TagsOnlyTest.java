@@ -26,13 +26,14 @@ public class TagsOnlyTest extends TestBase {
 
 		TagsOnly tagsOnlyPage = PageFactory.initElements(driver, TagsOnly.class);
 
-		Assert.assertEquals(tagsOnlyPage.getuiElement1Text(), "header 1");
-        Assert.assertEquals(tagsOnlyPage.getuiElement2Text(), "header 2");
-        Assert.assertEquals(tagsOnlyPage.getuiElement3ParagraphText(), "paragraph");
-        Assert.assertEquals(tagsOnlyPage.getuiElement4DivText(), "div");
-        Assert.assertEquals(tagsOnlyPage.getuiElement5_ulListBlockText(), "ul\nfirst li\nsecond li");
-        Assert.assertEquals(tagsOnlyPage.getuiElement6LiListItemText(), "first li");
-        Assert.assertEquals(tagsOnlyPage.getuiElement7LiListItemText(), "second li");
+        // Possible Design Patter: Can I use Reflection in some way to avoid retyping these each time I change how symbols are generated?
+		Assert.assertEquals(tagsOnlyPage.getheader_1Text(), "header 1");
+        Assert.assertEquals(tagsOnlyPage.getheader_2Text(), "header 2");
+        Assert.assertEquals(tagsOnlyPage.getparagraphParagraphText(), "paragraph");
+        Assert.assertEquals(tagsOnlyPage.getdivDivText(), "div");
+        Assert.assertEquals(tagsOnlyPage.getul_ulListBlockText(), "ul\nfirst li\nsecond li");
+        Assert.assertEquals(tagsOnlyPage.getfirst_liLiListItemText(), "first li");
+        Assert.assertEquals(tagsOnlyPage.getsecond_liLiListItemText(), "second li");
 	}
 
 }

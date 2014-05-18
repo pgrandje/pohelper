@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite 1" verbose="3" parallel="tests" thread-count="10">
-    <test name="TagOnlyNoAttributesTest">
+    <test name="TagsOnlyTest">
     <parameter name="url" value="http://localhost:8080/testhtml/htmltests/tagtests.html"/>
     <classes>
        <class name="com.pagerunner.tests.TagsOnlyTest" />

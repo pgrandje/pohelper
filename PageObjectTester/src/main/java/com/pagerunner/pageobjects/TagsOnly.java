@@ -12,52 +12,52 @@ import org.openqa.selenium.support.PageFactory;
 public class TagsOnly   {
 
    @FindBy(css = "body > h1")
-   private WebElement uiElement1_h1;
+   private WebElement header_1_h1;
 
    @FindBy(css = "body > h2")
-   private WebElement uiElement2_h2;
+   private WebElement header_2_h2;
 
    @FindBy(css = "body > p")
-   private WebElement uiElement3_pTag;
+   private WebElement paragraph_pTag;
 
    @FindBy(css = "body > div")
-   private WebElement uiElement4_div;
+   private WebElement div_div;
 
    @FindBy(css = "body > ul")
-   private WebElement uiElement5_ulListBlock;
+   private WebElement ul_ulListBlock;
 
    @FindBy(css = "body > ul > li")
-   private WebElement uiElement6LiListItem;
+   private WebElement first_liLiListItem;
 
    @FindBy(css = "body > ul > li:nth-child(2)")
-   private WebElement uiElement7LiListItem;
+   private WebElement second_liLiListItem;
 
-   public String getuiElement1Text() {
-      return uiElement1_h1.getText();
+   public String getheader_1Text() {
+      return header_1_h1.getText();
    }
 
-   public String getuiElement2Text() {
-      return uiElement2_h2.getText();
+   public String getheader_2Text() {
+      return header_2_h2.getText();
    }
 
-   public String getuiElement3ParagraphText() {
-      return uiElement3_pTag.getText();
+   public String getparagraphParagraphText() {
+      return paragraph_pTag.getText();
    }
 
-   public String getuiElement4DivText() {
-      return uiElement4_div.getText();
+   public String getdivDivText() {
+      return div_div.getText();
    }
 
-   public String getuiElement5_ulListBlockText() {
-      return uiElement5_ulListBlock.getText();
+   public String getul_ulListBlockText() {
+      return ul_ulListBlock.getText();
    }
 
-   public String getuiElement6LiListItemText() {
-      return uiElement6LiListItem.getText();
+   public String getfirst_liLiListItemText() {
+      return first_liLiListItem.getText();
    }
 
-   public String getuiElement7LiListItemText() {
-      return uiElement7LiListItem.getText();
+   public String getsecond_liLiListItemText() {
+      return second_liLiListItem.getText();
    }
 
 

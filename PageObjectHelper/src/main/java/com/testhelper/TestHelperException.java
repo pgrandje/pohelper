@@ -7,7 +7,7 @@ package com.testhelper;
  */
 public class TestHelperException extends RuntimeException {
 
-    TestHelperException(String message) {
+    public TestHelperException (String message) {
         super(message);
     }
 

@@ -49,27 +49,29 @@ public class NameRecorder {
     */
     public String makeSymbolName(String text) {
 
-        if (text == null) {
-            return makeDefaultSymbolName();
-        }
-
         StringBuffer stringBuffer = new StringBuffer();
 
-        logger.debug("**** Making new symbol name beginning with text: " + text + " ****");
+        logger.debug("Got text: '" + text + "'.");
+
+        if (text.contains("\n")) {
+            text = text.substring(0,text.indexOf("\n"));
+        }
+
+        logger.debug("Taking text up to first CR, resulting in : " + text);
 
         // This is the Text-->Symbol Name SYMBOL-MAKING code.
 
         // Create symbol name by replacing spaces in text with underscore.
         // This seems to work.  It's for all "non-words" according to a StackOverflow post.
-        String tempString = text.replaceAll("\\W+", "_");
-        logger.debug("Replaced all whitespace resulting in symbol name: " + tempString);
+        String tempString2 = text.replaceAll("\\W+", "_");
+        logger.debug("Replaced all whitespace resulting in symbol name: " + tempString2);
 
         // And, remove all non-alphanumeric chars.
-        tempString.replaceAll("[^a-zA-Z0-9_]", "");
-        logger.debug("Replaced all non-alphanumeric or underscore chars resulting in symbol name: " + tempString);
+        tempString2.replaceAll("[^a-zA-Z0-9_]", "");
+        logger.debug("Replaced all non-alphanumeric or underscore chars resulting in symbol name: " + tempString2);
 
         // And, limit the tag's text to the first 32 characters for it's string name.
-        String symbolName = tempString.substring(0, Math.min(tempString.length(), 32));
+        String symbolName = tempString2.substring(0, Math.min(tempString2.length(), 32));
         logger.debug("Limiting symbol name to 32 chars resulting in : " + symbolName);
 
         // And, remove any non-alpha chars from the beginning.  My choice here to fix this is arbitrary,
