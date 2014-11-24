@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Class-Path: selenium-ie-driver-2.41.0.jar jetty-http-8.1.12.v20130726.
+ jar commons-collections-3.2.1.jar jetty-websocket-8.1.12.v20130726.ja
+ r selenium-chrome-driver-2.41.0.jar xalan-2.7.1.jar htmlcleaner-2.2.j
+ ar json-20080701.jar jetty-util-8.1.12.v20130726.jar serializer-2.7.1
+ .jar commons-io-2.2.jar commons-lang3-3.1.jar platform-3.4.0.jar cssp
+ arser-0.9.11.jar httpcore-4.3.jar httpmime-4.3.1.jar snakeyaml-1.6.ja
+ r junit-3.8.1.jar jdom-1.1.jar netty-3.5.2.Final.jar testng-6.1.1.jar
+  log4j-1.2.16.jar jna-3.4.0.jar bsh-2.0b4.jar guava-15.0.jar selenium
+ -firefox-driver-2.41.0.jar ant-1.7.0.jar xercesImpl-2.11.0.jar seleni
+ um-api-2.41.0.jar xml-apis-1.4.01.jar commons-logging-1.1.3.jar htmlu
+ nit-2.13.jar dom-2.3.0-jaxb-1.0.6.jar selenium-remote-driver-2.41.0.j
+ ar jetty-io-8.1.12.v20130726.jar webbit-0.4.14.jar log4j-1.2.17.jar c
+ ommons-exec-1.1.jar cglib-nodep-2.1_3.jar selenium-safari-driver-2.41
+ .0.jar commons-codec-1.8.jar nekohtml-1.9.19.jar httpclient-4.3.1.jar
+  selenium-htmlunit-driver-2.41.0.jar selenium-java-2.41.0.jar sac-1.3
+ .jar htmlunit-core-js-2.13.jar selenium-support-2.41.0.jar ant-launch
+ er-1.7.0.jar jcommander-1.12.jar args4j-2.0.16.jar
+Main-Class: com.testhelper.Generator
+
