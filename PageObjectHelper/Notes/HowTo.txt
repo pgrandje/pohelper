@@ -1,0 +1,75 @@
+A) To build a jar using command-line
+
+1) First be sure to have precompiled classes.
+
+2) Run (for example)
+    jar -cvfm test.jar manifest.mf Test.class   (I think--got it off Stack Overflow:  not sure what the options do)
+   From my old notes....
+     Run from the src code's folder that contains the 'com' folder
+        jar -cvmf manifest.mf com(src package root) selGen.jar
+   But then I think the manifest file must be manually created.  See examples on the internet and in my books.
+
+B) Creating a jar from IntelliJ
+    Can use Build->Artifacts.  This can be configured via File -> Project Structure -> Artifacts.
+    Hit the '+' to create a jar.
+    Can specify a destination directory.
+
+    (Note: I had changed the manifest location from src/main/java to src/resources per a Stack Overflow comment but I'm not sure if that makes a
+    difference.  I made sure to update the Artifacts entry when I did this.)
+    It appears though to build the jar from the .class files but to only copy the MANIFEST.MF file.
+    Not sure how to generate the manifest or if it must be edited by hand.
+
+
+C) To Inspect a manifest within a Jar
+    See my pgrandje/bin folder, I stored the command into some scripts.
+    It's simply unzip -p My.jar META-INF/MANIFEST.MF
+        unzip -p pageobjecthelper.jar META-INF/MANIFEST.MF
+    Can also inspect all the files contained in the jar without
+        jar tf pageobjecthelper.jar
+    Or extract a specific file
+        jar xvf pageobjecthelper.jar META-INF/MANIFEST.MF
+    Or, to extract all files, same but with no following filename params.
+        jar xvf pageobjecthelper.jar
+
+D) To execute a jar run
+        java -jar selGen.jar
+
+E) Modify a jar. (from Oracle's doc's)
+
+    To modify the manifest, you must first prepare a text file containing the information you wish to add to the manifest. You then use the Jar tool's m option to add the information in your file to the manifest.
+
+    Warning: The text file from which you are creating the manifest must end with a new line or carriage return. The last line will not be parsed properly if it does not end with a new line or carriage return.
+    The basic command has this format:
+
+    jar cfm jar-file manifest-addition input-file(s)
+    Let's look at the options and arguments used in this command:
+
+    The c option indicates that you want to create a JAR file.
+    The m option indicates that you want to merge information from an existing file into the manifest file of the JAR file you're creating.
+    The f option indicates that you want the output to go to a file (the JAR file you're creating) rather than to standard output.
+    manifest-addition is the name (or path and name) of the existing text file whose contents you want to add to the contents of JAR file's manifest.
+    jar-file is the name that you want the resulting JAR file to have.
+    The input-file(s) argument is a space-separated list of one or more files that you want to be placed in your JAR file.
+    The m and f options must be in the same order as the corresponding arguments.
+
+
+F) To build and deploy the jar for this project using just IntelliJ:
+    - Build the jar using the Build Artifacts and specify the destination folder
+    - Copy over the contents of the RunFolder
+    - Copy over the log4j.properties file
+    NOTE:  this wasn't working--it seems I don't get the correct Manifest file or something.
+
+G) Configure Tomcat to point to the project
+
+In the conf folder add an xml file who's name corresponds to the URL path after the hostname-port.
+For example:
+- I added the file "TomcatRoot"/conf/Catalina/localhost/testpages.xml
+- It's content defines a Context which sets the URL path and sets the 'docBase' attribute to the desired filepath.
+
+<Context path="/testpages" docBase="/Users/pgrandje/IdeaProjects/selgen/resources/testpages"/>
+
+
+I got info from this thread:
+    http://www.coderanch.com/t/87763/Tomcat/Configuring-context-CATALINA-HOME-webapps
+And from their docs:
+    http://tomcat.apache.org/tomcat-7.0-doc/config/engine.html

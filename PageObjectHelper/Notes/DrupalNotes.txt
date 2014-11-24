@@ -35,5 +35,10 @@ cd /Applications/MAMP/Library/bin
 - I created a script in ~pgrandje/bin
 
 
+MySql Also Installed at:
+/opt/local/var/macports/software/mysql5/5.1.56_0/opt/local/share/mysql5
+This was the installation I did in 2011 for supporting Cucumber
+
+
 
 
