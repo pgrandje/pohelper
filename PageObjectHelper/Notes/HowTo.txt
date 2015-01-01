@@ -1,34 +1,38 @@
-A) To build a jar using command-line
+A) Creating a jar from IntelliJ
 
-1) First be sure to have precompiled classes.
+   (I needed this to build the manifest file -- just building the project via IntelliJ gave a blank manifest file).
 
-2) Run (for example)
-    jar -cvfm test.jar manifest.mf Test.class   (I think--got it off Stack Overflow:  not sure what the options do)
-   From my old notes....
-     Run from the src code's folder that contains the 'com' folder
-        jar -cvmf manifest.mf com(src package root) selGen.jar
-   But then I think the manifest file must be manually created.  See examples on the internet and in my books.
 
-B) Creating a jar from IntelliJ
     Can use Build->Artifacts.  This can be configured via File -> Project Structure -> Artifacts.
     Hit the '+' to create a jar.
     Can specify a destination directory.
 
-    (Note: I had changed the manifest location from src/main/java to src/resources per a Stack Overflow comment but I'm not sure if that makes a
-    difference.  I made sure to update the Artifacts entry when I did this.)
-    It appears though to build the jar from the .class files but to only copy the MANIFEST.MF file.
-    Not sure how to generate the manifest or if it must be edited by hand.
+    PROBLEM:  HtmlCleaner.class appears not to be included in the jar, but many other dependencies that seem unnecessary are in the jar.
+    Not sure what determines which .class files go into the jar.
 
+
+B) To set up a standalone run folder (for the jar and its dependencies)
+
+    - Build Artifacts project settings should have an output folder specified where it copies the jar.
+    - Manually copy any files required at runtime.  I copied log4j.properties and the resources folder contained in the
+      Runtime folder in my project.  This was the working directory specified in the run configurations.
 
 C) To Inspect a manifest within a Jar
-    See my pgrandje/bin folder, I stored the command into some scripts.
-    It's simply unzip -p My.jar META-INF/MANIFEST.MF
+    (Can refer to my pgrandje/bin folder, I stored the command into some scripts.)
+
+    To find a file that matches a pattern
+        jar -tvf pageobjecthelper.jar | grep -i clean
+
+    Run unzip -p My.jar META-INF/MANIFEST.MF
         unzip -p pageobjecthelper.jar META-INF/MANIFEST.MF
+
     Can also inspect all the files contained in the jar without
         jar tf pageobjecthelper.jar
-    Or extract a specific file
+
+    Or can use jar command to extract a specific file
         jar xvf pageobjecthelper.jar META-INF/MANIFEST.MF
-    Or, to extract all files, same but with no following filename params.
+
+    Or, to extract all the files, use the same command but without the following filename params.
         jar xvf pageobjecthelper.jar
 
 D) To execute a jar run
@@ -73,3 +77,15 @@ I got info from this thread:
     http://www.coderanch.com/t/87763/Tomcat/Configuring-context-CATALINA-HOME-webapps
 And from their docs:
     http://tomcat.apache.org/tomcat-7.0-doc/config/engine.html
+
+
+H) To build a jar using command-line
+
+1) First be sure to have precompiled classes.
+
+2) Run (for example)
+    jar -cvfm test.jar manifest.mf Test.class   (I think--got it off Stack Overflow:  not sure what the options do)
+   From my old notes....
+     Run from the src code's folder that contains the 'com' folder
+        jar -cvmf manifest.mf com(src package root) selGen.jar
+   But then I think the manifest file must be manually created.  See examples on the internet and in my books.
