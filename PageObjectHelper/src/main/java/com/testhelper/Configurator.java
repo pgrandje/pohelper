@@ -25,6 +25,10 @@ import javax.xml.parsers.ParserConfigurationException;
  * @author Paul Grandjean
  * Date: 5/5/12
  */
+/* TODO:  I may want to separate the Configurator into a Command-Pattern for sending the generation task and a
+          configuration object for dictating the generation configuration.  That could be passed as a Strategy-pattern.
+  */
+
 public class Configurator {
 
     // A Singleton design pattern is used here to ensure there is only ever one instance of the Configurator.
@@ -105,10 +109,8 @@ public class Configurator {
         return singletonConfigurator;
     }
 
-
     private Configurator() {
     }
-
 
     public void processArgs(String[] args) {
 

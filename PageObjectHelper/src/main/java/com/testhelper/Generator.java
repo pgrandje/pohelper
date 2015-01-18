@@ -54,12 +54,12 @@ public class Generator
      * @return the Generator
      */
     public Generator setConfiguration(String[] args) {
-        loadConfigFile();
+//        loadConfigFile();
         setCommandLineConfiguration(args);
         return singletonGenerator;
     }
 
-    public Generator setCommandLineConfiguration(String[] args) {
+    private Generator setCommandLineConfiguration(String[] args) {
 
         // Used by the loggers
         PropertyConfigurator.configure("log4j.properties");
@@ -70,7 +70,7 @@ public class Generator
         return singletonGenerator;
     }
 
-    public Generator loadConfigFile() {
+    private Generator loadConfigFile() {
         getConfigurator().loadConfigFile();
         return singletonGenerator;
     }

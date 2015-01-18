@@ -17,15 +17,19 @@ public class CommandLineProcessor {
 
     public static void main(String[] args) throws IOException, ParserConfigurationException {
 
-        // TODO: Command-line validation shouldn't be done by the Configurator anymore.
         if (validateCommandline(args) == false) {
             System.out.println(errorMessage);
             System.exit(0);
         };
 
+        // TODO: String[] args could be converted into a Configuration object if I de-couple the Configurator and Generator.
+        Generator.getGenerator().setConfiguration(args).generate();
 
-        Generator.getGenerator().setCommandLineConfiguration(args).generate();
+        // Or, for Interactive Mode for Code generation....
+//        TagDescriptorList tagDescriptorList = Generator.getGenerator().setConfiguration(args).getTagDescriptorsFromPage();
+//        TagDescriptorList tagDescriptorList = Generator.getGenerator().setConfiguration(args).getTagDescriptorsFromHints();
 
+        // And, for Interactive Mode using Hints I'll need to create a HintsList object.
     }
 
 
