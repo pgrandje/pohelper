@@ -27,15 +27,61 @@ public class Generator
 
     private static final Logger logger = Logger.getLogger(Generator.class);
 
+    // Generator will always be a singleton so we're using the Singleton pattern.
+    private static Generator singletonGenerator;
+
     /* Accumulates the classnames used for each page object to ensure uniqueness.
        The classNameRecorder needs to exist, and accumulate page names for all pages generated.
     */
     private static NameRecorder classNameRecorder = null;
 
 
-    public static void main(String[] args) throws IOException, ParserConfigurationException {
+    /* Generator will be created by a static factory */
+    private Generator() {
+    }
 
-        setConfiguration(args);
+    // Generator will always be accessed using this factory-getter to ensure there is always only one instance.
+    public static Generator getGenerator() {
+        if (singletonGenerator == null) {
+            singletonGenerator = new Generator();
+        }
+        return singletonGenerator;
+    }
+
+    /**
+     * Handles both command-line parametes and the config file in one method.
+     * @param args command-line parameters
+     * @return the Generator
+     */
+    public Generator setConfiguration(String[] args) {
+        loadConfigFile();
+        setCommandLineConfiguration(args);
+        return singletonGenerator;
+    }
+
+    public Generator setCommandLineConfiguration(String[] args) {
+
+        // Used by the loggers
+        PropertyConfigurator.configure("log4j.properties");
+
+        // Sets the configuration using any command-line parameters.
+        getConfigurator().processArgs(args);
+
+        return singletonGenerator;
+    }
+
+    public Generator loadConfigFile() {
+        getConfigurator().loadConfigFile();
+        return singletonGenerator;
+    }
+
+    /**
+     * Generates either the code or the analysis file.
+     */
+    // TODO:  If I used a strategy pattern my passing in a configuration-strategy I could avoid these if statements.
+    public Generator generate() throws IOException, ParserConfigurationException {
+
+        // TODO: put in error handling to ensure the Confguration is set before running the singletonGenerator.
 
         /* A new PageDescriptor is created for each page or hints file scanned.
            The PageDescriptor is then used to name the class name in the code bucket when generating code or in the
@@ -85,24 +131,11 @@ public class Generator
 
         logger.info("SUCCESSFUL COMPLETION");
 
+        return singletonGenerator;
     }
 
 
-    private static void setConfiguration(String[] args) {
 
-        // Used by the loggers
-        PropertyConfigurator.configure("log4j.properties");
-
-        // Sets the configuration using any command-line parameters
-        Configurator.getConfigurator(args);
-        if (Configurator.getConfigurator().validateCommandline() == false) {
-            System.out.println(Configurator.getConfigurator().getErrorMessage());
-            System.exit(0);
-        };
-
-        Configurator.getConfigurator().processArgs();
-
-    }
 
 
 
@@ -138,7 +171,6 @@ public class Generator
 
         // Dump the generated sourcecode.
         codeBucket.dumpToFile();
-
     }
 
 
@@ -175,7 +207,10 @@ public class Generator
         if (tagDescriptorList.size() == 0) {
             throw new TestHelperException("Tag Descriptor List is empty--cannot generate code or hints.");
         }
+    }
 
+    private Configurator getConfigurator() {
+        return Configurator.getConfigurator();
     }
 
 }

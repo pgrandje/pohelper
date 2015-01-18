@@ -34,10 +34,6 @@ public class Configurator {
 
     private Logger logger;
 
-    private String[] commandLineArgs;
-
-    private String errorMessage;
-
     // URL
     private URL baseUrlToScan;
 
@@ -99,101 +95,26 @@ public class Configurator {
     /**
      * Configurator is a singleton and can only be constructed using this method.
        For thread-safety using synchronized, just in case.
-     * @param args
      * @return
      */
-    public static Configurator getConfigurator(String[] args) {
-
-        if (singletonConfigurator == null) {
-           singletonConfigurator = new Configurator(args);
-        }
-        return singletonConfigurator;
-    }
-
-
     public static Configurator getConfigurator() {
+
         if (singletonConfigurator == null) {
-           throw new TestHelperException("Can't get Configurator without creating a new one requiring command-line args.");
+           singletonConfigurator = new Configurator();
         }
         return singletonConfigurator;
     }
 
 
-    private Configurator(String[] args) {
-        commandLineArgs = args;
-    }
-
-    /**
-     * Required params: -url and a valid url value are required.
-     * -dest is not required and will take a default of the current working directory if not supplied.
-     *
-     * @return
-     */
-    public boolean validateCommandline() {
-        // TODO: I don't like how I've written validateCommandLine() and processArgs() - refactor these.
-
-        boolean returnStatus = true;
-
-        for (int i=0; i<commandLineArgs.length; i++) {
-
-            if (commandLineArgs[i].equals("-url")) {
-                i++;
-                if (i >= commandLineArgs.length) {
-                    returnStatus = false;
-                    errorMessage = MessageLibrary.urlValueRequired;
-                    break;
-                }
-                try {
-                    // The url is saved in processArgs() so we don't need to assign it here where we're just validating.
-                    new URL(commandLineArgs[i]);
-                } catch (MalformedURLException e) {
-                    returnStatus = false;
-                    errorMessage = MessageLibrary.badUrl + " -- URL Exception says: " + e.getMessage();
-                }
-            }
-            // -dest is not required, but if it is supplied, it requires a directory path value.
-            else if (commandLineArgs[i].equals("-dest") || commandLineArgs[i].equals("-destination")) {
-                i++;
-                // TODO: Checking the cnt > commandLineArgs.length is too weak for determining if it's value is a valid filepath.
-                // TODO: This may be overkill now--There's an existing method that checks for a supplied param.
-                if (i >= commandLineArgs.length) {
-                    returnStatus = false;
-                    errorMessage = MessageLibrary.destValueRequired;
-                    break;
-                }
-                // validate the file path
-                if (verifyDirectory(commandLineArgs[i]) == false) {
-                    returnStatus = false;
-                    errorMessage = MessageLibrary.badDirectoryFilePath;
-                }
-            }
-        }
-
-        return returnStatus;
-    }
-
-    public String getErrorMessage() {
-        return errorMessage;
+    private Configurator() {
     }
 
 
-
-    private boolean verifyDirectory(String directoryPath) {
-
-        boolean returnStatus = false;
-
-        if (new File(directoryPath).isDirectory())
-        {
-           returnStatus = true;
-        }
-
-        return returnStatus;
-}
-
-
-    public void processArgs() {
+    public void processArgs(String[] args) {
 
         logger = Logger.getLogger(Configurator.class);
+
+        String[] commandLineArgs = args;
 
         // Assign the delimeters.
         codeTemplateDelimiters = new CodeTemplateDelimiters();
@@ -289,7 +210,7 @@ public class Configurator {
 
 
     /*
-     * The command-line validator should make this method not necessary, but I'm keeping it as extra protection.
+     * The command-line's validator should make this method not necessary, but I'm keeping it as extra protection.
      * @param argValue
      */
     private void checkForRequiredArgValue(String argValue) {
@@ -418,7 +339,7 @@ public class Configurator {
 
     //  *** XML-Config file processing methods ****
 
-    private void loadConfigFile() {
+    public void loadConfigFile() {
 
         DocumentBuilder dBuilder;
         Document doc;
