@@ -13,14 +13,12 @@ import java.net.URL;
  */
 public class CommandLineProcessor {
 
-    static private String[] commandLineArgs;
-
     static private String errorMessage;
 
     public static void main(String[] args) throws IOException, ParserConfigurationException {
 
         // TODO: Command-line validation shouldn't be done by the Configurator anymore.
-        if (validateCommandline() == false) {
+        if (validateCommandline(args) == false) {
             System.out.println(errorMessage);
             System.exit(0);
         };
@@ -37,9 +35,10 @@ public class CommandLineProcessor {
      *
      * @return
      */
-    public static boolean validateCommandline() {
+    public static boolean validateCommandline(String[] args) {
         // TODO: I don't like how I've written validateCommandLine() and processArgs() - refactor these.
 
+        String[] commandLineArgs = args;
         boolean returnStatus = true;
 
         for (int i=0; i<commandLineArgs.length; i++) {

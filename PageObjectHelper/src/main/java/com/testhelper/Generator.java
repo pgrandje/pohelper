@@ -92,7 +92,7 @@ public class Generator
 
         // Generate the hints or code output.
 
-        if (Configurator.getConfigurator().getGenerateStatus() == Configurator.GenerateType.HINTS) {
+        if (getConfigurator().getGenerateStatus() == Configurator.GenerateType.HINTS) {
 
             pageDescriptor = PageScanner.getScanner().getPageName(classNameRecorder);
 
@@ -106,7 +106,7 @@ public class Generator
            So, I think a Builder Pattern or Factory Pattern could be used to build the appropriate bucket based
            on the Configurator's generate-status.  I could also pass in a Scanner object maybe which covers the Hints Scanning case also.
          */
-        else if (Configurator.getConfigurator().getGenerateStatus() == Configurator.GenerateType.CODE) {
+        else if (getConfigurator().getGenerateStatus() == Configurator.GenerateType.CODE) {
 
             pageDescriptor = PageScanner.getScanner().getPageName(classNameRecorder);
 
@@ -117,7 +117,7 @@ public class Generator
         }
         /* Possible Design Pattern: This condition is also similar.  The only difference is the Scanner used.
         */
-        else if (Configurator.getConfigurator().getGenerateStatus() == Configurator.GenerateType.CODE_FROM_HINTS) {
+        else if (getConfigurator().getGenerateStatus() == Configurator.GenerateType.CODE_FROM_HINTS) {
 
             pageDescriptor = HintsScanner.getScanner().setPageName(classNameRecorder);
 
