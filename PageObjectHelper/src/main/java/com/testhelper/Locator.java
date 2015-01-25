@@ -1,6 +1,6 @@
 package com.testhelper;
 
-/**
+/*
  * Stores everything needed to construct a Selenium locator string.
  * User: pgrandje
  * Date: 4/20/14
@@ -30,7 +30,7 @@ public class Locator {
 
     public Locator(LocatorType type, String value) {
         if (type == null)
-            throw new TestHelperException("Null LocatorType passed to new Locator.");
+            throw new PageHelperException("Null LocatorType passed to new Locator.");
         this.type = type;
         this.value = value;
     }
@@ -43,9 +43,9 @@ public class Locator {
 
     public String getValue() {
         if (value == null)
-            throw new TestHelperException("Locator value must not be null when assigning it to code.");
+            throw new PageHelperException("Locator value must not be null when assigning it to code.");
         else if (value.isEmpty())
-            throw new TestHelperException("Locator value must not be an empty string when assigning it to code.");
+            throw new PageHelperException("Locator value must not be an empty string when assigning it to code.");
         return value;
     }
 

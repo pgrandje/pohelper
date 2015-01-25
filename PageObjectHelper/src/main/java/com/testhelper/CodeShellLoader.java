@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-/**
+/*
  * Created by IntelliJ IDEA.
  * User: pgrandje
  * Date: 10/23/11
@@ -38,7 +38,7 @@ public class CodeShellLoader {
             logger.fatal("File Not Found Exception in: " + fileNotFoundException.getClass());
             logger.fatal("Cause: " + fileNotFoundException.getCause());
             logger.fatal("Message: " + fileNotFoundException.getMessage());
-            logger.fatal("Stack Trace: " + fileNotFoundException.getStackTrace());
+            logger.fatal("Stack Trace: " + fileNotFoundException.getStackTrace().toString());
             throw fileNotFoundException;
         }
 
@@ -73,7 +73,7 @@ public class CodeShellLoader {
 
           if (line == null) {
               logger.debug("Unexpected null line found, with code-block indicator not found.");
-              throw new TestHelperException("Unexpected null line in Code Shell Loader");
+              throw new PageHelperException("Unexpected null line in Code Shell Loader");
           }
 
           // clear the StringBuffer by starting a new one.

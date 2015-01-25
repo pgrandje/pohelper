@@ -1,11 +1,9 @@
 package com.testhelper;
 
 import org.apache.log4j.Logger;
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.Node;
-import org.w3c.dom.Attr;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**
@@ -142,8 +140,6 @@ public class TagDescriptor {
             textContent = text;
 
         }
-
-        return;
     }
 
     public String getComment() {
@@ -267,7 +263,6 @@ public class TagDescriptor {
 
         logger.debug("Writing member and method names using default symbol names.");
         writeMemberAndMethodNames(memberNameRecorder.makeDefaultSymbolName());
-
     }
 
 
@@ -275,14 +270,8 @@ public class TagDescriptor {
 
         logger.debug("Writing member and methods using symbol name '" + symbolName + "'.");
 
-        StringBuffer alteredMemberCode =
-                new StringBuffer(memberCode.toString().replaceAll(configurator.getMemberNameIndicator(), symbolName));
-        memberCode = alteredMemberCode;
-
-        StringBuffer alteredMethodCode =
-                new StringBuffer(methodCode.toString().replaceAll(configurator.getMemberNameIndicator(), symbolName));
-        methodCode = alteredMethodCode;
-
+        memberCode = new StringBuffer(memberCode.toString().replaceAll(configurator.getMemberNameIndicator(), symbolName));
+        methodCode = new StringBuffer(methodCode.toString().replaceAll(configurator.getMemberNameIndicator(), symbolName));
     }
 
 }

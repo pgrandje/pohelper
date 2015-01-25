@@ -1,10 +1,6 @@
 package com.testhelper;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
-/**
+/*
  * Descriptors are small objects that control a single unit of the generation process and serve as a
  * handle to an element to be generated.  The HintsToCodeDescriptor stores the information for a single
  * Analysis record corresponding to a specific HTML tag in the DOM which is targeted for an

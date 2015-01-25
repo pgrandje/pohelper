@@ -1,6 +1,6 @@
 package com.testhelper;
 
-/**
+/*
  * Simple enumerated type used to identify whether a given Node from the DOM is actually an HTML tag, or an attribute,
  * text, script, or some other DOM element.
  * User: pgrandje

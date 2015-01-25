@@ -2,7 +2,7 @@ package com.testhelper;
 
 import org.apache.log4j.Logger;
 
-/**
+/*
  * Describes a page or page component.  Stores the classname for the page object.
  * Will be expanded with additional properties as needed.
  *

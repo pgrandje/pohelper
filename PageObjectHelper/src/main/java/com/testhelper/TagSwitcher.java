@@ -1,11 +1,11 @@
 package com.testhelper;
 
+import org.apache.log4j.Logger;
+
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Iterator;
-
-import org.apache.log4j.Logger;
+import java.util.Map;
 
 /**
  * Stores a map of key-value pairs where the keys are the HTML tag types (<div>, <ul> etc) from the config file and the
@@ -28,15 +28,13 @@ public class TagSwitcher {
     CodeLoader codeLoader;
 
 
-    // Passing the configurator rather than just the filepath returned from it.
-    // This allows more flexibility, I can access any aspects of the configuration.
-    TagSwitcher(Configurator config) throws IOException {
+    TagSwitcher() throws IOException {
 
         logger = Logger.getLogger(TagSwitcher.class);
         lookUpMap = new HashMap<String, TagTemplate>();
         dumpTableFlag = true;
 
-        configurator = config;
+        configurator = Configurator.getConfigurator();
 
         // TODO: Is there a pattern that should be used here with the CodeLoader to assign the code snippets to the Tag Switcher?
         codeLoader = new CodeLoader(this);

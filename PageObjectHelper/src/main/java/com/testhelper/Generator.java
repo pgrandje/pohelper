@@ -1,13 +1,11 @@
 package com.testhelper;
 
-import javax.xml.parsers.ParserConfigurationException;
-
-import java.io.IOException;
-
 import com.testhelper.outputbucket.CodeOutputBucket;
 import com.testhelper.outputbucket.HintsOutputBucket;
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.IOException;
 
 /**
  * Currently This is the Main Entry Point for the app.
@@ -49,55 +47,29 @@ public class Generator
     }
 
     /**
-     * Handles both command-line parametes and the config file in one method.
-     * @param args command-line parameters
-     * @return the Generator
-     */
-    public Generator setConfiguration(String[] args) {
-//        loadConfigFile();
-        setCommandLineConfiguration(args);
-        return singletonGenerator;
-    }
-
-    private Generator setCommandLineConfiguration(String[] args) {
-
-        // Used by the loggers
-        PropertyConfigurator.configure("log4j.properties");
-
-        // Sets the configuration using any command-line parameters.
-        getConfigurator().processArgs(args);
-
-        return singletonGenerator;
-    }
-
-    private Generator loadConfigFile() {
-        getConfigurator().loadConfigFile();
-        return singletonGenerator;
-    }
-
-    /**
      * Generates either the code or the analysis file.
      */
-    // TODO:  If I used a strategy pattern my passing in a configuration-strategy I could avoid these if statements.
-    public Generator generate() throws IOException, ParserConfigurationException {
+    // TODO:  If I used a strategy pattern my passing in a configuration-strategy, could I avoid these if statements?
+    public Generator generate(GenerateMessage message) throws IOException, ParserConfigurationException {
 
-        // TODO: put in error handling to ensure the Confguration is set before running the singletonGenerator.
+        // TODO: put in error handling to ensure the Configuration is set before running the Generator.
 
         /* A new PageDescriptor is created for each page or hints file scanned.
            The PageDescriptor is then used to name the class name in the code bucket when generating code or in the
            hints file when generating hints.
          */
-        PageDescriptor pageDescriptor = null;
+        PageDescriptor pageDescriptor;
         classNameRecorder = new NameRecorder("Class Name Recorder");
 
         // Generate the hints or code output.
 
-        if (getConfigurator().getGenerateStatus() == Configurator.GenerateType.HINTS) {
+        if (message.getGenerateType() == GenerateMessage.GenerateType.HINTS) {
 
-            pageDescriptor = PageScanner.getScanner().getPageName(classNameRecorder);
+            PageScanner pageScanner = new PageScanner(message.getUrl());
+            pageDescriptor = pageScanner.getPageName(classNameRecorder);
 
             // Scan the DOM to get a list of tags and their attributes.
-            TagDescriptorList tagDescriptorList = PageScanner.getScanner().scan();
+            TagDescriptorList tagDescriptorList = pageScanner.scan();
             writeHintsFromTagDescriptors(pageDescriptor, tagDescriptorList);
 
         }
@@ -106,19 +78,21 @@ public class Generator
            So, I think a Builder Pattern or Factory Pattern could be used to build the appropriate bucket based
            on the Configurator's generate-status.  I could also pass in a Scanner object maybe which covers the Hints Scanning case also.
          */
-        else if (getConfigurator().getGenerateStatus() == Configurator.GenerateType.CODE) {
+        else if (message.getGenerateType() == GenerateMessage.GenerateType.CODE) {
 
-            pageDescriptor = PageScanner.getScanner().getPageName(classNameRecorder);
+            PageScanner pageScanner = new PageScanner(message.getUrl());
+            pageDescriptor = pageScanner.getPageName(classNameRecorder);
 
             // Scan the nodes
-            TagDescriptorList tagDescriptorList = PageScanner.getScanner().scan();
+            TagDescriptorList tagDescriptorList = pageScanner.scan();
             writeCodeFromTagDescriptors(pageDescriptor, tagDescriptorList);
 
         }
-        /* Possible Design Pattern: This condition is also similar.  The only difference is the Scanner used.
+        /* Possible Design Pattern? --> This condition is also similar, but the difference is the Scanner used.
         */
-        else if (getConfigurator().getGenerateStatus() == Configurator.GenerateType.CODE_FROM_HINTS) {
+        else if (message.getGenerateType() == GenerateMessage.GenerateType.CODE_FROM_HINTS) {
 
+            // TODO:  Hints scanner will also need to be passed the URL.
             pageDescriptor = HintsScanner.getScanner().setPageName(classNameRecorder);
 
             TagDescriptorList tagDescriptorList = HintsScanner.getScanner().scan();
@@ -126,7 +100,7 @@ public class Generator
 
         }
         else {
-            throw new TestHelperException("Invalid configuration state.  Should never get here.");
+            throw new PageHelperException("Invalid configuration state.  Should never get here.");
         }
 
         logger.info("SUCCESSFUL COMPLETION");
@@ -201,16 +175,11 @@ public class Generator
     private static void verifyTagDescriptorList(TagDescriptorList tagDescriptorList) {
 
         if (null == tagDescriptorList) {
-            throw new TestHelperException("Got null Tag Descriptor List--cannot generate code or hints.");
+            throw new PageHelperException("Got null Tag Descriptor List--cannot generate code or hints.");
         }
 
         if (tagDescriptorList.size() == 0) {
-            throw new TestHelperException("Tag Descriptor List is empty--cannot generate code or hints.");
+            throw new PageHelperException("Tag Descriptor List is empty--cannot generate code or hints.");
         }
     }
-
-    private Configurator getConfigurator() {
-        return Configurator.getConfigurator();
-    }
-
 }

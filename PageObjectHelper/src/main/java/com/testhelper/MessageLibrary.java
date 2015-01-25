@@ -1,6 +1,6 @@
 package com.testhelper;
 
-/**
+/*
  * Contains all string error messages for various error conditions throughout the app.
  * Used primarily after known exceptions occur.  For example, if an expected file or directory
  * are not found.

@@ -1,10 +1,11 @@
 package com.testhelper;
 
-import java.util.HashMap;
 import org.apache.log4j.Logger;
 
+import java.util.HashMap;
 
-/**
+
+/*
  * Collects and stores the member and method names used during generation. This is to avoid duplicate
  * symbol names being generated.
  * User: pgrandje
@@ -67,7 +68,7 @@ public class NameRecorder {
         logger.debug("Replaced all whitespace resulting in symbol name: " + tempString2);
 
         // And, remove all non-alphanumeric chars.
-        tempString2.replaceAll("[^a-zA-Z0-9_]", "");
+        tempString2 = tempString2.replaceAll("[^a-zA-Z0-9_]", "");
         logger.debug("Replaced all non-alphanumeric or underscore chars resulting in symbol name: " + tempString2);
 
         // And, limit the tag's text to the first 32 characters for it's string name.
@@ -89,7 +90,7 @@ public class NameRecorder {
             logger.debug("Symbol name begins with underscore, appending alphabetic text.");
             stringBuffer.append("BeganWithUnderscore");
 
-        };
+        }
 
         stringBuffer.append(symbolName);
 

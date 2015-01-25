@@ -1,25 +1,22 @@
 package com.testhelper;
 
-import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.ParserConfigurationException;
 
 
 /**
  * Configurator
- * The Configurator sets the runtime configuration. This class is a singleton.  It's Constructor is private and both,
+ * The Configurator sets the runtime configuration. It is potentially accessible from any point within the Page Object Helper Generator.
+ * This class is a singleton.  It's Constructor is private and both,
  * creating an new instance, or retrieving the one and only instance are both handled by the getConfigurator() method.
  * getConfigurator() operates as a Factory and a getter.
  * @author Paul Grandjean
@@ -36,21 +33,8 @@ public class Configurator {
     // The Configurator is a singleton, and is created by it's static factory method.
     private static Configurator singletonConfigurator;
 
-    private Logger logger;
-
-    // URL
-    private URL baseUrlToScan;
-
-    // **** Generation Configurations ****
-
-    // Generation Choices
-    public enum GenerateType {
-        CODE, HINTS, CODE_FROM_HINTS, ANALYZE_AND_GENERATE };
-    // Default if -generate param is not specified is to generate the sourcecode.
-    private GenerateType generate;
-
     // Locator Choices
-    public enum LocatorConfig {CSS_ONLY, ATTRIBS_ONLY, ATTRIBS_CSS};
+    public enum LocatorConfig {CSS_ONLY, ATTRIBS_ONLY, ATTRIBS_CSS}
     private LocatorConfig  locatorConfig = LocatorConfig.ATTRIBS_CSS;
     private boolean locatorUsesClassnames = false;
 
@@ -65,7 +49,7 @@ public class Configurator {
         public final String methodDelimeter = "<-- Method Code Block -->";
         public final String fileEndDelimeter = "<*** End ***>";
     }
-    private CodeTemplateDelimiters codeTemplateDelimiters;
+    private CodeTemplateDelimiters codeTemplateDelimiters = new CodeTemplateDelimiters();
 
     // Code template variable and locator hooks.
     private String locatorIndicator = "<locator>";
@@ -88,7 +72,6 @@ public class Configurator {
 
     // **** File Paths with Defaults****
 
-    // Default paths are assigned but will be overrideable via command-line or xml-based params.
     private String codeShellTemplateFilePath = "./resources/java-shell-configger.txt";
     private String codeTemplateFilePath = "./resources/java-configger2.txt";
     private String destinationFilePath = ".";
@@ -99,7 +82,7 @@ public class Configurator {
     /**
      * Configurator is a singleton and can only be constructed using this method.
        For thread-safety using synchronized, just in case.
-     * @return
+     * @return a reference to the singleton Configurator
      */
     public static Configurator getConfigurator() {
 
@@ -112,170 +95,6 @@ public class Configurator {
     private Configurator() {
     }
 
-    public void processArgs(String[] args) {
-
-        logger = Logger.getLogger(Configurator.class);
-
-        String[] commandLineArgs = args;
-
-        // Assign the delimeters.
-        codeTemplateDelimiters = new CodeTemplateDelimiters();
-
-        // Set the default runtime values.
-        // No default for the URL, if an invalid URL is supplied then an exception is thrown.  This is what we want.
-        generate = GenerateType.CODE;
-        destinationFilePath = ".";
-
-        // Command-line params will override the defaults and the config file.
-
-        for (int i=0; i<commandLineArgs.length; i++) {
-
-            if (commandLineArgs[i].equals("-generate")) {
-                i++;
-                checkForRequiredArgValue(commandLineArgs[i]);
-                generate = assignGenerateValue(commandLineArgs[i]);
-                logger.info("Generate state set to: " + generate.toString());
-            }
-            else if (commandLineArgs[i].equals("-url")) {
-                i++;
-                checkForRequiredArgValue(commandLineArgs[i]);
-                try {
-                    baseUrlToScan = new URL(commandLineArgs[i]);
-                    logger.info("Configurator using URL via -url command-line arg, URL set to '" + baseUrlToScan + "'.");
-                }
-                // With the command-line validator, this is not necessary, but it still makes the code safer.
-                catch(MalformedURLException e) {
-                    throw new TestHelperException("Invalid URL on command line, exception message: " + e.getMessage() + "--Exception cause: " + e.getCause());
-
-                }
-            }
-            // The command-line validator verifies that if we get here, we have a valid filepath following.
-            else if (commandLineArgs[i].equals("-dest") || commandLineArgs[i].equals("-destination")) {
-                i++;
-                checkForRequiredArgValue(commandLineArgs[i]);
-                destinationFilePath = commandLineArgs[i];
-                logger.info("Set destination folder to " + destinationFilePath);
-            }
-            else if (commandLineArgs[i].equals("-hints")) {
-                i++;
-                // TODO: This isn't quite a valid check because an indexing error could get thrown.
-                checkForRequiredArgValue(commandLineArgs[i]);
-                hintsFileName = commandLineArgs[i];
-                logger.info("Using Hints file: " + hintsFileName);
-            }
-            else if (commandLineArgs[i].equals("-codeShell") || commandLineArgs[i].equals("-codeShellTemplate")) {
-                i++;
-                checkForRequiredArgValue(commandLineArgs[i]);
-                codeShellTemplateFilePath = checkConfigurationFileExists(commandLineArgs[i]);
-                logger.info("File path for Code Shell Template is set to: " + codeShellTemplateFilePath);
-            }
-            else if (commandLineArgs[i].equals("-tagSwitch") || commandLineArgs[i].equals("-tagSwitcherConfig")) {
-                i++;
-                checkForRequiredArgValue(commandLineArgs[i]);
-                codeTemplateFilePath = checkConfigurationFileExists(commandLineArgs[i]);
-                logger.info("File path for Tag Switcher's code template file is set to: " + codeTemplateFilePath);
-            }
-            else if (commandLineArgs[i].equals("-loc") || commandLineArgs[i].equals("-locator")) {
-                i++;
-                checkForRequiredArgValue(commandLineArgs[i]);
-                if (commandLineArgs[i].equals("attribs_css")) {
-                    locatorConfig = LocatorConfig.ATTRIBS_CSS;
-                }
-                else if (commandLineArgs[i].equals("attribs_only")) {
-                    locatorConfig = LocatorConfig.ATTRIBS_ONLY;
-                }
-                else if (commandLineArgs[i].equals("css_only")) {
-                    locatorConfig = LocatorConfig.CSS_ONLY;
-                }
-                else {
-                    printCommandLineHelp();
-                    throw new TestHelperException("Error in command-line.  Invalid value for -locator.");
-                }
-                logger.info("Locator generation using " + locatorConfig.toString());
-            }
-            else if (commandLineArgs[i].equals("-defMem") || commandLineArgs[i].equals("-defaultMemberName")) {
-                i++;
-                checkForRequiredArgValue(commandLineArgs[i]);
-                defaultMemberName = commandLineArgs[i];
-            }
-            else if (commandLineArgs[i].equals("-h") || commandLineArgs[i].equals("-help")) {
-                printCommandLineHelp();
-            }
-            else {
-                printCommandLineHelp();
-                throw new TestHelperException("Unknown argument found.");
-            }
-
-        }
-
-    }
-
-
-    /*
-     * The command-line's validator should make this method not necessary, but I'm keeping it as extra protection.
-     * @param argValue
-     */
-    private void checkForRequiredArgValue(String argValue) {
-
-        // TODO: This would be a good check, but an index exception would probably be called first from the calling method.
-        if (argValue == null) {
-            throw new TestHelperException("Argument requires a value; value is 'null'.");
-        }
-
-        if (argValue.charAt(0) == '-') {
-            throw new TestHelperException("Argument requires a value but value is missing.  In place of value found option '" + argValue + "' ");
-        }
-
-    }
-
-
-    /*
-     * Verifies a required configuration file exists.  If not, throws an exception.
-     * This is private to be used as an internal verification.  It is not meant to verify command-line supplied
-     * filename values.
-     */
-    private String checkConfigurationFileExists(String filePath) {
-
-        if (!new File(filePath).exists())
-        {
-           throw new TestHelperException("File '" + filePath + "' doesn't exist.");
-        }
-
-        return filePath;
-    }
-
-
-    private GenerateType assignGenerateValue(String generateOptionValue) {
-
-        if (generateOptionValue.equals("code")) {
-
-            logger.info("Generating sourcecode only.");
-            return GenerateType.CODE;
-        }
-        else if (generateOptionValue.equals("hints")) {
-            logger.info("Generating analysis file only.");
-            return GenerateType.HINTS;
-        }
-        else if (generateOptionValue.equals("codefromhints")) {
-            logger.info("Generating code from hints file.");
-            return GenerateType.CODE_FROM_HINTS;
-        }
-        else {
-            printCommandLineError();
-            throw new TestHelperException("Error in command-line syntax.  Invalid -generate option found.");
-        }
-
-    }
-
-
-    public GenerateType getGenerateStatus() {
-        return generate;
-    }
-
-    public URL getUrl() {
-        return baseUrlToScan;
-    }
-
     public String getDestinationFilePath() {
         return destinationFilePath;
     }
@@ -286,14 +105,6 @@ public class Configurator {
 
     public LocatorConfig getLocatorConfig() {
         return locatorConfig;
-    }
-
-    public void printCommandLineHelp() {
-        System.out.println("");
-    }
-
-    public void printCommandLineError() {
-        System.out.println("Syntax error in command-line parameters. Use -h or -help for correct command-line parameters.");
     }
 
     public String getPageObjectClassName() {
@@ -325,7 +136,6 @@ public class Configurator {
     }
 
     public String getDefaultMemberName() {
-        logger.debug("Returning default member name: " + defaultMemberName);
         return defaultMemberName;
     }
 
@@ -354,11 +164,11 @@ public class Configurator {
             doc = dBuilder.parse(fXmlFile);
             doc.getDocumentElement().normalize();
         } catch (ParserConfigurationException e) {
-            throw new TestHelperException("Parser configuration exception parsing configuration file.  Exception message: " + e.getMessage());
+            throw new PageHelperException("Parser configuration exception parsing configuration file.  Exception message: " + e.getMessage());
         } catch (SAXException e) {
-            throw new TestHelperException("SAX exception parsing configuration file.  Exception message: " + e.getMessage());
+            throw new PageHelperException("SAX exception parsing configuration file.  Exception message: " + e.getMessage());
         } catch (IOException e) {
-            throw new TestHelperException("I/O exception loading configuration file.  Exception message: " + e.getMessage());
+            throw new PageHelperException("I/O exception loading configuration file.  Exception message: " + e.getMessage());
         }
 
         processConfigFileOption(doc, "generate");
@@ -367,8 +177,6 @@ public class Configurator {
 
     private void processConfigFileOption(Document doc, String option) {
 
-        logger.debug("Config file Root element :" + doc.getDocumentElement().getNodeName());
-
         String optionValue = null;
 
         // TODO:  Add a loop here to process all the options in the config file.
@@ -376,16 +184,16 @@ public class Configurator {
 		// Just in case the user entered more than one of the same argument, we'll get the whole list.
         NodeList nList = doc.getElementsByTagName(option);
         if (nList.getLength() > 1) {
-            throw new TestHelperException("Multiple '" + option + "' tags found in the configuration file.");
+            throw new PageHelperException("Multiple '" + option + "' tags found in the configuration file.");
         }
 
         // Any given option, may, or may not, be included in the config file, so the nList for a given option could return
         // as null or empty.
-        if (nList == null || nList.getLength() != 0) {
+        if (nList.getLength() != 0) {
 
             Node node = nList.item(0);
             if (node.getNodeType() != Node.ELEMENT_NODE) {
-               throw new TestHelperException("Configuration file error, node '" + node.getNodeName() + "' is not an Element Node.");
+               throw new PageHelperException("Configuration file error, node '" + node.getNodeName() + "' is not an Element Node.");
             }
 
             Element element = (Element) node;
@@ -394,9 +202,36 @@ public class Configurator {
         }
 
         if(optionValue == null) {
-            throw new TestHelperException("Configuration file error.  Option value not recognized.");
+            throw new PageHelperException("Configuration file error.  Option value not recognized.");
         }
-
     }
 
+        // Default paths are assigned but will be overrideable via command-line or xml-based params.
+    public void setCodeShellTemplateFilePath(String codeShellTemplateFilePath) {
+        this.codeShellTemplateFilePath = codeShellTemplateFilePath;
+    }
+
+    public void setHintsFileName(String hintsFileName) {
+        this.hintsFileName = hintsFileName;
+    }
+
+    public void setCodeTemplateFilePath(String codeTemplateFilePath) {
+        this.codeTemplateFilePath = codeTemplateFilePath;
+    }
+
+    public void setDestinationFilePath(String destinationFilePath) {
+        this.destinationFilePath = destinationFilePath;
+    }
+
+    public void setConfigFilePath(String configFilePath) {
+        this.configFilePath = configFilePath;
+    }
+
+    public void setDefaultMemberName(String defaultMemberName) {
+        this.defaultMemberName = defaultMemberName;
+    }
+
+    public void setLocatorConfig(LocatorConfig locatorConfig) {
+        this.locatorConfig = locatorConfig;
+    }
 }

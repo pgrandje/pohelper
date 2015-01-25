@@ -1,12 +1,11 @@
 package com.testhelper;
 
+import org.apache.log4j.Logger;
 import org.htmlcleaner.CleanerProperties;
 import org.htmlcleaner.DomSerializer;
 import org.htmlcleaner.HtmlCleaner;
 import org.htmlcleaner.TagNode;
 import org.w3c.dom.*;
-
-import org.apache.log4j.Logger;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
@@ -15,7 +14,7 @@ import java.net.URL;
 import java.net.UnknownHostException;
 import java.util.HashMap;
 
-/**
+/*
  * Recursive function, the Node Scanner traverses the DOM and creates objects and initiates actions based on the DOM
  * nodes it encounters.  This is the main engine driving the code generating process.
  * User: pgrandje
@@ -25,7 +24,7 @@ public class PageScanner {
 
     private final Logger logger = Logger.getLogger(PageScanner.class);
 
-    private static PageScanner scanner = null;
+    private URL url;
 
     // w3c.org Document object for the page's DOM.
     private Document document;
@@ -38,32 +37,26 @@ public class PageScanner {
 
     private TagDescriptorList tagDescriptorList;
 
-
-
-    // PageScanner is a singleton since we would only ever need one at a time.
-    public static PageScanner getScanner()  throws IOException, ParserConfigurationException {
-        if (scanner == null) {
-            scanner = new PageScanner();
-        }
-        return scanner;
-    }
-
     // TagSwitcher throws the IOException when it can't find it's configuration file.
-    private PageScanner() throws IOException, ParserConfigurationException {
+    // TODO:  Find out where PageScanner is throwing a ParserConfigurationException and see if I still need to do this.
+    public PageScanner(URL url) throws IOException, ParserConfigurationException {
+
+        this.url = url;
 
         // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
-        this.tagSwitcher = new TagSwitcher(Configurator.getConfigurator());;
+        // TODO:  If the Configurator is truly available to all aspects of the app then I should not need to pass it into the TagSwitcher() constructor.
+        this.tagSwitcher = new TagSwitcher();
+
         this.tagDescriptorList = new TagDescriptorList();
         this.memberNameRecorder = new NameRecorder("Member Name Recorder");
-        parsePage();
+
+        this.parsePage();
     }
 
 
 
     // IOException comes from cleaner.clean(url), ParserConfigurationException comes from DomSerializer
     private void parsePage() throws IOException, ParserConfigurationException {
-
-        URL url = Configurator.getConfigurator().getUrl();
 
         // create an instance of HtmlCleaner and configure it.
         HtmlCleaner cleaner = new HtmlCleaner();
@@ -101,7 +94,7 @@ public class PageScanner {
         NodeList titleTagList = document.getElementsByTagName("title");
 
         if (null == titleTagList) {
-            throw new TestHelperException("Retrieving <title> returned a null list.");
+            throw new PageHelperException("Retrieving <title> returned a null list.");
         }
         else if (titleTagList.getLength() == 1)  {
             logger.info("Found exactly one <title> tag, using it's text for the page object's classname.");
@@ -159,7 +152,7 @@ public class PageScanner {
         //    cause the traversal to stop.
         if (parent.getNodeType() != org.w3c.dom.DocumentType.ELEMENT_NODE)
             return tagDescriptorList;
-        else if (parent.hasChildNodes() == false)
+        else if (!parent.hasChildNodes())
             return tagDescriptorList;
 
 
@@ -179,7 +172,7 @@ public class PageScanner {
             // If the node doesn't have attributes or text we won't store it for generating code.
             // getTextContent seems to return an empty string, rather than null when there's not text.
             if (    (current.getNodeType() == 1) &&
-                    ( (current.hasAttributes() == true) || (!current.getTextContent().isEmpty()) )
+                    ( (current.hasAttributes()) || (!current.getTextContent().isEmpty()) )
                ) {
 
                 logger.info("Current Node Name " + current.getNodeName() + " -- Value: "
@@ -223,7 +216,7 @@ public class PageScanner {
         }
 
        return tagDescriptorList;
-    };
+    }
 
 
     private HashMap<String, String> setAttributePairs(Node node) {

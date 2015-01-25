@@ -1,13 +1,13 @@
 package com.testhelper;
 
+import org.apache.log4j.Logger;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-import org.apache.log4j.Logger;
-
-/**
+/*
  * Created by IntelliJ IDEA.
  * User: pgrandje
  * Date: 10/23/11
@@ -32,7 +32,7 @@ public class CodeLoader {
         try {
             filePath = configurator.getCodeTemplateFilePath();
             if (filePath == null) {
-                throw new TestHelperException("Found null file path to Tag Switcher config file.");
+                throw new PageHelperException("Found null file path to Tag Switcher config file.");
             }
             logger.debug("Looking for config file: " + filePath);
             logger.debug("Using current working directory: " + System.getProperty("user.dir"));
@@ -42,7 +42,7 @@ public class CodeLoader {
             logger.fatal("File Not Found Exception in: " + fileNotFoundException.getClass());
             logger.fatal("Cause: " + fileNotFoundException.getCause());
             logger.fatal("Message: " + fileNotFoundException.getMessage());
-            logger.fatal("Stack Trace: " + fileNotFoundException.getStackTrace());
+            logger.fatal("Stack Trace: " + fileNotFoundException.getStackTrace().toString());
             throw fileNotFoundException;
         }
 
@@ -52,8 +52,8 @@ public class CodeLoader {
     void loadConfig() throws IOException {
 
       String currentTag = null;
-      String currentMemberCode = "";
-      String currentMethodCode = "";
+      String currentMemberCode;
+      String currentMethodCode;
 
       Configurator.CodeTemplateDelimiters fileDelimiters = configurator.getCodeTemplateDelimiters();
 
@@ -68,7 +68,7 @@ public class CodeLoader {
 
                 // For blank lines, just drop out of the if, go to the bottom, and advance the line.
                 if (line.isEmpty()) {
-                    ;
+                    continue;
                 }
                 // Found a new tag, so starting a new tag-codeblock pair.
                 // We'll test the delim using contains() to account for trailing whitespace.
@@ -107,12 +107,12 @@ public class CodeLoader {
                         line = configFile.readLine();
                     }
                     else {
-                        throw new TestHelperException("Expected member code block not found.");
+                        throw new PageHelperException("Expected member code block not found.");
                     }
 
                     // Accumulate the code lines for the member code
                     // I also check for null here to make sure we don't have an infinite loop.
-                    while (!line.contains(fileDelimiters.methodDelimeter) && (null != line)) {
+                    while (!line.contains(fileDelimiters.methodDelimeter)) {
 
                         logger.debug("Processing Member code line: " + line);
                         currentMemberCode += line;
@@ -121,7 +121,7 @@ public class CodeLoader {
                     }
 
                     if (null == line) {
-                        throw new TestHelperException("File syntax error.  End of file found but expecting method code delimiter.");
+                        throw new PageHelperException("File syntax error.  End of file found but expecting method code delimiter.");
                     }
                     else {
                         // Advance the line past the method code delimiter.
@@ -138,7 +138,7 @@ public class CodeLoader {
                     }
 
                     if (null == line) {
-                        throw new TestHelperException("Found end of file while processing method code block.");
+                        throw new PageHelperException("Found end of file while processing method code block.");
                     }
 
                     // At code end, load the tag-codeblock pair in to the lookup table.
@@ -147,7 +147,7 @@ public class CodeLoader {
                     //      a null into the lookup table.  That would be a confusing bug to diagnose.
                     if (null == currentTag) {
                         logger.error("Found null tag in CodeLoader prior to loading TagSwitcher.");
-                        throw new TestHelperException("Found null tag in CodeLoader prior to loading TagSwitcher.");
+                        throw new PageHelperException("Found null tag in CodeLoader prior to loading TagSwitcher.");
                     }
 
                     // Log the code snippets that we'll use for this tag.
@@ -172,7 +172,7 @@ public class CodeLoader {
                 else {
 
                     logger.error("Unknown condition in tag switcher config file.");
-                    throw new TestHelperException("Unknown condition in tag switcher config file.");
+                    throw new PageHelperException("Unknown condition in tag switcher config file.");
 
                 }
 

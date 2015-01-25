@@ -8,7 +8,8 @@ import org.w3c.dom.Node;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-/**
+/*
+ * TODO:  Evaluate whether I want to add the Locator Factory to the published API.
  * Contructs Locator objects.  This isolates the algorithms for creaing Locators to one area and provides an API
  * for constructing Locators.
  *
@@ -200,8 +201,8 @@ public class LocatorFactory {
 
         // Verify there's at least one ancestor, if not, throw an exception.
         // This condition should never be false, but it's here as an extra check in case bugs are introduced in the future.
-        if (ancestorIterator.hasNext() == false) {
-            throw new TestHelperException("Unknown condition, first Node in CSS Selector ancestor not found.");
+        if (!ancestorIterator.hasNext()) {
+            throw new PageHelperException("Unknown condition, first Node in CSS Selector ancestor not found.");
         }
 
         // Get the first oldest ancestor--the top of the chain.
@@ -232,7 +233,7 @@ public class LocatorFactory {
         else {
             logger.error("Encountered unknown state for ancestor node.  This should never happen!");
             logger.error("Current ancestor Node is '" + ancestorNode.getNodeName() + "'.");
-            throw new TestHelperException("Encountered unknown state for first ancestor node when writing CSS Locator");
+            throw new PageHelperException("Encountered unknown state for first ancestor node when writing CSS Locator");
         }
 
 
@@ -284,7 +285,7 @@ public class LocatorFactory {
 
         logger.debug("Sibling position is " + counter);
 
-        if (counter == 1 || processNthChild == false) {
+        if (counter == 1 || !processNthChild) {
             return "";  // not the same as null and this makes a difference in how it's processed.
         }
         else {
@@ -307,7 +308,8 @@ public class LocatorFactory {
             String locatorTypeString = locatorStringComponents[0];
             String locatorValueString = locatorStringComponents[1];
 
-            Locator.LocatorType locatorType = null;
+            Locator.LocatorType locatorType;
+
             // TODO: Use a switch-case when creating Locator types from a string.
             if (locatorTypeString.equals(HintsFileDelimeters.LOCATOR_TYPE_STRING_ID)) {
                 locatorType = Locator.LocatorType.ID;
