@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 
 import java.io.IOException;
 
-/**
+/*
  * Stores the generated code as it is accumulated.  Serves as a buffer which can be modified before
  * the code output is written or displayed.
  * User: pgrandje

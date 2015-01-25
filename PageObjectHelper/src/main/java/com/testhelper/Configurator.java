@@ -14,18 +14,13 @@ import java.io.IOException;
 
 
 /**
- * Configurator
- * The Configurator sets the runtime configuration. It is potentially accessible from any point within the Page Object Helper Generator.
- * This class is a singleton.  It's Constructor is private and both,
- * creating an new instance, or retrieving the one and only instance are both handled by the getConfigurator() method.
- * getConfigurator() operates as a Factory and a getter.
+ * The Configurator sets the runtime configuration. It is potentially accessible from any point within the Page Helper
+ * engine and it's supporting classes.
+ * This class is a singleton.  Subsequently the getConfigurator() method operates as a Factory and a getter and must be
+ * used to access the Configurator.
  * @author Paul Grandjean
- * Date: 5/5/12
+ * @Date: 5/5/12
  */
-/* TODO:  I may want to separate the Configurator into a Command-Pattern for sending the generation task and a
-          configuration object for dictating the generation configuration.  That could be passed as a Strategy-pattern.
-  */
-
 public class Configurator {
 
     // A Singleton design pattern is used here to ensure there is only ever one instance of the Configurator.

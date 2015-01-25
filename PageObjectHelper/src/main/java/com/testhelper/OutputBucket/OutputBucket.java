@@ -1,6 +1,6 @@
 package com.testhelper.outputbucket;
 
-/**
+/*
  * Defines the interface for Output Buckets.  These are responsible for accumulating string information
  * (i.e. code or hints) and dumping them to a file.
  * User: pgrandje

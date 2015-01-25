@@ -6,7 +6,7 @@ import org.apache.log4j.Logger;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
+/*
  * Stores the Hints file output as it is accumulated.  Serves as a buffer which can be modified before
  * the Hints output is written or displayed.
  * User: pgrandje

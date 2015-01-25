@@ -9,7 +9,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /*
- * Created by IntelliJ IDEA.
+ * Loads the code template file that defines the class, or encapsulating code, for the generated page object code.
  * User: pgrandje
  * Date: 10/23/11
  * Time: 10:32 AM

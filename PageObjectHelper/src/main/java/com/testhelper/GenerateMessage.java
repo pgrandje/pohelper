@@ -3,12 +3,13 @@ package com.testhelper;
 import java.net.URL;
 
 /**
- * TODO: Add javadoc here.
- * User: pgrandje
- * Date: 1/18/15
+ * Specifies the page helper action the page helper should take.  Supplied the url for the entry page to the operation and supplied what action
+ * to take---code generation, hints generation, or code generation from the hints.  This is sent to the Page Helper engine
+ * for processing.
+ * @author: Paul Grandjean
+ * @Date: 1/18/15
  */
 public class GenerateMessage {
-
 
     // Defaults to generating sourcecode.
     // TODO: Evaluate if a default generation method is appropriate, may be better to enforce assignment or throw an exception.

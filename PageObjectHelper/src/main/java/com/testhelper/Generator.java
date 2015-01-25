@@ -8,21 +8,13 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 
 /**
- * Currently This is the Main Entry Point for the app.
- * Eventually, this will provide an API for code and hints generation, and a separate class will provide an interactive
- * command-line.  In addition other UIs will be considered where each will send generate commands to this class.
- *
- * The Generator is the entry point for generation of code and hints from a web site, and of code from a previously
- * generated hints file.
- *
- * Creator:  Paul Grandjean
- * Date:  First created sometime in 2011 in Salt Lake City, Utah :-)
- * Has since gone through many incremental refactorings and is gradually growing mature in its years.
+ * Provides an API for page object code and hints generation.
+ * @author:  Paul Grandjean
+ * @Date:  First created sometime in 2011 in Salt Lake City, Utah but with many revisions since that time.  :-)
  */
 
 public class Generator
 {
-
     private static final Logger logger = Logger.getLogger(Generator.class);
 
     // Generator will always be a singleton so we're using the Singleton pattern.

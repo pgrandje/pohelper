@@ -1,14 +1,14 @@
 package com.testhelper.outputbucket;
 
 import com.testhelper.Configurator;
-import com.testhelper.TestHelperException;
+import com.testhelper.PageHelperException;
 import org.apache.log4j.Logger;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-/**
+/*
  * Base class for both CodeOutputBucket and HintsOutputBucket file writing.  Contains 3 buffers for managing a header, body, and
  * trailer portions of the output.  Methods here handle the file opening, naming, and writing
  * also with providing an interface for setting the page object name via an abstract method.
@@ -45,26 +45,21 @@ public abstract class AbstractOutputBucket implements OutputBucket {
     */
     public abstract void setPageObjectName(String pageName);
 
-
     public String getFileName() {
         return fileName;
     }
 
-
     public void setFileName(String name) {
         fileName = name;
-    };
-
+    }
 
     public void setHeader(StringBuffer header) {
         this.header = header;
     }
 
-
     public void setTrailer(StringBuffer trailer) {
         this.trailer = trailer;
     }
-
 
     public void addCode(String codeString) {
         logger.trace("Adding string to bucket:\n" + codeString);
@@ -95,11 +90,11 @@ public abstract class AbstractOutputBucket implements OutputBucket {
         try {
 
             if (filePath == null) {
-                 throw new TestHelperException("Output file path is null.");
+                 throw new PageHelperException("Output file path is null.");
             }
 
             if (fileName == null) {
-                 throw new TestHelperException("Output file name is null.");
+                 throw new PageHelperException("Output file name is null.");
             }
 
             filePath = filePath + "/" + fileName;
@@ -117,7 +112,7 @@ public abstract class AbstractOutputBucket implements OutputBucket {
         } catch (IOException e) {
             logger.error("I/O Exception writing output file");
             logger.error("Message: " + e.getMessage());
-            throw new TestHelperException("Caught I/O Exception writing the file.  Message: " + e.getMessage() + ".");
+            throw new PageHelperException("Caught I/O Exception writing the file.  Message: " + e.getMessage() + ".");
         }
 
     }

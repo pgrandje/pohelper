@@ -8,7 +8,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /*
- * Created by IntelliJ IDEA.
+ * Loads the code templates for given tags from a code template file.
  * User: pgrandje
  * Date: 10/23/11
  * Time: 10:32 AM
