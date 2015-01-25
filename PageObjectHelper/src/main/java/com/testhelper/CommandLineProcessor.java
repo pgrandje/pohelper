@@ -11,6 +11,7 @@ import java.net.URL;
 
 /**
  * Main entry point for the Page Helper command-line app
+ * Default action is to generate code.
  * @author Paul Grandjean
  * @since 1/18/15
  * @version 1.0alpha
@@ -18,6 +19,9 @@ import java.net.URL;
 public class CommandLineProcessor {
 
     private static Logger logger = Logger.getLogger(CommandLineProcessor.class);
+
+    private static URL url;
+    private static Generator.GenerateType generateType = Generator.GenerateType.CODE;
 
     static private String errorMessage;
 
@@ -36,10 +40,11 @@ public class CommandLineProcessor {
         // TODO: Configurator can get it's configuration from a config file, but then the command-line args can override some settings.
 //        getConfigurator().loadConfigFile();
 
-        GenerateMessage message = processArgs(args);
+        // Assigns the type of code or hints generation, retrieves the URL, and sets any configurations passed from the command-line.
+        processArgs(args);
 
         // TODO: String[] args could be converted into a Configuration object if I de-couple the Configurator and Generator.
-        Generator.getGenerator().generate(message);
+        Generator.getGenerator().generate(url, generateType);
 
         // Or, for Interactive Mode for Code generation....
 //        TagDescriptorList tagDescriptorList = Generator.getGenerator().setConfiguration(args).getTagDescriptorsFromPage();
@@ -116,6 +121,7 @@ public class CommandLineProcessor {
         return returnStatus;
     }
 
+
     private static void checkForRequiredArgValue(String argValue) {
         if (argValue.charAt(0) == '-') {
             throw new PageHelperException("Argument requires a value but value is missing.  In place of value found option '" + argValue + "' ");
@@ -123,11 +129,9 @@ public class CommandLineProcessor {
     }
 
 
-    public static GenerateMessage processArgs(String[] args) {
+    public static void processArgs(String[] args) {
 
         logger = Logger.getLogger(Configurator.class);
-
-        GenerateMessage generateMessage = new GenerateMessage();
 
         // TODO: Do I need to set any other default values?  Config file should set those defaults--such as file path.  And the generate message shouldn't have defaults.
 
@@ -137,12 +141,12 @@ public class CommandLineProcessor {
 
             if (args[i].equals("-generate")) {
                 i++;
-                generateMessage.setGenerateType(assignGenerateValue(args[i]));
+                generateType = assignGenerateValue(args[i]);
             }
             else if (args[i].equals("-url")) {
                 i++;
                 try {
-                    generateMessage.setBaseUrl(new URL(args[i]));
+                    url = new URL(args[i]);
                     logger.info("Configurator using URL via -url command-line arg, URL set to '" + args[i] + "'.");
                 }
                 // With the command-line validator, this is not necessary, but it still makes the code safer.
@@ -200,27 +204,24 @@ public class CommandLineProcessor {
                 printCommandLineHelp();
                 throw new PageHelperException("Unknown argument found.");
             }
-
         }
-
-        return generateMessage;
     }
 
 
-    private static GenerateMessage.GenerateType assignGenerateValue(String generateOptionValue) {
+    private static Generator.GenerateType assignGenerateValue(String generateOptionValue) {
 
         if (generateOptionValue.equals("code")) {
 
             logger.info("Generating sourcecode only.");
-            return GenerateMessage.GenerateType.CODE;
+            return Generator.GenerateType.CODE;
         }
         else if (generateOptionValue.equals("hints")) {
             logger.info("Generating analysis file only.");
-            return GenerateMessage.GenerateType.HINTS;
+            return Generator.GenerateType.HINTS;
         }
         else if (generateOptionValue.equals("codefromhints")) {
             logger.info("Generating code from hints file.");
-            return GenerateMessage.GenerateType.CODE_FROM_HINTS;
+            return Generator.GenerateType.CODE_FROM_HINTS;
         }
         else {
             printCommandLineError();

@@ -26,9 +26,7 @@ public class Generator
     private URL baseUrlToScan;
 
     // Generate Types
-
-    public enum GenerateType {
-        CODE, HINTS, CODE_FROM_HINTS, ANALYZE_AND_GENERATE }
+    public enum GenerateType {CODE, HINTS, CODE_FROM_HINTS}
 
     /* Accumulates the classnames used for each page object to ensure uniqueness.
        The classNameRecorder needs to exist, and accumulate page names for all pages generated.
@@ -54,10 +52,15 @@ public class Generator
      * @param generateType generate, code, hints, or the code from the hints.
      */
     public void generate(URL url, GenerateType generateType) throws IOException, ParserConfigurationException {
-        // TODO:  If I used a strategy pattern my passing in a configuration-strategy, could I avoid these if statements?
-        // TODO:  Or, should I break this up into multiple methods, one for each type of code/hints generation?
 
-        // TODO: put in error handling to ensure the Configuration is set before running the Generator.
+        // Verify the param values are valid.
+        if (url == null) {
+            throw new PageHelperException("No URL assigned.");
+        }
+
+        if (generateType == null) {
+            throw new PageHelperException("No GenerateType assigned.");
+        }
 
         /* A new PageDescriptor is created for each page or hints file scanned.
            The PageDescriptor is then used to name the class name in the code bucket when generating code or in the
