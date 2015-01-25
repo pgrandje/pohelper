@@ -27,30 +27,22 @@ public class CommandLineProcessor {
 
     public static void main(String[] args) throws IOException, ParserConfigurationException {
 
-        // TODO: Find a better place to set the logs
-
+        // TODO: Find a better place to set the logs?
         // Used by the loggers
         PropertyConfigurator.configure("log4j.properties");
+
+        // TODO: Configurator can get it's configuration from a config file, but then the command-line args can override some settings.
+//        getConfigurator().loadConfigFile();
 
         if (!validateCommandline(args)) {
             System.out.println(errorMessage);
             System.exit(0);
         }
 
-        // TODO: Configurator can get it's configuration from a config file, but then the command-line args can override some settings.
-//        getConfigurator().loadConfigFile();
-
         // Assigns the type of code or hints generation, retrieves the URL, and sets any configurations passed from the command-line.
         processArgs(args);
 
-        // TODO: String[] args could be converted into a Configuration object if I de-couple the Configurator and Generator.
         Generator.getGenerator().generate(url, generateType);
-
-        // Or, for Interactive Mode for Code generation....
-//        TagDescriptorList tagDescriptorList = Generator.getGenerator().setConfiguration(args).getTagDescriptorsFromPage();
-//        TagDescriptorList tagDescriptorList = Generator.getGenerator().setConfiguration(args).getTagDescriptorsFromHints();
-
-        // And, for Interactive Mode using Hints I'll need to create a HintsList object.
     }
 
 
