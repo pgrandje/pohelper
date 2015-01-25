@@ -6,11 +6,12 @@ import org.apache.log4j.Logger;
 import java.util.HashMap;
 import java.util.Map;
 
-/*
+/**
  * Stores the Hints file output as it is accumulated.  Serves as a buffer which can be modified before
  * the Hints output is written or displayed.
- * User: pgrandje
- * Date: 6/3/12
+ * @author Paul Grandjean
+ * @since 6/3/12
+ * @version 1.0alpha
  */
 public class HintsOutputBucket extends AbstractOutputBucket {
 

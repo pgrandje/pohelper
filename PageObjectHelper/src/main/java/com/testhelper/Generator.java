@@ -22,6 +22,14 @@ public class Generator
     // Generator will always be a singleton so we're using the Singleton pattern.
     private static Generator singletonGenerator;
 
+    // URL
+    private URL baseUrlToScan;
+
+    // Generate Types
+
+    public enum GenerateType {
+        CODE, HINTS, CODE_FROM_HINTS, ANALYZE_AND_GENERATE }
+
     /* Accumulates the classnames used for each page object to ensure uniqueness.
        The classNameRecorder needs to exist, and accumulate page names for all pages generated.
     */
@@ -42,8 +50,10 @@ public class Generator
 
     /**
      * Generates either the code or the analysis file.
+     * @param url the starting page for the generate process
+     * @param generateType generate, code, hints, or the code from the hints.
      */
-    public Generator generate(GenerateMessage message) throws IOException, ParserConfigurationException {
+    public void generate(URL url, GenerateType generateType) throws IOException, ParserConfigurationException {
         // TODO:  If I used a strategy pattern my passing in a configuration-strategy, could I avoid these if statements?
         // TODO:  Or, should I break this up into multiple methods, one for each type of code/hints generation?
 
@@ -58,9 +68,9 @@ public class Generator
 
         // Generate the hints or code output.
 
-        if (message.getGenerateType() == GenerateMessage.GenerateType.HINTS) {
+        if (generateType == GenerateType.HINTS) {
 
-            PageScanner pageScanner = new PageScanner(message.getUrl());
+            PageScanner pageScanner = new PageScanner(url);
             pageDescriptor = pageScanner.getPageName(classNameRecorder);
 
             // Scan the DOM to get a list of tags and their attributes.
@@ -73,9 +83,9 @@ public class Generator
            So, I think a Builder Pattern or Factory Pattern could be used to build the appropriate bucket based
            on the Configurator's generate-status.  I could also pass in a Scanner object maybe which covers the Hints Scanning case also.
          */
-        else if (message.getGenerateType() == GenerateMessage.GenerateType.CODE) {
+        else if (generateType == GenerateType.CODE) {
 
-            PageScanner pageScanner = new PageScanner(message.getUrl());
+            PageScanner pageScanner = new PageScanner(url);
             pageDescriptor = pageScanner.getPageName(classNameRecorder);
 
             // Scan the nodes
@@ -85,7 +95,7 @@ public class Generator
         }
         /* Possible Design Pattern? --> This condition is also similar, but the difference is the Scanner used.
         */
-        else if (message.getGenerateType() == GenerateMessage.GenerateType.CODE_FROM_HINTS) {
+        else if (generateType == GenerateType.CODE_FROM_HINTS) {
 
             // TODO:  Hints scanner will also need to be passed the URL.
             pageDescriptor = HintsScanner.getScanner().setPageName(classNameRecorder);
@@ -99,8 +109,6 @@ public class Generator
         }
 
         logger.info("SUCCESSFUL COMPLETION");
-
-        return singletonGenerator;
     }
 
 
@@ -149,7 +157,7 @@ public class Generator
         - TODO: Each bucket must override a writeBucket content method?  Then pass the Code outputbucket in as a specific type of an
             abstract output bucket.This is easiest! ****
     */
-    private void writeCodeFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
+    public void writeCodeFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
 
         verifyTagDescriptorList(tagDescriptorList);
 
@@ -176,7 +184,7 @@ public class Generator
     }
 
 
-    private void writeHintsFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
+    public void writeHintsFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
 
         verifyTagDescriptorList(tagDescriptorList);
 

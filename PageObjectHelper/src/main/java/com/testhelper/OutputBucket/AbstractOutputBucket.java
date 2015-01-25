@@ -8,12 +8,13 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-/*
+/**
  * Base class for both CodeOutputBucket and HintsOutputBucket file writing.  Contains 3 buffers for managing a header, body, and
  * trailer portions of the output.  Methods here handle the file opening, naming, and writing
  * also with providing an interface for setting the page object name via an abstract method.
- * User: pgrandje
- * Date: 4/27/14
+ * @author Paul Grandjean
+ * @since 4/27/14
+ * @version 1.0alpha
  */
 public abstract class AbstractOutputBucket implements OutputBucket {
 
