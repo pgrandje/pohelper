@@ -51,10 +51,8 @@ public class CommandLineProcessor {
      * -dest is not required and will take a default of the current working directory if not supplied.
      *
      * @return true if no command-line errors found, otherwise false.
-     * TODO:  validateCommmandline doesn't need to return a boolean if it always throws an exception when an error is found--how best to handle this?
      */
     public static boolean validateCommandline(String[] args) {
-        // TODO: I don't like how I've written validateCommandLine() and processArgs() - refactor these.
 
         boolean returnStatus = true;
 
@@ -124,8 +122,6 @@ public class CommandLineProcessor {
     public static void processArgs(String[] args) {
 
         logger = Logger.getLogger(Configurator.class);
-
-        // TODO: Do I need to set any other default values?  Config file should set those defaults--such as file path.  And the generate message shouldn't have defaults.
 
         // Command-line params will override the defaults and the config file.
 
