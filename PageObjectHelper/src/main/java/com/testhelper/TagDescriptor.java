@@ -20,8 +20,9 @@ import java.util.Map;
  *
  * TagDescriptor is also used for generating the Hints for a given tag.
  *
- * User: pgrandje
- * Date: 6/2/12
+ * @author Paul Grandjean
+ * @since 6/2/12
+ * @version 1.0alpha
  */
 public class TagDescriptor {
 

@@ -9,10 +9,11 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-/*
- * TODO: Add comments here.
- * User: pgrandje
- * Date: 1/18/15
+/**
+ * Main entry point for the Page Helper command-line app
+ * @author Paul Grandjean
+ * @since 1/18/15
+ * @version 1.0alpha
  */
 public class CommandLineProcessor {
 

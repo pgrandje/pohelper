@@ -8,7 +8,7 @@ import org.w3c.dom.Node;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-/*
+/**
  * TODO:  Evaluate whether I want to add the Locator Factory to the published API.
  * Contructs Locator objects.  This isolates the algorithms for creaing Locators to one area and provides an API
  * for constructing Locators.
@@ -17,8 +17,9 @@ import java.util.LinkedList;
  *      a) It needs to create a Locator from either a wc3-Node or a HintsToCodeDescriptor.
  *      b) We don't need it's instance to be retained from the calling methods.
  *
- * User: pgrandje
- * Date: 4/20/14
+ * @author Paul Grandjean
+ * @since 4/20/14
+ * @version 1.0alpha
  */
 public class LocatorFactory {
 

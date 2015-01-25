@@ -8,12 +8,11 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-/*
+/**
  * Loads the code template file that defines the class, or encapsulating code, for the generated page object code.
- * User: pgrandje
- * Date: 10/23/11
- * Time: 10:32 AM
- * To change this template use File | Settings | File Templates.
+ * @author Paul Grandjean
+ * @since 10/23/11
+ * @version 1.0alpha
  */
 public class CodeShellLoader {
 

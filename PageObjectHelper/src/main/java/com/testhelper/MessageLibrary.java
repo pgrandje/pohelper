@@ -1,11 +1,12 @@
 package com.testhelper;
 
-/*
+/**
  * Contains all string error messages for various error conditions throughout the app.
  * Used primarily after known exceptions occur.  For example, if an expected file or directory
  * are not found.
- * User: pgrandje
- * Date: 3/23/14
+ * @author Paul Grandjean
+ * @since 3/23/14
+ * @version 1.0alpha
  */
 public class MessageLibrary {
 

@@ -1,9 +1,10 @@
 package com.testhelper;
 
-/*
+/**
  * Stores everything needed to construct a Selenium locator string.
- * User: pgrandje
- * Date: 4/20/14
+ * @author Paul Grandjean
+ * @since 4/20/14
+ * @version 1.0alpha
  */
 public class Locator {
 

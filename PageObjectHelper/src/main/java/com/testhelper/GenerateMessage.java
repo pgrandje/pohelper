@@ -6,8 +6,9 @@ import java.net.URL;
  * Specifies the page helper action the page helper should take.  Supplied the url for the entry page to the operation and supplied what action
  * to take---code generation, hints generation, or code generation from the hints.  This is sent to the Page Helper engine
  * for processing.
- * @author: Paul Grandjean
- * @Date: 1/18/15
+ * @author Paul Grandjean
+ * @since 1/18/15
+ * @version 1.0alpha
  */
 public class GenerateMessage {
 

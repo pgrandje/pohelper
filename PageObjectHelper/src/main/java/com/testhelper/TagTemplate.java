@@ -3,12 +3,13 @@ package com.testhelper;
 import org.apache.log4j.Logger;
 
 
-/*
+/**
  * Stored in the TagSwitcher, the TagTemplate holds the code snippets from the code template file for a given tag type.
  * For example, if a <div> is recorded having templatized code snippets in the code configuration template file,
  * then the code snippets would be stored here, and linked to the <div> tag type in a record in the Tag Switcher.
- * User: pgrandje
- * Date: 6/2/12
+ * @author Paul Grandjean
+ * @since 6/2/12
+ * @version 1.0alpha
  */
 public class TagTemplate {
 

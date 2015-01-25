@@ -8,10 +8,11 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 
-/*
+/**
  * Reads in the Hints file for the Generator when the modified Hints file is used for code generation.
- * User: pgrandje
- * Date: 9/9/12
+ * @author Paul Grandjean
+ * @since 9/9/12
+ * @version 1.0alpha
  */
 public class HintsScanner {
 

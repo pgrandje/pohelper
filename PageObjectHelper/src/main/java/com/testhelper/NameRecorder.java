@@ -5,11 +5,12 @@ import org.apache.log4j.Logger;
 import java.util.HashMap;
 
 
-/*
+/**
  * Collects and stores the member and method names used during generation. This is to avoid duplicate
  * symbol names being generated.
- * User: pgrandje
- * Date: 8/6/12
+ * @author Paul Grandjean
+ * @since 8/6/12
+ * @version 1.0alpha
  */
 public class NameRecorder {
 

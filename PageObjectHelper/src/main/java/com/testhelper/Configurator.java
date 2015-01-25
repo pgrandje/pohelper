@@ -19,7 +19,8 @@ import java.io.IOException;
  * This class is a singleton.  Subsequently the getConfigurator() method operates as a Factory and a getter and must be
  * used to access the Configurator.
  * @author Paul Grandjean
- * @Date: 5/5/12
+ * @since 5/5/12
+ * @version 1.0alpha
  */
 public class Configurator {
 

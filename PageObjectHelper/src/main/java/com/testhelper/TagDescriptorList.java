@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/*
+/**
  * List of Tag Descriptors.  This is the data structure containing info on all the HTML tags currently
  * being processed.  Each element in the list corresponds to a specific HTML tag in the DOM that has
  * been targeted for potentially generating code.
@@ -12,8 +12,9 @@ import java.util.List;
  * Note: This class wasn't initially necessary.  I could be removed and replaced with a List<TagDescriptors>.  However,
  * it remains here as a hook to allow extending the code to methods that operate on the entire list of TagDescriptors.
  *
- * User: pgrandje
- * Date: 6/3/12
+ * @author Paul Grandjean
+ * @since 6/3/12
+ * @version 1.0alpha
  */
 public class TagDescriptorList implements Iterable<TagDescriptor> {
 

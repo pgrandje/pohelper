@@ -14,11 +14,12 @@ import java.net.URL;
 import java.net.UnknownHostException;
 import java.util.HashMap;
 
-/*
+/**
  * Recursive function, the Node Scanner traverses the DOM and creates objects and initiates actions based on the DOM
  * nodes it encounters.  This is the main engine driving the code generating process.
- * User: pgrandje
- * Date: 10/23/11
+ * @author Paul Grandjean
+ * @since 10/23/11
+ * @version 1.0alpha
  */
 public class PageScanner {
 

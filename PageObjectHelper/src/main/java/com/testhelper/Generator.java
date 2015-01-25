@@ -10,7 +10,8 @@ import java.io.IOException;
 /**
  * Provides an API for page object code and hints generation.
  * @author Paul Grandjean
- * @Date First created sometime in 2011 in Salt Lake City, Utah but with many revisions since that time.  :-)
+ * @since First created sometime in 2011 in Salt Lake City, Utah but with many revisions since that time.  :-)
+ * @version 1.0alpha
  */
 
 public class Generator

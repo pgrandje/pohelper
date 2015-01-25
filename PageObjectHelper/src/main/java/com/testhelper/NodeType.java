@@ -1,10 +1,11 @@
 package com.testhelper;
 
-/*
+/**
  * Simple enumerated type used to identify whether a given Node from the DOM is actually an HTML tag, or an attribute,
  * text, script, or some other DOM element.
- * User: pgrandje
- * Date: 6/10/12
+ * @author Paul Grandjean
+ * @since 6/10/12
+ * @version 1.0alpha
  */
 public class NodeType {
     // TODO:  Change NodeType to an enum and move this to which ever class uses it--probably the PageScanner

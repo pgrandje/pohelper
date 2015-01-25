@@ -13,8 +13,9 @@ import java.util.Map;
  * stored in memory with this object.  As the Generator scans the dom, it looks up each tag in this data structure and
  * if the encountered tag type is registered here, the code snippet for member-locator code, or the code snippet for
  * the related method is returned to the generation engine.
- * User: pgrandje
- * Date: 10/23/11
+ * @author Paul Grandjean
+ * @since 10/23/11
+ * @version 1.0alpha
  */
 public class TagSwitcher {
 
