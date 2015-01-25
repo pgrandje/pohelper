@@ -1,38 +1,51 @@
 package com.testhelper;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
-import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
- * Main entry point for the Page Helper command-line app
- * Default action is to generate code.
+ * Command-line processor evaluates the command-line options and their values.  It validates for correct syntax and
+ * prints an error message and the help summary when errors are made.
+ * If the command-line is valid it
+ *   - Sets the URL for the starting page.  This is then available to the calling program via accessors.
+ *   - Sets the type of generation, CODE, HINTS, or CODE_FROM_HINTS.  This is then available to the calling program via accessors.
+ *   - Sets configurations passed via command-line params into the Configurator for overriding it's default,
+ *   and file-supplied settings.
+ *
  * @author Paul Grandjean
- * @since 1/18/15
  * @version 1.0alpha
+ * @since 1/25/15
  */
 public class CommandLineProcessor {
 
-    private static Logger logger = Logger.getLogger(CommandLineProcessor.class);
 
-    private static URL url;
-    private static Generator.GenerateType generateType = Generator.GenerateType.CODE;
+    private static Logger logger = Logger.getLogger(CommandLineApp.class);
 
-    static private String errorMessage;
+    private static CommandLineProcessor singletonCommandLineProcessor;
 
-    public static void main(String[] args) throws IOException, ParserConfigurationException {
+    private URL url;
+    private Generator.GenerateType generateType = Generator.GenerateType.CODE;
 
-        // TODO: Find a better place to set the logs?
-        // Used by the loggers
-        PropertyConfigurator.configure("log4j.properties");
+    private String errorMessage;
 
-        // TODO: Configurator can get it's configuration from a config file, but then the command-line args can override some settings.
-//        getConfigurator().loadConfigFile();
+
+    /* Generator will be created by a static factory */
+    private CommandLineProcessor() {
+    }
+
+    // Generator will always be accessed using this factory-getter to ensure there is always only one instance.
+    public static CommandLineProcessor getCommmandLineProcessor() {
+        if (singletonCommandLineProcessor == null) {
+            singletonCommandLineProcessor = new CommandLineProcessor();
+        }
+        return singletonCommandLineProcessor;
+    }
+
+
+    public void processCommandLine(String[] args) {
 
         if (!validateCommandline(args)) {
             System.out.println(errorMessage);
@@ -41,21 +54,17 @@ public class CommandLineProcessor {
 
         // Assigns the type of code or hints generation, retrieves the URL, and sets any configurations passed from the command-line.
         processArgs(args);
-
-        Generator.getGenerator().generate(url, generateType);
     }
 
-
-    /*
+     /*
      * Required params: -url and a valid url value are required.
      * -dest is not required and will take a default of the current working directory if not supplied.
      *
      * @return true if no command-line errors found, otherwise false.
      */
-    public static boolean validateCommandline(String[] args) {
+    public boolean validateCommandline(String[] args) {
 
         boolean returnStatus = true;
-
 
         if (args == null) {
             printCommandLineError();
@@ -104,7 +113,6 @@ public class CommandLineProcessor {
                     returnStatus = false;
                     errorMessage = MessageLibrary.badDirectoryFilePath;
                 }
-
             }
         }
 
@@ -112,14 +120,14 @@ public class CommandLineProcessor {
     }
 
 
-    private static void checkForRequiredArgValue(String argValue) {
+    private void checkForRequiredArgValue(String argValue) {
         if (argValue.charAt(0) == '-') {
             throw new PageHelperException("Argument requires a value but value is missing.  In place of value found option '" + argValue + "' ");
         }
     }
 
 
-    public static void processArgs(String[] args) {
+    public void processArgs(String[] args) {
 
         logger = Logger.getLogger(Configurator.class);
 
@@ -196,7 +204,7 @@ public class CommandLineProcessor {
     }
 
 
-    private static Generator.GenerateType assignGenerateValue(String generateOptionValue) {
+    private Generator.GenerateType assignGenerateValue(String generateOptionValue) {
 
         if (generateOptionValue.equals("code")) {
 
@@ -218,6 +226,13 @@ public class CommandLineProcessor {
         }
     }
 
+    public URL getUrl() {
+        return url;
+    }
+
+    public Generator.GenerateType getGenerateType() {
+        return generateType;
+    }
 
     // *** private utility methods ***
 
@@ -239,7 +254,7 @@ public class CommandLineProcessor {
      * This is private to be used as an internal verification.  It is not meant to verify command-line supplied
      * filename values.
      */
-    private static String checkFileExists(String filePath) {
+    private String checkFileExists(String filePath) {
 
         if (!new File(filePath).exists())
         {
@@ -249,16 +264,15 @@ public class CommandLineProcessor {
         return filePath;
     }
 
-    private static void printCommandLineHelp() {
+    private void printCommandLineHelp() {
         System.out.println("");
     }
 
-    private static void printCommandLineError() {
+    private void printCommandLineError() {
         System.out.println("Syntax error in command-line parameters. Use -h or -help for correct command-line parameters.");
     }
 
-    private static Configurator getConfigurator() {
+    private Configurator getConfigurator() {
         return Configurator.getConfigurator();
     }
-
 }
