@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.net.URL;
 
 /**
  * Provides an API for page object code and hints generation.
@@ -101,6 +102,42 @@ public class Generator
 
         return singletonGenerator;
     }
+
+
+
+    /**
+     * A new PageDescriptor is created which describes a page to be scanned, specified via a supplied URL.
+     * The PageDescriptor is then used to name the classname for the corresponded page object to be generated.
+     * @param url for the page to be scanned for generating the PageDescriptor.
+     * @return The PageDescriptor.
+     */
+    public PageDescriptor getPageDescriptor(URL url) throws IOException, ParserConfigurationException {
+
+        PageDescriptor pageDescriptor;
+        classNameRecorder = new NameRecorder("Class Name Recorder");
+
+        PageScanner pageScanner = new PageScanner(url);
+        pageDescriptor = pageScanner.getPageName(classNameRecorder);
+
+        return pageDescriptor;
+    }
+
+
+    /**
+     * Generates a list of tag descriptors from all html tags in the requested page that are 'tags of interest' for
+     * potential representation within a generated page object.
+     * @param url for the page to be scanned for generating the tag descriptors.
+     * @return The list of tag descriptors.
+     */
+    public TagDescriptorList getTagDescriptors(URL url) throws IOException, ParserConfigurationException {
+
+        PageScanner pageScanner = new PageScanner(url);
+        // Scan the DOM to get a list of tags and their attributes.
+        TagDescriptorList tagDescriptorList = pageScanner.scan();
+
+        return tagDescriptorList;
+    }
+
 
 
 
