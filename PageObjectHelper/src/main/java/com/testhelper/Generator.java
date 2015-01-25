@@ -9,8 +9,8 @@ import java.io.IOException;
 
 /**
  * Provides an API for page object code and hints generation.
- * @author:  Paul Grandjean
- * @Date:  First created sometime in 2011 in Salt Lake City, Utah but with many revisions since that time.  :-)
+ * @author Paul Grandjean
+ * @Date First created sometime in 2011 in Salt Lake City, Utah but with many revisions since that time.  :-)
  */
 
 public class Generator
@@ -41,8 +41,9 @@ public class Generator
     /**
      * Generates either the code or the analysis file.
      */
-    // TODO:  If I used a strategy pattern my passing in a configuration-strategy, could I avoid these if statements?
     public Generator generate(GenerateMessage message) throws IOException, ParserConfigurationException {
+        // TODO:  If I used a strategy pattern my passing in a configuration-strategy, could I avoid these if statements?
+        // TODO:  Or, should I break this up into multiple methods, one for each type of code/hints generation?
 
         // TODO: put in error handling to ensure the Configuration is set before running the Generator.
 
@@ -102,9 +103,6 @@ public class Generator
 
 
 
-
-
-
     /* Possible Design Pattern: Both writing hints and writing code use a TagDescriptorList and a outputbucket.  But they
        write very different things, and use different buckets.  Yet they both create a type of outputbucket.
        What type of pattern can be used here?
@@ -113,7 +111,7 @@ public class Generator
         - TODO: Each bucket must override a writeBucket content method?  Then pass the Code outputbucket in as a specific type of an
             abstract output bucket.This is easiest! ****
     */
-    private static void writeCodeFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
+    private void writeCodeFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
 
         verifyTagDescriptorList(tagDescriptorList);
 
@@ -140,7 +138,7 @@ public class Generator
     }
 
 
-    private static void writeHintsFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
+    private void writeHintsFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
 
         verifyTagDescriptorList(tagDescriptorList);
 
@@ -158,13 +156,12 @@ public class Generator
         }
 
         // Dump the hints file.
-        // TODO: default file path can be stored in the outputbucket and Configurator used to change it.  Don't need to pass the filename from calling method.
         hintsBucket.dumpToFile();
 
     }
 
 
-    private static void verifyTagDescriptorList(TagDescriptorList tagDescriptorList) {
+    private void verifyTagDescriptorList(TagDescriptorList tagDescriptorList) {
 
         if (null == tagDescriptorList) {
             throw new PageHelperException("Got null Tag Descriptor List--cannot generate code or hints.");

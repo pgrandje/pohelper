@@ -63,12 +63,12 @@ public class CodeLoader {
 
 
             // TODO: CodeLoader's file read loop would be easier to read if I had inner-loops processing white-space.
-
             while (null != line){
 
                 // For blank lines, just drop out of the if, go to the bottom, and advance the line.
+                // TODO:  Rewrite this if-statement to remove the no-op for the line.isEmpty() case, to remove the WARNING it generates.
                 if (line.isEmpty()) {
-                    continue;
+                    ;
                 }
                 // Found a new tag, so starting a new tag-codeblock pair.
                 // We'll test the delim using contains() to account for trailing whitespace.
