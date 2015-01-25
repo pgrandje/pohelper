@@ -37,7 +37,6 @@ public class TagDescriptor {
 
     private HashMap<String, String> attributePairs;
     private String textContent;
-    // TODO: Refactor to two different TagDescriptor types--The hints generation use the locatorString, but the code generation doesn't need it, it uses member and method code.
     private Locator locator;
 
     private StringBuffer memberCode;
@@ -160,7 +159,7 @@ public class TagDescriptor {
     }
 
 
-    // TODO: Only the hints file needs to get the locator string--another reason to have two diff types of TagDescriptors. -- Or, code this to a standard interface.
+    // TODO: Only the hints file needs to get the locator string--a reason to have two diff types of TagDescriptors. -- Or, code this to a standard interface.
     public String getLocatorString() {
         return locator.getTypeStringName() + " = " + locator.getValue();
     }

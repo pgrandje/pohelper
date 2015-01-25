@@ -21,8 +21,6 @@ public class CodeLoader {
     private String filePath;
     private BufferedReader configFile;
 
-
-    // TODO: Should I consolidate the constructor and the loadConfig() into one method?";
     CodeLoader(TagSwitcher tagSwitcher) throws IOException {
 
         this.configurator = Configurator.getConfigurator();
@@ -45,10 +43,11 @@ public class CodeLoader {
             throw fileNotFoundException;
         }
 
+        loadConfig();
     }
 
 
-    void loadConfig() throws IOException {
+    private void loadConfig() throws IOException {
 
       String currentTag = null;
       String currentMemberCode;
@@ -60,25 +59,24 @@ public class CodeLoader {
 
             String line = configFile.readLine();
 
-
-            // TODO: CodeLoader's file read loop would be easier to read if I had inner-loops processing white-space.
             while (null != line){
 
-                // For blank lines, just drop out of the if, go to the bottom, and advance the line.
-                // TODO:  Rewrite this if-statement to remove the no-op for the line.isEmpty() case, to remove the WARNING it generates.
-                if (line.isEmpty()) {
-                    ;
+                // For blank lines, just skip them.
+                while(line.isEmpty()) {
+                    // Get the next line from the config file.
+                    line = configFile.readLine();
                 }
+
                 // Found a new tag, so starting a new tag-codeblock pair.
                 // We'll test the delim using contains() to account for trailing whitespace.
-                else if (line.contains(fileDelimiters.tagDelimeter)) {
+                if (line.contains(fileDelimiters.tagDelimeter)) {
 
                     logger.debug("Found a new tag");
 
                     // Get the tag
                     line = configFile.readLine();
                     logger.debug("Reading tag " + line);
-                    // TODO: in CodeLoader--add a check to verify this next line is a tag.
+                    // TODO: in CodeLoader--add a validation method that verifies the tags in the config file are valid tags.
 
                     // This expects the file's string to be a tag, if I need to generalize beyond tags this would be
                     // where to start making the changes for reading the new info, along with redesigning the TagSwitcher to go beyond tags.

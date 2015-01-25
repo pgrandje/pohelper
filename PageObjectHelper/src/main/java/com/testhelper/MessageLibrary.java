@@ -25,7 +25,6 @@ public class MessageLibrary {
 
     public static final String badDirectoryFilePath = "Supplied directory path for -dest does not exist";
 
-    // TODO: When I have a help-processor, move commandLineHelp string out of MessageLibrary
     public String commandLineHelp = "-generate  (can be set to analyze for the hints file.)\n" +
             "-codeShell or -codeShellTemplate -- for setting the filepath of the code template file.  This is the file that defines\n" +
             " the other shell, such as the class name, for the page object.\n" +

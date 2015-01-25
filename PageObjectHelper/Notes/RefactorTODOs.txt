@@ -5,9 +5,7 @@ Refactor TODOS:
 
 - Combine the createLocatorMaker() factory and makeLocator() into one method.
 
-- TODO:  Change NodeType to an enum and move this to which ever class uses it--probably the PageScanner
-
-- TODO: Add javadoc to Locator and LocatorFactory
+- Use NodeType in the PageScanner
 
 - Reorganize the Notes
 

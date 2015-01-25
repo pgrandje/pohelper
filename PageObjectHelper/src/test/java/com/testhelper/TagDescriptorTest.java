@@ -10,8 +10,6 @@ import junit.framework.TestCase;
 
  */
 
-
-// TODO: This is just a placeholder, I have not yet written any unit tests.
 public class TagDescriptorTest extends TestCase {
     public void testGetCssLocator() throws Exception {
 

@@ -54,8 +54,8 @@ public class Configurator {
     // Code shell template hooks and parameters.
     private String codeShellCodeBlockIndicator = "<CodeBlockGoesHere>";
 
-    // TODO:  Investigate if this is being used yet.  And if so, is it used correctly?
     // Indicates if informative comments are written to the generated code.
+    // NOTE:  this is not used at this time.
     private boolean writeComments = false;
 
 

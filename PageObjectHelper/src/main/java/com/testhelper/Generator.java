@@ -100,7 +100,6 @@ public class Generator
         */
         else if (generateType == GenerateType.CODE_FROM_HINTS) {
 
-            // TODO:  Hints scanner will also need to be passed the URL.
             pageDescriptor = HintsScanner.getScanner().setPageName(classNameRecorder);
 
             TagDescriptorList tagDescriptorList = HintsScanner.getScanner().scan();
@@ -157,8 +156,8 @@ public class Generator
        What type of pattern can be used here?
         - Some sort of Adapter that translates TagDescriptors to the correct bucket?
         - Some sort of Builder that returns a specific outputbucket?
-        - TODO: Each bucket must override a writeBucket content method?  Then pass the Code outputbucket in as a specific type of an
-            abstract output bucket.This is easiest! ****
+        - Each bucket could override a writeBucket content method. Then pass the Code outputbucket in as a specific type of an
+            abstract output bucket.
     */
     public void writeCodeFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
 

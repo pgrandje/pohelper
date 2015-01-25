@@ -36,10 +36,7 @@ public class TagSwitcher {
         dumpTableFlag = true;
 
         configurator = Configurator.getConfigurator();
-
-        // TODO: Is there a pattern that should be used here with the CodeLoader to assign the code snippets to the Tag Switcher?
         codeLoader = new CodeLoader(this);
-        codeLoader.loadConfig();
     }
 
 
@@ -57,7 +54,7 @@ public class TagSwitcher {
         // trim white space for a little extra protection.
         String tagTrimmed = tag.trim();
 
-        // TODO: Do I still need this? --> First time lookup table is used, dump the table to the log.
+        // First time lookup table is used, dump the table to the log.
         if (dumpTableFlag == true) {
 
             logger.debug("*** Dumping Tag Lookup Table ***");

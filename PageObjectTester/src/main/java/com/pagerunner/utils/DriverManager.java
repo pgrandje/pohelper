@@ -30,8 +30,7 @@ public class DriverManager {
     		
     		logger.info("Setting WebDriver to FIREFOX.");
     		
-    		// We're using an explicit Firefox profile so we can use FireBug when debugging tests.
-    		// TODO:  Make the Firefox profile a command-line param.
+    		// We could use an explicit Firefox profile so we can use FireBug when debugging tests.
 //    		ProfilesIni allProfiles = new ProfilesIni();
 //    		FirefoxProfile profile = allProfiles.getProfile("SeleniumFFoxProfile");
     		// We're not using preferences, but I wanted the example in here just in case we need it later.

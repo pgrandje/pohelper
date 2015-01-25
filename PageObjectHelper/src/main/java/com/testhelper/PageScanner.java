@@ -45,7 +45,6 @@ public class PageScanner {
         this.url = url;
 
         // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
-        // TODO:  If the Configurator is truly available to all aspects of the app then I should not need to pass it into the TagSwitcher() constructor.
         this.tagSwitcher = new TagSwitcher();
 
         this.tagDescriptorList = new TagDescriptorList();
@@ -72,14 +71,10 @@ public class PageScanner {
         try {
             nodes = cleaner.clean(url);
         } catch (UnknownHostException e) {
-            // TODO: Research a pattern for communicating error messages up to the  UI layer.
-            System.out.println("Host or page not found.  Using url: " + url.toString());
-            System.exit(0);
+            throw new PageHelperException("Host or page not found.  Using url: " + url.toString() + ". Exception message: " + e.getMessage());
         }
         catch (ConnectException e) {
-                // TODO: Research a pattern for communicating error messages up to the  UI layer.
-                System.out.println("FATAL ERROR: Host or page not found.  Using url: " + url.toString());
-                System.exit(0);
+                throw new PageHelperException("Connection problem using url: " + url.toString() + ". Exception message: " + e.getMessage());
         }
         // Get the page source into a Document object.
         document = new DomSerializer(props, true).createDOM(nodes);

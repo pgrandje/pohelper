@@ -22,8 +22,12 @@ public class Configurator {
 	static Configurator configurator = null;
 	
 	private Logger logger;
-	
+
+    // Browser identifiers and command-line/env-var strings
 	public enum BROWSER {FIREFOX, CHROME};
+    private final String FF = "FF";
+    private final String FFOX = "FFox";
+    private final String FIREFOX = "firefox";
 
     private String url;
 	private String browserName;
@@ -53,8 +57,7 @@ public class Configurator {
 		Assert.assertNotNull(browserName, "Setup error -- Browser Name is null.");
 		
 		// Set the Browser.
-        // TODO: Set these browser strings to string constant member.
-		if(browserName.equalsIgnoreCase("FF") || browserName.equalsIgnoreCase("Firefox") || browserName.equalsIgnoreCase("FFox"))
+		if(browserName.equalsIgnoreCase(FF) || browserName.equalsIgnoreCase(FFOX) || browserName.equalsIgnoreCase(FIREFOX))
     	{
     		browser = BROWSER.FIREFOX;
     	}

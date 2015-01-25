@@ -9,7 +9,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 /**
- * TODO:  Evaluate whether I want to add the Locator Factory to the published API.
  * Contructs Locator objects.  This isolates the algorithms for creaing Locators to one area and provides an API
  * for constructing Locators.
  *
@@ -73,7 +72,6 @@ public class LocatorFactory {
                 Attr attr = ((Attr)attributes.getNamedItem("id"));
                 logger.debug("Using Attribute: " + attr.getName() + " = " + attr.getValue());
                 locator = new Locator(Locator.LocatorType.ID, attr.getValue());
-                // TODO: setup up a status variable to put the returns in one place.
                 returnStatus = true;
             }
             // If no id, but there's a name attribute, use that.

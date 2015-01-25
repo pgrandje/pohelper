@@ -16,12 +16,10 @@ public class CommandLineApp {
 
     public static void main(String[] args) throws IOException, ParserConfigurationException {
 
-        // TODO: Find a better place to set the logs?
-        // Used by the loggers
         PropertyConfigurator.configure("log4j.properties");
 
-        // TODO: Configurator can get it's configuration from a config file, but then the command-line args can override some settings.
-//        getConfigurator().loadConfigFile();
+        // Configurator can get it's configuration from a config file, before the command-line args override settings.
+//      getConfigurator().loadConfigFile();
 
         getCommandLineProcessor().processArgs(args);
 
