@@ -23,7 +23,7 @@ public class CommandLineApp {
         // TODO: Configurator can get it's configuration from a config file, but then the command-line args can override some settings.
 //        getConfigurator().loadConfigFile();
 
-        getCommandLineProcessor().processArgs(args);
+        getCommandLineProcessor().processCommandLine(args);
 
         Generator.getGenerator().generate(getCommandLineProcessor().getUrl(),
                                           getCommandLineProcessor().getGenerateType()
