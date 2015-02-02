@@ -202,6 +202,7 @@ public class CommandLineProcessor {
             //  readLine() method
             try {
                 command = br.readLine();
+                // TODO:  Should I bring the TagDescriptorList here, or should Generate support the retrieval and iteration?
             } catch (IOException ioe) {
                 System.out.println("IO error trying to read your command!");
                 System.exit(1);
