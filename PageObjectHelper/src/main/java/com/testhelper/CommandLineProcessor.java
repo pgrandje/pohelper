@@ -90,6 +90,8 @@ public class CommandLineProcessor {
             printCommandLineError(CommandLineMessages.COMMAND_LINE_OPTIONS_REQUIRED);
         }
 
+        // TODO: I should probably trim any leading whitespace, it didn't process correctly when I passed " -generate".
+
         // Command-line params will override the defaults and the config file.
         for (int i=0; i<args.length; i++) {
 

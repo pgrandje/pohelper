@@ -501,7 +501,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement uiElement26_div;
 
    @FindBy(css = "body > div:nth-child(4)")
-   private WebElement Game_timeLive_blog_Super_Bowl_XL_div;
+   private WebElement Pats_rally_past_SeahawksTom_Brad_div;
 
    @FindBy(css = "body > div:nth-child(4) > div")
    private WebElement uiElement27_div;
@@ -522,34 +522,34 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement uiElement31_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2)")
-   private WebElement Game_timeLive_blog_Super_Bowl_XL2_div;
+   private WebElement Pats_rally_past_SeahawksTom_Brad2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div")
-   private WebElement Game_timeLive_blog_Super_Bowl_XL3_div;
+   private WebElement Pats_rally_past_SeahawksTom_Brad3_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div")
-   private WebElement Game_timeLive_blog_Super_Bowl_XL4_div;
+   private WebElement Pats_rally_past_SeahawksTom_Brad4_div;
 
    @FindBy(id = "cn-jumbotron-container_42C85A39-4143-72CC-EF1A-DA2B7CCAC235")
-   private WebElement Game_timeLive_blog_Super_Bowl_XL5_div;
+   private WebElement Pats_rally_past_SeahawksTom_Brad5_div;
 
    @FindBy(id = "cn-jumbotron-details-container_42C85A39-4143-72CC-EF1A-DA2B7CCAC235")
-   private WebElement Game_timeLive_blog_Super_Bowl_XL6_div;
+   private WebElement Pats_rally_past_SeahawksTom_Brad6_div;
 
    @FindBy(id = "container_42C85A39-4143-72CC-EF1A-DA2B7CCAC235-jumbotron-card-0")
-   private WebElement Game_timeLive_blog_Super_Bowl_XL7_div;
+   private WebElement Pats_rally_past_SeahawksTom_Brad7_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div > article > a")
    private WebElement uiElement32_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div > article > h2")
-   private WebElement Game_time_h2;
+   private WebElement Pats_rally_past_Seahawks_h2;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div > article > h2 > a")
-   private WebElement Game_time2_a;
+   private WebElement Pats_rally_past_Seahawks2_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div > article > div")
-   private WebElement Live_blog_Super_Bowl_XLIXIt_all__div;
+   private WebElement Tom_Brady_throws_4_TDs_named_MVP_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div > article > div > div")
    private WebElement uiElement33_div;
@@ -564,24 +564,30 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement uiElement36_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div > article > div > div:nth-child(2)")
-   private WebElement Live_blog_Super_Bowl_XLIXIt_all_2_div;
+   private WebElement Tom_Brady_throws_4_TDs_named_MVP2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div > article > div > div:nth-child(2) > h3")
-   private WebElement Live_blog_Super_Bowl_XLIX_h3;
+   private WebElement Tom_Brady_throws_4_TDs_named_MVP3_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div > article > div > div:nth-child(2) > h3 > a")
-   private WebElement Live_blog_Super_Bowl_XLIX2_a;
+   private WebElement Tom_Brady_throws_4_TDs_named_MVP4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div > article > div > div:nth-child(2) > div")
-   private WebElement It_all_comes_down_to_this_One_ga_div;
+   private WebElement By_Ollie_Williams_for_CNN_div;
+
+   @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div > article > div > div:nth-child(2) > div:nth-child(3)")
+   private WebElement Tom_Brady_and_the_New_England_Pa_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div > article > div > div:nth-child(3)")
+   private WebElement BeganWithDigit_3_min_div;
+
+   @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div > article > div > div:nth-child(4)")
    private WebElement uiElement37_div;
 
-   @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div > article > div > div:nth-child(3) > div")
+   @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div > article > div > div:nth-child(4) > div")
    private WebElement uiElement38_div;
 
-   @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div > article > div > div:nth-child(3) > div > div")
+   @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div > article > div > div:nth-child(4) > div > div")
    private WebElement uiElement39_div;
 
    @FindBy(id = "container_42C85A39-4143-72CC-EF1A-DA2B7CCAC235-jumbotron-card-1")
@@ -624,7 +630,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement See_some_of_the_best_sights_from_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(2) > article > div > div:nth-child(3)")
-   private WebElement BeganWithDigit_21_min_div;
+   private WebElement BeganWithDigit_10_min_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(2) > article > div > div:nth-child(4)")
    private WebElement uiElement45_div;
@@ -636,19 +642,19 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement uiElement47_div;
 
    @FindBy(id = "container_42C85A39-4143-72CC-EF1A-DA2B7CCAC235-jumbotron-card-2")
-   private WebElement Free_ride_to_Super_BowlWrongfull_div;
+   private WebElement No_it_wasn_t_an_acid_tripKaty_Pe_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(3) > article > a")
    private WebElement uiElement48_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(3) > article > h2")
-   private WebElement Free_ride_to_Super_Bowl_h2;
+   private WebElement No_it_wasn_t_an_acid_trip_h2;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(3) > article > h2 > a")
-   private WebElement Free_ride_to_Super_Bowl2_a;
+   private WebElement No_it_wasn_t_an_acid_trip2_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(3) > article > div")
-   private WebElement Wrongfully_imprisoned_he_got_all_div;
+   private WebElement Katy_Perry_s_halftime_show_What__div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(3) > article > div > div")
    private WebElement uiElement49_div;
@@ -663,19 +669,22 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement uiElement52_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(3) > article > div > div:nth-child(2)")
-   private WebElement Wrongfully_imprisoned_he_got_all2_div;
+   private WebElement Katy_Perry_s_halftime_show_What_2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(3) > article > div > div:nth-child(2) > h3")
-   private WebElement Wrongfully_imprisoned_he_got_all3_h3;
+   private WebElement Katy_Perry_s_halftime_show_What_3_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(3) > article > div > div:nth-child(2) > h3 > a")
-   private WebElement Wrongfully_imprisoned_he_got_all4_a;
+   private WebElement Katy_Perry_s_halftime_show_What_4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(3) > article > div > div:nth-child(2) > div")
-   private WebElement Ryan_Ferguson_spent_10_years_in__div;
+   private WebElement By_Emanuella_Grinberg_CNN_div;
+
+   @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(3) > article > div > div:nth-child(2) > div:nth-child(3)")
+   private WebElement Katy_Perry_made_teenage_dreams_c_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(3) > article > div > div:nth-child(3)")
-   private WebElement BeganWithDigit_4_hr_div;
+   private WebElement BeganWithDigit_21_min_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(3) > article > div > div:nth-child(4)")
    private WebElement uiElement53_div;
@@ -687,19 +696,19 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement uiElement55_div;
 
    @FindBy(id = "container_42C85A39-4143-72CC-EF1A-DA2B7CCAC235-jumbotron-card-3")
-   private WebElement Super_bling49_years_of_Super_Bow_div;
+   private WebElement Kids_puppies_Pete_Rose_Super_Bow_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(4) > article > a")
    private WebElement uiElement56_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(4) > article > h2")
-   private WebElement Super_bling_h2;
+   private WebElement Kids_puppies_Pete_Rose__h2;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(4) > article > h2 > a")
-   private WebElement Super_bling2_a;
+   private WebElement Kids_puppies_Pete_Rose_2_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(4) > article > div")
-   private WebElement BeganWithDigit_49_years_of_Super_Bowl_rings_The_div;
+   private WebElement Super_Bowl_ads_The_good_the_bad__div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(4) > article > div > div")
    private WebElement uiElement57_div;
@@ -714,16 +723,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement uiElement60_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(4) > article > div > div:nth-child(2)")
-   private WebElement BeganWithDigit_49_years_of_Super_Bowl_rings_The2_div;
+   private WebElement Super_Bowl_ads_The_good_the_bad_2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(4) > article > div > div:nth-child(2) > h3")
-   private WebElement BeganWithDigit_49_years_of_Super_Bowl_rings_h3;
+   private WebElement Super_Bowl_ads_The_good_the_bad_3_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(4) > article > div > div:nth-child(2) > h3 > a")
-   private WebElement BeganWithDigit_49_years_of_Super_Bowl_rings2_a;
+   private WebElement Super_Bowl_ads_The_good_the_bad_4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(4) > article > div > div:nth-child(2) > div")
-   private WebElement The_winning_Super_Bowl_team_wins_div;
+   private WebElement Sure_there_s_a_game_but_some_fol_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(4) > article > div > div:nth-child(3)")
    private WebElement uiElement61_div;
@@ -825,15 +834,12 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Novak_Djokovic_s_dominance_at_th_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(6) > article > div > div:nth-child(3)")
-   private WebElement BeganWithDigit_5_hr_div;
-
-   @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(6) > article > div > div:nth-child(4)")
    private WebElement uiElement77_div;
 
-   @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(6) > article > div > div:nth-child(4) > div")
+   @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(6) > article > div > div:nth-child(3) > div")
    private WebElement uiElement78_div;
 
-   @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(6) > article > div > div:nth-child(4) > div > div")
+   @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div > div > div > div:nth-child(6) > article > div > div:nth-child(3) > div > div")
    private WebElement uiElement79_div;
 
    @FindBy(id = "container_42C85A39-4143-72CC-EF1A-DA2B7CCAC235-jumbotron-card-6")
@@ -954,58 +960,55 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement cn_jumbotron_small_carousel_cont_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2)")
-   private WebElement Top_Stories2_hrWhitney_Houston_s_div;
+   private WebElement Top_StoriesWhitney_Houston_s_dau_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul")
-   private WebElement Top_Stories2_hrWhitney_Houston_s2_ulListBlock;
+   private WebElement Top_StoriesWhitney_Houston_s_dau2_ulListBlock;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > h2")
    private WebElement Top_Stories_h2;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li")
-   private WebElement BeganWithDigit_2_hrWhitney_Houston_s_daughter_iLiListItem;
+   private WebElement Whitney_Houston_s_daughter_in_meLiListItem;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li > article > div")
-   private WebElement BeganWithDigit_2_hrWhitney_Houston_s_daughter_i2_div;
+   private WebElement Whitney_Houston_s_daughter_in_me2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li > article > div > div")
-   private WebElement BeganWithDigit_2_hrWhitney_Houston_s_daughter_i3_div;
-
-   @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li > article > div > div > div")
-   private WebElement BeganWithDigit_2_hr_div;
+   private WebElement Whitney_Houston_s_daughter_in_me3_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li > article > div > div > h3")
-   private WebElement Whitney_Houston_s_daughter_in_me_h3;
+   private WebElement Whitney_Houston_s_daughter_in_me4_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li > article > div > div > h3 > a")
-   private WebElement Whitney_Houston_s_daughter_in_me2_a;
+   private WebElement Whitney_Houston_s_daughter_in_me5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3)")
-   private WebElement Huckabee_Homosexuality_like_drinLiListItem;
+   private WebElement Huckabee_Being_gay_like_drinkingLiListItem;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div")
-   private WebElement Huckabee_Homosexuality_like_drin2_div;
+   private WebElement Huckabee_Being_gay_like_drinking2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div > div")
-   private WebElement Huckabee_Homosexuality_like_drin3_div;
+   private WebElement Huckabee_Being_gay_like_drinking3_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div > div > h3")
-   private WebElement Huckabee_Homosexuality_like_drin4_h3;
+   private WebElement Huckabee_Being_gay_like_drinking4_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div > div > h3 > a")
-   private WebElement Huckabee_Homosexuality_like_drin5_a;
+   private WebElement Huckabee_Being_gay_like_drinking5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(4)")
-   private WebElement BeganWithDigit_1_hrAnother_apparent_ISIS_beheadLiListItem;
+   private WebElement BeganWithDigit_23_minAnother_apparent_ISIS_beheLiListItem;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(4) > article > div")
-   private WebElement BeganWithDigit_1_hrAnother_apparent_ISIS_behead2_div;
+   private WebElement BeganWithDigit_23_minAnother_apparent_ISIS_behe2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(4) > article > div > div")
-   private WebElement BeganWithDigit_1_hrAnother_apparent_ISIS_behead3_div;
+   private WebElement BeganWithDigit_23_minAnother_apparent_ISIS_behe3_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(4) > article > div > div > div")
-   private WebElement BeganWithDigit_1_hr_div;
+   private WebElement BeganWithDigit_23_min_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(4) > article > div > div > h3")
    private WebElement Another_apparent_ISIS_beheading_h3;
@@ -1014,37 +1017,34 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Another_apparent_ISIS_beheading2_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(5)")
-   private WebElement BeganWithDigit_2_hrWH_proposes_foreign_profits_LiListItem;
+   private WebElement WH_proposes_foreign_profits_taxLiListItem;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div")
-   private WebElement BeganWithDigit_2_hrWH_proposes_foreign_profits_2_div;
+   private WebElement WH_proposes_foreign_profits_tax2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div")
-   private WebElement BeganWithDigit_2_hrWH_proposes_foreign_profits_3_div;
-
-   @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div > div")
-   private WebElement BeganWithDigit_2_hr2_div;
+   private WebElement WH_proposes_foreign_profits_tax3_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div > h3")
-   private WebElement WH_proposes_foreign_profits_tax_h3;
+   private WebElement WH_proposes_foreign_profits_tax4_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div > h3 > a")
-   private WebElement WH_proposes_foreign_profits_tax2_a;
+   private WebElement WH_proposes_foreign_profits_tax5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(6)")
-   private WebElement BeganWithUnderscore_SNL_talks_Seahawks_Deflategate_LiListItem;
+   private WebElement BeganWithUnderscore_SNL_parodies_SeahawksLiListItem;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div")
-   private WebElement BeganWithUnderscore_SNL_talks_Seahawks_Deflategate_2_div;
+   private WebElement BeganWithUnderscore_SNL_parodies_Seahawks2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div")
-   private WebElement BeganWithUnderscore_SNL_talks_Seahawks_Deflategate_3_div;
+   private WebElement BeganWithUnderscore_SNL_parodies_Seahawks3_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div > h3")
-   private WebElement BeganWithUnderscore_SNL_talks_Seahawks_Deflategate_4_h3;
+   private WebElement BeganWithUnderscore_SNL_parodies_Seahawks4_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div > h3 > a")
-   private WebElement BeganWithUnderscore_SNL_talks_Seahawks_Deflategate_5_a;
+   private WebElement BeganWithUnderscore_SNL_parodies_Seahawks5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(7)")
    private WebElement BeganWithDigit_2_hrWinter_storm_cancels_2K_fligLiListItem;
@@ -1056,7 +1056,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement BeganWithDigit_2_hrWinter_storm_cancels_2K_flig3_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(7) > article > div > div > div")
-   private WebElement BeganWithDigit_2_hr3_div;
+   private WebElement BeganWithDigit_2_hr_div;
 
    @FindBy(css = "body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(7) > article > div > div > h3")
    private WebElement Winter_storm_cancels_2K_flights_h3;
@@ -1176,22 +1176,19 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Bill_Maher_slams_medieval_Saudi_5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(5)")
-   private WebElement BeganWithDigit_4_hrWill_2015_Puppy_Bowl_have_doLiListItem;
+   private WebElement Will_2015_Puppy_Bowl_have_doubleLiListItem;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(5) > article > div")
-   private WebElement BeganWithDigit_4_hrWill_2015_Puppy_Bowl_have_do2_div;
+   private WebElement Will_2015_Puppy_Bowl_have_double2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(5) > article > div > div")
-   private WebElement BeganWithDigit_4_hrWill_2015_Puppy_Bowl_have_do3_div;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(5) > article > div > div > div")
-   private WebElement BeganWithDigit_4_hr2_div;
+   private WebElement Will_2015_Puppy_Bowl_have_double3_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(5) > article > div > div > h3")
-   private WebElement Will_2015_Puppy_Bowl_have_double_h3;
+   private WebElement Will_2015_Puppy_Bowl_have_double4_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(5) > article > div > div > h3 > a")
-   private WebElement Will_2015_Puppy_Bowl_have_double2_a;
+   private WebElement Will_2015_Puppy_Bowl_have_double5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(6)")
    private WebElement What_to_watch_besides_the_Super_LiListItem;
@@ -1224,16 +1221,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement What_s_new_on_Netflix_and_Amazon5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(8)")
-   private WebElement BeganWithDigit_1_hrEx_Power_Ranger_held_in_stabLiListItem;
+   private WebElement BeganWithDigit_4_hrEx_Power_Ranger_held_in_stabLiListItem;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(8) > article > div")
-   private WebElement BeganWithDigit_1_hrEx_Power_Ranger_held_in_stab2_div;
+   private WebElement BeganWithDigit_4_hrEx_Power_Ranger_held_in_stab2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(8) > article > div > div")
-   private WebElement BeganWithDigit_1_hrEx_Power_Ranger_held_in_stab3_div;
+   private WebElement BeganWithDigit_4_hrEx_Power_Ranger_held_in_stab3_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(8) > article > div > div > div")
-   private WebElement BeganWithDigit_1_hr2_div;
+   private WebElement BeganWithDigit_4_hr_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(8) > article > div > div > h3")
    private WebElement Ex_Power_Ranger_held_in_stabbing_h3;
@@ -1257,16 +1254,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Baby_for_Timberlake_Biel5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(10)")
-   private WebElement BeganWithDigit_57_minArtists_sculpt_masterpieceLiListItem;
+   private WebElement BeganWithDigit_4_hrArtists_sculpt_masterpieces_LiListItem;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(10) > article > div")
-   private WebElement BeganWithDigit_57_minArtists_sculpt_masterpiece2_div;
+   private WebElement BeganWithDigit_4_hrArtists_sculpt_masterpieces_2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(10) > article > div > div")
-   private WebElement BeganWithDigit_57_minArtists_sculpt_masterpiece3_div;
+   private WebElement BeganWithDigit_4_hrArtists_sculpt_masterpieces_3_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(10) > article > div > div > div")
-   private WebElement BeganWithDigit_57_min_div;
+   private WebElement BeganWithDigit_4_hr2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(10) > article > div > div > h3")
    private WebElement Artists_sculpt_masterpieces_in_s_h3;
@@ -1275,22 +1272,19 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Artists_sculpt_masterpieces_in_s2_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(11)")
-   private WebElement BeganWithDigit_2_hrObama_on_Hillary_or_Joe_I_loLiListItem;
+   private WebElement Obama_on_Hillary_or_Joe_I_love_tLiListItem;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(11) > article > div")
-   private WebElement BeganWithDigit_2_hrObama_on_Hillary_or_Joe_I_lo2_div;
+   private WebElement Obama_on_Hillary_or_Joe_I_love_t2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(11) > article > div > div")
-   private WebElement BeganWithDigit_2_hrObama_on_Hillary_or_Joe_I_lo3_div;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(11) > article > div > div > div")
-   private WebElement BeganWithDigit_2_hr4_div;
+   private WebElement Obama_on_Hillary_or_Joe_I_love_t3_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(11) > article > div > div > h3")
-   private WebElement Obama_on_Hillary_or_Joe_I_love_t_h3;
+   private WebElement Obama_on_Hillary_or_Joe_I_love_t4_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(11) > article > div > div > h3 > a")
-   private WebElement Obama_on_Hillary_or_Joe_I_love_t2_a;
+   private WebElement Obama_on_Hillary_or_Joe_I_love_t5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(12)")
    private WebElement N_Y_Giants_co_owner_dies_after_fLiListItem;
@@ -1323,22 +1317,22 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Painting_bought_for_5_000_auctio5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(14)")
-   private WebElement BeganWithDigit_2_hrEgypt_releases_one_Al_JazeerLiListItem;
+   private WebElement BeganWithDigit_2_hrJournalist_freed_from_Egypt_LiListItem;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(14) > article > div")
-   private WebElement BeganWithDigit_2_hrEgypt_releases_one_Al_Jazeer2_div;
+   private WebElement BeganWithDigit_2_hrJournalist_freed_from_Egypt_2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(14) > article > div > div")
-   private WebElement BeganWithDigit_2_hrEgypt_releases_one_Al_Jazeer3_div;
+   private WebElement BeganWithDigit_2_hrJournalist_freed_from_Egypt_3_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(14) > article > div > div > div")
-   private WebElement BeganWithDigit_2_hr5_div;
+   private WebElement BeganWithDigit_2_hr2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(14) > article > div > div > h3")
-   private WebElement Egypt_releases_one_Al_Jazeera_jo_h3;
+   private WebElement Journalist_freed_from_Egypt_is_s_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(14) > article > div > div > h3 > a")
-   private WebElement Egypt_releases_one_Al_Jazeera_jo2_a;
+   private WebElement Journalist_freed_from_Egypt_is_s2_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(15)")
    private WebElement Catholic_draft_touches_on_plastiLiListItem;
@@ -1553,12 +1547,6 @@ public class Breaking_News_U_S_World_Weather_   {
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li > article > div:nth-child(2) > h2 > a")
    private WebElement Watch_Live_TV4_a;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li > article > div:nth-child(2) > div")
-   private WebElement uiElement123_div;
-
-   @FindBy(id = "coverageContainer_2018143E-B6A8-3550-BAC3-C41EB0D330FA_0")
-   private WebElement coverageContainer_2018143E_B6A8__div;
-
    @FindBy(id = "muted-player")
    private WebElement muted_player_div;
 
@@ -1569,16 +1557,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement NASA_s_New_Horizons_spacecraft_n2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(2) > article > div > div")
-   private WebElement uiElement124_div;
+   private WebElement uiElement123_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(2) > article > div > div > a")
-   private WebElement uiElement125_a;
+   private WebElement uiElement124_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(2) > article > div > div > div")
-   private WebElement uiElement126_div;
+   private WebElement uiElement125_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(2) > article > div > div > div > a")
-   private WebElement uiElement127_a;
+   private WebElement uiElement126_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(2) > article > div > div:nth-child(2)")
    private WebElement NASA_s_New_Horizons_spacecraft_n3_div;
@@ -1596,16 +1584,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement BeganWithDigit_4_guys_4_deer_1_Mini_Cooper_2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(3) > article > div > div")
-   private WebElement uiElement128_div;
+   private WebElement uiElement127_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(3) > article > div > div > a")
-   private WebElement uiElement129_a;
+   private WebElement uiElement128_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(3) > article > div > div > div")
-   private WebElement uiElement130_div;
+   private WebElement uiElement129_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(3) > article > div > div > div > a")
-   private WebElement uiElement131_a;
+   private WebElement uiElement130_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(3) > article > div > div:nth-child(2)")
    private WebElement BeganWithDigit_4_guys_4_deer_1_Mini_Cooper_3_div;
@@ -1623,16 +1611,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Lonely_on_Valentine_s_Day_Visit_2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(4) > article > div > div")
-   private WebElement uiElement132_div;
+   private WebElement uiElement131_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(4) > article > div > div > a")
-   private WebElement uiElement133_a;
+   private WebElement uiElement132_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(4) > article > div > div > div")
-   private WebElement uiElement134_div;
+   private WebElement uiElement133_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(4) > article > div > div > div > a")
-   private WebElement uiElement135_a;
+   private WebElement uiElement134_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(4) > article > div > div:nth-child(2)")
    private WebElement Lonely_on_Valentine_s_Day_Visit_3_div;
@@ -1644,7 +1632,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Lonely_on_Valentine_s_Day_Visit_5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(5) > div")
-   private WebElement uiElement136_div;
+   private WebElement uiElement135_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(4)")
    private WebElement What_You_39_re_Talking_About_The_div;
@@ -1662,16 +1650,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement The_hottest_photos_of_the_week2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(4) > ul > li > article > div > div")
-   private WebElement uiElement137_div;
+   private WebElement uiElement136_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(4) > ul > li > article > div > div > a")
-   private WebElement uiElement138_a;
+   private WebElement uiElement137_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(4) > ul > li > article > div > div > div")
-   private WebElement uiElement139_div;
+   private WebElement uiElement138_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(4) > ul > li > article > div > div > div > a")
-   private WebElement uiElement140_a;
+   private WebElement uiElement139_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(4) > ul > li > article > div > div:nth-child(2)")
    private WebElement The_hottest_photos_of_the_week3_div;
@@ -1689,16 +1677,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement BeganWithUnderscore_Smart_bullet_can_change_directi2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(3) > article > div > div")
-   private WebElement uiElement141_div;
+   private WebElement uiElement140_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(3) > article > div > div > a")
-   private WebElement uiElement142_a;
+   private WebElement uiElement141_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(3) > article > div > div > div")
-   private WebElement uiElement143_div;
+   private WebElement uiElement142_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(3) > article > div > div > div > a")
-   private WebElement uiElement144_a;
+   private WebElement uiElement143_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(3) > article > div > div:nth-child(2)")
    private WebElement BeganWithUnderscore_Smart_bullet_can_change_directi3_div;
@@ -1716,16 +1704,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Powerful_new_mega_rocket_unveile2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(4) > article > div > div")
-   private WebElement uiElement145_div;
+   private WebElement uiElement144_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(4) > article > div > div > a")
-   private WebElement uiElement146_a;
+   private WebElement uiElement145_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(4) > article > div > div > div")
-   private WebElement uiElement147_div;
+   private WebElement uiElement146_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(4) > article > div > div > div > a")
-   private WebElement uiElement148_a;
+   private WebElement uiElement147_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child(4) > article > div > div:nth-child(2)")
    private WebElement Powerful_new_mega_rocket_unveile3_div;
@@ -1752,16 +1740,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement BeganWithUnderscore_Dragon_dinosaur_unearthed2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li > article > div > div")
-   private WebElement uiElement149_div;
+   private WebElement uiElement148_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li > article > div > div > a")
-   private WebElement uiElement150_a;
+   private WebElement uiElement149_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li > article > div > div > div")
-   private WebElement uiElement151_div;
+   private WebElement uiElement150_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li > article > div > div > div > a")
-   private WebElement uiElement152_a;
+   private WebElement uiElement151_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li > article > div > div:nth-child(2)")
    private WebElement BeganWithUnderscore_Dragon_dinosaur_unearthed3_div;
@@ -1773,7 +1761,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement BeganWithUnderscore_Dragon_dinosaur_unearthed5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li > article > div > div:nth-child(2) > div")
-   private WebElement uiElement153_div;
+   private WebElement uiElement152_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li:nth-child(3)")
    private WebElement Did_fisherman_discover_prehistorLiListItem;
@@ -1782,16 +1770,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Did_fisherman_discover_prehistor2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li:nth-child(3) > article > div > div")
-   private WebElement uiElement154_div;
+   private WebElement uiElement153_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li:nth-child(3) > article > div > div > a")
-   private WebElement uiElement155_a;
+   private WebElement uiElement154_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li:nth-child(3) > article > div > div > div")
-   private WebElement uiElement156_div;
+   private WebElement uiElement155_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li:nth-child(3) > article > div > div > div > a")
-   private WebElement uiElement157_a;
+   private WebElement uiElement156_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li:nth-child(3) > article > div > div:nth-child(2)")
    private WebElement Did_fisherman_discover_prehistor3_div;
@@ -1809,16 +1797,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Paleolithic_skull_found_in_Israe2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li:nth-child(4) > article > div > div")
-   private WebElement uiElement158_div;
+   private WebElement uiElement157_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li:nth-child(4) > article > div > div > a")
-   private WebElement uiElement159_a;
+   private WebElement uiElement158_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li:nth-child(4) > article > div > div > div")
-   private WebElement uiElement160_div;
+   private WebElement uiElement159_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li:nth-child(4) > article > div > div > div > a")
-   private WebElement uiElement161_a;
+   private WebElement uiElement160_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li:nth-child(4) > article > div > div:nth-child(2)")
    private WebElement Paleolithic_skull_found_in_Israe3_div;
@@ -1836,7 +1824,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement CNN_MoneyIs_your_job_awesome_Tak2_ulListBlock;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul > a")
-   private WebElement uiElement162_a;
+   private WebElement uiElement161_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul > h2")
    private WebElement CNN_Money_h2;
@@ -1848,16 +1836,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Is_your_job_awesome_Take_our_qui_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul > article > div > div")
-   private WebElement uiElement163_div;
+   private WebElement uiElement162_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul > article > div > div > a")
-   private WebElement uiElement164_a;
+   private WebElement uiElement163_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul > article > div > div > div")
-   private WebElement uiElement165_div;
+   private WebElement uiElement164_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul > article > div > div > div > a")
-   private WebElement uiElement166_a;
+   private WebElement uiElement165_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul > article > div > div:nth-child(2)")
    private WebElement Is_your_job_awesome_Take_our_qui2_div;
@@ -1869,7 +1857,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Is_your_job_awesome_Take_our_qui4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul > article > div > div:nth-child(2) > div")
-   private WebElement uiElement167_div;
+   private WebElement uiElement166_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul > article:nth-child(4) > div")
    private WebElement BeganWithDigit_100_best_jobs_in_America_div;
@@ -1920,16 +1908,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement The_most_important_investing_rul4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div")
-   private WebElement uiElement168_div;
+   private WebElement uiElement167_div;
 
    @FindBy(id = "ad_bnr_btf_01")
    private WebElement ad_bnr_btf_01_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(2)")
-   private WebElement uiElement169_div;
+   private WebElement uiElement168_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(2) > div")
-   private WebElement uiElement170_div;
+   private WebElement uiElement169_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3)")
    private WebElement Featured_Sections_TechAre_smart__div;
@@ -1950,7 +1938,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement TechAre_smart_drugs_driving_Sili3_ulListBlock;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div > ul > a")
-   private WebElement uiElement171_a;
+   private WebElement uiElement170_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div > ul > h2")
    private WebElement Tech3_h2;
@@ -2139,22 +2127,22 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Mysterious_world_of_lightbombing5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div > ul > li:nth-child(15) > div")
-   private WebElement uiElement172_div;
+   private WebElement uiElement171_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2)")
    private WebElement EntertainmentWho_is_Suge_Knight__div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div")
-   private WebElement uiElement173_div;
+   private WebElement uiElement172_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div")
-   private WebElement uiElement174_div;
+   private WebElement uiElement173_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ul")
    private WebElement EntertainmentWho_is_Suge_Knight_2_ulListBlock;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ul > a")
-   private WebElement uiElement175_a;
+   private WebElement uiElement174_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ul > h2")
    private WebElement Entertainment3_h2;
@@ -2343,22 +2331,22 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Can_you_predict_the_Oscar_winner5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(15) > div")
-   private WebElement uiElement176_div;
+   private WebElement uiElement175_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3)")
-   private WebElement SportsLive_highlights_Patriots_v_div;
+   private WebElement SportsPlay_that_decided_Super_Bo_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div")
-   private WebElement uiElement177_div;
+   private WebElement uiElement176_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div > div")
-   private WebElement uiElement178_div;
+   private WebElement uiElement177_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul")
-   private WebElement SportsLive_highlights_Patriots_v2_ulListBlock;
+   private WebElement SportsPlay_that_decided_Super_Bo2_ulListBlock;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > a")
-   private WebElement uiElement179_a;
+   private WebElement uiElement178_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > h2")
    private WebElement Sports3_h2;
@@ -2367,70 +2355,70 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Sports4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li")
-   private WebElement Live_highlights_Patriots_vs_SeahLiListItem;
+   private WebElement Play_that_decided_Super_BowlPatrLiListItem;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div")
-   private WebElement Live_highlights_Patriots_vs_Seah2_div;
+   private WebElement Play_that_decided_Super_BowlPatr2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article > div")
-   private WebElement Live_highlights_Patriots_vs_Seah3_div;
+   private WebElement Play_that_decided_Super_Bowl_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article > div > div")
-   private WebElement Live_highlights_Patriots_vs_Seah4_div;
+   private WebElement Play_that_decided_Super_Bowl2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article > div > div > h3")
-   private WebElement Live_highlights_Patriots_vs_Seah5_h3;
+   private WebElement Play_that_decided_Super_Bowl3_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article > div > div > h3 > a")
-   private WebElement Live_highlights_Patriots_vs_Seah6_a;
+   private WebElement Play_that_decided_Super_Bowl4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article:nth-child(2) > div")
-   private WebElement Super_Bowl_commercial_grades_div;
+   private WebElement Patriots_win_Super_Bowl_thriller_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article:nth-child(2) > div > div")
-   private WebElement Super_Bowl_commercial_grades2_div;
+   private WebElement Patriots_win_Super_Bowl_thriller2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article:nth-child(2) > div > div > h3")
-   private WebElement Super_Bowl_commercial_grades3_h3;
+   private WebElement Patriots_win_Super_Bowl_thriller3_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article:nth-child(2) > div > div > h3 > a")
-   private WebElement Super_Bowl_commercial_grades4_a;
+   private WebElement Patriots_win_Super_Bowl_thriller4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article:nth-child(3) > div")
-   private WebElement Troubled_ex_NFLer_has_brain_inju_div;
+   private WebElement So_Twitter_how_d_Katy_Perry_do__div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article:nth-child(3) > div > div")
-   private WebElement Troubled_ex_NFLer_has_brain_inju2_div;
+   private WebElement So_Twitter_how_d_Katy_Perry_do_2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article:nth-child(3) > div > div > h3")
-   private WebElement Troubled_ex_NFLer_has_brain_inju3_h3;
+   private WebElement So_Twitter_how_d_Katy_Perry_do_3_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article:nth-child(3) > div > div > h3 > a")
-   private WebElement Troubled_ex_NFLer_has_brain_inju4_a;
+   private WebElement So_Twitter_how_d_Katy_Perry_do_4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article:nth-child(4) > div")
-   private WebElement NFL_owner_dies_after_fall_div;
+   private WebElement Super_Bowl_commercial_grades_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article:nth-child(4) > div > div")
-   private WebElement NFL_owner_dies_after_fall2_div;
+   private WebElement Super_Bowl_commercial_grades2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article:nth-child(4) > div > div > h3")
-   private WebElement NFL_owner_dies_after_fall3_h3;
+   private WebElement Super_Bowl_commercial_grades3_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article:nth-child(4) > div > div > h3 > a")
-   private WebElement NFL_owner_dies_after_fall4_a;
+   private WebElement Super_Bowl_commercial_grades4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article:nth-child(5) > div")
-   private WebElement Obama_comments_on_Deflategate_div;
+   private WebElement NFL_owner_dies_after_fall_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article:nth-child(5) > div > div")
-   private WebElement Obama_comments_on_Deflategate2_div;
+   private WebElement NFL_owner_dies_after_fall2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article:nth-child(5) > div > div > h3")
-   private WebElement Obama_comments_on_Deflategate3_h3;
+   private WebElement NFL_owner_dies_after_fall3_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > ul > li > article > div > article:nth-child(5) > div > div > h3 > a")
-   private WebElement Obama_comments_on_Deflategate4_a;
+   private WebElement NFL_owner_dies_after_fall4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(4)")
    private WebElement HealthMom_angry_at_anti_vaxxers__div;
@@ -2439,7 +2427,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement HealthMom_angry_at_anti_vaxxers_2_ulListBlock;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(4) > ul > a")
-   private WebElement uiElement180_a;
+   private WebElement uiElement179_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(4) > ul > h2")
    private WebElement Health3_h2;
@@ -2514,7 +2502,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement LivingWhat_your_teen_should_be_r2_ulListBlock;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(5) > ul > a")
-   private WebElement uiElement181_a;
+   private WebElement uiElement180_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(5) > ul > h2")
    private WebElement Living3_h2;
@@ -2583,13 +2571,13 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Leader_s_sacrifice_starts_moveme5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(6)")
-   private WebElement Travel46_minArt_emerges_from_sno_div;
+   private WebElement Travel4_hrArt_emerges_from_snow__div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(6) > ul")
-   private WebElement Travel46_minArt_emerges_from_sno2_ulListBlock;
+   private WebElement Travel4_hrArt_emerges_from_snow_2_ulListBlock;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(6) > ul > a")
-   private WebElement uiElement182_a;
+   private WebElement uiElement181_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(6) > ul > h2")
    private WebElement Travel3_h2;
@@ -2598,16 +2586,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Travel4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(6) > ul > li")
-   private WebElement BeganWithDigit_46_minArt_emerges_from_snowLiListItem;
+   private WebElement BeganWithDigit_4_hrArt_emerges_from_snowLiListItem;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(6) > ul > li > article > div")
-   private WebElement BeganWithDigit_46_minArt_emerges_from_snow2_div;
+   private WebElement BeganWithDigit_4_hrArt_emerges_from_snow2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(6) > ul > li > article > div > div")
-   private WebElement BeganWithDigit_46_minArt_emerges_from_snow3_div;
+   private WebElement BeganWithDigit_4_hrArt_emerges_from_snow3_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(6) > ul > li > article > div > div > div")
-   private WebElement BeganWithDigit_46_min_div;
+   private WebElement BeganWithDigit_4_hr3_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(6) > div:nth-child(3) > div:nth-child(2) > div:nth-child(6) > ul > li > article > div > div > h3")
    private WebElement Art_emerges_from_snow_h3;
@@ -2661,19 +2649,19 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Whale_watchers_celebrate_epic_se5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div")
-   private WebElement uiElement183_div;
+   private WebElement uiElement182_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div > div")
-   private WebElement uiElement184_div;
+   private WebElement uiElement183_div;
 
    @FindBy(id = "ad_rect_btf_02")
    private WebElement ad_rect_btf_02_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(2)")
-   private WebElement uiElement185_div;
+   private WebElement uiElement184_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(2) > div")
-   private WebElement uiElement186_div;
+   private WebElement uiElement185_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3)")
    private WebElement Video_Violence_between_Israel_an_div;
@@ -2703,16 +2691,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Violence_between_Israel_and_Hezb5_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li > article > div > div")
-   private WebElement uiElement187_div;
+   private WebElement uiElement186_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li > article > div > div > a")
-   private WebElement uiElement188_a;
+   private WebElement uiElement187_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li > article > div > div > div")
-   private WebElement uiElement189_div;
+   private WebElement uiElement188_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li > article > div > div > div > a")
-   private WebElement uiElement190_a;
+   private WebElement uiElement189_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li > article > div > div:nth-child(2)")
    private WebElement Violence_between_Israel_and_Hezb6_div;
@@ -2724,7 +2712,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Violence_between_Israel_and_Hezb8_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li > article > div > div:nth-child(2) > div")
-   private WebElement uiElement191_div;
+   private WebElement uiElement190_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li:nth-child(2)")
    private WebElement Change_in_Saudi_ArabiaLiListItem;
@@ -2733,16 +2721,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Change_in_Saudi_Arabia2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li:nth-child(2) > article > div > div")
-   private WebElement uiElement192_div;
+   private WebElement uiElement191_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li:nth-child(2) > article > div > div > a")
-   private WebElement uiElement193_a;
+   private WebElement uiElement192_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li:nth-child(2) > article > div > div > div")
-   private WebElement uiElement194_div;
+   private WebElement uiElement193_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li:nth-child(2) > article > div > div > div > a")
-   private WebElement uiElement195_a;
+   private WebElement uiElement194_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li:nth-child(2) > article > div > div:nth-child(2)")
    private WebElement Change_in_Saudi_Arabia3_div;
@@ -2760,16 +2748,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement BeganWithUnderscore_The_Shining_esque_machete_attac2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li:nth-child(3) > article > div > div")
-   private WebElement uiElement196_div;
+   private WebElement uiElement195_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li:nth-child(3) > article > div > div > a")
-   private WebElement uiElement197_a;
+   private WebElement uiElement196_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li:nth-child(3) > article > div > div > div")
-   private WebElement uiElement198_div;
+   private WebElement uiElement197_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li:nth-child(3) > article > div > div > div > a")
-   private WebElement uiElement199_a;
+   private WebElement uiElement198_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div > ul > li:nth-child(3) > article > div > div:nth-child(2)")
    private WebElement BeganWithUnderscore_The_Shining_esque_machete_attac3_div;
@@ -2796,16 +2784,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Why_was_this_Super_Bowl_puppy_ad5_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div > article > div > div")
-   private WebElement uiElement200_div;
+   private WebElement uiElement199_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div > article > div > div > a")
-   private WebElement uiElement201_a;
+   private WebElement uiElement200_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div > article > div > div > div")
-   private WebElement uiElement202_div;
+   private WebElement uiElement201_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div > article > div > div > div > a")
-   private WebElement uiElement203_a;
+   private WebElement uiElement202_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div > article > div > div:nth-child(2)")
    private WebElement Why_was_this_Super_Bowl_puppy_ad6_div;
@@ -2823,16 +2811,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement NASA_s_New_Horizons_spacecraft_n7_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > article > div > div")
-   private WebElement uiElement204_div;
+   private WebElement uiElement203_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > article > div > div > a")
-   private WebElement uiElement205_a;
+   private WebElement uiElement204_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > article > div > div > div")
-   private WebElement uiElement206_div;
+   private WebElement uiElement205_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > article > div > div > div > a")
-   private WebElement uiElement207_a;
+   private WebElement uiElement206_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(2) > article > div > div:nth-child(2)")
    private WebElement NASA_s_New_Horizons_spacecraft_n8_div;
@@ -2850,16 +2838,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement This_Super_Bowl_ad_will_leave_yo2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(3) > article > div > div")
-   private WebElement uiElement208_div;
+   private WebElement uiElement207_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(3) > article > div > div > a")
-   private WebElement uiElement209_a;
+   private WebElement uiElement208_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(3) > article > div > div > div")
-   private WebElement uiElement210_div;
+   private WebElement uiElement209_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(3) > article > div > div > div > a")
-   private WebElement uiElement211_a;
+   private WebElement uiElement210_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(3) > article > div > div:nth-child(2)")
    private WebElement This_Super_Bowl_ad_will_leave_yo3_div;
@@ -2877,16 +2865,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Rare_predator_caught_on_camera2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(4) > article > div > div")
-   private WebElement uiElement212_div;
+   private WebElement uiElement211_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(4) > article > div > div > a")
-   private WebElement uiElement213_a;
+   private WebElement uiElement212_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(4) > article > div > div > div")
-   private WebElement uiElement214_div;
+   private WebElement uiElement213_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(4) > article > div > div > div > a")
-   private WebElement uiElement215_a;
+   private WebElement uiElement214_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(4) > article > div > div:nth-child(2)")
    private WebElement Rare_predator_caught_on_camera3_div;
@@ -2904,16 +2892,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Kim_Kardashian_West_shows_her_hi2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(5) > article > div > div")
-   private WebElement uiElement216_div;
+   private WebElement uiElement215_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(5) > article > div > div > a")
-   private WebElement uiElement217_a;
+   private WebElement uiElement216_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(5) > article > div > div > div")
-   private WebElement uiElement218_div;
+   private WebElement uiElement217_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(5) > article > div > div > div > a")
-   private WebElement uiElement219_a;
+   private WebElement uiElement218_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(5) > article > div > div:nth-child(2)")
    private WebElement Kim_Kardashian_West_shows_her_hi3_div;
@@ -2931,16 +2919,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Protest_interrupts_Muslim_Day_at2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(6) > article > div > div")
-   private WebElement uiElement220_div;
+   private WebElement uiElement219_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(6) > article > div > div > a")
-   private WebElement uiElement221_a;
+   private WebElement uiElement220_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(6) > article > div > div > div")
-   private WebElement uiElement222_div;
+   private WebElement uiElement221_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(6) > article > div > div > div > a")
-   private WebElement uiElement223_a;
+   private WebElement uiElement222_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(7) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(6) > article > div > div:nth-child(2)")
    private WebElement Protest_interrupts_Muslim_Day_at3_div;
@@ -2952,10 +2940,10 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Protest_interrupts_Muslim_Day_at5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div")
-   private WebElement uiElement224_div;
+   private WebElement uiElement223_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div > div")
-   private WebElement uiElement225_div;
+   private WebElement uiElement224_div;
 
    @FindBy(id = "ad_rect_btf_03")
    private WebElement ad_rect_btf_03_div;
@@ -2976,139 +2964,139 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Opinions2_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(2) > div:nth-child(2)")
-   private WebElement uiElement226_div;
+   private WebElement uiElement225_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(2) > div:nth-child(2) > div")
-   private WebElement uiElement227_div;
+   private WebElement uiElement226_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3)")
-   private WebElement VoicesThe_Super_Bowl_ad_you_must_div;
+   private WebElement VoicesIs_Soylent_a_miracle_food__div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div")
-   private WebElement VoicesThe_Super_Bowl_ad_you_must2_div;
+   private WebElement VoicesIs_Soylent_a_miracle_food_2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div")
-   private WebElement VoicesThe_Super_Bowl_ad_you_must3_div;
+   private WebElement VoicesIs_Soylent_a_miracle_food_3_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul")
-   private WebElement VoicesThe_Super_Bowl_ad_you_must4_ulListBlock;
+   private WebElement VoicesIs_Soylent_a_miracle_food_4_ulListBlock;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > h2")
    private WebElement Voices_h2;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div")
-   private WebElement The_Super_Bowl_ad_you_must_watch_div;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div")
-   private WebElement uiElement228_div;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div > a")
-   private WebElement uiElement229_a;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div > div")
-   private WebElement uiElement230_div;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div > div > a")
-   private WebElement uiElement231_a;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div:nth-child(2)")
-   private WebElement The_Super_Bowl_ad_you_must_watch2_div;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div:nth-child(2) > h3")
-   private WebElement The_Super_Bowl_ad_you_must_watch3_h3;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div:nth-child(2) > h3 > a")
-   private WebElement The_Super_Bowl_ad_you_must_watch4_a;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div:nth-child(2) > div")
-   private WebElement By_Leslie_Morgan_Steiner_div;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div:nth-child(2) > div:nth-child(3)")
-   private WebElement There_s_one_that_all_100_million_div;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(3) > div")
    private WebElement Is_Soylent_a_miracle_food_replac_div;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(3) > div > div")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div")
+   private WebElement uiElement227_div;
+
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div > a")
+   private WebElement uiElement228_a;
+
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div > div")
+   private WebElement uiElement229_div;
+
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div > div > a")
+   private WebElement uiElement230_a;
+
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div:nth-child(2)")
    private WebElement Is_Soylent_a_miracle_food_replac2_div;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(3) > div > div > h3")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div:nth-child(2) > h3")
    private WebElement Is_Soylent_a_miracle_food_replac3_h3;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(3) > div > div > h3 > a")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div:nth-child(2) > h3 > a")
    private WebElement Is_Soylent_a_miracle_food_replac4_a;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(4) > div")
-   private WebElement John_Berman_Why_I_m_rooting_for__div;
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div:nth-child(2) > div")
+   private WebElement By_Jeff_Yang_div;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(4) > div > div")
-   private WebElement John_Berman_Why_I_m_rooting_for_2_div;
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article > div > div:nth-child(2) > div:nth-child(3)")
+   private WebElement It_can_help_with_weight_loss_but_div;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(4) > div > div > h3")
-   private WebElement John_Berman_Why_I_m_rooting_for_3_h3;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(4) > div > div > h3 > a")
-   private WebElement John_Berman_Why_I_m_rooting_for_4_a;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(5) > div")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(3) > div")
    private WebElement Time_for_honest_debate_about_Isl_div;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(5) > div > div")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(3) > div > div")
    private WebElement Time_for_honest_debate_about_Isl2_div;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(5) > div > div > h3")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(3) > div > div > h3")
    private WebElement Time_for_honest_debate_about_Isl3_h3;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(5) > div > div > h3 > a")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(3) > div > div > h3 > a")
    private WebElement Time_for_honest_debate_about_Isl4_a;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(6) > div")
-   private WebElement Roger_Goodell_start_respecting_w_div;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(6) > div > div")
-   private WebElement Roger_Goodell_start_respecting_w2_div;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(6) > div > div > h3")
-   private WebElement Roger_Goodell_start_respecting_w3_h3;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(6) > div > div > h3 > a")
-   private WebElement Roger_Goodell_start_respecting_w4_a;
-
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(7) > div")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(4) > div")
    private WebElement Who_gains_the_most_by_Romney_s_e_div;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(7) > div > div")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(4) > div > div")
    private WebElement Who_gains_the_most_by_Romney_s_e2_div;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(7) > div > div > h3")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(4) > div > div > h3")
    private WebElement Who_gains_the_most_by_Romney_s_e3_h3;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(7) > div > div > h3 > a")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(4) > div > div > h3 > a")
    private WebElement Who_gains_the_most_by_Romney_s_e4_a;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(8) > div")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(5) > div")
    private WebElement Democrats_lose_their_favorite_ca_div;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(8) > div > div")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(5) > div > div")
    private WebElement Democrats_lose_their_favorite_ca2_div;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(8) > div > div > h3")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(5) > div > div > h3")
    private WebElement Democrats_lose_their_favorite_ca3_h3;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(8) > div > div > h3 > a")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(5) > div > div > h3 > a")
    private WebElement Democrats_lose_their_favorite_ca4_a;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(9) > div")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(6) > div")
    private WebElement I_won_t_let_unvaccinated_people__div;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(9) > div > div")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(6) > div > div")
    private WebElement I_won_t_let_unvaccinated_people_2_div;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(9) > div > div > h3")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(6) > div > div > h3")
    private WebElement I_won_t_let_unvaccinated_people_3_h3;
 
-   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(9) > div > div > h3 > a")
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(6) > div > div > h3 > a")
    private WebElement I_won_t_let_unvaccinated_people_4_a;
+
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(7) > div")
+   private WebElement The_Super_Bowl_ad_you_must_watch_div;
+
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(7) > div > div")
+   private WebElement The_Super_Bowl_ad_you_must_watch2_div;
+
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(7) > div > div > h3")
+   private WebElement The_Super_Bowl_ad_you_must_watch3_h3;
+
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(7) > div > div > h3 > a")
+   private WebElement The_Super_Bowl_ad_you_must_watch4_a;
+
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(8) > div")
+   private WebElement John_Berman_Why_I_m_rooting_for__div;
+
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(8) > div > div")
+   private WebElement John_Berman_Why_I_m_rooting_for_2_div;
+
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(8) > div > div > h3")
+   private WebElement John_Berman_Why_I_m_rooting_for_3_h3;
+
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(8) > div > div > h3 > a")
+   private WebElement John_Berman_Why_I_m_rooting_for_4_a;
+
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(9) > div")
+   private WebElement Roger_Goodell_start_respecting_w_div;
+
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(9) > div > div")
+   private WebElement Roger_Goodell_start_respecting_w2_div;
+
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(9) > div > div > h3")
+   private WebElement Roger_Goodell_start_respecting_w3_h3;
+
+   @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div > ul > article:nth-child(9) > div > div > h3 > a")
+   private WebElement Roger_Goodell_start_respecting_w4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2)")
    private WebElement GloballyWho_s_winning_the_war_wi_div;
@@ -3126,16 +3114,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Who_s_winning_the_war_with_ISIS_2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li > article > div > div")
-   private WebElement uiElement232_div;
+   private WebElement uiElement231_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li > article > div > div > a")
-   private WebElement uiElement233_a;
+   private WebElement uiElement232_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li > article > div > div > div")
-   private WebElement uiElement234_div;
+   private WebElement uiElement233_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li > article > div > div > div > a")
-   private WebElement uiElement235_a;
+   private WebElement uiElement234_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li > article > div > div:nth-child(2)")
    private WebElement Who_s_winning_the_war_with_ISIS_3_div;
@@ -3150,7 +3138,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement By_Peter_Bergen_and_Emily_Schnei2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li > article > div > div:nth-child(2) > div:nth-child(3)")
-   private WebElement uiElement236_div;
+   private WebElement uiElement235_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(3)")
    private WebElement Remember_The_Great_Raid_of_1945LiListItem;
@@ -3159,16 +3147,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Remember_The_Great_Raid_of_19452_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div > div")
-   private WebElement uiElement237_div;
+   private WebElement uiElement236_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div > div > a")
-   private WebElement uiElement238_a;
+   private WebElement uiElement237_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div > div > div")
-   private WebElement uiElement239_div;
+   private WebElement uiElement238_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div > div > div > a")
-   private WebElement uiElement240_a;
+   private WebElement uiElement239_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div > div:nth-child(2)")
    private WebElement Remember_The_Great_Raid_of_19453_div;
@@ -3186,16 +3174,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Faux_fury_over_Michelle_Obama_s_2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(4) > article > div > div")
-   private WebElement uiElement241_div;
+   private WebElement uiElement240_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(4) > article > div > div > a")
-   private WebElement uiElement242_a;
+   private WebElement uiElement241_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(4) > article > div > div > div")
-   private WebElement uiElement243_div;
+   private WebElement uiElement242_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(4) > article > div > div > div > a")
-   private WebElement uiElement244_a;
+   private WebElement uiElement243_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(4) > article > div > div:nth-child(2)")
    private WebElement Faux_fury_over_Michelle_Obama_s_3_div;
@@ -3213,16 +3201,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement This_ad_may_save_the_pangolin2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div")
-   private WebElement uiElement245_div;
+   private WebElement uiElement244_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div > a")
-   private WebElement uiElement246_a;
+   private WebElement uiElement245_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div > div")
-   private WebElement uiElement247_div;
+   private WebElement uiElement246_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div > div > a")
-   private WebElement uiElement248_a;
+   private WebElement uiElement247_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div:nth-child(2)")
    private WebElement This_ad_may_save_the_pangolin3_div;
@@ -3240,16 +3228,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement What_you_don_t_know_about_border2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div")
-   private WebElement uiElement249_div;
+   private WebElement uiElement248_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div > a")
-   private WebElement uiElement250_a;
+   private WebElement uiElement249_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div > div")
-   private WebElement uiElement251_div;
+   private WebElement uiElement250_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div > div > a")
-   private WebElement uiElement252_a;
+   private WebElement uiElement251_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div:nth-child(2)")
    private WebElement What_you_don_t_know_about_border3_div;
@@ -3261,22 +3249,22 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement What_you_don_t_know_about_border5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(3)")
-   private WebElement uiElement253_div;
+   private WebElement uiElement252_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(3) > div")
-   private WebElement uiElement254_div;
+   private WebElement uiElement253_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(3) > div > div")
-   private WebElement uiElement255_div;
+   private WebElement uiElement254_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(3) > div:nth-child(2)")
-   private WebElement uiElement256_div;
+   private WebElement uiElement255_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(3) > div:nth-child(2) > div")
-   private WebElement uiElement257_div;
+   private WebElement uiElement256_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(8) > div:nth-child(3) > div > div:nth-child(3) > ul")
-   private WebElement uiElement258_ulListBlock;
+   private WebElement uiElement257_ulListBlock;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div")
    private WebElement More_2_div;
@@ -3294,25 +3282,25 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement More_6_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div > div:nth-child(2)")
-   private WebElement uiElement259_div;
+   private WebElement uiElement258_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div > div:nth-child(2) > div")
-   private WebElement uiElement260_div;
+   private WebElement uiElement259_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2)")
-   private WebElement CNN_PhotosPortraits_of_Portland__div;
+   private WebElement CNN_PhotosSuper_Bowl_XLIX_The_be_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div")
-   private WebElement CNN_PhotosPortraits_of_Portland_2_div;
+   private WebElement CNN_PhotosSuper_Bowl_XLIX_The_be2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div")
-   private WebElement CNN_PhotosPortraits_of_Portland_3_div;
+   private WebElement CNN_PhotosSuper_Bowl_XLIX_The_be3_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div > ul")
-   private WebElement CNN_PhotosPortraits_of_Portland_4_ulListBlock;
+   private WebElement CNN_PhotosSuper_Bowl_XLIX_The_be4_ulListBlock;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div > ul > a")
-   private WebElement uiElement261_a;
+   private WebElement uiElement260_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div > ul > h2")
    private WebElement CNN_Photos_h2;
@@ -3321,43 +3309,43 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement CNN_Photos2_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div > ul > article > div")
-   private WebElement Portraits_of_Portland_s_locals_div;
+   private WebElement Super_Bowl_XLIX_The_best_photos_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div > ul > article > div > div")
-   private WebElement uiElement262_div;
+   private WebElement uiElement261_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div > ul > article > div > div > a")
-   private WebElement uiElement263_a;
+   private WebElement uiElement262_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div > ul > article > div > div > div")
-   private WebElement uiElement264_div;
+   private WebElement uiElement263_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div > ul > article > div > div > div > a")
-   private WebElement uiElement265_a;
+   private WebElement uiElement264_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div > ul > article > div > div:nth-child(2)")
-   private WebElement Portraits_of_Portland_s_locals2_div;
+   private WebElement Super_Bowl_XLIX_The_best_photos2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div > ul > article > div > div:nth-child(2) > h3")
-   private WebElement Portraits_of_Portland_s_locals3_h3;
+   private WebElement Super_Bowl_XLIX_The_best_photos3_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div > ul > article > div > div:nth-child(2) > h3 > a")
-   private WebElement Portraits_of_Portland_s_locals4_a;
+   private WebElement Super_Bowl_XLIX_The_best_photos4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div > ul > article > div > div:nth-child(2) > div")
-   private WebElement uiElement266_div;
+   private WebElement uiElement265_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div > ul > article:nth-child(4) > div")
-   private WebElement Backstage_at_a_traveling_circus_div;
+   private WebElement Portraits_of_Portland_s_locals_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div > ul > article:nth-child(4) > div > div")
-   private WebElement Backstage_at_a_traveling_circus2_div;
+   private WebElement Portraits_of_Portland_s_locals2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div > ul > article:nth-child(4) > div > div > h3")
-   private WebElement Backstage_at_a_traveling_circus3_h3;
+   private WebElement Portraits_of_Portland_s_locals3_h3;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div > ul > article:nth-child(4) > div > div > h3 > a")
-   private WebElement Backstage_at_a_traveling_circus4_a;
+   private WebElement Portraits_of_Portland_s_locals4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2)")
    private WebElement Daily_DistractionsThe_Ridiculist_div;
@@ -3375,16 +3363,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement The_Ridiculist_Driver_pulled_ove2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li > article > div > div")
-   private WebElement uiElement267_div;
+   private WebElement uiElement266_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li > article > div > div > a")
-   private WebElement uiElement268_a;
+   private WebElement uiElement267_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li > article > div > div > div")
-   private WebElement uiElement269_div;
+   private WebElement uiElement268_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li > article > div > div > div > a")
-   private WebElement uiElement270_a;
+   private WebElement uiElement269_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li > article > div > div:nth-child(2)")
    private WebElement The_Ridiculist_Driver_pulled_ove3_div;
@@ -3402,16 +3390,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Shiver_me_timbers_Medical_tools_2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div > div")
-   private WebElement uiElement271_div;
+   private WebElement uiElement270_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div > div > a")
-   private WebElement uiElement272_a;
+   private WebElement uiElement271_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div > div > div")
-   private WebElement uiElement273_div;
+   private WebElement uiElement272_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div > div > div > a")
-   private WebElement uiElement274_a;
+   private WebElement uiElement273_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div > div:nth-child(2)")
    private WebElement Shiver_me_timbers_Medical_tools_3_div;
@@ -3429,16 +3417,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement BeganWithUnderscore_Zombie_cat_found_alive_five_day2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(4) > article > div > div")
-   private WebElement uiElement275_div;
+   private WebElement uiElement274_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(4) > article > div > div > a")
-   private WebElement uiElement276_a;
+   private WebElement uiElement275_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(4) > article > div > div > div")
-   private WebElement uiElement277_div;
+   private WebElement uiElement276_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(4) > article > div > div > div > a")
-   private WebElement uiElement278_a;
+   private WebElement uiElement277_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(4) > article > div > div:nth-child(2)")
    private WebElement BeganWithUnderscore_Zombie_cat_found_alive_five_day3_div;
@@ -3456,16 +3444,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Dad_builds_backyard_luge_track2_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div")
-   private WebElement uiElement279_div;
+   private WebElement uiElement278_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div > a")
-   private WebElement uiElement280_a;
+   private WebElement uiElement279_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div > div")
-   private WebElement uiElement281_div;
+   private WebElement uiElement280_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div > div > a")
-   private WebElement uiElement282_a;
+   private WebElement uiElement281_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div:nth-child(2)")
    private WebElement Dad_builds_backyard_luge_track3_div;
@@ -3477,7 +3465,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Dad_builds_backyard_luge_track5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(6) > div")
-   private WebElement uiElement283_div;
+   private WebElement uiElement282_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(3)")
    private WebElement Extraordinary_PeopleSchool_leade_div;
@@ -3486,7 +3474,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Extraordinary_PeopleSchool_leade2_ulListBlock;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(3) > ul > a")
-   private WebElement uiElement284_a;
+   private WebElement uiElement283_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(3) > ul > h2")
    private WebElement Extraordinary_People_h2;
@@ -3498,16 +3486,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement School_leader_s_sacrifice_starts_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(3) > ul > article > div > div")
-   private WebElement uiElement285_div;
+   private WebElement uiElement284_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(3) > ul > article > div > div > a")
-   private WebElement uiElement286_a;
+   private WebElement uiElement285_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(3) > ul > article > div > div > div")
-   private WebElement uiElement287_div;
+   private WebElement uiElement286_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(3) > ul > article > div > div > div > a")
-   private WebElement uiElement288_a;
+   private WebElement uiElement287_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(3) > ul > article > div > div:nth-child(2)")
    private WebElement School_leader_s_sacrifice_starts2_div;
@@ -3519,7 +3507,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement School_leader_s_sacrifice_starts4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(3) > ul > article > div > div:nth-child(2) > div")
-   private WebElement uiElement289_div;
+   private WebElement uiElement288_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(3) > ul > article:nth-child(4) > div")
    private WebElement BeganWithDigit_5_ways_to_be_extraordinary_div;
@@ -3546,19 +3534,19 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement BeganWithDigit_11_extraordinary_people_of_20144_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(3) > ul > div")
-   private WebElement uiElement290_div;
+   private WebElement uiElement289_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(3) > ul > div > div")
-   private WebElement uiElement291_div;
+   private WebElement uiElement290_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(9) > div:nth-child(2) > div > div:nth-child(3) > ul > div > div > div")
-   private WebElement uiElement292_div;
+   private WebElement uiElement291_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(10) > div")
-   private WebElement uiElement293_div;
+   private WebElement uiElement292_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(10) > div > div")
-   private WebElement uiElement294_div;
+   private WebElement uiElement293_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(10) > div:nth-child(2)")
    private WebElement From_Our_Partners_HealthgradesWh_div;
@@ -3735,7 +3723,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Trulia_Home_SearchSearch_million2_ulListBlock;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(10) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > ul > a")
-   private WebElement uiElement295_a;
+   private WebElement uiElement294_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(10) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > ul > h2")
    private WebElement Trulia_Home_Search_h2;
@@ -3825,7 +3813,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement LendingTreeRate_hits_2_7_APR_5_12_ulListBlock;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(10) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > ul > a")
-   private WebElement uiElement296_a;
+   private WebElement uiElement295_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(10) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > ul > h2")
    private WebElement LendingTree_h2;
@@ -3900,7 +3888,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement AOL_Lopez_closet_is_one_enormous2_ulListBlock;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(10) > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > ul > a")
-   private WebElement uiElement297_a;
+   private WebElement uiElement296_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(10) > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > ul > h2")
    private WebElement AOL_h2;
@@ -3975,7 +3963,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Job_Search_Indeed_comPart_time_j2_ulListBlock;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(10) > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > ul > a")
-   private WebElement uiElement298_a;
+   private WebElement uiElement297_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(10) > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > ul > h2")
    private WebElement Job_Search_Indeed_com_h2;
@@ -4044,10 +4032,10 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Retail_jobs5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(11) > div")
-   private WebElement uiElement299_div;
+   private WebElement uiElement298_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(11) > div > div")
-   private WebElement uiElement300_div;
+   private WebElement uiElement299_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(11) > div:nth-child(2)")
    private WebElement In_Case_You_Missed_It_Voices_of__div;
@@ -4074,16 +4062,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement She_survived_Dr_Mengele_s_experi_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(11) > div:nth-child(2) > div:nth-child(2) > div > ul > article > div > div")
-   private WebElement uiElement301_div;
+   private WebElement uiElement300_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(11) > div:nth-child(2) > div:nth-child(2) > div > ul > article > div > div > a")
-   private WebElement uiElement302_a;
+   private WebElement uiElement301_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(11) > div:nth-child(2) > div:nth-child(2) > div > ul > article > div > div > div")
-   private WebElement uiElement303_div;
+   private WebElement uiElement302_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(11) > div:nth-child(2) > div:nth-child(2) > div > ul > article > div > div > div > a")
-   private WebElement uiElement304_a;
+   private WebElement uiElement303_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(11) > div:nth-child(2) > div:nth-child(2) > div > ul > article > div > div:nth-child(2)")
    private WebElement She_survived_Dr_Mengele_s_experi2_div;
@@ -4095,7 +4083,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement She_survived_Dr_Mengele_s_experi4_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(11) > div:nth-child(2) > div:nth-child(2) > div > ul > article > div > div:nth-child(2) > div")
-   private WebElement uiElement305_div;
+   private WebElement uiElement304_div;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(11) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2)")
    private WebElement Oscar_winner_comes_out_Comcast_b_div;
@@ -4284,10 +4272,10 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement Sam_Smith_will_pay_Tom_Petty_for5_a;
 
    @FindBy(css = "body > div:nth-child(4) > section:nth-child(11) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > ul > li:nth-child(13) > div")
-   private WebElement uiElement306_div;
+   private WebElement uiElement305_div;
 
    @FindBy(css = "body > div:nth-child(4) > div:nth-child(12)")
-   private WebElement uiElement307_div;
+   private WebElement uiElement306_div;
 
    @FindBy(id = "ad_bnr_btf_02")
    private WebElement ad_bnr_btf_02_div;
@@ -4296,16 +4284,16 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement ym_764344014241209959_div;
 
    @FindBy(css = "body > footer > div")
-   private WebElement uiElement308_div;
+   private WebElement uiElement307_div;
 
    @FindBy(css = "body > footer > div > div")
-   private WebElement uiElement309_div;
+   private WebElement uiElement308_div;
 
    @FindBy(id = "js-weather__footer")
    private WebElement js_weather__footer_div;
 
    @FindBy(css = "body > footer > div > div:nth-child(2)")
-   private WebElement uiElement310_div;
+   private WebElement uiElement309_div;
 
    @FindBy(css = "body > footer > div:nth-child(2)")
    private WebElement NewsU_S_WorldPoliticsTechHealthE4_div;
@@ -4533,7 +4521,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement CNN_profiles_A_Z6_a;
 
    @FindBy(css = "body > footer > div:nth-child(2) > div > div > ol:nth-child(6)")
-   private WebElement uiElement311_olListBlock;
+   private WebElement uiElement310_olListBlock;
 
    @FindBy(css = "body > footer > div:nth-child(2) > div > div:nth-child(2)")
    private WebElement U_S_EditionU_S_InternationalArab4_div;
@@ -4542,7 +4530,7 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement U_S_EditionU_S_InternationalArab5_div;
 
    @FindBy(css = "body > footer > div:nth-child(2) > div > div:nth-child(2) > div > a")
-   private WebElement uiElement312_a;
+   private WebElement uiElement311_a;
 
    @FindBy(css = "body > footer > div:nth-child(2) > div > div:nth-child(2) > div > div")
    private WebElement U_S_EditionU_S_InternationalArab6_div;
@@ -4647,13 +4635,13 @@ public class Breaking_News_U_S_World_Weather_   {
    private WebElement CNN_Newsource2_a;
 
    @FindBy(css = "body > div:nth-child(18)")
-   private WebElement uiElement313_div;
+   private WebElement uiElement312_div;
 
    @FindBy(id = "ad_oop_skin_01")
    private WebElement ad_oop_skin_01_div;
 
    @FindBy(css = "body > div:nth-child(19)")
-   private WebElement uiElement314_div;
+   private WebElement uiElement313_div;
 
    @FindBy(id = "ad_oop_float_01")
    private WebElement ad_oop_float_01_div;
@@ -5546,8 +5534,8 @@ public class Breaking_News_U_S_World_Weather_   {
       return uiElement26_div.getText();
    }
 
-   public String getGame_timeLive_blog_Super_Bowl_XLDivText() {
-      return Game_timeLive_blog_Super_Bowl_XL_div.getText();
+   public String getPats_rally_past_SeahawksTom_BradDivText() {
+      return Pats_rally_past_SeahawksTom_Brad_div.getText();
    }
 
    public String getuiElement27DivText() {
@@ -5574,28 +5562,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return uiElement31_div.getText();
    }
 
-   public String getGame_timeLive_blog_Super_Bowl_XL2DivText() {
-      return Game_timeLive_blog_Super_Bowl_XL2_div.getText();
+   public String getPats_rally_past_SeahawksTom_Brad2DivText() {
+      return Pats_rally_past_SeahawksTom_Brad2_div.getText();
    }
 
-   public String getGame_timeLive_blog_Super_Bowl_XL3DivText() {
-      return Game_timeLive_blog_Super_Bowl_XL3_div.getText();
+   public String getPats_rally_past_SeahawksTom_Brad3DivText() {
+      return Pats_rally_past_SeahawksTom_Brad3_div.getText();
    }
 
-   public String getGame_timeLive_blog_Super_Bowl_XL4DivText() {
-      return Game_timeLive_blog_Super_Bowl_XL4_div.getText();
+   public String getPats_rally_past_SeahawksTom_Brad4DivText() {
+      return Pats_rally_past_SeahawksTom_Brad4_div.getText();
    }
 
-   public String getGame_timeLive_blog_Super_Bowl_XL5DivText() {
-      return Game_timeLive_blog_Super_Bowl_XL5_div.getText();
+   public String getPats_rally_past_SeahawksTom_Brad5DivText() {
+      return Pats_rally_past_SeahawksTom_Brad5_div.getText();
    }
 
-   public String getGame_timeLive_blog_Super_Bowl_XL6DivText() {
-      return Game_timeLive_blog_Super_Bowl_XL6_div.getText();
+   public String getPats_rally_past_SeahawksTom_Brad6DivText() {
+      return Pats_rally_past_SeahawksTom_Brad6_div.getText();
    }
 
-   public String getGame_timeLive_blog_Super_Bowl_XL7DivText() {
-      return Game_timeLive_blog_Super_Bowl_XL7_div.getText();
+   public String getPats_rally_past_SeahawksTom_Brad7DivText() {
+      return Pats_rally_past_SeahawksTom_Brad7_div.getText();
    }
 
    public String getuiElement32LinkText() {
@@ -5606,20 +5594,20 @@ public class Breaking_News_U_S_World_Weather_   {
       uiElement32_a.click();
    }
 
-   public String getGame_timeText() {
-      return Game_time_h2.getText();
+   public String getPats_rally_past_SeahawksText() {
+      return Pats_rally_past_Seahawks_h2.getText();
    }
 
-   public String getGame_time2LinkText() {
-      return Game_time2_a.getText();
+   public String getPats_rally_past_Seahawks2LinkText() {
+      return Pats_rally_past_Seahawks2_a.getText();
    }
 
-   public void clickGame_time2() {
-      Game_time2_a.click();
+   public void clickPats_rally_past_Seahawks2() {
+      Pats_rally_past_Seahawks2_a.click();
    }
 
-   public String getLive_blog_Super_Bowl_XLIXIt_all_DivText() {
-      return Live_blog_Super_Bowl_XLIXIt_all__div.getText();
+   public String getTom_Brady_throws_4_TDs_named_MVPDivText() {
+      return Tom_Brady_throws_4_TDs_named_MVP_div.getText();
    }
 
    public String getuiElement33DivText() {
@@ -5646,24 +5634,32 @@ public class Breaking_News_U_S_World_Weather_   {
       uiElement36_a.click();
    }
 
-   public String getLive_blog_Super_Bowl_XLIXIt_all_2DivText() {
-      return Live_blog_Super_Bowl_XLIXIt_all_2_div.getText();
+   public String getTom_Brady_throws_4_TDs_named_MVP2DivText() {
+      return Tom_Brady_throws_4_TDs_named_MVP2_div.getText();
    }
 
-   public String getLive_blog_Super_Bowl_XLIXh3Text() {
-      return Live_blog_Super_Bowl_XLIX_h3.getText();
+   public String getTom_Brady_throws_4_TDs_named_MVP3h3Text() {
+      return Tom_Brady_throws_4_TDs_named_MVP3_h3.getText();
    }
 
-   public String getLive_blog_Super_Bowl_XLIX2LinkText() {
-      return Live_blog_Super_Bowl_XLIX2_a.getText();
+   public String getTom_Brady_throws_4_TDs_named_MVP4LinkText() {
+      return Tom_Brady_throws_4_TDs_named_MVP4_a.getText();
    }
 
-   public void clickLive_blog_Super_Bowl_XLIX2() {
-      Live_blog_Super_Bowl_XLIX2_a.click();
+   public void clickTom_Brady_throws_4_TDs_named_MVP4() {
+      Tom_Brady_throws_4_TDs_named_MVP4_a.click();
    }
 
-   public String getIt_all_comes_down_to_this_One_gaDivText() {
-      return It_all_comes_down_to_this_One_ga_div.getText();
+   public String getBy_Ollie_Williams_for_CNNDivText() {
+      return By_Ollie_Williams_for_CNN_div.getText();
+   }
+
+   public String getTom_Brady_and_the_New_England_PaDivText() {
+      return Tom_Brady_and_the_New_England_Pa_div.getText();
+   }
+
+   public String getBeganWithDigit_3_minDivText() {
+      return BeganWithDigit_3_min_div.getText();
    }
 
    public String getuiElement37DivText() {
@@ -5750,8 +5746,8 @@ public class Breaking_News_U_S_World_Weather_   {
       return See_some_of_the_best_sights_from_div.getText();
    }
 
-   public String getBeganWithDigit_21_minDivText() {
-      return BeganWithDigit_21_min_div.getText();
+   public String getBeganWithDigit_10_minDivText() {
+      return BeganWithDigit_10_min_div.getText();
    }
 
    public String getuiElement45DivText() {
@@ -5766,8 +5762,8 @@ public class Breaking_News_U_S_World_Weather_   {
       return uiElement47_div.getText();
    }
 
-   public String getFree_ride_to_Super_BowlWrongfullDivText() {
-      return Free_ride_to_Super_BowlWrongfull_div.getText();
+   public String getNo_it_wasn_t_an_acid_tripKaty_PeDivText() {
+      return No_it_wasn_t_an_acid_tripKaty_Pe_div.getText();
    }
 
    public String getuiElement48LinkText() {
@@ -5778,20 +5774,20 @@ public class Breaking_News_U_S_World_Weather_   {
       uiElement48_a.click();
    }
 
-   public String getFree_ride_to_Super_BowlText() {
-      return Free_ride_to_Super_Bowl_h2.getText();
+   public String getNo_it_wasn_t_an_acid_tripText() {
+      return No_it_wasn_t_an_acid_trip_h2.getText();
    }
 
-   public String getFree_ride_to_Super_Bowl2LinkText() {
-      return Free_ride_to_Super_Bowl2_a.getText();
+   public String getNo_it_wasn_t_an_acid_trip2LinkText() {
+      return No_it_wasn_t_an_acid_trip2_a.getText();
    }
 
-   public void clickFree_ride_to_Super_Bowl2() {
-      Free_ride_to_Super_Bowl2_a.click();
+   public void clickNo_it_wasn_t_an_acid_trip2() {
+      No_it_wasn_t_an_acid_trip2_a.click();
    }
 
-   public String getWrongfully_imprisoned_he_got_allDivText() {
-      return Wrongfully_imprisoned_he_got_all_div.getText();
+   public String getKaty_Perry_s_halftime_show_What_DivText() {
+      return Katy_Perry_s_halftime_show_What__div.getText();
    }
 
    public String getuiElement49DivText() {
@@ -5818,28 +5814,32 @@ public class Breaking_News_U_S_World_Weather_   {
       uiElement52_a.click();
    }
 
-   public String getWrongfully_imprisoned_he_got_all2DivText() {
-      return Wrongfully_imprisoned_he_got_all2_div.getText();
+   public String getKaty_Perry_s_halftime_show_What_2DivText() {
+      return Katy_Perry_s_halftime_show_What_2_div.getText();
    }
 
-   public String getWrongfully_imprisoned_he_got_all3h3Text() {
-      return Wrongfully_imprisoned_he_got_all3_h3.getText();
+   public String getKaty_Perry_s_halftime_show_What_3h3Text() {
+      return Katy_Perry_s_halftime_show_What_3_h3.getText();
    }
 
-   public String getWrongfully_imprisoned_he_got_all4LinkText() {
-      return Wrongfully_imprisoned_he_got_all4_a.getText();
+   public String getKaty_Perry_s_halftime_show_What_4LinkText() {
+      return Katy_Perry_s_halftime_show_What_4_a.getText();
    }
 
-   public void clickWrongfully_imprisoned_he_got_all4() {
-      Wrongfully_imprisoned_he_got_all4_a.click();
+   public void clickKaty_Perry_s_halftime_show_What_4() {
+      Katy_Perry_s_halftime_show_What_4_a.click();
    }
 
-   public String getRyan_Ferguson_spent_10_years_in_DivText() {
-      return Ryan_Ferguson_spent_10_years_in__div.getText();
+   public String getBy_Emanuella_Grinberg_CNNDivText() {
+      return By_Emanuella_Grinberg_CNN_div.getText();
    }
 
-   public String getBeganWithDigit_4_hrDivText() {
-      return BeganWithDigit_4_hr_div.getText();
+   public String getKaty_Perry_made_teenage_dreams_cDivText() {
+      return Katy_Perry_made_teenage_dreams_c_div.getText();
+   }
+
+   public String getBeganWithDigit_21_minDivText() {
+      return BeganWithDigit_21_min_div.getText();
    }
 
    public String getuiElement53DivText() {
@@ -5854,8 +5854,8 @@ public class Breaking_News_U_S_World_Weather_   {
       return uiElement55_div.getText();
    }
 
-   public String getSuper_bling49_years_of_Super_BowDivText() {
-      return Super_bling49_years_of_Super_Bow_div.getText();
+   public String getKids_puppies_Pete_Rose_Super_BowDivText() {
+      return Kids_puppies_Pete_Rose_Super_Bow_div.getText();
    }
 
    public String getuiElement56LinkText() {
@@ -5866,20 +5866,20 @@ public class Breaking_News_U_S_World_Weather_   {
       uiElement56_a.click();
    }
 
-   public String getSuper_blingText() {
-      return Super_bling_h2.getText();
+   public String getKids_puppies_Pete_Rose_Text() {
+      return Kids_puppies_Pete_Rose__h2.getText();
    }
 
-   public String getSuper_bling2LinkText() {
-      return Super_bling2_a.getText();
+   public String getKids_puppies_Pete_Rose_2LinkText() {
+      return Kids_puppies_Pete_Rose_2_a.getText();
    }
 
-   public void clickSuper_bling2() {
-      Super_bling2_a.click();
+   public void clickKids_puppies_Pete_Rose_2() {
+      Kids_puppies_Pete_Rose_2_a.click();
    }
 
-   public String getBeganWithDigit_49_years_of_Super_Bowl_rings_TheDivText() {
-      return BeganWithDigit_49_years_of_Super_Bowl_rings_The_div.getText();
+   public String getSuper_Bowl_ads_The_good_the_bad_DivText() {
+      return Super_Bowl_ads_The_good_the_bad__div.getText();
    }
 
    public String getuiElement57DivText() {
@@ -5906,24 +5906,24 @@ public class Breaking_News_U_S_World_Weather_   {
       uiElement60_a.click();
    }
 
-   public String getBeganWithDigit_49_years_of_Super_Bowl_rings_The2DivText() {
-      return BeganWithDigit_49_years_of_Super_Bowl_rings_The2_div.getText();
+   public String getSuper_Bowl_ads_The_good_the_bad_2DivText() {
+      return Super_Bowl_ads_The_good_the_bad_2_div.getText();
    }
 
-   public String getBeganWithDigit_49_years_of_Super_Bowl_ringsh3Text() {
-      return BeganWithDigit_49_years_of_Super_Bowl_rings_h3.getText();
+   public String getSuper_Bowl_ads_The_good_the_bad_3h3Text() {
+      return Super_Bowl_ads_The_good_the_bad_3_h3.getText();
    }
 
-   public String getBeganWithDigit_49_years_of_Super_Bowl_rings2LinkText() {
-      return BeganWithDigit_49_years_of_Super_Bowl_rings2_a.getText();
+   public String getSuper_Bowl_ads_The_good_the_bad_4LinkText() {
+      return Super_Bowl_ads_The_good_the_bad_4_a.getText();
    }
 
-   public void clickBeganWithDigit_49_years_of_Super_Bowl_rings2() {
-      BeganWithDigit_49_years_of_Super_Bowl_rings2_a.click();
+   public void clickSuper_Bowl_ads_The_good_the_bad_4() {
+      Super_Bowl_ads_The_good_the_bad_4_a.click();
    }
 
-   public String getThe_winning_Super_Bowl_team_winsDivText() {
-      return The_winning_Super_Bowl_team_wins_div.getText();
+   public String getSure_there_s_a_game_but_some_folDivText() {
+      return Sure_there_s_a_game_but_some_fol_div.getText();
    }
 
    public String getuiElement61DivText() {
@@ -6096,10 +6096,6 @@ public class Breaking_News_U_S_World_Weather_   {
 
    public String getNovak_Djokovic_s_dominance_at_thDivText() {
       return Novak_Djokovic_s_dominance_at_th_div.getText();
-   }
-
-   public String getBeganWithDigit_5_hrDivText() {
-      return BeganWithDigit_5_hr_div.getText();
    }
 
    public String getuiElement77DivText() {
@@ -6306,84 +6302,80 @@ public class Breaking_News_U_S_World_Weather_   {
       return cn_jumbotron_small_carousel_cont_div.getText();
    }
 
-   public String getTop_Stories2_hrWhitney_Houston_sDivText() {
-      return Top_Stories2_hrWhitney_Houston_s_div.getText();
+   public String getTop_StoriesWhitney_Houston_s_dauDivText() {
+      return Top_StoriesWhitney_Houston_s_dau_div.getText();
    }
 
-   public String getTop_Stories2_hrWhitney_Houston_s2_ulListBlockText() {
-      return Top_Stories2_hrWhitney_Houston_s2_ulListBlock.getText();
+   public String getTop_StoriesWhitney_Houston_s_dau2_ulListBlockText() {
+      return Top_StoriesWhitney_Houston_s_dau2_ulListBlock.getText();
    }
 
    public String getTop_StoriesText() {
       return Top_Stories_h2.getText();
    }
 
-   public String getBeganWithDigit_2_hrWhitney_Houston_s_daughter_iLiListItemText() {
-      return BeganWithDigit_2_hrWhitney_Houston_s_daughter_iLiListItem.getText();
+   public String getWhitney_Houston_s_daughter_in_meLiListItemText() {
+      return Whitney_Houston_s_daughter_in_meLiListItem.getText();
    }
 
-   public String getBeganWithDigit_2_hrWhitney_Houston_s_daughter_i2DivText() {
-      return BeganWithDigit_2_hrWhitney_Houston_s_daughter_i2_div.getText();
+   public String getWhitney_Houston_s_daughter_in_me2DivText() {
+      return Whitney_Houston_s_daughter_in_me2_div.getText();
    }
 
-   public String getBeganWithDigit_2_hrWhitney_Houston_s_daughter_i3DivText() {
-      return BeganWithDigit_2_hrWhitney_Houston_s_daughter_i3_div.getText();
+   public String getWhitney_Houston_s_daughter_in_me3DivText() {
+      return Whitney_Houston_s_daughter_in_me3_div.getText();
    }
 
-   public String getBeganWithDigit_2_hrDivText() {
-      return BeganWithDigit_2_hr_div.getText();
+   public String getWhitney_Houston_s_daughter_in_me4h3Text() {
+      return Whitney_Houston_s_daughter_in_me4_h3.getText();
    }
 
-   public String getWhitney_Houston_s_daughter_in_meh3Text() {
-      return Whitney_Houston_s_daughter_in_me_h3.getText();
+   public String getWhitney_Houston_s_daughter_in_me5LinkText() {
+      return Whitney_Houston_s_daughter_in_me5_a.getText();
    }
 
-   public String getWhitney_Houston_s_daughter_in_me2LinkText() {
-      return Whitney_Houston_s_daughter_in_me2_a.getText();
+   public void clickWhitney_Houston_s_daughter_in_me5() {
+      Whitney_Houston_s_daughter_in_me5_a.click();
    }
 
-   public void clickWhitney_Houston_s_daughter_in_me2() {
-      Whitney_Houston_s_daughter_in_me2_a.click();
+   public String getHuckabee_Being_gay_like_drinkingLiListItemText() {
+      return Huckabee_Being_gay_like_drinkingLiListItem.getText();
    }
 
-   public String getHuckabee_Homosexuality_like_drinLiListItemText() {
-      return Huckabee_Homosexuality_like_drinLiListItem.getText();
+   public String getHuckabee_Being_gay_like_drinking2DivText() {
+      return Huckabee_Being_gay_like_drinking2_div.getText();
    }
 
-   public String getHuckabee_Homosexuality_like_drin2DivText() {
-      return Huckabee_Homosexuality_like_drin2_div.getText();
+   public String getHuckabee_Being_gay_like_drinking3DivText() {
+      return Huckabee_Being_gay_like_drinking3_div.getText();
    }
 
-   public String getHuckabee_Homosexuality_like_drin3DivText() {
-      return Huckabee_Homosexuality_like_drin3_div.getText();
+   public String getHuckabee_Being_gay_like_drinking4h3Text() {
+      return Huckabee_Being_gay_like_drinking4_h3.getText();
    }
 
-   public String getHuckabee_Homosexuality_like_drin4h3Text() {
-      return Huckabee_Homosexuality_like_drin4_h3.getText();
+   public String getHuckabee_Being_gay_like_drinking5LinkText() {
+      return Huckabee_Being_gay_like_drinking5_a.getText();
    }
 
-   public String getHuckabee_Homosexuality_like_drin5LinkText() {
-      return Huckabee_Homosexuality_like_drin5_a.getText();
+   public void clickHuckabee_Being_gay_like_drinking5() {
+      Huckabee_Being_gay_like_drinking5_a.click();
    }
 
-   public void clickHuckabee_Homosexuality_like_drin5() {
-      Huckabee_Homosexuality_like_drin5_a.click();
+   public String getBeganWithDigit_23_minAnother_apparent_ISIS_beheLiListItemText() {
+      return BeganWithDigit_23_minAnother_apparent_ISIS_beheLiListItem.getText();
    }
 
-   public String getBeganWithDigit_1_hrAnother_apparent_ISIS_beheadLiListItemText() {
-      return BeganWithDigit_1_hrAnother_apparent_ISIS_beheadLiListItem.getText();
+   public String getBeganWithDigit_23_minAnother_apparent_ISIS_behe2DivText() {
+      return BeganWithDigit_23_minAnother_apparent_ISIS_behe2_div.getText();
    }
 
-   public String getBeganWithDigit_1_hrAnother_apparent_ISIS_behead2DivText() {
-      return BeganWithDigit_1_hrAnother_apparent_ISIS_behead2_div.getText();
+   public String getBeganWithDigit_23_minAnother_apparent_ISIS_behe3DivText() {
+      return BeganWithDigit_23_minAnother_apparent_ISIS_behe3_div.getText();
    }
 
-   public String getBeganWithDigit_1_hrAnother_apparent_ISIS_behead3DivText() {
-      return BeganWithDigit_1_hrAnother_apparent_ISIS_behead3_div.getText();
-   }
-
-   public String getBeganWithDigit_1_hrDivText() {
-      return BeganWithDigit_1_hr_div.getText();
+   public String getBeganWithDigit_23_minDivText() {
+      return BeganWithDigit_23_min_div.getText();
    }
 
    public String getAnother_apparent_ISIS_beheadingh3Text() {
@@ -6398,56 +6390,52 @@ public class Breaking_News_U_S_World_Weather_   {
       Another_apparent_ISIS_beheading2_a.click();
    }
 
-   public String getBeganWithDigit_2_hrWH_proposes_foreign_profits_LiListItemText() {
-      return BeganWithDigit_2_hrWH_proposes_foreign_profits_LiListItem.getText();
+   public String getWH_proposes_foreign_profits_taxLiListItemText() {
+      return WH_proposes_foreign_profits_taxLiListItem.getText();
    }
 
-   public String getBeganWithDigit_2_hrWH_proposes_foreign_profits_2DivText() {
-      return BeganWithDigit_2_hrWH_proposes_foreign_profits_2_div.getText();
+   public String getWH_proposes_foreign_profits_tax2DivText() {
+      return WH_proposes_foreign_profits_tax2_div.getText();
    }
 
-   public String getBeganWithDigit_2_hrWH_proposes_foreign_profits_3DivText() {
-      return BeganWithDigit_2_hrWH_proposes_foreign_profits_3_div.getText();
+   public String getWH_proposes_foreign_profits_tax3DivText() {
+      return WH_proposes_foreign_profits_tax3_div.getText();
    }
 
-   public String getBeganWithDigit_2_hr2DivText() {
-      return BeganWithDigit_2_hr2_div.getText();
+   public String getWH_proposes_foreign_profits_tax4h3Text() {
+      return WH_proposes_foreign_profits_tax4_h3.getText();
    }
 
-   public String getWH_proposes_foreign_profits_taxh3Text() {
-      return WH_proposes_foreign_profits_tax_h3.getText();
+   public String getWH_proposes_foreign_profits_tax5LinkText() {
+      return WH_proposes_foreign_profits_tax5_a.getText();
    }
 
-   public String getWH_proposes_foreign_profits_tax2LinkText() {
-      return WH_proposes_foreign_profits_tax2_a.getText();
+   public void clickWH_proposes_foreign_profits_tax5() {
+      WH_proposes_foreign_profits_tax5_a.click();
    }
 
-   public void clickWH_proposes_foreign_profits_tax2() {
-      WH_proposes_foreign_profits_tax2_a.click();
+   public String getBeganWithUnderscore_SNL_parodies_SeahawksLiListItemText() {
+      return BeganWithUnderscore_SNL_parodies_SeahawksLiListItem.getText();
    }
 
-   public String getBeganWithUnderscore_SNL_talks_Seahawks_Deflategate_LiListItemText() {
-      return BeganWithUnderscore_SNL_talks_Seahawks_Deflategate_LiListItem.getText();
+   public String getBeganWithUnderscore_SNL_parodies_Seahawks2DivText() {
+      return BeganWithUnderscore_SNL_parodies_Seahawks2_div.getText();
    }
 
-   public String getBeganWithUnderscore_SNL_talks_Seahawks_Deflategate_2DivText() {
-      return BeganWithUnderscore_SNL_talks_Seahawks_Deflategate_2_div.getText();
+   public String getBeganWithUnderscore_SNL_parodies_Seahawks3DivText() {
+      return BeganWithUnderscore_SNL_parodies_Seahawks3_div.getText();
    }
 
-   public String getBeganWithUnderscore_SNL_talks_Seahawks_Deflategate_3DivText() {
-      return BeganWithUnderscore_SNL_talks_Seahawks_Deflategate_3_div.getText();
+   public String getBeganWithUnderscore_SNL_parodies_Seahawks4h3Text() {
+      return BeganWithUnderscore_SNL_parodies_Seahawks4_h3.getText();
    }
 
-   public String getBeganWithUnderscore_SNL_talks_Seahawks_Deflategate_4h3Text() {
-      return BeganWithUnderscore_SNL_talks_Seahawks_Deflategate_4_h3.getText();
+   public String getBeganWithUnderscore_SNL_parodies_Seahawks5LinkText() {
+      return BeganWithUnderscore_SNL_parodies_Seahawks5_a.getText();
    }
 
-   public String getBeganWithUnderscore_SNL_talks_Seahawks_Deflategate_5LinkText() {
-      return BeganWithUnderscore_SNL_talks_Seahawks_Deflategate_5_a.getText();
-   }
-
-   public void clickBeganWithUnderscore_SNL_talks_Seahawks_Deflategate_5() {
-      BeganWithUnderscore_SNL_talks_Seahawks_Deflategate_5_a.click();
+   public void clickBeganWithUnderscore_SNL_parodies_Seahawks5() {
+      BeganWithUnderscore_SNL_parodies_Seahawks5_a.click();
    }
 
    public String getBeganWithDigit_2_hrWinter_storm_cancels_2K_fligLiListItemText() {
@@ -6462,8 +6450,8 @@ public class Breaking_News_U_S_World_Weather_   {
       return BeganWithDigit_2_hrWinter_storm_cancels_2K_flig3_div.getText();
    }
 
-   public String getBeganWithDigit_2_hr3DivText() {
-      return BeganWithDigit_2_hr3_div.getText();
+   public String getBeganWithDigit_2_hrDivText() {
+      return BeganWithDigit_2_hr_div.getText();
    }
 
    public String getWinter_storm_cancels_2K_flightsh3Text() {
@@ -6646,32 +6634,28 @@ public class Breaking_News_U_S_World_Weather_   {
       Bill_Maher_slams_medieval_Saudi_5_a.click();
    }
 
-   public String getBeganWithDigit_4_hrWill_2015_Puppy_Bowl_have_doLiListItemText() {
-      return BeganWithDigit_4_hrWill_2015_Puppy_Bowl_have_doLiListItem.getText();
+   public String getWill_2015_Puppy_Bowl_have_doubleLiListItemText() {
+      return Will_2015_Puppy_Bowl_have_doubleLiListItem.getText();
    }
 
-   public String getBeganWithDigit_4_hrWill_2015_Puppy_Bowl_have_do2DivText() {
-      return BeganWithDigit_4_hrWill_2015_Puppy_Bowl_have_do2_div.getText();
+   public String getWill_2015_Puppy_Bowl_have_double2DivText() {
+      return Will_2015_Puppy_Bowl_have_double2_div.getText();
    }
 
-   public String getBeganWithDigit_4_hrWill_2015_Puppy_Bowl_have_do3DivText() {
-      return BeganWithDigit_4_hrWill_2015_Puppy_Bowl_have_do3_div.getText();
+   public String getWill_2015_Puppy_Bowl_have_double3DivText() {
+      return Will_2015_Puppy_Bowl_have_double3_div.getText();
    }
 
-   public String getBeganWithDigit_4_hr2DivText() {
-      return BeganWithDigit_4_hr2_div.getText();
+   public String getWill_2015_Puppy_Bowl_have_double4h3Text() {
+      return Will_2015_Puppy_Bowl_have_double4_h3.getText();
    }
 
-   public String getWill_2015_Puppy_Bowl_have_doubleh3Text() {
-      return Will_2015_Puppy_Bowl_have_double_h3.getText();
+   public String getWill_2015_Puppy_Bowl_have_double5LinkText() {
+      return Will_2015_Puppy_Bowl_have_double5_a.getText();
    }
 
-   public String getWill_2015_Puppy_Bowl_have_double2LinkText() {
-      return Will_2015_Puppy_Bowl_have_double2_a.getText();
-   }
-
-   public void clickWill_2015_Puppy_Bowl_have_double2() {
-      Will_2015_Puppy_Bowl_have_double2_a.click();
+   public void clickWill_2015_Puppy_Bowl_have_double5() {
+      Will_2015_Puppy_Bowl_have_double5_a.click();
    }
 
    public String getWhat_to_watch_besides_the_Super_LiListItemText() {
@@ -6722,20 +6706,20 @@ public class Breaking_News_U_S_World_Weather_   {
       What_s_new_on_Netflix_and_Amazon5_a.click();
    }
 
-   public String getBeganWithDigit_1_hrEx_Power_Ranger_held_in_stabLiListItemText() {
-      return BeganWithDigit_1_hrEx_Power_Ranger_held_in_stabLiListItem.getText();
+   public String getBeganWithDigit_4_hrEx_Power_Ranger_held_in_stabLiListItemText() {
+      return BeganWithDigit_4_hrEx_Power_Ranger_held_in_stabLiListItem.getText();
    }
 
-   public String getBeganWithDigit_1_hrEx_Power_Ranger_held_in_stab2DivText() {
-      return BeganWithDigit_1_hrEx_Power_Ranger_held_in_stab2_div.getText();
+   public String getBeganWithDigit_4_hrEx_Power_Ranger_held_in_stab2DivText() {
+      return BeganWithDigit_4_hrEx_Power_Ranger_held_in_stab2_div.getText();
    }
 
-   public String getBeganWithDigit_1_hrEx_Power_Ranger_held_in_stab3DivText() {
-      return BeganWithDigit_1_hrEx_Power_Ranger_held_in_stab3_div.getText();
+   public String getBeganWithDigit_4_hrEx_Power_Ranger_held_in_stab3DivText() {
+      return BeganWithDigit_4_hrEx_Power_Ranger_held_in_stab3_div.getText();
    }
 
-   public String getBeganWithDigit_1_hr2DivText() {
-      return BeganWithDigit_1_hr2_div.getText();
+   public String getBeganWithDigit_4_hrDivText() {
+      return BeganWithDigit_4_hr_div.getText();
    }
 
    public String getEx_Power_Ranger_held_in_stabbingh3Text() {
@@ -6774,20 +6758,20 @@ public class Breaking_News_U_S_World_Weather_   {
       Baby_for_Timberlake_Biel5_a.click();
    }
 
-   public String getBeganWithDigit_57_minArtists_sculpt_masterpieceLiListItemText() {
-      return BeganWithDigit_57_minArtists_sculpt_masterpieceLiListItem.getText();
+   public String getBeganWithDigit_4_hrArtists_sculpt_masterpieces_LiListItemText() {
+      return BeganWithDigit_4_hrArtists_sculpt_masterpieces_LiListItem.getText();
    }
 
-   public String getBeganWithDigit_57_minArtists_sculpt_masterpiece2DivText() {
-      return BeganWithDigit_57_minArtists_sculpt_masterpiece2_div.getText();
+   public String getBeganWithDigit_4_hrArtists_sculpt_masterpieces_2DivText() {
+      return BeganWithDigit_4_hrArtists_sculpt_masterpieces_2_div.getText();
    }
 
-   public String getBeganWithDigit_57_minArtists_sculpt_masterpiece3DivText() {
-      return BeganWithDigit_57_minArtists_sculpt_masterpiece3_div.getText();
+   public String getBeganWithDigit_4_hrArtists_sculpt_masterpieces_3DivText() {
+      return BeganWithDigit_4_hrArtists_sculpt_masterpieces_3_div.getText();
    }
 
-   public String getBeganWithDigit_57_minDivText() {
-      return BeganWithDigit_57_min_div.getText();
+   public String getBeganWithDigit_4_hr2DivText() {
+      return BeganWithDigit_4_hr2_div.getText();
    }
 
    public String getArtists_sculpt_masterpieces_in_sh3Text() {
@@ -6802,32 +6786,28 @@ public class Breaking_News_U_S_World_Weather_   {
       Artists_sculpt_masterpieces_in_s2_a.click();
    }
 
-   public String getBeganWithDigit_2_hrObama_on_Hillary_or_Joe_I_loLiListItemText() {
-      return BeganWithDigit_2_hrObama_on_Hillary_or_Joe_I_loLiListItem.getText();
+   public String getObama_on_Hillary_or_Joe_I_love_tLiListItemText() {
+      return Obama_on_Hillary_or_Joe_I_love_tLiListItem.getText();
    }
 
-   public String getBeganWithDigit_2_hrObama_on_Hillary_or_Joe_I_lo2DivText() {
-      return BeganWithDigit_2_hrObama_on_Hillary_or_Joe_I_lo2_div.getText();
+   public String getObama_on_Hillary_or_Joe_I_love_t2DivText() {
+      return Obama_on_Hillary_or_Joe_I_love_t2_div.getText();
    }
 
-   public String getBeganWithDigit_2_hrObama_on_Hillary_or_Joe_I_lo3DivText() {
-      return BeganWithDigit_2_hrObama_on_Hillary_or_Joe_I_lo3_div.getText();
+   public String getObama_on_Hillary_or_Joe_I_love_t3DivText() {
+      return Obama_on_Hillary_or_Joe_I_love_t3_div.getText();
    }
 
-   public String getBeganWithDigit_2_hr4DivText() {
-      return BeganWithDigit_2_hr4_div.getText();
+   public String getObama_on_Hillary_or_Joe_I_love_t4h3Text() {
+      return Obama_on_Hillary_or_Joe_I_love_t4_h3.getText();
    }
 
-   public String getObama_on_Hillary_or_Joe_I_love_th3Text() {
-      return Obama_on_Hillary_or_Joe_I_love_t_h3.getText();
+   public String getObama_on_Hillary_or_Joe_I_love_t5LinkText() {
+      return Obama_on_Hillary_or_Joe_I_love_t5_a.getText();
    }
 
-   public String getObama_on_Hillary_or_Joe_I_love_t2LinkText() {
-      return Obama_on_Hillary_or_Joe_I_love_t2_a.getText();
-   }
-
-   public void clickObama_on_Hillary_or_Joe_I_love_t2() {
-      Obama_on_Hillary_or_Joe_I_love_t2_a.click();
+   public void clickObama_on_Hillary_or_Joe_I_love_t5() {
+      Obama_on_Hillary_or_Joe_I_love_t5_a.click();
    }
 
    public String getN_Y_Giants_co_owner_dies_after_fLiListItemText() {
@@ -6878,32 +6858,32 @@ public class Breaking_News_U_S_World_Weather_   {
       Painting_bought_for_5_000_auctio5_a.click();
    }
 
-   public String getBeganWithDigit_2_hrEgypt_releases_one_Al_JazeerLiListItemText() {
-      return BeganWithDigit_2_hrEgypt_releases_one_Al_JazeerLiListItem.getText();
+   public String getBeganWithDigit_2_hrJournalist_freed_from_Egypt_LiListItemText() {
+      return BeganWithDigit_2_hrJournalist_freed_from_Egypt_LiListItem.getText();
    }
 
-   public String getBeganWithDigit_2_hrEgypt_releases_one_Al_Jazeer2DivText() {
-      return BeganWithDigit_2_hrEgypt_releases_one_Al_Jazeer2_div.getText();
+   public String getBeganWithDigit_2_hrJournalist_freed_from_Egypt_2DivText() {
+      return BeganWithDigit_2_hrJournalist_freed_from_Egypt_2_div.getText();
    }
 
-   public String getBeganWithDigit_2_hrEgypt_releases_one_Al_Jazeer3DivText() {
-      return BeganWithDigit_2_hrEgypt_releases_one_Al_Jazeer3_div.getText();
+   public String getBeganWithDigit_2_hrJournalist_freed_from_Egypt_3DivText() {
+      return BeganWithDigit_2_hrJournalist_freed_from_Egypt_3_div.getText();
    }
 
-   public String getBeganWithDigit_2_hr5DivText() {
-      return BeganWithDigit_2_hr5_div.getText();
+   public String getBeganWithDigit_2_hr2DivText() {
+      return BeganWithDigit_2_hr2_div.getText();
    }
 
-   public String getEgypt_releases_one_Al_Jazeera_joh3Text() {
-      return Egypt_releases_one_Al_Jazeera_jo_h3.getText();
+   public String getJournalist_freed_from_Egypt_is_sh3Text() {
+      return Journalist_freed_from_Egypt_is_s_h3.getText();
    }
 
-   public String getEgypt_releases_one_Al_Jazeera_jo2LinkText() {
-      return Egypt_releases_one_Al_Jazeera_jo2_a.getText();
+   public String getJournalist_freed_from_Egypt_is_s2LinkText() {
+      return Journalist_freed_from_Egypt_is_s2_a.getText();
    }
 
-   public void clickEgypt_releases_one_Al_Jazeera_jo2() {
-      Egypt_releases_one_Al_Jazeera_jo2_a.click();
+   public void clickJournalist_freed_from_Egypt_is_s2() {
+      Journalist_freed_from_Egypt_is_s2_a.click();
    }
 
    public String getCatholic_draft_touches_on_plastiLiListItemText() {
@@ -7262,14 +7242,6 @@ public class Breaking_News_U_S_World_Weather_   {
       Watch_Live_TV4_a.click();
    }
 
-   public String getuiElement123DivText() {
-      return uiElement123_div.getText();
-   }
-
-   public String getcoverageContainer_2018143E_B6A8_DivText() {
-      return coverageContainer_2018143E_B6A8__div.getText();
-   }
-
    public String getmuted_playerDivText() {
       return muted_player_div.getText();
    }
@@ -7282,28 +7254,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return NASA_s_New_Horizons_spacecraft_n2_div.getText();
    }
 
-   public String getuiElement124DivText() {
-      return uiElement124_div.getText();
+   public String getuiElement123DivText() {
+      return uiElement123_div.getText();
    }
 
-   public String getuiElement125LinkText() {
-      return uiElement125_a.getText();
+   public String getuiElement124LinkText() {
+      return uiElement124_a.getText();
    }
 
-   public void clickuiElement125() {
-      uiElement125_a.click();
+   public void clickuiElement124() {
+      uiElement124_a.click();
    }
 
-   public String getuiElement126DivText() {
-      return uiElement126_div.getText();
+   public String getuiElement125DivText() {
+      return uiElement125_div.getText();
    }
 
-   public String getuiElement127LinkText() {
-      return uiElement127_a.getText();
+   public String getuiElement126LinkText() {
+      return uiElement126_a.getText();
    }
 
-   public void clickuiElement127() {
-      uiElement127_a.click();
+   public void clickuiElement126() {
+      uiElement126_a.click();
    }
 
    public String getNASA_s_New_Horizons_spacecraft_n3DivText() {
@@ -7330,28 +7302,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return BeganWithDigit_4_guys_4_deer_1_Mini_Cooper_2_div.getText();
    }
 
-   public String getuiElement128DivText() {
-      return uiElement128_div.getText();
+   public String getuiElement127DivText() {
+      return uiElement127_div.getText();
    }
 
-   public String getuiElement129LinkText() {
-      return uiElement129_a.getText();
+   public String getuiElement128LinkText() {
+      return uiElement128_a.getText();
    }
 
-   public void clickuiElement129() {
-      uiElement129_a.click();
+   public void clickuiElement128() {
+      uiElement128_a.click();
    }
 
-   public String getuiElement130DivText() {
-      return uiElement130_div.getText();
+   public String getuiElement129DivText() {
+      return uiElement129_div.getText();
    }
 
-   public String getuiElement131LinkText() {
-      return uiElement131_a.getText();
+   public String getuiElement130LinkText() {
+      return uiElement130_a.getText();
    }
 
-   public void clickuiElement131() {
-      uiElement131_a.click();
+   public void clickuiElement130() {
+      uiElement130_a.click();
    }
 
    public String getBeganWithDigit_4_guys_4_deer_1_Mini_Cooper_3DivText() {
@@ -7378,28 +7350,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return Lonely_on_Valentine_s_Day_Visit_2_div.getText();
    }
 
-   public String getuiElement132DivText() {
-      return uiElement132_div.getText();
+   public String getuiElement131DivText() {
+      return uiElement131_div.getText();
    }
 
-   public String getuiElement133LinkText() {
-      return uiElement133_a.getText();
+   public String getuiElement132LinkText() {
+      return uiElement132_a.getText();
    }
 
-   public void clickuiElement133() {
-      uiElement133_a.click();
+   public void clickuiElement132() {
+      uiElement132_a.click();
    }
 
-   public String getuiElement134DivText() {
-      return uiElement134_div.getText();
+   public String getuiElement133DivText() {
+      return uiElement133_div.getText();
    }
 
-   public String getuiElement135LinkText() {
-      return uiElement135_a.getText();
+   public String getuiElement134LinkText() {
+      return uiElement134_a.getText();
    }
 
-   public void clickuiElement135() {
-      uiElement135_a.click();
+   public void clickuiElement134() {
+      uiElement134_a.click();
    }
 
    public String getLonely_on_Valentine_s_Day_Visit_3DivText() {
@@ -7418,8 +7390,8 @@ public class Breaking_News_U_S_World_Weather_   {
       Lonely_on_Valentine_s_Day_Visit_5_a.click();
    }
 
-   public String getuiElement136DivText() {
-      return uiElement136_div.getText();
+   public String getuiElement135DivText() {
+      return uiElement135_div.getText();
    }
 
    public String getWhat_You_39_re_Talking_About_TheDivText() {
@@ -7442,28 +7414,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return The_hottest_photos_of_the_week2_div.getText();
    }
 
-   public String getuiElement137DivText() {
-      return uiElement137_div.getText();
+   public String getuiElement136DivText() {
+      return uiElement136_div.getText();
    }
 
-   public String getuiElement138LinkText() {
-      return uiElement138_a.getText();
+   public String getuiElement137LinkText() {
+      return uiElement137_a.getText();
    }
 
-   public void clickuiElement138() {
-      uiElement138_a.click();
+   public void clickuiElement137() {
+      uiElement137_a.click();
    }
 
-   public String getuiElement139DivText() {
-      return uiElement139_div.getText();
+   public String getuiElement138DivText() {
+      return uiElement138_div.getText();
    }
 
-   public String getuiElement140LinkText() {
-      return uiElement140_a.getText();
+   public String getuiElement139LinkText() {
+      return uiElement139_a.getText();
    }
 
-   public void clickuiElement140() {
-      uiElement140_a.click();
+   public void clickuiElement139() {
+      uiElement139_a.click();
    }
 
    public String getThe_hottest_photos_of_the_week3DivText() {
@@ -7490,28 +7462,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return BeganWithUnderscore_Smart_bullet_can_change_directi2_div.getText();
    }
 
-   public String getuiElement141DivText() {
-      return uiElement141_div.getText();
+   public String getuiElement140DivText() {
+      return uiElement140_div.getText();
    }
 
-   public String getuiElement142LinkText() {
-      return uiElement142_a.getText();
+   public String getuiElement141LinkText() {
+      return uiElement141_a.getText();
    }
 
-   public void clickuiElement142() {
-      uiElement142_a.click();
+   public void clickuiElement141() {
+      uiElement141_a.click();
    }
 
-   public String getuiElement143DivText() {
-      return uiElement143_div.getText();
+   public String getuiElement142DivText() {
+      return uiElement142_div.getText();
    }
 
-   public String getuiElement144LinkText() {
-      return uiElement144_a.getText();
+   public String getuiElement143LinkText() {
+      return uiElement143_a.getText();
    }
 
-   public void clickuiElement144() {
-      uiElement144_a.click();
+   public void clickuiElement143() {
+      uiElement143_a.click();
    }
 
    public String getBeganWithUnderscore_Smart_bullet_can_change_directi3DivText() {
@@ -7538,28 +7510,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return Powerful_new_mega_rocket_unveile2_div.getText();
    }
 
-   public String getuiElement145DivText() {
-      return uiElement145_div.getText();
+   public String getuiElement144DivText() {
+      return uiElement144_div.getText();
    }
 
-   public String getuiElement146LinkText() {
-      return uiElement146_a.getText();
+   public String getuiElement145LinkText() {
+      return uiElement145_a.getText();
    }
 
-   public void clickuiElement146() {
-      uiElement146_a.click();
+   public void clickuiElement145() {
+      uiElement145_a.click();
    }
 
-   public String getuiElement147DivText() {
-      return uiElement147_div.getText();
+   public String getuiElement146DivText() {
+      return uiElement146_div.getText();
    }
 
-   public String getuiElement148LinkText() {
-      return uiElement148_a.getText();
+   public String getuiElement147LinkText() {
+      return uiElement147_a.getText();
    }
 
-   public void clickuiElement148() {
-      uiElement148_a.click();
+   public void clickuiElement147() {
+      uiElement147_a.click();
    }
 
    public String getPowerful_new_mega_rocket_unveile3DivText() {
@@ -7598,28 +7570,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return BeganWithUnderscore_Dragon_dinosaur_unearthed2_div.getText();
    }
 
-   public String getuiElement149DivText() {
-      return uiElement149_div.getText();
+   public String getuiElement148DivText() {
+      return uiElement148_div.getText();
    }
 
-   public String getuiElement150LinkText() {
-      return uiElement150_a.getText();
+   public String getuiElement149LinkText() {
+      return uiElement149_a.getText();
    }
 
-   public void clickuiElement150() {
-      uiElement150_a.click();
+   public void clickuiElement149() {
+      uiElement149_a.click();
    }
 
-   public String getuiElement151DivText() {
-      return uiElement151_div.getText();
+   public String getuiElement150DivText() {
+      return uiElement150_div.getText();
    }
 
-   public String getuiElement152LinkText() {
-      return uiElement152_a.getText();
+   public String getuiElement151LinkText() {
+      return uiElement151_a.getText();
    }
 
-   public void clickuiElement152() {
-      uiElement152_a.click();
+   public void clickuiElement151() {
+      uiElement151_a.click();
    }
 
    public String getBeganWithUnderscore_Dragon_dinosaur_unearthed3DivText() {
@@ -7638,8 +7610,8 @@ public class Breaking_News_U_S_World_Weather_   {
       BeganWithUnderscore_Dragon_dinosaur_unearthed5_a.click();
    }
 
-   public String getuiElement153DivText() {
-      return uiElement153_div.getText();
+   public String getuiElement152DivText() {
+      return uiElement152_div.getText();
    }
 
    public String getDid_fisherman_discover_prehistorLiListItemText() {
@@ -7650,28 +7622,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return Did_fisherman_discover_prehistor2_div.getText();
    }
 
-   public String getuiElement154DivText() {
-      return uiElement154_div.getText();
+   public String getuiElement153DivText() {
+      return uiElement153_div.getText();
    }
 
-   public String getuiElement155LinkText() {
-      return uiElement155_a.getText();
+   public String getuiElement154LinkText() {
+      return uiElement154_a.getText();
    }
 
-   public void clickuiElement155() {
-      uiElement155_a.click();
+   public void clickuiElement154() {
+      uiElement154_a.click();
    }
 
-   public String getuiElement156DivText() {
-      return uiElement156_div.getText();
+   public String getuiElement155DivText() {
+      return uiElement155_div.getText();
    }
 
-   public String getuiElement157LinkText() {
-      return uiElement157_a.getText();
+   public String getuiElement156LinkText() {
+      return uiElement156_a.getText();
    }
 
-   public void clickuiElement157() {
-      uiElement157_a.click();
+   public void clickuiElement156() {
+      uiElement156_a.click();
    }
 
    public String getDid_fisherman_discover_prehistor3DivText() {
@@ -7698,28 +7670,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return Paleolithic_skull_found_in_Israe2_div.getText();
    }
 
-   public String getuiElement158DivText() {
-      return uiElement158_div.getText();
+   public String getuiElement157DivText() {
+      return uiElement157_div.getText();
    }
 
-   public String getuiElement159LinkText() {
-      return uiElement159_a.getText();
+   public String getuiElement158LinkText() {
+      return uiElement158_a.getText();
    }
 
-   public void clickuiElement159() {
-      uiElement159_a.click();
+   public void clickuiElement158() {
+      uiElement158_a.click();
    }
 
-   public String getuiElement160DivText() {
-      return uiElement160_div.getText();
+   public String getuiElement159DivText() {
+      return uiElement159_div.getText();
    }
 
-   public String getuiElement161LinkText() {
-      return uiElement161_a.getText();
+   public String getuiElement160LinkText() {
+      return uiElement160_a.getText();
    }
 
-   public void clickuiElement161() {
-      uiElement161_a.click();
+   public void clickuiElement160() {
+      uiElement160_a.click();
    }
 
    public String getPaleolithic_skull_found_in_Israe3DivText() {
@@ -7746,12 +7718,12 @@ public class Breaking_News_U_S_World_Weather_   {
       return CNN_MoneyIs_your_job_awesome_Tak2_ulListBlock.getText();
    }
 
-   public String getuiElement162LinkText() {
-      return uiElement162_a.getText();
+   public String getuiElement161LinkText() {
+      return uiElement161_a.getText();
    }
 
-   public void clickuiElement162() {
-      uiElement162_a.click();
+   public void clickuiElement161() {
+      uiElement161_a.click();
    }
 
    public String getCNN_MoneyText() {
@@ -7770,28 +7742,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return Is_your_job_awesome_Take_our_qui_div.getText();
    }
 
-   public String getuiElement163DivText() {
-      return uiElement163_div.getText();
+   public String getuiElement162DivText() {
+      return uiElement162_div.getText();
    }
 
-   public String getuiElement164LinkText() {
-      return uiElement164_a.getText();
+   public String getuiElement163LinkText() {
+      return uiElement163_a.getText();
    }
 
-   public void clickuiElement164() {
-      uiElement164_a.click();
+   public void clickuiElement163() {
+      uiElement163_a.click();
    }
 
-   public String getuiElement165DivText() {
-      return uiElement165_div.getText();
+   public String getuiElement164DivText() {
+      return uiElement164_div.getText();
    }
 
-   public String getuiElement166LinkText() {
-      return uiElement166_a.getText();
+   public String getuiElement165LinkText() {
+      return uiElement165_a.getText();
    }
 
-   public void clickuiElement166() {
-      uiElement166_a.click();
+   public void clickuiElement165() {
+      uiElement165_a.click();
    }
 
    public String getIs_your_job_awesome_Take_our_qui2DivText() {
@@ -7810,8 +7782,8 @@ public class Breaking_News_U_S_World_Weather_   {
       Is_your_job_awesome_Take_our_qui4_a.click();
    }
 
-   public String getuiElement167DivText() {
-      return uiElement167_div.getText();
+   public String getuiElement166DivText() {
+      return uiElement166_div.getText();
    }
 
    public String getBeganWithDigit_100_best_jobs_in_AmericaDivText() {
@@ -7894,20 +7866,20 @@ public class Breaking_News_U_S_World_Weather_   {
       The_most_important_investing_rul4_a.click();
    }
 
-   public String getuiElement168DivText() {
-      return uiElement168_div.getText();
+   public String getuiElement167DivText() {
+      return uiElement167_div.getText();
    }
 
    public String getad_bnr_btf_01DivText() {
       return ad_bnr_btf_01_div.getText();
    }
 
-   public String getuiElement169DivText() {
-      return uiElement169_div.getText();
+   public String getuiElement168DivText() {
+      return uiElement168_div.getText();
    }
 
-   public String getuiElement170DivText() {
-      return uiElement170_div.getText();
+   public String getuiElement169DivText() {
+      return uiElement169_div.getText();
    }
 
    public String getFeatured_Sections_TechAre_smart_DivText() {
@@ -7934,12 +7906,12 @@ public class Breaking_News_U_S_World_Weather_   {
       return TechAre_smart_drugs_driving_Sili3_ulListBlock.getText();
    }
 
-   public String getuiElement171LinkText() {
-      return uiElement171_a.getText();
+   public String getuiElement170LinkText() {
+      return uiElement170_a.getText();
    }
 
-   public void clickuiElement171() {
-      uiElement171_a.click();
+   public void clickuiElement170() {
+      uiElement170_a.click();
    }
 
    public String getTech3Text() {
@@ -8242,32 +8214,32 @@ public class Breaking_News_U_S_World_Weather_   {
       Mysterious_world_of_lightbombing5_a.click();
    }
 
-   public String getuiElement172DivText() {
-      return uiElement172_div.getText();
+   public String getuiElement171DivText() {
+      return uiElement171_div.getText();
    }
 
    public String getEntertainmentWho_is_Suge_Knight_DivText() {
       return EntertainmentWho_is_Suge_Knight__div.getText();
    }
 
-   public String getuiElement173DivText() {
-      return uiElement173_div.getText();
+   public String getuiElement172DivText() {
+      return uiElement172_div.getText();
    }
 
-   public String getuiElement174DivText() {
-      return uiElement174_div.getText();
+   public String getuiElement173DivText() {
+      return uiElement173_div.getText();
    }
 
    public String getEntertainmentWho_is_Suge_Knight_2_ulListBlockText() {
       return EntertainmentWho_is_Suge_Knight_2_ulListBlock.getText();
    }
 
-   public String getuiElement175LinkText() {
-      return uiElement175_a.getText();
+   public String getuiElement174LinkText() {
+      return uiElement174_a.getText();
    }
 
-   public void clickuiElement175() {
-      uiElement175_a.click();
+   public void clickuiElement174() {
+      uiElement174_a.click();
    }
 
    public String getEntertainment3Text() {
@@ -8570,32 +8542,32 @@ public class Breaking_News_U_S_World_Weather_   {
       Can_you_predict_the_Oscar_winner5_a.click();
    }
 
-   public String getuiElement176DivText() {
-      return uiElement176_div.getText();
+   public String getuiElement175DivText() {
+      return uiElement175_div.getText();
    }
 
-   public String getSportsLive_highlights_Patriots_vDivText() {
-      return SportsLive_highlights_Patriots_v_div.getText();
+   public String getSportsPlay_that_decided_Super_BoDivText() {
+      return SportsPlay_that_decided_Super_Bo_div.getText();
+   }
+
+   public String getuiElement176DivText() {
+      return uiElement176_div.getText();
    }
 
    public String getuiElement177DivText() {
       return uiElement177_div.getText();
    }
 
-   public String getuiElement178DivText() {
-      return uiElement178_div.getText();
+   public String getSportsPlay_that_decided_Super_Bo2_ulListBlockText() {
+      return SportsPlay_that_decided_Super_Bo2_ulListBlock.getText();
    }
 
-   public String getSportsLive_highlights_Patriots_v2_ulListBlockText() {
-      return SportsLive_highlights_Patriots_v2_ulListBlock.getText();
+   public String getuiElement178LinkText() {
+      return uiElement178_a.getText();
    }
 
-   public String getuiElement179LinkText() {
-      return uiElement179_a.getText();
-   }
-
-   public void clickuiElement179() {
-      uiElement179_a.click();
+   public void clickuiElement178() {
+      uiElement178_a.click();
    }
 
    public String getSports3Text() {
@@ -8610,32 +8582,72 @@ public class Breaking_News_U_S_World_Weather_   {
       Sports4_a.click();
    }
 
-   public String getLive_highlights_Patriots_vs_SeahLiListItemText() {
-      return Live_highlights_Patriots_vs_SeahLiListItem.getText();
+   public String getPlay_that_decided_Super_BowlPatrLiListItemText() {
+      return Play_that_decided_Super_BowlPatrLiListItem.getText();
    }
 
-   public String getLive_highlights_Patriots_vs_Seah2DivText() {
-      return Live_highlights_Patriots_vs_Seah2_div.getText();
+   public String getPlay_that_decided_Super_BowlPatr2DivText() {
+      return Play_that_decided_Super_BowlPatr2_div.getText();
    }
 
-   public String getLive_highlights_Patriots_vs_Seah3DivText() {
-      return Live_highlights_Patriots_vs_Seah3_div.getText();
+   public String getPlay_that_decided_Super_BowlDivText() {
+      return Play_that_decided_Super_Bowl_div.getText();
    }
 
-   public String getLive_highlights_Patriots_vs_Seah4DivText() {
-      return Live_highlights_Patriots_vs_Seah4_div.getText();
+   public String getPlay_that_decided_Super_Bowl2DivText() {
+      return Play_that_decided_Super_Bowl2_div.getText();
    }
 
-   public String getLive_highlights_Patriots_vs_Seah5h3Text() {
-      return Live_highlights_Patriots_vs_Seah5_h3.getText();
+   public String getPlay_that_decided_Super_Bowl3h3Text() {
+      return Play_that_decided_Super_Bowl3_h3.getText();
    }
 
-   public String getLive_highlights_Patriots_vs_Seah6LinkText() {
-      return Live_highlights_Patriots_vs_Seah6_a.getText();
+   public String getPlay_that_decided_Super_Bowl4LinkText() {
+      return Play_that_decided_Super_Bowl4_a.getText();
    }
 
-   public void clickLive_highlights_Patriots_vs_Seah6() {
-      Live_highlights_Patriots_vs_Seah6_a.click();
+   public void clickPlay_that_decided_Super_Bowl4() {
+      Play_that_decided_Super_Bowl4_a.click();
+   }
+
+   public String getPatriots_win_Super_Bowl_thrillerDivText() {
+      return Patriots_win_Super_Bowl_thriller_div.getText();
+   }
+
+   public String getPatriots_win_Super_Bowl_thriller2DivText() {
+      return Patriots_win_Super_Bowl_thriller2_div.getText();
+   }
+
+   public String getPatriots_win_Super_Bowl_thriller3h3Text() {
+      return Patriots_win_Super_Bowl_thriller3_h3.getText();
+   }
+
+   public String getPatriots_win_Super_Bowl_thriller4LinkText() {
+      return Patriots_win_Super_Bowl_thriller4_a.getText();
+   }
+
+   public void clickPatriots_win_Super_Bowl_thriller4() {
+      Patriots_win_Super_Bowl_thriller4_a.click();
+   }
+
+   public String getSo_Twitter_how_d_Katy_Perry_do_DivText() {
+      return So_Twitter_how_d_Katy_Perry_do__div.getText();
+   }
+
+   public String getSo_Twitter_how_d_Katy_Perry_do_2DivText() {
+      return So_Twitter_how_d_Katy_Perry_do_2_div.getText();
+   }
+
+   public String getSo_Twitter_how_d_Katy_Perry_do_3h3Text() {
+      return So_Twitter_how_d_Katy_Perry_do_3_h3.getText();
+   }
+
+   public String getSo_Twitter_how_d_Katy_Perry_do_4LinkText() {
+      return So_Twitter_how_d_Katy_Perry_do_4_a.getText();
+   }
+
+   public void clickSo_Twitter_how_d_Katy_Perry_do_4() {
+      So_Twitter_how_d_Katy_Perry_do_4_a.click();
    }
 
    public String getSuper_Bowl_commercial_gradesDivText() {
@@ -8658,26 +8670,6 @@ public class Breaking_News_U_S_World_Weather_   {
       Super_Bowl_commercial_grades4_a.click();
    }
 
-   public String getTroubled_ex_NFLer_has_brain_injuDivText() {
-      return Troubled_ex_NFLer_has_brain_inju_div.getText();
-   }
-
-   public String getTroubled_ex_NFLer_has_brain_inju2DivText() {
-      return Troubled_ex_NFLer_has_brain_inju2_div.getText();
-   }
-
-   public String getTroubled_ex_NFLer_has_brain_inju3h3Text() {
-      return Troubled_ex_NFLer_has_brain_inju3_h3.getText();
-   }
-
-   public String getTroubled_ex_NFLer_has_brain_inju4LinkText() {
-      return Troubled_ex_NFLer_has_brain_inju4_a.getText();
-   }
-
-   public void clickTroubled_ex_NFLer_has_brain_inju4() {
-      Troubled_ex_NFLer_has_brain_inju4_a.click();
-   }
-
    public String getNFL_owner_dies_after_fallDivText() {
       return NFL_owner_dies_after_fall_div.getText();
    }
@@ -8698,26 +8690,6 @@ public class Breaking_News_U_S_World_Weather_   {
       NFL_owner_dies_after_fall4_a.click();
    }
 
-   public String getObama_comments_on_DeflategateDivText() {
-      return Obama_comments_on_Deflategate_div.getText();
-   }
-
-   public String getObama_comments_on_Deflategate2DivText() {
-      return Obama_comments_on_Deflategate2_div.getText();
-   }
-
-   public String getObama_comments_on_Deflategate3h3Text() {
-      return Obama_comments_on_Deflategate3_h3.getText();
-   }
-
-   public String getObama_comments_on_Deflategate4LinkText() {
-      return Obama_comments_on_Deflategate4_a.getText();
-   }
-
-   public void clickObama_comments_on_Deflategate4() {
-      Obama_comments_on_Deflategate4_a.click();
-   }
-
    public String getHealthMom_angry_at_anti_vaxxers_DivText() {
       return HealthMom_angry_at_anti_vaxxers__div.getText();
    }
@@ -8726,12 +8698,12 @@ public class Breaking_News_U_S_World_Weather_   {
       return HealthMom_angry_at_anti_vaxxers_2_ulListBlock.getText();
    }
 
-   public String getuiElement180LinkText() {
-      return uiElement180_a.getText();
+   public String getuiElement179LinkText() {
+      return uiElement179_a.getText();
    }
 
-   public void clickuiElement180() {
-      uiElement180_a.click();
+   public void clickuiElement179() {
+      uiElement179_a.click();
    }
 
    public String getHealth3Text() {
@@ -8850,12 +8822,12 @@ public class Breaking_News_U_S_World_Weather_   {
       return LivingWhat_your_teen_should_be_r2_ulListBlock.getText();
    }
 
-   public String getuiElement181LinkText() {
-      return uiElement181_a.getText();
+   public String getuiElement180LinkText() {
+      return uiElement180_a.getText();
    }
 
-   public void clickuiElement181() {
-      uiElement181_a.click();
+   public void clickuiElement180() {
+      uiElement180_a.click();
    }
 
    public String getLiving3Text() {
@@ -8966,20 +8938,20 @@ public class Breaking_News_U_S_World_Weather_   {
       Leader_s_sacrifice_starts_moveme5_a.click();
    }
 
-   public String getTravel46_minArt_emerges_from_snoDivText() {
-      return Travel46_minArt_emerges_from_sno_div.getText();
+   public String getTravel4_hrArt_emerges_from_snow_DivText() {
+      return Travel4_hrArt_emerges_from_snow__div.getText();
    }
 
-   public String getTravel46_minArt_emerges_from_sno2_ulListBlockText() {
-      return Travel46_minArt_emerges_from_sno2_ulListBlock.getText();
+   public String getTravel4_hrArt_emerges_from_snow_2_ulListBlockText() {
+      return Travel4_hrArt_emerges_from_snow_2_ulListBlock.getText();
    }
 
-   public String getuiElement182LinkText() {
-      return uiElement182_a.getText();
+   public String getuiElement181LinkText() {
+      return uiElement181_a.getText();
    }
 
-   public void clickuiElement182() {
-      uiElement182_a.click();
+   public void clickuiElement181() {
+      uiElement181_a.click();
    }
 
    public String getTravel3Text() {
@@ -8994,20 +8966,20 @@ public class Breaking_News_U_S_World_Weather_   {
       Travel4_a.click();
    }
 
-   public String getBeganWithDigit_46_minArt_emerges_from_snowLiListItemText() {
-      return BeganWithDigit_46_minArt_emerges_from_snowLiListItem.getText();
+   public String getBeganWithDigit_4_hrArt_emerges_from_snowLiListItemText() {
+      return BeganWithDigit_4_hrArt_emerges_from_snowLiListItem.getText();
    }
 
-   public String getBeganWithDigit_46_minArt_emerges_from_snow2DivText() {
-      return BeganWithDigit_46_minArt_emerges_from_snow2_div.getText();
+   public String getBeganWithDigit_4_hrArt_emerges_from_snow2DivText() {
+      return BeganWithDigit_4_hrArt_emerges_from_snow2_div.getText();
    }
 
-   public String getBeganWithDigit_46_minArt_emerges_from_snow3DivText() {
-      return BeganWithDigit_46_minArt_emerges_from_snow3_div.getText();
+   public String getBeganWithDigit_4_hrArt_emerges_from_snow3DivText() {
+      return BeganWithDigit_4_hrArt_emerges_from_snow3_div.getText();
    }
 
-   public String getBeganWithDigit_46_minDivText() {
-      return BeganWithDigit_46_min_div.getText();
+   public String getBeganWithDigit_4_hr3DivText() {
+      return BeganWithDigit_4_hr3_div.getText();
    }
 
    public String getArt_emerges_from_snowh3Text() {
@@ -9094,24 +9066,24 @@ public class Breaking_News_U_S_World_Weather_   {
       Whale_watchers_celebrate_epic_se5_a.click();
    }
 
-   public String getuiElement183DivText() {
-      return uiElement183_div.getText();
+   public String getuiElement182DivText() {
+      return uiElement182_div.getText();
    }
 
-   public String getuiElement184DivText() {
-      return uiElement184_div.getText();
+   public String getuiElement183DivText() {
+      return uiElement183_div.getText();
    }
 
    public String getad_rect_btf_02DivText() {
       return ad_rect_btf_02_div.getText();
    }
 
-   public String getuiElement185DivText() {
-      return uiElement185_div.getText();
+   public String getuiElement184DivText() {
+      return uiElement184_div.getText();
    }
 
-   public String getuiElement186DivText() {
-      return uiElement186_div.getText();
+   public String getuiElement185DivText() {
+      return uiElement185_div.getText();
    }
 
    public String getVideo_Violence_between_Israel_anDivText() {
@@ -9154,28 +9126,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return Violence_between_Israel_and_Hezb5_div.getText();
    }
 
-   public String getuiElement187DivText() {
-      return uiElement187_div.getText();
+   public String getuiElement186DivText() {
+      return uiElement186_div.getText();
    }
 
-   public String getuiElement188LinkText() {
-      return uiElement188_a.getText();
+   public String getuiElement187LinkText() {
+      return uiElement187_a.getText();
    }
 
-   public void clickuiElement188() {
-      uiElement188_a.click();
+   public void clickuiElement187() {
+      uiElement187_a.click();
    }
 
-   public String getuiElement189DivText() {
-      return uiElement189_div.getText();
+   public String getuiElement188DivText() {
+      return uiElement188_div.getText();
    }
 
-   public String getuiElement190LinkText() {
-      return uiElement190_a.getText();
+   public String getuiElement189LinkText() {
+      return uiElement189_a.getText();
    }
 
-   public void clickuiElement190() {
-      uiElement190_a.click();
+   public void clickuiElement189() {
+      uiElement189_a.click();
    }
 
    public String getViolence_between_Israel_and_Hezb6DivText() {
@@ -9194,8 +9166,8 @@ public class Breaking_News_U_S_World_Weather_   {
       Violence_between_Israel_and_Hezb8_a.click();
    }
 
-   public String getuiElement191DivText() {
-      return uiElement191_div.getText();
+   public String getuiElement190DivText() {
+      return uiElement190_div.getText();
    }
 
    public String getChange_in_Saudi_ArabiaLiListItemText() {
@@ -9206,28 +9178,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return Change_in_Saudi_Arabia2_div.getText();
    }
 
-   public String getuiElement192DivText() {
-      return uiElement192_div.getText();
+   public String getuiElement191DivText() {
+      return uiElement191_div.getText();
    }
 
-   public String getuiElement193LinkText() {
-      return uiElement193_a.getText();
+   public String getuiElement192LinkText() {
+      return uiElement192_a.getText();
    }
 
-   public void clickuiElement193() {
-      uiElement193_a.click();
+   public void clickuiElement192() {
+      uiElement192_a.click();
    }
 
-   public String getuiElement194DivText() {
-      return uiElement194_div.getText();
+   public String getuiElement193DivText() {
+      return uiElement193_div.getText();
    }
 
-   public String getuiElement195LinkText() {
-      return uiElement195_a.getText();
+   public String getuiElement194LinkText() {
+      return uiElement194_a.getText();
    }
 
-   public void clickuiElement195() {
-      uiElement195_a.click();
+   public void clickuiElement194() {
+      uiElement194_a.click();
    }
 
    public String getChange_in_Saudi_Arabia3DivText() {
@@ -9254,28 +9226,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return BeganWithUnderscore_The_Shining_esque_machete_attac2_div.getText();
    }
 
-   public String getuiElement196DivText() {
-      return uiElement196_div.getText();
+   public String getuiElement195DivText() {
+      return uiElement195_div.getText();
    }
 
-   public String getuiElement197LinkText() {
-      return uiElement197_a.getText();
+   public String getuiElement196LinkText() {
+      return uiElement196_a.getText();
    }
 
-   public void clickuiElement197() {
-      uiElement197_a.click();
+   public void clickuiElement196() {
+      uiElement196_a.click();
    }
 
-   public String getuiElement198DivText() {
-      return uiElement198_div.getText();
+   public String getuiElement197DivText() {
+      return uiElement197_div.getText();
    }
 
-   public String getuiElement199LinkText() {
-      return uiElement199_a.getText();
+   public String getuiElement198LinkText() {
+      return uiElement198_a.getText();
    }
 
-   public void clickuiElement199() {
-      uiElement199_a.click();
+   public void clickuiElement198() {
+      uiElement198_a.click();
    }
 
    public String getBeganWithUnderscore_The_Shining_esque_machete_attac3DivText() {
@@ -9314,28 +9286,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return Why_was_this_Super_Bowl_puppy_ad5_div.getText();
    }
 
-   public String getuiElement200DivText() {
-      return uiElement200_div.getText();
+   public String getuiElement199DivText() {
+      return uiElement199_div.getText();
    }
 
-   public String getuiElement201LinkText() {
-      return uiElement201_a.getText();
+   public String getuiElement200LinkText() {
+      return uiElement200_a.getText();
    }
 
-   public void clickuiElement201() {
-      uiElement201_a.click();
+   public void clickuiElement200() {
+      uiElement200_a.click();
    }
 
-   public String getuiElement202DivText() {
-      return uiElement202_div.getText();
+   public String getuiElement201DivText() {
+      return uiElement201_div.getText();
    }
 
-   public String getuiElement203LinkText() {
-      return uiElement203_a.getText();
+   public String getuiElement202LinkText() {
+      return uiElement202_a.getText();
    }
 
-   public void clickuiElement203() {
-      uiElement203_a.click();
+   public void clickuiElement202() {
+      uiElement202_a.click();
    }
 
    public String getWhy_was_this_Super_Bowl_puppy_ad6DivText() {
@@ -9362,28 +9334,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return NASA_s_New_Horizons_spacecraft_n7_div.getText();
    }
 
-   public String getuiElement204DivText() {
-      return uiElement204_div.getText();
+   public String getuiElement203DivText() {
+      return uiElement203_div.getText();
    }
 
-   public String getuiElement205LinkText() {
-      return uiElement205_a.getText();
+   public String getuiElement204LinkText() {
+      return uiElement204_a.getText();
    }
 
-   public void clickuiElement205() {
-      uiElement205_a.click();
+   public void clickuiElement204() {
+      uiElement204_a.click();
    }
 
-   public String getuiElement206DivText() {
-      return uiElement206_div.getText();
+   public String getuiElement205DivText() {
+      return uiElement205_div.getText();
    }
 
-   public String getuiElement207LinkText() {
-      return uiElement207_a.getText();
+   public String getuiElement206LinkText() {
+      return uiElement206_a.getText();
    }
 
-   public void clickuiElement207() {
-      uiElement207_a.click();
+   public void clickuiElement206() {
+      uiElement206_a.click();
    }
 
    public String getNASA_s_New_Horizons_spacecraft_n8DivText() {
@@ -9410,28 +9382,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return This_Super_Bowl_ad_will_leave_yo2_div.getText();
    }
 
-   public String getuiElement208DivText() {
-      return uiElement208_div.getText();
+   public String getuiElement207DivText() {
+      return uiElement207_div.getText();
    }
 
-   public String getuiElement209LinkText() {
-      return uiElement209_a.getText();
+   public String getuiElement208LinkText() {
+      return uiElement208_a.getText();
    }
 
-   public void clickuiElement209() {
-      uiElement209_a.click();
+   public void clickuiElement208() {
+      uiElement208_a.click();
    }
 
-   public String getuiElement210DivText() {
-      return uiElement210_div.getText();
+   public String getuiElement209DivText() {
+      return uiElement209_div.getText();
    }
 
-   public String getuiElement211LinkText() {
-      return uiElement211_a.getText();
+   public String getuiElement210LinkText() {
+      return uiElement210_a.getText();
    }
 
-   public void clickuiElement211() {
-      uiElement211_a.click();
+   public void clickuiElement210() {
+      uiElement210_a.click();
    }
 
    public String getThis_Super_Bowl_ad_will_leave_yo3DivText() {
@@ -9458,28 +9430,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return Rare_predator_caught_on_camera2_div.getText();
    }
 
-   public String getuiElement212DivText() {
-      return uiElement212_div.getText();
+   public String getuiElement211DivText() {
+      return uiElement211_div.getText();
    }
 
-   public String getuiElement213LinkText() {
-      return uiElement213_a.getText();
+   public String getuiElement212LinkText() {
+      return uiElement212_a.getText();
    }
 
-   public void clickuiElement213() {
-      uiElement213_a.click();
+   public void clickuiElement212() {
+      uiElement212_a.click();
    }
 
-   public String getuiElement214DivText() {
-      return uiElement214_div.getText();
+   public String getuiElement213DivText() {
+      return uiElement213_div.getText();
    }
 
-   public String getuiElement215LinkText() {
-      return uiElement215_a.getText();
+   public String getuiElement214LinkText() {
+      return uiElement214_a.getText();
    }
 
-   public void clickuiElement215() {
-      uiElement215_a.click();
+   public void clickuiElement214() {
+      uiElement214_a.click();
    }
 
    public String getRare_predator_caught_on_camera3DivText() {
@@ -9506,28 +9478,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return Kim_Kardashian_West_shows_her_hi2_div.getText();
    }
 
-   public String getuiElement216DivText() {
-      return uiElement216_div.getText();
+   public String getuiElement215DivText() {
+      return uiElement215_div.getText();
    }
 
-   public String getuiElement217LinkText() {
-      return uiElement217_a.getText();
+   public String getuiElement216LinkText() {
+      return uiElement216_a.getText();
    }
 
-   public void clickuiElement217() {
-      uiElement217_a.click();
+   public void clickuiElement216() {
+      uiElement216_a.click();
    }
 
-   public String getuiElement218DivText() {
-      return uiElement218_div.getText();
+   public String getuiElement217DivText() {
+      return uiElement217_div.getText();
    }
 
-   public String getuiElement219LinkText() {
-      return uiElement219_a.getText();
+   public String getuiElement218LinkText() {
+      return uiElement218_a.getText();
    }
 
-   public void clickuiElement219() {
-      uiElement219_a.click();
+   public void clickuiElement218() {
+      uiElement218_a.click();
    }
 
    public String getKim_Kardashian_West_shows_her_hi3DivText() {
@@ -9554,28 +9526,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return Protest_interrupts_Muslim_Day_at2_div.getText();
    }
 
-   public String getuiElement220DivText() {
-      return uiElement220_div.getText();
+   public String getuiElement219DivText() {
+      return uiElement219_div.getText();
    }
 
-   public String getuiElement221LinkText() {
-      return uiElement221_a.getText();
+   public String getuiElement220LinkText() {
+      return uiElement220_a.getText();
    }
 
-   public void clickuiElement221() {
-      uiElement221_a.click();
+   public void clickuiElement220() {
+      uiElement220_a.click();
    }
 
-   public String getuiElement222DivText() {
-      return uiElement222_div.getText();
+   public String getuiElement221DivText() {
+      return uiElement221_div.getText();
    }
 
-   public String getuiElement223LinkText() {
-      return uiElement223_a.getText();
+   public String getuiElement222LinkText() {
+      return uiElement222_a.getText();
    }
 
-   public void clickuiElement223() {
-      uiElement223_a.click();
+   public void clickuiElement222() {
+      uiElement222_a.click();
    }
 
    public String getProtest_interrupts_Muslim_Day_at3DivText() {
@@ -9594,12 +9566,12 @@ public class Breaking_News_U_S_World_Weather_   {
       Protest_interrupts_Muslim_Day_at5_a.click();
    }
 
-   public String getuiElement224DivText() {
-      return uiElement224_div.getText();
+   public String getuiElement223DivText() {
+      return uiElement223_div.getText();
    }
 
-   public String getuiElement225DivText() {
-      return uiElement225_div.getText();
+   public String getuiElement224DivText() {
+      return uiElement224_div.getText();
    }
 
    public String getad_rect_btf_03DivText() {
@@ -9630,88 +9602,60 @@ public class Breaking_News_U_S_World_Weather_   {
       Opinions2_a.click();
    }
 
+   public String getuiElement225DivText() {
+      return uiElement225_div.getText();
+   }
+
    public String getuiElement226DivText() {
       return uiElement226_div.getText();
    }
 
-   public String getuiElement227DivText() {
-      return uiElement227_div.getText();
+   public String getVoicesIs_Soylent_a_miracle_food_DivText() {
+      return VoicesIs_Soylent_a_miracle_food__div.getText();
    }
 
-   public String getVoicesThe_Super_Bowl_ad_you_mustDivText() {
-      return VoicesThe_Super_Bowl_ad_you_must_div.getText();
+   public String getVoicesIs_Soylent_a_miracle_food_2DivText() {
+      return VoicesIs_Soylent_a_miracle_food_2_div.getText();
    }
 
-   public String getVoicesThe_Super_Bowl_ad_you_must2DivText() {
-      return VoicesThe_Super_Bowl_ad_you_must2_div.getText();
+   public String getVoicesIs_Soylent_a_miracle_food_3DivText() {
+      return VoicesIs_Soylent_a_miracle_food_3_div.getText();
    }
 
-   public String getVoicesThe_Super_Bowl_ad_you_must3DivText() {
-      return VoicesThe_Super_Bowl_ad_you_must3_div.getText();
-   }
-
-   public String getVoicesThe_Super_Bowl_ad_you_must4_ulListBlockText() {
-      return VoicesThe_Super_Bowl_ad_you_must4_ulListBlock.getText();
+   public String getVoicesIs_Soylent_a_miracle_food_4_ulListBlockText() {
+      return VoicesIs_Soylent_a_miracle_food_4_ulListBlock.getText();
    }
 
    public String getVoicesText() {
       return Voices_h2.getText();
    }
 
-   public String getThe_Super_Bowl_ad_you_must_watchDivText() {
-      return The_Super_Bowl_ad_you_must_watch_div.getText();
-   }
-
-   public String getuiElement228DivText() {
-      return uiElement228_div.getText();
-   }
-
-   public String getuiElement229LinkText() {
-      return uiElement229_a.getText();
-   }
-
-   public void clickuiElement229() {
-      uiElement229_a.click();
-   }
-
-   public String getuiElement230DivText() {
-      return uiElement230_div.getText();
-   }
-
-   public String getuiElement231LinkText() {
-      return uiElement231_a.getText();
-   }
-
-   public void clickuiElement231() {
-      uiElement231_a.click();
-   }
-
-   public String getThe_Super_Bowl_ad_you_must_watch2DivText() {
-      return The_Super_Bowl_ad_you_must_watch2_div.getText();
-   }
-
-   public String getThe_Super_Bowl_ad_you_must_watch3h3Text() {
-      return The_Super_Bowl_ad_you_must_watch3_h3.getText();
-   }
-
-   public String getThe_Super_Bowl_ad_you_must_watch4LinkText() {
-      return The_Super_Bowl_ad_you_must_watch4_a.getText();
-   }
-
-   public void clickThe_Super_Bowl_ad_you_must_watch4() {
-      The_Super_Bowl_ad_you_must_watch4_a.click();
-   }
-
-   public String getBy_Leslie_Morgan_SteinerDivText() {
-      return By_Leslie_Morgan_Steiner_div.getText();
-   }
-
-   public String getThere_s_one_that_all_100_millionDivText() {
-      return There_s_one_that_all_100_million_div.getText();
-   }
-
    public String getIs_Soylent_a_miracle_food_replacDivText() {
       return Is_Soylent_a_miracle_food_replac_div.getText();
+   }
+
+   public String getuiElement227DivText() {
+      return uiElement227_div.getText();
+   }
+
+   public String getuiElement228LinkText() {
+      return uiElement228_a.getText();
+   }
+
+   public void clickuiElement228() {
+      uiElement228_a.click();
+   }
+
+   public String getuiElement229DivText() {
+      return uiElement229_div.getText();
+   }
+
+   public String getuiElement230LinkText() {
+      return uiElement230_a.getText();
+   }
+
+   public void clickuiElement230() {
+      uiElement230_a.click();
    }
 
    public String getIs_Soylent_a_miracle_food_replac2DivText() {
@@ -9730,24 +9674,12 @@ public class Breaking_News_U_S_World_Weather_   {
       Is_Soylent_a_miracle_food_replac4_a.click();
    }
 
-   public String getJohn_Berman_Why_I_m_rooting_for_DivText() {
-      return John_Berman_Why_I_m_rooting_for__div.getText();
+   public String getBy_Jeff_YangDivText() {
+      return By_Jeff_Yang_div.getText();
    }
 
-   public String getJohn_Berman_Why_I_m_rooting_for_2DivText() {
-      return John_Berman_Why_I_m_rooting_for_2_div.getText();
-   }
-
-   public String getJohn_Berman_Why_I_m_rooting_for_3h3Text() {
-      return John_Berman_Why_I_m_rooting_for_3_h3.getText();
-   }
-
-   public String getJohn_Berman_Why_I_m_rooting_for_4LinkText() {
-      return John_Berman_Why_I_m_rooting_for_4_a.getText();
-   }
-
-   public void clickJohn_Berman_Why_I_m_rooting_for_4() {
-      John_Berman_Why_I_m_rooting_for_4_a.click();
+   public String getIt_can_help_with_weight_loss_butDivText() {
+      return It_can_help_with_weight_loss_but_div.getText();
    }
 
    public String getTime_for_honest_debate_about_IslDivText() {
@@ -9768,26 +9700,6 @@ public class Breaking_News_U_S_World_Weather_   {
 
    public void clickTime_for_honest_debate_about_Isl4() {
       Time_for_honest_debate_about_Isl4_a.click();
-   }
-
-   public String getRoger_Goodell_start_respecting_wDivText() {
-      return Roger_Goodell_start_respecting_w_div.getText();
-   }
-
-   public String getRoger_Goodell_start_respecting_w2DivText() {
-      return Roger_Goodell_start_respecting_w2_div.getText();
-   }
-
-   public String getRoger_Goodell_start_respecting_w3h3Text() {
-      return Roger_Goodell_start_respecting_w3_h3.getText();
-   }
-
-   public String getRoger_Goodell_start_respecting_w4LinkText() {
-      return Roger_Goodell_start_respecting_w4_a.getText();
-   }
-
-   public void clickRoger_Goodell_start_respecting_w4() {
-      Roger_Goodell_start_respecting_w4_a.click();
    }
 
    public String getWho_gains_the_most_by_Romney_s_eDivText() {
@@ -9850,6 +9762,66 @@ public class Breaking_News_U_S_World_Weather_   {
       I_won_t_let_unvaccinated_people_4_a.click();
    }
 
+   public String getThe_Super_Bowl_ad_you_must_watchDivText() {
+      return The_Super_Bowl_ad_you_must_watch_div.getText();
+   }
+
+   public String getThe_Super_Bowl_ad_you_must_watch2DivText() {
+      return The_Super_Bowl_ad_you_must_watch2_div.getText();
+   }
+
+   public String getThe_Super_Bowl_ad_you_must_watch3h3Text() {
+      return The_Super_Bowl_ad_you_must_watch3_h3.getText();
+   }
+
+   public String getThe_Super_Bowl_ad_you_must_watch4LinkText() {
+      return The_Super_Bowl_ad_you_must_watch4_a.getText();
+   }
+
+   public void clickThe_Super_Bowl_ad_you_must_watch4() {
+      The_Super_Bowl_ad_you_must_watch4_a.click();
+   }
+
+   public String getJohn_Berman_Why_I_m_rooting_for_DivText() {
+      return John_Berman_Why_I_m_rooting_for__div.getText();
+   }
+
+   public String getJohn_Berman_Why_I_m_rooting_for_2DivText() {
+      return John_Berman_Why_I_m_rooting_for_2_div.getText();
+   }
+
+   public String getJohn_Berman_Why_I_m_rooting_for_3h3Text() {
+      return John_Berman_Why_I_m_rooting_for_3_h3.getText();
+   }
+
+   public String getJohn_Berman_Why_I_m_rooting_for_4LinkText() {
+      return John_Berman_Why_I_m_rooting_for_4_a.getText();
+   }
+
+   public void clickJohn_Berman_Why_I_m_rooting_for_4() {
+      John_Berman_Why_I_m_rooting_for_4_a.click();
+   }
+
+   public String getRoger_Goodell_start_respecting_wDivText() {
+      return Roger_Goodell_start_respecting_w_div.getText();
+   }
+
+   public String getRoger_Goodell_start_respecting_w2DivText() {
+      return Roger_Goodell_start_respecting_w2_div.getText();
+   }
+
+   public String getRoger_Goodell_start_respecting_w3h3Text() {
+      return Roger_Goodell_start_respecting_w3_h3.getText();
+   }
+
+   public String getRoger_Goodell_start_respecting_w4LinkText() {
+      return Roger_Goodell_start_respecting_w4_a.getText();
+   }
+
+   public void clickRoger_Goodell_start_respecting_w4() {
+      Roger_Goodell_start_respecting_w4_a.click();
+   }
+
    public String getGloballyWho_s_winning_the_war_wiDivText() {
       return GloballyWho_s_winning_the_war_wi_div.getText();
    }
@@ -9870,28 +9842,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return Who_s_winning_the_war_with_ISIS_2_div.getText();
    }
 
-   public String getuiElement232DivText() {
-      return uiElement232_div.getText();
+   public String getuiElement231DivText() {
+      return uiElement231_div.getText();
    }
 
-   public String getuiElement233LinkText() {
-      return uiElement233_a.getText();
+   public String getuiElement232LinkText() {
+      return uiElement232_a.getText();
    }
 
-   public void clickuiElement233() {
-      uiElement233_a.click();
+   public void clickuiElement232() {
+      uiElement232_a.click();
    }
 
-   public String getuiElement234DivText() {
-      return uiElement234_div.getText();
+   public String getuiElement233DivText() {
+      return uiElement233_div.getText();
    }
 
-   public String getuiElement235LinkText() {
-      return uiElement235_a.getText();
+   public String getuiElement234LinkText() {
+      return uiElement234_a.getText();
    }
 
-   public void clickuiElement235() {
-      uiElement235_a.click();
+   public void clickuiElement234() {
+      uiElement234_a.click();
    }
 
    public String getWho_s_winning_the_war_with_ISIS_3DivText() {
@@ -9914,8 +9886,8 @@ public class Breaking_News_U_S_World_Weather_   {
       return By_Peter_Bergen_and_Emily_Schnei2_div.getText();
    }
 
-   public String getuiElement236DivText() {
-      return uiElement236_div.getText();
+   public String getuiElement235DivText() {
+      return uiElement235_div.getText();
    }
 
    public String getRemember_The_Great_Raid_of_1945LiListItemText() {
@@ -9926,28 +9898,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return Remember_The_Great_Raid_of_19452_div.getText();
    }
 
-   public String getuiElement237DivText() {
-      return uiElement237_div.getText();
+   public String getuiElement236DivText() {
+      return uiElement236_div.getText();
    }
 
-   public String getuiElement238LinkText() {
-      return uiElement238_a.getText();
+   public String getuiElement237LinkText() {
+      return uiElement237_a.getText();
    }
 
-   public void clickuiElement238() {
-      uiElement238_a.click();
+   public void clickuiElement237() {
+      uiElement237_a.click();
    }
 
-   public String getuiElement239DivText() {
-      return uiElement239_div.getText();
+   public String getuiElement238DivText() {
+      return uiElement238_div.getText();
    }
 
-   public String getuiElement240LinkText() {
-      return uiElement240_a.getText();
+   public String getuiElement239LinkText() {
+      return uiElement239_a.getText();
    }
 
-   public void clickuiElement240() {
-      uiElement240_a.click();
+   public void clickuiElement239() {
+      uiElement239_a.click();
    }
 
    public String getRemember_The_Great_Raid_of_19453DivText() {
@@ -9974,28 +9946,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return Faux_fury_over_Michelle_Obama_s_2_div.getText();
    }
 
-   public String getuiElement241DivText() {
-      return uiElement241_div.getText();
+   public String getuiElement240DivText() {
+      return uiElement240_div.getText();
    }
 
-   public String getuiElement242LinkText() {
-      return uiElement242_a.getText();
+   public String getuiElement241LinkText() {
+      return uiElement241_a.getText();
    }
 
-   public void clickuiElement242() {
-      uiElement242_a.click();
+   public void clickuiElement241() {
+      uiElement241_a.click();
    }
 
-   public String getuiElement243DivText() {
-      return uiElement243_div.getText();
+   public String getuiElement242DivText() {
+      return uiElement242_div.getText();
    }
 
-   public String getuiElement244LinkText() {
-      return uiElement244_a.getText();
+   public String getuiElement243LinkText() {
+      return uiElement243_a.getText();
    }
 
-   public void clickuiElement244() {
-      uiElement244_a.click();
+   public void clickuiElement243() {
+      uiElement243_a.click();
    }
 
    public String getFaux_fury_over_Michelle_Obama_s_3DivText() {
@@ -10022,28 +9994,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return This_ad_may_save_the_pangolin2_div.getText();
    }
 
-   public String getuiElement245DivText() {
-      return uiElement245_div.getText();
+   public String getuiElement244DivText() {
+      return uiElement244_div.getText();
    }
 
-   public String getuiElement246LinkText() {
-      return uiElement246_a.getText();
+   public String getuiElement245LinkText() {
+      return uiElement245_a.getText();
    }
 
-   public void clickuiElement246() {
-      uiElement246_a.click();
+   public void clickuiElement245() {
+      uiElement245_a.click();
    }
 
-   public String getuiElement247DivText() {
-      return uiElement247_div.getText();
+   public String getuiElement246DivText() {
+      return uiElement246_div.getText();
    }
 
-   public String getuiElement248LinkText() {
-      return uiElement248_a.getText();
+   public String getuiElement247LinkText() {
+      return uiElement247_a.getText();
    }
 
-   public void clickuiElement248() {
-      uiElement248_a.click();
+   public void clickuiElement247() {
+      uiElement247_a.click();
    }
 
    public String getThis_ad_may_save_the_pangolin3DivText() {
@@ -10070,28 +10042,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return What_you_don_t_know_about_border2_div.getText();
    }
 
-   public String getuiElement249DivText() {
-      return uiElement249_div.getText();
+   public String getuiElement248DivText() {
+      return uiElement248_div.getText();
    }
 
-   public String getuiElement250LinkText() {
-      return uiElement250_a.getText();
+   public String getuiElement249LinkText() {
+      return uiElement249_a.getText();
    }
 
-   public void clickuiElement250() {
-      uiElement250_a.click();
+   public void clickuiElement249() {
+      uiElement249_a.click();
    }
 
-   public String getuiElement251DivText() {
-      return uiElement251_div.getText();
+   public String getuiElement250DivText() {
+      return uiElement250_div.getText();
    }
 
-   public String getuiElement252LinkText() {
-      return uiElement252_a.getText();
+   public String getuiElement251LinkText() {
+      return uiElement251_a.getText();
    }
 
-   public void clickuiElement252() {
-      uiElement252_a.click();
+   public void clickuiElement251() {
+      uiElement251_a.click();
    }
 
    public String getWhat_you_don_t_know_about_border3DivText() {
@@ -10110,6 +10082,10 @@ public class Breaking_News_U_S_World_Weather_   {
       What_you_don_t_know_about_border5_a.click();
    }
 
+   public String getuiElement252DivText() {
+      return uiElement252_div.getText();
+   }
+
    public String getuiElement253DivText() {
       return uiElement253_div.getText();
    }
@@ -10126,12 +10102,8 @@ public class Breaking_News_U_S_World_Weather_   {
       return uiElement256_div.getText();
    }
 
-   public String getuiElement257DivText() {
-      return uiElement257_div.getText();
-   }
-
-   public String getuiElement258_ulListBlockText() {
-      return uiElement258_ulListBlock.getText();
+   public String getuiElement257_ulListBlockText() {
+      return uiElement257_ulListBlock.getText();
    }
 
    public String getMore_2DivText() {
@@ -10158,36 +10130,36 @@ public class Breaking_News_U_S_World_Weather_   {
       More_6_a.click();
    }
 
+   public String getuiElement258DivText() {
+      return uiElement258_div.getText();
+   }
+
    public String getuiElement259DivText() {
       return uiElement259_div.getText();
    }
 
-   public String getuiElement260DivText() {
-      return uiElement260_div.getText();
+   public String getCNN_PhotosSuper_Bowl_XLIX_The_beDivText() {
+      return CNN_PhotosSuper_Bowl_XLIX_The_be_div.getText();
    }
 
-   public String getCNN_PhotosPortraits_of_Portland_DivText() {
-      return CNN_PhotosPortraits_of_Portland__div.getText();
+   public String getCNN_PhotosSuper_Bowl_XLIX_The_be2DivText() {
+      return CNN_PhotosSuper_Bowl_XLIX_The_be2_div.getText();
    }
 
-   public String getCNN_PhotosPortraits_of_Portland_2DivText() {
-      return CNN_PhotosPortraits_of_Portland_2_div.getText();
+   public String getCNN_PhotosSuper_Bowl_XLIX_The_be3DivText() {
+      return CNN_PhotosSuper_Bowl_XLIX_The_be3_div.getText();
    }
 
-   public String getCNN_PhotosPortraits_of_Portland_3DivText() {
-      return CNN_PhotosPortraits_of_Portland_3_div.getText();
+   public String getCNN_PhotosSuper_Bowl_XLIX_The_be4_ulListBlockText() {
+      return CNN_PhotosSuper_Bowl_XLIX_The_be4_ulListBlock.getText();
    }
 
-   public String getCNN_PhotosPortraits_of_Portland_4_ulListBlockText() {
-      return CNN_PhotosPortraits_of_Portland_4_ulListBlock.getText();
+   public String getuiElement260LinkText() {
+      return uiElement260_a.getText();
    }
 
-   public String getuiElement261LinkText() {
-      return uiElement261_a.getText();
-   }
-
-   public void clickuiElement261() {
-      uiElement261_a.click();
+   public void clickuiElement260() {
+      uiElement260_a.click();
    }
 
    public String getCNN_PhotosText() {
@@ -10202,32 +10174,56 @@ public class Breaking_News_U_S_World_Weather_   {
       CNN_Photos2_a.click();
    }
 
+   public String getSuper_Bowl_XLIX_The_best_photosDivText() {
+      return Super_Bowl_XLIX_The_best_photos_div.getText();
+   }
+
+   public String getuiElement261DivText() {
+      return uiElement261_div.getText();
+   }
+
+   public String getuiElement262LinkText() {
+      return uiElement262_a.getText();
+   }
+
+   public void clickuiElement262() {
+      uiElement262_a.click();
+   }
+
+   public String getuiElement263DivText() {
+      return uiElement263_div.getText();
+   }
+
+   public String getuiElement264LinkText() {
+      return uiElement264_a.getText();
+   }
+
+   public void clickuiElement264() {
+      uiElement264_a.click();
+   }
+
+   public String getSuper_Bowl_XLIX_The_best_photos2DivText() {
+      return Super_Bowl_XLIX_The_best_photos2_div.getText();
+   }
+
+   public String getSuper_Bowl_XLIX_The_best_photos3h3Text() {
+      return Super_Bowl_XLIX_The_best_photos3_h3.getText();
+   }
+
+   public String getSuper_Bowl_XLIX_The_best_photos4LinkText() {
+      return Super_Bowl_XLIX_The_best_photos4_a.getText();
+   }
+
+   public void clickSuper_Bowl_XLIX_The_best_photos4() {
+      Super_Bowl_XLIX_The_best_photos4_a.click();
+   }
+
+   public String getuiElement265DivText() {
+      return uiElement265_div.getText();
+   }
+
    public String getPortraits_of_Portland_s_localsDivText() {
       return Portraits_of_Portland_s_locals_div.getText();
-   }
-
-   public String getuiElement262DivText() {
-      return uiElement262_div.getText();
-   }
-
-   public String getuiElement263LinkText() {
-      return uiElement263_a.getText();
-   }
-
-   public void clickuiElement263() {
-      uiElement263_a.click();
-   }
-
-   public String getuiElement264DivText() {
-      return uiElement264_div.getText();
-   }
-
-   public String getuiElement265LinkText() {
-      return uiElement265_a.getText();
-   }
-
-   public void clickuiElement265() {
-      uiElement265_a.click();
    }
 
    public String getPortraits_of_Portland_s_locals2DivText() {
@@ -10244,30 +10240,6 @@ public class Breaking_News_U_S_World_Weather_   {
 
    public void clickPortraits_of_Portland_s_locals4() {
       Portraits_of_Portland_s_locals4_a.click();
-   }
-
-   public String getuiElement266DivText() {
-      return uiElement266_div.getText();
-   }
-
-   public String getBackstage_at_a_traveling_circusDivText() {
-      return Backstage_at_a_traveling_circus_div.getText();
-   }
-
-   public String getBackstage_at_a_traveling_circus2DivText() {
-      return Backstage_at_a_traveling_circus2_div.getText();
-   }
-
-   public String getBackstage_at_a_traveling_circus3h3Text() {
-      return Backstage_at_a_traveling_circus3_h3.getText();
-   }
-
-   public String getBackstage_at_a_traveling_circus4LinkText() {
-      return Backstage_at_a_traveling_circus4_a.getText();
-   }
-
-   public void clickBackstage_at_a_traveling_circus4() {
-      Backstage_at_a_traveling_circus4_a.click();
    }
 
    public String getDaily_DistractionsThe_RidiculistDivText() {
@@ -10290,28 +10262,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return The_Ridiculist_Driver_pulled_ove2_div.getText();
    }
 
-   public String getuiElement267DivText() {
-      return uiElement267_div.getText();
+   public String getuiElement266DivText() {
+      return uiElement266_div.getText();
    }
 
-   public String getuiElement268LinkText() {
-      return uiElement268_a.getText();
+   public String getuiElement267LinkText() {
+      return uiElement267_a.getText();
    }
 
-   public void clickuiElement268() {
-      uiElement268_a.click();
+   public void clickuiElement267() {
+      uiElement267_a.click();
    }
 
-   public String getuiElement269DivText() {
-      return uiElement269_div.getText();
+   public String getuiElement268DivText() {
+      return uiElement268_div.getText();
    }
 
-   public String getuiElement270LinkText() {
-      return uiElement270_a.getText();
+   public String getuiElement269LinkText() {
+      return uiElement269_a.getText();
    }
 
-   public void clickuiElement270() {
-      uiElement270_a.click();
+   public void clickuiElement269() {
+      uiElement269_a.click();
    }
 
    public String getThe_Ridiculist_Driver_pulled_ove3DivText() {
@@ -10338,28 +10310,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return Shiver_me_timbers_Medical_tools_2_div.getText();
    }
 
-   public String getuiElement271DivText() {
-      return uiElement271_div.getText();
+   public String getuiElement270DivText() {
+      return uiElement270_div.getText();
    }
 
-   public String getuiElement272LinkText() {
-      return uiElement272_a.getText();
+   public String getuiElement271LinkText() {
+      return uiElement271_a.getText();
    }
 
-   public void clickuiElement272() {
-      uiElement272_a.click();
+   public void clickuiElement271() {
+      uiElement271_a.click();
    }
 
-   public String getuiElement273DivText() {
-      return uiElement273_div.getText();
+   public String getuiElement272DivText() {
+      return uiElement272_div.getText();
    }
 
-   public String getuiElement274LinkText() {
-      return uiElement274_a.getText();
+   public String getuiElement273LinkText() {
+      return uiElement273_a.getText();
    }
 
-   public void clickuiElement274() {
-      uiElement274_a.click();
+   public void clickuiElement273() {
+      uiElement273_a.click();
    }
 
    public String getShiver_me_timbers_Medical_tools_3DivText() {
@@ -10386,28 +10358,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return BeganWithUnderscore_Zombie_cat_found_alive_five_day2_div.getText();
    }
 
-   public String getuiElement275DivText() {
-      return uiElement275_div.getText();
+   public String getuiElement274DivText() {
+      return uiElement274_div.getText();
    }
 
-   public String getuiElement276LinkText() {
-      return uiElement276_a.getText();
+   public String getuiElement275LinkText() {
+      return uiElement275_a.getText();
    }
 
-   public void clickuiElement276() {
-      uiElement276_a.click();
+   public void clickuiElement275() {
+      uiElement275_a.click();
    }
 
-   public String getuiElement277DivText() {
-      return uiElement277_div.getText();
+   public String getuiElement276DivText() {
+      return uiElement276_div.getText();
    }
 
-   public String getuiElement278LinkText() {
-      return uiElement278_a.getText();
+   public String getuiElement277LinkText() {
+      return uiElement277_a.getText();
    }
 
-   public void clickuiElement278() {
-      uiElement278_a.click();
+   public void clickuiElement277() {
+      uiElement277_a.click();
    }
 
    public String getBeganWithUnderscore_Zombie_cat_found_alive_five_day3DivText() {
@@ -10434,28 +10406,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return Dad_builds_backyard_luge_track2_div.getText();
    }
 
-   public String getuiElement279DivText() {
-      return uiElement279_div.getText();
+   public String getuiElement278DivText() {
+      return uiElement278_div.getText();
    }
 
-   public String getuiElement280LinkText() {
-      return uiElement280_a.getText();
+   public String getuiElement279LinkText() {
+      return uiElement279_a.getText();
    }
 
-   public void clickuiElement280() {
-      uiElement280_a.click();
+   public void clickuiElement279() {
+      uiElement279_a.click();
    }
 
-   public String getuiElement281DivText() {
-      return uiElement281_div.getText();
+   public String getuiElement280DivText() {
+      return uiElement280_div.getText();
    }
 
-   public String getuiElement282LinkText() {
-      return uiElement282_a.getText();
+   public String getuiElement281LinkText() {
+      return uiElement281_a.getText();
    }
 
-   public void clickuiElement282() {
-      uiElement282_a.click();
+   public void clickuiElement281() {
+      uiElement281_a.click();
    }
 
    public String getDad_builds_backyard_luge_track3DivText() {
@@ -10474,8 +10446,8 @@ public class Breaking_News_U_S_World_Weather_   {
       Dad_builds_backyard_luge_track5_a.click();
    }
 
-   public String getuiElement283DivText() {
-      return uiElement283_div.getText();
+   public String getuiElement282DivText() {
+      return uiElement282_div.getText();
    }
 
    public String getExtraordinary_PeopleSchool_leadeDivText() {
@@ -10486,12 +10458,12 @@ public class Breaking_News_U_S_World_Weather_   {
       return Extraordinary_PeopleSchool_leade2_ulListBlock.getText();
    }
 
-   public String getuiElement284LinkText() {
-      return uiElement284_a.getText();
+   public String getuiElement283LinkText() {
+      return uiElement283_a.getText();
    }
 
-   public void clickuiElement284() {
-      uiElement284_a.click();
+   public void clickuiElement283() {
+      uiElement283_a.click();
    }
 
    public String getExtraordinary_PeopleText() {
@@ -10510,28 +10482,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return School_leader_s_sacrifice_starts_div.getText();
    }
 
-   public String getuiElement285DivText() {
-      return uiElement285_div.getText();
+   public String getuiElement284DivText() {
+      return uiElement284_div.getText();
    }
 
-   public String getuiElement286LinkText() {
-      return uiElement286_a.getText();
+   public String getuiElement285LinkText() {
+      return uiElement285_a.getText();
    }
 
-   public void clickuiElement286() {
-      uiElement286_a.click();
+   public void clickuiElement285() {
+      uiElement285_a.click();
    }
 
-   public String getuiElement287DivText() {
-      return uiElement287_div.getText();
+   public String getuiElement286DivText() {
+      return uiElement286_div.getText();
    }
 
-   public String getuiElement288LinkText() {
-      return uiElement288_a.getText();
+   public String getuiElement287LinkText() {
+      return uiElement287_a.getText();
    }
 
-   public void clickuiElement288() {
-      uiElement288_a.click();
+   public void clickuiElement287() {
+      uiElement287_a.click();
    }
 
    public String getSchool_leader_s_sacrifice_starts2DivText() {
@@ -10550,8 +10522,8 @@ public class Breaking_News_U_S_World_Weather_   {
       School_leader_s_sacrifice_starts4_a.click();
    }
 
-   public String getuiElement289DivText() {
-      return uiElement289_div.getText();
+   public String getuiElement288DivText() {
+      return uiElement288_div.getText();
    }
 
    public String getBeganWithDigit_5_ways_to_be_extraordinaryDivText() {
@@ -10594,6 +10566,10 @@ public class Breaking_News_U_S_World_Weather_   {
       BeganWithDigit_11_extraordinary_people_of_20144_a.click();
    }
 
+   public String getuiElement289DivText() {
+      return uiElement289_div.getText();
+   }
+
    public String getuiElement290DivText() {
       return uiElement290_div.getText();
    }
@@ -10608,10 +10584,6 @@ public class Breaking_News_U_S_World_Weather_   {
 
    public String getuiElement293DivText() {
       return uiElement293_div.getText();
-   }
-
-   public String getuiElement294DivText() {
-      return uiElement294_div.getText();
    }
 
    public String getFrom_Our_Partners_HealthgradesWhDivText() {
@@ -10886,12 +10858,12 @@ public class Breaking_News_U_S_World_Weather_   {
       return Trulia_Home_SearchSearch_million2_ulListBlock.getText();
    }
 
-   public String getuiElement295LinkText() {
-      return uiElement295_a.getText();
+   public String getuiElement294LinkText() {
+      return uiElement294_a.getText();
    }
 
-   public void clickuiElement295() {
-      uiElement295_a.click();
+   public void clickuiElement294() {
+      uiElement294_a.click();
    }
 
    public String getTrulia_Home_SearchText() {
@@ -11034,12 +11006,12 @@ public class Breaking_News_U_S_World_Weather_   {
       return LendingTreeRate_hits_2_7_APR_5_12_ulListBlock.getText();
    }
 
-   public String getuiElement296LinkText() {
-      return uiElement296_a.getText();
+   public String getuiElement295LinkText() {
+      return uiElement295_a.getText();
    }
 
-   public void clickuiElement296() {
-      uiElement296_a.click();
+   public void clickuiElement295() {
+      uiElement295_a.click();
    }
 
    public String getLendingTreeText() {
@@ -11158,12 +11130,12 @@ public class Breaking_News_U_S_World_Weather_   {
       return AOL_Lopez_closet_is_one_enormous2_ulListBlock.getText();
    }
 
-   public String getuiElement297LinkText() {
-      return uiElement297_a.getText();
+   public String getuiElement296LinkText() {
+      return uiElement296_a.getText();
    }
 
-   public void clickuiElement297() {
-      uiElement297_a.click();
+   public void clickuiElement296() {
+      uiElement296_a.click();
    }
 
    public String getAOLText() {
@@ -11282,12 +11254,12 @@ public class Breaking_News_U_S_World_Weather_   {
       return Job_Search_Indeed_comPart_time_j2_ulListBlock.getText();
    }
 
-   public String getuiElement298LinkText() {
-      return uiElement298_a.getText();
+   public String getuiElement297LinkText() {
+      return uiElement297_a.getText();
    }
 
-   public void clickuiElement298() {
-      uiElement298_a.click();
+   public void clickuiElement297() {
+      uiElement297_a.click();
    }
 
    public String getJob_Search_Indeed_comText() {
@@ -11398,12 +11370,12 @@ public class Breaking_News_U_S_World_Weather_   {
       Retail_jobs5_a.click();
    }
 
-   public String getuiElement299DivText() {
-      return uiElement299_div.getText();
+   public String getuiElement298DivText() {
+      return uiElement298_div.getText();
    }
 
-   public String getuiElement300DivText() {
-      return uiElement300_div.getText();
+   public String getuiElement299DivText() {
+      return uiElement299_div.getText();
    }
 
    public String getIn_Case_You_Missed_It_Voices_of_DivText() {
@@ -11438,28 +11410,28 @@ public class Breaking_News_U_S_World_Weather_   {
       return She_survived_Dr_Mengele_s_experi_div.getText();
    }
 
-   public String getuiElement301DivText() {
-      return uiElement301_div.getText();
+   public String getuiElement300DivText() {
+      return uiElement300_div.getText();
    }
 
-   public String getuiElement302LinkText() {
-      return uiElement302_a.getText();
+   public String getuiElement301LinkText() {
+      return uiElement301_a.getText();
    }
 
-   public void clickuiElement302() {
-      uiElement302_a.click();
+   public void clickuiElement301() {
+      uiElement301_a.click();
    }
 
-   public String getuiElement303DivText() {
-      return uiElement303_div.getText();
+   public String getuiElement302DivText() {
+      return uiElement302_div.getText();
    }
 
-   public String getuiElement304LinkText() {
-      return uiElement304_a.getText();
+   public String getuiElement303LinkText() {
+      return uiElement303_a.getText();
    }
 
-   public void clickuiElement304() {
-      uiElement304_a.click();
+   public void clickuiElement303() {
+      uiElement303_a.click();
    }
 
    public String getShe_survived_Dr_Mengele_s_experi2DivText() {
@@ -11478,8 +11450,8 @@ public class Breaking_News_U_S_World_Weather_   {
       She_survived_Dr_Mengele_s_experi4_a.click();
    }
 
-   public String getuiElement305DivText() {
-      return uiElement305_div.getText();
+   public String getuiElement304DivText() {
+      return uiElement304_div.getText();
    }
 
    public String getOscar_winner_comes_out_Comcast_bDivText() {
@@ -11778,12 +11750,12 @@ public class Breaking_News_U_S_World_Weather_   {
       Sam_Smith_will_pay_Tom_Petty_for5_a.click();
    }
 
-   public String getuiElement306DivText() {
-      return uiElement306_div.getText();
+   public String getuiElement305DivText() {
+      return uiElement305_div.getText();
    }
 
-   public String getuiElement307DivText() {
-      return uiElement307_div.getText();
+   public String getuiElement306DivText() {
+      return uiElement306_div.getText();
    }
 
    public String getad_bnr_btf_02DivText() {
@@ -11794,20 +11766,20 @@ public class Breaking_News_U_S_World_Weather_   {
       return ym_764344014241209959_div.getText();
    }
 
-   public String getuiElement308DivText() {
-      return uiElement308_div.getText();
+   public String getuiElement307DivText() {
+      return uiElement307_div.getText();
    }
 
-   public String getuiElement309DivText() {
-      return uiElement309_div.getText();
+   public String getuiElement308DivText() {
+      return uiElement308_div.getText();
    }
 
    public String getjs_weather__footerDivText() {
       return js_weather__footer_div.getText();
    }
 
-   public String getuiElement310DivText() {
-      return uiElement310_div.getText();
+   public String getuiElement309DivText() {
+      return uiElement309_div.getText();
    }
 
    public String getNewsU_S_WorldPoliticsTechHealthE4DivText() {
@@ -12224,12 +12196,12 @@ public class Breaking_News_U_S_World_Weather_   {
       return U_S_EditionU_S_InternationalArab5_div.getText();
    }
 
-   public String getuiElement312LinkText() {
-      return uiElement312_a.getText();
+   public String getuiElement311LinkText() {
+      return uiElement311_a.getText();
    }
 
-   public void clickuiElement312() {
-      uiElement312_a.click();
+   public void clickuiElement311() {
+      uiElement311_a.click();
    }
 
    public String getU_S_EditionU_S_InternationalArab6DivText() {
@@ -12412,16 +12384,16 @@ public class Breaking_News_U_S_World_Weather_   {
       CNN_Newsource2_a.click();
    }
 
-   public String getuiElement313DivText() {
-      return uiElement313_div.getText();
+   public String getuiElement312DivText() {
+      return uiElement312_div.getText();
    }
 
    public String getad_oop_skin_01DivText() {
       return ad_oop_skin_01_div.getText();
    }
 
-   public String getuiElement314DivText() {
-      return uiElement314_div.getText();
+   public String getuiElement313DivText() {
+      return uiElement313_div.getText();
    }
 
    public String getad_oop_float_01DivText() {
