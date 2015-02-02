@@ -29,7 +29,7 @@ public class CommandLineProcessor {
     String[] commandLineOptions;
 
     private URL url;
-    private Generator.GenerateType generateType = Generator.GenerateType.CODE;
+    private Generator.GenerateType generateType;
 
     // Command-line options
     private final String GENERATE_OPTION = "-generate";
@@ -44,9 +44,6 @@ public class CommandLineProcessor {
     private final String H_OPTION = "-h";
     private final String HELP_OPTION = "-help";
 
-    /* These strings could be handled by the GenerateType enum but I preferred to do it this way so the string values
-        are contained by the command-line processor.  The command-line processor should be the only place where string
-        values are needed for the generate options. */
     private final String GENERATE_OPTION_CODE = "code";
     private final String GENERATE_OPTION_HINTS = "hints";
     private final String GENERATE_OPTION_CODE_FROM_HINTS = "codeFromHints";
@@ -67,16 +64,6 @@ public class CommandLineProcessor {
         return singletonCommandLineProcessor;
     }
 
-
-    public void processCommandLine(String[] args) {
-
-        this.commandLineOptions = args;
-        validateCommandline();
-
-        // Assigns the type of code or hints generation, retrieves the URL, and sets any configurations passed from the command-line.
-        processArgs(commandLineOptions);
-    }
-
      /*
      * TODO: Update this comment on Required Options.
      * Required option: -url and a valid url value are required.
@@ -84,26 +71,21 @@ public class CommandLineProcessor {
      *
      * @return true if no command-line errors found, otherwise false.
      */
-    private void validateCommandline() {
+    public void processCommandLine(String[] args) {
+
+        logger = Logger.getLogger(Configurator.class);
+
+        this.commandLineOptions = args;
 
         if (commandLineOptions.length == 0) {
             printCommandLineError(CommandLineMessages.COMMAND_LINE_OPTIONS_REQUIRED);
         }
 
-        // TODO: verifify -generate is supplied.  And -url is supplied.
-
-    }
-
-
-    private void processArgs(String[] args) {
-
-        logger = Logger.getLogger(Configurator.class);
-
         // Command-line params will override the defaults and the config file.
         for (int i=0; i<args.length; i++) {
 
             // -generate is not required and defaults to 'code', but if supplied, it needs a generate option.
-            if (args[i].equals(commandLineOptions[i].equalsIgnoreCase(GENERATE_OPTION))) {
+            if (commandLineOptions[i].equalsIgnoreCase(GENERATE_OPTION)) {
 
                 checkForRequiredOptionValue(++i, CommandLineMessages.GENERATE_OPTION_REQUIRED);
                 generateType = assignGenerateValue(args[i]);
@@ -180,9 +162,14 @@ public class CommandLineProcessor {
             }
             else {
 
-                printCommandLineError("Unknown command-line option found. Use '-h' for help.");
+                printCommandLineError(CommandLineMessages.UKNOWN_OPTION);
 
             }
+        }
+
+        // Verify the required params were supplied
+        if ((url == null) || (generateType == null)) {
+            printCommandLineError(CommandLineMessages.REQUIRED_OPTIONS);
         }
     }
 

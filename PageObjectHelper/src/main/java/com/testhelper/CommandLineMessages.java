@@ -38,6 +38,10 @@ public class CommandLineMessages {
 
     public static final String DEFAULT_MEMBER_NAME_REQUIRED = "A default member name is required.";
 
+    public static final String UKNOWN_OPTION = "Unknown command-line option found. Use '-h' for help.";
+
+    public static final String REQUIRED_OPTIONS = "-generate <value> and -url <value> are required.  Use '-h' for help.";
+
     // TODO: When I have a help-processor, move commandLineHelp string out of CommandLineMessages
     public static final String COMMAND_LINE_HELP = "-generate  (can be set to analyze for the hints file.)\n" +
             "-codeShell or -codeShellTemplate -- for setting the filepath of the code template file.  This is the file that defines\n" +
