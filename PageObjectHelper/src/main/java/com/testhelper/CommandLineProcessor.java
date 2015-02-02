@@ -2,7 +2,10 @@ package com.testhelper;
 
 import org.apache.log4j.Logger;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -47,10 +50,16 @@ public class CommandLineProcessor {
     private final String GENERATE_OPTION_CODE = "code";
     private final String GENERATE_OPTION_HINTS = "hints";
     private final String GENERATE_OPTION_CODE_FROM_HINTS = "codeFromHints";
+    private final String GENERATE_OPTION_INTERACTIVE = "interactive";
 
     private final String LOCATOR_OPTION_ATTRIBS_AND_CSS = "attribsAndCss";
     private final String LOCATOR_OPTION_ATTRIBS_ONLY = "attribsOnly";
     private final String LOCATOR_OPTION_CSS_ONLY = "cssOnly";
+
+
+    // Interactive commands
+    private final String COMMAND_QUIT = "quit";
+
 
     /* Generator will be created by a static factory */
     private CommandLineProcessor() {
@@ -87,8 +96,8 @@ public class CommandLineProcessor {
             // -generate is not required and defaults to 'code', but if supplied, it needs a generate option.
             if (commandLineOptions[i].equalsIgnoreCase(GENERATE_OPTION)) {
 
-                checkForRequiredOptionValue(++i, CommandLineMessages.GENERATE_OPTION_REQUIRED);
-                generateType = assignGenerateValue(args[i]);
+                checkForRequiredOptionValue(++i, CommandLineMessages.GENERATE_VALUE_REQUIRED);
+                assignGenerateValue(args[i]);
 
             }
             // -url is required.  It also requires a valid URL as a parameter.  The URL validation check is handled here.
@@ -173,6 +182,44 @@ public class CommandLineProcessor {
         }
     }
 
+
+    public void runInteractiveMode() throws IOException {
+
+        String command = null;
+
+
+        // TODO: Print interactive command-line command help.
+        System.out.println("Enter commands:");
+
+        //  open up standard input
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        while(true) {
+
+            System.out.print("> ");
+
+            //  read a command from the command-line; need to use try/catch with the
+            //  readLine() method
+            try {
+                command = br.readLine();
+            } catch (IOException ioe) {
+                System.out.println("IO error trying to read your command!");
+                System.exit(1);
+            }
+
+            if (command == null) {
+                throw new PageHelperException("null command -- need valid command from interactive command-line.");
+            }
+            else if (command.equalsIgnoreCase(COMMAND_QUIT)) {
+                System.out.println("Thanks, Goodbye.");
+                break;
+            }
+        }
+    }
+
+
+    // *** Accessors ****
+
     public URL getUrl() {
         return url;
     }
@@ -181,32 +228,38 @@ public class CommandLineProcessor {
         return generateType;
     }
 
+
+
+
     // *** private utility methods ***
 
-    private Generator.GenerateType assignGenerateValue(String generateOptionValue) {
+    private void assignGenerateValue(String generateOptionValue) {
 
         if (generateOptionValue.equalsIgnoreCase(GENERATE_OPTION_CODE)) {
 
             logger.info("Generating sourcecode only.");
-            return Generator.GenerateType.CODE;
+            generateType = Generator.GenerateType.CODE;
         }
         else if (generateOptionValue.equalsIgnoreCase(GENERATE_OPTION_HINTS)) {
             logger.info("Generating hints file only.");
-            return Generator.GenerateType.HINTS;
+            generateType =  Generator.GenerateType.HINTS;
         }
         else if (generateOptionValue.equalsIgnoreCase(GENERATE_OPTION_CODE_FROM_HINTS)) {
             logger.info("Generating code from hints file.");
-            return Generator.GenerateType.CODE_FROM_HINTS;
+            generateType =  Generator.GenerateType.CODE_FROM_HINTS;
+        }
+        else if (generateOptionValue.equalsIgnoreCase(GENERATE_OPTION_INTERACTIVE)) {
+            logger.info("Selected Interactive Mode for code generation.");
+            generateType = Generator.GenerateType.INTERACTIVE;
         }
         else {
             printCommandLineError("Unknown value supplied to -generate. Use one of " +
                     "'" + GENERATE_OPTION_CODE + "'" +
                     "'" + GENERATE_OPTION_HINTS + "'" +
-                    "'" + GENERATE_OPTION_CODE_FROM_HINTS + "'"
+                    "'" + GENERATE_OPTION_CODE_FROM_HINTS + "'" +
+                    "'" + GENERATE_OPTION_INTERACTIVE + "'"
             );
         }
-
-        throw new PageHelperException("Invalid -generate value was uncaught resulting in no generate option to return.  This should never happen.");
     }
 
 

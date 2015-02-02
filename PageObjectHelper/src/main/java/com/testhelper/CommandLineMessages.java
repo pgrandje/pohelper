@@ -12,7 +12,7 @@ public class CommandLineMessages {
 
     public static final String COMMAND_LINE_OPTIONS_REQUIRED = "Command-line options are required.  Use -h for help";
 
-    public static final String GENERATE_OPTION_REQUIRED = "-generate needs an option, 'code', 'hints', or 'codeFromHints'";
+    public static final String GENERATE_VALUE_REQUIRED = "-generate needs an option, 'code', 'hints', or 'codeFromHints'";
 
     public static final String URL_VALUE_REQUIRED = "-url value required.  Ex: -url http://www.mysite.com";
 

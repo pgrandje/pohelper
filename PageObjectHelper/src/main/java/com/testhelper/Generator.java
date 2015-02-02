@@ -26,7 +26,7 @@ public class Generator
     private URL baseUrlToScan;
 
     // Generate Types
-    public enum GenerateType {CODE, HINTS, CODE_FROM_HINTS}
+    public enum GenerateType {CODE, HINTS, CODE_FROM_HINTS, INTERACTIVE}
 
     /* Accumulates the classnames used for each page object to ensure uniqueness.
        The classNameRecorder needs to exist, and accumulate page names for all pages generated.
