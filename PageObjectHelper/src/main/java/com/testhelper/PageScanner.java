@@ -125,9 +125,6 @@ public class PageScanner {
 
     }
 
-
-
-
     public Document getDom() {
         return document;
     }
@@ -142,29 +139,23 @@ public class PageScanner {
     {
         logger.info("Entered scanForUIElements using parent node '" + parent.getNodeName() + "' at Level " + level);
 
-        // This should be ok, it's the HTML tags I'm traversing.
-        // Anything else I'm interested in are:  text, attributes, values
-        //    but those will be processed differently and would still
-        //    cause the traversal to stop.
+        /* This stops the recursion when it finds either a node with no children, or a non-tag node like text or an attribute.
+           text, attributes, values, etc will be processed differently from nodes.  Since they never have children they
+           also must cause the recursion to stop. */
         if (parent.getNodeType() != org.w3c.dom.DocumentType.ELEMENT_NODE)
             return tagDescriptorList;
         else if (!parent.hasChildNodes())
             return tagDescriptorList;
 
 
-        // This should now be an Element, as all non-elements were just caught
-        //    above.
-        // I will still probably change this to a Nodelist since that
-        //   seems like the established way things are done.  If so I can check
-        //   that all items in the Nodelist are elements.  Seems like they
-        //   should be.  Text will always be a child if the Cleaner did it's
-        //   job correctly.
+        /* This should now be an Element, as all non-elements were just caught
+             above.  Text will always be a child if the Cleaner did it's
+             job correctly. */
         Node current = parent.getFirstChild();
         level++;
 
         while (current != null)
         {
-
             // If the node doesn't have attributes or text we won't store it for generating code.
             // getTextContent seems to return an empty string, rather than null when there's not text.
             if (    (current.getNodeType() == 1) &&
@@ -173,6 +164,24 @@ public class PageScanner {
 
                 logger.info("Current Node Name " + current.getNodeName() + " -- Value: "
                     + current.getNodeValue() + " -- Node type: " + current.getNodeType());
+
+                // TODO: Storing the link should be a helper method.
+                // Store links here.  // TODO: Get the Configurator to see if the crawl setting is enabled.
+                if (current.getNodeName().equalsIgnoreCase("a")) {
+                    logger.info("Found a link.");
+
+                    // Find the href to get the url.
+                    AnchorTagLink newLink = new AnchorTagLink();
+                    NamedNodeMap nodeAttributes = current.getAttributes();
+                    for(int i=0; i < nodeAttributes.getLength(); i++) {
+                        Attr attrib = (Attr) nodeAttributes.item(i);
+                        if (attrib.getName().equalsIgnoreCase("href"))
+                            newLink.setUrl(attrib.getValue());
+                    }
+
+                    newLink.setAttributes(setAttributePairs(current));
+                }
+
 
                 // To ensure it's a tag I'm selecting the code for, I must turn the node name into a tag format.
                 String tag = "<" + current.getNodeName() + ">";
