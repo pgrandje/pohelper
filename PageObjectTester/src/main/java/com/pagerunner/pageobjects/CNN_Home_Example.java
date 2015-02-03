@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 
 
-public class Breaking_News_U_S_World_Weather_   {
+public class CNN_Home_Example {
 
    @FindBy(css = "body > div")
    private WebElement uiElement1_div;
