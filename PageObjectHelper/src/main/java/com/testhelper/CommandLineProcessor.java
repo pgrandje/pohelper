@@ -2,7 +2,10 @@ package com.testhelper;
 
 import org.apache.log4j.Logger;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -26,10 +29,36 @@ public class CommandLineProcessor {
 
     private static CommandLineProcessor singletonCommandLineProcessor;
 
-    private URL url;
-    private Generator.GenerateType generateType = Generator.GenerateType.CODE;
+    String[] commandLineOptions;
 
-    private String errorMessage;
+    private URL url;
+    private Generator.GenerateType generateType;
+
+    // Command-line options
+    private final String GENERATE_OPTION = "-generate";
+    private final String URL_OPTION = "-url";
+    private final String DEST_OPTION = "-dest";
+    private final String DESTINATION_OPTION = "-destination";
+    private final String HINTS_FILE_NAME_OPTION = "-hintsFileName";
+    private final String CODE_SHELL_TEMPLATE_OPTION = "-codeShellTemplate";
+    private final String CODE_TEMPLATE_OPTION = "-codeTemplateOption";
+    private final String LOCATOR_OPTION = "-locator";
+    private final String DEFAULT_MEMBER_NAME_OPTION = "-defaultMemberName";
+    private final String H_OPTION = "-h";
+    private final String HELP_OPTION = "-help";
+
+    private final String GENERATE_OPTION_CODE = "code";
+    private final String GENERATE_OPTION_HINTS = "hints";
+    private final String GENERATE_OPTION_CODE_FROM_HINTS = "codeFromHints";
+    private final String GENERATE_OPTION_INTERACTIVE = "interactive";
+
+    private final String LOCATOR_OPTION_ATTRIBS_AND_CSS = "attribsAndCss";
+    private final String LOCATOR_OPTION_ATTRIBS_ONLY = "attribsOnly";
+    private final String LOCATOR_OPTION_CSS_ONLY = "cssOnly";
+
+
+    // Interactive commands
+    private final String COMMAND_QUIT = "quit";
 
 
     /* Generator will be created by a static factory */
@@ -44,187 +73,152 @@ public class CommandLineProcessor {
         return singletonCommandLineProcessor;
     }
 
-
-    public void processCommandLine(String[] args) {
-
-        if (!validateCommandline(args)) {
-            System.out.println(errorMessage);
-            System.exit(0);
-        }
-
-        // Assigns the type of code or hints generation, retrieves the URL, and sets any configurations passed from the command-line.
-        processArgs(args);
-    }
-
      /*
-     * Required params: -url and a valid url value are required.
+     * TODO: Update this comment on Required Options.
+     * Required option: -url and a valid url value are required.
      * -dest is not required and will take a default of the current working directory if not supplied.
      *
      * @return true if no command-line errors found, otherwise false.
      */
-    public boolean validateCommandline(String[] args) {
-
-        boolean returnStatus = true;
-
-        if (args == null) {
-            printCommandLineError();
-            printCommandLineHelp();
-            throw new PageHelperException("Command-line args must be supplied.");
-        }
-
-        for (int i=0; i<args.length; i++) {
-
-            if (args[i].equals("-url")) {
-
-                i++;
-                if (i >= args.length) {
-                    returnStatus = false;
-                    errorMessage = MessageLibrary.urlValueRequired;
-                    break;
-                }
-
-                checkForRequiredArgValue(args[i]);
-
-                // The url is saved in processArgs() so we don't need to actually assign it here, but we will verify it's a valid URL.
-                try {
-                    new URL(args[i]);
-                } catch (MalformedURLException e) {
-                    returnStatus = false;
-                    errorMessage = MessageLibrary.badUrl + " -- URL Exception says: " + e.getMessage();
-                }
-
-            }
-            // -dest is not required, but if it is supplied, it requires a directory path value.
-            else if (args[i].equals("-dest") || args[i].equals("-destination")) {
-
-                i++;
-                // TODO: Checking the cnt > commandLineArgs.length is too weak for determining if it's value is a valid filepath.
-                // TODO: This may be overkill now--There's an existing method that checks for a supplied param.
-                if (i >= args.length) {
-                    returnStatus = false;
-                    errorMessage = MessageLibrary.destValueRequired;
-                    break;
-                }
-
-                checkForRequiredArgValue(args[i]);
-
-                // validate the file path
-                if (!verifyDirectory(args[i])) {
-                    returnStatus = false;
-                    errorMessage = MessageLibrary.badDirectoryFilePath;
-                }
-            }
-        }
-
-        return returnStatus;
-    }
-
-
-    private void checkForRequiredArgValue(String argValue) {
-        if (argValue.charAt(0) == '-') {
-            throw new PageHelperException("Argument requires a value but value is missing.  In place of value found option '" + argValue + "' ");
-        }
-    }
-
-
-    public void processArgs(String[] args) {
+    public void processCommandLine(String[] args) {
 
         logger = Logger.getLogger(Configurator.class);
 
-        // Command-line params will override the defaults and the config file.
+        this.commandLineOptions = args;
 
+        if (commandLineOptions.length == 0) {
+            printCommandLineError(CommandLineMessages.COMMAND_LINE_OPTIONS_REQUIRED);
+        }
+
+        // Command-line params will override the defaults and the config file.
         for (int i=0; i<args.length; i++) {
 
-            if (args[i].equals("-generate")) {
-                i++;
-                generateType = assignGenerateValue(args[i]);
-            }
-            else if (args[i].equals("-url")) {
-                i++;
-                try {
-                    url = new URL(args[i]);
-                    logger.info("Configurator using URL via -url command-line arg, URL set to '" + args[i] + "'.");
-                }
-                // With the command-line validator, this is not necessary, but it still makes the code safer.
-                catch(MalformedURLException e) {
-                    throw new PageHelperException("Invalid URL on command line, exception message: " + e.getMessage() + "--Exception cause: " + e.getCause());
+            // -generate is not required and defaults to 'code', but if supplied, it needs a generate option.
+            if (commandLineOptions[i].equalsIgnoreCase(GENERATE_OPTION)) {
 
-                }
+                checkForRequiredOptionValue(++i, CommandLineMessages.GENERATE_VALUE_REQUIRED);
+                assignGenerateValue(args[i]);
+
             }
-            // The command-line validator verifies that if we get here, we have a valid filepath following.
-            else if (args[i].equals("-dest") || args[i].equals("-destination")) {
-                i++;
+            // -url is required.  It also requires a valid URL as a parameter.  The URL validation check is handled here.
+            else if (commandLineOptions[i].equalsIgnoreCase(URL_OPTION)) {
+
+                checkForRequiredOptionValue(++i, CommandLineMessages.URL_VALUE_REQUIRED);
+
+                // Verify it's a valid URL.
+                try {
+                    url = new URL(commandLineOptions[i]);
+                } catch (MalformedURLException e) {
+                    printCommandLineError(CommandLineMessages.INVALID_URL + " -- " + e.getMessage());
+                }
+
+                logger.info("Set url to " + url.toString());
+            }
+            // -dest/-destination is not required, but if it is supplied, it requires a directory path value.
+            // The default if not supplied is the current working directory.
+            else if (args[i].equalsIgnoreCase(DEST_OPTION) || args[i].equalsIgnoreCase(DESTINATION_OPTION)) {
+
+                checkForRequiredOptionValue(++i, CommandLineMessages.DESTINATION_VALUE_REQUIRED);
+
+                // validate the file path
+                if (!verifyDirectory(args[i])) {
+                    printCommandLineError(CommandLineMessages.DIRECTORY_DOES_NOT_EXIST);
+                }
+
                 getConfigurator().setDestinationFilePath(args[i]);
                 logger.info("Set destination folder to " + args[i]);
             }
-            else if (args[i].equals("-hints")) {
-                i++;
+            else if (args[i].equalsIgnoreCase(HINTS_FILE_NAME_OPTION)) {
+
+                checkForRequiredOptionValue(++i, CommandLineMessages.HINTS_FILE_NAME_REQUIRED);
                 getConfigurator().setHintsFileName(args[i]);
                 logger.info("Using Hints file: " + args[i]);
+
             }
-            else if (args[i].equals("-codeShell") || args[i].equals("-codeShellTemplate")) {
-                i++;
+            else if (args[i].equalsIgnoreCase(CODE_SHELL_TEMPLATE_OPTION)) {
+
+                checkForRequiredOptionValue(++i, CommandLineMessages.CODE_SHELL_TEMPLATE_FILE_PATH_REQUIRED);
                 getConfigurator().setCodeShellTemplateFilePath(checkFileExists(args[i]));
-                logger.info("File path for Code Shell Template is set to: " + args[i]);
+                logger.info("File path for Code Shell Template is set to: " + getConfigurator().getCodeShellTemplateFilePath());
+
             }
-            else if (args[i].equals("-tagSwitch") || args[i].equals("-tagSwitcherConfig")) {
-                i++;
+            else if (args[i].equalsIgnoreCase(CODE_TEMPLATE_OPTION)) {
+
+                checkForRequiredOptionValue(++i, CommandLineMessages.CODE_TEMPLATE_FILE_PATH_REQUIRED);
                 getConfigurator().setCodeTemplateFilePath(checkFileExists(args[i]));
-                logger.info("File path for Tag Switcher's code template file is set to: " + args[i]);
+                logger.info("File path for Tag Switcher's code template file is set to: " + getConfigurator().getCodeTemplateFilePath());
+
             }
-            else if (args[i].equals("-loc") || args[i].equals("-locator")) {
-                i++;
-                if (args[i].equals("attribs_css")) {
-                    getConfigurator().setLocatorConfig(Configurator.LocatorConfig.ATTRIBS_CSS);
-                }
-                else if (args[i].equals("attribs_only")) {
-                    getConfigurator().setLocatorConfig(Configurator.LocatorConfig.ATTRIBS_ONLY);
-                }
-                else if (args[i].equals("css_only")) {
-                    getConfigurator().setLocatorConfig(Configurator.LocatorConfig.CSS_ONLY);
-                }
-                else {
-                    printCommandLineHelp();
-                    throw new PageHelperException("Error in command-line.  Invalid value for -locator.");
-                }
-                logger.info("Locator generation using " + args[i]);
+            else if (args[i].equalsIgnoreCase(LOCATOR_OPTION)) {
+
+                checkForRequiredOptionValue(++i, CommandLineMessages.LOCATOR_CONFIGURATION_VALUE_REQUIRED);
+                getConfigurator().setLocatorConfig(assignLocatorConfiguration(args[i]));
+                logger.info("Locator generation using " + getConfigurator().getLocatorConfig());
+
             }
-            else if (args[i].equals("-defMem") || args[i].equals("-defaultMemberName")) {
-                i++;
+            else if (args[i].equalsIgnoreCase(DEFAULT_MEMBER_NAME_OPTION)) {
+
+                checkForRequiredOptionValue(++i, CommandLineMessages.DEFAULT_MEMBER_NAME_REQUIRED);
                 getConfigurator().setDefaultMemberName(args[i]);
+                logger.info("Default Member Name is " + getConfigurator().getDefaultMemberName());
+
             }
-            else if (args[i].equals("-h") || args[i].equals("-help")) {
+            else if (args[i].equalsIgnoreCase(H_OPTION) || args[i].equalsIgnoreCase(HELP_OPTION)) {
+
                 printCommandLineHelp();
+                System.exit(0);
+
             }
             else {
-                printCommandLineHelp();
-                throw new PageHelperException("Unknown argument found.");
+
+                printCommandLineError(CommandLineMessages.UKNOWN_OPTION);
+
+            }
+        }
+
+        // Verify the required params were supplied
+        if ((url == null) || (generateType == null)) {
+            printCommandLineError(CommandLineMessages.REQUIRED_OPTIONS);
+        }
+    }
+
+
+    public void runInteractiveMode() throws IOException {
+
+        String command = null;
+
+        // TODO: Print interactive command-line command help.
+        System.out.println("Enter commands:");
+
+        //  open up standard input
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        while(true) {
+
+            System.out.print("> ");
+
+            //  read a command from the command-line; need to use try/catch with the
+            //  readLine() method
+            try {
+                command = br.readLine();
+                // TODO:  Should I bring the TagDescriptorList here, or should Generate support the retrieval and iteration?
+            } catch (IOException ioe) {
+                System.out.println("IO error trying to read your command!");
+                System.exit(1);
+            }
+
+            if (command == null) {
+                throw new PageHelperException("null command -- need valid command from interactive command-line.");
+            }
+            else if (command.equalsIgnoreCase(COMMAND_QUIT)) {
+                System.out.println("Thanks, Goodbye.");
+                break;
             }
         }
     }
 
 
-    private Generator.GenerateType assignGenerateValue(String generateOptionValue) {
-
-        if (generateOptionValue.equals("code")) {
-
-            logger.info("Generating sourcecode only.");
-            return Generator.GenerateType.CODE;
-        }
-        else if (generateOptionValue.equals("hints")) {
-            logger.info("Generating analysis file only.");
-            return Generator.GenerateType.HINTS;
-        }
-        else if (generateOptionValue.equals("codefromhints")) {
-            logger.info("Generating code from hints file.");
-            return Generator.GenerateType.CODE_FROM_HINTS;
-        }
-        else {
-            printCommandLineError();
-            printCommandLineHelp();
-            throw new PageHelperException("Error in command-line syntax.  Invalid -generate option found.");
-        }
-    }
+    // *** Accessors ****
 
     public URL getUrl() {
         return url;
@@ -234,9 +228,61 @@ public class CommandLineProcessor {
         return generateType;
     }
 
+
+
+
     // *** private utility methods ***
 
-    private static boolean verifyDirectory(String directoryPath) {
+    private void assignGenerateValue(String generateOptionValue) {
+
+        if (generateOptionValue.equalsIgnoreCase(GENERATE_OPTION_CODE)) {
+
+            logger.info("Generating sourcecode only.");
+            generateType = Generator.GenerateType.CODE;
+        }
+        else if (generateOptionValue.equalsIgnoreCase(GENERATE_OPTION_HINTS)) {
+            logger.info("Generating hints file only.");
+            generateType =  Generator.GenerateType.HINTS;
+        }
+        else if (generateOptionValue.equalsIgnoreCase(GENERATE_OPTION_CODE_FROM_HINTS)) {
+            logger.info("Generating code from hints file.");
+            generateType =  Generator.GenerateType.CODE_FROM_HINTS;
+        }
+        else if (generateOptionValue.equalsIgnoreCase(GENERATE_OPTION_INTERACTIVE)) {
+            logger.info("Selected Interactive Mode for code generation.");
+            generateType = Generator.GenerateType.INTERACTIVE;
+        }
+        else {
+            printCommandLineError("Unknown value supplied to -generate. Use one of " +
+                    "'" + GENERATE_OPTION_CODE + "'" +
+                    "'" + GENERATE_OPTION_HINTS + "'" +
+                    "'" + GENERATE_OPTION_CODE_FROM_HINTS + "'" +
+                    "'" + GENERATE_OPTION_INTERACTIVE + "'"
+            );
+        }
+    }
+
+
+    private Configurator.LocatorConfig assignLocatorConfiguration(String locatorOptionValue) {
+
+        if (locatorOptionValue.equals(LOCATOR_OPTION_ATTRIBS_AND_CSS)) {
+            getConfigurator().setLocatorConfig(Configurator.LocatorConfig.ATTRIBS_CSS);
+        }
+        else if (locatorOptionValue.equals(LOCATOR_OPTION_ATTRIBS_ONLY)) {
+            getConfigurator().setLocatorConfig(Configurator.LocatorConfig.ATTRIBS_ONLY);
+        }
+        else if (locatorOptionValue.equals(LOCATOR_OPTION_CSS_ONLY)) {
+            getConfigurator().setLocatorConfig(Configurator.LocatorConfig.CSS_ONLY);
+        }
+        else {
+            printCommandLineError(CommandLineMessages.LOCATOR_INVALID_VALUE);
+        }
+
+        throw new PageHelperException("Invalid -locator value was uncaught resulting in no locator value to return.  This should never happen.");
+    }
+
+
+    private boolean verifyDirectory(String directoryPath) {
 
             boolean returnStatus = false;
 
@@ -250,7 +296,19 @@ public class CommandLineProcessor {
 
 
     /*
-     * Verifies a required configuration file exists.  If not, throws an exception.
+     * Verifies a parameter value is supplied for options that require a value
+     */
+    private void checkForRequiredOptionValue(int args_index, String errorMessage) {
+
+        // If there's nothing after the option, or if the next string begins with a '-', then the option's value wasn't supplied.
+        if ((args_index >= commandLineOptions.length) || (commandLineOptions[args_index].charAt(0) == '-')) {
+            printCommandLineError(errorMessage);
+        }
+    }
+
+
+    /*
+     * Verifies a required configuration file exists.  If not, prints the error message.
      * This is private to be used as an internal verification.  It is not meant to verify command-line supplied
      * filename values.
      */
@@ -258,18 +316,21 @@ public class CommandLineProcessor {
 
         if (!new File(filePath).exists())
         {
-           throw new PageHelperException("File '" + filePath + "' doesn't exist.");
+           printCommandLineError("File '" + filePath + "' doesn't exist.");
         }
 
         return filePath;
     }
 
     private void printCommandLineHelp() {
-        System.out.println("");
+        System.out.println(CommandLineMessages.COMMAND_LINE_HELP);
     }
 
-    private void printCommandLineError() {
-        System.out.println("Syntax error in command-line parameters. Use -h or -help for correct command-line parameters.");
+    private void printCommandLineError(String errorMessage) {
+        System.out.print("Syntax error in command-line: ");
+        System.out.println(errorMessage);
+        System.out.println("Use -h for help");
+        System.exit(0);
     }
 
     private Configurator getConfigurator() {

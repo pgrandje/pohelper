@@ -8,6 +8,7 @@ package com.testhelper;
  */
 public class Locator {
 
+    // TODO: Check whether LocatorTypes can be the same as the command-line options for Locator configuration.
     public enum LocatorType {
         ID ("id"),
         NAME ("name"),
