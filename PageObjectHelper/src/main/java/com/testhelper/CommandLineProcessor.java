@@ -44,6 +44,7 @@ public class CommandLineProcessor {
     private final String CODE_TEMPLATE_OPTION = "-codeTemplateOption";
     private final String LOCATOR_OPTION = "-locator";
     private final String DEFAULT_MEMBER_NAME_OPTION = "-defaultMemberName";
+    private final String CRAWL_OPTION = "-crawlSite";
     private final String H_OPTION = "-h";
     private final String HELP_OPTION = "-help";
 
@@ -159,6 +160,12 @@ public class CommandLineProcessor {
             else if (args[i].equalsIgnoreCase(DEFAULT_MEMBER_NAME_OPTION)) {
 
                 checkForRequiredOptionValue(++i, CommandLineMessages.DEFAULT_MEMBER_NAME_REQUIRED);
+                getConfigurator().setDefaultMemberName(args[i]);
+                logger.info("Default Member Name is " + getConfigurator().getDefaultMemberName());
+
+            }
+            else if (args[i].equalsIgnoreCase(CRAWL_OPTION)) {
+
                 getConfigurator().setDefaultMemberName(args[i]);
                 logger.info("Default Member Name is " + getConfigurator().getDefaultMemberName());
 

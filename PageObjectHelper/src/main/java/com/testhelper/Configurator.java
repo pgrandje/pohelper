@@ -66,7 +66,7 @@ public class Configurator {
     private String defaultMemberName = "uiElement";
 
 
-    // **** File Paths with Defaults****
+    // **** File Paths with Defaults ****
 
     private String codeShellTemplateFilePath = "./resources/java-shell-configger.txt";
     private String codeTemplateFilePath = "./resources/java-configger2.txt";
@@ -74,6 +74,9 @@ public class Configurator {
     private String configFilePath = "/Users/pgrandje/IdeaProjects/selgen/resources/configuration.xml";
     // No default for the hints file name.  I'd rather force the user into knowing what they're reading.
     private String hintsFileName;
+
+    // *** Action Options ***
+    private boolean crawl = false;
 
     /**
      * Configurator is a singleton and can only be constructed using this method.
@@ -143,7 +146,13 @@ public class Configurator {
         return writeComments;
     }
 
+    public boolean isCrawlEnabled() {
+        return crawl;
+    }
 
+    public void setCrawl(boolean crawl) {
+        this.crawl = crawl;
+    }
 
     //  *** XML-Config file processing methods ****
 

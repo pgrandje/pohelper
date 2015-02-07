@@ -167,8 +167,8 @@ public class PageScanner {
                 logger.info("Current Node Name " + current.getNodeName() + " -- Value: "
                     + current.getNodeValue() + " -- Node type: " + current.getNodeType());
 
-                // Store links here.  // TODO: Get the Configurator to see if the crawl setting is enabled.
-                if (current.getNodeName().equalsIgnoreCase("a")) {
+                // If crawl is set store accumulate the links as we go scan the page.
+                if ((current.getNodeName().equalsIgnoreCase("a")) && (Configurator.getConfigurator().isCrawlEnabled())) {
                     logger.info("Found a link.");
                     storeLink(current);
                 }
