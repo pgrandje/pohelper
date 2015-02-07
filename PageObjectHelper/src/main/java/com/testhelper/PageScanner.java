@@ -36,6 +36,7 @@ public class PageScanner {
     // Records names used for members to avoid duplicates.
     private NameRecorder memberNameRecorder;
 
+    private AnchorTagLinkList anchorTagLinkList;
     private TagDescriptorList tagDescriptorList;
 
     // TagSwitcher throws the IOException when it can't find it's configuration file.
@@ -47,6 +48,7 @@ public class PageScanner {
         // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
         this.tagSwitcher = new TagSwitcher();
 
+        this.anchorTagLinkList = new AnchorTagLinkList();
         this.tagDescriptorList = new TagDescriptorList();
         this.memberNameRecorder = new NameRecorder("Member Name Recorder");
 
@@ -129,7 +131,7 @@ public class PageScanner {
         return document;
     }
 
-    public TagDescriptorList scan() {
+    public TagDescriptorList scanPage() {
         return scanForUIElements(document.getDocumentElement(), 0);
     }
 
@@ -165,23 +167,11 @@ public class PageScanner {
                 logger.info("Current Node Name " + current.getNodeName() + " -- Value: "
                     + current.getNodeValue() + " -- Node type: " + current.getNodeType());
 
-                // TODO: Storing the link should be a helper method.
                 // Store links here.  // TODO: Get the Configurator to see if the crawl setting is enabled.
                 if (current.getNodeName().equalsIgnoreCase("a")) {
                     logger.info("Found a link.");
-
-                    // Find the href to get the url.
-                    AnchorTagLink newLink = new AnchorTagLink();
-                    NamedNodeMap nodeAttributes = current.getAttributes();
-                    for(int i=0; i < nodeAttributes.getLength(); i++) {
-                        Attr attrib = (Attr) nodeAttributes.item(i);
-                        if (attrib.getName().equalsIgnoreCase("href"))
-                            newLink.setUrl(attrib.getValue());
-                    }
-
-                    newLink.setAttributes(setAttributePairs(current));
+                    storeLink(current);
                 }
-
 
                 // To ensure it's a tag I'm selecting the code for, I must turn the node name into a tag format.
                 String tag = "<" + current.getNodeName() + ">";
@@ -223,7 +213,6 @@ public class PageScanner {
        return tagDescriptorList;
     }
 
-
     private HashMap<String, String> setAttributePairs(Node node) {
 
         HashMap<String,String> attributePairs = new HashMap<String, String>();
@@ -237,4 +226,20 @@ public class PageScanner {
 
     }
 
+    private void storeLink(Node linkNode) {
+
+        // Find the href to get the url.
+        AnchorTagLink newLink = new AnchorTagLink();
+        NamedNodeMap nodeAttributes = linkNode.getAttributes();
+        for(int i=0; i < nodeAttributes.getLength(); i++) {
+            Attr attrib = (Attr) nodeAttributes.item(i);
+            if (attrib.getName().equalsIgnoreCase("href")){
+                // TODO: Put in logger here showing the href it's storing.
+                newLink.setUrl(attrib.getValue());
+            }
+        }
+
+        newLink.setAttributes(setAttributePairs(linkNode));
+        anchorTagLinkList.add(newLink);
+    }
 }

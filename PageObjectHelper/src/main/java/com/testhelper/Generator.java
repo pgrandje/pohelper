@@ -77,7 +77,7 @@ public class Generator
             pageDescriptor = pageScanner.getPageName(classNameRecorder);
 
             // Scan the DOM to get a list of tags and their attributes.
-            TagDescriptorList tagDescriptorList = pageScanner.scan();
+            TagDescriptorList tagDescriptorList = pageScanner.scanPage();
             writeHintsFromTagDescriptors(pageDescriptor, tagDescriptorList);
 
         }
@@ -92,7 +92,7 @@ public class Generator
             pageDescriptor = pageScanner.getPageName(classNameRecorder);
 
             // Scan the nodes
-            TagDescriptorList tagDescriptorList = pageScanner.scan();
+            TagDescriptorList tagDescriptorList = pageScanner.scanPage();
             writeCodeFromTagDescriptors(pageDescriptor, tagDescriptorList);
 
         }
@@ -143,7 +143,7 @@ public class Generator
 
         PageScanner pageScanner = new PageScanner(url);
         // Scan the DOM to get a list of tags and their attributes.
-        TagDescriptorList tagDescriptorList = pageScanner.scan();
+        TagDescriptorList tagDescriptorList = pageScanner.scanPage();
 
         return tagDescriptorList;
     }
