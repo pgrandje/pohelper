@@ -1,5 +1,6 @@
 package com.pagehelper;
 
+import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -9,8 +10,7 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 
 
 /**
@@ -71,12 +71,16 @@ public class Configurator {
     private String codeShellTemplateFilePath = "./resources/java-shell-configger.txt";
     private String codeTemplateFilePath = "./resources/java-configger2.txt";
     private String destinationFilePath = ".";
-    private String configFilePath = "/Users/pgrandje/IdeaProjects/selgen/resources/configuration.xml";
+    private String configFilePath = "./resources/configuration.txt";
     // No default for the hints file name.  I'd rather force the user into knowing what they're reading.
     private String hintsFileName;
 
     // *** Action Options ***
     private boolean crawl = false;
+
+
+    // *** Config file ***
+    private BufferedReader configFile;
 
     /**
      * Configurator is a singleton and can only be constructed using this method.
@@ -158,25 +162,33 @@ public class Configurator {
 
     public void loadConfigFile() {
 
-        DocumentBuilder dBuilder;
-        Document doc;
-
-        File fXmlFile = new File(configFilePath);
-		DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
-
         try {
-            dBuilder = docBuilderFactory.newDocumentBuilder();
-            doc = dBuilder.parse(fXmlFile);
-            doc.getDocumentElement().normalize();
-        } catch (ParserConfigurationException e) {
-            throw new PageHelperException("Parser configuration exception parsing configuration file.  Exception message: " + e.getMessage());
-        } catch (SAXException e) {
-            throw new PageHelperException("SAX exception parsing configuration file.  Exception message: " + e.getMessage());
-        } catch (IOException e) {
-            throw new PageHelperException("I/O exception loading configuration file.  Exception message: " + e.getMessage());
+            configFile = new BufferedReader(new FileReader(configFilePath));
+        }
+        catch (FileNotFoundException e) {
+            throw new PageHelperException("Configurator Config File not found. See log. Exception Message: " + e.getMessage());
         }
 
-        processConfigFileOption(doc, "generate");
+        try {
+
+            String line = configFile.readLine();
+
+            while (null != line){
+
+                // For blank lines, just skip them.
+                while(line.isEmpty()) {
+                    // Get the next line from the config file.
+                    line = configFile.readLine();
+                }
+
+                // Get the next line from the config file.
+                line = configFile.readLine();
+
+            }
+
+        } catch (IOException e) {
+            throw new PageHelperException("IOException loading Config File: " + e.getMessage());
+        }
     }
 
 
