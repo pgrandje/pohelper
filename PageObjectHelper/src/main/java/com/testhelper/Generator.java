@@ -17,21 +17,20 @@ import java.net.URL;
 
 public class Generator
 {
+    // Generate Types
+    public enum GenerateType {CODE, HINTS, CODE_FROM_HINTS, INTERACTIVE}
+
     private static final Logger logger = Logger.getLogger(Generator.class);
 
     // Generator will always be a singleton so we're using the Singleton pattern.
     private static Generator singletonGenerator;
 
-    // URL
-    private URL baseUrlToScan;
-
-    // Generate Types
-    public enum GenerateType {CODE, HINTS, CODE_FROM_HINTS, INTERACTIVE}
+    private PageElementsContainer pageElementsContainer;
 
     /* Accumulates the classnames used for each page object to ensure uniqueness.
        The classNameRecorder needs to exist, and accumulate page names for all pages generated.
     */
-    private static NameRecorder classNameRecorder = null;
+    private static NameRecorder classNameRecorder;
 
 
     /* Generator will be created by a static factory */
@@ -77,8 +76,7 @@ public class Generator
             pageDescriptor = pageScanner.getPageName(classNameRecorder);
 
             // Scan the DOM to get a list of tags and their attributes.
-            TagDescriptorList tagDescriptorList = pageScanner.scanPage();
-            writeHintsFromTagDescriptors(pageDescriptor, tagDescriptorList);
+            writeHintsFromTagDescriptors(pageDescriptor, pageScanner.scanPage().getTagDescriptorList());
 
         }
         /* Possible Design Pattern: This condition, and the one above, can both call a outputbucket.writeContents()
@@ -91,9 +89,8 @@ public class Generator
             PageScanner pageScanner = new PageScanner(url);
             pageDescriptor = pageScanner.getPageName(classNameRecorder);
 
-            // Scan the nodes
-            TagDescriptorList tagDescriptorList = pageScanner.scanPage();
-            writeCodeFromTagDescriptors(pageDescriptor, tagDescriptorList);
+            // Scan the nodes and write the code.
+            writeCodeFromTagDescriptors(pageDescriptor, pageScanner.scanPage().getTagDescriptorList());
 
         }
         /* Possible Design Pattern? --> This condition is also similar, but the difference is the Scanner used.
@@ -113,8 +110,6 @@ public class Generator
         logger.info("SUCCESSFUL COMPLETION");
     }
 
-
-
     /**
      * A new PageDescriptor is created which describes a page to be scanned, specified via a supplied URL.
      * The PageDescriptor is then used to name the classname for the corresponded page object to be generated.
@@ -126,6 +121,7 @@ public class Generator
         PageDescriptor pageDescriptor;
         classNameRecorder = new NameRecorder("Class Name Recorder");
 
+        // TODO: Fix this--The PageScanner should only be created once per page, not for the pageDescriptor and again for the Tags and links.
         PageScanner pageScanner = new PageScanner(url);
         pageDescriptor = pageScanner.getPageName(classNameRecorder);
 
@@ -139,14 +135,37 @@ public class Generator
      * @return The list of tag descriptors.
      */
     public TagDescriptorList getTagDescriptors(URL url) throws IOException, ParserConfigurationException {
-
-        PageScanner pageScanner = new PageScanner(url);
-        // Scan the DOM to get a list of tags and their attributes.
-        TagDescriptorList tagDescriptorList = pageScanner.scanPage();
-
-        return tagDescriptorList;
+        if (pageElementsContainer == null) {
+            scanPage(url);
+        }
+        return pageElementsContainer.getTagDescriptorList();
     }
 
+    /**
+     * Generates a list of the links in the requested page.
+     * @param url for the page to be scanned for generating the tag descriptors.
+     * @return The list of links.
+     */
+    public LinkDescriptorList getLinkDescriptors(URL url) throws IOException, ParserConfigurationException {
+        if (pageElementsContainer == null) {
+            scanPage(url);
+        }
+        return pageElementsContainer.getLinkDescriptorList();
+    }
+
+    /**
+     * Scan's the page and loads the container for the links and tag descriptor lists.
+      * @param url
+     * @throws IOException
+     * @throws ParserConfigurationException
+     */
+    private void scanPage(URL url) throws IOException, ParserConfigurationException {
+        // TODO: Fix this--The PageScanner should only be created once per page, not for the pageDescriptor and again for the Tags.
+        PageScanner pageScanner = new PageScanner(url);
+        // Scan the DOM to get a list of tags and their attributes.
+        pageElementsContainer = pageScanner.scanPage();
+
+    }
 
     /* Possible Design Pattern: Both writing hints and writing code use a TagDescriptorList and a outputbucket.  But they
        write very different things, and use different buckets.  Yet they both create a type of outputbucket.
@@ -182,7 +201,6 @@ public class Generator
         codeBucket.dumpToFile();
     }
 
-
     private void writeHintsFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
 
         verifyTagDescriptorList(tagDescriptorList);
@@ -204,7 +222,6 @@ public class Generator
         hintsBucket.dumpToFile();
 
     }
-
 
     private void verifyTagDescriptorList(TagDescriptorList tagDescriptorList) {
 

@@ -203,8 +203,10 @@ public class CommandLineProcessor {
 
         String command = null;
 
+        // TODO: Should I only get the lists that are needed based on what interactive commands are run?  Or should the API allow creation up front?
         PageDescriptor pageDescriptor = getInterpreter().getPageDescriptor(url);
-        TagDescriptorList tagDescriptorList = getInterpreter().getTagDescriptors(url);
+        TagDescriptorList tagDescriptors = getInterpreter().getTagDescriptors(url);
+        LinkDescriptorList linkDescriptors = getInterpreter().getLinkDescriptorList(url);
 
         // TODO: Print interactive command-line command help.
         System.out.println("Enter commands:");

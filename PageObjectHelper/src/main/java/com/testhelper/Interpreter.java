@@ -39,6 +39,10 @@ public class Interpreter {
         return getGenerator().getTagDescriptors(url);
     }
 
+    public LinkDescriptorList getLinkDescriptorList(URL url) throws IOException, ParserConfigurationException {
+        return getGenerator().getLinkDescriptors(url);
+    }
+
     private Generator getGenerator() {
         return Generator.getGenerator();
     }

@@ -36,6 +36,7 @@ public class PageScanner {
     // Records names used for members to avoid duplicates.
     private NameRecorder memberNameRecorder;
 
+    private PageElementsContainer pageElementsContainer;
     private LinkDescriptorList linkDescriptorList;
     private TagDescriptorList tagDescriptorList;
 
@@ -50,6 +51,12 @@ public class PageScanner {
 
         this.linkDescriptorList = new LinkDescriptorList();
         this.tagDescriptorList = new TagDescriptorList();
+        this.pageElementsContainer = new PageElementsContainer();
+        // Set the references to the lists in the pageElementsContainer here in the contructor so the returned
+        // data structure will be ready to return regardless of what the scan finds.  However, the individual
+        // lists will be interacted with directly when they're needed.  The container will .
+        pageElementsContainer.setLinkDescriptorList(linkDescriptorList);
+        pageElementsContainer.setTagDescriptorList(tagDescriptorList);
         this.memberNameRecorder = new NameRecorder("Member Name Recorder");
 
         this.parsePage();
@@ -131,13 +138,13 @@ public class PageScanner {
         return document;
     }
 
-    public TagDescriptorList scanPage() {
+    public PageElementsContainer scanPage() {
         return scanForUIElements(document.getDocumentElement(), 0);
     }
 
 
     // After scanning the page source, returns a list of all the nodes we want code for along with their code snippets.
-    private TagDescriptorList scanForUIElements(Node parent, int level)
+    private PageElementsContainer scanForUIElements(Node parent, int level)
     {
         logger.info("Entered scanForUIElements using parent node '" + parent.getNodeName() + "' at Level " + level);
 
@@ -145,9 +152,9 @@ public class PageScanner {
            text, attributes, values, etc will be processed differently from nodes.  Since they never have children they
            also must cause the recursion to stop. */
         if (parent.getNodeType() != org.w3c.dom.DocumentType.ELEMENT_NODE)
-            return tagDescriptorList;
+            return pageElementsContainer;
         else if (!parent.hasChildNodes())
-            return tagDescriptorList;
+            return pageElementsContainer;
 
 
         /* This should now be an Element, as all non-elements were just caught
@@ -210,7 +217,7 @@ public class PageScanner {
             current = current.getNextSibling();
         }
 
-       return tagDescriptorList;
+       return pageElementsContainer;
     }
 
     private HashMap<String, String> setAttributePairs(Node node) {
