@@ -12,7 +12,7 @@ import java.util.HashMap;
  * @version 1.0alpha
  * @since 2/2/15
  */
-public class AnchorTagLink {
+public class LinkDescriptor {
 
     private URL url;
     private HashMap<String, String> attributes;
@@ -20,7 +20,7 @@ public class AnchorTagLink {
     // Not sure if the TagDescriptor will be needed but it could prove useful to have a link to the code snippets.
     private TagDescriptor tagDescriptor;
 
-    public AnchorTagLink() {
+    public LinkDescriptor() {
         attributes = new HashMap<String, String>();
     }
 

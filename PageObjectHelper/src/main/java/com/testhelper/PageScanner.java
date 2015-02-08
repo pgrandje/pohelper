@@ -36,7 +36,7 @@ public class PageScanner {
     // Records names used for members to avoid duplicates.
     private NameRecorder memberNameRecorder;
 
-    private AnchorTagLinkList anchorTagLinkList;
+    private LinkDescriptorList linkDescriptorList;
     private TagDescriptorList tagDescriptorList;
 
     // TagSwitcher throws the IOException when it can't find it's configuration file.
@@ -48,7 +48,7 @@ public class PageScanner {
         // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
         this.tagSwitcher = new TagSwitcher();
 
-        this.anchorTagLinkList = new AnchorTagLinkList();
+        this.linkDescriptorList = new LinkDescriptorList();
         this.tagDescriptorList = new TagDescriptorList();
         this.memberNameRecorder = new NameRecorder("Member Name Recorder");
 
@@ -229,7 +229,7 @@ public class PageScanner {
     private void storeLink(Node linkNode) {
 
         // Find the href to get the url.
-        AnchorTagLink newLink = new AnchorTagLink();
+        LinkDescriptor newLink = new LinkDescriptor();
         NamedNodeMap nodeAttributes = linkNode.getAttributes();
         for(int i=0; i < nodeAttributes.getLength(); i++) {
             Attr attrib = (Attr) nodeAttributes.item(i);
@@ -240,6 +240,6 @@ public class PageScanner {
         }
 
         newLink.setAttributes(setAttributePairs(linkNode));
-        anchorTagLinkList.add(newLink);
+        linkDescriptorList.add(newLink);
     }
 }

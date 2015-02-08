@@ -132,7 +132,6 @@ public class Generator
         return pageDescriptor;
     }
 
-
     /**
      * Generates a list of tag descriptors from all html tags in the requested page that are 'tags of interest' for
      * potential representation within a generated page object.

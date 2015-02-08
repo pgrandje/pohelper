@@ -16,26 +16,26 @@ import java.util.List;
  * @since 6/3/12
  * @version 1.0alpha
  */
-public class AnchorTagLinkList implements Iterable<AnchorTagLink> {
+public class LinkDescriptorList implements Iterable<LinkDescriptor> {
 
-    private List<AnchorTagLink> anchorTagLinks;
+    private List<LinkDescriptor> linkDescriptors;
 
-    AnchorTagLinkList() {
+    LinkDescriptorList() {
         // There could be quite a few of these.  One for every node in the page source that we want our page object
         //      to know about.
-        anchorTagLinks = new ArrayList<AnchorTagLink>(200);
+        linkDescriptors = new ArrayList<LinkDescriptor>(200);
     }
 
-    void add(AnchorTagLink anchorTagLink) {
-        anchorTagLinks.add(anchorTagLink);
+    void add(LinkDescriptor linkDescriptor) {
+        linkDescriptors.add(linkDescriptor);
     }
 
     int size() {
-        return anchorTagLinks.size();
+        return linkDescriptors.size();
     }
 
-    public Iterator<AnchorTagLink> iterator() {
-        return anchorTagLinks.iterator();
+    public Iterator<LinkDescriptor> iterator() {
+        return linkDescriptors.iterator();
     }
 
 
