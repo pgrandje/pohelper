@@ -16,5 +16,5 @@ Class-Path: selenium-ie-driver-2.41.0.jar jetty-http-8.1.12.v20130726.
   selenium-htmlunit-driver-2.41.0.jar selenium-java-2.41.0.jar sac-1.3
  .jar htmlunit-core-js-2.13.jar selenium-support-2.41.0.jar ant-launch
  er-1.7.0.jar jcommander-1.12.jar args4j-2.0.16.jar
-Main-Class: com.testhelper.Generator
+Main-Class: com.pagehelper.Generator
 
