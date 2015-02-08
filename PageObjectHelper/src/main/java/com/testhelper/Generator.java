@@ -18,7 +18,7 @@ import java.net.URL;
 public class Generator
 {
     // Generate Types
-    public enum GenerateType {CODE, HINTS, CODE_FROM_HINTS, INTERACTIVE}
+    public enum GenerateType {CODE, HINTS, CODE_FROM_HINTS, LINKS_ONLY, INTERACTIVE}
 
     private static final Logger logger = Logger.getLogger(Generator.class);
 

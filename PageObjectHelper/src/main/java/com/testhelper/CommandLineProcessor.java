@@ -2,7 +2,6 @@ package com.testhelper;
 
 import org.apache.log4j.Logger;
 
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -52,7 +51,9 @@ public class CommandLineProcessor {
     private final String GENERATE_OPTION_CODE = "code";
     private final String GENERATE_OPTION_HINTS = "hints";
     private final String GENERATE_OPTION_CODE_FROM_HINTS = "codeFromHints";
+    private final String GENERATE_OPTION_LINKS_ONLY = "linksOnly";
     private final String GENERATE_OPTION_INTERACTIVE = "interactive";
+
 
     private final String LOCATOR_OPTION_ATTRIBS_AND_CSS = "attribsAndCss";
     private final String LOCATOR_OPTION_ATTRIBS_ONLY = "attribsOnly";
@@ -260,6 +261,10 @@ public class CommandLineProcessor {
         else if (generateOptionValue.equalsIgnoreCase(GENERATE_OPTION_INTERACTIVE)) {
             logger.info("Selected Interactive Mode for code generation.");
             generateType = Generator.GenerateType.INTERACTIVE;
+        }
+        else if (generateOptionValue.equalsIgnoreCase(GENERATE_OPTION_LINKS_ONLY)) {
+            logger.info("Selected links only generation.");
+            generateType = Generator.GenerateType.LINKS_ONLY;
         }
         else {
             printCommandLineError("Unknown value supplied to -generate. Use one of " +
