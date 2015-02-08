@@ -203,6 +203,7 @@ public class CommandLineProcessor {
 
         String command = null;
 
+        PageDescriptor pageDescriptor = getInterpreter().getPageDescriptor(url);
         TagDescriptorList tagDescriptorList = getInterpreter().getTagDescriptors(url);
 
         // TODO: Print interactive command-line command help.
@@ -245,8 +246,6 @@ public class CommandLineProcessor {
     public Generator.GenerateType getGenerateType() {
         return generateType;
     }
-
-
 
 
     // *** private utility methods ***
