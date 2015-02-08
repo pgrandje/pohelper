@@ -50,7 +50,7 @@ public class Generator
      * @param url the starting page for the generate process
      * @param generateType generate, code, hints, or the code from the hints.
      */
-    public void generate(URL url, GenerateType generateType) throws IOException, ParserConfigurationException {
+    public void generate(URL url, GenerateType generateType) throws PageHelperException {
 
         // Verify the param values are valid.
         if (url == null) {
@@ -116,7 +116,7 @@ public class Generator
      * @param url for the page to be scanned for generating the PageDescriptor.
      * @return The PageDescriptor.
      */
-    public PageDescriptor getPageDescriptor(URL url) throws IOException, ParserConfigurationException {
+    public PageDescriptor getPageDescriptor(URL url) throws PageHelperException {
 
         PageDescriptor pageDescriptor;
         classNameRecorder = new NameRecorder("Class Name Recorder");
@@ -134,7 +134,7 @@ public class Generator
      * @param url for the page to be scanned for generating the tag descriptors.
      * @return The list of tag descriptors.
      */
-    public TagDescriptorList getTagDescriptors(URL url) throws IOException, ParserConfigurationException {
+    public TagDescriptorList getTagDescriptors(URL url) throws PageHelperException {
         if (pageElementsContainer == null) {
             scanPage(url);
         }
@@ -146,7 +146,7 @@ public class Generator
      * @param url for the page to be scanned for generating the tag descriptors.
      * @return The list of links.
      */
-    public LinkDescriptorList getLinkDescriptors(URL url) throws IOException, ParserConfigurationException {
+    public LinkDescriptorList getLinkDescriptors(URL url) throws PageHelperException {
         if (pageElementsContainer == null) {
             scanPage(url);
         }
@@ -159,7 +159,7 @@ public class Generator
      * @throws IOException
      * @throws ParserConfigurationException
      */
-    private void scanPage(URL url) throws IOException, ParserConfigurationException {
+    private void scanPage(URL url) throws PageHelperException {
         // TODO: Fix this--The PageScanner should only be created once per page, not for the pageDescriptor and again for the Tags.
         PageScanner pageScanner = new PageScanner(url);
         // Scan the DOM to get a list of tags and their attributes.
@@ -175,7 +175,7 @@ public class Generator
         - Each bucket could override a writeBucket content method. Then pass the Code outputbucket in as a specific type of an
             abstract output bucket.
     */
-    private void writeCodeFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
+    private void writeCodeFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws PageHelperException {
 
         verifyTagDescriptorList(tagDescriptorList);
 
@@ -201,7 +201,7 @@ public class Generator
         codeBucket.dumpToFile();
     }
 
-    private void writeHintsFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
+    private void writeHintsFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws PageHelperException {
 
         verifyTagDescriptorList(tagDescriptorList);
 

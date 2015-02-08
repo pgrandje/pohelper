@@ -82,7 +82,7 @@ public class CommandLineProcessor {
      *
      * @return true if no command-line errors found, otherwise false.
      */
-    public void processCommandLine(String[] args) throws IOException, ParserConfigurationException {
+    public void processCommandLine(String[] args) throws PageHelperException {
 
         logger = Logger.getLogger(Configurator.class);
 
@@ -199,7 +199,7 @@ public class CommandLineProcessor {
     }
 
 
-    private void runInteractiveMode() throws IOException, ParserConfigurationException {
+    private void runInteractiveMode() throws PageHelperException {
 
         String command = null;
 
@@ -238,16 +238,6 @@ public class CommandLineProcessor {
         }
     }
 
-
-    // *** Accessors ****
-
-    public URL getUrl() {
-        return url;
-    }
-
-    public Generator.GenerateType getGenerateType() {
-        return generateType;
-    }
 
 
     // *** private utility methods ***

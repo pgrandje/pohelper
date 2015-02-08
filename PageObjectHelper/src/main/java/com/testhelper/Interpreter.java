@@ -27,19 +27,19 @@ public class Interpreter {
         return singletonInterpreter;
     }
 
-    public void generate(URL url, Generator.GenerateType generateType) throws IOException, ParserConfigurationException {
+    public void generate(URL url, Generator.GenerateType generateType) throws PageHelperException {
         getGenerator().generate(url, generateType);
     }
 
-    public PageDescriptor getPageDescriptor(URL url) throws IOException, ParserConfigurationException {
+    public PageDescriptor getPageDescriptor(URL url) throws PageHelperException {
         return getGenerator().getPageDescriptor(url);
     }
 
-    public TagDescriptorList getTagDescriptors(URL url) throws IOException, ParserConfigurationException {
+    public TagDescriptorList getTagDescriptors(URL url) throws PageHelperException {
         return getGenerator().getTagDescriptors(url);
     }
 
-    public LinkDescriptorList getLinkDescriptorList(URL url) throws IOException, ParserConfigurationException {
+    public LinkDescriptorList getLinkDescriptorList(URL url) throws PageHelperException {
         return getGenerator().getLinkDescriptors(url);
     }
 

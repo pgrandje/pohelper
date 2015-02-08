@@ -21,7 +21,7 @@ public class CodeLoader {
     private String filePath;
     private BufferedReader configFile;
 
-    CodeLoader(TagSwitcher tagSwitcher) throws IOException {
+    CodeLoader(TagSwitcher tagSwitcher) throws PageHelperException {
 
         this.configurator = Configurator.getConfigurator();
         this.tagSwitcher = tagSwitcher;
@@ -35,19 +35,19 @@ public class CodeLoader {
             logger.debug("Using current working directory: " + System.getProperty("user.dir"));
             configFile = new BufferedReader(new FileReader(filePath));
         }
-        catch (FileNotFoundException fileNotFoundException) {
-            logger.fatal("File Not Found Exception in: " + fileNotFoundException.getClass());
-            logger.fatal("Cause: " + fileNotFoundException.getCause());
-            logger.fatal("Message: " + fileNotFoundException.getMessage());
-            logger.fatal("Stack Trace: " + fileNotFoundException.getStackTrace().toString());
-            throw fileNotFoundException;
+        catch (FileNotFoundException e) {
+            logger.fatal("File Not Found Exception in: " + e.getClass());
+            logger.fatal("Cause: " + e.getCause());
+            logger.fatal("Message: " + e.getMessage());
+            logger.fatal("Stack Trace: " + e.getStackTrace().toString());
+            throw new PageHelperException("Code Template File not found. See log. Exception Message: " + e.getMessage());
         }
 
         loadConfig();
     }
 
 
-    private void loadConfig() throws IOException {
+    private void loadConfig() throws PageHelperException {
 
       String currentTag = null;
       String currentMemberCode;
@@ -180,7 +180,7 @@ public class CodeLoader {
 
         } catch (IOException e) {
             logger.error("Readline Exception in CodeLoader: " + e.getMessage());
-            throw e;
+            throw new PageHelperException("IOException in CodeLoader: " + e.getMessage());
         }
     }
 

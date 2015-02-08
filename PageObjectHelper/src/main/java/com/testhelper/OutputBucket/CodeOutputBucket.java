@@ -1,6 +1,7 @@
 package com.testhelper.outputbucket;
 
 import com.testhelper.CodeShellLoader;
+import com.testhelper.PageHelperException;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
@@ -22,7 +23,7 @@ public class CodeOutputBucket extends AbstractOutputBucket {
 
 
     // CodeOutputBucket is a singleton since we would only ever need one at a time.
-    public static CodeOutputBucket getBucket()  throws IOException {
+    public static CodeOutputBucket getBucket()  throws PageHelperException {
         if (codeBucket == null) {
             codeBucket = new CodeOutputBucket();
         }
@@ -33,7 +34,7 @@ public class CodeOutputBucket extends AbstractOutputBucket {
     /**
      * The CodeShellLoader initializes the header and trailer.
      */
-    private CodeOutputBucket() throws IOException {
+    private CodeOutputBucket() throws PageHelperException {
         super();
         codeShellLoader = new CodeShellLoader();
         // TODO: Re-evaluate:  Is this the best interface to pass the CodeOutputBucket into the CodeLoader?  CodeShellLoader does this but CodeLoader does not.

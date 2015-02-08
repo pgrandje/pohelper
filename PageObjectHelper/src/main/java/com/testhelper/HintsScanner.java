@@ -33,7 +33,7 @@ public class HintsScanner {
 
 
     // PageScanner is a singleton since we would only ever need one at a time.
-    public static HintsScanner getScanner()  throws IOException {
+    public static HintsScanner getScanner()  throws PageHelperException {
         if (scanner == null) {
             scanner = new HintsScanner();
         }
@@ -41,7 +41,7 @@ public class HintsScanner {
     }
 
     // TagSwitcher throws the IOException when it can't find it's configuration file.
-    private HintsScanner() throws IOException {
+    private HintsScanner() throws PageHelperException {
 
         // Load a Lookup 'switcher' data-structure from the config file that defines the tag-->code translations.
         this.tagSwitcher = new TagSwitcher();
@@ -64,11 +64,17 @@ public class HintsScanner {
     }
 
 
-    public PageDescriptor setPageName(NameRecorder classNameRecorder) throws IOException {
+    public PageDescriptor setPageName(NameRecorder classNameRecorder) throws PageHelperException {
 
         PageDescriptor pageDescriptor;
 
-        String line = hintsFile.readLine();
+        String line;
+
+        try {
+            line = hintsFile.readLine();
+        } catch (IOException e) {
+            throw new PageHelperException("Readline error in Hints File looking for page name: " + e.getMessage());
+        }
 
         if (line.contains(HintsFileDelimeters.PAGE_MARKER)) {
             String title = line.substring(HintsFileDelimeters.PAGE_MARKER.length() + 1);
@@ -77,7 +83,7 @@ public class HintsScanner {
             pageDescriptor = new PageDescriptor(pageName);
         }
         else {
-            throw new PageHelperException("Page name not found in Hints file.");
+            throw new PageHelperException("Page name must be first line in Hints file.");
         }
 
         return pageDescriptor;
@@ -85,112 +91,117 @@ public class HintsScanner {
 
 
 
-    public TagDescriptorList scan() throws IOException {
-
-        String line = hintsFile.readLine();
-
-        // TODO: Need additional check for the <UI Element Marker> when first reading hintsFile.
-        if (line.contains(HintsFileDelimeters.PAGE_MARKER)) {
-            throw new PageHelperException("Reading from first line of hints file but page name should have been read already.");
-        }
+    public TagDescriptorList scan() throws PageHelperException {
 
         TagDescriptorList tagDescriptorList = new TagDescriptorList();
 
-        // There shouldn't be any blank lines in this file, so we'll treat that as end of file.
-        while (line != null){
+        String line = null;
 
-            logger.debug("Processing line: " + line);
+        try {
+            line = hintsFile.readLine();
 
-            // Check for new record delimiter
-            if (line.contains(HintsFileDelimeters.NEW_TAG_DELIMITER)) {
+            // TODO: Need additional check for the <UI Element Marker> when first reading hintsFile.
+            if (line.contains(HintsFileDelimeters.PAGE_MARKER)) {
+                throw new PageHelperException("Reading from first line of hints file but page name should have been read already.");
+            }
 
-                // Get the first field, which contains the tag.
-                line = hintsFile.readLine();
-                logger.debug("Processing a new tag:");
+            // There shouldn't be any blank lines in this file, so we'll treat that as end of file.
+            while (line != null){
 
-                // Check whether tag should be skipped, if so, skip all lines up to the next record, and re-loop.
-                if (line.charAt(0) != HintsFileDelimeters.IGNORE_CHAR) {
-                    logger.trace("Skipping lines:");
-                    do {
-                        logger.trace(line);
-                        line = hintsFile.readLine();
-                    } while ((line != null) && (!line.contains(HintsFileDelimeters.NEW_TAG_DELIMITER)));
-                    continue;
-                }
-                else {
+                logger.debug("Processing line: " + line);
 
-                    // Store the tag, it has already been read above.
-                    String tag = line.replace("*", "").trim();
+                // Check for new record delimiter
+                if (line.contains(HintsFileDelimeters.NEW_TAG_DELIMITER)) {
 
-                    TagDescriptor tagDescriptor = new TagDescriptor(tagSwitcher.getTemplate(tag));
-
-                    // Read and store the text if we find it in the analysis.
+                    // Get the first field, which contains the tag.
                     line = hintsFile.readLine();
-                    // The Text field should always follow; throw an exception if it's not found.
-                    if (!line.startsWith(HintsFileDelimeters.TEXT_MARKER)) {
-                        throw new PageHelperException("Expected text marker not found in hints file.");
-                    }
+                    logger.debug("Processing a new tag:");
 
-                    String text = line.substring(HintsFileDelimeters.TEXT_MARKER.length());
-                    logger.debug("Retrieved text '" + text + "'.");
-                    tagDescriptor.setTextValue(text);
-                    line = hintsFile.readLine();
-
-
-                    // Read and store the list of attributes if we have them in the analysis.
-
-                    HashMap<String, String> attributes = new HashMap<String, String>();
-
-                    while (line.startsWith(HintsFileDelimeters.ATTRIBUTE_MARKER)) {
-
-                        String[] attrComponents = line.substring(HintsFileDelimeters.ATTRIBUTE_MARKER.length()).split(" = ");
-
-                        // TODO: Simplify attribute format in hints file.
-                        // Attribute format: class = value where value could be null.
-                        // TODO: Make the Hints file not have an '=' when the attribute value is missing.
-
-                        if (attrComponents[0] == null) {
-                            throw new PageHelperException("Hints file has Attribute record with no attribute.");
-                        }
-
-                        logger.debug("Storing attribute '" + attrComponents[0]);
-                        if (attrComponents[1] != null) {
-                            logger.debug("   .... with value '" + attrComponents[1] + "'");
-                        }
-
-                        attributes.put(attrComponents[0], attrComponents[1]);
-
-                        line = hintsFile.readLine();
-                    }
-
-                    tagDescriptor.setAttributes(attributes);
-
-                    // Read and store the css locator if we have one in the analysis.
-                    if (line.contains(HintsFileDelimeters.LOCATOR_MARKER)) {
-                        String locatorString = line.substring(HintsFileDelimeters.LOCATOR_MARKER.length());
-                        logger.debug("Found locator string '" + locatorString + "'.");
-
-                        Locator locator = LocatorFactory.makeLocator(locatorString);
-                        tagDescriptor.setLocator(locator);
+                    // Check whether tag should be skipped, if so, skip all lines up to the next record, and re-loop.
+                    if (line.charAt(0) != HintsFileDelimeters.IGNORE_CHAR) {
+                        logger.trace("Skipping lines:");
+                        do {
+                            logger.trace(line);
+                            line = hintsFile.readLine();
+                        } while ((line != null) && (!line.contains(HintsFileDelimeters.NEW_TAG_DELIMITER)));
+                        continue;
                     }
                     else {
-                        throw new PageHelperException("Found missing locator in hints file.");
+
+                        // Store the tag, it has already been read above.
+                        String tag = line.replace("*", "").trim();
+
+                        TagDescriptor tagDescriptor = new TagDescriptor(tagSwitcher.getTemplate(tag));
+
+                        // Read and store the text if we find it in the analysis.
+                        line = hintsFile.readLine();
+                        // The Text field should always follow; throw an exception if it's not found.
+                        if (!line.startsWith(HintsFileDelimeters.TEXT_MARKER)) {
+                            throw new PageHelperException("Expected text marker not found in hints file.");
+                        }
+
+                        String text = line.substring(HintsFileDelimeters.TEXT_MARKER.length());
+                        logger.debug("Retrieved text '" + text + "'.");
+                        tagDescriptor.setTextValue(text);
+                        line = hintsFile.readLine();
+
+
+                        // Read and store the list of attributes if we have them in the analysis.
+
+                        HashMap<String, String> attributes = new HashMap<String, String>();
+
+                        while (line.startsWith(HintsFileDelimeters.ATTRIBUTE_MARKER)) {
+
+                            String[] attrComponents = line.substring(HintsFileDelimeters.ATTRIBUTE_MARKER.length()).split(" = ");
+
+                            // TODO: Simplify attribute format in hints file.
+                            // Attribute format: class = value where value could be null.
+                            // TODO: Make the Hints file not have an '=' when the attribute value is missing.
+
+                            if (attrComponents[0] == null) {
+                                throw new PageHelperException("Hints file has Attribute record with no attribute.");
+                            }
+
+                            logger.debug("Storing attribute '" + attrComponents[0]);
+                            if (attrComponents[1] != null) {
+                                logger.debug("   .... with value '" + attrComponents[1] + "'");
+                            }
+
+                            attributes.put(attrComponents[0], attrComponents[1]);
+
+                            line = hintsFile.readLine();
+                        }
+
+                        tagDescriptor.setAttributes(attributes);
+
+                        // Read and store the css locator if we have one in the analysis.
+                        if (line.contains(HintsFileDelimeters.LOCATOR_MARKER)) {
+                            String locatorString = line.substring(HintsFileDelimeters.LOCATOR_MARKER.length());
+                            logger.debug("Found locator string '" + locatorString + "'.");
+
+                            Locator locator = LocatorFactory.makeLocator(locatorString);
+                            tagDescriptor.setLocator(locator);
+                        }
+                        else {
+                            throw new PageHelperException("Found missing locator in hints file.");
+                        }
+
+                        tagDescriptor.writeMemberAndMethods(memberNameRecorder);
+                        tagDescriptorList.add(tagDescriptor);
+
                     }
 
-                    tagDescriptor.writeMemberAndMethods(memberNameRecorder);
-                    tagDescriptorList.add(tagDescriptor);
-
                 }
+
+
+                line = hintsFile.readLine();
 
             }
 
-
-            line = hintsFile.readLine();
-
+        } catch (IOException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
 
         return tagDescriptorList;
-
     }
-
 }

@@ -29,7 +29,7 @@ public class TagSwitcher {
     CodeLoader codeLoader;
 
 
-    TagSwitcher() throws IOException {
+    TagSwitcher() throws PageHelperException {
 
         logger = Logger.getLogger(TagSwitcher.class);
         lookUpMap = new HashMap<String, TagTemplate>();

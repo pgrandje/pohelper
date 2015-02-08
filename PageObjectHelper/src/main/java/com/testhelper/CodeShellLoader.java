@@ -44,12 +44,12 @@ public class CodeShellLoader {
     }
 
 
-    public void loadConfig(CodeOutputBucket codeBucket) throws IOException {
-
-      openConfigFile(configurator.getCodeShellTemplateFilePath());
-      StringBuffer stringBuffer = new StringBuffer();
+    public void loadConfig(CodeOutputBucket codeBucket) throws PageHelperException {
 
       try {
+
+          openConfigFile(configurator.getCodeShellTemplateFilePath());
+          StringBuffer stringBuffer = new StringBuffer();
 
           String line = configFile.readLine();
 
@@ -98,10 +98,11 @@ public class CodeShellLoader {
           logger.debug("Adding to CodeOutputBucket the trailer code:\n" + stringBuffer);
           codeBucket.setTrailer(stringBuffer);
 
-        } catch (IOException e) {
-            logger.error("Readline Exception in CodeShellLoader: " + e.getMessage());
-            throw e;
-        }
+      } catch (FileNotFoundException e) {
+          throw new PageHelperException("Code Shell File not found: " + e.getMessage());
+      } catch (IOException e) {
+          throw new PageHelperException("I/O Exception reading Code Shell File.  Message: " + e.getMessage());
+      }
 
     }
 

@@ -42,7 +42,7 @@ public class PageScanner {
 
     // TagSwitcher throws the IOException when it can't find it's configuration file.
     // TODO:  Find out where PageScanner is throwing a ParserConfigurationException and see if I still need to do this.
-    public PageScanner(URL url) throws IOException, ParserConfigurationException {
+    public PageScanner(URL url) throws PageHelperException {
 
         this.url = url;
 
@@ -65,7 +65,7 @@ public class PageScanner {
 
 
     // IOException comes from cleaner.clean(url), ParserConfigurationException comes from DomSerializer
-    private void parsePage() throws IOException, ParserConfigurationException {
+    private void parsePage() throws PageHelperException {
 
         // create an instance of HtmlCleaner and configure it.
         HtmlCleaner cleaner = new HtmlCleaner();
@@ -84,9 +84,16 @@ public class PageScanner {
         }
         catch (ConnectException e) {
                 throw new PageHelperException("Connection problem using url: " + url.toString() + ". Exception message: " + e.getMessage());
+        } catch (IOException e) {
+            throw new PageHelperException("I/O Exception caught while running HTMLCleaner: " + e.getMessage());
         }
+
         // Get the page source into a Document object.
-        document = new DomSerializer(props, true).createDOM(nodes);
+        try {
+            document = new DomSerializer(props, true).createDOM(nodes);
+        } catch (ParserConfigurationException e) {
+            throw new PageHelperException("Cannot parse the DOM: " + e.getMessage());
+        }
 
     }
 
