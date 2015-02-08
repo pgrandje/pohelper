@@ -65,47 +65,45 @@ public class Generator
            The PageDescriptor is then used to name the class name in the code bucket when generating code or in the
            hints file when generating hints.
          */
+        // TODO: The switch-case required the page scanner to not be defined within each case, but the hints generation doesn't actually need it.
+        PageScanner pageScanner = new PageScanner(url);
         PageDescriptor pageDescriptor;
         classNameRecorder = new NameRecorder("Class Name Recorder");
 
         // Generate the hints or code output.
 
-        if (generateType == GenerateType.HINTS) {
-
-            PageScanner pageScanner = new PageScanner(url);
+        switch (generateType) {
+            case HINTS:
             pageDescriptor = pageScanner.getPageName(classNameRecorder);
-
             // Scan the DOM to get a list of tags and their attributes.
             writeHintsFromTagDescriptors(pageDescriptor, pageScanner.scanPage().getTagDescriptorList());
+            break;
 
-        }
         /* Possible Design Pattern: This condition, and the one above, can both call a outputbucket.writeContents()
             method, with the same params and the same param setup code.  The only difference is the bucket used.
            So, I think a Builder Pattern or Factory Pattern could be used to build the appropriate bucket based
            on the Configurator's generate-status.  I could also pass in a Scanner object maybe which covers the Hints Scanning case also.
          */
-        else if (generateType == GenerateType.CODE) {
-
-            PageScanner pageScanner = new PageScanner(url);
+        case CODE:
             pageDescriptor = pageScanner.getPageName(classNameRecorder);
 
             // Scan the nodes and write the code.
             writeCodeFromTagDescriptors(pageDescriptor, pageScanner.scanPage().getTagDescriptorList());
+            break;
 
-        }
         /* Possible Design Pattern? --> This condition is also similar, but the difference is the Scanner used.
         */
-        else if (generateType == GenerateType.CODE_FROM_HINTS) {
+        case CODE_FROM_HINTS:
 
             pageDescriptor = HintsScanner.getScanner().setPageName(classNameRecorder);
 
             TagDescriptorList tagDescriptorList = HintsScanner.getScanner().scan();
             writeCodeFromTagDescriptors(pageDescriptor, tagDescriptorList);
+            break;
 
-        }
-        else {
+        default:
             throw new PageHelperException("Invalid configuration state.  Should never get here.");
-        }
+        }  // end switch
 
         logger.info("SUCCESSFUL COMPLETION");
     }
