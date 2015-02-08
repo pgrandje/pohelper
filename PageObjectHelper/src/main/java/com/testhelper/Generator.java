@@ -153,20 +153,6 @@ public class Generator
         return pageElementsContainer.getLinkDescriptorList();
     }
 
-    /**
-     * Scan's the page and loads the container for the links and tag descriptor lists.
-      * @param url
-     * @throws IOException
-     * @throws ParserConfigurationException
-     */
-    private void scanPage(URL url) throws PageHelperException {
-        // TODO: Fix this--The PageScanner should only be created once per page, not for the pageDescriptor and again for the Tags.
-        PageScanner pageScanner = new PageScanner(url);
-        // Scan the DOM to get a list of tags and their attributes.
-        pageElementsContainer = pageScanner.scanPage();
-
-    }
-
     /* Possible Design Pattern: Both writing hints and writing code use a TagDescriptorList and a outputbucket.  But they
        write very different things, and use different buckets.  Yet they both create a type of outputbucket.
        What type of pattern can be used here?
@@ -175,7 +161,7 @@ public class Generator
         - Each bucket could override a writeBucket content method. Then pass the Code outputbucket in as a specific type of an
             abstract output bucket.
     */
-    private void writeCodeFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws PageHelperException {
+    public void writeCodeFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws PageHelperException {
 
         verifyTagDescriptorList(tagDescriptorList);
 
@@ -199,6 +185,20 @@ public class Generator
 
         // Dump the generated sourcecode.
         codeBucket.dumpToFile();
+    }
+
+    /**
+     * Scan's the page and loads the container for the links and tag descriptor lists.
+      * @param url
+     * @throws IOException
+     * @throws ParserConfigurationException
+     */
+    private void scanPage(URL url) throws PageHelperException {
+        // TODO: Fix this--The PageScanner should only be created once per page, not for the pageDescriptor and again for the Tags.
+        PageScanner pageScanner = new PageScanner(url);
+        // Scan the DOM to get a list of tags and their attributes.
+        pageElementsContainer = pageScanner.scanPage();
+
     }
 
     private void writeHintsFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws PageHelperException {

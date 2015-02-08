@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Iterator;
 
 /**
  * Command-line processor evaluates the command-line options and their values.  It validates for correct syntax and
@@ -60,7 +61,12 @@ public class CommandLineProcessor {
     private final String LOCATOR_OPTION_CSS_ONLY = "cssOnly";
 
 
-    // Interactive commands
+    // Interactive commands -- used strings instead of chars to allow a fully-typed "quit" and "dump" to avoid
+    // accidental 'q' or 'd' key press quiting a session prematurely.
+    private final String COMMAND_SKIP = "s";
+    private final String COMMAND_SHOW_ATTRIBUTES = "a";
+    private final String COMMAND_WRITE_TO_BUCKET = "w";
+    private final String COMMAND_DUMP_CODE = "dump";
     private final String COMMAND_QUIT = "quit";
 
 
@@ -204,10 +210,9 @@ public class CommandLineProcessor {
 
         String command = null;
 
-        // TODO: Should I only get the lists that are needed based on what interactive commands are run?  Or should the API allow creation up front?
         PageDescriptor pageDescriptor = getInterpreter().getPageDescriptor(url);
         TagDescriptorList tagDescriptors = getInterpreter().getTagDescriptors(url);
-        LinkDescriptorList linkDescriptors = getInterpreter().getLinkDescriptorList(url);
+        getInterpreter().setWriteList(pageDescriptor);
 
         // TODO: Print interactive command-line command help.
         System.out.println("Enter commands:");
@@ -215,7 +220,23 @@ public class CommandLineProcessor {
         //  open up standard input
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+        System.out.println("Processing Page: " + pageDescriptor.getPageObjectName());
+
+        Iterator<TagDescriptor> tagDescriptorIterator = tagDescriptors.iterator();
+
         while(true) {
+
+            if(!tagDescriptorIterator.hasNext()) {
+                System.out.println("End of tag descriptors list. Exiting.  Goodbye.");
+                break;
+            }
+
+            TagDescriptor tagDescriptor = tagDescriptorIterator.next();
+            System.out.println("Found tag: " + tagDescriptor.getTag());
+
+            if (getInterpreter().hasAttributes(tagDescriptor)) {
+                System.out.println("With " + tagDescriptor.getAttributePairs().size() + "attributes");
+            }
 
             System.out.print("> ");
 
@@ -223,18 +244,33 @@ public class CommandLineProcessor {
             //  readLine() method
             try {
                 command = br.readLine();
-                // TODO:  Add switch-case to process the commands.
             } catch (IOException ioe) {
-                System.out.println("I/O error trying to read your command!");
-                System.exit(1);
+                System.out.println("I/O error trying to read your command! Try again.");
             }
 
             if (command == null) {
-                throw new PageHelperException("null command -- need valid command from interactive command-line.");
+                System.out.println("I/O error trying to read your command! Try again.");
+            }
+            else if (command.equalsIgnoreCase(COMMAND_SKIP)) {
+                ;
+            }
+            else if (command.equalsIgnoreCase(COMMAND_SHOW_ATTRIBUTES)) {
+                System.out.println(getInterpreter().getAttributePairs(tagDescriptor));
+            }
+            else if (command.equalsIgnoreCase(COMMAND_WRITE_TO_BUCKET)) {
+                getInterpreter().addToWriteList(tagDescriptor);
+                System.out.println("Tag saved to write bucket.");
+            }
+            else if (command.equalsIgnoreCase(COMMAND_DUMP_CODE)) {
+                getInterpreter().dumpWriteList();
+                System.out.println("Code written to folder: " + Configurator.getConfigurator().getDestinationFilePath());
             }
             else if (command.equalsIgnoreCase(COMMAND_QUIT)) {
                 System.out.println("Thanks, Goodbye.");
                 break;
+            }
+            else {
+                throw new PageHelperException("Unknown interactive command.");
             }
         }
     }

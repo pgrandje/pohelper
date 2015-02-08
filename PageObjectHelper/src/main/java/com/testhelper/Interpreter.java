@@ -3,6 +3,9 @@ package com.testhelper;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * TODO: Add javadoc here.
@@ -14,6 +17,11 @@ import java.net.URL;
 public class Interpreter {
 
     private static Interpreter singletonInterpreter;
+
+    // Writeable objects
+
+    private PageDescriptor pageDescriptor;
+    private TagDescriptorList writeList;
 
     /* Interpreter will be created by a static factory */
     private Interpreter() {
@@ -41,6 +49,38 @@ public class Interpreter {
 
     public LinkDescriptorList getLinkDescriptorList(URL url) throws PageHelperException {
         return getGenerator().getLinkDescriptors(url);
+    }
+
+    public boolean hasAttributes(TagDescriptor tagDescriptor) {
+        return !tagDescriptor.getAttributePairs().isEmpty();
+    }
+
+    public String getAttributePairs(TagDescriptor tagDescriptor) {
+
+        StringBuilder pairs = new StringBuilder();
+
+        HashMap<String, String> attributePairs = tagDescriptor.getAttributePairs();
+        if (!attributePairs.isEmpty()) {
+            for (Map.Entry attributePair : attributePairs.entrySet()) {
+                pairs.append(attributePair.getKey() + "=" + attributePair.getValue() + " ");
+            }
+            pairs.append("\n");
+        }
+
+        return pairs.toString();
+    }
+
+    public void setWriteList(PageDescriptor pageDescriptor) {
+        pageDescriptor = pageDescriptor;
+        writeList = new TagDescriptorList();
+    }
+
+    public void addToWriteList(TagDescriptor tagDescriptor) {
+        writeList.add(tagDescriptor);
+    }
+
+    public void dumpWriteList() {
+        getGenerator().writeCodeFromTagDescriptors(pageDescriptor, writeList);
     }
 
     private Generator getGenerator() {
