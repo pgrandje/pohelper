@@ -149,8 +149,6 @@ public class Generator
     }
 
 
-
-
     /* Possible Design Pattern: Both writing hints and writing code use a TagDescriptorList and a outputbucket.  But they
        write very different things, and use different buckets.  Yet they both create a type of outputbucket.
        What type of pattern can be used here?
@@ -159,7 +157,7 @@ public class Generator
         - Each bucket could override a writeBucket content method. Then pass the Code outputbucket in as a specific type of an
             abstract output bucket.
     */
-    public void writeCodeFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
+    private void writeCodeFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
 
         verifyTagDescriptorList(tagDescriptorList);
 
@@ -186,7 +184,7 @@ public class Generator
     }
 
 
-    public void writeHintsFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
+    private void writeHintsFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws IOException {
 
         verifyTagDescriptorList(tagDescriptorList);
 

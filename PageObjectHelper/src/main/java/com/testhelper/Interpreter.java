@@ -3,6 +3,7 @@ package com.testhelper;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Iterator;
 
 /**
  * TODO: Add javadoc here.
@@ -31,6 +32,9 @@ public class Interpreter {
         getGenerator().generate(url, generateType);
     }
 
+    public TagDescriptorList getTagDescriptors(URL url) throws IOException, ParserConfigurationException {
+        return getGenerator().getTagDescriptors(url);
+    }
 
     private Generator getGenerator() {
         return Generator.getGenerator();

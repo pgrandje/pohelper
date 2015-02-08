@@ -26,20 +26,15 @@ public class TagDescriptorList implements Iterable<TagDescriptor> {
         tagDescriptors = new ArrayList<TagDescriptor>(100);
     }
 
-
     void add(TagDescriptor descriptor) {
         tagDescriptors.add(descriptor);
     }
-
 
     int size() {
         return tagDescriptors.size();
     }
 
-
     public Iterator<TagDescriptor> iterator() {
         return tagDescriptors.iterator();
     }
-
-
 }
