@@ -2,6 +2,7 @@ package com.testhelper;
 
 import org.apache.log4j.Logger;
 
+import javax.xml.parsers.ParserConfigurationException;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -81,7 +82,7 @@ public class CommandLineProcessor {
      *
      * @return true if no command-line errors found, otherwise false.
      */
-    public void processCommandLine(String[] args) {
+    public void processCommandLine(String[] args) throws IOException, ParserConfigurationException {
 
         logger = Logger.getLogger(Configurator.class);
 
@@ -187,10 +188,18 @@ public class CommandLineProcessor {
         if ((url == null) || (generateType == null)) {
             printCommandLineError(CommandLineMessages.REQUIRED_OPTIONS);
         }
+
+        // Run either batch-mode generate code or hints, or run interactive mode.
+        if (generateType == Generator.GenerateType.INTERACTIVE) {
+            runInteractiveMode();
+        }
+        else {
+            getInterpreter().generate(url, generateType);
+        }
     }
 
 
-    public void runInteractiveMode() throws IOException {
+    private void runInteractiveMode() {
 
         String command = null;
 
@@ -342,5 +351,9 @@ public class CommandLineProcessor {
 
     private Configurator getConfigurator() {
         return Configurator.getConfigurator();
+    }
+
+    private Interpreter getInterpreter() {
+        return Interpreter.getInterpreter();
     }
 }
