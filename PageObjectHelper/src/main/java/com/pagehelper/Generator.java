@@ -2,6 +2,7 @@ package com.pagehelper;
 
 import com.pagehelper.outputbucket.CodeOutputBucket;
 import com.pagehelper.outputbucket.HintsOutputBucket;
+import com.pagehelper.outputbucket.LinksOutputBucket;
 import org.apache.log4j.Logger;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -73,6 +74,7 @@ public class Generator
         // Generate the hints or code output.
 
         switch (generateType) {
+
             case HINTS:
             pageDescriptor = pageScanner.getPageName(classNameRecorder);
             // Scan the DOM to get a list of tags and their attributes.
@@ -100,6 +102,13 @@ public class Generator
             TagDescriptorList tagDescriptorList = HintsScanner.getScanner().scan();
             writeCodeFromTagDescriptors(pageDescriptor, tagDescriptorList);
             break;
+
+            case LINKS_ONLY:
+
+                pageDescriptor = pageScanner.getPageName(classNameRecorder);
+                LinkDescriptorList linkDescriptors = pageScanner.scanPage().getLinkDescriptorList();
+                writeLinksInfo(pageDescriptor, linkDescriptors);
+                break;
 
         default:
             throw new PageHelperException("Invalid configuration state.  Should never get here.");
@@ -218,6 +227,27 @@ public class Generator
 
         // Dump the hints file.
         hintsBucket.dumpToFile();
+    }
+
+    private void writeLinksInfo(PageDescriptor pageDescriptor, LinkDescriptorList linkDescriptorlist) {
+
+        verifyLinkDescriptorList(linkDescriptorlist);
+
+        LinksOutputBucket linksBucket = LinksOutputBucket.getBucket();
+        linksBucket.setFilePath();
+        linksBucket.setFileName(pageDescriptor.getPageObjectName());
+        linksBucket.setPageObjectName(pageDescriptor.getPageObjectName());
+
+        // Write the links file.
+        for(LinkDescriptor linkDescriptor : linkDescriptorlist) {
+            linksBucket.addLinkHref(linkDescriptor.getUrl());
+            linksBucket.addLinkText(linkDescriptor.getText());
+            linksBucket.addAttributes(linkDescriptor.getAttributes());
+        }
+
+        // Dump the hints file.
+        linksBucket.dumpToFile();
+
 
     }
 
@@ -231,4 +261,15 @@ public class Generator
             throw new PageHelperException("Tag Descriptor List is empty--cannot generate code or hints.");
         }
     }
+
+    private void verifyLinkDescriptorList(LinkDescriptorList linkDescriptors) {
+
+            if (null == linkDescriptors) {
+                throw new PageHelperException("Got null Link Descriptor List--cannot write links.");
+            }
+
+            if (linkDescriptors.size() == 0) {
+                throw new PageHelperException("Link Descriptor List is empty--cannot write links.");
+            }
+        }
 }

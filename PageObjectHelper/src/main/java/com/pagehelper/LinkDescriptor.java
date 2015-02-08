@@ -15,6 +15,7 @@ import java.util.HashMap;
 public class LinkDescriptor {
 
     private URL url;
+    String text;
     private HashMap<String, String> attributes;
 
     // Not sure if the TagDescriptor will be needed but it could prove useful to have a link to the code snippets.
@@ -28,13 +29,29 @@ public class LinkDescriptor {
         return url;
     }
 
+    // Since the URL comes from the <a> tag's href attribute we take it in as a string and convert it.
     public void setUrl(String hrefString) {
         try {
             this.url = new URL(hrefString);
         } catch (MalformedURLException e) {
             throw new PageHelperException("Invalid URL from href string: Exception: " + e.getMessage() + "from href=" + hrefString);
         }
+    }
 
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public HashMap<String, String> getAttributes() {
+        return attributes;
+    }
+
+    public void setAttributes(HashMap<String, String> attributes) {
+        this.attributes = attributes;
     }
 
     public TagDescriptor getTagDescriptor() {
@@ -43,9 +60,5 @@ public class LinkDescriptor {
 
     public void setTagDescriptor(TagDescriptor tagDescriptor) {
         this.tagDescriptor = tagDescriptor;
-    }
-
-    public void setAttributes(HashMap<String, String> attributes) {
-        this.attributes = attributes;
     }
 }

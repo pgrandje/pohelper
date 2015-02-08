@@ -181,8 +181,8 @@ public class PageScanner {
                 logger.info("Current Node Name " + current.getNodeName() + " -- Value: "
                     + current.getNodeValue() + " -- Node type: " + current.getNodeType());
 
-                // If crawl is set store accumulate the links as we go scan the page.
-                if ((current.getNodeName().equalsIgnoreCase("a")) && (Configurator.getConfigurator().isCrawlEnabled())) {
+                // Accumulate the links as we scan the page.
+                if (current.getNodeName().equalsIgnoreCase("a")) {
                     logger.info("Found a link.");
                     storeLink(current);
                 }
@@ -244,6 +244,7 @@ public class PageScanner {
 
         // Find the href to get the url.
         LinkDescriptor newLink = new LinkDescriptor();
+        newLink.setText(linkNode.getTextContent());
         NamedNodeMap nodeAttributes = linkNode.getAttributes();
         for(int i=0; i < nodeAttributes.getLength(); i++) {
             Attr attrib = (Attr) nodeAttributes.item(i);
