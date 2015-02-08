@@ -79,7 +79,7 @@ public class Interpreter {
         writeList.add(tagDescriptor);
     }
 
-    public void dumpWriteList() {
+    public void dumpWriteList(PageDescriptor pageDescriptor) {
         getGenerator().writeCodeFromTagDescriptors(pageDescriptor, writeList);
     }
 

@@ -262,7 +262,7 @@ public class CommandLineProcessor {
                 System.out.println("Tag saved to write bucket.");
             }
             else if (command.equalsIgnoreCase(COMMAND_DUMP_CODE)) {
-                getInterpreter().dumpWriteList();
+                getInterpreter().dumpWriteList(pageDescriptor);
                 System.out.println("Code written to folder: " + Configurator.getConfigurator().getDestinationFilePath());
             }
             else if (command.equalsIgnoreCase(COMMAND_QUIT)) {
