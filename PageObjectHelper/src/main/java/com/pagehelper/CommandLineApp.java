@@ -18,9 +18,8 @@ public class CommandLineApp {
 
         PropertyConfigurator.configure("log4j.properties");
 
-        // TODO: Configurator can get it's configuration from a config file, but then the command-line args can override some settings.
-//      getConfigurator().loadConfigFile();
-
+        // Configurator can get it's configuration from a config file, but then the command-line args can override some settings.
+        Configurator.getConfigurator().loadConfigFile();
         getCommandLineProcessor().processCommandLine(args);
     }
 

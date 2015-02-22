@@ -186,13 +186,13 @@ public class Configurator {
             while (null != line){
 
                 // For blank lines and comments, just skip them.
-                while(line.isEmpty() || line.substring(0,1).equals("//")) {
-                    logger.trace("Found comment or empty line: " + line);
+                while(line.isEmpty() || line.substring(0,2).equals("//")) {
+                    logger.trace("Skipping comment or empty line: " + line);
                     // Get the next line from the config file.
                     line = configFile.readLine();
                 }
 
-                logger.debug("Found line: " + line);
+                logger.info("Found configuration: " + line);
 
                 String[] keyValuePair = line.split(":");
 
@@ -233,7 +233,6 @@ public class Configurator {
 
                 // Get the next line from the config file.
                 line = configFile.readLine();
-
             }
 
         } catch (IOException e) {
