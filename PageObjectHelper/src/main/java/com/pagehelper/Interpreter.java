@@ -1,5 +1,7 @@
 package com.pagehelper;
 
+import com.pagehelper.outputbucket.CodeOutputBucket;
+
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
@@ -68,7 +70,7 @@ public class Interpreter {
     }
 
     public void setWriteList(PageDescriptor pageDescriptor) {
-        pageDescriptor = pageDescriptor;
+        this.pageDescriptor = pageDescriptor;
         writeList = new TagDescriptorList();
     }
 
@@ -77,7 +79,13 @@ public class Interpreter {
     }
 
     public void dumpWriteList(PageDescriptor pageDescriptor) {
-        getGenerator().writeCodeFromTagDescriptors(pageDescriptor, writeList);
+        // Need to setup the code bucket before scanning the page in case we need to abort due to accidental file overwrite.
+        // TODO: I could decouple the File path processing from the CodeBucket to allow more flexibility on where the CodeBucket gets created.
+        CodeOutputBucket codeBucket = CodeOutputBucket.getBucket();
+        codeBucket.setFilePath();
+        codeBucket.setFileName(pageDescriptor.getPageObjectName());
+        codeBucket.setPageObjectName(pageDescriptor.getPageObjectName());
+        getGenerator().writeCodeFromTagDescriptors(codeBucket, writeList);
     }
 
     private Generator getGenerator() {

@@ -53,6 +53,9 @@ public class Generator
      */
     public void generate(URL url, GenerateType generateType) throws PageHelperException {
 
+        // Two case statements need this but one doesn't, but had to put it at this level to get early filepath evaluation.
+        CodeOutputBucket codeBucket;
+
         // Verify the param values are valid.
         if (url == null) {
             throw new PageHelperException("No URL assigned.");
@@ -61,8 +64,6 @@ public class Generator
         if (generateType == null) {
             throw new PageHelperException("No GenerateType assigned.");
         }
-
-        // TODO: Need to create the OutputBucket before page scanning to verify whether we can overwrite or not.
 
         /* A new PageDescriptor is created for each page or hints file scanned.
            The PageDescriptor is then used to name the class name in the code bucket when generating code or in the
@@ -79,8 +80,14 @@ public class Generator
 
             case HINTS:
             pageDescriptor = pageScanner.getPageName(classNameRecorder);
+            HintsOutputBucket hintsBucket = HintsOutputBucket.getBucket();
+            hintsBucket.setFilePath();
+            hintsBucket.setFileName(pageDescriptor.getPageObjectName());
+            hintsBucket.setCompleteFilePath();
+            hintsBucket.setPageObjectName(pageDescriptor.getPageObjectName());
+
             // Scan the DOM to get a list of tags and their attributes.
-            writeHintsFromTagDescriptors(pageDescriptor, pageScanner.scanPage().getTagDescriptorList());
+            writeHintsFromTagDescriptors(hintsBucket, pageScanner.scanPage().getTagDescriptorList());
             break;
 
         /* Possible Design Pattern: This condition, and the one above, can both call a outputbucket.writeContents()
@@ -91,8 +98,16 @@ public class Generator
         case CODE:
             pageDescriptor = pageScanner.getPageName(classNameRecorder);
 
+            // Need to setup the code bucket before scanning the page in case we need to abort due to accidental file overwrite.
+            // TODO: I could decouple the File path processing from the CodeBucket to allow more flexibility on where the CodeBucket gets created.
+            codeBucket = CodeOutputBucket.getBucket();
+            codeBucket.setFilePath();
+            codeBucket.setFileName(pageDescriptor.getPageObjectName());
+            codeBucket.setCompleteFilePath();
+            codeBucket.setPageObjectName(pageDescriptor.getPageObjectName());
+
             // Scan the nodes and write the code.
-            writeCodeFromTagDescriptors(pageDescriptor, pageScanner.scanPage().getTagDescriptorList());
+            writeCodeFromTagDescriptors(codeBucket, pageScanner.scanPage().getTagDescriptorList());
             break;
 
         /* Possible Design Pattern? --> This condition is also similar, but the difference is the Scanner used.
@@ -101,16 +116,24 @@ public class Generator
 
             pageDescriptor = HintsScanner.getScanner().setPageName(classNameRecorder);
 
+            // Need to setup the code bucket before scanning the page in case we need to abort due to accidental file overwrite.
+            // TODO: I could decouple the File path processing from the CodeBucket to allow more flexibility on where the CodeBucket gets created.
+            codeBucket = CodeOutputBucket.getBucket();
+            codeBucket.setFilePath();
+            codeBucket.setFileName(pageDescriptor.getPageObjectName());
+            codeBucket.setCompleteFilePath();
+            codeBucket.setPageObjectName(pageDescriptor.getPageObjectName());
+
             TagDescriptorList tagDescriptorList = HintsScanner.getScanner().scan();
-            writeCodeFromTagDescriptors(pageDescriptor, tagDescriptorList);
+            writeCodeFromTagDescriptors(codeBucket, tagDescriptorList);
             break;
 
-            case LINKS_ONLY:
+        case LINKS_ONLY:
 
-                pageDescriptor = pageScanner.getPageName(classNameRecorder);
-                LinkDescriptorList linkDescriptors = pageScanner.scanPage().getLinkDescriptorList();
-                writeLinksInfo(pageDescriptor, linkDescriptors);
-                break;
+            pageDescriptor = pageScanner.getPageName(classNameRecorder);
+            LinkDescriptorList linkDescriptors = pageScanner.scanPage().getLinkDescriptorList();
+            writeLinksInfo(pageDescriptor, linkDescriptors);
+            break;
 
         default:
             throw new PageHelperException("Invalid configuration state.  Should never get here.");
@@ -170,14 +193,9 @@ public class Generator
         - Each bucket could override a writeBucket content method. Then pass the Code outputbucket in as a specific type of an
             abstract output bucket.
     */
-    public void writeCodeFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws PageHelperException {
+    public void writeCodeFromTagDescriptors(CodeOutputBucket codeBucket, TagDescriptorList tagDescriptorList) throws PageHelperException {
 
         verifyTagDescriptorList(tagDescriptorList);
-
-        CodeOutputBucket codeBucket = CodeOutputBucket.getBucket();
-        codeBucket.setFilePath();
-        codeBucket.setFileName(pageDescriptor.getPageObjectName());
-        codeBucket.setPageObjectName(pageDescriptor.getPageObjectName());
 
         // Write the members to the code buffer.
         for(TagDescriptor tagDescriptor : tagDescriptorList) {
@@ -210,14 +228,9 @@ public class Generator
 
     }
 
-    private void writeHintsFromTagDescriptors(PageDescriptor pageDescriptor, TagDescriptorList tagDescriptorList) throws PageHelperException {
+    private void writeHintsFromTagDescriptors(HintsOutputBucket hintsBucket, TagDescriptorList tagDescriptorList) throws PageHelperException {
 
         verifyTagDescriptorList(tagDescriptorList);
-
-        HintsOutputBucket hintsBucket = HintsOutputBucket.getBucket();
-        hintsBucket.setFilePath();
-        hintsBucket.setFileName(pageDescriptor.getPageObjectName());
-        hintsBucket.setPageObjectName(pageDescriptor.getPageObjectName());
 
         // Write the hints file.
         for(TagDescriptor tagDescriptor : tagDescriptorList) {

@@ -114,7 +114,6 @@ public abstract class AbstractOutputBucket implements OutputBucket {
 
             // TODO: Refactor how the complete filePath with fileName are handled to allow early evaluation of file existence.
             setCompleteFilePath();
-            checkFileExists();
             logger.info("Writing output file: " + filePath);
             outputFile = new BufferedWriter(new FileWriter(filePath));
             logger.trace("Writing code header:\n" + header.toString());
@@ -133,7 +132,8 @@ public abstract class AbstractOutputBucket implements OutputBucket {
 
     }
 
-    private void setCompleteFilePath() {
+    public void setCompleteFilePath() {
         filePath = filePath + "/" + fileName;
+        checkFileExists();
     }
 }
