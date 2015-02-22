@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
 
 
 /**
@@ -25,6 +26,9 @@ public class Configurator {
 
     // The Configurator is a singleton, and is created by it's static factory method.
     private static Configurator singletonConfigurator;
+
+    // Base URL
+    private URL baseUrl;
 
     // Locator Choices
     public enum LocatorConfig {CSS_ONLY, ATTRIBS_ONLY, ATTRIBS_CSS}
@@ -93,6 +97,14 @@ public class Configurator {
     }
 
     private Configurator() {
+    }
+
+    public URL getBaseUrl() {
+        return baseUrl;
+    }
+
+    public void setBaseUrl(URL baseUrl) {
+        this.baseUrl = baseUrl;
     }
 
     public String getDestinationFilePath() {

@@ -30,8 +30,8 @@ public class LinkDescriptor {
     }
 
     // Since the URL comes from the <a> tag's href attribute we take it in as a string and convert it.
-    public void setUrl(String hrefString) throws MalformedURLException {
-        this.url = new URL(hrefString);
+    public void setUrl(URL url) {
+        this.url = url;
     }
 
     public String getText() {

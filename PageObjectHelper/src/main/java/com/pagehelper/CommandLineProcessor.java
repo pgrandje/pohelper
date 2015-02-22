@@ -117,11 +117,12 @@ public class CommandLineProcessor {
                 // Verify it's a valid URL.
                 try {
                     url = new URL(commandLineOptions[i]);
+                    getConfigurator().setBaseUrl(url);
                 } catch (MalformedURLException e) {
                     printCommandLineError(CommandLineMessages.INVALID_URL + " -- " + e.getMessage());
                 }
 
-                logger.info("Set url to " + url.toString());
+                logger.info("URL set to " + url.toString());
             }
             // -dest/-destination is not required, but if it is supplied, it requires a directory path value.
             // The default if not supplied is the current working directory.

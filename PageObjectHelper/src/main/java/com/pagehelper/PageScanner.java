@@ -247,17 +247,34 @@ public class PageScanner {
         LinkDescriptor newLink = new LinkDescriptor();
         newLink.setText(linkNode.getTextContent());
         NamedNodeMap nodeAttributes = linkNode.getAttributes();
+
+        // This loop continues through all attributes even after the href attrib is found, just in case there's two href attributes.
+        // TODO: Find out if an <a> tag could ever have two href values and whether that's invalid.
         for(int i=0; i < nodeAttributes.getLength(); i++) {
             Attr attrib = (Attr) nodeAttributes.item(i);
+
             if (attrib.getName().equalsIgnoreCase("href")){
+
+                String hrefString = attrib.getValue();
+
+                if (hrefString.charAt(0) == '/') {
+                    hrefString = Configurator.getConfigurator().getBaseUrl() + hrefString;
+                }
+                // skip over anchor tags serving as within-page bookmarks.
+                else if (hrefString.charAt(0) == '#') {
+                    continue;
+                }
+
+                // Now we should have a valid external, or relative URL, with relative URLs expanded with the base URL to be a full URL.
                 try {
                     logger.info("Storing link: " + attrib.getValue());
-                    newLink.setUrl(attrib.getValue());
+                    newLink.setUrl(new URL(hrefString));
                 } catch (MalformedURLException e) {
                     logger.warn("Found invalid URL in page source: " + attrib.getValue());
                 }
 
             }
+
         }
 
         newLink.setAttributes(setAttributePairs(linkNode));

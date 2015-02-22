@@ -921,9 +921,9 @@ Attribute: class = mega-nav js-mega-nav
 Locator: css = body > header > nav > div > div:nth-child(6) 
 <*** UI Element ***>
 <div> 
-Text: Mission impossible?Operation to retake Mosul a test for Iraqi troopsBy Laura Smith-Spark and Ben Wedeman, CNNU.S. Secretary of Defense Ash Carter says any effort to retake Mosul from ISIS would be "Iraqi-led and U.S.-supported." But a Peshmerga commander openly doubts that the Iraqi army alone is up to the task.Gen. Marks: Potential Mosul operation 'should not be public'The ISIS terror threatOpinion: Summits on extremism won't defeat ISISTop Stories38 minMinneapolis officer shot 20 minGiuliani: I'm getting threats Smerconish: Giuliani out of line Groups raid school, abduct 89 4 hrMaher: Obama talks like NRA 1 hr'Weeks' before ports back to normal New virus discovered in Kansas Bill O'Reilly keeps up furious response Luxury high-rise catches fire 3 hrDeath penalty past haunts Boston trial Hope Solo reinstated 9 min'Real Chance Of Love' star dies 
+Text: My son died fighting for ISIS'It's so easy for them to get to our children'By Paula Newton, CNNChristianne Boudreau didn't suspect anything when Damian Clairmont told her he was leaving for Egypt to study Arabic. In reality, the 22-year-old was in Syria. FULL STORYThe ISIS terror threatISIS seizes U.S.-made weaponsOperation to retake Mosul a test for Iraqi troopsTop Stories1 hrMinneapolis officer shot 53 minGiuliani: I'm getting threats Smerconish: Giuliani out of line New virus discovered in Kansas AP course battle: Winner gets to write history Groups raid school, abduct 89 4 hrMaher: Obama talks like NRA Bill O'Reilly keeps up furious response Luxury high-rise catches fire 4 hrDeath penalty haunts Boston trial Hope Solo reinstated 42 min'Real Chance of Love' star dies 
 
-News and BuzzB-52 resurrected from desert Boneyard 54 minCar carrying Kardashians slides off road 2 hrHundreds more worlds in our solar system? 1 hr'Duck Dynasty' teen hits Fashion Week runway 2 hrTeen lands half-ton marlin off Hawaii's Big Island 2 hrSee him reel in the 1,058-pound fish 2 hrBidding tops $12,000 for Cobain credit card 3-year-old found frozen to death in shirt, diaper 'Hot Tub Time Machine 2': What critics are saying Legroom: How airlines compare Cops step in when no one attends boy's birthday Blood clots sideline Bosh for rest of season Clashes over same-sex marriage in deep South Kim Jong Un debuts new hairdo Frozen Niagara Falls draws tourists Nominate a CNN Hero Countdown to the OscarsCould fake baby cost 'Sniper' a win?Surprising red carpet looks that turned headsThe weird way Oscar votes are countedOpinion: Why 'Still Alice' is about youPhotos: Oscar-winning best picturesWatch Live TVjQuery(function () {if (typeof window.CNN === 'object' && window.CNN.mutedPlayer) {window.CNN.mutedPlayer.init('coverageContainer_2018143E-B6A8-3550-BAC3-C41EB0D330FA_0', '');}});jQuery(function () {if (typeof window.CNN.VideoAjax === 'undefined' || typeof window.CNN.VideoAjax.NowPlaying === 'undefined') {throw 'Cannot fetch Now Playing Schedule. CNN.VideoAjax is undefined.';} else if (typeof window.CNN.VideoDocFragment === 'undefined' || typeof window.CNN.VideoDocFragment.newFragment === 'undefined') {throw 'CNN.VideoDocFragment or CNN.VideoDocFragment.newFragment is undefined';}window.CNN.VideoAjax.NowPlaying.init();window.CNN.VideoDocFragment.newFragment('mutedPlayer', {network: 'cnn',selector: '#muted-player'});});Chilling interrogation of 12-year-old girlsISIS seizes U.S.-made weaponsThrough the LensPhotographer captures beauty around the worldSee what you missed: The week in 30 photosWhat You&#39;re Talking About Beyonce fans outraged over raw photosScrap metal could be missing plane from '40sAaron Hernandez case: Where are the shoes?Is this the worst movie of all time?CNNMoneyMan threatened with arrest for unpaid ticketMy debt collection horror storyMeet the millionaire debt collectorsBest of the Week 'Men' finale takes down Charlie SheenMurder verdict in cold case sticksBeyonce and Cindy Crawford: Celebs are just like us14 things President Obama lovesSportsBosh out for year with clots on lungCould this be Busch's wake-up call? USWNT reinstates Solo after banScout falls asleep at NFL combineA fight six years in the making Video The stealth fighter that's bombing ISISExploring a planet you've probably never heard ofWhat's the big deal about Beyoncé's leaked photos? Stunt plane mid-air collision caught on tapeDo you have a right to record the police?How will the world end?World's largest tunneling machine still stuckMeet the rejects from a one-way trip to MarsNASA to send submarine into spaceOpinions VoicesAmerica doesn't love Rudy GiulianiBy Errol Louis, CNN Political CommentatorA political rabble-rouser rejected by voters in his own presidential bid slams the presidentWhy there won't be a red carpet rebellionCan circumstantial evidence convict Aaron Hernandez?Is Oklahoma scared of AP history?Don't ban e-cigarettes on airplanesCory Booker: America losing drone raceGuns in cars don't make you saferJohn Legend: What I didn't learn in schoolGloballyWhite House summit failedBy Aaron David Miller7 ways to celebrate World Pangolin DayHow ISIS is baiting AmericaSoccer fans not racist thugsVirgin founder: Make 'net zero' by 2050Political Op-EdsCongress, fix this hot, ugly messBy Ana NavarroHillary Clinton's got a problemGovernment waste? Here's a way outFrom Our Partners HealthgradesTips for managing lung diseaseAdvanced melanoma? What to knowSmart kitchen tips for RAHelp bipolar patients with transitionSo you have MS. Now what?Fodor&#39;s TravelNeed a destination for your next trip? Discover the world through food Embrace romance on your next trip Find a trip for every taste Start planning your next family vacation Time LifestyleMisconceptions men have about black women Zendaya! 20 jaw-dropping looks Child stars: Where are they now? 10 must-have beauty products under $10 Celebrity bikini photos; Stars on vacation LendingTree2.8% APR 15 Yr fixed. Do you qualify? Refinancing can save you money, but not for long See your credit score w/o harming it. Free. Cut credit card debt with a 7.2% APR loan Trulia Home SearchReady to sell? Find your home's value Homes for sale Should you rent or buy? Apartments for rent Job Search - Indeed.comPart time jobs Customer service jobs Sales jobs Retail jobs In Case You Missed It EntertainmentSelena Gomez goes topless, discusses anxietyBy Lisa Respers France, CNNAccording to Selena Gomez, life in the spotlight isn't all it's cracked up to be.Alex Morgan: 'Bigger legs than upper body' World's best beaches, because winter will end Can amazing 'Wheel of Fortune' win be real? NFL teams propose shared LA stadium Study: 'U.S. Army officers lie' routinely  Pluto's moons open door to new vastness Kim Jong Un's private jet inside and out Extreme road rage caught on camera Divers find 2,000 gold coins 'Rat tribe' living in underground city Best tourist attractions that no longer exist CNN Quiz Show: Watch the full episode 
+News and BuzzB-52 resurrected from desert Boneyard 1 hrCar carrying Kardashians slides off road 3 hrHundreds more worlds in our solar system? 2 hr'Duck Dynasty' teen hits Fashion Week runway 3 hrTeen lands half-ton marlin off Hawaii's Big Island 14 minSee him reel in the 1,058-pound fish 3 hrBidding tops $12,000 for Cobain credit card 3-year-old found frozen to death in shirt, diaper 'Hot Tub Time Machine 2': What critics are saying Legroom: How airlines compare Cops step in when no one attends boy's birthday Blood clots sideline Bosh for rest of season Clashes over same-sex marriage in deep South Kim Jong Un debuts new hairdo Frozen Niagara Falls draws tourists Nominate a CNN Hero Countdown to the OscarsCould fake baby cost 'Sniper' a win?Surprising red carpet looks that turned headsArtist's creates cocaine-snorting OscarThe weird way Oscar votes are countedPhotos: Oscar-winning best picturesWatch Live TVjQuery(function () {if (typeof window.CNN === 'object' && window.CNN.mutedPlayer) {window.CNN.mutedPlayer.init('coverageContainer_2018143E-B6A8-3550-BAC3-C41EB0D330FA_0', '');}});jQuery(function () {if (typeof window.CNN.VideoAjax === 'undefined' || typeof window.CNN.VideoAjax.NowPlaying === 'undefined') {throw 'Cannot fetch Now Playing Schedule. CNN.VideoAjax is undefined.';} else if (typeof window.CNN.VideoDocFragment === 'undefined' || typeof window.CNN.VideoDocFragment.newFragment === 'undefined') {throw 'CNN.VideoDocFragment or CNN.VideoDocFragment.newFragment is undefined';}window.CNN.VideoAjax.NowPlaying.init();window.CNN.VideoDocFragment.newFragment('mutedPlayer', {network: 'cnn',selector: '#muted-player'});});Chilling interrogation of 12-year-old girls'Parks and Rec' producer dead at 30Through the LensPhotographer captures beauty around the worldSee what you missed: The week in 30 photosWhat You&#39;re Talking About Beyonce fans outraged over raw photosScrap metal could be missing plane from '40sAaron Hernandez case: Where are the shoes?Is this the worst movie of all time?CNNMoneySan Franciscans abandon pets in housing searchMy debt collection horror storyMeet the millionaire debt collectorsBest of the Week 'Men' finale takes down Charlie SheenMurder verdict in cold case sticksBeyonce and Cindy Crawford: Celebs are just like us14 things President Obama lovesSportsBosh out for year with clots on lungCould this be Busch's wake-up call? USWNT reinstates Solo after banScout falls asleep at NFL combineA fight six years in the making Video The stealth fighter that's bombing ISISExploring a planet you've probably never heard ofWhat's the big deal about Beyoncé's leaked photos? Stunt plane mid-air collision caught on tapeDo you have a right to record the police?How will the world end?World's largest tunneling machine still stuckMeet the rejects from a one-way trip to MarsNASA to send submarine into spaceOpinions VoicesAmerica doesn't love Rudy GiulianiBy Errol Louis, CNN Political CommentatorA political rabble-rouser rejected by voters in his own presidential bid slams the presidentWhy there won't be a red carpet rebellionCan circumstantial evidence convict Aaron Hernandez?Is Oklahoma scared of AP history?Don't ban e-cigarettes on airplanesCory Booker: America losing drone raceGuns in cars don't make you saferJohn Legend: What I didn't learn in schoolGloballyWhite House summit failedBy Aaron David Miller7 ways to celebrate World Pangolin DayHow ISIS is baiting AmericaSoccer fans not racist thugsVirgin founder: Make 'net zero' by 2050Political Op-EdsCongress, fix this hot, ugly messBy Ana NavarroHillary Clinton's got a problemGovernment waste? Here's a way outFrom Our Partners HealthgradesTips for managing lung diseaseAdvanced melanoma? What to knowSmart kitchen tips for RAHelp bipolar patients with transitionSo you have MS. Now what?Fodor&#39;s TravelNeed a destination for your next trip? Discover the world through food Embrace romance on your next trip Find a trip for every taste Start planning your next family vacation Time LifestyleMisconceptions men have about black women Zendaya! 20 jaw-dropping looks Child stars: Where are they now? 10 must-have beauty products under $10 Celebrity bikini photos; Stars on vacation LendingTree2.8% APR 15 Yr fixed. Do you qualify? Refinancing can save you money, but not for long See your credit score w/o harming it. Free. Cut credit card debt with a 7.2% APR loan Trulia Home SearchReady to sell? Find your home's value Homes for sale Should you rent or buy? Apartments for rent Job Search - Indeed.comPart time jobs Customer service jobs Sales jobs Retail jobs In Case You Missed It EntertainmentSelena Gomez goes topless, discusses anxietyBy Lisa Respers France, CNNAccording to Selena Gomez, life in the spotlight isn't all it's cracked up to be.Alex Morgan: 'Bigger legs than upper body' World's best beaches, because winter will end Can amazing 'Wheel of Fortune' win be real? NFL teams propose shared LA stadium Study: 'U.S. Army officers lie' routinely  Pluto's moons open door to new vastness Kim Jong Un's private jet inside and out Extreme road rage caught on camera Divers find 2,000 gold coins 'Rat tribe' living in underground city Best tourist attractions that no longer exist CNN Quiz Show: Watch the full episode 
 Attribute: class = pg-no-rail pg-wrapper 
 Locator: css = body > div:nth-child(4) 
 <*** UI Element ***>
@@ -959,43 +959,43 @@ Attribute: class = zn-top__background
 Locator: css = body > div:nth-child(4) > section > div > div 
 <*** UI Element ***>
 <div> 
-Text: Mission impossible?Operation to retake Mosul a test for Iraqi troopsBy Laura Smith-Spark and Ben Wedeman, CNNU.S. Secretary of Defense Ash Carter says any effort to retake Mosul from ISIS would be "Iraqi-led and U.S.-supported." But a Peshmerga commander openly doubts that the Iraqi army alone is up to the task.Gen. Marks: Potential Mosul operation 'should not be public'The ISIS terror threatOpinion: Summits on extremism won't defeat ISISTop Stories38 minMinneapolis officer shot 20 minGiuliani: I'm getting threats Smerconish: Giuliani out of line Groups raid school, abduct 89 4 hrMaher: Obama talks like NRA 1 hr'Weeks' before ports back to normal New virus discovered in Kansas Bill O'Reilly keeps up furious response Luxury high-rise catches fire 3 hrDeath penalty past haunts Boston trial Hope Solo reinstated 9 min'Real Chance Of Love' star dies 
+Text: My son died fighting for ISIS'It's so easy for them to get to our children'By Paula Newton, CNNChristianne Boudreau didn't suspect anything when Damian Clairmont told her he was leaving for Egypt to study Arabic. In reality, the 22-year-old was in Syria. FULL STORYThe ISIS terror threatISIS seizes U.S.-made weaponsOperation to retake Mosul a test for Iraqi troopsTop Stories1 hrMinneapolis officer shot 53 minGiuliani: I'm getting threats Smerconish: Giuliani out of line New virus discovered in Kansas AP course battle: Winner gets to write history Groups raid school, abduct 89 4 hrMaher: Obama talks like NRA Bill O'Reilly keeps up furious response Luxury high-rise catches fire 4 hrDeath penalty haunts Boston trial Hope Solo reinstated 42 min'Real Chance of Love' star dies 
 Attribute: class = l-container
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) 
 <*** UI Element ***>
 <div> 
-Text: Mission impossible?Operation to retake Mosul a test for Iraqi troopsBy Laura Smith-Spark and Ben Wedeman, CNNU.S. Secretary of Defense Ash Carter says any effort to retake Mosul from ISIS would be "Iraqi-led and U.S.-supported." But a Peshmerga commander openly doubts that the Iraqi army alone is up to the task.Gen. Marks: Potential Mosul operation 'should not be public'The ISIS terror threatOpinion: Summits on extremism won't defeat ISISTop Stories38 minMinneapolis officer shot 20 minGiuliani: I'm getting threats Smerconish: Giuliani out of line Groups raid school, abduct 89 4 hrMaher: Obama talks like NRA 1 hr'Weeks' before ports back to normal New virus discovered in Kansas Bill O'Reilly keeps up furious response Luxury high-rise catches fire 3 hrDeath penalty past haunts Boston trial Hope Solo reinstated 9 min'Real Chance Of Love' star dies 
+Text: My son died fighting for ISIS'It's so easy for them to get to our children'By Paula Newton, CNNChristianne Boudreau didn't suspect anything when Damian Clairmont told her he was leaving for Egypt to study Arabic. In reality, the 22-year-old was in Syria. FULL STORYThe ISIS terror threatISIS seizes U.S.-made weaponsOperation to retake Mosul a test for Iraqi troopsTop Stories1 hrMinneapolis officer shot 53 minGiuliani: I'm getting threats Smerconish: Giuliani out of line New virus discovered in Kansas AP course battle: Winner gets to write history Groups raid school, abduct 89 4 hrMaher: Obama talks like NRA Bill O'Reilly keeps up furious response Luxury high-rise catches fire 4 hrDeath penalty haunts Boston trial Hope Solo reinstated 42 min'Real Chance of Love' star dies 
 Attribute: class = zn__containers
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div 
 <*** UI Element ***>
 <div> 
-Text: Mission impossible?Operation to retake Mosul a test for Iraqi troopsBy Laura Smith-Spark and Ben Wedeman, CNNU.S. Secretary of Defense Ash Carter says any effort to retake Mosul from ISIS would be "Iraqi-led and U.S.-supported." But a Peshmerga commander openly doubts that the Iraqi army alone is up to the task.Gen. Marks: Potential Mosul operation 'should not be public'The ISIS terror threatOpinion: Summits on extremism won't defeat ISIS 
+Text: My son died fighting for ISIS'It's so easy for them to get to our children'By Paula Newton, CNNChristianne Boudreau didn't suspect anything when Damian Clairmont told her he was leaving for Egypt to study Arabic. In reality, the 22-year-old was in Syria. FULL STORYThe ISIS terror threatISIS seizes U.S.-made weaponsOperation to retake Mosul a test for Iraqi troops 
 Attribute: class = column
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div 
 <*** UI Element ***>
 <ul> 
-Text: Mission impossible?Operation to retake Mosul a test for Iraqi troopsBy Laura Smith-Spark and Ben Wedeman, CNNU.S. Secretary of Defense Ash Carter says any effort to retake Mosul from ISIS would be "Iraqi-led and U.S.-supported." But a Peshmerga commander openly doubts that the Iraqi army alone is up to the task.Gen. Marks: Potential Mosul operation 'should not be public'The ISIS terror threatOpinion: Summits on extremism won't defeat ISIS 
+Text: My son died fighting for ISIS'It's so easy for them to get to our children'By Paula Newton, CNNChristianne Boudreau didn't suspect anything when Damian Clairmont told her he was leaving for Egypt to study Arabic. In reality, the 22-year-old was in Syria. FULL STORYThe ISIS terror threatISIS seizes U.S.-made weaponsOperation to retake Mosul a test for Iraqi troops 
 Attribute: class = cn cn-list-hierarchical-xs cn--idx-0
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: href = /2015/02/21/middleeast/iraq-isis/index.html
+Attribute: href = /2015/02/19/world/canada-isis-fighter-mother/index.html
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article > a 
 <*** UI Element ***>
 <h2> 
-Text: Mission impossible? 
-Attribute: class = banner-text banner-text--natural
+Text: My son died fighting for ISIS 
+Attribute: class = banner-text js-screaming-banner-text screaming-banner-text
 Attribute: data-analytics = _list-hierarchical-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article > h2 
 <*** UI Element ***>
 <a> 
-Text: Mission impossible? 
-Attribute: href = /2015/02/21/middleeast/iraq-isis/index.html
+Text: My son died fighting for ISIS 
+Attribute: href = /2015/02/19/world/canada-isis-fighter-mother/index.html
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article > h2 > a 
 <*** UI Element ***>
 <div> 
-Text: Operation to retake Mosul a test for Iraqi troopsBy Laura Smith-Spark and Ben Wedeman, CNNU.S. Secretary of Defense Ash Carter says any effort to retake Mosul from ISIS would be "Iraqi-led and U.S.-supported." But a Peshmerga commander openly doubts that the Iraqi army alone is up to the task. 
+Text: 'It's so easy for them to get to our children'By Paula Newton, CNNChristianne Boudreau didn't suspect anything when Damian Clairmont told her he was leaving for Egypt to study Arabic. In reality, the 22-year-old was in Syria. FULL STORY 
 Attribute: class = cd__wrapper
 Attribute: data-analytics = _list-hierarchical-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article > div 
@@ -1007,7 +1007,7 @@ Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: href = /2015/02/21/middleeast/iraq-isis/index.html
+Attribute: href = /2015/02/19/world/canada-isis-fighter-mother/index.html
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article > div > div > a 
 <*** UI Element ***>
 <div> 
@@ -1017,37 +1017,42 @@ Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div 
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: href = /2015/02/21/middleeast/iraq-isis/index.html
+Attribute: href = /2015/02/19/world/canada-isis-fighter-mother/index.html
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article > div > div > div > a 
 <*** UI Element ***>
 <div> 
-Text: Operation to retake Mosul a test for Iraqi troopsBy Laura Smith-Spark and Ben Wedeman, CNNU.S. Secretary of Defense Ash Carter says any effort to retake Mosul from ISIS would be "Iraqi-led and U.S.-supported." But a Peshmerga commander openly doubts that the Iraqi army alone is up to the task. 
+Text: 'It's so easy for them to get to our children'By Paula Newton, CNNChristianne Boudreau didn't suspect anything when Damian Clairmont told her he was leaving for Egypt to study Arabic. In reality, the 22-year-old was in Syria. FULL STORY 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article > div > div:nth-child(2) 
 <*** UI Element ***>
 <h3> 
-Text: Operation to retake Mosul a test for Iraqi troops 
+Text: 'It's so easy for them to get to our children' 
 Attribute: class = cd__headline
 Attribute: data-analytics = _list-hierarchical-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article > div > div:nth-child(2) > h3 
 <*** UI Element ***>
 <a> 
-Text: Operation to retake Mosul a test for Iraqi troops 
+Text: 'It's so easy for them to get to our children' 
 Attribute: itemprop = url
-Attribute: href = /2015/02/21/middleeast/iraq-isis/index.html
+Attribute: href = /2015/02/19/world/canada-isis-fighter-mother/index.html
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article > div > div:nth-child(2) > h3 > a 
 <*** UI Element ***>
 <div> 
-Text: By Laura Smith-Spark and Ben Wedeman, CNN 
+Text: By Paula Newton, CNN 
 Attribute: itemprop = author
 Attribute: class = cd__auxiliary
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article > div > div:nth-child(2) > div 
 <*** UI Element ***>
 <div> 
-Text: U.S. Secretary of Defense Ash Carter says any effort to retake Mosul from ISIS would be "Iraqi-led and U.S.-supported." But a Peshmerga commander openly doubts that the Iraqi army alone is up to the task. 
+Text: Christianne Boudreau didn't suspect anything when Damian Clairmont told her he was leaving for Egypt to study Arabic. In reality, the 22-year-old was in Syria. FULL STORY 
 Attribute: itemprop = description
 Attribute: class = cd__description
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article > div > div:nth-child(2) > div:nth-child(3) 
+<*** UI Element ***>
+<a> 
+Text: FULL STORY 
+Attribute: href = http://www.cnn.com/2015/02/19/world/canada-isis-fighter-mother/index.html
+Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article > div > div:nth-child(2) > div:nth-child(3) > a 
 <*** UI Element ***>
 <div> 
 Text:  
@@ -1061,91 +1066,91 @@ Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div 
 <*** UI Element ***>
 <div> 
 Text:  
-Attribute: data-link = http://cnn.it/1DDHinm
-Attribute: data-description = U.S. Secretary of Defense Ash Carter says any effort to retake Mosul from ISIS would be "Iraqi-led and U.S.-supported." But a Peshmerga commander openly doubts that the Iraqi army alone is up to the task.
-Attribute: data-image-src = http://i2.cdn.turner.com/cnnnext/dam/assets/150209072654-pkg-black-iraq-retaking-mosul-00024307-large-169.jpg
+Attribute: data-link = http://cnn.it/1AMF6tx
+Attribute: data-description = Christianne Boudreau didn&#39;t suspect anything when Damian Clairmont told her he was leaving for Egypt to study Arabic. In reality, the 22-year-old was in Syria. FULL STORY
+Attribute: data-image-src = http://i2.cdn.turner.com/cnnnext/dam/assets/150219114516-01-damian-calirmont-mom-large-169.jpg
 Attribute: class = js-gigya-sharebar
-Attribute: data-title = Operation to retake Mosul a test for Iraqi troops
+Attribute: data-title = &#39;It&#39;s so easy for them to get to our children&#39;
 Attribute: data-isshorturl = true
 Attribute: data-subtitle = 
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article > div > div:nth-child(3) > div > div 
 <*** UI Element ***>
 <div> 
-Text: Gen. Marks: Potential Mosul operation 'should not be public' 
+Text: The ISIS terror threat 
 Attribute: class = cd__wrapper
-Attribute: data-analytics = _list-hierarchical-xs_video_video
+Attribute: data-analytics = _list-hierarchical-xs_gallery_gallery
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article:nth-child(2) > div 
 <*** UI Element ***>
 <div> 
-Text: Gen. Marks: Potential Mosul operation 'should not be public' 
+Text: The ISIS terror threat 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article:nth-child(2) > div > div 
 <*** UI Element ***>
 <h3> 
-Text: Gen. Marks: Potential Mosul operation 'should not be public' 
+Text: The ISIS terror threat 
 Attribute: class = cd__headline
-Attribute: data-analytics = _list-hierarchical-xs_video_video
+Attribute: data-analytics = _list-hierarchical-xs_gallery_gallery
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article:nth-child(2) > div > div > h3 
-<*** UI Element ***>
-<a> 
-Text: Gen. Marks: Potential Mosul operation 'should not be public' 
-Attribute: itemprop = url
-Attribute: href = /videos/world/2015/02/21/sot-james-spider-marks-mosul.cnn
-Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article:nth-child(2) > div > div > h3 > a 
-<*** UI Element ***>
-<div> 
-Text: The ISIS terror threat 
-Attribute: class = cd__wrapper
-Attribute: data-analytics = _list-hierarchical-xs_gallery_gallery
-Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article:nth-child(3) > div 
-<*** UI Element ***>
-<div> 
-Text: The ISIS terror threat 
-Attribute: class = cd__content
-Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article:nth-child(3) > div > div 
-<*** UI Element ***>
-<h3> 
-Text: The ISIS terror threat 
-Attribute: class = cd__headline
-Attribute: data-analytics = _list-hierarchical-xs_gallery_gallery
-Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article:nth-child(3) > div > div > h3 
 <*** UI Element ***>
 <a> 
 Text: The ISIS terror threat 
 Attribute: itemprop = url
 Attribute: href = /2014/06/13/world/gallery/iraq-under-siege/index.html
+Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article:nth-child(2) > div > div > h3 > a 
+<*** UI Element ***>
+<div> 
+Text: ISIS seizes U.S.-made weapons 
+Attribute: class = cd__wrapper
+Attribute: data-analytics = _list-hierarchical-xs_video_video
+Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article:nth-child(3) > div 
+<*** UI Element ***>
+<div> 
+Text: ISIS seizes U.S.-made weapons 
+Attribute: class = cd__content
+Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article:nth-child(3) > div > div 
+<*** UI Element ***>
+<h3> 
+Text: ISIS seizes U.S.-made weapons 
+Attribute: class = cd__headline
+Attribute: data-analytics = _list-hierarchical-xs_video_video
+Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article:nth-child(3) > div > div > h3 
+<*** UI Element ***>
+<a> 
+Text: ISIS seizes U.S.-made weapons 
+Attribute: itemprop = url
+Attribute: href = /videos/us/2015/02/21/newday-wedeman-isis-seizes-u-s-weapons.cnn
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article:nth-child(3) > div > div > h3 > a 
 <*** UI Element ***>
 <div> 
-Text: Opinion: Summits on extremism won't defeat ISIS 
+Text: Operation to retake Mosul a test for Iraqi troops 
 Attribute: class = cd__wrapper
 Attribute: data-analytics = _list-hierarchical-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article:nth-child(4) > div 
 <*** UI Element ***>
 <div> 
-Text: Opinion: Summits on extremism won't defeat ISIS 
+Text: Operation to retake Mosul a test for Iraqi troops 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article:nth-child(4) > div > div 
 <*** UI Element ***>
 <h3> 
-Text: Opinion: Summits on extremism won't defeat ISIS 
+Text: Operation to retake Mosul a test for Iraqi troops 
 Attribute: class = cd__headline
 Attribute: data-analytics = _list-hierarchical-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article:nth-child(4) > div > div > h3 
 <*** UI Element ***>
 <a> 
-Text: Opinion: Summits on extremism won't defeat ISIS 
+Text: Operation to retake Mosul a test for Iraqi troops 
 Attribute: itemprop = url
-Attribute: href = /2015/02/20/opinion/miller-white-house-extremism-summit/index.html
+Attribute: href = /2015/02/21/middleeast/iraq-isis/index.html
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div > ul > article:nth-child(4) > div > div > h3 > a 
 <*** UI Element ***>
 <div> 
-Text: Top Stories38 minMinneapolis officer shot 20 minGiuliani: I'm getting threats Smerconish: Giuliani out of line Groups raid school, abduct 89 4 hrMaher: Obama talks like NRA 1 hr'Weeks' before ports back to normal New virus discovered in Kansas Bill O'Reilly keeps up furious response Luxury high-rise catches fire 3 hrDeath penalty past haunts Boston trial Hope Solo reinstated 9 min'Real Chance Of Love' star dies 
+Text: Top Stories1 hrMinneapolis officer shot 53 minGiuliani: I'm getting threats Smerconish: Giuliani out of line New virus discovered in Kansas AP course battle: Winner gets to write history Groups raid school, abduct 89 4 hrMaher: Obama talks like NRA Bill O'Reilly keeps up furious response Luxury high-rise catches fire 4 hrDeath penalty haunts Boston trial Hope Solo reinstated 42 min'Real Chance of Love' star dies 
 Attribute: class = column
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) 
 <*** UI Element ***>
 <ul> 
-Text: Top Stories38 minMinneapolis officer shot 20 minGiuliani: I'm getting threats Smerconish: Giuliani out of line Groups raid school, abduct 89 4 hrMaher: Obama talks like NRA 1 hr'Weeks' before ports back to normal New virus discovered in Kansas Bill O'Reilly keeps up furious response Luxury high-rise catches fire 3 hrDeath penalty past haunts Boston trial Hope Solo reinstated 9 min'Real Chance Of Love' star dies 
+Text: Top Stories1 hrMinneapolis officer shot 53 minGiuliani: I'm getting threats Smerconish: Giuliani out of line New virus discovered in Kansas AP course battle: Winner gets to write history Groups raid school, abduct 89 4 hrMaher: Obama talks like NRA Bill O'Reilly keeps up furious response Luxury high-rise catches fire 4 hrDeath penalty haunts Boston trial Hope Solo reinstated 42 min'Real Chance of Love' star dies 
 Attribute: data-vr-zone = home-top-col2
 Attribute: class = cn cn-list-xs cn--idx-1 cn--expandable
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul 
@@ -1157,23 +1162,23 @@ Attribute: data-analytics = Top%20Stories_list-xs_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > h2 
 <*** UI Element ***>
 <li> 
-Text: 38 minMinneapolis officer shot 
+Text: 1 hrMinneapolis officer shot 
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li 
 <*** UI Element ***>
 <div> 
-Text: 38 minMinneapolis officer shot 
+Text: 1 hrMinneapolis officer shot 
 Attribute: class = cd__wrapper
 Attribute: data-analytics = Top%20Stories_list-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li > article > div 
 <*** UI Element ***>
 <div> 
-Text: 38 minMinneapolis officer shot 
+Text: 1 hrMinneapolis officer shot 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li > article > div > div 
 <*** UI Element ***>
 <div> 
-Text: 38 min 
-Attribute: class = cd__timestamp cd__timestamp-red
+Text: 1 hr 
+Attribute: class = cd__timestamp
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li > article > div > div > div 
 <*** UI Element ***>
 <h3> 
@@ -1189,22 +1194,22 @@ Attribute: href = /2015/02/21/us/minneapolis-police-officer-shot/index.html
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li > article > div > div > h3 > a 
 <*** UI Element ***>
 <li> 
-Text: 20 minGiuliani: I'm getting threats 
+Text: 53 minGiuliani: I'm getting threats 
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3) 
 <*** UI Element ***>
 <div> 
-Text: 20 minGiuliani: I'm getting threats 
+Text: 53 minGiuliani: I'm getting threats 
 Attribute: class = cd__wrapper
 Attribute: data-analytics = Top%20Stories_list-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div 
 <*** UI Element ***>
 <div> 
-Text: 20 minGiuliani: I'm getting threats 
+Text: 53 minGiuliani: I'm getting threats 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div > div 
 <*** UI Element ***>
 <div> 
-Text: 20 min 
+Text: 53 min 
 Attribute: class = cd__timestamp cd__timestamp-red
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(3) > article > div > div > div 
 <*** UI Element ***>
@@ -1248,121 +1253,116 @@ Attribute: href = /videos/tv/2015/02/21/smerconish-commentary-02212015.cnn
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(4) > article > div > div > h3 > a 
 <*** UI Element ***>
 <li> 
-Text: Groups raid school, abduct 89 
+Text: New virus discovered in Kansas 
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(5) 
 <*** UI Element ***>
 <div> 
-Text: Groups raid school, abduct 89 
+Text: New virus discovered in Kansas 
 Attribute: class = cd__wrapper
 Attribute: data-analytics = Top%20Stories_list-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div 
 <*** UI Element ***>
 <div> 
-Text: Groups raid school, abduct 89 
+Text: New virus discovered in Kansas 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div 
 <*** UI Element ***>
 <h3> 
-Text: Groups raid school, abduct 89 
+Text: New virus discovered in Kansas 
 Attribute: class = cd__headline
 Attribute: data-analytics = Top%20Stories_list-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div > h3 
 <*** UI Element ***>
 <a> 
-Text: Groups raid school, abduct 89 
+Text: New virus discovered in Kansas 
 Attribute: itemprop = url
-Attribute: href = /2015/02/21/africa/south-sudan-children-abducted/index.html
+Attribute: href = /2015/02/20/health/new-virus-discovered/index.html
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div > h3 > a 
 <*** UI Element ***>
 <li> 
-Text: 4 hrMaher: Obama talks like NRA 
+Text: AP course battle: Winner gets to write history 
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(6) 
 <*** UI Element ***>
 <div> 
-Text: 4 hrMaher: Obama talks like NRA 
+Text: AP course battle: Winner gets to write history 
 Attribute: class = cd__wrapper
-Attribute: data-analytics = Top%20Stories_list-xs_video_video
+Attribute: data-analytics = Top%20Stories_list-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div 
 <*** UI Element ***>
 <div> 
-Text: 4 hrMaher: Obama talks like NRA 
+Text: AP course battle: Winner gets to write history 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div 
 <*** UI Element ***>
-<div> 
-Text: 4 hr 
-Attribute: class = cd__timestamp
-Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div > div 
-<*** UI Element ***>
 <h3> 
-Text: Maher: Obama talks like NRA 
+Text: AP course battle: Winner gets to write history 
 Attribute: class = cd__headline
-Attribute: data-analytics = Top%20Stories_list-xs_video_video
+Attribute: data-analytics = Top%20Stories_list-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div > h3 
 <*** UI Element ***>
 <a> 
-Text: Maher: Obama talks like NRA 
+Text: AP course battle: Winner gets to write history 
 Attribute: itemprop = url
-Attribute: href = /videos/politics/2015/02/21/pkg-orig-maher-obama-sounds-nra.cnn
+Attribute: href = /2015/02/20/us/ap-history-framework-fight/index.html
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div > h3 > a 
 <*** UI Element ***>
 <li> 
-Text: 1 hr'Weeks' before ports back to normal 
+Text: Groups raid school, abduct 89 
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(7) 
 <*** UI Element ***>
 <div> 
-Text: 1 hr'Weeks' before ports back to normal 
+Text: Groups raid school, abduct 89 
 Attribute: class = cd__wrapper
 Attribute: data-analytics = Top%20Stories_list-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(7) > article > div 
 <*** UI Element ***>
 <div> 
-Text: 1 hr'Weeks' before ports back to normal 
+Text: Groups raid school, abduct 89 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(7) > article > div > div 
 <*** UI Element ***>
-<div> 
-Text: 1 hr 
-Attribute: class = cd__timestamp
-Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(7) > article > div > div > div 
-<*** UI Element ***>
 <h3> 
-Text: 'Weeks' before ports back to normal 
+Text: Groups raid school, abduct 89 
 Attribute: class = cd__headline
 Attribute: data-analytics = Top%20Stories_list-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(7) > article > div > div > h3 
 <*** UI Element ***>
 <a> 
-Text: 'Weeks' before ports back to normal 
+Text: Groups raid school, abduct 89 
 Attribute: itemprop = url
-Attribute: href = /2015/02/21/politics/tom-perez-ports-dispute/index.html
+Attribute: href = /2015/02/21/africa/south-sudan-children-abducted/index.html
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(7) > article > div > div > h3 > a 
 <*** UI Element ***>
 <li> 
-Text: New virus discovered in Kansas 
+Text: 4 hrMaher: Obama talks like NRA 
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(8) 
 <*** UI Element ***>
 <div> 
-Text: New virus discovered in Kansas 
+Text: 4 hrMaher: Obama talks like NRA 
 Attribute: class = cd__wrapper
-Attribute: data-analytics = Top%20Stories_list-xs_article_
+Attribute: data-analytics = Top%20Stories_list-xs_video_video
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(8) > article > div 
 <*** UI Element ***>
 <div> 
-Text: New virus discovered in Kansas 
+Text: 4 hrMaher: Obama talks like NRA 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(8) > article > div > div 
 <*** UI Element ***>
+<div> 
+Text: 4 hr 
+Attribute: class = cd__timestamp
+Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(8) > article > div > div > div 
+<*** UI Element ***>
 <h3> 
-Text: New virus discovered in Kansas 
+Text: Maher: Obama talks like NRA 
 Attribute: class = cd__headline
-Attribute: data-analytics = Top%20Stories_list-xs_article_
+Attribute: data-analytics = Top%20Stories_list-xs_video_video
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(8) > article > div > div > h3 
 <*** UI Element ***>
 <a> 
-Text: New virus discovered in Kansas 
+Text: Maher: Obama talks like NRA 
 Attribute: itemprop = url
-Attribute: href = /2015/02/20/health/new-virus-discovered/index.html
+Attribute: href = /videos/politics/2015/02/21/pkg-orig-maher-obama-sounds-nra.cnn
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(8) > article > div > div > h3 > a 
 <*** UI Element ***>
 <li> 
@@ -1420,33 +1420,33 @@ Attribute: href = /2015/02/20/middleeast/dubai-tower-fire/index.html
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(10) > article > div > div > h3 > a 
 <*** UI Element ***>
 <li> 
-Text: 3 hrDeath penalty past haunts Boston trial 
+Text: 4 hrDeath penalty haunts Boston trial 
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(11) 
 <*** UI Element ***>
 <div> 
-Text: 3 hrDeath penalty past haunts Boston trial 
+Text: 4 hrDeath penalty haunts Boston trial 
 Attribute: class = cd__wrapper
 Attribute: data-analytics = Top%20Stories_list-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(11) > article > div 
 <*** UI Element ***>
 <div> 
-Text: 3 hrDeath penalty past haunts Boston trial 
+Text: 4 hrDeath penalty haunts Boston trial 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(11) > article > div > div 
 <*** UI Element ***>
 <div> 
-Text: 3 hr 
+Text: 4 hr 
 Attribute: class = cd__timestamp
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(11) > article > div > div > div 
 <*** UI Element ***>
 <h3> 
-Text: Death penalty past haunts Boston trial 
+Text: Death penalty haunts Boston trial 
 Attribute: class = cd__headline
 Attribute: data-analytics = Top%20Stories_list-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(11) > article > div > div > h3 
 <*** UI Element ***>
 <a> 
-Text: Death penalty past haunts Boston trial 
+Text: Death penalty haunts Boston trial 
 Attribute: itemprop = url
 Attribute: href = /2015/02/20/us/tsarnaev-13th-juror-selection-history/index.html
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(11) > article > div > div > h3 > a 
@@ -1479,33 +1479,33 @@ Attribute: href = http://bleacherreport.com/articles/2338241-hope-solo-suspended
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(12) > article > div > div > h3 > a 
 <*** UI Element ***>
 <li> 
-Text: 9 min'Real Chance Of Love' star dies 
+Text: 42 min'Real Chance of Love' star dies 
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(13) 
 <*** UI Element ***>
 <div> 
-Text: 9 min'Real Chance Of Love' star dies 
+Text: 42 min'Real Chance of Love' star dies 
 Attribute: class = cd__wrapper
 Attribute: data-analytics = Top%20Stories_list-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(13) > article > div 
 <*** UI Element ***>
 <div> 
-Text: 9 min'Real Chance Of Love' star dies 
+Text: 42 min'Real Chance of Love' star dies 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(13) > article > div > div 
 <*** UI Element ***>
 <div> 
-Text: 9 min 
+Text: 42 min 
 Attribute: class = cd__timestamp cd__timestamp-red
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(13) > article > div > div > div 
 <*** UI Element ***>
 <h3> 
-Text: 'Real Chance Of Love' star dies 
+Text: 'Real Chance of Love' star dies 
 Attribute: class = cd__headline
 Attribute: data-analytics = Top%20Stories_list-xs_article_
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(13) > article > div > div > h3 
 <*** UI Element ***>
 <a> 
-Text: 'Real Chance Of Love' star dies 
+Text: 'Real Chance of Love' star dies 
 Attribute: itemprop = url
 Attribute: href = /2015/02/21/entertainment/feat-ahmad-real-givens-dies/index.html
 Locator: css = body > div:nth-child(4) > section > div:nth-child(2) > div > div:nth-child(2) > ul > li:nth-child(13) > article > div > div > h3 > a 
@@ -1598,22 +1598,22 @@ Attribute: class = l-container zn-top__banner
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div 
 <*** UI Element ***>
 <div> 
-Text: News and BuzzB-52 resurrected from desert Boneyard 54 minCar carrying Kardashians slides off road 2 hrHundreds more worlds in our solar system? 1 hr'Duck Dynasty' teen hits Fashion Week runway 2 hrTeen lands half-ton marlin off Hawaii's Big Island 2 hrSee him reel in the 1,058-pound fish 2 hrBidding tops $12,000 for Cobain credit card 3-year-old found frozen to death in shirt, diaper 'Hot Tub Time Machine 2': What critics are saying Legroom: How airlines compare Cops step in when no one attends boy's birthday Blood clots sideline Bosh for rest of season Clashes over same-sex marriage in deep South Kim Jong Un debuts new hairdo Frozen Niagara Falls draws tourists Nominate a CNN Hero Countdown to the OscarsCould fake baby cost 'Sniper' a win?Surprising red carpet looks that turned headsThe weird way Oscar votes are countedOpinion: Why 'Still Alice' is about youPhotos: Oscar-winning best picturesWatch Live TVjQuery(function () {if (typeof window.CNN === 'object' && window.CNN.mutedPlayer) {window.CNN.mutedPlayer.init('coverageContainer_2018143E-B6A8-3550-BAC3-C41EB0D330FA_0', '');}});jQuery(function () {if (typeof window.CNN.VideoAjax === 'undefined' || typeof window.CNN.VideoAjax.NowPlaying === 'undefined') {throw 'Cannot fetch Now Playing Schedule. CNN.VideoAjax is undefined.';} else if (typeof window.CNN.VideoDocFragment === 'undefined' || typeof window.CNN.VideoDocFragment.newFragment === 'undefined') {throw 'CNN.VideoDocFragment or CNN.VideoDocFragment.newFragment is undefined';}window.CNN.VideoAjax.NowPlaying.init();window.CNN.VideoDocFragment.newFragment('mutedPlayer', {network: 'cnn',selector: '#muted-player'});});Chilling interrogation of 12-year-old girlsISIS seizes U.S.-made weaponsThrough the LensPhotographer captures beauty around the worldSee what you missed: The week in 30 photosWhat You&#39;re Talking About Beyonce fans outraged over raw photosScrap metal could be missing plane from '40sAaron Hernandez case: Where are the shoes?Is this the worst movie of all time?CNNMoneyMan threatened with arrest for unpaid ticketMy debt collection horror storyMeet the millionaire debt collectors 
+Text: News and BuzzB-52 resurrected from desert Boneyard 1 hrCar carrying Kardashians slides off road 3 hrHundreds more worlds in our solar system? 2 hr'Duck Dynasty' teen hits Fashion Week runway 3 hrTeen lands half-ton marlin off Hawaii's Big Island 14 minSee him reel in the 1,058-pound fish 3 hrBidding tops $12,000 for Cobain credit card 3-year-old found frozen to death in shirt, diaper 'Hot Tub Time Machine 2': What critics are saying Legroom: How airlines compare Cops step in when no one attends boy's birthday Blood clots sideline Bosh for rest of season Clashes over same-sex marriage in deep South Kim Jong Un debuts new hairdo Frozen Niagara Falls draws tourists Nominate a CNN Hero Countdown to the OscarsCould fake baby cost 'Sniper' a win?Surprising red carpet looks that turned headsArtist's creates cocaine-snorting OscarThe weird way Oscar votes are countedPhotos: Oscar-winning best picturesWatch Live TVjQuery(function () {if (typeof window.CNN === 'object' && window.CNN.mutedPlayer) {window.CNN.mutedPlayer.init('coverageContainer_2018143E-B6A8-3550-BAC3-C41EB0D330FA_0', '');}});jQuery(function () {if (typeof window.CNN.VideoAjax === 'undefined' || typeof window.CNN.VideoAjax.NowPlaying === 'undefined') {throw 'Cannot fetch Now Playing Schedule. CNN.VideoAjax is undefined.';} else if (typeof window.CNN.VideoDocFragment === 'undefined' || typeof window.CNN.VideoDocFragment.newFragment === 'undefined') {throw 'CNN.VideoDocFragment or CNN.VideoDocFragment.newFragment is undefined';}window.CNN.VideoAjax.NowPlaying.init();window.CNN.VideoDocFragment.newFragment('mutedPlayer', {network: 'cnn',selector: '#muted-player'});});Chilling interrogation of 12-year-old girls'Parks and Rec' producer dead at 30Through the LensPhotographer captures beauty around the worldSee what you missed: The week in 30 photosWhat You&#39;re Talking About Beyonce fans outraged over raw photosScrap metal could be missing plane from '40sAaron Hernandez case: Where are the shoes?Is this the worst movie of all time?CNNMoneySan Franciscans abandon pets in housing searchMy debt collection horror storyMeet the millionaire debt collectors 
 Attribute: class = l-container
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) 
 <*** UI Element ***>
 <div> 
-Text: News and BuzzB-52 resurrected from desert Boneyard 54 minCar carrying Kardashians slides off road 2 hrHundreds more worlds in our solar system? 1 hr'Duck Dynasty' teen hits Fashion Week runway 2 hrTeen lands half-ton marlin off Hawaii's Big Island 2 hrSee him reel in the 1,058-pound fish 2 hrBidding tops $12,000 for Cobain credit card 3-year-old found frozen to death in shirt, diaper 'Hot Tub Time Machine 2': What critics are saying Legroom: How airlines compare Cops step in when no one attends boy's birthday Blood clots sideline Bosh for rest of season Clashes over same-sex marriage in deep South Kim Jong Un debuts new hairdo Frozen Niagara Falls draws tourists Nominate a CNN Hero Countdown to the OscarsCould fake baby cost 'Sniper' a win?Surprising red carpet looks that turned headsThe weird way Oscar votes are countedOpinion: Why 'Still Alice' is about youPhotos: Oscar-winning best picturesWatch Live TVjQuery(function () {if (typeof window.CNN === 'object' && window.CNN.mutedPlayer) {window.CNN.mutedPlayer.init('coverageContainer_2018143E-B6A8-3550-BAC3-C41EB0D330FA_0', '');}});jQuery(function () {if (typeof window.CNN.VideoAjax === 'undefined' || typeof window.CNN.VideoAjax.NowPlaying === 'undefined') {throw 'Cannot fetch Now Playing Schedule. CNN.VideoAjax is undefined.';} else if (typeof window.CNN.VideoDocFragment === 'undefined' || typeof window.CNN.VideoDocFragment.newFragment === 'undefined') {throw 'CNN.VideoDocFragment or CNN.VideoDocFragment.newFragment is undefined';}window.CNN.VideoAjax.NowPlaying.init();window.CNN.VideoDocFragment.newFragment('mutedPlayer', {network: 'cnn',selector: '#muted-player'});});Chilling interrogation of 12-year-old girlsISIS seizes U.S.-made weaponsThrough the LensPhotographer captures beauty around the worldSee what you missed: The week in 30 photosWhat You&#39;re Talking About Beyonce fans outraged over raw photosScrap metal could be missing plane from '40sAaron Hernandez case: Where are the shoes?Is this the worst movie of all time?CNNMoneyMan threatened with arrest for unpaid ticketMy debt collection horror storyMeet the millionaire debt collectors 
+Text: News and BuzzB-52 resurrected from desert Boneyard 1 hrCar carrying Kardashians slides off road 3 hrHundreds more worlds in our solar system? 2 hr'Duck Dynasty' teen hits Fashion Week runway 3 hrTeen lands half-ton marlin off Hawaii's Big Island 14 minSee him reel in the 1,058-pound fish 3 hrBidding tops $12,000 for Cobain credit card 3-year-old found frozen to death in shirt, diaper 'Hot Tub Time Machine 2': What critics are saying Legroom: How airlines compare Cops step in when no one attends boy's birthday Blood clots sideline Bosh for rest of season Clashes over same-sex marriage in deep South Kim Jong Un debuts new hairdo Frozen Niagara Falls draws tourists Nominate a CNN Hero Countdown to the OscarsCould fake baby cost 'Sniper' a win?Surprising red carpet looks that turned headsArtist's creates cocaine-snorting OscarThe weird way Oscar votes are countedPhotos: Oscar-winning best picturesWatch Live TVjQuery(function () {if (typeof window.CNN === 'object' && window.CNN.mutedPlayer) {window.CNN.mutedPlayer.init('coverageContainer_2018143E-B6A8-3550-BAC3-C41EB0D330FA_0', '');}});jQuery(function () {if (typeof window.CNN.VideoAjax === 'undefined' || typeof window.CNN.VideoAjax.NowPlaying === 'undefined') {throw 'Cannot fetch Now Playing Schedule. CNN.VideoAjax is undefined.';} else if (typeof window.CNN.VideoDocFragment === 'undefined' || typeof window.CNN.VideoDocFragment.newFragment === 'undefined') {throw 'CNN.VideoDocFragment or CNN.VideoDocFragment.newFragment is undefined';}window.CNN.VideoAjax.NowPlaying.init();window.CNN.VideoDocFragment.newFragment('mutedPlayer', {network: 'cnn',selector: '#muted-player'});});Chilling interrogation of 12-year-old girls'Parks and Rec' producer dead at 30Through the LensPhotographer captures beauty around the worldSee what you missed: The week in 30 photosWhat You&#39;re Talking About Beyonce fans outraged over raw photosScrap metal could be missing plane from '40sAaron Hernandez case: Where are the shoes?Is this the worst movie of all time?CNNMoneySan Franciscans abandon pets in housing searchMy debt collection horror storyMeet the millionaire debt collectors 
 Attribute: class = zn__containers
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div 
 <*** UI Element ***>
 <div> 
-Text: News and BuzzB-52 resurrected from desert Boneyard 54 minCar carrying Kardashians slides off road 2 hrHundreds more worlds in our solar system? 1 hr'Duck Dynasty' teen hits Fashion Week runway 2 hrTeen lands half-ton marlin off Hawaii's Big Island 2 hrSee him reel in the 1,058-pound fish 2 hrBidding tops $12,000 for Cobain credit card 3-year-old found frozen to death in shirt, diaper 'Hot Tub Time Machine 2': What critics are saying Legroom: How airlines compare Cops step in when no one attends boy's birthday Blood clots sideline Bosh for rest of season Clashes over same-sex marriage in deep South Kim Jong Un debuts new hairdo Frozen Niagara Falls draws tourists Nominate a CNN Hero 
+Text: News and BuzzB-52 resurrected from desert Boneyard 1 hrCar carrying Kardashians slides off road 3 hrHundreds more worlds in our solar system? 2 hr'Duck Dynasty' teen hits Fashion Week runway 3 hrTeen lands half-ton marlin off Hawaii's Big Island 14 minSee him reel in the 1,058-pound fish 3 hrBidding tops $12,000 for Cobain credit card 3-year-old found frozen to death in shirt, diaper 'Hot Tub Time Machine 2': What critics are saying Legroom: How airlines compare Cops step in when no one attends boy's birthday Blood clots sideline Bosh for rest of season Clashes over same-sex marriage in deep South Kim Jong Un debuts new hairdo Frozen Niagara Falls draws tourists Nominate a CNN Hero 
 Attribute: class = column zn__column--idx-0
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div 
 <*** UI Element ***>
 <ul> 
-Text: News and BuzzB-52 resurrected from desert Boneyard 54 minCar carrying Kardashians slides off road 2 hrHundreds more worlds in our solar system? 1 hr'Duck Dynasty' teen hits Fashion Week runway 2 hrTeen lands half-ton marlin off Hawaii's Big Island 2 hrSee him reel in the 1,058-pound fish 2 hrBidding tops $12,000 for Cobain credit card 3-year-old found frozen to death in shirt, diaper 'Hot Tub Time Machine 2': What critics are saying Legroom: How airlines compare Cops step in when no one attends boy's birthday Blood clots sideline Bosh for rest of season Clashes over same-sex marriage in deep South Kim Jong Un debuts new hairdo Frozen Niagara Falls draws tourists Nominate a CNN Hero 
+Text: News and BuzzB-52 resurrected from desert Boneyard 1 hrCar carrying Kardashians slides off road 3 hrHundreds more worlds in our solar system? 2 hr'Duck Dynasty' teen hits Fashion Week runway 3 hrTeen lands half-ton marlin off Hawaii's Big Island 14 minSee him reel in the 1,058-pound fish 3 hrBidding tops $12,000 for Cobain credit card 3-year-old found frozen to death in shirt, diaper 'Hot Tub Time Machine 2': What critics are saying Legroom: How airlines compare Cops step in when no one attends boy's birthday Blood clots sideline Bosh for rest of season Clashes over same-sex marriage in deep South Kim Jong Un debuts new hairdo Frozen Niagara Falls draws tourists Nominate a CNN Hero 
 Attribute: class = cn cn-list-xs cn--idx-0 cn--expandable
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul 
 <*** UI Element ***>
@@ -1663,23 +1663,23 @@ Attribute: href = /2015/02/21/us/arizona-b-52-restored/index.html
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li > article > div > div > h3 > a 
 <*** UI Element ***>
 <li> 
-Text: 54 minCar carrying Kardashians slides off road 
+Text: 1 hrCar carrying Kardashians slides off road 
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(4) 
 <*** UI Element ***>
 <div> 
-Text: 54 minCar carrying Kardashians slides off road 
+Text: 1 hrCar carrying Kardashians slides off road 
 Attribute: class = cd__wrapper
 Attribute: data-analytics = News%20and%20Buzz_list-xs_article_
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(4) > article > div 
 <*** UI Element ***>
 <div> 
-Text: 54 minCar carrying Kardashians slides off road 
+Text: 1 hrCar carrying Kardashians slides off road 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(4) > article > div > div 
 <*** UI Element ***>
 <div> 
-Text: 54 min 
-Attribute: class = cd__timestamp cd__timestamp-red
+Text: 1 hr 
+Attribute: class = cd__timestamp
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(4) > article > div > div > div 
 <*** UI Element ***>
 <h3> 
@@ -1695,22 +1695,22 @@ Attribute: href = /2015/02/21/entertainment/feat-kardashian-car-incident/index.h
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(4) > article > div > div > h3 > a 
 <*** UI Element ***>
 <li> 
-Text: 2 hrHundreds more worlds in our solar system? 
+Text: 3 hrHundreds more worlds in our solar system? 
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(5) 
 <*** UI Element ***>
 <div> 
-Text: 2 hrHundreds more worlds in our solar system? 
+Text: 3 hrHundreds more worlds in our solar system? 
 Attribute: class = cd__wrapper
 Attribute: data-analytics = News%20and%20Buzz_list-xs_video_video
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(5) > article > div 
 <*** UI Element ***>
 <div> 
-Text: 2 hrHundreds more worlds in our solar system? 
+Text: 3 hrHundreds more worlds in our solar system? 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(5) > article > div > div 
 <*** UI Element ***>
 <div> 
-Text: 2 hr 
+Text: 3 hr 
 Attribute: class = cd__timestamp
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(5) > article > div > div > div 
 <*** UI Element ***>
@@ -1727,22 +1727,22 @@ Attribute: href = /videos/us/2015/02/21/nasa-dawn-mission-to-ceres-orig.cnn-nasa
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(5) > article > div > div > h3 > a 
 <*** UI Element ***>
 <li> 
-Text: 1 hr'Duck Dynasty' teen hits Fashion Week runway 
+Text: 2 hr'Duck Dynasty' teen hits Fashion Week runway 
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(6) 
 <*** UI Element ***>
 <div> 
-Text: 1 hr'Duck Dynasty' teen hits Fashion Week runway 
+Text: 2 hr'Duck Dynasty' teen hits Fashion Week runway 
 Attribute: class = cd__wrapper
 Attribute: data-analytics = News%20and%20Buzz_list-xs_article_
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(6) > article > div 
 <*** UI Element ***>
 <div> 
-Text: 1 hr'Duck Dynasty' teen hits Fashion Week runway 
+Text: 2 hr'Duck Dynasty' teen hits Fashion Week runway 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(6) > article > div > div 
 <*** UI Element ***>
 <div> 
-Text: 1 hr 
+Text: 2 hr 
 Attribute: class = cd__timestamp
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(6) > article > div > div > div 
 <*** UI Element ***>
@@ -1759,22 +1759,22 @@ Attribute: href = /2015/02/21/living/feat-sadie-robertson-sherri-hill-nyfw/index
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(6) > article > div > div > h3 > a 
 <*** UI Element ***>
 <li> 
-Text: 2 hrTeen lands half-ton marlin off Hawaii's Big Island 
+Text: 3 hrTeen lands half-ton marlin off Hawaii's Big Island 
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(7) 
 <*** UI Element ***>
 <div> 
-Text: 2 hrTeen lands half-ton marlin off Hawaii's Big Island 
+Text: 3 hrTeen lands half-ton marlin off Hawaii's Big Island 
 Attribute: class = cd__wrapper
 Attribute: data-analytics = News%20and%20Buzz_list-xs_article_
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(7) > article > div 
 <*** UI Element ***>
 <div> 
-Text: 2 hrTeen lands half-ton marlin off Hawaii's Big Island 
+Text: 3 hrTeen lands half-ton marlin off Hawaii's Big Island 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(7) > article > div > div 
 <*** UI Element ***>
 <div> 
-Text: 2 hr 
+Text: 3 hr 
 Attribute: class = cd__timestamp
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(7) > article > div > div > div 
 <*** UI Element ***>
@@ -1791,23 +1791,23 @@ Attribute: href = /2015/02/21/travel/feat-kona-coast-blue-marlin/index.html
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(7) > article > div > div > h3 > a 
 <*** UI Element ***>
 <li> 
-Text: 2 hrSee him reel in the 1,058-pound fish 
+Text: 14 minSee him reel in the 1,058-pound fish 
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(8) 
 <*** UI Element ***>
 <div> 
-Text: 2 hrSee him reel in the 1,058-pound fish 
+Text: 14 minSee him reel in the 1,058-pound fish 
 Attribute: class = cd__wrapper
 Attribute: data-analytics = News%20and%20Buzz_list-xs_video_video
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(8) > article > div 
 <*** UI Element ***>
 <div> 
-Text: 2 hrSee him reel in the 1,058-pound fish 
+Text: 14 minSee him reel in the 1,058-pound fish 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(8) > article > div > div 
 <*** UI Element ***>
 <div> 
-Text: 2 hr 
-Attribute: class = cd__timestamp
+Text: 14 min 
+Attribute: class = cd__timestamp cd__timestamp-red
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(8) > article > div > div > div 
 <*** UI Element ***>
 <h3> 
@@ -1823,22 +1823,22 @@ Attribute: href = /videos/us/2015/02/21/sot-blue-marlin-kona-hawaii.farish-media
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(8) > article > div > div > h3 > a 
 <*** UI Element ***>
 <li> 
-Text: 2 hrBidding tops $12,000 for Cobain credit card 
+Text: 3 hrBidding tops $12,000 for Cobain credit card 
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(9) 
 <*** UI Element ***>
 <div> 
-Text: 2 hrBidding tops $12,000 for Cobain credit card 
+Text: 3 hrBidding tops $12,000 for Cobain credit card 
 Attribute: class = cd__wrapper
 Attribute: data-analytics = News%20and%20Buzz_list-xs_article_
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(9) > article > div 
 <*** UI Element ***>
 <div> 
-Text: 2 hrBidding tops $12,000 for Cobain credit card 
+Text: 3 hrBidding tops $12,000 for Cobain credit card 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(9) > article > div > div 
 <*** UI Element ***>
 <div> 
-Text: 2 hr 
+Text: 3 hr 
 Attribute: class = cd__timestamp
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(9) > article > div > div > div 
 <*** UI Element ***>
@@ -2103,12 +2103,12 @@ Attribute: class = cn__button js-cn__button
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div > ul > li:nth-child(19) > div 
 <*** UI Element ***>
 <div> 
-Text: Countdown to the OscarsCould fake baby cost 'Sniper' a win?Surprising red carpet looks that turned headsThe weird way Oscar votes are countedOpinion: Why 'Still Alice' is about youPhotos: Oscar-winning best pictures 
+Text: Countdown to the OscarsCould fake baby cost 'Sniper' a win?Surprising red carpet looks that turned headsArtist's creates cocaine-snorting OscarThe weird way Oscar votes are countedPhotos: Oscar-winning best pictures 
 Attribute: class = column zn__column--idx-1
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) 
 <*** UI Element ***>
 <ul> 
-Text: Countdown to the OscarsCould fake baby cost 'Sniper' a win?Surprising red carpet looks that turned headsThe weird way Oscar votes are countedOpinion: Why 'Still Alice' is about youPhotos: Oscar-winning best pictures 
+Text: Countdown to the OscarsCould fake baby cost 'Sniper' a win?Surprising red carpet looks that turned headsArtist's creates cocaine-snorting OscarThe weird way Oscar votes are countedPhotos: Oscar-winning best pictures 
 Attribute: class = cn cn-list-hierarchical-small-horizontal cn--idx-1
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul 
 <*** UI Element ***>
@@ -2231,13 +2231,13 @@ Attribute: href = /2013/02/21/showbiz/gallery/memorable-oscar-fashion/index.html
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(4) > article > div > div:nth-child(2) > h3 > a 
 <*** UI Element ***>
 <li> 
-Text: The weird way Oscar votes are counted 
+Text: Artist's creates cocaine-snorting Oscar 
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) 
 <*** UI Element ***>
 <div> 
-Text: The weird way Oscar votes are counted 
+Text: Artist's creates cocaine-snorting Oscar 
 Attribute: class = cd__wrapper
-Attribute: data-analytics = Countdown%20to%20the%20Oscars_list-hierarchical-small-horizontal_video_video
+Attribute: data-analytics = Countdown%20to%20the%20Oscars_list-hierarchical-small-horizontal_article_
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div 
 <*** UI Element ***>
 <div> 
@@ -2247,7 +2247,7 @@ Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3)
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: href = /videos/entertainment/2015/02/16/how-oscars-voting-works-orig.cnn
+Attribute: href = /2015/02/21/entertainment/feat-oscar-statue-cocaine/index.html
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div > a 
 <*** UI Element ***>
 <div> 
@@ -2257,34 +2257,34 @@ Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3)
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: href = /videos/entertainment/2015/02/16/how-oscars-voting-works-orig.cnn
+Attribute: href = /2015/02/21/entertainment/feat-oscar-statue-cocaine/index.html
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div > div > a 
 <*** UI Element ***>
 <div> 
-Text: The weird way Oscar votes are counted 
+Text: Artist's creates cocaine-snorting Oscar 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div:nth-child(2) 
 <*** UI Element ***>
 <h3> 
-Text: The weird way Oscar votes are counted 
+Text: Artist's creates cocaine-snorting Oscar 
 Attribute: class = cd__headline
-Attribute: data-analytics = Countdown%20to%20the%20Oscars_list-hierarchical-small-horizontal_video_video
+Attribute: data-analytics = Countdown%20to%20the%20Oscars_list-hierarchical-small-horizontal_article_
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div:nth-child(2) > h3 
 <*** UI Element ***>
 <a> 
-Text: The weird way Oscar votes are counted 
+Text: Artist's creates cocaine-snorting Oscar 
 Attribute: itemprop = url
-Attribute: href = /videos/entertainment/2015/02/16/how-oscars-voting-works-orig.cnn
+Attribute: href = /2015/02/21/entertainment/feat-oscar-statue-cocaine/index.html
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(5) > article > div > div:nth-child(2) > h3 > a 
 <*** UI Element ***>
 <li> 
-Text: Opinion: Why 'Still Alice' is about you 
+Text: The weird way Oscar votes are counted 
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) 
 <*** UI Element ***>
 <div> 
-Text: Opinion: Why 'Still Alice' is about you 
+Text: The weird way Oscar votes are counted 
 Attribute: class = cd__wrapper
-Attribute: data-analytics = Countdown%20to%20the%20Oscars_list-hierarchical-small-horizontal_article_
+Attribute: data-analytics = Countdown%20to%20the%20Oscars_list-hierarchical-small-horizontal_video_video
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div 
 <*** UI Element ***>
 <div> 
@@ -2294,7 +2294,7 @@ Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3)
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: href = /2015/02/20/opinion/poo-oscars-caregivers/index.html
+Attribute: href = /videos/entertainment/2015/02/16/how-oscars-voting-works-orig.cnn
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div > a 
 <*** UI Element ***>
 <div> 
@@ -2304,24 +2304,24 @@ Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3)
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: href = /2015/02/20/opinion/poo-oscars-caregivers/index.html
+Attribute: href = /videos/entertainment/2015/02/16/how-oscars-voting-works-orig.cnn
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div > div > a 
 <*** UI Element ***>
 <div> 
-Text: Opinion: Why 'Still Alice' is about you 
+Text: The weird way Oscar votes are counted 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div:nth-child(2) 
 <*** UI Element ***>
 <h3> 
-Text: Opinion: Why 'Still Alice' is about you 
+Text: The weird way Oscar votes are counted 
 Attribute: class = cd__headline
-Attribute: data-analytics = Countdown%20to%20the%20Oscars_list-hierarchical-small-horizontal_article_
+Attribute: data-analytics = Countdown%20to%20the%20Oscars_list-hierarchical-small-horizontal_video_video
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div:nth-child(2) > h3 
 <*** UI Element ***>
 <a> 
-Text: Opinion: Why 'Still Alice' is about you 
+Text: The weird way Oscar votes are counted 
 Attribute: itemprop = url
-Attribute: href = /2015/02/20/opinion/poo-oscars-caregivers/index.html
+Attribute: href = /videos/entertainment/2015/02/16/how-oscars-voting-works-orig.cnn
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(6) > article > div > div:nth-child(2) > h3 > a 
 <*** UI Element ***>
 <li> 
@@ -2372,7 +2372,7 @@ Attribute: href = /2014/02/20/showbiz/gallery/oscar-best-pictures-through-the-ye
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(2) > ul > li:nth-child(7) > article > div > div:nth-child(2) > h3 > a 
 <*** UI Element ***>
 <div> 
-Text: Watch Live TVjQuery(function () {if (typeof window.CNN === 'object' && window.CNN.mutedPlayer) {window.CNN.mutedPlayer.init('coverageContainer_2018143E-B6A8-3550-BAC3-C41EB0D330FA_0', '');}});jQuery(function () {if (typeof window.CNN.VideoAjax === 'undefined' || typeof window.CNN.VideoAjax.NowPlaying === 'undefined') {throw 'Cannot fetch Now Playing Schedule. CNN.VideoAjax is undefined.';} else if (typeof window.CNN.VideoDocFragment === 'undefined' || typeof window.CNN.VideoDocFragment.newFragment === 'undefined') {throw 'CNN.VideoDocFragment or CNN.VideoDocFragment.newFragment is undefined';}window.CNN.VideoAjax.NowPlaying.init();window.CNN.VideoDocFragment.newFragment('mutedPlayer', {network: 'cnn',selector: '#muted-player'});});Chilling interrogation of 12-year-old girlsISIS seizes U.S.-made weapons 
+Text: Watch Live TVjQuery(function () {if (typeof window.CNN === 'object' && window.CNN.mutedPlayer) {window.CNN.mutedPlayer.init('coverageContainer_2018143E-B6A8-3550-BAC3-C41EB0D330FA_0', '');}});jQuery(function () {if (typeof window.CNN.VideoAjax === 'undefined' || typeof window.CNN.VideoAjax.NowPlaying === 'undefined') {throw 'Cannot fetch Now Playing Schedule. CNN.VideoAjax is undefined.';} else if (typeof window.CNN.VideoDocFragment === 'undefined' || typeof window.CNN.VideoDocFragment.newFragment === 'undefined') {throw 'CNN.VideoDocFragment or CNN.VideoDocFragment.newFragment is undefined';}window.CNN.VideoAjax.NowPlaying.init();window.CNN.VideoDocFragment.newFragment('mutedPlayer', {network: 'cnn',selector: '#muted-player'});});Chilling interrogation of 12-year-old girls'Parks and Rec' producer dead at 30 
 Attribute: class = column zn__column--idx-2
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) 
 <*** UI Element ***>
@@ -2413,7 +2413,7 @@ Attribute: class = ad-ad_nfs_btf_01
 Locator: id = ad_nfs_btf_01 
 <*** UI Element ***>
 <ul> 
-Text: Watch Live TVjQuery(function () {if (typeof window.CNN === 'object' && window.CNN.mutedPlayer) {window.CNN.mutedPlayer.init('coverageContainer_2018143E-B6A8-3550-BAC3-C41EB0D330FA_0', '');}});jQuery(function () {if (typeof window.CNN.VideoAjax === 'undefined' || typeof window.CNN.VideoAjax.NowPlaying === 'undefined') {throw 'Cannot fetch Now Playing Schedule. CNN.VideoAjax is undefined.';} else if (typeof window.CNN.VideoDocFragment === 'undefined' || typeof window.CNN.VideoDocFragment.newFragment === 'undefined') {throw 'CNN.VideoDocFragment or CNN.VideoDocFragment.newFragment is undefined';}window.CNN.VideoAjax.NowPlaying.init();window.CNN.VideoDocFragment.newFragment('mutedPlayer', {network: 'cnn',selector: '#muted-player'});});Chilling interrogation of 12-year-old girlsISIS seizes U.S.-made weapons 
+Text: Watch Live TVjQuery(function () {if (typeof window.CNN === 'object' && window.CNN.mutedPlayer) {window.CNN.mutedPlayer.init('coverageContainer_2018143E-B6A8-3550-BAC3-C41EB0D330FA_0', '');}});jQuery(function () {if (typeof window.CNN.VideoAjax === 'undefined' || typeof window.CNN.VideoAjax.NowPlaying === 'undefined') {throw 'Cannot fetch Now Playing Schedule. CNN.VideoAjax is undefined.';} else if (typeof window.CNN.VideoDocFragment === 'undefined' || typeof window.CNN.VideoDocFragment.newFragment === 'undefined') {throw 'CNN.VideoDocFragment or CNN.VideoDocFragment.newFragment is undefined';}window.CNN.VideoAjax.NowPlaying.init();window.CNN.VideoDocFragment.newFragment('mutedPlayer', {network: 'cnn',selector: '#muted-player'});});Chilling interrogation of 12-year-old girls'Parks and Rec' producer dead at 30 
 Attribute: class = cn cn-list-small-horizontal cn--idx-2 cn--expandable
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul 
 <*** UI Element ***>
@@ -2519,11 +2519,11 @@ Attribute: href = /videos/us/2015/02/20/ac-dnt-kaye-slenderman-interrogation-tap
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(2) > article > div > div:nth-child(2) > h3 > a 
 <*** UI Element ***>
 <li> 
-Text: ISIS seizes U.S.-made weapons 
+Text: 'Parks and Rec' producer dead at 30 
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(3) 
 <*** UI Element ***>
 <div> 
-Text: ISIS seizes U.S.-made weapons 
+Text: 'Parks and Rec' producer dead at 30 
 Attribute: class = cd__wrapper
 Attribute: data-analytics = _list-small-horizontal_video_video
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(3) > article > div 
@@ -2535,7 +2535,7 @@ Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3)
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: href = /videos/us/2015/02/21/newday-wedeman-isis-seizes-u-s-weapons.cnn
+Attribute: href = /videos/entertainment/2015/02/20/orig-harris-wittels-parks-and-rec-producer-dead.cnn
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(3) > article > div > div > a 
 <*** UI Element ***>
 <div> 
@@ -2545,24 +2545,24 @@ Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3)
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: href = /videos/us/2015/02/21/newday-wedeman-isis-seizes-u-s-weapons.cnn
+Attribute: href = /videos/entertainment/2015/02/20/orig-harris-wittels-parks-and-rec-producer-dead.cnn
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(3) > article > div > div > div > a 
 <*** UI Element ***>
 <div> 
-Text: ISIS seizes U.S.-made weapons 
+Text: 'Parks and Rec' producer dead at 30 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(3) > article > div > div:nth-child(2) 
 <*** UI Element ***>
 <h3> 
-Text: ISIS seizes U.S.-made weapons 
+Text: 'Parks and Rec' producer dead at 30 
 Attribute: class = cd__headline
 Attribute: data-analytics = _list-small-horizontal_video_video
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(3) > article > div > div:nth-child(2) > h3 
 <*** UI Element ***>
 <a> 
-Text: ISIS seizes U.S.-made weapons 
+Text: 'Parks and Rec' producer dead at 30 
 Attribute: itemprop = url
-Attribute: href = /videos/us/2015/02/21/newday-wedeman-isis-seizes-u-s-weapons.cnn
+Attribute: href = /videos/entertainment/2015/02/20/orig-harris-wittels-parks-and-rec-producer-dead.cnn
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(3) > ul > li:nth-child(3) > article > div > div:nth-child(2) > h3 > a 
 <*** UI Element ***>
 <div> 
@@ -2875,12 +2875,12 @@ Attribute: class = cn__button js-cn__button
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(5) > ul > li:nth-child(6) > div 
 <*** UI Element ***>
 <div> 
-Text: CNNMoneyMan threatened with arrest for unpaid ticketMy debt collection horror storyMeet the millionaire debt collectors 
+Text: CNNMoneySan Franciscans abandon pets in housing searchMy debt collection horror storyMeet the millionaire debt collectors 
 Attribute: class = column zn__column--idx-5
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) 
 <*** UI Element ***>
 <ul> 
-Text: CNNMoneyMan threatened with arrest for unpaid ticketMy debt collection horror storyMeet the millionaire debt collectors 
+Text: CNNMoneySan Franciscans abandon pets in housing searchMy debt collection horror storyMeet the millionaire debt collectors 
 Attribute: class = cn cn-list-hierarchical-xs cn--idx-5
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul 
 <*** UI Element ***>
@@ -2903,7 +2903,7 @@ Attribute: href = http://money.cnn.com/interactive/pf/debt-collector/above-the-l
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul > h2 > a 
 <*** UI Element ***>
 <div> 
-Text: Man threatened with arrest for unpaid ticket 
+Text: San Franciscans abandon pets in housing search 
 Attribute: class = cd__wrapper
 Attribute: data-analytics = CNNMoney_list-hierarchical-xs_hyperlink_
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul > article > div 
@@ -2915,7 +2915,7 @@ Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3)
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: href = http://money.cnn.com/interactive/pf/debt-collector/threatening-letters/
+Attribute: href = http://money.cnn.com/2015/02/20/real_estate/pets-san-francisco/index.html
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul > article > div > div > a 
 <*** UI Element ***>
 <div> 
@@ -2925,24 +2925,24 @@ Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3)
 <*** UI Element ***>
 <a> 
 Text:  
-Attribute: href = http://money.cnn.com/interactive/pf/debt-collector/threatening-letters/
+Attribute: href = http://money.cnn.com/2015/02/20/real_estate/pets-san-francisco/index.html
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul > article > div > div > div > a 
 <*** UI Element ***>
 <div> 
-Text: Man threatened with arrest for unpaid ticket 
+Text: San Franciscans abandon pets in housing search 
 Attribute: class = cd__content
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul > article > div > div:nth-child(2) 
 <*** UI Element ***>
 <h3> 
-Text: Man threatened with arrest for unpaid ticket 
+Text: San Franciscans abandon pets in housing search 
 Attribute: class = cd__headline
 Attribute: data-analytics = CNNMoney_list-hierarchical-xs_hyperlink_
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul > article > div > div:nth-child(2) > h3 
 <*** UI Element ***>
 <a> 
-Text: Man threatened with arrest for unpaid ticket 
+Text: San Franciscans abandon pets in housing search 
 Attribute: itemprop = url
-Attribute: href = http://money.cnn.com/interactive/pf/debt-collector/threatening-letters/
+Attribute: href = http://money.cnn.com/2015/02/20/real_estate/pets-san-francisco/index.html
 Locator: css = body > div:nth-child(4) > section:nth-child(5) > div:nth-child(3) > div > div:nth-child(6) > ul > article > div > div:nth-child(2) > h3 > a 
 <*** UI Element ***>
 <div> 
