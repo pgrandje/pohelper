@@ -1,0 +1,25 @@
+// *** Configuration file to set parameters without using command-line options
+
+// Code template variable-name and locator hooks.
+locator:<locator>
+memberNameIndicator:<symbol>
+
+// Code shell template code indicator.
+codeShellCodeBlockIndicator:<CodeBlockGoesHere>
+
+// Indicates if informative comments are written to the generated code.
+// NOTE:  this is not used at this time.
+writeComments:false
+
+// Default symbol names
+defaultPageObjectClassName:DefaultPageObjectName
+defaultMemberName:uiElement
+
+// File Path Defaults
+codeShellTemplateFilePath:./resources/java-shell-configger.txt
+codeTemplateFilePath:./resources/java-configger2.txt
+destinationFilePath:.
+configFilePath:./resources/configuration.txt
+
+// Action Options
+crawl:false

@@ -10,6 +10,7 @@ import org.w3c.dom.*;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.net.ConnectException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.UnknownHostException;
 import java.util.HashMap;
@@ -249,8 +250,13 @@ public class PageScanner {
         for(int i=0; i < nodeAttributes.getLength(); i++) {
             Attr attrib = (Attr) nodeAttributes.item(i);
             if (attrib.getName().equalsIgnoreCase("href")){
-                // TODO: Put in logger here showing the href it's storing.
-                newLink.setUrl(attrib.getValue());
+                try {
+                    logger.info("Storing link: " + attrib.getValue());
+                    newLink.setUrl(attrib.getValue());
+                } catch (MalformedURLException e) {
+                    logger.warn("Found invalid URL in page source: " + attrib.getValue());
+                }
+
             }
         }
 

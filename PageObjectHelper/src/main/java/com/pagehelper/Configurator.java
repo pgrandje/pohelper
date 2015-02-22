@@ -1,16 +1,11 @@
 package com.pagehelper;
 
 import org.apache.log4j.Logger;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 
 
 /**
@@ -23,6 +18,8 @@ import java.io.*;
  * @version 1.0alpha
  */
 public class Configurator {
+
+    private final Logger logger = Logger.getLogger(this.getClass());
 
     // A Singleton design pattern is used here to ensure there is only ever one instance of the Configurator.
 
@@ -62,7 +59,7 @@ public class Configurator {
     // **** Default Symbol Names ****
 
     // Default variable names
-    private String pageObjectClassName = "DefaultPageObjectName";
+    private String defaultObjectClassName = "DefaultPageObjectName";
     private String defaultMemberName = "uiElement";
 
 
@@ -110,8 +107,8 @@ public class Configurator {
         return locatorConfig;
     }
 
-    public String getPageObjectClassName() {
-        return pageObjectClassName;
+    public String getDefaultObjectClassName() {
+        return defaultObjectClassName;
     }
 
     public String getCodeShellTemplateFilePath() {
@@ -164,6 +161,7 @@ public class Configurator {
 
         try {
             configFile = new BufferedReader(new FileReader(configFilePath));
+            logger.info("Using config file: " + configFilePath);
         }
         catch (FileNotFoundException e) {
             throw new PageHelperException("Configurator Config File not found. See log. Exception Message: " + e.getMessage());
@@ -175,10 +173,50 @@ public class Configurator {
 
             while (null != line){
 
-                // For blank lines, just skip them.
-                while(line.isEmpty()) {
+                // For blank lines and comments, just skip them.
+                while(line.isEmpty() || line.substring(0,1).equals("//")) {
+                    logger.trace("Found comment or empty line: " + line);
                     // Get the next line from the config file.
                     line = configFile.readLine();
+                }
+
+                logger.debug("Found line: " + line);
+
+                String[] keyValuePair = line.split(":");
+
+                switch (keyValuePair[0]) {
+                    case "locator":
+                        memberNameIndicator = keyValuePair[1];
+                        break;
+                    case "codeShellCodeBlockIndicator":
+                        codeShellCodeBlockIndicator = keyValuePair[1];
+                        break;
+                    case "writeComments":
+                        writeComments = Boolean.parseBoolean(keyValuePair[1]);
+                        break;
+                    case "defaultPageObjectClassName":
+                        defaultObjectClassName = keyValuePair[1];
+                        break;
+                    case "defaultMemberName":
+                        defaultMemberName = keyValuePair[1];
+                        break;
+                    case "codeShellTemplateFilePath":
+                        codeShellTemplateFilePath = keyValuePair[1];
+                        break;
+                    case "codeTemplateFilePath":
+                        codeTemplateFilePath = keyValuePair[1];
+                        break;
+                    case "destinationFilePath":
+                        destinationFilePath = keyValuePair[1];
+                        break;
+                    case "configFilePath":
+                        configFilePath = keyValuePair[1];
+                        break;
+                    case "crawl":
+                        crawl = Boolean.parseBoolean(keyValuePair[1]);
+                        break;
+                    default:
+                        break;
                 }
 
                 // Get the next line from the config file.
@@ -188,38 +226,6 @@ public class Configurator {
 
         } catch (IOException e) {
             throw new PageHelperException("IOException loading Config File: " + e.getMessage());
-        }
-    }
-
-
-    private void processConfigFileOption(Document doc, String option) {
-
-        String optionValue = null;
-
-        // TODO:  Add a loop here to process all the options in the config file.
-
-		// Just in case the user entered more than one of the same argument, we'll get the whole list.
-        NodeList nList = doc.getElementsByTagName(option);
-        if (nList.getLength() > 1) {
-            throw new PageHelperException("Multiple '" + option + "' tags found in the configuration file.");
-        }
-
-        // Any given option, may, or may not, be included in the config file, so the nList for a given option could return
-        // as null or empty.
-        if (nList.getLength() != 0) {
-
-            Node node = nList.item(0);
-            if (node.getNodeType() != Node.ELEMENT_NODE) {
-               throw new PageHelperException("Configuration file error, node '" + node.getNodeName() + "' is not an Element Node.");
-            }
-
-            Element element = (Element) node;
-            optionValue = element.getNodeValue();
-
-        }
-
-        if(optionValue == null) {
-            throw new PageHelperException("Configuration file error.  Option value not recognized.");
         }
     }
 
