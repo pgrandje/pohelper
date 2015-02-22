@@ -22,6 +22,8 @@ public class CommandLineMessages {
 
     public static final String DESTINATION_VALUE_REQUIRED = "A directory path is required for the -dest parameter";
 
+    public static final String DESTINATION_FILE_EXISTS = "The destination file you specified already exists.  Use -overwrite or change the filename.";
+
     public static final String INVALID_URL = "Invalid URL supplied to -url parameter.";
 
     public static final String DIRECTORY_DOES_NOT_EXIST = "Supplied directory path for -dest does not exist";

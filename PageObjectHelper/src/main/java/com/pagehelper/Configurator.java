@@ -67,7 +67,7 @@ public class Configurator {
     private String defaultMemberName = "uiElement";
 
 
-    // **** File Paths with Defaults ****
+    // **** File Paths with Defaults and file options ****
 
     private String codeShellTemplateFilePath = "./resources/java-shell-configger.txt";
     private String codeTemplateFilePath = "./resources/java-configger2.txt";
@@ -75,6 +75,7 @@ public class Configurator {
     private String configFilePath = "./resources/configuration.txt";
     // No default for the hints file name.  I'd rather force the user into knowing what they're reading.
     private String hintsFileName;
+    private boolean overwrite = false;
 
     // *** Action Options ***
     private boolean crawl = false;
@@ -113,6 +114,14 @@ public class Configurator {
 
     public String getHintsFilePath() {
         return hintsFileName;
+    }
+
+    public boolean isOverwrite() {
+        return overwrite;
+    }
+
+    public void setOverwrite(boolean overwrite) {
+        this.overwrite = overwrite;
     }
 
     public LocatorConfig getLocatorConfig() {

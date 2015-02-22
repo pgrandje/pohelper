@@ -40,6 +40,7 @@ public class CommandLineProcessor {
     private final String URL_OPTION = "-url";
     private final String DEST_OPTION = "-dest";
     private final String DESTINATION_OPTION = "-destination";
+    private final String OVERWRITE_OPTION = "-overwrite";
     private final String HINTS_FILE_NAME_OPTION = "-hintsFileName";
     private final String CODE_SHELL_TEMPLATE_OPTION = "-codeShellTemplate";
     private final String CODE_TEMPLATE_OPTION = "-codeTemplateOption";
@@ -137,6 +138,13 @@ public class CommandLineProcessor {
 
                 getConfigurator().setDestinationFilePath(args[i]);
                 logger.info("Set destination folder to " + args[i]);
+            }
+            /* -overwrite causes the destination file, whether it's code or hints, to be overwritten if it pre-exists.
+               The processing of overwrite is handled by the CodeBucket and HintsBucket file processing methods. */
+            else if (args[i].equalsIgnoreCase(OVERWRITE_OPTION)) {
+
+                getConfigurator().setOverwrite(true);
+                logger.info("Set file overwrite to TRUE");
             }
             else if (args[i].equalsIgnoreCase(HINTS_FILE_NAME_OPTION)) {
 
@@ -356,7 +364,6 @@ public class CommandLineProcessor {
             printCommandLineError(errorMessage);
         }
     }
-
 
     /*
      * Verifies a required configuration file exists.  If not, prints the error message.

@@ -62,6 +62,8 @@ public class Generator
             throw new PageHelperException("No GenerateType assigned.");
         }
 
+        // TODO: Need to create the OutputBucket before page scanning to verify whether we can overwrite or not.
+
         /* A new PageDescriptor is created for each page or hints file scanned.
            The PageDescriptor is then used to name the class name in the code bucket when generating code or in the
            hints file when generating hints.

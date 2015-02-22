@@ -5,6 +5,7 @@ import com.pagehelper.PageHelperException;
 import org.apache.log4j.Logger;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -73,6 +74,7 @@ public abstract class AbstractOutputBucket implements OutputBucket {
      * If filepath is configured from the command-line, and therefore stored in the Configurator, the filepath is set
      * to that value.  Otherwise, the current working directory is used for the output file destination.
      */
+    // TODO: Is it necessary to have setFilePath() as a separate method?  If it accidentally never gets called the file setup will fail.
     public void setFilePath() {
 
         String configuredFilePath = Configurator.getConfigurator().getDestinationFilePath();
@@ -80,11 +82,23 @@ public abstract class AbstractOutputBucket implements OutputBucket {
         if (configuredFilePath != null) {
             filePath = configuredFilePath;
         }
-        else {
-            filePath = System.getProperty("user.dir");
-        }
     }
 
+    /*
+     * Checks whether the file exists based on the stored filename and path. This helps avoid accidental overwrite.
+     */
+    public String checkFileExists() {
+
+        if (new File(filePath).exists() && !Configurator.getConfigurator().isOverwrite())
+        {
+            logger.warn("File " + filePath + " exists but -overwrite not specified.");
+            // TODO: Modify PageHelperException to throw an exception with an error code and then process exit in the Interpreter or CommandlineProcessor.
+            System.out.println("ERROR: File exists.  Use -overwrite or change file name or destination folder.");
+            System.exit(0);
+        }
+
+        return filePath;
+    }
 
     public void dumpToFile() {
 
@@ -98,8 +112,9 @@ public abstract class AbstractOutputBucket implements OutputBucket {
                  throw new PageHelperException("Output file name is null.");
             }
 
-            filePath = filePath + "/" + fileName;
-            logger.info("Using current working directory: " + System.getProperty("user.dir"));
+            // TODO: Refactor how the complete filePath with fileName are handled to allow early evaluation of file existence.
+            setCompleteFilePath();
+            checkFileExists();
             logger.info("Writing output file: " + filePath);
             outputFile = new BufferedWriter(new FileWriter(filePath));
             logger.trace("Writing code header:\n" + header.toString());
@@ -118,4 +133,7 @@ public abstract class AbstractOutputBucket implements OutputBucket {
 
     }
 
+    private void setCompleteFilePath() {
+        filePath = filePath + "/" + fileName;
+    }
 }
