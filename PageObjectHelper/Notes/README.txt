@@ -1,4 +1,10 @@
+Assumptions
+-----------
+Any IDs in the HTML page source are unique within a page.
 
+Classnames may optionally be used as locators but if they are used, they are unique within a page.  However they may be
+built into part of a css locator if they are determined by the locator builder to be unique within a subtree of HTML
+under a tag with a unique ID.
 
 Two Modules: Code and Test
 --------------------------

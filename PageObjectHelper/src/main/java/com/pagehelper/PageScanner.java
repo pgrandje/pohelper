@@ -213,7 +213,7 @@ public class PageScanner {
                     //        to the list for generation.  But this would preclude writing only informational comments to the output.
                     tagDescriptor.setAttributes(setAttributePairs(current));
                     tagDescriptor.setTextValue(current.getTextContent());
-                    Locator locator = LocatorFactory.makeLocator(current);
+                    Locator locator = LocatorFactory.makeLocatorFromNode(current);
                     tagDescriptor.setLocator(locator);
                     tagDescriptor.writeMemberAndMethods(memberNameRecorder);
                     tagDescriptorList.add(tagDescriptor);

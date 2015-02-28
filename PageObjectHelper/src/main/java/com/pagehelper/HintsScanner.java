@@ -179,7 +179,7 @@ public class HintsScanner {
                             String locatorString = line.substring(HintsFileDelimeters.LOCATOR_MARKER.length());
                             logger.debug("Found locator string '" + locatorString + "'.");
 
-                            Locator locator = LocatorFactory.makeLocator(locatorString);
+                            Locator locator = LocatorFactory.makeLocatorFromHint(locatorString);
                             tagDescriptor.setLocator(locator);
                         }
                         else {

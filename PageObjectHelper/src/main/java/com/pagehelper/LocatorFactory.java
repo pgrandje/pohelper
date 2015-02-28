@@ -31,8 +31,9 @@ public class LocatorFactory {
     */
     static Locator locator = null;
 
+
     // Factory that creates the locatorMaker to create locators from the DOM.  Node is the UI element to be located.
-    public static Locator makeLocator(Node node) {
+    public static Locator makeLocatorFromNode(Node node) {
 
         configurator = Configurator.getConfigurator();
 
@@ -55,6 +56,47 @@ public class LocatorFactory {
         }
 
         return locator;
+    }
+
+
+    // Locator write method for writing locator from Hints.
+    public static Locator makeLocatorFromHint(String hintsLocatorString)  {
+
+        if ((hintsLocatorString == null) || (hintsLocatorString.equals("null"))) {
+            logger.warn("Locator is null after reading from hints file.");
+        }
+        else {
+            logger.debug("Creating locator from string '" + hintsLocatorString + "'.");
+
+            String [] locatorStringComponents = hintsLocatorString.split(" = ");
+            String locatorTypeString = locatorStringComponents[0];
+            String locatorValueString = locatorStringComponents[1];
+
+            Locator.LocatorType locatorType;
+
+            // TODO: Use a switch-case when creating Locator types from a string.
+            if (locatorTypeString.equals(HintsFileDelimeters.LOCATOR_TYPE_STRING_ID)) {
+                locatorType = Locator.LocatorType.ID;
+            }
+            else if (locatorTypeString.equals(HintsFileDelimeters.LOCATOR_TYPE_STRING_NAME)) {
+                locatorType = Locator.LocatorType.NAME;
+            }
+            else if (locatorTypeString.equals(HintsFileDelimeters.LOCATOR_TYPE_STRING_CLASS)) {
+                locatorType = Locator.LocatorType.CLASS;
+            }
+            else if (locatorTypeString.equals(HintsFileDelimeters.LOCATOR_TYPE_STRING_CSS)) {
+                locatorType = Locator.LocatorType.CSS;
+            }
+            else {
+                logger.warn("Unknown Locator string found in hints file. Locator Type is null!");
+                locatorType = null;
+            }
+
+            locator = new Locator(locatorType, locatorValueString);
+        }
+
+        return locator;
+
     }
 
 
@@ -128,8 +170,7 @@ public class LocatorFactory {
         LinkedList<Node> ancestorNodes = new LinkedList<Node>();
 
         // The loop starts with the first ancestor, not the node were starting with.  This is because the
-        //  node we're building the locator for already does not have attributes we can use.  We know that
-        //  because otherwise we would have used them for a locator and would not have to build a css locator.
+        //  node we're building the locator for already does not have attributes we can use.
         logger.debug("Backtracking up the node chain looking for a unique css path.  Building a list of the current node's anscestors.");
         ancestorNodes.add(node);
         logger.debug("Current node <" + node.getNodeName() + "> added to list of ancestors.");
@@ -141,7 +182,7 @@ public class LocatorFactory {
         // Loop up the chain of ancestor nodes until we find an ancestor with an ID, or some othe attribute we
         // can use to uniquely identify the path, or we reach the <body> tag.
         // A null ancestor node will be set if we find a useful attribute.  This is used to terminate the loop.
-        while((!foundId) &&  (!ancestorNode.getNodeName().equalsIgnoreCase("body"))) {
+        while((!foundId) && (!ancestorNode.getNodeName().equalsIgnoreCase("body"))) {
 
             logger.debug("Beginning new ancestor node iteration.");
             logger.debug("Using tag <" + ancestorNode.getNodeName() + ">.");
@@ -173,7 +214,7 @@ public class LocatorFactory {
 
         } // end -- while not <body> and no ID attribute found
 
-        // After exiting the loop, be sure to addCode the Node that terminated the chain to the ancestor list.
+        // After exiting the loop, be sure to add the Node that terminated the chain to the ancestor list.
         ancestorNodes.add(ancestorNode);
 
         // Log the Ancestor chain.
@@ -255,8 +296,6 @@ public class LocatorFactory {
 
     }
 
-
-
     private static String processSiblingPosition(Node currentNode) {
 
         int counter = 1;
@@ -292,46 +331,4 @@ public class LocatorFactory {
         }
 
     }
-
-
-    // Locator write method for writing locator from Hints.
-    public static Locator makeLocator(String hintsLocatorString)  {
-
-        if ((hintsLocatorString == null) || (hintsLocatorString.equals("null"))) {
-            logger.warn("Locator is null after reading from hints file.");
-        }
-        else {
-            logger.debug("Creating locator from string '" + hintsLocatorString + "'.");
-
-            String [] locatorStringComponents = hintsLocatorString.split(" = ");
-            String locatorTypeString = locatorStringComponents[0];
-            String locatorValueString = locatorStringComponents[1];
-
-            Locator.LocatorType locatorType;
-
-            // TODO: Use a switch-case when creating Locator types from a string.
-            if (locatorTypeString.equals(HintsFileDelimeters.LOCATOR_TYPE_STRING_ID)) {
-                locatorType = Locator.LocatorType.ID;
-            }
-            else if (locatorTypeString.equals(HintsFileDelimeters.LOCATOR_TYPE_STRING_NAME)) {
-                locatorType = Locator.LocatorType.NAME;
-            }
-            else if (locatorTypeString.equals(HintsFileDelimeters.LOCATOR_TYPE_STRING_CLASS)) {
-                locatorType = Locator.LocatorType.CLASS;
-            }
-            else if (locatorTypeString.equals(HintsFileDelimeters.LOCATOR_TYPE_STRING_CSS)) {
-                locatorType = Locator.LocatorType.CSS;
-            }
-            else {
-                logger.warn("Unknown Locator string found in hints file. Locator Type is null!");
-                locatorType = null;
-            }
-
-            locator = new Locator(locatorType, locatorValueString);
-        }
-
-        return locator;
-
-    }
-
 }
