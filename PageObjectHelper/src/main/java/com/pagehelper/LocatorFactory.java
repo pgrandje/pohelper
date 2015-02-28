@@ -160,6 +160,7 @@ public class LocatorFactory {
     // This is public because it's also used to write the analysis file.
     private static String makeCssLocatorString(Node node) {
 
+        AttributeRecorder attributeRecorder = new AttributeRecorder("Locator Factory");
         // This flag records the condition where an ID attribute is found and we can stop searching ancestor nodes.
         boolean foundId = false;
 
@@ -192,6 +193,12 @@ public class LocatorFactory {
 
                 NamedNodeMap parentAttributes = ancestorNode.getAttributes();
                 logger.debug("Current ancestor node has " + parentAttributes.getLength() + " attributes.");
+
+                int counter = 0;
+                while(counter < parentAttributes.getLength()) {
+                    attributeRecorder.record((Attr)parentAttributes.item(counter));
+                    counter++;
+                }
 
                 Attr attrib = (Attr) parentAttributes.getNamedItem("ID");
                 if (attrib != null) {
@@ -234,7 +241,6 @@ public class LocatorFactory {
            If we have a <body> tag, the locator string must start with body > tag > tag ... etc.
            If we have an ID-Node, the locator string must start with #ID > tag > tag ... etc.
         */
-
 
         // Get an iterator to traverse the ancestors.
         ancestorIterator = ancestorNodes.descendingIterator();
