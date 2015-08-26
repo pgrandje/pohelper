@@ -132,7 +132,7 @@ public abstract class AbstractOutputBucket implements OutputBucket {
 
     }
 
-    public void setCompleteFilePath() {
+    private void setCompleteFilePath() {
         filePath = filePath + "/" + fileName;
         checkFileExists();
     }

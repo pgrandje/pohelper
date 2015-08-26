@@ -83,7 +83,6 @@ public class Generator
             HintsOutputBucket hintsBucket = HintsOutputBucket.getBucket();
             hintsBucket.setFilePath();
             hintsBucket.setFileName(pageDescriptor.getPageObjectName());
-            hintsBucket.setCompleteFilePath();
             hintsBucket.setPageObjectName(pageDescriptor.getPageObjectName());
 
             // Scan the DOM to get a list of tags and their attributes.
@@ -103,7 +102,6 @@ public class Generator
             codeBucket = CodeOutputBucket.getBucket();
             codeBucket.setFilePath();
             codeBucket.setFileName(pageDescriptor.getPageObjectName());
-            codeBucket.setCompleteFilePath();
             codeBucket.setPageObjectName(pageDescriptor.getPageObjectName());
 
             // Scan the nodes and write the code.
@@ -121,7 +119,6 @@ public class Generator
             codeBucket = CodeOutputBucket.getBucket();
             codeBucket.setFilePath();
             codeBucket.setFileName(pageDescriptor.getPageObjectName());
-            codeBucket.setCompleteFilePath();
             codeBucket.setPageObjectName(pageDescriptor.getPageObjectName());
 
             TagDescriptorList tagDescriptorList = HintsScanner.getScanner().scan();
@@ -262,8 +259,6 @@ public class Generator
 
         // Dump the hints file.
         linksBucket.dumpToFile();
-
-
     }
 
     private void verifyTagDescriptorList(TagDescriptorList tagDescriptorList) {

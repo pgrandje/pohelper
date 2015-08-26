@@ -52,6 +52,13 @@ module under this project is a pre-configured test module serving as an example.
 to the com.pagerunner.pageobjects package under this module and then write your own tests in the corresponding 'tests'
 package to run the generated page object.
 
+If the PageObjectHelper runs successfully you should see the following at the bottom of the IDE's console and no
+exception messages.
+
+    [main] INFO  com.pagehelper.outputbucket.AbstractOutputBucket  - Closing output file.
+    [main] INFO  com.pagehelper.Generator  - SUCCESSFUL COMPLETION.
+
+
 To run from the command-line you will need to
 - Build the project
 - Create and build a build-artifact to create a jar file.
@@ -170,3 +177,8 @@ The following items are limitations which are planned enhancements to this proje
     - Generating the code from a 'hints file' (already implemented) where the user will add a marker to indidate  split
       and re-join operations.
 
+- The PageObjectHelper has so far only been run for generating java-based page objects.  Although it has been designed
+  to easily support other languages, it has not yet been tested for this.  One known improvement required is that
+  the filename extension will need to be parameterized so it does not always generate files with a .java extension.
+  In addition code templates will need to be written to support the other languages.  And finally, of course, lots
+  of testing!

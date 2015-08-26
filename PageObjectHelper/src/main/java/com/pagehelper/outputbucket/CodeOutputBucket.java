@@ -39,8 +39,10 @@ public class CodeOutputBucket extends AbstractOutputBucket {
         codeShellLoader.loadConfig(this);
     }
 
+    // TODO: Evaluate whether setFileName() could be handled solely through the Abstract Base class.
     @Override
     public void setFileName(String pageName) {
+        // TODO: Make this language agnostic by adding a feature to set the filename extension.
         super.setFileName(pageName + ".java");
         logger.info("Setting filename to '" + getFileName() + "'.");
     }
