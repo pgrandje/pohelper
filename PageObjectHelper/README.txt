@@ -58,6 +58,14 @@ exception messages.
     [main] INFO  com.pagehelper.outputbucket.AbstractOutputBucket  - Closing output file.
     [main] INFO  com.pagehelper.Generator  - SUCCESSFUL COMPLETION.
 
+Also, if you re-run the project using the same URL you will likely get an error warning that you'll overwrite the
+file you generated earlier.
+
+    ERROR: File exists.  Use -overwrite or change file name or destination folder.
+
+To overwrite the result simply add the -overwrite parameter to the command-line args or delete the previously generated
+output file.
+
 
 To run from the command-line you will need to
 - Build the project

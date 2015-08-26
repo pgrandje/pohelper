@@ -206,7 +206,10 @@ public class Configurator {
                 String[] keyValuePair = line.split(":");
 
                 switch (keyValuePair[0]) {
-                    case "locator":
+                    case "locatorIndicator":
+                        locatorIndicator = keyValuePair[1];
+                        break;
+                    case "memberNameIndicator":
                         memberNameIndicator = keyValuePair[1];
                         break;
                     case "codeShellCodeBlockIndicator":

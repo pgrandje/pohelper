@@ -1,7 +1,7 @@
 // *** Configuration file to set parameters without using command-line options
 
 // Code template variable-name and locator hooks.
-locator:<locator>
+locatorIndicator:<locator>
 memberNameIndicator:<symbol>
 
 // Code shell template code indicator.
