@@ -69,17 +69,18 @@ public class AttributeRecorder {
         Integer numOfOccurrences = recordedAttributes.get(attribute);
 
         if (numOfOccurrences != null)  {
-            logger.debug("Recorder--" + instanceName + ": Found " + attr.getName() + "=" + attr.getValue() + " exists " + numOfOccurrences + " times.");
+            logger.debug("Recorder--" + instanceName + ": Found " + attr.getName() + "=" + attr.getValue() + " exists "
+                    + numOfOccurrences + " times.");
             logger.debug(instanceName + ": Increasing count to " + numOfOccurrences++);
             recordedAttributes.put(attribute, numOfOccurrences);
         }
         else {
-            logger.debug("Recorder--" + instanceName + ": Adding new attribute " + attr.getName() + "=" + attr.getValue());
+            logger.debug("Recorder--" + instanceName + ": Adding new attribute " + attr.getName() + "="
+                    + attr.getValue());
             recordedAttributes.put(attribute, 1);
         }
     }
 
-    // TODO: See if I should change all my 'int's to Integers
     public int getInstances(Attr attr) {
         Attribute attribute = new Attribute(attr);
         return recordedAttributes.get(attribute);

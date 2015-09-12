@@ -5,8 +5,10 @@ import org.w3c.dom.Attr;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Contructs Locator objects.  This isolates the algorithms for creaing Locators to one area and provides an API
@@ -180,7 +182,7 @@ public class LocatorFactory {
         Node ancestorNode = node.getParentNode();
 
 
-        // Loop up the chain of ancestor nodes until we find an ancestor with an ID, or some othe attribute we
+        // Loop up the chain of ancestor nodes until we find an ancestor with an ID, or some other attribute we
         // can use to uniquely identify the path, or we reach the <body> tag.
         // A null ancestor node will be set if we find a useful attribute.  This is used to terminate the loop.
         while((!foundId) && (!ancestorNode.getNodeName().equalsIgnoreCase("body"))) {
@@ -283,11 +285,25 @@ public class LocatorFactory {
         }
 
 
+
+
+
+
+
+
+        //  ***** WORK IN HERE ******
+
+        // TODO: Traversing ancestors top down, save the latest unique attribute .  Then generate the locator starting with
+
         // Traverse the ancestor nodes in reverse order (top to bottom in the DOM) to construct the css selector.
         //   We begin by advancing to the 'next' first, so we skip the <body> or ID'ed tag that we already processed.
+        Attr uniqueAttribute;
         while(ancestorIterator.hasNext()) {
 
+            // TODO: Scan the ancestor Node's attributes, check the attributeRecorder for uniqueness, if unique, save it.
             currentCssSelectorNode = ancestorIterator.next();
+            uniqueAttribute = getUniqueAttribute(currentCssSelectorNode, attributeRecorder);
+
             // TODO:  First, it should check if the UI element is the first or only one of its kind on the page.
             cssLocator.append(currentCssSelectorNode.getNodeName() + processSiblingPosition(currentCssSelectorNode) + " > ");
             logger.trace("CSS Locator intermediate result: " + cssLocator.toString());
@@ -299,6 +315,23 @@ public class LocatorFactory {
 
         logger.debug("CSS Locator final string: " + cssLocator.toString());
         return cssLocator.toString();
+    }
+
+    private static Attr getUniqueAttribute(Node node, AttributeRecorder attributeRecorder) {
+        List<Attr> uniqueAttributes = new ArrayList<>();
+
+        NamedNodeMap nodeAttributes = node.getAttributes();
+
+        for(int i=0; i < nodeAttributes.getLength(); i++) {
+            Attr attr = (Attr) nodeAttributes.item(i);
+
+            if (attributeRecorder.getInstances(attr) == 1) {
+                uniqueAttributes.add(attr);
+            }
+        }
+
+        // TODO: *** Now go through the unique ones, if any, and select 1) classname 2) attrib 3) attrib-value pair
+
 
     }
 
