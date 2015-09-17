@@ -1,8 +1,0 @@
-1) How best to validate command-line params?  Do you know of a library that's easily configurable?
-See the todo_item in Configurator's validation method.
-
-
-2) Is there a design pattern that will allow me to streamline the Generator and how each of the conditions varies
-on the Bucket and the Scanner.
-
-

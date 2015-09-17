@@ -1,5 +1,6 @@
 Refactor TODOS:
 
+(NOTE: Some of these notes are likley out of date since I've done some refactoring recently)
 
 - Verify in TagDescriptor if I should use String.replace() instead of String.replaceAll().
 
